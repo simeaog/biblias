@@ -1,0 +1,3763 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Bíblia Interlinear & Planos</title>
+<style>
+    :root {
+        --primary: #2c3e50;
+        --secondary: #3498db;
+        --bg: #fdfdfd;
+        --text: #222;
+        --card: #fff;
+        --accent: rgba(52, 152, 219, 0.15);
+        --note-bg: #fffde7;
+        --note-border: #f1c40f;
+        
+        /* Cores da Interlinear */
+        --orig-color: #b22222;
+        --pt-color: #222;
+        --en-color: #7f8c8d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    
+    /* 1. Trava o tamanho exato da tela (resolve o bug em mobile e iframes do Google Sites) */
+    html, body {
+        height: 100dvh; 
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; 
+        position: fixed; 
+    }
+
+    /* 2. Transforma o corpo em uma coluna Flexbox */
+    body { 
+        background-color: var(--bg); 
+        color: var(--text); 
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 3. Cabeçalho Fixo */
+    header { 
+        background: var(--primary); 
+        color: white; 
+        padding: 15px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-shrink: 0; 
+        z-index: 50; 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        position: relative;
+    }
+    #app-title { font-size: 18px; font-weight: 600; margin: 0; }
+    
+    .header-actions { position: absolute; right: 15px; display: flex; gap: 8px; }
+    .header-btn { background: transparent; border: 1px solid rgba(255,255,255,0.6); color: white; border-radius: 20px; padding: 4px 10px; font-size: 12px; font-weight: 600; cursor: pointer; transition: 0.2s; }
+    .header-btn:active { background: rgba(255,255,255,0.2); }
+
+    /* 4. A tag main ocupa todo o espaço livre e é a única área que rola */
+    main {
+        flex: 1; 
+        overflow-y: auto; 
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 80px; /* Respiro para a pílula de navegação */
+        position: relative;
+    }
+
+    /* 5. A barra de navegação fica assentada na base */
+    nav { 
+        flex-shrink: 0;
+        width: 100%; 
+        background: var(--card); 
+        display: flex; 
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.05); 
+        z-index: 100; 
+        padding-bottom: env(safe-area-inset-bottom); 
+    }
+    nav button { flex: 1; padding: 12px 2px; border: none; background: none; font-size: 12px; font-weight: 600; color: #7f8c8d; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 4px;}
+    nav button.active { color: var(--primary); }
+    nav button.active::after { content: ''; display: block; width: 20px; height: 3px; background: var(--primary); border-radius: 2px; margin-top: 2px; }
+    
+    .tab-content { display: none; padding: 20px; }
+    .tab-content.active { display: block; }
+    
+    .card { background: var(--card); padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); margin-bottom: 15px; border: 1px solid #f0f0f0; }
+    
+    input:not([type="checkbox"]):not([type="radio"]), select, textarea, button.btn { width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 15px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 16px; background: #fff;}
+    textarea { resize: vertical; min-height: 80px; }
+    
+    button.btn { background: var(--primary); color: white; border: none; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+    button.btn:active { background: var(--secondary); }
+    
+    .btn-min { background: transparent; border: 1px solid #bdc3c7; color: var(--primary); border-radius: 20px; padding: 6px 14px; font-size: 13px; cursor: pointer; font-weight: 600; transition: all 0.2s;}
+    .btn-min:active { background: #ecf0f1; }
+    .btn-min.danger { border-color: #e74c3c; color: #e74c3c; }
+    .btn-min.danger:active { background: #fdf1f0; }
+    .btn-group { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+    h2, h3 { margin-bottom: 12px; color: var(--primary); }
+    input[type="checkbox"] { width: 20px; height: 20px; margin: 0; cursor: pointer; accent-color: var(--primary); flex-shrink: 0; }
+    
+    /* Planos UI */
+    .plan-testament { margin-bottom: 25px; }
+    .plan-testament-label { display: flex; align-items: center; gap: 12px; font-size: 18px; font-weight: 700; color: var(--primary); margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #f0f0f0; cursor: pointer;}
+    .plan-block { margin-left: 10px; margin-bottom: 15px; }
+    .plan-block-label { display: flex; align-items: center; gap: 10px; font-weight: 600; color: #444; margin-bottom: 12px; cursor: pointer; font-size: 15px; }
+    .plan-books { margin-left: 32px; margin-bottom: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px;}
+    .book-item { display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer; }
+    
+    /* Leitura e Interlinear */
+    #chapter-content { max-width: 900px; margin: 0 auto; }
+    .chapter-header { text-align: center; margin: 10px 0 30px 0; }
+    .chapter-header .book-name { font-size: 18px; font-weight: 600; color: #7f8c8d; text-transform: uppercase; letter-spacing: 1px;}
+    .chapter-header .chap-number { font-size: 56px; font-weight: 700; color: var(--primary); line-height: 1; margin-top: 5px;}
+    
+    .verse { margin-bottom: 20px; border-radius: 6px; cursor: pointer; transition: background 0.2s; position: relative; }
+    .verse-num { font-weight: 700; color: #95a5a6; font-size: 11px; margin-right: 6px; pointer-events: none; flex: 0 0 auto; }
+    .verse.selected { background-color: var(--accent); }
+    .verse.has-note { border-left: 3px solid var(--note-border); background-color: var(--note-bg); padding-left: 10px;}
+
+    /* Modo Fluido */
+    .verse.fluid-mode { display: block; padding: 6px; font-size: 18px; line-height: 1.55; }
+    .verse.fluid-mode.original-only { font-size: 20px; }
+    .verse[dir="rtl"] { text-align: right; }
+    .verse[dir="rtl"] .verse-num { margin-left: 8px; margin-right: 0; }
+    
+    /* Modo Interlinear - Alinhamento Perfeito */
+    .verse.interlinear-mode { 
+        display: flex; 
+        flex-wrap: wrap; 
+        align-items: flex-end; 
+        column-gap: 5px; 
+        row-gap: 15px; 
+        padding: 10px 6px;
+    }
+    .verse.interlinear-mode .verse-num { align-self: flex-start; margin-top: 4px; }
+    
+    .palavra-bloco { 
+        display: inline-flex; 
+        flex-direction: column; 
+        justify-content: flex-end; 
+        align-items: center; 
+        text-align: center; 
+        min-width: 28px; 
+        cursor: pointer; 
+        padding: 2px 4px; 
+        border-radius: 5px; 
+        transition: background 0.15s; 
+    }
+    .palavra-bloco:hover { background-color: #f0f0f0; }
+    .palavra-bloco:active { background: rgba(52,152,219,.10); }
+    
+    /* Min-height previne quebra de alinhamento quando falta uma tradução */
+    .lang-orig { font-size: 18px; color: var(--orig-color); margin-bottom: 4px; font-weight: 700; min-height: 22px; }
+    .lang-pt { font-size: 15px; font-weight: 500; color: var(--pt-color); margin-bottom: 2px; min-height: 18px; }
+    .lang-en { font-size: 13px; color: var(--en-color); font-style: italic; min-height: 16px; }
+    .hidden { display: none !important; }
+    
+    /* GAVETAS (Drawers) - Z-index 150 para cobrir o Nav (100) */
+    .bottom-drawer { 
+        position: fixed; bottom: 0; left: 0; width: 100%; 
+        background-color: var(--card); color: var(--text); 
+        box-shadow: 0 -4px 15px rgba(0,0,0,0.2); 
+        transform: translateY(110%); transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); 
+        z-index: 150; 
+        padding: 20px; padding-bottom: calc(20px + env(safe-area-inset-bottom));
+        border-top-left-radius: 16px; border-top-right-radius: 16px;
+        max-height: 60vh; overflow-y: auto;
+    }
+    .bottom-drawer.open { transform: translateY(0); }
+    .drawer-header { position: sticky; top: -20px; z-index: 1; display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px; margin-bottom: 10px; background: var(--card); border-bottom: 1px solid #eee; }
+    .drawer-header h3 { margin: 0; font-size: 18px; color: var(--primary); }
+    .drawer-close { background: none; border: none; color: var(--primary); font-size: 1.5em; cursor: pointer; font-weight: bold;}
+    
+    /* Estilos Gaveta Idiomas e Traduções */
+    .drawer-btn { display: block; width: 100%; text-align: left; background: transparent; border: 1px solid #d8d8d8; padding: 15px; border-radius: 12px; margin-bottom: 10px; color: #555; font-size: 15px; cursor: pointer; transition: 0.2s; font-weight: 600;}
+    .drawer-btn:active { background: #f5f5f5; }
+    .drawer-btn.active { border-color: var(--primary); background: var(--accent); color: var(--primary); }
+
+    /* Estilos Dicionário */
+    .panel-lemma { margin: 0 0 5px 0; color: var(--orig-color); font-size: 1.5em; display: flex; align-items: baseline; gap: 10px; font-weight: bold;}
+    .panel-strong { font-size: 0.5em; background: #34495e; padding: 2px 6px; border-radius: 4px; color: #bdc3c7; }
+    .panel-pronuncia { font-style: italic; color: #7f8c8d; margin-bottom: 10px; }
+    .panel-grammar { font-size: 12px; text-transform: uppercase; color: #95a5a6; margin-bottom: 8px; font-weight: bold;}
+    .panel-traducoes { font-weight: bold; margin-bottom: 8px; color: #333; }
+
+    /* Navegação do Leitor (Pill) */
+    .reader-pill-container { position: fixed; bottom: 75px; width: 100%; display: flex; justify-content: center; z-index: 40; padding: 0 15px; pointer-events: none;}
+    .reader-pill { display: flex; align-items: center; background: rgba(30, 41, 59, 0.95); backdrop-filter: blur(5px); color: white; border-radius: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); overflow: hidden; pointer-events: auto;}
+    .reader-pill button { background: none; border: none; color: white; padding: 12px 20px; font-size: 18px; cursor: pointer; }
+    .reader-pill button:active { background: rgba(255,255,255,0.1); }
+    .pill-title { padding: 12px 20px; font-weight: 600; font-size: 15px; border-left: 1px solid rgba(255,255,255,0.1); border-right: 1px solid rgba(255,255,255,0.1); cursor: pointer; }
+    
+    /* Barra de Seleção Flutuante */
+    .selection-bar { display: none; position: fixed; bottom: 75px; width: 96%; left: 2%; background: var(--primary); color: white; border-radius: 12px; padding: 12px 15px; z-index: 60; box-shadow: 0 4px 15px rgba(0,0,0,0.2); justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;}
+    .selection-bar span { font-weight: 600; font-size: 14px; }
+    .selection-bar .actions { display: flex; align-items: center; flex-wrap: nowrap; overflow-x: auto; gap: 12px;}
+    .selection-bar button { background: none; border: none; color: white; font-size: 14px; font-weight: 600; cursor: pointer; white-space: nowrap;}
+    
+    /* Modais Globais */
+    .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 200; justify-content: center; align-items: center; flex-direction: column; backdrop-filter: blur(2px);}
+    .modal-fullscreen { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg); z-index: 200; flex-direction: column; }
+    .modal-header { display: flex; align-items: center; padding: 15px 20px; background: var(--card); border-bottom: 1px solid #eee; box-shadow: 0 1px 3px rgba(0,0,0,0.05);}
+    .modal-header button { background: none; border: none; color: var(--primary); font-size: 24px; margin-right: 15px; cursor: pointer; font-weight: bold;}
+    .modal-header h3 { margin: 0; font-size: 18px; color: var(--primary); }
+    .modal-body { flex: 1; overflow-y: auto; padding: 20px; }
+    
+    .list-item { padding: 16px 0; border-bottom: 1px solid #f0f0f0; font-size: 17px; cursor: pointer; color: var(--text); display: flex; justify-content: space-between; align-items: center;}
+    .list-item:active { background: #fafafa; }
+    
+    .grid-chapters { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .grid-item { background: var(--card); border: 1px solid #e0e0e0; padding: 15px 0; text-align: center; border-radius: 8px; font-weight: 600; font-size: 16px; cursor: pointer; color: var(--primary);}
+    .grid-item:active { background: #f5f5f5; }
+    
+    .dialog-card { width: 92%; max-width: 400px; padding: 25px; max-height: 90vh; overflow-y: auto;}
+    .dialog-title { margin-top: 0; font-size: 20px; color: var(--primary); }
+    .dialog-msg { font-size: 15px; color: #555; margin-bottom: 15px; white-space: pre-wrap; line-height: 1.4;}
+    
+    .radio-group label { display: block; padding: 10px 0; font-size: 15px; cursor: pointer; border-bottom: 1px solid #eee;}
+    .radio-group input { margin-right: 10px; width: 16px; height: 16px; vertical-align: middle;}
+    
+    .toast { visibility: hidden; min-width: 250px; background-color: var(--primary); color: #fff; text-align: center; border-radius: 30px; padding: 12px 20px; position: fixed; z-index: 1000; left: 50%; bottom: 90px; transform: translateX(-50%); font-size: 15px; font-weight: 600; box-shadow: 0 4px 10px rgba(0,0,0,0.2); opacity: 0; transition: opacity 0.3s, bottom 0.3s; pointer-events: none;}
+    .toast.show { visibility: visible; opacity: 1; bottom: 100px; }
+    .theme-group-header { margin-top: 25px; margin-bottom: 10px; border-bottom: 2px solid #eee; padding-bottom: 5px; color: var(--primary); font-size: 18px;}
+    .delay-badge { color: #e74c3c; font-size: 12px; font-weight: bold; margin-left: 8px; background: #fdf1f0; padding: 2px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1 id="app-title">Bíblia</h1>
+    <div class="header-actions">
+        <button id="btn-version-menu" class="header-btn" onclick="openDrawer('version-drawer')">INT</button>
+        <button id="btn-lang-menu" class="header-btn" onclick="openDrawer('language-drawer')">Visão</button>
+    </div>
+</header>
+
+<!-- GAVETA: Traduções -->
+<div id="version-drawer" class="bottom-drawer" aria-hidden="true">
+    <div class="drawer-header">
+        <h3>Traduções</h3>
+        <button type="button" class="drawer-close" onclick="fecharGavetas()">✖</button>
+    </div>
+    <div id="version-list"></div>
+</div>
+
+<!-- GAVETA: Idiomas (Camadas Interlinear) -->
+<div id="language-drawer" class="bottom-drawer" aria-hidden="true">
+    <div class="drawer-header">
+        <h3>Idiomas Visíveis</h3>
+        <button type="button" class="drawer-close" onclick="fecharGavetas()">✖</button>
+    </div>
+    <div>
+        <p style="color:#777; font-size:14px; margin-bottom:10px;">Ative múltiplas opções para o Modo Interlinear.</p>
+        <button class="drawer-btn" id="lang-orig" onclick="toggleLanguage('orig')">Originais</button>
+        <button class="drawer-btn active" id="lang-pt" onclick="toggleLanguage('pt')">Português</button>
+        <button class="drawer-btn" id="lang-en" onclick="toggleLanguage('en')">English</button>
+    </div>
+</div>
+
+<!-- GAVETA: Dicionário -->
+<div id="dictionary-drawer" class="bottom-drawer dictionary-drawer" aria-hidden="true">
+    <div class="drawer-header">
+        <h3>Dicionário</h3>
+        <button type="button" class="drawer-close" onclick="fecharGavetas()">✖</button>
+    </div>
+    <div class="drawer-body" id="dictionary-content">
+        <p style="color:#777;">Selecione uma palavra para consultar o dicionário.</p>
+    </div>
+</div>
+
+<main id="main-scroll">
+    <!-- ABA: LEITURA -->
+    <div id="tab-read" class="tab-content active" style="padding-top: 10px;">
+        <div id="chapter-content">
+            <p style="text-align:center; color:#999; margin-top:50px;">Carregando...</p>
+        </div>
+    </div>
+
+    <!-- ABA: BUSCAR -->
+    <div id="tab-search" class="tab-content">
+        <h2>Pesquisar na Bíblia</h2>
+        <div class="card" style="display:flex; gap:10px; align-items:center; padding: 15px;">
+            <input type="text" id="search-input" placeholder="Palavra ou frase..." style="margin:0;">
+            <button class="btn" style="margin:0; width: auto; padding: 12px 20px;" onclick="searchBible()">Ir</button>
+        </div>
+        <div id="search-results" style="margin-top: 20px;"></div>
+    </div>
+
+    <!-- ABA: PLANOS -->
+    <div id="tab-plans" class="tab-content">
+        <div id="plan-list-view">
+            <button class="btn" onclick="togglePlanView('create')">Novo Plano</button>
+            <div id="my-plans"></div>
+        </div>
+
+        <div id="plan-create-view" class="hidden">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 15px;">
+                <h2>Gerar Plano</h2>
+                <button class="btn-min" onclick="togglePlanView('list')">Cancelar</button>
+            </div>
+            
+            <div class="card">
+                <label style="font-weight:600; font-size:14px; color:#555;">Dividir o Plano por:</label>
+                <select id="plan-split" onchange="togglePlanSplit()">
+                    <option value="chapters">Capítulos inteiros</option>
+                    <option value="verses">Versículos</option>
+                </select>
+                
+                <label style="font-weight:600; font-size:14px; color:#555; margin-top:10px; display:block;">Modo de Leitura</label>
+                <select id="plan-mode" onchange="togglePlanMode()">
+                    <option value="dates">Por Data (Início e Fim)</option>
+                    <option value="pace">Por Ritmo (Quantidade por dia)</option>
+                </select>
+
+                <label style="font-weight:600; font-size:14px; color:#555; display:block; margin-top:10px;">Data de Início</label>
+                <input type="date" id="plan-start">
+
+                <div id="mode-dates">
+                    <label style="font-weight:600; font-size:14px; color:#555; display:block;">Data Final</label>
+                    <input type="date" id="plan-end">
+                </div>
+
+                <div id="mode-pace" class="hidden">
+                    <label id="lbl-pace" style="font-weight:600; font-size:14px; color:#555; display:block;">Capítulos por dia</label>
+                    <input type="number" id="plan-chapters-day" value="3" min="1">
+                </div>
+
+                <div id="plan-result" style="color:var(--secondary); font-weight:600; margin-bottom:15px; font-size:14px; background:#f0f8ff; padding:10px; border-radius:6px;">
+                    Preencha as datas para ver a previsão.
+                </div>
+
+                <h3 style="margin-top:20px; font-size:16px;">Livros para ler</h3>
+                <div id="book-selection"></div>
+                
+                <button class="btn" style="margin-top:20px;" onclick="generatePlan()">Salvar Plano</button>
+            </div>
+        </div>
+        
+        <div id="plan-detail-view" class="hidden">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 15px;">
+                <h2 id="detail-plan-name">Progresso</h2>
+                <button class="btn-min" onclick="togglePlanView('list')">Voltar</button>
+            </div>
+            <div id="reorg-btn-container" style="margin-bottom: 15px;"></div>
+            <div id="plan-details-content"></div>
+        </div>
+    </div>
+
+    <!-- ABA: NOTAS -->
+    <div id="tab-notes" class="tab-content">
+        <h2>Minhas Notas</h2>
+        <div id="notes-list" style="margin-top: 15px;"></div>
+    </div>
+
+    <!-- ABA: SALVOS -->
+    <div id="tab-saved" class="tab-content">
+        <h2>Trechos Salvos</h2>
+        <div id="saved-list" style="margin-top: 15px;"></div>
+    </div>
+</main>
+
+<nav>
+    <button id="nav-read" class="active" onclick="switchTab('read')">Ler</button>
+    <button id="nav-search" onclick="switchTab('search')">Buscar</button>
+    <button id="nav-plans" onclick="switchTab('plans')">Planos</button>
+    <button id="nav-notes" onclick="switchTab('notes')">Notas</button>
+    <button id="nav-saved" onclick="switchTab('saved')">Salvos</button>
+</nav>
+
+<!-- Pill de Navegação do Leitor -->
+<div id="reader-pill" class="reader-pill-container">
+   <div class="reader-pill">
+      <button onclick="prevChapter()">&#10094;</button>
+      <div class="pill-title" onclick="openSelector()" id="pill-title">Livro 1</div>
+      <button onclick="nextChapter()">&#10095;</button>
+   </div>
+</div>
+
+<!-- Barra de Seleção de Versículos -->
+<div id="selection-bar" class="selection-bar">
+    <span id="selection-count">1 versículo</span>
+    <div class="actions">
+        <button onclick="copyVerses()">Copiar</button>
+        <button onclick="saveVerses()">Salvar</button>
+        <button onclick="noteVerses()">Anotar</button>
+        <button onclick="clearSelection()" style="font-size:20px; margin-left:10px;">✕</button>
+    </div>
+</div>
+
+<!-- Modal Fullscreen para Seleção de Livro/Capítulo -->
+<div id="selector-modal" class="modal-fullscreen">
+   <div class="modal-header">
+       <button onclick="closeSelector()">✕</button>
+       <h3 id="modal-title">Selecione o Livro</h3>
+   </div>
+   <div class="modal-body" id="modal-body"></div>
+</div>
+
+<!-- Custom Dialogs -->
+<div id="custom-dialog" class="modal-overlay">
+    <div class="card dialog-card">
+        <h3 id="cd-title" class="dialog-title">Atenção</h3>
+        <p id="cd-msg" class="dialog-msg"></p>
+        <div id="cd-custom-body" style="width: 100%; margin-bottom: 15px; display: none;"></div>
+        <div class="btn-group" style="justify-content: flex-end; margin-top:20px;">
+            <button id="cd-btn-cancel" class="btn-min" style="background:#ecf0f1; color:#7f8c8d; border:none; padding:10px 18px;">Cancelar</button>
+            <button id="cd-btn-ok" class="btn-min" style="background:var(--primary); color:white; border:none; padding:10px 18px;">OK</button>
+        </div>
+    </div>
+</div>
+
+<!-- Toast Notifications -->
+<div id="toast" class="toast">Notificação</div>
+
+<script>
+    // ==========================================
+    // DADOS DE FALLBACK (CASO O FETCH FALHE)
+    // 2 João completo + Dicionário (Com a nova estrutura relacional)
+    // ==========================================
+    const fallbackData = [
+  {
+    "id": "2_joão",
+    "name": "2 João",
+    "chapters": [
+      [
+        {
+          "id": "63001001",
+          "text_pt": "O presbítero à senhora eleita e aos seus filhos, a quem eu amo na verdade — e não somente eu, mas também todos os que conhecem a verdade —,",
+          "words": [
+            {
+              "word": "Ὁ",
+              "text_pt": "O",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "πρεσβύτερος",
+              "text_pt": "presbítero",
+              "text_en": "The elder",
+              "strong": "g4245"
+            },
+            {
+              "word": "ἐκλεκτῇ",
+              "text_pt": "eleita",
+              "text_en": "unto the elect",
+              "strong": "g1588"
+            },
+            {
+              "word": "κυρίᾳ",
+              "text_pt": "senhora",
+              "text_en": "lady",
+              "strong": "g2959"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "also",
+              "strong": "g2532"
+            },
+            {
+              "word": "τοῖς",
+              "text_pt": "aos",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "τέκνοις",
+              "text_pt": "filhos",
+              "text_en": "children",
+              "strong": "g5043"
+            },
+            {
+              "word": "αὐτῆς",
+              "text_pt": "seus",
+              "text_en": "her",
+              "strong": "g846"
+            },
+            {
+              "word": "οὓς",
+              "text_pt": "a quem",
+              "text_en": "whom",
+              "strong": "g3739"
+            },
+            {
+              "word": "ἐγὼ",
+              "text_pt": "eu",
+              "text_en": "I",
+              "strong": "g1473"
+            },
+            {
+              "word": "ἀγαπῶ",
+              "text_pt": "amo",
+              "text_en": "love",
+              "strong": "g25"
+            },
+            {
+              "word": "ἐν",
+              "text_pt": "em",
+              "text_en": "in",
+              "strong": "g1722"
+            },
+            {
+              "word": "ἀλήθειαν",
+              "text_pt": "verdade",
+              "text_en": "the truth",
+              "strong": "g225"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "also",
+              "strong": "g2532"
+            },
+            {
+              "word": "οὐκ",
+              "text_pt": "não",
+              "text_en": "not",
+              "strong": "g3756"
+            },
+            {
+              "word": "ἐγὼ",
+              "text_pt": "eu",
+              "text_en": "I",
+              "strong": "g1473"
+            },
+            {
+              "word": "μόνος",
+              "text_pt": "somente",
+              "text_en": "only",
+              "strong": "g3441"
+            },
+            {
+              "word": "ἀλλὰ",
+              "text_pt": "mas",
+              "text_en": "but",
+              "strong": "g235"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "também",
+              "text_en": "also",
+              "strong": "g2532"
+            },
+            {
+              "word": "πάντες",
+              "text_pt": "todos",
+              "text_en": "all",
+              "strong": "g3956"
+            },
+            {
+              "word": "οἱ",
+              "text_pt": "os",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "ἐγνωκότες",
+              "text_pt": "que conhecem",
+              "text_en": "they that have known",
+              "strong": "g1097"
+            },
+            {
+              "word": "τὴν",
+              "text_pt": "a",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "ἀλήθειαν",
+              "text_pt": "verdade",
+              "text_en": "the truth",
+              "strong": "g225"
+            }
+          ]
+        },
+        {
+          "id": "63001002",
+          "text_pt": "por causa da verdade que permanece em nós e conosco estará para sempre.",
+          "words": [
+            {
+              "word": "διὰ",
+              "text_pt": "por causa",
+              "text_en": "For",
+              "strong": "g1223"
+            },
+            {
+              "word": "τὸν",
+              "text_pt": "da",
+              "text_en": "which",
+              "strong": "g3588"
+            },
+            {
+              "word": "ἀλήθειαν",
+              "text_pt": "verdade",
+              "text_en": "the truth's sake",
+              "strong": "g225"
+            },
+            {
+              "word": "τὸν",
+              "text_pt": "que",
+              "text_en": "which",
+              "strong": "g3588"
+            },
+            {
+              "word": "μένουσαν",
+              "text_pt": "permanece",
+              "text_en": "dwelleth",
+              "strong": "g3306"
+            },
+            {
+              "word": "ἐν",
+              "text_pt": "em",
+              "text_en": "in",
+              "strong": "g1722"
+            },
+            {
+              "word": "ἡμῖν",
+              "text_pt": "nós",
+              "text_en": "us",
+              "strong": "g2254"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "and",
+              "strong": "g2532"
+            },
+            {
+              "word": "μεθ'",
+              "text_pt": "com",
+              "text_en": "with",
+              "strong": "g3326"
+            },
+            {
+              "word": "ἡμῶν",
+              "text_pt": "nós",
+              "text_en": "us",
+              "strong": "g2257"
+            },
+            {
+              "word": "ἔσται",
+              "text_pt": "estará",
+              "text_en": "shall be",
+              "strong": "g2071"
+            },
+            {
+              "word": "εἰς",
+              "text_pt": "para",
+              "text_en": "for",
+              "strong": "g1519"
+            },
+            {
+              "word": "τὸν",
+              "text_pt": "a",
+              "text_en": "which",
+              "strong": "g3588"
+            },
+            {
+              "word": "αἰῶνα",
+              "text_pt": "sempre",
+              "text_en": "ever",
+              "strong": "g165"
+            }
+          ]
+        },
+        {
+          "id": "63001003",
+          "text_pt": "Que a graça, a misericórdia e a paz, da parte de Deus Pai e de Jesus Cristo, o Filho do Pai, estejam conosco em verdade e amor.",
+          "words": [
+            {
+              "word": "ἔσται",
+              "text_pt": "estejam",
+              "text_en": "be",
+              "strong": "g2071"
+            },
+            {
+              "word": "μεθ'",
+              "text_pt": "com",
+              "text_en": "with",
+              "strong": "g3326"
+            },
+            {
+              "word": "ὑμῶν",
+              "text_pt": "vocês",
+              "text_en": "you",
+              "strong": "g5216"
+            },
+            {
+              "word": "χάρις",
+              "text_pt": "graça",
+              "text_en": "Grace",
+              "strong": "g5485"
+            },
+            {
+              "word": "ἔλεος",
+              "text_pt": "misericórdia",
+              "text_en": "mercy",
+              "strong": "g1656"
+            },
+            {
+              "word": "εἰρήνη",
+              "text_pt": "paz",
+              "text_en": "and peace",
+              "strong": "g1515"
+            },
+            {
+              "word": "παρὰ",
+              "text_pt": "da parte de",
+              "text_en": "from",
+              "strong": "g3844"
+            },
+            {
+              "word": "Θεοῦ",
+              "text_pt": "Deus",
+              "text_en": "God",
+              "strong": "g2316"
+            },
+            {
+              "word": "πατρός,",
+              "text_pt": "Pai",
+              "text_en": "of the Father",
+              "strong": "g3962"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "and",
+              "strong": "g2532"
+            },
+            {
+              "word": "παρὰ",
+              "text_pt": "da parte de",
+              "text_en": "from",
+              "strong": "g3844"
+            },
+            {
+              "word": "Κυρίου",
+              "text_pt": "Senhor",
+              "text_en": "the Lord",
+              "strong": "g2962"
+            },
+            {
+              "word": "Ἰησοῦ",
+              "text_pt": "Jesus",
+              "text_en": "Jesus",
+              "strong": "g2424"
+            },
+            {
+              "word": "Χριστοῦ",
+              "text_pt": "Cristo",
+              "text_en": "Christ",
+              "strong": "g5547"
+            },
+            {
+              "word": "τοῦ",
+              "text_pt": "o",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "υἱοῦ",
+              "text_pt": "Filho",
+              "text_en": "the Son",
+              "strong": "g5207"
+            },
+            {
+              "word": "τοῦ",
+              "text_pt": "o",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "πατρός,",
+              "text_pt": "Pai",
+              "text_en": "of the Father",
+              "strong": "g3962"
+            },
+            {
+              "word": "ἐν",
+              "text_pt": "em",
+              "text_en": "in",
+              "strong": "g1722"
+            },
+            {
+              "word": "ἀληθείᾳ",
+              "text_pt": "verdade",
+              "text_en": "truth",
+              "strong": "g225"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "and",
+              "strong": "g2532"
+            },
+            {
+              "word": "ἀγάπῃ",
+              "text_pt": "amor",
+              "text_en": "love",
+              "strong": "g26"
+            }
+          ]
+        },
+        {
+          "id": "63001004",
+          "text_pt": "Fiquei muito alegre por ter encontrado alguns de seus filhos que andam na verdade, de acordo com o mandamento que recebemos do Pai.",
+          "words": [
+            {
+              "word": "Ἐχάρην",
+              "text_pt": "Fiquei muito alegre",
+              "text_en": "I rejoiced",
+              "strong": "g5463"
+            },
+            {
+              "word": "λίαν",
+              "text_pt": "muito",
+              "text_en": "greatly",
+              "strong": "g3029"
+            },
+            {
+              "word": "ὅτι",
+              "text_pt": "que",
+              "text_en": "that",
+              "strong": "g3754"
+            },
+            {
+              "word": "εὕρηκα",
+              "text_pt": "encontrado",
+              "text_en": "I found",
+              "strong": "g2147"
+            },
+            {
+              "word": "ἐκ",
+              "text_pt": "de",
+              "text_en": "of",
+              "strong": "g1537"
+            },
+            {
+              "word": "τῶν",
+              "text_pt": "os",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "τέκνων",
+              "text_pt": "filhos",
+              "text_en": "children",
+              "strong": "g5043"
+            },
+            {
+              "word": "σου",
+              "text_pt": "seus",
+              "text_en": "thy",
+              "strong": "g4675"
+            },
+            {
+              "word": "περιπατοῦντας",
+              "text_pt": "que andam",
+              "text_en": "walking",
+              "strong": "g4043"
+            },
+            {
+              "word": "ἐν",
+              "text_pt": "em",
+              "text_en": "in",
+              "strong": "g1722"
+            },
+            {
+              "word": "ἀληθείᾳ",
+              "text_pt": "verdade",
+              "text_en": "truth",
+              "strong": "g225"
+            },
+            {
+              "word": "καθὼς",
+              "text_pt": "de acordo com",
+              "text_en": "as",
+              "strong": "g2531"
+            },
+            {
+              "word": "ἐντολὴν",
+              "text_pt": "mandamento",
+              "text_en": "a commandment",
+              "strong": "g1785"
+            },
+            {
+              "word": "ἐλάβομεν",
+              "text_pt": "recebemos",
+              "text_en": "we have received",
+              "strong": "g2983"
+            },
+            {
+              "word": "παρὰ",
+              "text_pt": "da parte de",
+              "text_en": "from",
+              "strong": "g3844"
+            },
+            {
+              "word": "τοῦ",
+              "text_pt": "o",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "πατρός",
+              "text_pt": "Pai",
+              "text_en": "the Father",
+              "strong": "g3962"
+            }
+          ]
+        },
+        {
+          "id": "63001005",
+          "text_pt": "E agora, senhora, peço-lhe, não como se escrevesse mandamento novo, mas o mesmo que temos tido desde o princípio: que nos amemos uns aos outros.",
+          "words": [
+            {
+              "word": "καὶ",
+              "text_pt": "E",
+              "text_en": "And",
+              "strong": "g2532"
+            },
+            {
+              "word": "νῦν",
+              "text_pt": "agora",
+              "text_en": "now",
+              "strong": "g3568"
+            },
+            {
+              "word": "ἐρωτῶ",
+              "text_pt": "peço-lhe",
+              "text_en": "I beseech",
+              "strong": "g2065"
+            },
+            {
+              "word": "σε",
+              "text_pt": "a",
+              "text_en": "thee",
+              "strong": "g4571"
+            },
+            {
+              "word": "κυρία",
+              "text_pt": "senhora",
+              "text_en": "lady",
+              "strong": "g2959"
+            },
+            {
+              "word": "οὐχ",
+              "text_pt": "não",
+              "text_en": "not",
+              "strong": "g3756"
+            },
+            {
+              "word": "ὡς",
+              "text_pt": "como se",
+              "text_en": "as though",
+              "strong": "g5613"
+            },
+            {
+              "word": "ἐντολὴν",
+              "text_pt": "mandamento",
+              "text_en": "commandment",
+              "strong": "g1785"
+            },
+            {
+              "word": "γράφω",
+              "text_pt": "escrevo",
+              "text_en": "I wrote",
+              "strong": "g1125"
+            },
+            {
+              "word": "σοι",
+              "text_pt": "a você",
+              "text_en": "unto thee",
+              "strong": "g4671"
+            },
+            {
+              "word": "καινὴν",
+              "text_pt": "novo",
+              "text_en": "a new",
+              "strong": "g2537"
+            },
+            {
+              "word": "ἀλλὰ",
+              "text_pt": "mas",
+              "text_en": "but",
+              "strong": "g235"
+            },
+            {
+              "word": "ἣν",
+              "text_pt": "que",
+              "text_en": "that which",
+              "strong": "g3739"
+            },
+            {
+              "word": "εἴχομεν",
+              "text_pt": "temos tido",
+              "text_en": "we had",
+              "strong": "g2192"
+            },
+            {
+              "word": "ἀπ'",
+              "text_pt": "desde",
+              "text_en": "from",
+              "strong": "g575"
+            },
+            {
+              "word": "ἀρχῆς",
+              "text_pt": "o princípio",
+              "text_en": "the beginning",
+              "strong": "g746"
+            },
+            {
+              "word": "ἵνα",
+              "text_pt": "que",
+              "text_en": "that",
+              "strong": "g2443"
+            },
+            {
+              "word": "ἀγαπῶμεν",
+              "text_pt": "nos amemos",
+              "text_en": "we love",
+              "strong": "g25"
+            },
+            {
+              "word": "ἀλλήλους",
+              "text_pt": "uns aos outros",
+              "text_en": "one another",
+              "strong": "g240"
+            }
+          ]
+        },
+        {
+          "id": "63001006",
+          "text_pt": "E o amor é este: que andemos segundo os mandamentos de Deus. Este mandamento, como vocês ouviram desde o princípio, é que vocês vivam nesse amor.",
+          "words": [
+            {
+              "word": "καὶ",
+              "text_pt": "E",
+              "text_en": "And",
+              "strong": "g2532"
+            },
+            {
+              "word": "αὕτη",
+              "text_pt": "este",
+              "text_en": "This",
+              "strong": "g3778"
+            },
+            {
+              "word": "ἐστὶν",
+              "text_pt": "é",
+              "text_en": "is",
+              "strong": "g2076"
+            },
+            {
+              "word": "ἡ",
+              "text_pt": "o",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "ἀγάπη",
+              "text_pt": "amor",
+              "text_en": "love",
+              "strong": "g26"
+            },
+            {
+              "word": "ἵνα",
+              "text_pt": "que",
+              "text_en": "That",
+              "strong": "g2443"
+            },
+            {
+              "word": "περιπατῆτε",
+              "text_pt": "andemos",
+              "text_en": "we walk",
+              "strong": "g4043"
+            },
+            {
+              "word": "κατὰ",
+              "text_pt": "segundo",
+              "text_en": "after",
+              "strong": "g2596"
+            },
+            {
+              "word": "τὰς",
+              "text_pt": "os",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "ἐντολή,",
+              "text_pt": "mandamentos",
+              "text_en": "commandments",
+              "strong": "g1785"
+            },
+            {
+              "word": "αὐτῇ",
+              "text_pt": "de Deus",
+              "text_en": "his",
+              "strong": "g846"
+            },
+            {
+              "word": "αὕτη",
+              "text_pt": "Este",
+              "text_en": "This",
+              "strong": "g3778"
+            },
+            {
+              "word": "ἐστὶν",
+              "text_pt": "é",
+              "text_en": "is",
+              "strong": "g2076"
+            },
+            {
+              "word": "ἡ",
+              "text_pt": "o",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "ἐντολή,",
+              "text_pt": "mandamento",
+              "text_en": "commandments",
+              "strong": "g1785"
+            },
+            {
+              "word": "καθὼς",
+              "text_pt": "como",
+              "text_en": "as",
+              "strong": "g2531"
+            },
+            {
+              "word": "ἠκούσατε",
+              "text_pt": "vocês ouviram",
+              "text_en": "ye have heard",
+              "strong": "g191"
+            },
+            {
+              "word": "ἀπ'",
+              "text_pt": "desde",
+              "text_en": "from",
+              "strong": "g575"
+            },
+            {
+              "word": "ἀρχῆς",
+              "text_pt": "o princípio",
+              "text_en": "the beginning",
+              "strong": "g746"
+            },
+            {
+              "word": "ἵνα",
+              "text_pt": "que",
+              "text_en": "That",
+              "strong": "g2443"
+            },
+            {
+              "word": "ἐν",
+              "text_pt": "em",
+              "text_en": "in",
+              "strong": "g1722"
+            },
+            {
+              "word": "αὐτῇ",
+              "text_pt": "esse amor",
+              "text_en": "his",
+              "strong": "g846"
+            },
+            {
+              "word": "περιπατῆτε",
+              "text_pt": "andem",
+              "text_en": "we walk",
+              "strong": "g4043"
+            }
+          ]
+        },
+        {
+          "id": "63001007",
+          "text_pt": "Porque muitos enganadores têm saído mundo afora, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo.",
+          "words": [
+            {
+              "word": "ὅτι",
+              "text_pt": "Porque",
+              "text_en": "For",
+              "strong": "g3754"
+            },
+            {
+              "word": "πολλοὶ",
+              "text_pt": "muitos",
+              "text_en": "many",
+              "strong": "g4183"
+            },
+            {
+              "word": "πλάνος",
+              "text_pt": "enganadores",
+              "text_en": "a deceiver",
+              "strong": "g4108"
+            },
+            {
+              "word": "εἰσῆλθον",
+              "text_pt": "têm saído",
+              "text_en": "are entered",
+              "strong": "g1525"
+            },
+            {
+              "word": "εἰς",
+              "text_pt": "para",
+              "text_en": "into",
+              "strong": "g1519"
+            },
+            {
+              "word": "ὁ",
+              "text_pt": "o",
+              "text_en": "who",
+              "strong": "g3588"
+            },
+            {
+              "word": "κόσμον",
+              "text_pt": "mundo afora",
+              "text_en": "the world",
+              "strong": "g2889"
+            },
+            {
+              "word": "ὁ",
+              "text_pt": "os",
+              "text_en": "who",
+              "strong": "g3588"
+            },
+            {
+              "word": "μὴ",
+              "text_pt": "não",
+              "text_en": "not",
+              "strong": "g3361"
+            },
+            {
+              "word": "ὁμολογοῦντες",
+              "text_pt": "confessam",
+              "text_en": "confess",
+              "strong": "g3670"
+            },
+            {
+              "word": "Ἰησοῦν",
+              "text_pt": "Jesus",
+              "text_en": "that Jesus",
+              "strong": "g2424"
+            },
+            {
+              "word": "Χριστὸν",
+              "text_pt": "Cristo",
+              "text_en": "Christ",
+              "strong": "g5547"
+            },
+            {
+              "word": "ἐρχόμενον",
+              "text_pt": "veio",
+              "text_en": "is come",
+              "strong": "g2064"
+            },
+            {
+              "word": "ἐν",
+              "text_pt": "em",
+              "text_en": "in",
+              "strong": "g1722"
+            },
+            {
+              "word": "σαρκί·",
+              "text_pt": "carne",
+              "text_en": "the flesh",
+              "strong": "g4561"
+            },
+            {
+              "word": "οὗτός",
+              "text_pt": "este",
+              "text_en": "This",
+              "strong": "g3778"
+            },
+            {
+              "word": "ἐστιν",
+              "text_pt": "é",
+              "text_en": "is",
+              "strong": "g2076"
+            },
+            {
+              "word": "ὁ",
+              "text_pt": "o",
+              "text_en": "who",
+              "strong": "g3588"
+            },
+            {
+              "word": "πλάνος",
+              "text_pt": "enganador",
+              "text_en": "a deceiver",
+              "strong": "g4108"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "and",
+              "strong": "g2532"
+            },
+            {
+              "word": "ὁ",
+              "text_pt": "o",
+              "text_en": "who",
+              "strong": "g3588"
+            },
+            {
+              "word": "ἀντίχριστος",
+              "text_pt": "anticristo",
+              "text_en": "an antichrist",
+              "strong": "g500"
+            }
+          ]
+        },
+        {
+          "id": "63001008",
+          "text_pt": "Tenham cuidado para que não percam aquilo que temos realizado com esforço, mas recebam plena recompensa.",
+          "words": [
+            {
+              "word": "βλέπετε",
+              "text_pt": "Tenham cuidado",
+              "text_en": "Look",
+              "strong": "g991"
+            },
+            {
+              "word": "ἑαυτούς,",
+              "text_pt": "a vocês mesmos",
+              "text_en": "to yourselves",
+              "strong": "g1438"
+            },
+            {
+              "word": "ἵνα",
+              "text_pt": "para que",
+              "text_en": "",
+              "strong": "g2443"
+            },
+            {
+              "word": "μὴ",
+              "text_pt": "não",
+              "text_en": "",
+              "strong": "g3361"
+            },
+            {
+              "word": "ἀπολέσωμεν",
+              "text_pt": "percam",
+              "text_en": "we lose",
+              "strong": "g622"
+            },
+            {
+              "word": "ἃ",
+              "text_pt": "aquilo que",
+              "text_en": "those things which",
+              "strong": "g3739"
+            },
+            {
+              "word": "εἰργασάμεθα",
+              "text_pt": "temos realizado",
+              "text_en": "we have wrought",
+              "strong": "g2038"
+            },
+            {
+              "word": "ἀλλὰ",
+              "text_pt": "mas",
+              "text_en": "but",
+              "strong": "g235"
+            },
+            {
+              "word": "μισθὸν",
+              "text_pt": "recompensa",
+              "text_en": "reward",
+              "strong": "g3408"
+            },
+            {
+              "word": "πλήρη",
+              "text_pt": "plena",
+              "text_en": "a full",
+              "strong": "g4134"
+            },
+            {
+              "word": "ἀπολάβωμεν",
+              "text_pt": "recebam",
+              "text_en": "that we receive",
+              "strong": "g618"
+            }
+          ]
+        },
+        {
+          "id": "63001009",
+          "text_pt": "Todo aquele que vai além da doutrina de Cristo e nela não permanece não tem Deus; o que permanece na doutrina, esse tem tanto o Pai como o Filho.",
+          "words": [
+            {
+              "word": "πᾶς",
+              "text_pt": "Todo",
+              "text_en": "Whosoever",
+              "strong": "g3956"
+            },
+            {
+              "word": "ὁ",
+              "text_pt": "o",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "παραβαίνων",
+              "text_pt": "que vai além",
+              "text_en": "transgresseth",
+              "strong": "g3845"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "and",
+              "strong": "g2532"
+            },
+            {
+              "word": "μὴ",
+              "text_pt": "não",
+              "text_en": "not",
+              "strong": "g3361"
+            },
+            {
+              "word": "μένων",
+              "text_pt": "permanece",
+              "text_en": "He that abideth",
+              "strong": "g3306"
+            },
+            {
+              "word": "ἐν",
+              "text_pt": "em",
+              "text_en": "in",
+              "strong": "g1722"
+            },
+            {
+              "word": "τῇ",
+              "text_pt": "a",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "διδαχῇ",
+              "text_pt": "doutrina",
+              "text_en": "the doctrine",
+              "strong": "g1322"
+            },
+            {
+              "word": "τοῦ",
+              "text_pt": "de",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "Χριστοῦ,",
+              "text_pt": "Cristo",
+              "text_en": "of Christ",
+              "strong": "g5547"
+            },
+            {
+              "word": "Θεὸν",
+              "text_pt": "Deus",
+              "text_en": "God",
+              "strong": "g2316"
+            },
+            {
+              "word": "οὐκ",
+              "text_pt": "não",
+              "text_en": "not",
+              "strong": "g3756"
+            },
+            {
+              "word": "ἔχει",
+              "text_pt": "tem",
+              "text_en": "hath",
+              "strong": "g2192"
+            },
+            {
+              "word": "ὁ",
+              "text_pt": "o",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "μένων",
+              "text_pt": "que permanece",
+              "text_en": "He that abideth",
+              "strong": "g3306"
+            },
+            {
+              "word": "ἐν",
+              "text_pt": "em",
+              "text_en": "in",
+              "strong": "g1722"
+            },
+            {
+              "word": "τῇ",
+              "text_pt": "a",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "διδαχῇ",
+              "text_pt": "doutrina",
+              "text_en": "the doctrine",
+              "strong": "g1322"
+            },
+            {
+              "word": "τοῦ",
+              "text_pt": "de",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "Χριστοῦ,",
+              "text_pt": "Cristo",
+              "text_en": "of Christ",
+              "strong": "g5547"
+            },
+            {
+              "word": "οὗτος",
+              "text_pt": "esse",
+              "text_en": "he",
+              "strong": "g3778"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "and",
+              "strong": "g2532"
+            },
+            {
+              "word": "τὸν",
+              "text_pt": "o",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "πατέρα",
+              "text_pt": "Pai",
+              "text_en": "the Father",
+              "strong": "g3962"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "and",
+              "strong": "g2532"
+            },
+            {
+              "word": "τὸν",
+              "text_pt": "o",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "υἱὸν",
+              "text_pt": "Filho",
+              "text_en": "the Son",
+              "strong": "g5207"
+            },
+            {
+              "word": "ἔχει",
+              "text_pt": "tem",
+              "text_en": "hath",
+              "strong": "g2192"
+            }
+          ]
+        },
+        {
+          "id": "63001010",
+          "text_pt": "Se alguém for até vocês e não levar esta doutrina, não o recebam em casa, nem lhe deem as boas-vindas.",
+          "words": [
+            {
+              "word": "εἴ",
+              "text_pt": "Se",
+              "text_en": "",
+              "strong": "g1487"
+            },
+            {
+              "word": "τις",
+              "text_pt": "alguém",
+              "text_en": "",
+              "strong": "g5100"
+            },
+            {
+              "word": "ἔρχεται",
+              "text_pt": "for",
+              "text_en": "there come",
+              "strong": "g2064"
+            },
+            {
+              "word": "πρὸς",
+              "text_pt": "até",
+              "text_en": "unto",
+              "strong": "g4314"
+            },
+            {
+              "word": "ὑμᾶς",
+              "text_pt": "vocês",
+              "text_en": "you",
+              "strong": "g5209"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "and",
+              "strong": "g2532"
+            },
+            {
+              "word": "ταύτην",
+              "text_pt": "esta",
+              "text_en": "",
+              "strong": "g3778"
+            },
+            {
+              "word": "τὴν",
+              "text_pt": "a",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "διδαχὴν",
+              "text_pt": "doutrina",
+              "text_en": "doctrine",
+              "strong": "g1322"
+            },
+            {
+              "word": "οὐ",
+              "text_pt": "não",
+              "text_en": "not",
+              "strong": "g3756"
+            },
+            {
+              "word": "φέρει",
+              "text_pt": "leva",
+              "text_en": "bring",
+              "strong": "g5342"
+            },
+            {
+              "word": "μὴ",
+              "text_pt": "não",
+              "text_en": "not",
+              "strong": "g3361"
+            },
+            {
+              "word": "λαμβάνετε",
+              "text_pt": "recebam",
+              "text_en": "receive",
+              "strong": "g2983"
+            },
+            {
+              "word": "αὐτῷ",
+              "text_pt": "a ele",
+              "text_en": "him",
+              "strong": "g846"
+            },
+            {
+              "word": "εἰς",
+              "text_pt": "para",
+              "text_en": "into",
+              "strong": "g1519"
+            },
+            {
+              "word": "οἰκίαν",
+              "text_pt": "casa",
+              "text_en": "your house",
+              "strong": "g3614"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "and",
+              "strong": "g2532"
+            },
+            {
+              "word": "χαίρειν",
+              "text_pt": "saudações",
+              "text_en": "God speed",
+              "strong": "g5463"
+            },
+            {
+              "word": "αὐτῷ",
+              "text_pt": "a ele",
+              "text_en": "him",
+              "strong": "g846"
+            },
+            {
+              "word": "μὴ",
+              "text_pt": "não",
+              "text_en": "not",
+              "strong": "g3361"
+            },
+            {
+              "word": "λέγετε·",
+              "text_pt": "digam",
+              "text_en": "bid",
+              "strong": "g3004"
+            }
+          ]
+        },
+        {
+          "id": "63001011",
+          "text_pt": "Porque aquele que lhe dá boas-vindas se faz cúmplice das suas obras más.",
+          "words": [
+            {
+              "word": "ὁ",
+              "text_pt": "o",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "γὰρ",
+              "text_pt": "Porque",
+              "text_en": "For",
+              "strong": "g1063"
+            },
+            {
+              "word": "λέγων",
+              "text_pt": "aquele que diz",
+              "text_en": "he that biddeth",
+              "strong": "g3004"
+            },
+            {
+              "word": "αὐτοῦ",
+              "text_pt": "a ele",
+              "text_en": "him",
+              "strong": "g846"
+            },
+            {
+              "word": "χαίρειν",
+              "text_pt": "saudações",
+              "text_en": "God speed",
+              "strong": "g5463"
+            },
+            {
+              "word": "κοινωνεῖ",
+              "text_pt": "participa",
+              "text_en": "is partaker",
+              "strong": "g2841"
+            },
+            {
+              "word": "τοῖς",
+              "text_pt": "das",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "ἔργοις",
+              "text_pt": "obras",
+              "text_en": "deeds",
+              "strong": "g2041"
+            },
+            {
+              "word": "αὐτοῦ",
+              "text_pt": "a ele",
+              "text_en": "him",
+              "strong": "g846"
+            },
+            {
+              "word": "τοῖς",
+              "text_pt": "das",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "πονηροῖς",
+              "text_pt": "más",
+              "text_en": "evil",
+              "strong": "g4190"
+            }
+          ]
+        },
+        {
+          "id": "63001012",
+          "text_pt": "Ainda tinha muitas coisas a lhes escrever, mas não quis fazê-lo com papel e tinta, pois espero ir visitá-los, e conversaremos pessoalmente, para que a nossa alegria seja completa.",
+          "words": [
+            {
+              "word": "Πολλὰ",
+              "text_pt": "muitas",
+              "text_en": "many things",
+              "strong": "g4183"
+            },
+            {
+              "word": "ἔχων",
+              "text_pt": "tendo",
+              "text_en": "Having",
+              "strong": "g2192"
+            },
+            {
+              "word": "ὑμῖν",
+              "text_pt": "a vocês",
+              "text_en": "unto you",
+              "strong": "g5213"
+            },
+            {
+              "word": "γράφειν",
+              "text_pt": "escrever",
+              "text_en": "to write",
+              "strong": "g1125"
+            },
+            {
+              "word": "οὐκ",
+              "text_pt": "não",
+              "text_en": "not",
+              "strong": "g3756"
+            },
+            {
+              "word": "ἠβουλήθην",
+              "text_pt": "quis",
+              "text_en": "I would",
+              "strong": "g1014"
+            },
+            {
+              "word": "διὰ",
+              "text_pt": "por meio de",
+              "text_en": "write with",
+              "strong": "g1223"
+            },
+            {
+              "word": "χάρτου",
+              "text_pt": "papel",
+              "text_en": "paper",
+              "strong": "g5489"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "and",
+              "strong": "g2532"
+            },
+            {
+              "word": "μέλανος",
+              "text_pt": "tinta",
+              "text_en": "ink",
+              "strong": "g3188"
+            },
+            {
+              "word": "ἀλλὰ",
+              "text_pt": "mas",
+              "text_en": "but",
+              "strong": "g235"
+            },
+            {
+              "word": "ἐλπίζω",
+              "text_pt": "espero",
+              "text_en": "I trust",
+              "strong": "g1679"
+            },
+            {
+              "word": "ἐλθεῖν",
+              "text_pt": "ir",
+              "text_en": "to come",
+              "strong": "g2064"
+            },
+            {
+              "word": "πρὸς",
+              "text_pt": "até",
+              "text_en": "to",
+              "strong": "g4314"
+            },
+            {
+              "word": "ὑμᾶς",
+              "text_pt": "vocês",
+              "text_en": "you",
+              "strong": "g5209"
+            },
+            {
+              "word": "καὶ",
+              "text_pt": "e",
+              "text_en": "and",
+              "strong": "g2532"
+            },
+            {
+              "word": "στόμα",
+              "text_pt": "boca",
+              "text_en": "face",
+              "strong": "g4750"
+            },
+            {
+              "word": "πρὸς",
+              "text_pt": "a",
+              "text_en": "to",
+              "strong": "g4314"
+            },
+            {
+              "word": "στόμα",
+              "text_pt": "boca",
+              "text_en": "face",
+              "strong": "g4750"
+            },
+            {
+              "word": "λαλῆσαι",
+              "text_pt": "falar",
+              "text_en": "speak",
+              "strong": "g2980"
+            },
+            {
+              "word": "ἵνα",
+              "text_pt": "para que",
+              "text_en": "that",
+              "strong": "g2443"
+            },
+            {
+              "word": "ἡ",
+              "text_pt": "a",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "χαρὰ",
+              "text_pt": "alegria",
+              "text_en": "joy",
+              "strong": "g5479"
+            },
+            {
+              "word": "ἡμῶν",
+              "text_pt": "nossa",
+              "text_en": "our",
+              "strong": "g2257"
+            },
+            {
+              "word": "ᾖ",
+              "text_pt": "seja",
+              "text_en": "may be",
+              "strong": "g5600"
+            },
+            {
+              "word": "πεπληρωμένη",
+              "text_pt": "completa",
+              "text_en": "full",
+              "strong": "g4137"
+            }
+          ]
+        },
+        {
+          "id": "63001013",
+          "text_pt": "Os filhos da sua irmã eleita mandam saudações.",
+          "words": [
+            {
+              "word": "Ἀσπάζεταί",
+              "text_pt": "saúda",
+              "text_en": "greet",
+              "strong": "g782"
+            },
+            {
+              "word": "σε",
+              "text_pt": "a você",
+              "text_en": "thee",
+              "strong": "g4571"
+            },
+            {
+              "word": "τὰ",
+              "text_pt": "os",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "τέκνα",
+              "text_pt": "filhos",
+              "text_en": "The children",
+              "strong": "g5043"
+            },
+            {
+              "word": "τῆς",
+              "text_pt": "da",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "ἀδελφῆς",
+              "text_pt": "irmã",
+              "text_en": "sister",
+              "strong": "g79"
+            },
+            {
+              "word": "σου",
+              "text_pt": "sua",
+              "text_en": "of thy",
+              "strong": "g4675"
+            },
+            {
+              "word": "τῆς",
+              "text_pt": "da",
+              "text_en": "",
+              "strong": "g3588"
+            },
+            {
+              "word": "ἐκλεκτῆς",
+              "text_pt": "eleita",
+              "text_en": "elect",
+              "strong": "g1588"
+            },
+            {
+              "word": "ἀμήν",
+              "text_pt": "amém",
+              "text_en": "Amen",
+              "strong": "g281"
+            }
+          ]
+        }
+      ]
+    ],
+    "dictionary": {
+      "g1014": {
+        "lemma": "βούλομαι",
+        "pronunciation": "boulomai",
+        "grammar": "verbo",
+        "translations": [
+          "querer",
+          "desejar",
+          "decidir"
+        ],
+        "definition": "querer, desejar ou estar disposto a fazer algo"
+      },
+      "g1063": {
+        "lemma": "γάρ",
+        "pronunciation": "gar",
+        "grammar": "conjunção",
+        "translations": [
+          "pois",
+          "porque"
+        ],
+        "definition": "introduz explicação, causa ou justificativa"
+      },
+      "g1097": {
+        "lemma": "γινώσκω",
+        "pronunciation": "ginōskō",
+        "grammar": "verbo",
+        "translations": [
+          "conhecer",
+          "saber",
+          "reconhecer"
+        ],
+        "definition": "conhecer ou reconhecer algo por percepção ou experiência"
+      },
+      "g1125": {
+        "lemma": "γράφω",
+        "pronunciation": "graphō",
+        "grammar": "verbo",
+        "translations": [
+          "escrever",
+          "registrar"
+        ],
+        "definition": "colocar palavras por escrito ou registrar"
+      },
+      "g1223": {
+        "lemma": "διά",
+        "pronunciation": "dia",
+        "grammar": "preposição",
+        "translations": [
+          "por",
+          "através de",
+          "por causa de"
+        ],
+        "definition": "expressa meio, passagem ou causa; o sentido depende da construção"
+      },
+      "g1322": {
+        "lemma": "διδαχή",
+        "pronunciation": "didachē",
+        "grammar": "substantivo feminino",
+        "translations": [
+          "ensino",
+          "doutrina"
+        ],
+        "definition": "conteúdo de ensino ou instrução transmitido a outros"
+      },
+      "g1438": {
+        "lemma": "ἑαυτοῦ",
+        "pronunciation": "heautou",
+        "grammar": "pronome reflexivo",
+        "translations": [
+          "a si mesmo",
+          "a si próprios"
+        ],
+        "definition": "pronome reflexivo referente ao sujeito"
+      },
+      "g1473": {
+        "lemma": "ἐγώ",
+        "pronunciation": "egō",
+        "grammar": "pronome pessoal",
+        "translations": [
+          "eu"
+        ],
+        "definition": "pronome pessoal da primeira pessoa do singular"
+      },
+      "g1487": {
+        "lemma": "εἰ",
+        "pronunciation": "ei",
+        "grammar": "conjunção condicional",
+        "translations": [
+          "se"
+        ],
+        "definition": "introduz uma condição ou hipótese"
+      },
+      "g1515": {
+        "lemma": "εἰρήνη",
+        "pronunciation": "eirēnē",
+        "grammar": "substantivo feminino",
+        "translations": [
+          "paz"
+        ],
+        "definition": "paz, harmonia, bem-estar ou reconciliação"
+      },
+      "g1519": {
+        "lemma": "εἰς",
+        "pronunciation": "eis",
+        "grammar": "preposição",
+        "translations": [
+          "para",
+          "em",
+          "dentro de"
+        ],
+        "definition": "indica direção, movimento para ou entrada em"
+      },
+      "g1525": {
+        "lemma": "εἰσέρχομαι",
+        "pronunciation": "eiserchomai",
+        "grammar": "verbo",
+        "translations": [
+          "entrar",
+          "vir",
+          "chegar"
+        ],
+        "definition": "entrar ou chegar a um lugar ou esfera"
+      },
+      "g1537": {
+        "lemma": "ἐκ",
+        "pronunciation": "ek",
+        "grammar": "preposição",
+        "translations": [
+          "de",
+          "desde",
+          "para fora de"
+        ],
+        "definition": "indica origem, procedência ou saída"
+      },
+      "g1588": {
+        "lemma": "ἐκλεκτός",
+        "pronunciation": "eklektos",
+        "grammar": "adjetivo",
+        "translations": [
+          "eleito",
+          "escolhido"
+        ],
+        "definition": "escolhido ou selecionado"
+      },
+      "g165": {
+        "lemma": "αἰών",
+        "pronunciation": "aiōn",
+        "grammar": "substantivo masculino",
+        "translations": [
+          "era",
+          "século",
+          "eternidade"
+        ],
+        "definition": "período de tempo, era ou, conforme o contexto, eternidade"
+      },
+      "g1656": {
+        "lemma": "ἔλεος",
+        "pronunciation": "eleos",
+        "grammar": "substantivo neutro",
+        "translations": [
+          "misericórdia"
+        ],
+        "definition": "compaixão ou misericórdia demonstrada"
+      },
+      "g1679": {
+        "lemma": "ἐλπίζω",
+        "pronunciation": "elpizō",
+        "grammar": "verbo",
+        "translations": [
+          "esperar",
+          "ter esperança"
+        ],
+        "definition": "esperar com confiança ou expectativa"
+      },
+      "g1722": {
+        "lemma": "ἐν",
+        "pronunciation": "en",
+        "grammar": "preposição",
+        "translations": [
+          "em",
+          "dentro de",
+          "entre"
+        ],
+        "definition": "indica localização, esfera, estado ou relação"
+      },
+      "g1785": {
+        "lemma": "ἐντολή",
+        "pronunciation": "entolē",
+        "grammar": "substantivo feminino",
+        "translations": [
+          "mandamento",
+          "ordem"
+        ],
+        "definition": "ordem, preceito ou mandamento"
+      },
+      "g191": {
+        "lemma": "ἀκούω",
+        "pronunciation": "akouō",
+        "grammar": "verbo",
+        "translations": [
+          "ouvir",
+          "escutar"
+        ],
+        "definition": "perceber pelo ouvido ou prestar atenção a uma mensagem"
+      },
+      "g2038": {
+        "lemma": "ἐργάζομαι",
+        "pronunciation": "ergazomai",
+        "grammar": "verbo",
+        "translations": [
+          "trabalhar",
+          "realizar",
+          "produzir"
+        ],
+        "definition": "trabalhar, realizar ou produzir algo"
+      },
+      "g2041": {
+        "lemma": "ἔργον",
+        "pronunciation": "ergon",
+        "grammar": "substantivo neutro",
+        "translations": [
+          "obra",
+          "trabalho",
+          "ação"
+        ],
+        "definition": "obra, ação ou resultado de uma atividade"
+      },
+      "g2064": {
+        "lemma": "ἔρχομαι",
+        "pronunciation": "erchomai",
+        "grammar": "verbo",
+        "translations": [
+          "vir",
+          "ir",
+          "chegar"
+        ],
+        "definition": "mover-se em direção a ou chegar a um lugar"
+      },
+      "g2065": {
+        "lemma": "ἐρωτάω",
+        "pronunciation": "erōtaō",
+        "grammar": "verbo",
+        "translations": [
+          "pedir",
+          "rogar",
+          "perguntar"
+        ],
+        "definition": "fazer um pedido, rogar ou perguntar"
+      },
+      "g2071": {
+        "lemma": "ἔσομαι",
+        "pronunciation": "esomai",
+        "grammar": "verbo; futuro de εἰμί",
+        "translations": [
+          "serei",
+          "estarei",
+          "será"
+        ],
+        "definition": "forma futura de ser/estar"
+      },
+      "g2076": {
+        "lemma": "εἰμί",
+        "pronunciation": "eimi",
+        "grammar": "verbo",
+        "translations": [
+          "ser",
+          "estar"
+        ],
+        "definition": "existir, ser ou estar"
+      },
+      "g2147": {
+        "lemma": "εὑρίσκω",
+        "pronunciation": "heuriskō",
+        "grammar": "verbo",
+        "translations": [
+          "achar",
+          "encontrar",
+          "descobrir"
+        ],
+        "definition": "encontrar ou descobrir algo ou alguém"
+      },
+      "g2192": {
+        "lemma": "ἔχω",
+        "pronunciation": "echō",
+        "grammar": "verbo",
+        "translations": [
+          "ter",
+          "possuir",
+          "manter"
+        ],
+        "definition": "ter, possuir, manter ou estar em determinada condição"
+      },
+      "g225": {
+        "lemma": "ἀλήθεια",
+        "pronunciation": "alētheia",
+        "grammar": "substantivo feminino",
+        "translations": [
+          "verdade"
+        ],
+        "definition": "verdade, realidade ou aquilo que corresponde ao verdadeiro"
+      },
+      "g2254": {
+        "lemma": "ἐγώ",
+        "pronunciation": "egō",
+        "grammar": "pronome pessoal; dativo plural",
+        "translations": [
+          "a nós",
+          "nos"
+        ],
+        "definition": "forma pronominal de primeira pessoa do plural"
+      },
+      "g2257": {
+        "lemma": "ἐγώ",
+        "pronunciation": "egō",
+        "grammar": "pronome pessoal; genitivo plural",
+        "translations": [
+          "de nós",
+          "nosso"
+        ],
+        "definition": "forma pronominal de primeira pessoa do plural"
+      },
+      "g2316": {
+        "lemma": "θεός",
+        "pronunciation": "theos",
+        "grammar": "substantivo masculino",
+        "translations": [
+          "Deus",
+          "deus"
+        ],
+        "definition": "divindade; no Novo Testamento, frequentemente Deus"
+      },
+      "g235": {
+        "lemma": "ἀλλά",
+        "pronunciation": "alla",
+        "grammar": "conjunção adversativa",
+        "translations": [
+          "mas",
+          "porém"
+        ],
+        "definition": "introduz contraste ou oposição"
+      },
+      "g240": {
+        "lemma": "ἀλλήλων",
+        "pronunciation": "allēlōn",
+        "grammar": "pronome recíproco",
+        "translations": [
+          "uns aos outros",
+          "entre si"
+        ],
+        "definition": "indica relação recíproca entre pessoas"
+      },
+      "g2424": {
+        "lemma": "Ἰησοῦς",
+        "pronunciation": "Iēsous",
+        "grammar": "nome próprio masculino",
+        "translations": [
+          "Jesus"
+        ],
+        "definition": "nome próprio de Jesus"
+      },
+      "g2443": {
+        "lemma": "ἵνα",
+        "pronunciation": "hina",
+        "grammar": "conjunção",
+        "translations": [
+          "para que",
+          "que"
+        ],
+        "definition": "introduz finalidade, propósito ou resultado; também pode introduzir conteúdo"
+      },
+      "g25": {
+        "lemma": "ἀγαπάω",
+        "pronunciation": "agapaō",
+        "grammar": "verbo",
+        "translations": [
+          "amar"
+        ],
+        "definition": "amar, valorizar ou demonstrar afeição"
+      },
+      "g2531": {
+        "lemma": "καθώς",
+        "pronunciation": "kathōs",
+        "grammar": "conjunção/adverbio",
+        "translations": [
+          "como",
+          "conforme"
+        ],
+        "definition": "indica modo, comparação ou conformidade"
+      },
+      "g2532": {
+        "lemma": "καί",
+        "pronunciation": "kai",
+        "grammar": "conjunção/adverbio",
+        "translations": [
+          "e",
+          "também"
+        ],
+        "definition": "liga elementos e pode acrescentar a ideia de também"
+      },
+      "g2537": {
+        "lemma": "καινός",
+        "pronunciation": "kainos",
+        "grammar": "adjetivo",
+        "translations": [
+          "novo"
+        ],
+        "definition": "novo em natureza, qualidade ou caráter"
+      },
+      "g2596": {
+        "lemma": "κατά",
+        "pronunciation": "kata",
+        "grammar": "preposição",
+        "translations": [
+          "segundo",
+          "conforme",
+          "contra"
+        ],
+        "definition": "expressa relação, conformidade ou oposição conforme a construção"
+      },
+      "g26": {
+        "lemma": "ἀγάπη",
+        "pronunciation": "agapē",
+        "grammar": "substantivo feminino",
+        "translations": [
+          "amor"
+        ],
+        "definition": "amor, afeição ou benevolência"
+      },
+      "g281": {
+        "lemma": "ἀμήν",
+        "pronunciation": "amēn",
+        "grammar": "partícula",
+        "translations": [
+          "amém",
+          "verdadeiramente"
+        ],
+        "definition": "fórmula de confirmação, afirmação ou concordância"
+      },
+      "g2841": {
+        "lemma": "κοινωνέω",
+        "pronunciation": "koinōneō",
+        "grammar": "verbo",
+        "translations": [
+          "participar",
+          "compartilhar",
+          "ter comunhão"
+        ],
+        "definition": "participar ou compartilhar algo com outros"
+      },
+      "g2889": {
+        "lemma": "κόσμος",
+        "pronunciation": "kosmos",
+        "grammar": "substantivo masculino",
+        "translations": [
+          "mundo",
+          "universo",
+          "ordem"
+        ],
+        "definition": "mundo, humanidade ou sistema ordenado conforme o contexto"
+      },
+      "g2959": {
+        "lemma": "κυρία",
+        "pronunciation": "kyria",
+        "grammar": "substantivo/adjetivo feminino",
+        "translations": [
+          "senhora",
+          "dama"
+        ],
+        "definition": "senhora ou mulher de posição ou respeito"
+      },
+      "g2962": {
+        "lemma": "κύριος",
+        "pronunciation": "kyrios",
+        "grammar": "substantivo masculino",
+        "translations": [
+          "Senhor",
+          "senhor",
+          "mestre"
+        ],
+        "definition": "senhor, mestre ou título de autoridade; usado também para Deus/Cristo"
+      },
+      "g2980": {
+        "lemma": "λαλέω",
+        "pronunciation": "laleō",
+        "grammar": "verbo",
+        "translations": [
+          "falar",
+          "conversar"
+        ],
+        "definition": "falar ou comunicar-se por palavras"
+      },
+      "g2983": {
+        "lemma": "λαμβάνω",
+        "pronunciation": "lambanō",
+        "grammar": "verbo",
+        "translations": [
+          "receber",
+          "tomar",
+          "pegar"
+        ],
+        "definition": "receber, tomar ou obter"
+      },
+      "g3004": {
+        "lemma": "λέγω",
+        "pronunciation": "legō",
+        "grammar": "verbo",
+        "translations": [
+          "dizer",
+          "falar"
+        ],
+        "definition": "dizer, declarar ou expressar em palavras"
+      },
+      "g3029": {
+        "lemma": "λίαν",
+        "pronunciation": "lian",
+        "grammar": "advérbio",
+        "translations": [
+          "muito",
+          "grandemente"
+        ],
+        "definition": "em grande medida; muito"
+      },
+      "g3188": {
+        "lemma": "μέλαν",
+        "pronunciation": "melan",
+        "grammar": "substantivo neutro",
+        "translations": [
+          "tinta",
+          "preto"
+        ],
+        "definition": "substância negra usada como tinta"
+      },
+      "g3306": {
+        "lemma": "μένω",
+        "pronunciation": "menō",
+        "grammar": "verbo",
+        "translations": [
+          "permanecer",
+          "ficar"
+        ],
+        "definition": "permanecer, continuar ou habitar em determinado estado ou lugar"
+      },
+      "g3326": {
+        "lemma": "μετά",
+        "pronunciation": "meta",
+        "grammar": "preposição",
+        "translations": [
+          "com",
+          "depois de"
+        ],
+        "definition": "com alguém ou depois de algo, conforme a construção"
+      },
+      "g3361": {
+        "lemma": "μή",
+        "pronunciation": "mē",
+        "grammar": "partícula negativa",
+        "translations": [
+          "não"
+        ],
+        "definition": "negação usada principalmente com certos modos e construções"
+      },
+      "g3408": {
+        "lemma": "μισθός",
+        "pronunciation": "misthos",
+        "grammar": "substantivo masculino",
+        "translations": [
+          "recompensa",
+          "salário"
+        ],
+        "definition": "pagamento, recompensa ou retorno por uma ação"
+      },
+      "g3441": {
+        "lemma": "μόνος",
+        "pronunciation": "monos",
+        "grammar": "adjetivo",
+        "translations": [
+          "somente",
+          "só",
+          "único"
+        ],
+        "definition": "sozinho, único ou somente"
+      },
+      "g3568": {
+        "lemma": "νῦν",
+        "pronunciation": "nyn",
+        "grammar": "advérbio",
+        "translations": [
+          "agora"
+        ],
+        "definition": "no momento presente"
+      },
+      "g3588": {
+        "lemma": "ὁ, ἡ, τό",
+        "pronunciation": "ho, hē, to",
+        "grammar": "artigo definido",
+        "translations": [
+          "o",
+          "a",
+          "os",
+          "as"
+        ],
+        "definition": "artigo definido que marca gênero, número e caso"
+      },
+      "g3614": {
+        "lemma": "οἰκία",
+        "pronunciation": "oikia",
+        "grammar": "substantivo feminino",
+        "translations": [
+          "casa",
+          "lar"
+        ],
+        "definition": "casa, residência ou família doméstica"
+      },
+      "g3670": {
+        "lemma": "ὁμολογέω",
+        "pronunciation": "homologeō",
+        "grammar": "verbo",
+        "translations": [
+          "confessar",
+          "declarar",
+          "reconhecer"
+        ],
+        "definition": "declarar publicamente, confessar ou reconhecer"
+      },
+      "g3739": {
+        "lemma": "ὅς",
+        "pronunciation": "hos",
+        "grammar": "pronome relativo",
+        "translations": [
+          "que",
+          "o qual",
+          "quem"
+        ],
+        "definition": "pronome relativo que retoma um antecedente"
+      },
+      "g3754": {
+        "lemma": "ὅτι",
+        "pronunciation": "hoti",
+        "grammar": "conjunção",
+        "translations": [
+          "que",
+          "porque"
+        ],
+        "definition": "introduz conteúdo ou causa conforme o contexto"
+      },
+      "g3756": {
+        "lemma": "οὐ",
+        "pronunciation": "ou",
+        "grammar": "partícula negativa",
+        "translations": [
+          "não"
+        ],
+        "definition": "negação objetiva, especialmente com indicativo"
+      },
+      "g3778": {
+        "lemma": "οὗτος",
+        "pronunciation": "houtos",
+        "grammar": "pronome demonstrativo",
+        "translations": [
+          "este",
+          "esse"
+        ],
+        "definition": "aponta para pessoa ou coisa no discurso"
+      },
+      "g3844": {
+        "lemma": "παρά",
+        "pronunciation": "para",
+        "grammar": "preposição",
+        "translations": [
+          "de",
+          "junto de",
+          "da parte de"
+        ],
+        "definition": "indica origem, proximidade ou relação com alguém"
+      },
+      "g3845": {
+        "lemma": "παραβαίνω",
+        "pronunciation": "parabainō",
+        "grammar": "verbo",
+        "translations": [
+          "transgredir",
+          "ultrapassar"
+        ],
+        "definition": "ultrapassar um limite ou violar uma regra"
+      },
+      "g3956": {
+        "lemma": "πᾶς",
+        "pronunciation": "pas",
+        "grammar": "adjetivo/pronome",
+        "translations": [
+          "todo",
+          "cada",
+          "todos"
+        ],
+        "definition": "indica totalidade ou cada elemento de um conjunto"
+      },
+      "g3962": {
+        "lemma": "πατήρ",
+        "pronunciation": "patēr",
+        "grammar": "substantivo masculino",
+        "translations": [
+          "pai"
+        ],
+        "definition": "pai, progenitor ou figura paterna"
+      },
+      "g4043": {
+        "lemma": "περιπατέω",
+        "pronunciation": "peripateō",
+        "grammar": "verbo",
+        "translations": [
+          "andar",
+          "viver"
+        ],
+        "definition": "andar literalmente ou conduzir a vida de determinada maneira"
+      },
+      "g4108": {
+        "lemma": "πλάνος",
+        "pronunciation": "planos",
+        "grammar": "substantivo/adjetivo",
+        "translations": [
+          "enganador",
+          "errante"
+        ],
+        "definition": "alguém que engana ou desvia outros"
+      },
+      "g4134": {
+        "lemma": "πλήρης",
+        "pronunciation": "plērēs",
+        "grammar": "adjetivo",
+        "translations": [
+          "cheio",
+          "completo",
+          "pleno"
+        ],
+        "definition": "cheio, completo ou sem falta"
+      },
+      "g4137": {
+        "lemma": "πληρόω",
+        "pronunciation": "plēroō",
+        "grammar": "verbo",
+        "translations": [
+          "encher",
+          "completar",
+          "cumprir"
+        ],
+        "definition": "tornar cheio, completar ou levar à plenitude"
+      },
+      "g4183": {
+        "lemma": "πολύς",
+        "pronunciation": "polys",
+        "grammar": "adjetivo",
+        "translations": [
+          "muito",
+          "muitos",
+          "grande"
+        ],
+        "definition": "numeroso, abundante ou grande em quantidade"
+      },
+      "g4190": {
+        "lemma": "πονηρός",
+        "pronunciation": "ponēros",
+        "grammar": "adjetivo",
+        "translations": [
+          "mau",
+          "maligno"
+        ],
+        "definition": "moralmente mau, perverso ou prejudicial"
+      },
+      "g4245": {
+        "lemma": "πρεσβύτερος",
+        "pronunciation": "presbyteros",
+        "grammar": "substantivo/adjetivo",
+        "translations": [
+          "presbítero",
+          "ancião",
+          "mais velho"
+        ],
+        "definition": "pessoa mais velha; no contexto cristão, presbítero/ancião"
+      },
+      "g4314": {
+        "lemma": "πρός",
+        "pronunciation": "pros",
+        "grammar": "preposição",
+        "translations": [
+          "para",
+          "em direção a",
+          "junto de"
+        ],
+        "definition": "indica direção, relação ou movimento em direção a alguém ou algo"
+      },
+      "g4561": {
+        "lemma": "σάρξ",
+        "pronunciation": "sarx",
+        "grammar": "substantivo feminino",
+        "translations": [
+          "carne"
+        ],
+        "definition": "carne física; por extensão, humanidade ou condição humana"
+      },
+      "g4571": {
+        "lemma": "σύ",
+        "pronunciation": "sy",
+        "grammar": "pronome pessoal; acusativo singular",
+        "translations": [
+          "te",
+          "você"
+        ],
+        "definition": "pronome pessoal da segunda pessoa do singular"
+      },
+      "g4671": {
+        "lemma": "σύ",
+        "pronunciation": "sy",
+        "grammar": "pronome pessoal; dativo singular",
+        "translations": [
+          "a ti",
+          "a você"
+        ],
+        "definition": "forma dativa da segunda pessoa do singular"
+      },
+      "g4675": {
+        "lemma": "σύ",
+        "pronunciation": "sy",
+        "grammar": "pronome pessoal; genitivo singular",
+        "translations": [
+          "de ti",
+          "teu",
+          "sua"
+        ],
+        "definition": "forma genitiva da segunda pessoa do singular"
+      },
+      "g4750": {
+        "lemma": "στόμα",
+        "pronunciation": "stoma",
+        "grammar": "substantivo neutro",
+        "translations": [
+          "boca"
+        ],
+        "definition": "boca; por extensão, fala ou expressão verbal"
+      },
+      "g500": {
+        "lemma": "ἀντίχριστος",
+        "pronunciation": "antichristos",
+        "grammar": "substantivo/adjetivo",
+        "translations": [
+          "anticristo"
+        ],
+        "definition": "aquele que se opõe a Cristo ou se apresenta em oposição a ele"
+      },
+      "g5043": {
+        "lemma": "τέκνον",
+        "pronunciation": "teknon",
+        "grammar": "substantivo neutro",
+        "translations": [
+          "filho",
+          "criança"
+        ],
+        "definition": "filho ou criança; também usado figuradamente para relação de pertencimento"
+      },
+      "g5100": {
+        "lemma": "τις",
+        "pronunciation": "tis",
+        "grammar": "pronome indefinido",
+        "translations": [
+          "alguém",
+          "algum",
+          "qualquer"
+        ],
+        "definition": "refere-se a pessoa ou coisa não especificada"
+      },
+      "g5207": {
+        "lemma": "υἱός",
+        "pronunciation": "huios",
+        "grammar": "substantivo masculino",
+        "translations": [
+          "filho"
+        ],
+        "definition": "filho, descendente ou pessoa caracterizada por uma relação"
+      },
+      "g5209": {
+        "lemma": "σύ",
+        "pronunciation": "sy",
+        "grammar": "pronome pessoal; acusativo plural",
+        "translations": [
+          "vocês",
+          "vós"
+        ],
+        "definition": "forma acusativa da segunda pessoa do plural"
+      },
+      "g5213": {
+        "lemma": "σύ",
+        "pronunciation": "sy",
+        "grammar": "pronome pessoal; dativo plural",
+        "translations": [
+          "a vocês",
+          "a vós"
+        ],
+        "definition": "forma dativa da segunda pessoa do plural"
+      },
+      "g5216": {
+        "lemma": "σύ",
+        "pronunciation": "sy",
+        "grammar": "pronome pessoal; genitivo plural",
+        "translations": [
+          "de vocês",
+          "vosso"
+        ],
+        "definition": "forma genitiva da segunda pessoa do plural"
+      },
+      "g5342": {
+        "lemma": "φέρω",
+        "pronunciation": "pherō",
+        "grammar": "verbo",
+        "translations": [
+          "levar",
+          "trazer"
+        ],
+        "definition": "levar, trazer ou carregar"
+      },
+      "g5463": {
+        "lemma": "χαίρω",
+        "pronunciation": "chairō",
+        "grammar": "verbo",
+        "translations": [
+          "alegrar-se",
+          "saudar"
+        ],
+        "definition": "alegrar-se; como fórmula, saudar ou desejar bem"
+      },
+      "g5479": {
+        "lemma": "χαρά",
+        "pronunciation": "chara",
+        "grammar": "substantivo feminino",
+        "translations": [
+          "alegria"
+        ],
+        "definition": "alegria, contentamento ou motivo de alegria"
+      },
+      "g5485": {
+        "lemma": "χάρις",
+        "pronunciation": "charis",
+        "grammar": "substantivo feminino",
+        "translations": [
+          "graça",
+          "favor"
+        ],
+        "definition": "favor, graça, benevolência ou agradecimento conforme o contexto"
+      },
+      "g5489": {
+        "lemma": "χάρτης",
+        "pronunciation": "chartēs",
+        "grammar": "substantivo masculino",
+        "translations": [
+          "papel",
+          "folha escrita"
+        ],
+        "definition": "material de escrita, especialmente folha de papiro"
+      },
+      "g5547": {
+        "lemma": "Χριστός",
+        "pronunciation": "Christos",
+        "grammar": "substantivo/adjetivo",
+        "translations": [
+          "Cristo",
+          "Ungido"
+        ],
+        "definition": "título que significa ungido; usado como título de Jesus"
+      },
+      "g5600": {
+        "lemma": "εἰμί",
+        "pronunciation": "eimi",
+        "grammar": "verbo; subjuntivo",
+        "translations": [
+          "seja",
+          "esteja"
+        ],
+        "definition": "forma do verbo ser/estar, aqui no subjuntivo"
+      },
+      "g5613": {
+        "lemma": "ὡς",
+        "pronunciation": "hōs",
+        "grammar": "conjunção/advérbio",
+        "translations": [
+          "como",
+          "assim como",
+          "como se"
+        ],
+        "definition": "indica comparação, modo ou aparência"
+      },
+      "g575": {
+        "lemma": "ἀπό",
+        "pronunciation": "apo",
+        "grammar": "preposição",
+        "translations": [
+          "de",
+          "desde",
+          "para longe de"
+        ],
+        "definition": "indica separação, origem ou ponto de partida"
+      },
+      "g618": {
+        "lemma": "ἀπολαμβάνω",
+        "pronunciation": "apolambanō",
+        "grammar": "verbo",
+        "translations": [
+          "receber",
+          "obter de volta"
+        ],
+        "definition": "receber, recuperar ou obter plenamente"
+      },
+      "g622": {
+        "lemma": "ἀπόλλυμι",
+        "pronunciation": "apollymi",
+        "grammar": "verbo",
+        "translations": [
+          "perder",
+          "destruir",
+          "perecer"
+        ],
+        "definition": "causar perda ou destruição, ou sofrer perda"
+      },
+      "g746": {
+        "lemma": "ἀρχή",
+        "pronunciation": "archē",
+        "grammar": "substantivo feminino",
+        "translations": [
+          "princípio",
+          "começo",
+          "autoridade"
+        ],
+        "definition": "início, origem ou, em certos contextos, autoridade"
+      },
+      "g782": {
+        "lemma": "ἀσπάζομαι",
+        "pronunciation": "aspazomai",
+        "grammar": "verbo; voz média/deponente",
+        "translations": [
+          "saudar",
+          "cumprimentar"
+        ],
+        "definition": "saudar ou cumprimentar alguém"
+      },
+      "g79": {
+        "lemma": "ἀδελφή",
+        "pronunciation": "adelphē",
+        "grammar": "substantivo feminino",
+        "translations": [
+          "irmã"
+        ],
+        "definition": "irmã; mulher ligada por relação familiar ou figurada"
+      },
+      "g846": {
+        "lemma": "αὐτός",
+        "pronunciation": "autos",
+        "grammar": "pronome/adjetivo",
+        "translations": [
+          "ele",
+          "ela",
+          "mesmo",
+          "seu"
+        ],
+        "definition": "pronome pessoal ou intensivo; também indica identidade ou referência"
+      },
+      "g991": {
+        "lemma": "βλέπω",
+        "pronunciation": "blepō",
+        "grammar": "verbo",
+        "translations": [
+          "ver",
+          "olhar",
+          "prestar atenção"
+        ],
+        "definition": "ver fisicamente ou prestar atenção ou cuidado"
+      }
+    }
+  }
+];
+
+    // ==========================================
+    // 1. INICIALIZAÇÃO ASSÍNCRONA E VERSÕES
+    // ==========================================
+    const versoesDisponiveis = [
+        { id: 'interlinear.json', abbrev: 'INT', nome: 'Bíblia Interlinear Trilíngue' },
+        { id: 'ara.json', abbrev: 'ARA', nome: 'Almeida Revista e Atualizada' },
+        { id: 'naa.json', abbrev: 'NAA', nome: 'Nova Almeida Atualizada' },
+        { id: 'nvi.json', abbrev: 'NVI', nome: 'Nova Versão Internacional' }
+    ];
+
+    let bibleData = []; 
+    let currentVersionId = localStorage.getItem('bible_current_version') || 'interlinear.json';
+
+    async function initAppAsync() {
+        renderVersionList(); 
+        await carregarTraducao(currentVersionId);
+    }
+
+    async function carregarTraducao(versaoId) {
+        try {
+            document.getElementById('chapter-content').innerHTML = '<p style="text-align:center; color:#999; margin-top:50px;">Carregando tradução...</p>';
+            
+            const response = await fetch(versaoId);
+            if (!response.ok) throw new Error("Erro na rede ou arquivo não encontrado");
+            bibleData = await response.json();
+            
+        } catch (error) {
+            console.warn("Usando dados locais de fallback. Falha no fetch:", error);
+            bibleData = fallbackData; // Evita tela travada caso o json falhe localmente
+            versaoId = 'interlinear.json'; 
+        }
+
+        currentVersionId = versaoId;
+        localStorage.setItem('bible_current_version', currentVersionId);
+        
+        const versaoAtiva = versoesDisponiveis.find(v => v.id === versaoId);
+        if(versaoAtiva) document.getElementById('btn-version-menu').innerText = versaoAtiva.abbrev;
+        
+        fecharGavetas();
+        atualizarIndexLivros(); 
+        initApp(); 
+    }
+
+    const bookStructure = {
+        "Antigo Testamento": {
+            "Pentateuco": ["Gênesis", "Êxodo", "Levítico", "Números", "Deuteronômio"],
+            "Livros Históricos": ["Josué", "Juízes", "Rute", "1 Samuel", "2 Samuel", "1 Reis", "2 Reis", "1 Crônicas", "2 Crônicas", "Esdras", "Neemias", "Ester"],
+            "Livros Poéticos": ["Jó", "Salmos", "Provérbios", "Eclesiastes", "Cantares de Salomão"],
+            "Profetas Maiores": ["Isaías", "Jeremias", "Lamentações", "Ezequiel", "Daniel"],
+            "Profetas Menores": ["Oséias", "Joel", "Amós", "Obadias", "Jonas", "Miquéias", "Naum", "Habacuque", "Sofonias", "Ageu", "Zacarias", "Malaquias"]
+        },
+        "Novo Testamento": {
+            "Evangelhos": ["Mateus", "Marcos", "Lucas", "João"],
+            "Histórico": ["Atos"],
+            "Cartas Paulinas": ["Romanos", "1 Coríntios", "2 Coríntios", "Gálatas", "Efésios", "Filipenses", "Colossenses", "1 Tessalonicenses", "2 Tessalonicenses", "1 Timóteo", "2 Timóteo", "Tito", "Filemom"],
+            "Cartas Gerais": ["Hebreus", "Tiago", "1 Pedro", "2 Pedro", "1 João", "2 João", "3 João", "Judas"],
+            "Profético": ["Apocalipse"]
+        }
+    };
+
+    function normalizeStr(str) { return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+    function normalizeForSearch(str) { return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\w\s]/gi, '').toLowerCase(); }
+    function escapeHTML(value) { return String(value ?? '').replace(/[&<>"']/g, ch => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[ch])); }
+    function escapeJS(value) { return String(value ?? '').replace(/\\/g, '\\\\').replace(/'/g, "\\'"); }
+
+    // ==========================================
+    // 2. ESTADO E CACHE
+    // ==========================================
+    let savedPlans = JSON.parse(localStorage.getItem('bible_plans')) || [];
+    let savedVerses = JSON.parse(localStorage.getItem('bible_saved_verses')) || [];
+    let savedNotes = JSON.parse(localStorage.getItem('bible_notes')) || [];
+    let lastRead = JSON.parse(localStorage.getItem('bible_last_read')) || { bookIdx: 0, chapIdx: 0 };
+    
+    // Estado de Idiomas Interlinear
+    let estadoIdiomas = JSON.parse(localStorage.getItem('bible_lang_state')) || { orig: true, pt: true, en: true };
+    
+    let currentBook = lastRead.bookIdx;
+    let currentChap = lastRead.chapIdx;
+    let selectedVersesMap = new Map();
+
+    const bookNameIndexMap = {};
+    function atualizarIndexLivros() {
+        for (let key in bookNameIndexMap) delete bookNameIndexMap[key];
+        bibleData.forEach((b, i) => { bookNameIndexMap[normalizeStr(b.name)] = i; });
+    }
+
+    // ==========================================
+    // 3. SISTEMA DE GAVETAS (DRAWERS)
+    // ==========================================
+    function fecharGavetas() {
+        document.querySelectorAll('.bottom-drawer').forEach(el => {
+            el.classList.remove('open');
+            el.setAttribute('aria-hidden', 'true');
+        });
+    }
+
+    function openDrawer(id) {
+        fecharGavetas();
+        const drawer = document.getElementById(id);
+        if (id === 'version-drawer') {
+            document.querySelectorAll('.version-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.id === currentVersionId);
+            });
+        }
+        if (id === 'language-drawer') syncLangButtons();
+        
+        drawer.classList.add('open');
+        drawer.setAttribute('aria-hidden', 'false');
+    }
+
+    function renderVersionList() {
+        const list = document.getElementById('version-list');
+        let html = '';
+        versoesDisponiveis.forEach(v => {
+            html += `<button class="drawer-btn version-btn" data-id="${v.id}" onclick="carregarTraducao('${v.id}')">
+                        <strong>${v.abbrev}</strong> ${v.nome}
+                     </button>`;
+        });
+        list.innerHTML = html;
+    }
+
+    function syncLangButtons() {
+        document.getElementById('lang-orig').classList.toggle('active', estadoIdiomas.orig);
+        document.getElementById('lang-pt').classList.toggle('active', estadoIdiomas.pt);
+        document.getElementById('lang-en').classList.toggle('active', estadoIdiomas.en);
+    }
+
+    function toggleLanguage(lang) {
+        estadoIdiomas[lang] = !estadoIdiomas[lang];
+        if(!estadoIdiomas.orig && !estadoIdiomas.pt && !estadoIdiomas.en) {
+            estadoIdiomas[lang] = true;
+            return showToast("Pelo menos um idioma deve estar ativo.");
+        }
+        localStorage.setItem('bible_lang_state', JSON.stringify(estadoIdiomas));
+        syncLangButtons();
+        renderChapter(currentBook, currentChap);
+    }
+
+    function openDictionary(event, strongCode, bIdx) {
+        event.stopPropagation(); // Impede selecionar o versículo
+        fecharGavetas();
+        
+        const dict = bibleData[bIdx] && bibleData[bIdx].dictionary;
+        const content = document.getElementById('dictionary-content');
+        
+        if(dict && dict[strongCode]) {
+            const data = dict[strongCode];
+            const trans = Array.isArray(data.translations) ? data.translations.join(', ') : data.translations;
+            
+            content.innerHTML = `
+                <h4 class="panel-lemma">${escapeHTML(data.lemma)} <span class="panel-strong">${escapeHTML(strongCode.toUpperCase())}</span></h4>
+                <div class="panel-pronuncia">[ ${escapeHTML(data.pronunciation)} ]</div>
+                ${data.grammar ? `<div class="panel-grammar">${escapeHTML(data.grammar)}</div>` : ''}
+                <div class="panel-traducoes">Traduções: <span style="font-weight:normal;">${escapeHTML(trans)}</span></div>
+                <div style="font-size: 15px; line-height: 1.45; color: #444; background: #f7f7f7; padding: 12px; border-radius: 8px;">
+                    ${escapeHTML(data.definition)}
+                </div>
+            `;
+        } else {
+            content.innerHTML = `<p style="color:#777;">Informação não encontrada para <strong>${escapeHTML(strongCode)}</strong>.</p>`;
+        }
+        
+        const drawer = document.getElementById('dictionary-drawer');
+        drawer.classList.add('open');
+        drawer.setAttribute('aria-hidden', 'false');
+    }
+
+    // ==========================================
+    // 4. LÓGICA DE LEITURA E INTERLINEAR
+    // ==========================================
+    function initApp() {
+        if (!bibleData || bibleData.length === 0) return;
+        if(!bibleData[currentBook] || !bibleData[currentBook].chapters || !bibleData[currentBook].chapters[currentChap]) {
+            currentBook = 0; currentChap = 0;
+        }
+        renderChapter(currentBook, currentChap);
+        setTimeout(() => buildBookSelectionUI(), 100);
+    }
+
+    function getVerseTextForCopy(verseObj) {
+        if (typeof verseObj === 'string') return verseObj;
+        if (verseObj.text_pt) return verseObj.text_pt;
+        return (verseObj.words || []).map(w => w.text_pt || w.word).join(' ').replace(/\s+/g, ' ').trim();
+    }
+
+    function renderChapter(bIdx, cIdx) {
+        if (!bibleData || !bibleData[bIdx]) return;
+        currentBook = bIdx; currentChap = cIdx;
+        localStorage.setItem('bible_last_read', JSON.stringify({ bookIdx: bIdx, chapIdx: cIdx }));
+        clearSelection(); fecharGavetas();
+
+        const book = bibleData[bIdx];
+        const verses = book.chapters[cIdx];
+        document.getElementById('pill-title').innerText = `${book.name} ${cIdx + 1}`;
+        
+        const notesInChap = savedNotes.filter(n => n.bookIdx === bIdx && n.chapIdx === cIdx);
+        
+        let html = `<div class="chapter-header"><div class="book-name">${book.name}</div><div class="chap-number">${cIdx + 1}</div></div>`;
+        
+        const numActiveLangs = (estadoIdiomas.pt ? 1 : 0) + (estadoIdiomas.en ? 1 : 0) + (estadoIdiomas.orig ? 1 : 0);
+        const isFluidMode = numActiveLangs === 1;
+        const dirAttr = (isFluidMode && estadoIdiomas.orig && !estadoIdiomas.pt && !estadoIdiomas.en) ? 'dir="rtl"' : 'dir="ltr"';
+
+        verses.forEach((verseObj, i) => {
+            let hasNote = notesInChap.some(n => n.verses.includes(i));
+            let noteClass = hasNote ? "has-note" : "";
+
+            // Versículo Simples (String vinda de JSON comum)
+            if(typeof verseObj === 'string') {
+                html += `<div class="verse fluid-mode ${noteClass}" ${dirAttr} id="v-${i}" onclick="toggleVerse(${i})">
+                            <span class="verse-num">${i + 1}</span> ${escapeHTML(verseObj)}
+                         </div>`;
+                return;
+            }
+
+            // Modo Fluido (Apenas 1 idioma selecionado)
+            if(isFluidMode) {
+                let fluidText = "";
+                if(estadoIdiomas.pt) fluidText = verseObj.text_pt || (verseObj.words || []).map(w => w.text_pt).join(' ');
+                else if(estadoIdiomas.en) fluidText = (verseObj.words || []).map(w => w.text_en).join(' ');
+                else if(estadoIdiomas.orig) fluidText = (verseObj.words || []).map(w => w.word).join(' ');
+                
+                fluidText = fluidText.replace(/\s+/g, ' ').trim();
+
+                html += `<div class="verse fluid-mode ${noteClass} ${estadoIdiomas.orig ? 'original-only':''}" ${dirAttr} id="v-${i}" onclick="toggleVerse(${i})">
+                            <span class="verse-num">${i + 1}</span> ${escapeHTML(fluidText)}
+                         </div>`;
+            } 
+            // Modo Interlinear (Múltiplos Idiomas) - Alinhamento Corrigido
+            else {
+                html += `<div class="verse interlinear-mode ${noteClass}" id="v-${i}" onclick="toggleVerse(${i})">
+                            <span class="verse-num">${i + 1}</span>
+                            <div class="interlinear-row" ${dirAttr}>`;
+                
+                (verseObj.words || []).forEach(w => {
+                    let hasStrong = w.strong ? `onclick="openDictionary(event, '${escapeJS(w.strong)}', ${bIdx})"` : '';
+                    html += `<div class="palavra-bloco" ${hasStrong}>
+                        <span class="lang-orig ${estadoIdiomas.orig ? '' : 'hidden'}">${escapeHTML(w.word)}</span>
+                        <span class="lang-pt ${estadoIdiomas.pt ? '' : 'hidden'}">${escapeHTML(w.text_pt)}</span>
+                        <span class="lang-en ${estadoIdiomas.en ? '' : 'hidden'}">${escapeHTML(w.text_en)}</span>
+                    </div>`;
+                });
+                
+                html += `</div></div>`;
+            }
+        });
+        
+        document.getElementById('chapter-content').innerHTML = html;
+        if(!document.getElementById('tab-read').classList.contains('active')) switchTab('read');
+    }
+
+    function prevChapter() {
+        if (currentChap > 0) renderChapter(currentBook, currentChap - 1);
+        else if (currentBook > 0) renderChapter(currentBook - 1, bibleData[currentBook - 1].chapters.length - 1);
+    }
+    function nextChapter() {
+        if (currentChap < bibleData[currentBook].chapters.length - 1) renderChapter(currentBook, currentChap + 1);
+        else if (currentBook < bibleData.length - 1) renderChapter(currentBook + 1, 0);
+    }
+
+    function openSelector() { fecharGavetas(); document.getElementById('selector-modal').style.display = 'flex'; renderBookListModal(); }
+    function closeSelector() { document.getElementById('selector-modal').style.display = 'none'; }
+    function renderBookListModal() {
+        document.getElementById('modal-title').innerText = "Selecione o Livro";
+        let html = '';
+        bibleData.forEach((b, i) => { html += `<div class="list-item" onclick="renderChapterGridModal(${i})"><span>${b.name}</span><span style="color:#ccc;">&#10095;</span></div>`; });
+        document.getElementById('modal-body').innerHTML = html;
+    }
+    function renderChapterGridModal(bIdx) {
+        document.getElementById('modal-title').innerText = bibleData[bIdx].name;
+        let html = `<div style="margin-bottom:15px;"><button class="btn-min" onclick="renderBookListModal()">&#10094; Voltar</button></div><div class="grid-chapters">`;
+        bibleData[bIdx].chapters.forEach((_, cIdx) => { html += `<div class="grid-item" onclick="selectFromModal(${bIdx}, ${cIdx})">${cIdx + 1}</div>`; });
+        html += `</div>`; document.getElementById('modal-body').innerHTML = html;
+    }
+    function selectFromModal(bIdx, cIdx) { closeSelector(); renderChapter(bIdx, cIdx); }
+
+    // ==========================================
+    // UI CORE: TOAST E DIALOG
+    // ==========================================
+    function showToast(msg) {
+        const toast = document.getElementById("toast"); toast.innerText = msg;
+        toast.classList.add("show"); setTimeout(() => toast.classList.remove("show"), 3000);
+    }
+    function showDialog({ type, title, msg, customHTML, extractData, onRender }) {
+        return new Promise((resolve) => {
+            const modal = document.getElementById('custom-dialog'), customBody = document.getElementById('cd-custom-body');
+            document.getElementById('cd-title').innerText = title || "Atenção"; document.getElementById('cd-msg').innerText = msg || "";
+            customBody.innerHTML = customHTML ? customHTML : (type === 'prompt' ? `<input type="text" id="cd-input-val" style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px;">` : '');
+            customBody.style.display = customHTML || type === 'prompt' ? 'block' : 'none';
+            document.getElementById('cd-btn-cancel').style.display = (type === 'alert') ? 'none' : 'block';
+            modal.style.display = 'flex';
+            if(onRender) onRender();
+
+            document.getElementById('cd-btn-ok').onclick = () => {
+                modal.style.display = 'none';
+                if (extractData) resolve(extractData());
+                else if (type === 'prompt') resolve(document.getElementById('cd-input-val').value);
+                else resolve(true);
+            };
+            document.getElementById('cd-btn-cancel').onclick = () => { modal.style.display = 'none'; resolve(null); };
+        });
+    }
+
+    function getExistingThemes(arr) {
+        let themes = new Set(); arr.forEach(v => { if(v.theme && v.theme.trim() !== "") themes.add(v.theme); }); return Array.from(themes);
+    }
+    function generateThemeSelectHTML(themes, defaultT) {
+        let opt = themes.map(t => `<option value="${t}" ${t===defaultT?'selected':''}>${t}</option>`).join('');
+        return `<select id="cd-select-theme">${opt}<option value="_NEW_">-- Novo Tema --</option></select><input type="text" id="cd-input-theme" placeholder="Digite o tema" style="display:none;">`;
+    }
+    function bindThemeSelectLogic(themes) {
+        const sel = document.getElementById('cd-select-theme'), inp = document.getElementById('cd-input-theme');
+        if(!sel || !inp) return;
+        if(themes.length === 0) { sel.value = '_NEW_'; inp.style.display = 'block'; }
+        sel.onchange = (e) => { inp.style.display = (e.target.value === '_NEW_') ? 'block' : 'none'; };
+    }
+    function extractThemeData() {
+        const sel = document.getElementById('cd-select-theme').value;
+        return (sel === '_NEW_') ? (document.getElementById('cd-input-theme').value.trim() || 'Geral') : sel;
+    }
+
+    // ==========================================
+    // ABAS
+    // ==========================================
+    function switchTab(tabId) {
+        fecharGavetas();
+        document.querySelectorAll('.tab-content, nav button').forEach(el => el.classList.remove('active'));
+        document.getElementById('tab-' + tabId).classList.add('active');
+        document.getElementById('nav-' + tabId).classList.add('active');
+        document.getElementById('reader-pill').style.display = (tabId === 'read') ? 'flex' : 'none';
+        document.querySelector('.header-actions').style.display = (tabId === 'read') ? 'flex' : 'none';
+        
+        if (tabId === 'plans') renderPlanList();
+        if (tabId === 'saved') renderSavedVerses();
+        if (tabId === 'notes') renderNotesList();
+        
+        clearSelection(); 
+        document.getElementById('main-scroll').scrollTo(0,0);
+    }
+
+    // ==========================================
+    // BUSCA
+    // ==========================================
+    function searchBible() {
+        const query = document.getElementById('search-input').value;
+        if(!query || query.trim().length < 3) return showToast("Digite pelo menos 3 caracteres.");
+        
+        const nQuery = normalizeForSearch(query);
+        const results = [];
+
+        for(let bIdx = 0; bIdx < bibleData.length; bIdx++) {
+            const book = bibleData[bIdx];
+            for(let cIdx = 0; cIdx < book.chapters.length; cIdx++) {
+                for(let vIdx = 0; vIdx < book.chapters[cIdx].length; vIdx++) {
+                    const verseObj = book.chapters[cIdx][vIdx];
+                    let searchable = "";
+                    if(typeof verseObj === 'string') {
+                        searchable = verseObj;
+                    } else {
+                        searchable = (verseObj.text_pt || '') + " " + (verseObj.words || []).map(w => w.word + " " + (w.text_pt||'') + " " + (w.text_en||'')).join(' ');
+                    }
+                    
+                    if(normalizeForSearch(searchable).includes(nQuery)) {
+                        results.push({ bIdx, cIdx, vIdx, bookName: book.name, text: getVerseTextForCopy(verseObj) });
+                    }
+                    if(results.length >= 100) break;
+                }
+                if(results.length >= 100) break;
+            }
+            if(results.length >= 100) break;
+        }
+
+        const resDiv = document.getElementById('search-results');
+        let html = `<h3 style="font-size:16px;">${results.length}${results.length === 100 ? '+' : ''} resultados</h3>`;
+        if(results.length === 0) html += `<p style="color:#777;">Nenhum resultado para "${escapeHTML(query)}".</p>`;
+        
+        results.forEach(res => {
+            html += `<div class="card" style="padding:15px; cursor:pointer;" onclick="renderChapter(${res.bIdx}, ${res.cIdx})">
+                    <p style="font-weight:700; color:var(--secondary); font-size:14px; margin-bottom:6px;">${res.bookName} ${res.cIdx + 1}:${res.vIdx + 1}</p>
+                    <p style="font-size:15px; color:#444; line-height:1.4;">${escapeHTML(res.text)}</p></div>`;
+        });
+        resDiv.innerHTML = html;
+    }
+
+    // ==========================================
+    // SELEÇÃO DE VERSÍCULOS
+    // ==========================================
+    function toggleVerse(vIdx) {
+        const el = document.getElementById(`v-${vIdx}`);
+        if(selectedVersesMap.has(vIdx)) {
+            selectedVersesMap.delete(vIdx); el.classList.remove('selected');
+        } else {
+            const plainText = getVerseTextForCopy(bibleData[currentBook].chapters[currentChap][vIdx]);
+            selectedVersesMap.set(vIdx, { v: vIdx, text: plainText });
+            el.classList.add('selected');
+        }
+        updateSelectionBar();
+    }
+
+    function clearSelection() {
+        selectedVersesMap.clear();
+        document.querySelectorAll('.verse.selected').forEach(el => el.classList.remove('selected'));
+        updateSelectionBar();
+    }
+
+    function updateSelectionBar() {
+        const bar = document.getElementById('selection-bar'), count = selectedVersesMap.size;
+        if(count > 0) { document.getElementById('selection-count').innerText = `${count} versículo${count > 1 ? 's' : ''}`; bar.style.display = 'flex'; fecharGavetas(); } 
+        else bar.style.display = 'none';
+    }
+
+    function getSelectedOrdered() { return Array.from(selectedVersesMap.values()).sort((a, b) => a.v - b.v); }
+
+    function getShortReference() {
+        if(selectedVersesMap.size === 0) return "";
+        let arr = getSelectedOrdered(), ranges = [], start = arr[0].v, prev = start;
+        for(let i = 1; i < arr.length; i++) {
+            if(arr[i].v === prev + 1) prev = arr[i].v;
+            else { ranges.push(start === prev ? (start + 1) : `${start + 1}-${prev + 1}`); start = arr[i].v; prev = start; }
+        }
+        ranges.push(start === prev ? (start + 1) : `${start + 1}-${prev + 1}`);
+        return `${bibleData[currentBook].name} ${currentChap + 1}:${ranges.join(', ')}`;
+    }
+
+    function getFormattedReference() {
+        if(selectedVersesMap.size === 0) return "";
+        let arr = getSelectedOrdered(), bName = bibleData[currentBook].name, abbrev = bName.length > 4 ? bName.substring(0, 3).toUpperCase() : bName.toUpperCase();
+        return arr.map(item => `${item.v + 1}. ${item.text}`).join(' ') + `\n[${abbrev} ${currentChap + 1}:${getShortReference().split(':')[1]}]`;
+    }
+
+    function copyFallback(text) {
+        let ta = document.createElement("textarea"); ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta);
+        ta.focus(); ta.select(); try { document.execCommand('copy'); showToast('Copiado!'); } catch(e) { showToast('Erro ao copiar.'); }
+        document.body.removeChild(ta); clearSelection();
+    }
+    function copyVerses() {
+        const txt = getFormattedReference();
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(txt).then(() => { showToast('Copiado!'); clearSelection(); }).catch(() => copyFallback(txt));
+        else copyFallback(txt);
+    }
+
+    async function saveVerses() {
+        let arr = getSelectedOrdered(), refStr = getFormattedReference(), themes = getExistingThemes(savedVerses);
+        let tName = await showDialog({type:'custom', title:'Salvar', msg:'Tema:', customHTML:generateThemeSelectHTML(themes,'Geral'), onRender:()=>bindThemeSelectLogic(themes), extractData:extractThemeData});
+        if(!tName) return;
+        savedVerses.push({ id: Date.now(), theme: tName, bookIdx: currentBook, chapIdx: currentChap, bookName: bibleData[currentBook].name, content: refStr, preview: arr[0].text.substring(0, 50)+"..."});
+        localStorage.setItem('bible_saved_verses', JSON.stringify(savedVerses)); showToast('Salvo!'); clearSelection();
+    }
+
+    function renderSavedVerses() {
+        const list = document.getElementById('saved-list'); list.innerHTML = "";
+        if(savedVerses.length === 0) return list.innerHTML = "<p style='color:#7f8c8d;'>Nenhum trecho salvo.</p>";
+        const groups = {}; savedVerses.forEach((it, i) => { let t = it.theme || "Geral"; if(!groups[t]) groups[t] = []; groups[t].push({ ...it, idx: i }); });
+        for (const [theme, items] of Object.entries(groups)) {
+            let gDiv = document.createElement('div'); gDiv.innerHTML = `<h3 class="theme-group-header">${escapeHTML(theme)}</h3>`;
+            items.forEach(it => {
+                gDiv.innerHTML += `<div class="card" style="padding:15px; margin-bottom:10px;">
+                    <p style="white-space:pre-wrap; font-size:15px; color:#444; line-height:1.4; margin-bottom:12px;">${escapeHTML(it.content)}</p>
+                    <div class="btn-group"><button class="btn-min" onclick="renderChapter(${it.bookIdx}, ${it.chapIdx})">Abrir</button>
+                    <button class="btn-min danger" onclick="deleteSavedVerse(${it.idx})">Excluir</button></div></div>`;
+            }); list.appendChild(gDiv);
+        }
+    }
+    async function deleteSavedVerse(i) { if(await showDialog({type:'confirm', title:'Excluir', msg:'Remover trecho?'})) { savedVerses.splice(i, 1); localStorage.setItem('bible_saved_verses', JSON.stringify(savedVerses)); renderSavedVerses(); showToast('Removido'); } }
+
+    async function noteVerses() {
+        let arr = getSelectedOrdered(), refStr = getFormattedReference(), shortRef = getShortReference(), themes = getExistingThemes(savedNotes);
+        let res = await showDialog({type:'custom', title:'Anotação', msg:shortRef, customHTML:`${generateThemeSelectHTML(themes,'Geral')}<textarea id="cd-input-note" placeholder="Nota..." style="width:100%;margin-top:10px;padding:12px;"></textarea>`, onRender:()=>bindThemeSelectLogic(themes), extractData:()=>({theme:extractThemeData(), text:document.getElementById('cd-input-note').value.trim()})});
+        if(!res || res.text==="") return;
+        savedNotes.push({ id:Date.now(), theme:res.theme, bookIdx:currentBook, chapIdx:currentChap, verses:arr.map(a=>a.v), bookName:bibleData[currentBook].name, reference:shortRef, refStr:refStr, noteText:res.text});
+        localStorage.setItem('bible_notes', JSON.stringify(savedNotes)); showToast('Anotação salva!'); clearSelection(); renderChapter(currentBook, currentChap);
+    }
+
+    function renderNotesList() {
+        const list = document.getElementById('notes-list'); list.innerHTML = "";
+        if(savedNotes.length === 0) return list.innerHTML = "<p style='color:#7f8c8d;'>Nenhuma anotação.</p>";
+        const groups = {}; savedNotes.forEach((it, i) => { let t = it.theme || "Geral"; if(!groups[t]) groups[t] = []; groups[t].push({ ...it, idx: i }); });
+        for (const [theme, items] of Object.entries(groups)) {
+            let gDiv = document.createElement('div'); gDiv.innerHTML = `<h3 class="theme-group-header">${escapeHTML(theme)}</h3>`;
+            items.forEach(it => {
+                gDiv.innerHTML += `<div class="card" style="padding:15px; margin-bottom:10px;">
+                    <div style="background:var(--note-bg); border-left:3px solid var(--note-border); padding:10px; margin-bottom:12px;"><p style="font-size:15px;">${escapeHTML(it.noteText).replace(/\n/g,'<br>')}</p></div>
+                    <p style="font-size:13px; color:#7f8c8d; font-weight:600; margin-bottom:10px;">${escapeHTML(it.reference||it.bookName)}</p>
+                    <div class="btn-group"><button class="btn-min" onclick="renderChapter(${it.bookIdx}, ${it.chapIdx})">Abrir</button>
+                    <button class="btn-min danger" onclick="deleteNote(${it.idx})">Excluir</button></div></div>`;
+            }); list.appendChild(gDiv);
+        }
+    }
+    async function deleteNote(i) { if(await showDialog({type:'confirm', title:'Excluir', msg:'Remover anotação?'})) { savedNotes.splice(i, 1); localStorage.setItem('bible_notes', JSON.stringify(savedNotes)); renderNotesList(); renderChapter(currentBook, currentChap); showToast('Removida'); } }
+
+    // ==========================================
+    // PLANOS DE LEITURA
+    // ==========================================
+    function togglePlanView(view) {
+        document.getElementById('plan-list-view').classList.toggle('hidden', view !== 'list');
+        document.getElementById('plan-create-view').classList.toggle('hidden', view !== 'create');
+        document.getElementById('plan-detail-view').classList.toggle('hidden', view !== 'detail');
+        if(view === 'create') calculatePlanPreview();
+    }
+    function togglePlanSplit() { document.getElementById('lbl-pace').innerText = document.getElementById('plan-split').value === 'verses' ? 'Versículos por dia' : 'Capítulos por dia'; calculatePlanPreview(); }
+    function togglePlanMode() { const m = document.getElementById('plan-mode').value; document.getElementById('mode-dates').classList.toggle('hidden', m !== 'dates'); document.getElementById('mode-pace').classList.toggle('hidden', m !== 'pace'); calculatePlanPreview(); }
+
+    function buildBookSelectionUI() {
+        const container = document.getElementById('book-selection'); let html = '';
+        for (const [testament, blocks] of Object.entries(bookStructure)) {
+            const testId = testament.replace(/\s+/g, '');
+            html += `<div class="plan-testament"><label class="plan-testament-label"><input type="checkbox" class="cb-group cb-all-${testId}" onchange="toggleCheckboxGroup('.cb-test-${testId}', this.checked)"> <span>${testament}</span></label>`;
+            for (const [block, books] of Object.entries(blocks)) {
+                const blockId = block.replace(/\s+/g, '');
+                html += `<div class="plan-block"><label class="plan-block-label"><input type="checkbox" class="cb-group cb-test-${testId} cb-blk-${blockId}" onchange="toggleCheckboxGroup('.cb-blk-items-${blockId}', this.checked)"> <span>${block}</span></label><div class="plan-books">`;
+                books.forEach(b => {
+                    const exists = bookNameIndexMap[normalizeStr(b)] !== undefined;
+                    html += `<label class="book-item" style="color:${exists ? '#333' : '#bbb'}"><input type="checkbox" class="plan-book-cb cb-test-${testId} cb-blk-items-${blockId}" value="${b}" ${exists?'':'disabled'} onchange="syncParentCheckbox()"> <span>${b}</span></label>`;
+                });
+                html += `</div></div>`;
+            } html += `</div>`;
+        }
+        container.innerHTML = html;
+        ['plan-split', 'plan-start', 'plan-end', 'plan-chapters-day'].forEach(id => document.getElementById(id).addEventListener('change', calculatePlanPreview));
+    }
+    function toggleCheckboxGroup(selector, isChecked) { document.querySelectorAll(selector).forEach(cb => { if(!cb.disabled) cb.checked = isChecked; }); calculatePlanPreview(); }
+    function syncParentCheckbox() { calculatePlanPreview(); }
+
+    function calculatePlanPreview() {
+        const sBooks = Array.from(document.querySelectorAll('.plan-book-cb:checked')).map(cb => cb.value);
+        const resDiv = document.getElementById('plan-result');
+        if(sBooks.length === 0) return resDiv.innerText = "Selecione livros.";
+        let tItems = 0; const sType = document.getElementById('plan-split').value;
+        sBooks.forEach(bName => { const bIdx = bookNameIndexMap[normalizeStr(bName)]; if(bIdx !== undefined) { const b = bibleData[bIdx]; if(sType === 'chapters') tItems += b.chapters.length; else b.chapters.forEach(c => { tItems += c.length; }); } });
+        const mode = document.getElementById('plan-mode').value, sVal = document.getElementById('plan-start').value, lbl = sType === 'chapters' ? 'cap.' : 'vers.';
+        if(!sVal) return resDiv.innerText = `Total: ${tItems} ${lbl} selecionados.`;
+        const start = new Date(sVal + "T00:00:00");
+        if(mode === 'dates') {
+            const eVal = document.getElementById('plan-end').value;
+            if(eVal) { const end = new Date(eVal + "T00:00:00"); if(start <= end) { let d = Math.ceil(Math.abs(end - start)/86400000)+1; resDiv.innerText = `${tItems} ${lbl} em ${d} dias = ~${(tItems/d).toFixed(1)}/dia.`; } else resDiv.innerText = "Data final inválida."; }
+        } else {
+            const pace = parseInt(document.getElementById('plan-chapters-day').value);
+            if(pace > 0) { let eDate = new Date(start); eDate.setDate(eDate.getDate() + Math.ceil(tItems/pace) - 1); resDiv.innerText = `${tItems} ${lbl}. Fim: ${eDate.toLocaleDateString('pt-BR')}`; }
+        }
+    }
+
+    async function generatePlan() {
+        const sBooks = Array.from(document.querySelectorAll('.plan-book-cb:checked')).map(cb => cb.value), sVal = document.getElementById('plan-start').value;
+        if(sBooks.length === 0 || !sVal) return showDialog({type:'alert', title:'Erro', msg:'Dados incompletos.'});
+        const sType = document.getElementById('plan-split').value; let flat = [];
+        sBooks.forEach(bName => {
+            const bIdx = bookNameIndexMap[normalizeStr(bName)];
+            if(bIdx !== undefined) bibleData[bIdx].chapters.forEach((arr, cIdx) => {
+                if(sType === 'chapters') flat.push({ bookIdx: bIdx, chapIdx: cIdx, bookName: bibleData[bIdx].name });
+                else arr.forEach((_, vIdx) => flat.push({ bookIdx: bIdx, chapIdx: cIdx, verseIdx: vIdx, bookName: bibleData[bIdx].name }));
+            });
+        });
+        const mode = document.getElementById('plan-mode').value; let sched = [], cDate = new Date(sVal + "T00:00:00");
+        if(mode === 'dates') {
+            const eVal = document.getElementById('plan-end').value; if(!eVal) return;
+            let d = Math.ceil(Math.abs(new Date(eVal + "T00:00:00") - new Date(sVal + "T00:00:00"))/86400000)+1;
+            const bItems = Math.floor(flat.length/d); let ext = flat.length%d, ptr = 0;
+            for(let i=0; i<d; i++) { let count = bItems + (ext > 0 ? 1 : 0); ext--; if(count > 0 && ptr < flat.length) { sched.push({ date: new Date(cDate).toISOString(), startItem: flat[ptr], endItem: flat[ptr+count-1], type: sType, completed: false }); ptr+=count; } cDate.setDate(cDate.getDate()+1); }
+        } else {
+            const pace = parseInt(document.getElementById('plan-chapters-day').value);
+            for(let i=0; i<flat.length; i+=pace) { sched.push({ date: new Date(cDate).toISOString(), startItem: flat[i], endItem: flat[Math.min(i+pace-1, flat.length-1)], type: sType, completed: false }); cDate.setDate(cDate.getDate()+1); }
+        }
+        let pName = await showDialog({type:'prompt', title:'Nome', defaultValue:'Meu Plano'});
+        if(pName === null) return;
+        savedPlans.push({ id: Date.now(), name: pName.trim() || 'Meu Plano', created: new Date().toISOString(), schedule: sched });
+        localStorage.setItem('bible_plans', JSON.stringify(savedPlans)); togglePlanView('list'); renderPlanList(); showToast("Criado!");
+    }
+
+    function renderPlanList() {
+        const list = document.getElementById('my-plans'); list.innerHTML = "";
+        if(savedPlans.length === 0) return list.innerHTML = "<p style='color:#7f8c8d;'>Nenhum plano.</p>";
+        savedPlans.forEach((plan, i) => {
+            let tot = plan.schedule.length, don = plan.schedule.filter(d => d.completed).length;
+            let isDelayed = getPlanDelayStatus(plan), delayBadge = isDelayed ? `<span class="delay-badge">Atrasado</span>` : '';
+            list.innerHTML += `<div class="card"><h3>${escapeHTML(plan.name)} ${delayBadge}<span style="float:right; font-size:13px;">${don}/${tot}</span></h3><div class="btn-group"><button class="btn-min" onclick="openPlanDetail(${i})">Abrir</button><button class="btn-min danger" onclick="deletePlan(${i})">Excluir</button></div></div>`;
+        });
+    }
+    async function deletePlan(i) { if(await showDialog({type:'confirm', title:'Excluir', msg:'Excluir plano?'})) { savedPlans.splice(i, 1); localStorage.setItem('bible_plans', JSON.stringify(savedPlans)); renderPlanList(); } }
+
+    function getPlanDelayStatus(plan) {
+        const today = new Date(); today.setHours(0,0,0,0);
+        const firstUncomp = plan.schedule.find(d => !d.completed);
+        return firstUncomp && (new Date(firstUncomp.date) < today);
+    }
+
+    function openPlanDetail(i) {
+        const plan = savedPlans[i]; document.getElementById('detail-plan-name').innerText = plan.name;
+        document.getElementById('reorg-btn-container').innerHTML = getPlanDelayStatus(plan) ? `<button class="btn" style="background:#e67e22;" onclick="reorganizePlan(${i})">⚠️ Reorganizar Plano Atrasado</button>` : `<button class="btn-min" onclick="reorganizePlan(${i})">Reorganizar Plano</button>`;
+        let html = '';
+        plan.schedule.forEach((d, j) => {
+            if(!d.startItem) return;
+            let dStr = new Date(d.date).toLocaleDateString('pt-BR');
+            let t = (d.type === 'verses' || d.startItem.verseIdx !== undefined) 
+                ? `${d.startItem.bookName} ${d.startItem.chapIdx+1}:${d.startItem.verseIdx+1} a ${d.endItem.chapIdx+1}:${d.endItem.verseIdx+1}` 
+                : `${d.startItem.bookName} ${d.startItem.chapIdx+1}`;
+            let colorToday = (!d.completed && new Date(d.date) < new Date(new Date().setHours(0,0,0,0))) ? 'color:#e74c3c;' : 'color:#95a5a6;';
+            html += `<div class="card" style="display:flex; justify-content:space-between; align-items:center; padding:15px; opacity:${d.completed?0.6:1}" id="p-${i}-${j}">
+                <div><div style="font-size:12px; font-weight:600; text-transform:uppercase; ${colorToday}">${dStr}</div><div onclick="renderChapter(${d.startItem.bookIdx}, ${d.startItem.chapIdx})" style="color:var(--primary); font-weight:600; font-size:15px; cursor:pointer;">${t}</div></div>
+                <input type="checkbox" style="width:22px;height:22px;" ${d.completed?'checked':''} onchange="toggleDayStatus(${i}, ${j}, this.checked)"></div>`;
+        });
+        document.getElementById('plan-details-content').innerHTML = html; togglePlanView('detail');
+    }
+    function toggleDayStatus(pI, dI, st) { 
+        savedPlans[pI].schedule[dI].completed = st; localStorage.setItem('bible_plans', JSON.stringify(savedPlans)); 
+        document.getElementById(`p-${pI}-${dI}`).style.opacity = st ? '0.6' : '1'; 
+        openPlanDetail(pI); // Refresh reorg badge
+    }
+
+    function getItemsForDay(startItem, endItem, type) {
+        let items = [], inRange = false;
+        for(let b=startItem.bookIdx; b<=endItem.bookIdx; b++) {
+            if(!bibleData[b]) continue;
+            for(let c=0; c<bibleData[b].chapters.length; c++) {
+                if(type === 'chapters') {
+                    if(b === startItem.bookIdx && c === startItem.chapIdx) inRange = true;
+                    if(inRange) items.push({bookIdx: b, chapIdx: c, bookName: bibleData[b].name});
+                    if(b === endItem.bookIdx && c === endItem.chapIdx) return items;
+                } else {
+                    for(let v=0; v<bibleData[b].chapters[c].length; v++) {
+                        if(b === startItem.bookIdx && c === startItem.chapIdx && v === startItem.verseIdx) inRange = true;
+                        if(inRange) items.push({bookIdx: b, chapIdx: c, verseIdx: v, bookName: bibleData[b].name});
+                        if(b === endItem.bookIdx && c === endItem.chapIdx && v === endItem.verseIdx) return items;
+                    }
+                }
+            }
+        }
+        return items;
+    }
+
+    async function reorganizePlan(planIdx) {
+        const plan = savedPlans[planIdx];
+        const firstUncompIdx = plan.schedule.findIndex(d => !d.completed);
+        if (firstUncompIdx === -1) return showDialog({type:'alert', title:'Concluído', msg:'Este plano já está todo concluído!'});
+
+        let mode = await showDialog({
+            type: 'custom', title: 'Reorganizar Plano', msg: 'Reajustar a leitura pendente a partir de hoje.',
+            customHTML: `<div class="radio-group"><label><input type="radio" name="r_mod" value="end" checked> Manter data final</label><label><input type="radio" name="r_mod" value="pace"> Manter ritmo atual</label></div>`,
+            extractData: () => document.querySelector('input[name="r_mod"]:checked').value
+        });
+        if(!mode) return;
+
+        let unread = [], type = plan.schedule[firstUncompIdx].type || 'chapters';
+        for(let i = firstUncompIdx; i < plan.schedule.length; i++) {
+            let day = plan.schedule[i]; if(day.startItem && day.endItem) unread = unread.concat(getItemsForDay(day.startItem, day.endItem, type));
+        }
+        if(unread.length === 0) return;
+
+        let today = new Date(); today.setHours(0,0,0,0);
+        let newTail = [];
+
+        if (mode === 'end') {
+            const endObj = new Date(plan.schedule[plan.schedule.length - 1].date);
+            let diffDays = Math.ceil((endObj - today) / 86400000) + 1;
+            if (diffDays <= 0) {
+                if(!await showDialog({type:'confirm', title:'Atenção', msg:'A data final já passou. Mudar para ritmo atual?'})) return;
+                mode = 'pace'; 
+            } else {
+                const bItems = Math.floor(unread.length / diffDays); let ext = unread.length % diffDays, ptr = 0, iter = new Date(today);
+                for(let i = 0; i < diffDays; i++) {
+                    let dCount = bItems + (ext > 0 ? 1 : 0); ext--;
+                    if (dCount > 0 && ptr < unread.length) {
+                        newTail.push({ date: new Date(iter).toISOString(), startItem: unread[ptr], endItem: unread[ptr + dCount - 1], type: type, completed: false }); ptr += dCount;
+                    } iter.setDate(iter.getDate() + 1);
+                }
+            }
+        }
+        if (mode === 'pace') {
+            let origPace = getItemsForDay(plan.schedule[firstUncompIdx].startItem, plan.schedule[firstUncompIdx].endItem, type).length;
+            if(origPace <= 0) origPace = 3; 
+            let iter = new Date(today);
+            for(let i = 0; i < unread.length; i += origPace) {
+                newTail.push({ date: new Date(iter).toISOString(), startItem: unread[i], endItem: unread[Math.min(i + origPace - 1, unread.length - 1)], type: type, completed: false });
+                iter.setDate(iter.getDate() + 1);
+            }
+        }
+        plan.schedule = plan.schedule.slice(0, firstUncompIdx).concat(newTail);
+        localStorage.setItem('bible_plans', JSON.stringify(savedPlans)); showToast('Plano reorganizado!'); openPlanDetail(planIdx);
+    }
+
+    window.onload = initAppAsync;
+</script>
+</body>
+</html>
