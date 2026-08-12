@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Bíblia Interlinear & Planos</title>
+<title>Bíblia & Planos</title>
 <style>
     :root {
         --primary: #2c3e50;
@@ -22,7 +22,7 @@
     }
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
     
-    /* 1. Trava o tamanho exato da tela (resolve o bug em mobile e iframes do Google Sites) */
+    /* Trava o tamanho exato da tela */
     html, body {
         height: 100dvh; 
         width: 100%;
@@ -32,7 +32,6 @@
         position: fixed; 
     }
 
-    /* 2. Transforma o corpo em uma coluna Flexbox */
     body { 
         background-color: var(--bg); 
         color: var(--text); 
@@ -40,7 +39,7 @@
         flex-direction: column;
     }
 
-    /* 3. Cabeçalho Fixo */
+    /* Cabeçalho Fixo */
     header { 
         background: var(--primary); 
         color: white; 
@@ -59,17 +58,17 @@
     .header-btn { background: transparent; border: 1px solid rgba(255,255,255,0.6); color: white; border-radius: 20px; padding: 4px 10px; font-size: 12px; font-weight: 600; cursor: pointer; transition: 0.2s; }
     .header-btn:active { background: rgba(255,255,255,0.2); }
 
-    /* 4. A tag main ocupa todo o espaço livre e é a única área que rola */
+    /* Área rolável */
     main {
         flex: 1; 
         overflow-y: auto; 
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
-        padding-bottom: 80px; /* Respiro para a pílula de navegação */
+        padding-bottom: 80px; 
         position: relative;
     }
 
-    /* 5. A barra de navegação fica assentada na base */
+    /* Navbar Inferior */
     nav { 
         flex-shrink: 0;
         width: 100%; 
@@ -121,52 +120,32 @@
     .verse.selected { background-color: var(--accent); }
     .verse.has-note { border-left: 3px solid var(--note-border); background-color: var(--note-bg); padding-left: 10px;}
 
-    /* Modo Fluido */
     .verse.fluid-mode { display: block; padding: 6px; font-size: 18px; line-height: 1.55; }
     .verse.fluid-mode.original-only { font-size: 20px; }
     .verse[dir="rtl"] { text-align: right; }
     .verse[dir="rtl"] .verse-num { margin-left: 8px; margin-right: 0; }
     
-    /* Modo Interlinear - Alinhamento Perfeito */
-    .verse.interlinear-mode { 
-        display: flex; 
-        flex-wrap: wrap; 
-        align-items: flex-end; 
-        column-gap: 5px; 
-        row-gap: 15px; 
-        padding: 10px 6px;
-    }
+    .verse.interlinear-mode { display: flex; flex-wrap: wrap; align-items: flex-end; column-gap: 5px; row-gap: 15px; padding: 10px 6px; }
     .verse.interlinear-mode .verse-num { align-self: flex-start; margin-top: 4px; }
     
-    .palavra-bloco { 
-        display: inline-flex; 
-        flex-direction: column; 
-        justify-content: flex-end; 
-        align-items: center; 
-        text-align: center; 
-        min-width: 28px; 
-        cursor: pointer; 
-        padding: 2px 4px; 
-        border-radius: 5px; 
-        transition: background 0.15s; 
-    }
+    .palavra-bloco { display: inline-flex; flex-direction: column; justify-content: flex-end; align-items: center; text-align: center; min-width: 28px; cursor: pointer; padding: 2px 4px; border-radius: 5px; transition: background 0.15s; }
     .palavra-bloco:hover { background-color: #f0f0f0; }
     .palavra-bloco:active { background: rgba(52,152,219,.10); }
     
-    /* Min-height previne quebra de alinhamento quando falta uma tradução */
     .lang-orig { font-size: 18px; color: var(--orig-color); margin-bottom: 4px; font-weight: 700; min-height: 22px; }
     .lang-pt { font-size: 15px; font-weight: 500; color: var(--pt-color); margin-bottom: 2px; min-height: 18px; }
     .lang-en { font-size: 13px; color: var(--en-color); font-style: italic; min-height: 16px; }
     .hidden { display: none !important; }
     
-    /* GAVETAS (Drawers) - Z-index 150 para cobrir o Nav (100) */
+    /* GAVETAS (Drawers) - z-index 90 (atrás da nav) */
     .bottom-drawer { 
         position: fixed; bottom: 0; left: 0; width: 100%; 
         background-color: var(--card); color: var(--text); 
         box-shadow: 0 -4px 15px rgba(0,0,0,0.2); 
         transform: translateY(110%); transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); 
-        z-index: 150; 
-        padding: 20px; padding-bottom: calc(20px + env(safe-area-inset-bottom));
+        z-index: 90; 
+        padding: 20px; 
+        padding-bottom: 80px; /* Para não ficar escondido pela nav */
         border-top-left-radius: 16px; border-top-right-radius: 16px;
         max-height: 60vh; overflow-y: auto;
     }
@@ -175,32 +154,31 @@
     .drawer-header h3 { margin: 0; font-size: 18px; color: var(--primary); }
     .drawer-close { background: none; border: none; color: var(--primary); font-size: 1.5em; cursor: pointer; font-weight: bold;}
     
-    /* Estilos Gaveta Idiomas e Traduções */
     .drawer-btn { display: block; width: 100%; text-align: left; background: transparent; border: 1px solid #d8d8d8; padding: 15px; border-radius: 12px; margin-bottom: 10px; color: #555; font-size: 15px; cursor: pointer; transition: 0.2s; font-weight: 600;}
     .drawer-btn:active { background: #f5f5f5; }
     .drawer-btn.active { border-color: var(--primary); background: var(--accent); color: var(--primary); }
 
-    /* Estilos Dicionário */
     .panel-lemma { margin: 0 0 5px 0; color: var(--orig-color); font-size: 1.5em; display: flex; align-items: baseline; gap: 10px; font-weight: bold;}
     .panel-strong { font-size: 0.5em; background: #34495e; padding: 2px 6px; border-radius: 4px; color: #bdc3c7; }
     .panel-pronuncia { font-style: italic; color: #7f8c8d; margin-bottom: 10px; }
     .panel-grammar { font-size: 12px; text-transform: uppercase; color: #95a5a6; margin-bottom: 8px; font-weight: bold;}
     .panel-traducoes { font-weight: bold; margin-bottom: 8px; color: #333; }
 
-    /* Navegação do Leitor (Pill) */
+    /* Alinhamento à direita das Referências (Notas/Salvos) */
+    .ref-right { text-align: right; font-size: 13px; color: #7f8c8d; font-weight: 600; margin-top: 8px; }
+    .ver-badge { font-size:11px; background:#eee; padding:2px 6px; border-radius:4px; margin-left: 5px; color: #555;}
+
     .reader-pill-container { position: fixed; bottom: 75px; width: 100%; display: flex; justify-content: center; z-index: 40; padding: 0 15px; pointer-events: none;}
     .reader-pill { display: flex; align-items: center; background: rgba(30, 41, 59, 0.95); backdrop-filter: blur(5px); color: white; border-radius: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); overflow: hidden; pointer-events: auto;}
     .reader-pill button { background: none; border: none; color: white; padding: 12px 20px; font-size: 18px; cursor: pointer; }
     .reader-pill button:active { background: rgba(255,255,255,0.1); }
     .pill-title { padding: 12px 20px; font-weight: 600; font-size: 15px; border-left: 1px solid rgba(255,255,255,0.1); border-right: 1px solid rgba(255,255,255,0.1); cursor: pointer; }
     
-    /* Barra de Seleção Flutuante */
     .selection-bar { display: none; position: fixed; bottom: 75px; width: 96%; left: 2%; background: var(--primary); color: white; border-radius: 12px; padding: 12px 15px; z-index: 60; box-shadow: 0 4px 15px rgba(0,0,0,0.2); justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;}
     .selection-bar span { font-weight: 600; font-size: 14px; }
     .selection-bar .actions { display: flex; align-items: center; flex-wrap: nowrap; overflow-x: auto; gap: 12px;}
     .selection-bar button { background: none; border: none; color: white; font-size: 14px; font-weight: 600; cursor: pointer; white-space: nowrap;}
     
-    /* Modais Globais */
     .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 200; justify-content: center; align-items: center; flex-direction: column; backdrop-filter: blur(2px);}
     .modal-fullscreen { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg); z-index: 200; flex-direction: column; }
     .modal-header { display: flex; align-items: center; padding: 15px 20px; background: var(--card); border-bottom: 1px solid #eee; box-shadow: 0 1px 3px rgba(0,0,0,0.05);}
@@ -234,7 +212,7 @@
     <h1 id="app-title">Bíblia</h1>
     <div class="header-actions">
         <button id="btn-version-menu" class="header-btn" onclick="openDrawer('version-drawer')">INT</button>
-        <button id="btn-lang-menu" class="header-btn" onclick="openDrawer('language-drawer')">Visão</button>
+        <button id="btn-lang-menu" class="header-btn hidden" onclick="openDrawer('language-drawer')">Idioma</button>
     </div>
 </header>
 
@@ -247,7 +225,7 @@
     <div id="version-list"></div>
 </div>
 
-<!-- GAVETA: Idiomas (Camadas Interlinear) -->
+<!-- GAVETA: Idiomas -->
 <div id="language-drawer" class="bottom-drawer" aria-hidden="true">
     <div class="drawer-header">
         <h3>Idiomas Visíveis</h3>
@@ -267,20 +245,18 @@
         <h3>Dicionário</h3>
         <button type="button" class="drawer-close" onclick="fecharGavetas()">✖</button>
     </div>
-    <div class="drawer-body" id="dictionary-content">
+    <div class="drawer-body" id="dictionary-content" style="padding-top:0;">
         <p style="color:#777;">Selecione uma palavra para consultar o dicionário.</p>
     </div>
 </div>
 
 <main id="main-scroll">
-    <!-- ABA: LEITURA -->
     <div id="tab-read" class="tab-content active" style="padding-top: 10px;">
         <div id="chapter-content">
             <p style="text-align:center; color:#999; margin-top:50px;">Carregando...</p>
         </div>
     </div>
 
-    <!-- ABA: BUSCAR -->
     <div id="tab-search" class="tab-content">
         <h2>Pesquisar na Bíblia</h2>
         <div class="card" style="display:flex; gap:10px; align-items:center; padding: 15px;">
@@ -290,7 +266,6 @@
         <div id="search-results" style="margin-top: 20px;"></div>
     </div>
 
-    <!-- ABA: PLANOS -->
     <div id="tab-plans" class="tab-content">
         <div id="plan-list-view">
             <button class="btn" onclick="togglePlanView('create')">Novo Plano</button>
@@ -302,40 +277,32 @@
                 <h2>Gerar Plano</h2>
                 <button class="btn-min" onclick="togglePlanView('list')">Cancelar</button>
             </div>
-            
             <div class="card">
                 <label style="font-weight:600; font-size:14px; color:#555;">Dividir o Plano por:</label>
                 <select id="plan-split" onchange="togglePlanSplit()">
                     <option value="chapters">Capítulos inteiros</option>
                     <option value="verses">Versículos</option>
                 </select>
-                
                 <label style="font-weight:600; font-size:14px; color:#555; margin-top:10px; display:block;">Modo de Leitura</label>
                 <select id="plan-mode" onchange="togglePlanMode()">
                     <option value="dates">Por Data (Início e Fim)</option>
                     <option value="pace">Por Ritmo (Quantidade por dia)</option>
                 </select>
-
                 <label style="font-weight:600; font-size:14px; color:#555; display:block; margin-top:10px;">Data de Início</label>
                 <input type="date" id="plan-start">
-
                 <div id="mode-dates">
                     <label style="font-weight:600; font-size:14px; color:#555; display:block;">Data Final</label>
                     <input type="date" id="plan-end">
                 </div>
-
                 <div id="mode-pace" class="hidden">
                     <label id="lbl-pace" style="font-weight:600; font-size:14px; color:#555; display:block;">Capítulos por dia</label>
                     <input type="number" id="plan-chapters-day" value="3" min="1">
                 </div>
-
                 <div id="plan-result" style="color:var(--secondary); font-weight:600; margin-bottom:15px; font-size:14px; background:#f0f8ff; padding:10px; border-radius:6px;">
                     Preencha as datas para ver a previsão.
                 </div>
-
                 <h3 style="margin-top:20px; font-size:16px;">Livros para ler</h3>
                 <div id="book-selection"></div>
-                
                 <button class="btn" style="margin-top:20px;" onclick="generatePlan()">Salvar Plano</button>
             </div>
         </div>
@@ -350,13 +317,11 @@
         </div>
     </div>
 
-    <!-- ABA: NOTAS -->
     <div id="tab-notes" class="tab-content">
         <h2>Minhas Notas</h2>
         <div id="notes-list" style="margin-top: 15px;"></div>
     </div>
 
-    <!-- ABA: SALVOS -->
     <div id="tab-saved" class="tab-content">
         <h2>Trechos Salvos</h2>
         <div id="saved-list" style="margin-top: 15px;"></div>
@@ -371,7 +336,6 @@
     <button id="nav-saved" onclick="switchTab('saved')">Salvos</button>
 </nav>
 
-<!-- Pill de Navegação do Leitor -->
 <div id="reader-pill" class="reader-pill-container">
    <div class="reader-pill">
       <button onclick="prevChapter()">&#10094;</button>
@@ -380,7 +344,6 @@
    </div>
 </div>
 
-<!-- Barra de Seleção de Versículos -->
 <div id="selection-bar" class="selection-bar">
     <span id="selection-count">1 versículo</span>
     <div class="actions">
@@ -391,7 +354,6 @@
     </div>
 </div>
 
-<!-- Modal Fullscreen para Seleção de Livro/Capítulo -->
 <div id="selector-modal" class="modal-fullscreen">
    <div class="modal-header">
        <button onclick="closeSelector()">✕</button>
@@ -400,7 +362,6 @@
    <div class="modal-body" id="modal-body"></div>
 </div>
 
-<!-- Custom Dialogs -->
 <div id="custom-dialog" class="modal-overlay">
     <div class="card dialog-card">
         <h3 id="cd-title" class="dialog-title">Atenção</h3>
@@ -413,13 +374,11 @@
     </div>
 </div>
 
-<!-- Toast Notifications -->
 <div id="toast" class="toast">Notificação</div>
 
 <script>
     // ==========================================
-    // DADOS DE FALLBACK (CASO O FETCH FALHE)
-    // 2 João completo + Dicionário (Com a nova estrutura relacional)
+    // DADOS DE FALLBACK (Garante funcionamento inicial)
     // ==========================================
     const fallbackData = [
   {
@@ -3082,14 +3041,19 @@
     // 1. INICIALIZAÇÃO ASSÍNCRONA E VERSÕES
     // ==========================================
     const versoesDisponiveis = [
-        { id: 'interlinear.json', abbrev: 'INT', nome: 'Bíblia Interlinear Trilíngue' },
+        { id: 'acf.json', abbrev: 'ACF', nome: 'Almeida Corrigida Fiel' },
         { id: 'ara.json', abbrev: 'ARA', nome: 'Almeida Revista e Atualizada' },
+        { id: 'arc.json', abbrev: 'ARC', nome: 'Almeida Revista e Corrigida' },
+        { id: 'as21.json', abbrev: 'AS21', nome: 'Almeida Século 21' },
         { id: 'naa.json', abbrev: 'NAA', nome: 'Nova Almeida Atualizada' },
-        { id: 'nvi.json', abbrev: 'NVI', nome: 'Nova Versão Internacional' }
+        { id: 'ntlh.json', abbrev: 'NTLH', nome: 'Nova Tradução na Linguagem de Hoje' },
+        { id: 'nvi.json', abbrev: 'NVI', nome: 'Nova Versão Internacional' },
+        { id: 'nvt.json', abbrev: 'NVT', nome: 'Nova Versão Transformadora' },
+        { id: 'int.json', abbrev: 'INT', nome: 'Bíblia Interlinear Trilíngue' }
     ];
 
     let bibleData = []; 
-    let currentVersionId = localStorage.getItem('bible_current_version') || 'interlinear.json';
+    let currentVersionId = localStorage.getItem('bible_current_version') || 'int.json';
 
     async function initAppAsync() {
         renderVersionList(); 
@@ -3105,21 +3069,50 @@
             bibleData = await response.json();
             
         } catch (error) {
-            console.warn("Usando dados locais de fallback. Falha no fetch:", error);
-            bibleData = fallbackData; // Evita tela travada caso o json falhe localmente
-            versaoId = 'interlinear.json'; 
+            console.warn("Usando dados locais de fallback. Falha no fetch.");
+            bibleData = fallbackData; 
+            versaoId = 'int.json'; 
         }
 
         currentVersionId = versaoId;
         localStorage.setItem('bible_current_version', currentVersionId);
         
         const versaoAtiva = versoesDisponiveis.find(v => v.id === versaoId);
-        if(versaoAtiva) document.getElementById('btn-version-menu').innerText = versaoAtiva.abbrev;
+        if(versaoAtiva) {
+            document.getElementById('btn-version-menu').innerText = versaoAtiva.abbrev;
+        }
+        
+        // Exibe o botão de idiomas SOMENTE se a versão for INT
+        const btnLangMenu = document.getElementById('btn-lang-menu');
+        if (versaoId === 'int.json') {
+            btnLangMenu.classList.remove('hidden');
+        } else {
+            btnLangMenu.classList.add('hidden');
+        }
         
         fecharGavetas();
         atualizarIndexLivros(); 
         initApp(); 
     }
+
+    // Abreviaturas para Planos e Referências
+    const abrevMap = {
+        "Gênesis": "Gn", "Êxodo": "Êx", "Levítico": "Lv", "Números": "Nm", "Deuteronômio": "Dt",
+        "Josué": "Js", "Juízes": "Jz", "Rute": "Rt", "1 Samuel": "1Sm", "2 Samuel": "2Sm",
+        "1 Reis": "1Rs", "2 Reis": "2Rs", "1 Crônicas": "1Cr", "2 Crônicas": "2Cr", "Esdras": "Ed",
+        "Neemias": "Ne", "Ester": "Et", "Jó": "Jó", "Salmos": "Sl", "Provérbios": "Pv",
+        "Eclesiastes": "Ec", "Cantares de Salomão": "Ct", "Isaías": "Is", "Jeremias": "Jr",
+        "Lamentações": "Lm", "Ezequiel": "Ez", "Daniel": "Dn", "Oséias": "Os", "Joel": "Jl",
+        "Amós": "Am", "Obadias": "Ob", "Jonas": "Jn", "Miquéias": "Mq", "Naum": "Na",
+        "Habacuque": "Hc", "Sofonias": "Sf", "Ageu": "Ag", "Zacarias": "Zc", "Malaquias": "Ml",
+        "Mateus": "Mt", "Marcos": "Mc", "Lucas": "Lc", "João": "Jo", "Atos": "At",
+        "Romanos": "Rm", "1 Coríntios": "1Co", "2 Coríntios": "2Co", "Gálatas": "Gl",
+        "Efésios": "Ef", "Filipenses": "Fp", "Colossenses": "Cl", "1 Tessalonicenses": "1Ts",
+        "2 Tessalonicenses": "2Ts", "1 Timóteo": "1Tm", "2 Timóteo": "2Tm", "Tito": "Tt",
+        "Filemom": "Fm", "Hebreus": "Hb", "Tiago": "Tg", "1 Pedro": "1Pe", "2 Pedro": "2Pe",
+        "1 João": "1Jo", "2 João": "2Jo", "3 João": "3Jo", "Judas": "Jd", "Apocalipse": "Ap"
+    };
+    function getAbbrev(name) { return abrevMap[name] || name.substring(0,3); }
 
     const bookStructure = {
         "Antigo Testamento": {
@@ -3152,7 +3145,7 @@
     let lastRead = JSON.parse(localStorage.getItem('bible_last_read')) || { bookIdx: 0, chapIdx: 0 };
     
     // Estado de Idiomas Interlinear
-    let estadoIdiomas = JSON.parse(localStorage.getItem('bible_lang_state')) || { orig: true, pt: true, en: true };
+    let estadoIdiomas = JSON.parse(localStorage.getItem('bible_lang_state')) || { orig: false, pt: true, en: false };
     
     let currentBook = lastRead.bookIdx;
     let currentChap = lastRead.chapIdx;
@@ -3237,7 +3230,7 @@
                 </div>
             `;
         } else {
-            content.innerHTML = `<p style="color:#777;">Informação não encontrada para <strong>${escapeHTML(strongCode)}</strong>.</p>`;
+            content.innerHTML = `<p style="color:#777;">Informação de dicionário não encontrada para o código <strong>${escapeHTML(strongCode)}</strong>.</p>`;
         }
         
         const drawer = document.getElementById('dictionary-drawer');
@@ -3255,6 +3248,17 @@
         }
         renderChapter(currentBook, currentChap);
         setTimeout(() => buildBookSelectionUI(), 100);
+    }
+
+    function normalizeVerseObject(verse, index) {
+        if (typeof verse === 'string') {
+            return {
+                id: `${bibleData[currentBook]?.id || 'verse'}-${index + 1}`,
+                text_pt: verse,
+                words: []
+            };
+        }
+        return verse;
     }
 
     function getVerseTextForCopy(verseObj) {
@@ -3278,35 +3282,35 @@
         let html = `<div class="chapter-header"><div class="book-name">${book.name}</div><div class="chap-number">${cIdx + 1}</div></div>`;
         
         const numActiveLangs = (estadoIdiomas.pt ? 1 : 0) + (estadoIdiomas.en ? 1 : 0) + (estadoIdiomas.orig ? 1 : 0);
-        const isFluidMode = numActiveLangs === 1;
-        const dirAttr = (isFluidMode && estadoIdiomas.orig && !estadoIdiomas.pt && !estadoIdiomas.en) ? 'dir="rtl"' : 'dir="ltr"';
+        // Só aciona o modo fluido interlinear se for a versão INT e houver apenas 1 língua ativa.
+        // Se for uma tradução comum (sem words), é sempre fluido.
+        const isInt = currentVersionId === 'int.json';
+        const isFluidMode = !isInt || numActiveLangs === 1;
+        const dirAttr = (isFluidMode && estadoIdiomas.orig && !estadoIdiomas.pt && !estadoIdiomas.en && isInt) ? 'dir="rtl"' : 'dir="ltr"';
 
-        verses.forEach((verseObj, i) => {
+        verses.forEach((verse, i) => {
+            let verseObj = normalizeVerseObject(verse, i);
             let hasNote = notesInChap.some(n => n.verses.includes(i));
             let noteClass = hasNote ? "has-note" : "";
 
-            // Versículo Simples (String vinda de JSON comum)
-            if(typeof verseObj === 'string') {
-                html += `<div class="verse fluid-mode ${noteClass}" ${dirAttr} id="v-${i}" onclick="toggleVerse(${i})">
-                            <span class="verse-num">${i + 1}</span> ${escapeHTML(verseObj)}
-                         </div>`;
-                return;
-            }
-
-            // Modo Fluido (Apenas 1 idioma selecionado)
-            if(isFluidMode) {
+            // Se for uma Bíblia normal ou modo fluido ativado
+            if(isFluidMode || !verseObj.words || verseObj.words.length === 0) {
                 let fluidText = "";
-                if(estadoIdiomas.pt) fluidText = verseObj.text_pt || (verseObj.words || []).map(w => w.text_pt).join(' ');
-                else if(estadoIdiomas.en) fluidText = (verseObj.words || []).map(w => w.text_en).join(' ');
-                else if(estadoIdiomas.orig) fluidText = (verseObj.words || []).map(w => w.word).join(' ');
+                if(typeof verse === 'string') {
+                    fluidText = verse;
+                } else {
+                    if(estadoIdiomas.pt) fluidText = verseObj.text_pt || (verseObj.words || []).map(w => w.text_pt).join(' ');
+                    else if(estadoIdiomas.en) fluidText = (verseObj.words || []).map(w => w.text_en).join(' ');
+                    else if(estadoIdiomas.orig) fluidText = (verseObj.words || []).map(w => w.word).join(' ');
+                }
                 
                 fluidText = fluidText.replace(/\s+/g, ' ').trim();
 
-                html += `<div class="verse fluid-mode ${noteClass} ${estadoIdiomas.orig ? 'original-only':''}" ${dirAttr} id="v-${i}" onclick="toggleVerse(${i})">
+                html += `<div class="verse fluid-mode ${noteClass} ${estadoIdiomas.orig && !estadoIdiomas.pt && !estadoIdiomas.en ? 'original-only':''}" ${dirAttr} id="v-${i}" onclick="toggleVerse(${i})">
                             <span class="verse-num">${i + 1}</span> ${escapeHTML(fluidText)}
                          </div>`;
             } 
-            // Modo Interlinear (Múltiplos Idiomas) - Alinhamento Corrigido
+            // Modo Interlinear
             else {
                 html += `<div class="verse interlinear-mode ${noteClass}" id="v-${i}" onclick="toggleVerse(${i})">
                             <span class="verse-num">${i + 1}</span>
@@ -3408,8 +3412,15 @@
         document.getElementById('tab-' + tabId).classList.add('active');
         document.getElementById('nav-' + tabId).classList.add('active');
         document.getElementById('reader-pill').style.display = (tabId === 'read') ? 'flex' : 'none';
-        document.querySelector('.header-actions').style.display = (tabId === 'read') ? 'flex' : 'none';
         
+        // Exibe "Idiomas" (Visão) somente se for INT
+        const btnLang = document.getElementById('btn-lang-menu');
+        if(tabId === 'read' && currentVersionId === 'int.json') {
+            btnLang.classList.remove('hidden');
+        } else {
+            btnLang.classList.add('hidden');
+        }
+
         if (tabId === 'plans') renderPlanList();
         if (tabId === 'saved') renderSavedVerses();
         if (tabId === 'notes') renderNotesList();
@@ -3437,7 +3448,7 @@
                     if(typeof verseObj === 'string') {
                         searchable = verseObj;
                     } else {
-                        searchable = (verseObj.text_pt || '') + " " + (verseObj.words || []).map(w => w.word + " " + (w.text_pt||'') + " " + (w.text_en||'')).join(' ');
+                        searchable = (verseObj.text_pt || '') + " " + (verseObj.words || []).map(w => (w.word||'') + " " + (w.text_pt||'') + " " + (w.text_en||'')).join(' ');
                     }
                     
                     if(normalizeForSearch(searchable).includes(nQuery)) {
@@ -3499,13 +3510,14 @@
             else { ranges.push(start === prev ? (start + 1) : `${start + 1}-${prev + 1}`); start = arr[i].v; prev = start; }
         }
         ranges.push(start === prev ? (start + 1) : `${start + 1}-${prev + 1}`);
-        return `${bibleData[currentBook].name} ${currentChap + 1}:${ranges.join(', ')}`;
+        let abbrev = getAbbrev(bibleData[currentBook].name);
+        return `${abbrev} ${currentChap + 1}:${ranges.join(', ')}`;
     }
 
     function getFormattedReference() {
         if(selectedVersesMap.size === 0) return "";
-        let arr = getSelectedOrdered(), bName = bibleData[currentBook].name, abbrev = bName.length > 4 ? bName.substring(0, 3).toUpperCase() : bName.toUpperCase();
-        return arr.map(item => `${item.v + 1}. ${item.text}`).join(' ') + `\n[${abbrev} ${currentChap + 1}:${getShortReference().split(':')[1]}]`;
+        let arr = getSelectedOrdered();
+        return arr.map(item => `${item.v + 1}. ${item.text}`).join(' ') + `\n${getShortReference()}`;
     }
 
     function copyFallback(text) {
@@ -3519,11 +3531,12 @@
         else copyFallback(txt);
     }
 
+    // SALVOS
     async function saveVerses() {
         let arr = getSelectedOrdered(), refStr = getFormattedReference(), themes = getExistingThemes(savedVerses);
         let tName = await showDialog({type:'custom', title:'Salvar', msg:'Tema:', customHTML:generateThemeSelectHTML(themes,'Geral'), onRender:()=>bindThemeSelectLogic(themes), extractData:extractThemeData});
         if(!tName) return;
-        savedVerses.push({ id: Date.now(), theme: tName, bookIdx: currentBook, chapIdx: currentChap, bookName: bibleData[currentBook].name, content: refStr, preview: arr[0].text.substring(0, 50)+"..."});
+        savedVerses.push({ id: Date.now(), theme: tName, bookIdx: currentBook, chapIdx: currentChap, bookName: bibleData[currentBook].name, content: refStr, version: currentVersionId.replace('.json', '').toUpperCase(), preview: arr[0].text.substring(0, 50)+"..."});
         localStorage.setItem('bible_saved_verses', JSON.stringify(savedVerses)); showToast('Salvo!'); clearSelection();
     }
 
@@ -3531,18 +3544,34 @@
         const list = document.getElementById('saved-list'); list.innerHTML = "";
         if(savedVerses.length === 0) return list.innerHTML = "<p style='color:#7f8c8d;'>Nenhum trecho salvo.</p>";
         const groups = {}; savedVerses.forEach((it, i) => { let t = it.theme || "Geral"; if(!groups[t]) groups[t] = []; groups[t].push({ ...it, idx: i }); });
+        
         for (const [theme, items] of Object.entries(groups)) {
             let gDiv = document.createElement('div'); gDiv.innerHTML = `<h3 class="theme-group-header">${escapeHTML(theme)}</h3>`;
             items.forEach(it => {
+                // Remove os colchetes caso ainda exista de salvamentos antigos e alinha à direita
+                let dispRef = it.content.split('\n').pop().replace(/[\[\]]/g, '');
+                let textOnly = it.content.substring(0, it.content.lastIndexOf('\n'));
+                let vTag = it.version ? `<span class="ver-badge">${escapeHTML(it.version)}</span>` : '';
+                
                 gDiv.innerHTML += `<div class="card" style="padding:15px; margin-bottom:10px;">
-                    <p style="white-space:pre-wrap; font-size:15px; color:#444; line-height:1.4; margin-bottom:12px;">${escapeHTML(it.content)}</p>
-                    <div class="btn-group"><button class="btn-min" onclick="renderChapter(${it.bookIdx}, ${it.chapIdx})">Abrir</button>
-                    <button class="btn-min danger" onclick="deleteSavedVerse(${it.idx})">Excluir</button></div></div>`;
+                    <p style="white-space:pre-wrap; font-size:15px; color:#444; line-height:1.4; margin-bottom:12px;">${escapeHTML(textOnly)}</p>
+                    <p class="ref-right">${escapeHTML(dispRef)}${vTag}</p>
+                    <div class="btn-group" style="margin-top:10px;">
+                        <button class="btn-min" onclick="renderChapter(${it.bookIdx}, ${it.chapIdx})">Abrir</button>
+                        <button class="btn-min" onclick="moveSavedVerse(${it.idx})">Mover</button>
+                        <button class="btn-min danger" onclick="deleteSavedVerse(${it.idx})">Excluir</button>
+                    </div></div>`;
             }); list.appendChild(gDiv);
         }
     }
     async function deleteSavedVerse(i) { if(await showDialog({type:'confirm', title:'Excluir', msg:'Remover trecho?'})) { savedVerses.splice(i, 1); localStorage.setItem('bible_saved_verses', JSON.stringify(savedVerses)); renderSavedVerses(); showToast('Removido'); } }
+    async function moveSavedVerse(i) {
+        let it = savedVerses[i], themes = getExistingThemes(savedVerses);
+        let nTh = await showDialog({type:'custom', title:'Mover', msg:'Selecione o novo tema:', customHTML:generateThemeSelectHTML(themes, it.theme||'Geral'), onRender:()=>bindThemeSelectLogic(themes), extractData:extractThemeData});
+        if(nTh) { savedVerses[i].theme = nTh; localStorage.setItem('bible_saved_verses', JSON.stringify(savedVerses)); renderSavedVerses(); showToast('Movido!'); }
+    }
 
+    // NOTAS
     async function noteVerses() {
         let arr = getSelectedOrdered(), refStr = getFormattedReference(), shortRef = getShortReference(), themes = getExistingThemes(savedNotes);
         let res = await showDialog({type:'custom', title:'Anotação', msg:shortRef, customHTML:`${generateThemeSelectHTML(themes,'Geral')}<textarea id="cd-input-note" placeholder="Nota..." style="width:100%;margin-top:10px;padding:12px;"></textarea>`, onRender:()=>bindThemeSelectLogic(themes), extractData:()=>({theme:extractThemeData(), text:document.getElementById('cd-input-note').value.trim()})});
@@ -3555,16 +3584,27 @@
         const list = document.getElementById('notes-list'); list.innerHTML = "";
         if(savedNotes.length === 0) return list.innerHTML = "<p style='color:#7f8c8d;'>Nenhuma anotação.</p>";
         const groups = {}; savedNotes.forEach((it, i) => { let t = it.theme || "Geral"; if(!groups[t]) groups[t] = []; groups[t].push({ ...it, idx: i }); });
+        
         for (const [theme, items] of Object.entries(groups)) {
             let gDiv = document.createElement('div'); gDiv.innerHTML = `<h3 class="theme-group-header">${escapeHTML(theme)}</h3>`;
             items.forEach(it => {
+                let dispRef = (it.reference || `${it.bookName} ${it.chapIdx + 1}`).replace(/[\[\]]/g, '');
+                
                 gDiv.innerHTML += `<div class="card" style="padding:15px; margin-bottom:10px;">
-                    <div style="background:var(--note-bg); border-left:3px solid var(--note-border); padding:10px; margin-bottom:12px;"><p style="font-size:15px;">${escapeHTML(it.noteText).replace(/\n/g,'<br>')}</p></div>
-                    <p style="font-size:13px; color:#7f8c8d; font-weight:600; margin-bottom:10px;">${escapeHTML(it.reference||it.bookName)}</p>
-                    <div class="btn-group"><button class="btn-min" onclick="renderChapter(${it.bookIdx}, ${it.chapIdx})">Abrir</button>
-                    <button class="btn-min danger" onclick="deleteNote(${it.idx})">Excluir</button></div></div>`;
+                    <div style="background:var(--note-bg); border-left:3px solid var(--note-border); padding:10px; margin-bottom:12px;"><p style="font-size:15px; white-space:pre-wrap;">${escapeHTML(it.noteText)}</p></div>
+                    <p class="ref-right">${escapeHTML(dispRef)}</p>
+                    <div class="btn-group" style="margin-top:10px;">
+                        <button class="btn-min" onclick="renderChapter(${it.bookIdx}, ${it.chapIdx})">Abrir</button>
+                        <button class="btn-min" onclick="editNote(${it.idx})">Editar</button>
+                        <button class="btn-min danger" onclick="deleteNote(${it.idx})">Excluir</button>
+                    </div></div>`;
             }); list.appendChild(gDiv);
         }
+    }
+    async function editNote(i) {
+        let it = savedNotes[i], themes = getExistingThemes(savedNotes);
+        let res = await showDialog({type:'custom', title:'Editar Anotação', msg:'Edite o tema ou nota:', customHTML:`${generateThemeSelectHTML(themes, it.theme||'Geral')}<textarea id="cd-input-note" style="width:100%;margin-top:10px;padding:12px;">${escapeHTML(it.noteText)}</textarea>`, onRender:()=>bindThemeSelectLogic(themes), extractData:()=>({theme:extractThemeData(), text:document.getElementById('cd-input-note').value.trim()})});
+        if(res && res.text!=="") { savedNotes[i].theme = res.theme; savedNotes[i].noteText = res.text; localStorage.setItem('bible_notes', JSON.stringify(savedNotes)); renderNotesList(); showToast('Atualizada!'); }
     }
     async function deleteNote(i) { if(await showDialog({type:'confirm', title:'Excluir', msg:'Remover anotação?'})) { savedNotes.splice(i, 1); localStorage.setItem('bible_notes', JSON.stringify(savedNotes)); renderNotesList(); renderChapter(currentBook, currentChap); showToast('Removida'); } }
 
@@ -3670,12 +3710,25 @@
         plan.schedule.forEach((d, j) => {
             if(!d.startItem) return;
             let dStr = new Date(d.date).toLocaleDateString('pt-BR');
-            let t = (d.type === 'verses' || d.startItem.verseIdx !== undefined) 
-                ? `${d.startItem.bookName} ${d.startItem.chapIdx+1}:${d.startItem.verseIdx+1} a ${d.endItem.chapIdx+1}:${d.endItem.verseIdx+1}` 
-                : `${d.startItem.bookName} ${d.startItem.chapIdx+1}`;
+            let first = d.startItem, last = d.endItem;
+            let b1 = getAbbrev(first.bookName);
+            let b2 = getAbbrev(last.bookName);
+            
+            let title = "";
+            if(d.type === 'verses' || first.verseIdx !== undefined) {
+                let t1 = `${b1} ${first.chapIdx+1}:${first.verseIdx+1}`;
+                let t2 = `${b2} ${last.chapIdx+1}:${last.verseIdx+1}`;
+                title = (t1 === t2) ? t1 : `${t1} - ${t2}`;
+            } else {
+                if (first.bookIdx === last.bookIdx) {
+                    title = (first.chapIdx === last.chapIdx) ? `${b1} ${first.chapIdx+1}` : `${b1} ${first.chapIdx+1} - ${last.chapIdx+1}`;
+                } else {
+                    title = `${b1} ${first.chapIdx+1} - ${b2} ${last.chapIdx+1}`;
+                }
+            }
             let colorToday = (!d.completed && new Date(d.date) < new Date(new Date().setHours(0,0,0,0))) ? 'color:#e74c3c;' : 'color:#95a5a6;';
             html += `<div class="card" style="display:flex; justify-content:space-between; align-items:center; padding:15px; opacity:${d.completed?0.6:1}" id="p-${i}-${j}">
-                <div><div style="font-size:12px; font-weight:600; text-transform:uppercase; ${colorToday}">${dStr}</div><div onclick="renderChapter(${d.startItem.bookIdx}, ${d.startItem.chapIdx})" style="color:var(--primary); font-weight:600; font-size:15px; cursor:pointer;">${t}</div></div>
+                <div><div style="font-size:12px; font-weight:600; text-transform:uppercase; ${colorToday}">${dStr}</div><div onclick="renderChapter(${first.bookIdx}, ${first.chapIdx})" style="color:var(--primary); font-weight:600; font-size:15px; margin-top:2px; cursor:pointer;">${title}</div></div>
                 <input type="checkbox" style="width:22px;height:22px;" ${d.completed?'checked':''} onchange="toggleDayStatus(${i}, ${j}, this.checked)"></div>`;
         });
         document.getElementById('plan-details-content').innerHTML = html; togglePlanView('detail');
