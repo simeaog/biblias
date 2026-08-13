@@ -390,6 +390,8 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     let selectedVersesMap = new Map();
     let pendingVerseScroll = null;
 
+    const comparisonCache = new Map();
+
     const bookNameIndexMap = {};
     function atualizarIndexLivros() {
         for (let key in bookNameIndexMap) delete bookNameIndexMap[key];
@@ -1210,11 +1212,40 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     function updateSelectionBar() {
         const bar = document.getElementById('selection-bar');
         const count = selectedVersesMap.size;
-        const viewNoteBtn = document.getElementById('selection-view-note');
-        const hasNote = getSelectedNotes().length > 0;
-        if (viewNoteBtn) viewNoteBtn.classList.toggle('hidden', !hasNote);
+
+        const viewNoteBtn =
+            document.getElementById('selection-view-note');
+
+        const compareBtn =
+            document.getElementById('selection-compare');
+
+        const hasNote =
+            getSelectedNotes().length > 0;
+
+        // Ver nota:
+        // aparece quando existe pelo menos uma nota
+        // relacionada à seleção.
+        if (viewNoteBtn) {
+            viewNoteBtn.classList.toggle(
+                'hidden',
+                !hasNote
+            );
+        }
+
+        // Comparar:
+        // deliberadamente disponível somente para
+        // exatamente um versículo.
+        if (compareBtn) {
+            compareBtn.classList.toggle(
+                'hidden',
+                count !== 1
+            );
+        }
+
         if (count > 0) {
-            document.getElementById('selection-count').innerText = `${count} versículo${count > 1 ? 's' : ''}`;
+            document.getElementById('selection-count').innerText =
+                `${count} versículo${count > 1 ? 's' : ''}`;
+
             bar.style.display = 'flex';
         } else {
             bar.style.display = 'none';
@@ -1222,15 +1253,345 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     }
 
     function viewSelectedNote() {
-        const notes = getSelectedNotes();
-        if (!notes.length) return showToast('Nenhuma nota encontrada para a seleção.');
-        const target = notes[0];
+
+        const notes =
+            getSelectedNotes();
+
+        if (!notes.length) {
+            return showToast(
+                'Nenhuma nota encontrada para a seleção.'
+            );
+        }
+
+        const target =
+            notes[0];
+
         switchTab('notes');
+
         requestAnimationFrame(() => {
-            const card = document.getElementById(`note-card-${target.id}`);
-            if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            const card =
+                document.getElementById(
+                    `note-card-${target.id}`
+                );
+
+            if (!card) return;
+
+            card.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+
+            card.classList.remove(
+                'note-jump-highlight'
+            );
+
+            // força reinício da animação
+            void card.offsetWidth;
+
+            card.classList.add(
+                'note-jump-highlight'
+            );
+
+            setTimeout(() => {
+                card.classList.remove(
+                    'note-jump-highlight'
+                );
+            }, 1900);
         });
+
         clearSelection();
+    }
+
+    // =========================================================
+    // COMPARAÇÃO DE TRADUÇÕES
+    // =========================================================
+
+    function getComparisonVerseText(verseObj) {
+        if (typeof verseObj === 'string') {
+            return verseObj;
+        }
+
+        if (!verseObj) {
+            return '';
+        }
+
+        // Traduções normais
+        if (verseObj.text_pt) {
+            return verseObj.text_pt;
+        }
+
+        // Estruturas que eventualmente tragam texto
+        // diretamente em outros campos.
+        if (verseObj.text) {
+            return verseObj.text;
+        }
+
+        // Fallback para estruturas baseadas em words.
+        if (Array.isArray(verseObj.words)) {
+            return verseObj.words
+                .map(word => word.text_pt || word.word || '')
+                .join(' ')
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+
+        return '';
+    }
+
+
+    function findComparisonBook(data, currentBookName) {
+        if (!Array.isArray(data)) {
+            return null;
+        }
+
+        const target =
+            normalizeStr(currentBookName || '');
+
+        const index =
+            data.findIndex(book =>
+                normalizeStr(book.name || '') === target
+            );
+
+        return index >= 0 ? index : null;
+    }
+
+
+    async function loadComparisonVersion(versionId) {
+
+        if (comparisonCache.has(versionId)) {
+            return comparisonCache.get(versionId);
+        }
+
+        const response =
+            await fetch(versionId, {
+                cache: 'no-cache'
+            });
+
+        if (!response.ok) {
+            throw new Error(
+                `Não foi possível carregar ${versionId}`
+            );
+        }
+
+        const data = await response.json();
+
+        comparisonCache.set(
+            versionId,
+            data
+        );
+
+        return data;
+    }
+
+
+    function getComparisonReference() {
+        const book =
+            bibleData[currentBook];
+
+        if (!book) {
+            return '';
+        }
+
+        return `${getAbbrev(book.name)} ${currentChap + 1}:${getSelectedOrdered()[0].v + 1}`;
+    }
+
+
+    function renderComparisonVersionButtons(activeVersionId) {
+
+        const container =
+            document.getElementById(
+                'comparison-version-list'
+            );
+
+        if (!container) return;
+
+        const available =
+            versoesDisponiveis.filter(
+                version =>
+                    version.id !== currentVersionId
+            );
+
+        container.innerHTML =
+            available.map(version => `
+                <button
+                    type="button"
+                    class="comparison-version-btn"
+                    data-version-id="${escapeHTML(version.id)}"
+                    onclick="selectComparisonVersion('${escapeJS(version.id)}')">
+                    ${escapeHTML(version.abbrev)}
+                </button>
+            `).join('');
+
+        container
+            .querySelectorAll('.comparison-version-btn')
+            .forEach(button => {
+                button.classList.toggle(
+                    'active',
+                    button.dataset.versionId === activeVersionId
+                );
+            });
+    }
+
+
+    async function selectComparisonVersion(versionId) {
+
+        if (!selectedVersesMap.size ||
+            selectedVersesMap.size !== 1) {
+            return;
+        }
+
+        const content =
+            document.getElementById(
+                'comparison-content'
+            );
+
+        if (!content) return;
+
+        renderComparisonVersionButtons(versionId);
+
+        content.innerHTML = `
+            <p class="comparison-loading">
+                Carregando tradução...
+            </p>
+        `;
+
+        try {
+
+            const data =
+                await loadComparisonVersion(
+                    versionId
+                );
+
+            const currentBookName =
+                bibleData[currentBook]?.name;
+
+            const comparisonBookIndex =
+                findComparisonBook(
+                    data,
+                    currentBookName
+                );
+
+            if (comparisonBookIndex === null) {
+                throw new Error(
+                    'Livro não encontrado na tradução selecionada.'
+                );
+            }
+
+            const chapter =
+                data[comparisonBookIndex]
+                    ?.chapters?.[currentChap];
+
+            if (!chapter) {
+                throw new Error(
+                    'Capítulo não encontrado na tradução selecionada.'
+                );
+            }
+
+            const selected =
+                getSelectedOrdered()[0];
+
+            const verse =
+                chapter[selected.v];
+
+            if (verse === undefined) {
+                throw new Error(
+                    'Versículo não encontrado na tradução selecionada.'
+                );
+            }
+
+            const text =
+                getComparisonVerseText(verse);
+
+            const meta =
+                versoesDisponiveis.find(
+                    v => v.id === versionId
+                );
+
+            content.innerHTML = `
+                <div class="comparison-reference">
+                    ${escapeHTML(getComparisonReference())}
+                </div>
+
+                <div class="comparison-version-name">
+                    ${escapeHTML(meta?.nome || versionId)}
+                </div>
+
+                <div class="comparison-text">
+                    ${escapeHTML(text)}
+                </div>
+            `;
+
+        } catch (error) {
+
+            console.error(
+                'Erro na comparação:',
+                error
+            );
+
+            content.innerHTML = `
+                <p class="comparison-error">
+                    Não foi possível carregar esta tradução.
+                </p>
+            `;
+        }
+    }
+
+
+    async function compareSelectedVerse() {
+
+        if (selectedVersesMap.size !== 1) {
+            return showToast(
+                'Selecione apenas um versículo para comparar.'
+            );
+        }
+
+        const selected =
+            getSelectedOrdered()[0];
+
+        // Mantém o versículo selecionado visível
+        // e faz o mesmo destaque usado na navegação.
+        scrollToVerse(selected.v);
+
+        const drawer =
+            document.getElementById(
+                'comparison-drawer'
+            );
+
+        if (!drawer) return;
+
+        fecharGavetas();
+
+        drawer.classList.add('open');
+
+        drawer.setAttribute(
+            'aria-hidden',
+            'false'
+        );
+
+        // A tradução ativa fica fora da lista.
+        const alternatives =
+            versoesDisponiveis.filter(
+                version =>
+                    version.id !== currentVersionId
+            );
+
+        if (!alternatives.length) {
+            document.getElementById(
+                'comparison-content'
+            ).innerHTML = `
+                <p class="comparison-error">
+                    Não existem outras traduções disponíveis.
+                </p>
+            `;
+
+            return;
+        }
+
+        // Primeira alternativa disponível.
+        await selectComparisonVersion(
+            alternatives[0].id
+        );
     }
 
     function getSelectedOrdered() { return Array.from(selectedVersesMap.values()).sort((a, b) => a.v - b.v); }

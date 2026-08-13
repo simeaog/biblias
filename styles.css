@@ -346,3 +346,115 @@
 .dictionary-tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
 .dictionary-tag { background:#eef2f5; color:#4b5963; border-radius:999px; padding:4px 8px; font-size:11px; font-weight:700; }
 .dictionary-note { font-size: 13px; line-height: 1.45; color: #666; }
+
+/* =========================================================
+   COMPARAÇÃO DE TRADUÇÕES
+   ========================================================= */
+
+.comparison-drawer {
+    z-index: 1002;
+}
+
+.comparison-version-list {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 10px 0 12px;
+    border-bottom: 1px solid #e5e5e5;
+    scrollbar-width: thin;
+}
+
+.comparison-version-btn {
+    flex: 0 0 auto;
+    border: 1px solid #d6dbe0;
+    background: #f7f8f9;
+    color: #444;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.comparison-version-btn.active {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+.comparison-content {
+    padding: 14px 2px 8px;
+    line-height: 1.65;
+    color: #333;
+    overflow-y: auto;
+    max-height: 42vh;
+}
+
+.comparison-reference {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 8px;
+}
+
+.comparison-version-name {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.comparison-text {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.comparison-loading,
+.comparison-error {
+    color: #777;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+#selection-compare {
+    display: inline-flex;
+}
+
+#selection-compare.hidden {
+    display: none;
+}
+
+.note-jump-highlight {
+    animation: noteJumpHighlight 1.9s ease-out;
+}
+
+@keyframes noteJumpHighlight {
+    0% {
+        box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.75);
+    }
+
+    35% {
+        box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.55);
+    }
+
+    70% {
+        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0);
+    }
+}
+
+@media (max-width: 600px) {
+    .comparison-content {
+        max-height: 48vh;
+    }
+
+    .comparison-text {
+        font-size: 16px;
+    }
+
+    .comparison-version-btn {
+        padding: 7px 10px;
+    }
+}

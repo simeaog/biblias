@@ -50,6 +50,20 @@
     </div>
 </div>
 
+<!-- GAVETA: Comparação de Traduções -->
+<div id="comparison-drawer" class="bottom-drawer comparison-drawer" aria-hidden="true">
+    <div class="drawer-header">
+        <h3>Comparar traduções</h3>
+        <button type="button" class="drawer-close" onclick="fecharGavetas()">✖</button>
+    </div>
+
+    <div id="comparison-version-list" class="comparison-version-list"></div>
+
+    <div id="comparison-content" class="comparison-content">
+        <p class="comparison-loading">Selecione uma tradução.</p>
+    </div>
+</div>
+
 <main id="main-scroll">
     <div id="tab-read" class="tab-content active" style="padding-top: 10px;">
         <div id="chapter-content">
@@ -151,6 +165,7 @@
         <button onclick="saveVerses()">Salvar</button>
         <button onclick="noteVerses()">Anotar</button>
         <button id="selection-view-note" class="hidden" onclick="viewSelectedNote()">Ver nota</button>
+        <button id="selection-compare" class="hidden" onclick="compareSelectedVerse()">Comparar</button>
         <button onclick="clearSelection()" style="font-size:20px; margin-left:10px;">✕</button>
     </div>
 </div>

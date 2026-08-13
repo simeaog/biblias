@@ -405,7 +405,7 @@
           "numero": "plural",
           "genero": "masculino",
           "forma": "particípio",
-          "descricao_pt": "Verbo; perfeito; ativa; particípio; particípio; nominativo; plural; masculino",
+          "descricao_pt": "Verbo; perfeito; ativa; particípio; nominativo; plural; masculino",
           "codigo_parse": "-XAPNPM-"
         },
         "alignment": "exact",
@@ -540,7 +540,7 @@
           "numero": "singular",
           "genero": "feminino",
           "forma": "particípio",
-          "descricao_pt": "Verbo; presente; ativa; particípio; particípio; acusativo; singular; feminino",
+          "descricao_pt": "Verbo; presente; ativa; particípio; acusativo; singular; feminino",
           "codigo_parse": "-PAPASF-"
         },
         "alignment": "exact",
@@ -1262,7 +1262,7 @@
           "numero": "plural",
           "genero": "masculino",
           "forma": "particípio",
-          "descricao_pt": "Verbo; presente; ativa; particípio; particípio; acusativo; plural; masculino",
+          "descricao_pt": "Verbo; presente; ativa; particípio; acusativo; plural; masculino",
           "codigo_parse": "-PAPAPM-"
         },
         "alignment": "exact",
@@ -1876,17 +1876,18 @@
         "morphology": {
           "codigo_pos": "V-",
           "classe_gramatical": "Verbo",
-          "pessoa": "1ª",
+          "pessoa": "2ª",
           "tempo": "presente",
           "voz": "ativa",
           "modo": "subjuntivo",
           "numero": "plural",
           "forma": "verbo finito",
-          "descricao_pt": "Verbo; 1ª; presente; ativa; subjuntivo; verbo finito; plural",
+          "descricao_pt": "Verbo; 2ª; presente; ativa; subjuntivo; verbo finito; plural",
           "codigo_parse": "2PAS-P--"
         },
-        "alignment": "aligned",
-        "source_verse": "240106"
+        "alignment": "manual_variant",
+        "source_verse": "240106",
+        "review": "A forma do ii_john.json coincide com περιπατῆτε; a análise correta é 2ª pessoa do plural, presente, voz ativa, subjuntivo. O código de parsing já era 2PAS-P--."
       },
       {
         "verse_id": "63001006",
@@ -1932,14 +1933,15 @@
         "morphology": {
           "codigo_pos": "N-",
           "classe_gramatical": "Substantivo",
-          "caso": "acusativo",
-          "numero": "plural",
+          "caso": "nominativo",
+          "numero": "singular",
           "genero": "feminino",
-          "descricao_pt": "Substantivo; acusativo; plural; feminino",
+          "descricao_pt": "Substantivo; nominativo; singular; feminino",
           "codigo_parse": "----NSF-"
         },
-        "alignment": "aligned",
-        "source_verse": "240106"
+        "alignment": "manual_variant",
+        "source_verse": "240106",
+        "review": "A forma do ii_john.json é ἐντολή, e corresponde a nominativo singular feminino. O código NSF- confirma essa análise; os campos anteriores estavam inconsistentes."
       },
       {
         "verse_id": "63001006",
@@ -1951,14 +1953,15 @@
         "morphology": {
           "codigo_pos": "RP",
           "classe_gramatical": "Pronome pessoal",
-          "caso": "genitivo",
+          "caso": "dativo",
           "numero": "singular",
-          "genero": "masculino",
-          "descricao_pt": "Pronome pessoal; genitivo; singular; masculino",
+          "genero": "feminino",
+          "descricao_pt": "Pronome pessoal; dativo; singular; feminino",
           "codigo_parse": "----DSF-"
         },
-        "alignment": "aligned",
-        "source_verse": "240106"
+        "alignment": "manual_variant",
+        "source_verse": "240106",
+        "review": "A forma αὐτῇ é dativo singular feminino. O código DSF- confirma essa análise; os campos anteriores estavam inconsistentes."
       },
       {
         "verse_id": "63001006",
@@ -2284,14 +2287,15 @@
         "morphology": {
           "codigo_pos": "RA",
           "classe_gramatical": "Artigo definido",
-          "caso": "acusativo",
+          "caso": "nominativo",
           "numero": "singular",
           "genero": "masculino",
-          "descricao_pt": "Artigo definido; acusativo; singular; masculino",
+          "descricao_pt": "Artigo definido; nominativo; singular; masculino",
           "codigo_parse": "----NSM-"
         },
-        "alignment": "aligned",
-        "source_verse": "240107"
+        "alignment": "manual_variant",
+        "source_verse": "240107",
+        "review": "A forma registrada no ii_john.json é ὁ. Como o projeto preserva essa forma, a morfologia segue a forma superficial: artigo definido, nominativo, singular, masculino. O código NSM- já correspondia a essa análise."
       },
       {
         "verse_id": "63001007",
@@ -2323,13 +2327,14 @@
           "codigo_pos": "RA",
           "classe_gramatical": "Artigo definido",
           "caso": "nominativo",
-          "numero": "plural",
+          "numero": "singular",
           "genero": "masculino",
-          "descricao_pt": "Artigo definido; nominativo; plural; masculino",
+          "descricao_pt": "Artigo definido; nominativo; singular; masculino",
           "codigo_parse": "----NSM-"
         },
-        "alignment": "aligned",
-        "source_verse": "240107"
+        "alignment": "manual_variant",
+        "source_verse": "240107",
+        "review": "A forma registrada no ii_john.json é ὁ. A morfologia segue a forma superficial: artigo definido, nominativo, singular, masculino. O código NSM- confirma essa análise."
       },
       {
         "verse_id": "63001007",
@@ -2363,7 +2368,7 @@
           "numero": "plural",
           "genero": "masculino",
           "forma": "particípio",
-          "descricao_pt": "Verbo; presente; ativa; particípio; particípio; nominativo; plural; masculino",
+          "descricao_pt": "Verbo; presente; ativa; particípio; nominativo; plural; masculino",
           "codigo_parse": "-PAPNPM-"
         },
         "alignment": "manual_variant",
@@ -2424,7 +2429,7 @@
           "numero": "singular",
           "genero": "masculino",
           "forma": "particípio",
-          "descricao_pt": "Verbo; presente; média; particípio; particípio; acusativo; singular; masculino",
+          "descricao_pt": "Verbo; presente; média; particípio; acusativo; singular; masculino",
           "codigo_parse": "-PMPASM-"
         },
         "alignment": "exact",
@@ -2864,7 +2869,7 @@
           "numero": "singular",
           "genero": "masculino",
           "forma": "particípio",
-          "descricao_pt": "Verbo; presente; ativa; particípio; particípio; nominativo; singular; masculino",
+          "descricao_pt": "Verbo; presente; ativa; particípio; nominativo; singular; masculino",
           "codigo_parse": "-PAPNSM-"
         },
         "alignment": "manual_variant",
@@ -2917,7 +2922,7 @@
           "numero": "singular",
           "genero": "masculino",
           "forma": "particípio",
-          "descricao_pt": "Verbo; presente; ativa; particípio; particípio; nominativo; singular; masculino",
+          "descricao_pt": "Verbo; presente; ativa; particípio; nominativo; singular; masculino",
           "codigo_parse": "-PAPNSM-"
         },
         "alignment": "exact",
@@ -3106,7 +3111,7 @@
           "numero": "singular",
           "genero": "masculino",
           "forma": "particípio",
-          "descricao_pt": "Verbo; presente; ativa; particípio; particípio; nominativo; singular; masculino",
+          "descricao_pt": "Verbo; presente; ativa; particípio; nominativo; singular; masculino",
           "codigo_parse": "-PAPNSM-"
         },
         "alignment": "exact",
@@ -3597,14 +3602,15 @@
         "morphology": {
           "codigo_pos": "RP",
           "classe_gramatical": "Pronome pessoal",
-          "caso": "acusativo",
+          "caso": "dativo",
           "numero": "singular",
           "genero": "masculino",
-          "descricao_pt": "Pronome pessoal; acusativo; singular; masculino",
+          "descricao_pt": "Pronome pessoal; dativo; singular; masculino",
           "codigo_parse": "----DSM-"
         },
-        "alignment": "aligned",
-        "source_verse": "240110"
+        "alignment": "manual_variant",
+        "source_verse": "240110",
+        "review": "A forma αὐτῷ é dativo singular masculino. O código DSM- confirma essa análise; o campo de caso anterior estava inconsistente."
       },
       {
         "verse_id": "63001010",
@@ -3784,7 +3790,7 @@
           "numero": "singular",
           "genero": "masculino",
           "forma": "particípio",
-          "descricao_pt": "Verbo; presente; ativa; particípio; particípio; nominativo; singular; masculino",
+          "descricao_pt": "Verbo; presente; ativa; particípio; nominativo; singular; masculino",
           "codigo_parse": "-PAPNSM-"
         },
         "alignment": "manual_variant",
@@ -3800,14 +3806,15 @@
         "morphology": {
           "codigo_pos": "RP",
           "classe_gramatical": "Pronome pessoal",
-          "caso": "dativo",
+          "caso": "genitivo",
           "numero": "singular",
           "genero": "masculino",
-          "descricao_pt": "Pronome pessoal; dativo; singular; masculino",
+          "descricao_pt": "Pronome pessoal; genitivo; singular; masculino",
           "codigo_parse": "----GSM-"
         },
-        "alignment": "aligned",
-        "source_verse": "240111"
+        "alignment": "manual_variant",
+        "source_verse": "240111",
+        "review": "A forma αὐτοῦ e o código GSM- indicam genitivo singular masculino; o campo de caso anterior estava inconsistente."
       },
       {
         "verse_id": "63001011",
@@ -3899,14 +3906,15 @@
         "morphology": {
           "codigo_pos": "RP",
           "classe_gramatical": "Pronome pessoal",
-          "caso": "dativo",
+          "caso": "genitivo",
           "numero": "singular",
           "genero": "masculino",
-          "descricao_pt": "Pronome pessoal; dativo; singular; masculino",
+          "descricao_pt": "Pronome pessoal; genitivo; singular; masculino",
           "codigo_parse": "----GSM-"
         },
         "alignment": "manual_variant",
-        "source_verse": "240111"
+        "source_verse": "240111",
+        "review": "A forma αὐτοῦ e o código GSM- indicam genitivo singular masculino; o campo de caso anterior estava inconsistente."
       },
       {
         "verse_id": "63001011",
@@ -3984,7 +3992,7 @@
           "numero": "singular",
           "genero": "masculino",
           "forma": "particípio",
-          "descricao_pt": "Verbo; presente; ativa; particípio; particípio; nominativo; singular; masculino",
+          "descricao_pt": "Verbo; presente; ativa; particípio; nominativo; singular; masculino",
           "codigo_parse": "-PAPNSM-"
         },
         "alignment": "exact",
@@ -4392,18 +4400,20 @@
         "morphology": {
           "codigo_pos": "V-",
           "classe_gramatical": "Verbo",
-          "tempo": "perfeito",
-          "voz": "passiva",
-          "modo": "particípio",
+          "tempo": "presente",
+          "voz": "ativa",
+          "modo": "subjuntivo",
           "caso": "nominativo",
           "numero": "singular",
           "genero": "feminino",
-          "forma": "particípio",
-          "descricao_pt": "Verbo; perfeito; passiva; particípio; particípio; nominativo; singular; feminino",
-          "codigo_parse": "3PAS-S--"
+          "forma": "verbo finito",
+          "descricao_pt": "Verbo; 3ª; presente; ativa; subjuntivo; verbo finito; singular",
+          "codigo_parse": "3PAS-S--",
+          "pessoa": "3ª"
         },
         "alignment": "manual_variant",
-        "source_verse": "240112"
+        "source_verse": "240112",
+        "review": "A forma ᾖ corresponde a 3ª pessoa do singular, presente, voz ativa, subjuntivo. O código 3PAS-S-- é compatível com essa análise. A análise anterior havia sido atribuída indevidamente à forma πεπληρωμένη."
       },
       {
         "verse_id": "63001012",
@@ -4411,20 +4421,24 @@
         "word_index": 25,
         "word": "πεπληρωμένη",
         "strong": "G4137",
-        "lemma": "εἰμί",
+        "lemma": "πληρόω",
         "morphology": {
           "codigo_pos": "V-",
           "classe_gramatical": "Verbo",
-          "pessoa": "3ª",
-          "tempo": "presente",
-          "voz": "ativa",
-          "modo": "subjuntivo",
+          "pessoa": null,
+          "tempo": "perfeito",
+          "voz": "passiva",
+          "modo": "particípio",
           "numero": "singular",
-          "forma": "verbo finito",
-          "descricao_pt": "Verbo; 3ª; presente; ativa; subjuntivo; verbo finito; singular"
+          "forma": "particípio",
+          "descricao_pt": "Verbo; perfeito; passiva; particípio; nominativo; singular; feminino",
+          "caso": "nominativo",
+          "genero": "feminino",
+          "codigo_parse": "-XPPNSF-"
         },
-        "alignment": "aligned",
-        "source_verse": "240112"
+        "alignment": "manual_variant",
+        "source_verse": "240112",
+        "review": "A forma πεπληρωμένη corresponde a particípio perfeito, voz passiva, nominativo singular feminino, lema πληρόω. A análise anterior estava trocada com ᾖ."
       }
     ],
     "63001013": [
@@ -4624,6 +4638,13 @@
     "exatas": 206,
     "alinhadas": 12,
     "variantes_manuais": 31,
-    "sem_morfologia": 0
+    "sem_morfologia": 0,
+    "status": "auditoria_v1.1",
+    "correcoes_v1_1": {
+      "correcoes_morfologicas": 10,
+      "descricoes_participio_corrigidas": 10,
+      "base_textual": "ii_john.json preservado; diferenças do texto não foram corrigidas",
+      "fonte_morfologia_verificada": "MorphGNT SBLGNT 6.12, 84-2Jn-morphgnt.txt"
+    }
   }
 }
