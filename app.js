@@ -1064,12 +1064,133 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         document.getElementById('modal-body').innerHTML = html;
     }
     function renderChapterGridModal(bIdx) {
-        document.getElementById('modal-title').innerText = bibleData[bIdx].name;
-        let html = `<div style="margin-bottom:15px;"><button class="btn-min" onclick="renderBookListModal()">&#10094; Voltar</button></div><div class="grid-chapters">`;
-        bibleData[bIdx].chapters.forEach((_, cIdx) => { html += `<div class="grid-item" onclick="selectFromModal(${bIdx}, ${cIdx})">${cIdx + 1}</div>`; });
-        html += `</div>`; document.getElementById('modal-body').innerHTML = html;
+
+        const book = bibleData[bIdx];
+
+        if (!book) return;
+
+        document.getElementById('modal-title').innerText =
+            book.name;
+
+        let html = `
+            <div style="margin-bottom:15px;">
+                <button
+                    class="btn-min"
+                    onclick="renderBookListModal()"
+                >
+                    &#10094; Voltar
+                </button>
+            </div>
+
+            <div class="grid-chapters">
+        `;
+
+        book.chapters.forEach((_, cIdx) => {
+
+            html += `
+                <div
+                    class="grid-item"
+                    onclick="renderVerseGridModal(${bIdx}, ${cIdx})"
+                >
+                    ${cIdx + 1}
+                </div>
+            `;
+
+        });
+
+        html += `</div>`;
+
+        document.getElementById('modal-body').innerHTML =
+            html;
     }
-    function selectFromModal(bIdx, cIdx) { closeSelector(); renderChapter(bIdx, cIdx); }
+
+
+    function renderVerseGridModal(bIdx, cIdx) {
+
+        const book = bibleData[bIdx];
+
+        if (!book) return;
+
+        const chapter = book.chapters[cIdx];
+
+        if (!chapter) return;
+
+        document.getElementById('modal-title').innerText =
+            `${book.name} ${cIdx + 1}`;
+
+        let html = `
+            <div style="margin-bottom:15px;">
+                <button
+                    class="btn-min"
+                    onclick="renderChapterGridModal(${bIdx})"
+                >
+                    &#10094; Capítulos
+                </button>
+            </div>
+
+            <div class="grid-chapters">
+        `;
+
+        chapter.forEach((_, vIdx) => {
+
+            html += `
+                <div
+                    class="grid-item"
+                    onclick="selectVerseFromModal(${bIdx}, ${cIdx}, ${vIdx})"
+                >
+                    ${vIdx + 1}
+                </div>
+            `;
+
+        });
+
+        html += `</div>`;
+
+        document.getElementById('modal-body').innerHTML =
+            html;
+    }
+
+
+    function selectVerseFromModal(bIdx, cIdx, vIdx) {
+
+        /*
+        * Guarda o versículo que deverá receber
+        * o destaque depois que o capítulo for renderizado.
+        */
+        pendingVerseScroll = vIdx;
+
+        closeSelector();
+
+        /*
+        * renderChapter() já possui toda a lógica necessária
+        * para:
+        *
+        * - mudar livro/capítulo;
+        * - renderizar o conteúdo;
+        * - ir para a aba Ler;
+        * - executar scrollToVerse();
+        * - aplicar o destaque temporário.
+        */
+        renderChapter(
+            bIdx,
+            cIdx
+        );
+    }
+
+
+    function selectFromModal(bIdx, cIdx) {
+
+        /*
+        * Mantemos a função antiga para compatibilidade
+        * com qualquer chamada existente no app.
+        */
+        closeSelector();
+
+        renderChapter(
+            bIdx,
+            cIdx
+        );
+    }
 
     // ==========================================
     // UI CORE: TOAST E DIALOG
@@ -1142,6 +1263,28 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         document.getElementById('main-scroll').scrollTo(0,0);
     }
 
+    function openSearchResult(bIdx, cIdx, vIdx) {
+
+        /*
+        * Informa ao renderChapter qual versículo
+        * deverá ser localizado depois da renderização.
+        */
+        pendingVerseScroll = vIdx;
+
+        /*
+        * renderChapter já:
+        *
+        * - muda para a aba Ler;
+        * - renderiza o capítulo;
+        * - faz o scroll;
+        * - aplica o destaque azul;
+        */
+        renderChapter(
+            bIdx,
+            cIdx
+        );
+    }
+
     // ==========================================
     // BUSCA
     // ==========================================
@@ -1179,7 +1322,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         if(results.length === 0) html += `<p style="color:#777;">Nenhum resultado para "${escapeHTML(query)}".</p>`;
         
         results.forEach(res => {
-            html += `<div class="card" style="padding:15px; cursor:pointer;" onclick="renderChapter(${res.bIdx}, ${res.cIdx})">
+            html += `<div class="card" style="padding:15px; cursor:pointer;" onclick="openSearchResult(${res.bIdx}, ${res.cIdx}, ${res.vIdx})">
                     <p style="font-weight:700; color:var(--secondary); font-size:14px; margin-bottom:6px;">${res.bookName} ${res.cIdx + 1}:${res.vIdx + 1}</p>
                     <p style="font-size:15px; color:#444; line-height:1.4;">${escapeHTML(res.text)}</p></div>`;
         });
