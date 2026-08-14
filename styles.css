@@ -458,3 +458,82 @@
         padding: 7px 10px;
     }
 }
+
+/* ==========================================
+   GRUPOS DE TEMAS
+   ========================================== */
+
+.theme-group {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #e1e5e8;
+}
+
+.theme-group:last-child {
+    border-bottom: none;
+}
+
+.theme-group-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    border: none;
+    background: transparent;
+
+    padding: 9px 5px;
+
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    color: var(--primary);
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.theme-group-toggle {
+    flex: 0 0 auto;
+
+    font-size: 12px;
+    line-height: 1;
+
+    opacity: 0.7;
+}
+
+.theme-group.theme-collapsed > .card {
+    display: none;
+}
+
+.theme-group:not(.theme-collapsed) {
+    padding-bottom: 8px;
+}
+
+.theme-group:not(.theme-collapsed)
+    > .theme-group-header {
+
+    margin-bottom: 5px;
+}
+
+/* ==========================================
+   TEXTO DE NOTAS E TRECHOS SALVOS
+   ========================================== */
+
+.note-box .expandable-text,
+.saved-card .expandable-text {
+    text-align: left;
+    text-indent: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.45;
+    white-space: pre-wrap;
+}

@@ -481,6 +481,56 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         button.innerText = expanded ? 'Ver menos' : 'Ver mais';
     }
 
+    function toggleThemeGroup(groupId) {
+
+        const group =
+            document.getElementById(groupId);
+
+        if (!group) return;
+
+        const collapsed =
+            group.classList.toggle('theme-collapsed');
+
+        const button =
+            group.querySelector('.theme-group-toggle');
+
+        if (button) {
+            button.innerText =
+                collapsed ? '▶' : '▼';
+        }
+
+        /*
+        * Quando o tema é aberto, os cartões passam a existir
+        * visualmente e podemos medir corretamente o conteúdo.
+        */
+        if (!collapsed) {
+
+            requestAnimationFrame(() => {
+                initExpandableControls();
+            });
+
+        }
+    }
+
+    function expandThemeForCard(card) {
+
+        if (!card) return;
+
+        const group =
+            card.closest('.theme-group');
+
+        if (!group) return;
+
+        group.classList.remove('theme-collapsed');
+
+        const button =
+            group.querySelector('.theme-group-toggle');
+
+        if (button) {
+            button.innerText = '▼';
+        }
+    }
+
     // ==========================================
     // 3. SISTEMA DE GAVETAS (DRAWERS)
     // ==========================================
@@ -1420,6 +1470,8 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
 
             if (!card) return;
 
+            expandThemeForCard(card);
+
             card.scrollIntoView({
                 behavior: 'smooth',
                 block: 'center'
@@ -1809,45 +1861,198 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     }
 
     function renderSavedVerses() {
-        const list = document.getElementById('saved-list');
+
+        const list =
+            document.getElementById('saved-list');
+
         list.innerHTML = '';
-        if (!savedVerses.length) return list.innerHTML = "<p style='color:#7f8c8d;'>Nenhum trecho salvo.</p>";
+
+        if (!savedVerses.length) {
+            return list.innerHTML =
+                "<p style='color:#7f8c8d;'>Nenhum trecho salvo.</p>";
+        }
+
         const groups = {};
-        savedVerses.forEach((it, i) => { const t = it.theme || 'Geral'; if (!groups[t]) groups[t] = []; groups[t].push({ ...it, idx: i }); });
+
+        savedVerses.forEach((it, i) => {
+
+            const theme =
+                it.theme || 'Geral';
+
+            if (!groups[theme]) {
+                groups[theme] = [];
+            }
+
+            groups[theme].push({
+                ...it,
+                idx: i
+            });
+
+        });
+
+        let groupCounter = 0;
 
         for (const [theme, items] of Object.entries(groups)) {
-            const gDiv = document.createElement('div');
-            gDiv.innerHTML = `<h3 class="theme-group-header">${escapeHTML(theme)}</h3>`;
+
+            const groupId =
+                `saved-theme-${groupCounter++}`;
+
+            const gDiv =
+                document.createElement('div');
+
+            gDiv.className =
+                'theme-group theme-collapsed';
+
+            gDiv.id = groupId;
+
+            gDiv.innerHTML = `
+                <button
+                    type="button"
+                    class="theme-group-header"
+                    onclick="toggleThemeGroup('${groupId}')"
+                >
+                    <span>${escapeHTML(theme)}</span>
+                    <span class="theme-group-toggle">▶</span>
+                </button>
+            `;
+
             items.forEach(it => {
-                const dispRef = (it.reference || (it.content ? it.content.split('\n').pop() : `${it.bookName} ${it.chapIdx + 1}`)).replace(/[\[\]]/g, '');
-                const textOnly = it.content ? String(it.content).replace(/\n[^\n]*$/, '') : (it.preview || '');
-                const textId = `saved-text-${it.id}`;
-                const date = formatSavedDate(it.createdAt);
-                const version = it.version || getVersionMeta().abbrev;
-                gDiv.innerHTML += `<div class="card saved-card" id="saved-card-${it.id}">
-                    <div class="expandable-text collapsed" id="${textId}">${escapeHTML(textOnly)}</div>
-                    <button class="expand-toggle hidden" type="button" onclick="toggleExpandable('${textId}', this)">Ver mais</button>
-                    <div class="saved-meta-row"><span class="saved-date">${escapeHTML(date)}</span><span class="ref-right">${escapeHTML(dispRef)}<span class="ver-badge">${escapeHTML(version)}</span></span></div>
-                    <div class="btn-group">
-                        <button class="btn-min" onclick="openSavedReference(${it.idx})">Abrir</button>
-                        <button class="btn-min" onclick="moveSavedVerse(${it.idx})">Mover</button>
-                        <button class="btn-min danger" onclick="deleteSavedVerse(${it.idx})">Excluir</button>
+
+                const dispRef =
+                    (
+                        it.reference ||
+                        (
+                            it.content
+                                ? it.content.split('\n').pop()
+                                : `${it.bookName} ${it.chapIdx + 1}`
+                        )
+                    ).replace(/[\[\]]/g, '');
+
+                const textOnly =
+                    it.content
+                        ? String(it.content)
+                            .replace(/\n[^\n]*$/, '')
+                        : (it.preview || '');
+
+                const textId =
+                    `saved-text-${it.id}`;
+
+                const date =
+                    formatSavedDate(it.createdAt);
+
+                const version =
+                    it.version ||
+                    getVersionMeta().abbrev;
+
+                gDiv.innerHTML += `
+                    <div
+                        class="card saved-card"
+                        id="saved-card-${it.id}"
+                    >
+
+                        <div class="expandable-text collapsed" id="${textId}">${escapeHTML(textOnly)}</div>
+
+                        <button
+                            class="expand-toggle hidden"
+                            type="button"
+                            onclick="toggleExpandable(
+                                '${textId}',
+                                this
+                            )"
+                        >
+                            Ver mais
+                        </button>
+
+                        <div class="saved-meta-row">
+
+                            <span class="saved-date">
+                                ${escapeHTML(date)}
+                            </span>
+
+                            <span class="ref-right">
+                                ${escapeHTML(dispRef)}
+                                <span class="ver-badge">
+                                    ${escapeHTML(version)}
+                                </span>
+                            </span>
+
+                        </div>
+
+                        <div class="btn-group">
+
+                            <button
+                                class="btn-min"
+                                onclick="openSavedReference(${it.idx})"
+                            >
+                                Abrir
+                            </button>
+
+                            <button
+                                class="btn-min"
+                                onclick="moveSavedVerse(${it.idx})"
+                            >
+                                Mover
+                            </button>
+
+                            <button
+                                class="btn-min danger"
+                                onclick="deleteSavedVerse(${it.idx})"
+                            >
+                                Excluir
+                            </button>
+
+                        </div>
+
                     </div>
-                </div>`;
+                `;
+
             });
+
             list.appendChild(gDiv);
         }
-        requestAnimationFrame(initExpandableControls);
+
+        requestAnimationFrame(
+            initExpandableControls
+        );
     }
 
     function initExpandableControls() {
-        document.querySelectorAll('#saved-list .expandable-text, #notes-list .expandable-text').forEach(box => {
-            const btn = box.nextElementSibling;
-            if (!btn) return;
-            box.classList.add('collapsed');
-            if (box.scrollHeight > box.clientHeight + 2) btn.classList.remove('hidden');
-            else btn.classList.add('hidden');
-        });
+
+        document
+            .querySelectorAll(
+                '#saved-list .expandable-text, #notes-list .expandable-text'
+            )
+            .forEach(box => {
+
+                const btn = box.nextElementSibling;
+
+                if (!btn) return;
+
+                /*
+                * Se o cartão estiver dentro de um tema recolhido,
+                * não tentamos medir agora.
+                *
+                * Quando o tema for aberto, a medição será refeita.
+                */
+                const card = box.closest('.card');
+
+                if (
+                    card &&
+                    getComputedStyle(card).display === 'none'
+                ) {
+                    return;
+                }
+
+                box.classList.add('collapsed');
+                box.classList.remove('expanded');
+
+                if (box.scrollHeight > box.clientHeight + 2) {
+                    btn.classList.remove('hidden');
+                    btn.innerText = 'Ver mais';
+                } else {
+                    btn.classList.add('hidden');
+                }
+            });
     }
 
     function openSavedReference(i) {
@@ -1901,36 +2106,151 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     }
 
     function renderNotesList() {
-        const list = document.getElementById('notes-list');
+
+        const list =
+            document.getElementById('notes-list');
+
         list.innerHTML = '';
-        if (!savedNotes.length) return list.innerHTML = "<p style='color:#7f8c8d;'>Nenhuma anotação.</p>";
+
+        if (!savedNotes.length) {
+            return list.innerHTML =
+                "<p style='color:#7f8c8d;'>Nenhuma anotação.</p>";
+        }
+
         const groups = {};
-        savedNotes.forEach((it, i) => { const t = it.theme || 'Geral'; if (!groups[t]) groups[t] = []; groups[t].push({ ...it, idx: i }); });
+
+        savedNotes.forEach((it, i) => {
+
+            const theme =
+                it.theme || 'Geral';
+
+            if (!groups[theme]) {
+                groups[theme] = [];
+            }
+
+            groups[theme].push({
+                ...it,
+                idx: i
+            });
+
+        });
+
+        let groupCounter = 0;
 
         for (const [theme, items] of Object.entries(groups)) {
-            const gDiv = document.createElement('div');
-            gDiv.innerHTML = `<h3 class="theme-group-header">${escapeHTML(theme)}</h3>`;
+
+            const groupId =
+                `notes-theme-${groupCounter++}`;
+
+            const gDiv =
+                document.createElement('div');
+
+            gDiv.className =
+                'theme-group theme-collapsed';
+
+            gDiv.id = groupId;
+
+            gDiv.innerHTML = `
+                <button
+                    type="button"
+                    class="theme-group-header"
+                    onclick="toggleThemeGroup('${groupId}')"
+                >
+                    <span>${escapeHTML(theme)}</span>
+                    <span class="theme-group-toggle">▶</span>
+                </button>
+            `;
+
             items.forEach(it => {
-                const dispRef = (it.reference || `${it.bookName} ${it.chapIdx + 1}`).replace(/[\[\]]/g, '');
-                const textId = `note-text-${it.id}`;
-                const date = formatSavedDate(it.createdAt);
-                const version = it.version || getVersionMeta().abbrev;
-                gDiv.innerHTML += `<div class="card note-card" id="note-card-${it.id}">
-                    <div class="note-box">
-                        <div class="expandable-text collapsed" id="${textId}">${escapeHTML(it.noteText)}</div>
-                        <button class="expand-toggle hidden" type="button" onclick="toggleExpandable('${textId}', this)">Ver mais</button>
+
+                const dispRef =
+                    (
+                        it.reference ||
+                        `${it.bookName} ${it.chapIdx + 1}`
+                    ).replace(/[\[\]]/g, '');
+
+                const textId =
+                    `note-text-${it.id}`;
+
+                const date =
+                    formatSavedDate(it.createdAt);
+
+                const version =
+                    it.version ||
+                    getVersionMeta().abbrev;
+
+                gDiv.innerHTML += `
+                    <div
+                        class="card note-card"
+                        id="note-card-${it.id}"
+                    >
+
+                        <div class="note-box">
+
+                            <div class="expandable-text collapsed" id="${textId}">${escapeHTML(it.noteText)}</div>
+
+                            <button
+                                class="expand-toggle hidden"
+                                type="button"
+                                onclick="toggleExpandable(
+                                    '${textId}',
+                                    this
+                                )"
+                            >
+                                Ver mais
+                            </button>
+
+                        </div>
+
+                        <div class="saved-meta-row">
+                            <span class="saved-date">
+                                ${escapeHTML(date)}
+                            </span>
+
+                            <span class="ref-right">
+                                ${escapeHTML(dispRef)}
+                                <span class="ver-badge">
+                                    ${escapeHTML(version)}
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="btn-group">
+
+                            <button
+                                class="btn-min"
+                                onclick="openNoteReference(${it.idx})"
+                            >
+                                Abrir
+                            </button>
+
+                            <button
+                                class="btn-min"
+                                onclick="editNote(${it.idx})"
+                            >
+                                Editar
+                            </button>
+
+                            <button
+                                class="btn-min danger"
+                                onclick="deleteNote(${it.idx})"
+                            >
+                                Excluir
+                            </button>
+
+                        </div>
+
                     </div>
-                    <div class="saved-meta-row"><span class="saved-date">${escapeHTML(date)}</span><span class="ref-right">${escapeHTML(dispRef)}<span class="ver-badge">${escapeHTML(version)}</span></span></div>
-                    <div class="btn-group">
-                        <button class="btn-min" onclick="openNoteReference(${it.idx})">Abrir</button>
-                        <button class="btn-min" onclick="editNote(${it.idx})">Editar</button>
-                        <button class="btn-min danger" onclick="deleteNote(${it.idx})">Excluir</button>
-                    </div>
-                </div>`;
+                `;
+
             });
+
             list.appendChild(gDiv);
         }
-        requestAnimationFrame(initExpandableControls);
+
+        requestAnimationFrame(
+            initExpandableControls
+        );
     }
 
     function openNoteReference(i) {
@@ -2038,41 +2358,227 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     async function deletePlan(i) { if(await showDialog({type:'confirm', title:'Excluir', msg:'Excluir plano?'})) { savedPlans.splice(i, 1); localStorage.setItem('bible_plans', JSON.stringify(savedPlans)); renderPlanList(); } }
 
     function getPlanDelayStatus(plan) {
-        const today = new Date(); today.setHours(0,0,0,0);
-        const firstUncomp = plan.schedule.find(d => !d.completed);
-        return firstUncomp && (new Date(firstUncomp.date) < today);
+            const today = new Date(); today.setHours(0,0,0,0);
+            const firstUncomp = plan.schedule.find(d => !d.completed);
+            return firstUncomp && (new Date(firstUncomp.date) < today);
+        }
+
+        function openPlanReading(bIdx, cIdx, vIdx = null) {
+
+        /*
+        * Se o plano for dividido por versículos,
+        * guardamos o versículo para o renderChapter()
+        * localizar depois que o capítulo for renderizado.
+        */
+        pendingVerseScroll = vIdx;
+
+        /*
+        * renderChapter() já cuida de:
+        * - mudar para Ler;
+        * - renderizar o capítulo;
+        * - rolar até o versículo;
+        * - aplicar o destaque azul com esmaecimento.
+        */
+        renderChapter(bIdx, cIdx);
     }
 
     function openPlanDetail(i) {
-        const plan = savedPlans[i]; document.getElementById('detail-plan-name').innerText = plan.name;
-        document.getElementById('reorg-btn-container').innerHTML = getPlanDelayStatus(plan) ? `<button class="btn" style="background:#e67e22;" onclick="reorganizePlan(${i})">⚠️ Reorganizar Plano Atrasado</button>` : `<button class="btn-min" onclick="reorganizePlan(${i})">Reorganizar Plano</button>`;
+
+        const plan = savedPlans[i];
+
+        if (!plan) return;
+
+        document.getElementById('detail-plan-name').innerText =
+            plan.name;
+
+        document.getElementById('reorg-btn-container').innerHTML =
+            getPlanDelayStatus(plan)
+                ? `<button class="btn" style="background:#e67e22;" onclick="reorganizePlan(${i})">
+                        ⚠️ Reorganizar Plano Atrasado
+                </button>`
+                : `<button class="btn-min" onclick="reorganizePlan(${i})">
+                        Reorganizar Plano
+                </button>`;
+
         let html = '';
+
         plan.schedule.forEach((d, j) => {
-            if(!d.startItem) return;
-            let dStr = new Date(d.date).toLocaleDateString('pt-BR');
-            let first = d.startItem, last = d.endItem;
-            let b1 = getAbbrev(first.bookName);
-            let b2 = getAbbrev(last.bookName);
-            
-            let title = "";
-            if(d.type === 'verses' || first.verseIdx !== undefined) {
-                let t1 = `${b1} ${first.chapIdx+1}:${first.verseIdx+1}`;
-                let t2 = `${b2} ${last.chapIdx+1}:${last.verseIdx+1}`;
-                title = (t1 === t2) ? t1 : `${t1} - ${t2}`;
-            } else {
+
+            if (!d.startItem) return;
+
+            const dStr =
+                new Date(d.date).toLocaleDateString('pt-BR');
+
+            const first = d.startItem;
+            const last = d.endItem;
+
+            const b1 = getAbbrev(first.bookName);
+            const b2 = getAbbrev(last.bookName);
+
+            let title = '';
+
+            /*
+            * PLANO POR VERSÍCULOS
+            */
+            if (
+                d.type === 'verses' ||
+                first.verseIdx !== undefined
+            ) {
+
+                const t1 =
+                    `${b1} ${first.chapIdx + 1}:${first.verseIdx + 1}`;
+
+                const t2 =
+                    `${b2} ${last.chapIdx + 1}:${last.verseIdx + 1}`;
+
+                title =
+                    (t1 === t2)
+                        ? t1
+                        : `${t1} - ${t2}`;
+
+            }
+
+            /*
+            * PLANO POR CAPÍTULOS
+            */
+            else {
+
                 if (first.bookIdx === last.bookIdx) {
-                    title = (first.chapIdx === last.chapIdx) ? `${b1} ${first.chapIdx+1}` : `${b1} ${first.chapIdx+1} - ${last.chapIdx+1}`;
+
+                    title =
+                        (first.chapIdx === last.chapIdx)
+                            ? `${b1} ${first.chapIdx + 1}`
+                            : `${b1} ${first.chapIdx + 1} - ${last.chapIdx + 1}`;
+
                 } else {
-                    title = `${b1} ${first.chapIdx+1} - ${b2} ${last.chapIdx+1}`;
+
+                    title =
+                        `${b1} ${first.chapIdx + 1} - ${b2} ${last.chapIdx + 1}`;
+
                 }
             }
-            let colorToday = (!d.completed && new Date(d.date) < new Date(new Date().setHours(0,0,0,0))) ? 'color:#e74c3c;' : 'color:#95a5a6;';
-            html += `<div class="card" style="display:flex; justify-content:space-between; align-items:center; padding:15px; opacity:${d.completed?0.6:1}" id="p-${i}-${j}">
-                <div><div style="font-size:12px; font-weight:600; text-transform:uppercase; ${colorToday}">${dStr}</div><div onclick="renderChapter(${first.bookIdx}, ${first.chapIdx})" style="color:var(--primary); font-weight:600; font-size:15px; margin-top:2px; cursor:pointer;">${title}</div></div>
-                <input type="checkbox" style="width:22px;height:22px;" ${d.completed?'checked':''} onchange="toggleDayStatus(${i}, ${j}, this.checked)"></div>`;
+
+            const colorToday =
+                (
+                    !d.completed &&
+                    new Date(d.date) <
+                    new Date(new Date().setHours(0,0,0,0))
+                )
+                    ? 'color:#e74c3c;'
+                    : 'color:#95a5a6;';
+
+            /*
+            * Decide exatamente qual versículo deverá
+            * receber o destaque.
+            *
+            * Plano por versículos:
+            * usa o primeiro versículo do dia.
+            *
+            * Plano por capítulos:
+            * usa sempre o versículo 1 do primeiro capítulo.
+            */
+            const targetVerse =
+                (
+                    d.type === 'verses' ||
+                    first.verseIdx !== undefined
+                )
+                    ? first.verseIdx
+                    : 0;
+
+            html += `
+                <div
+                    class="card"
+                    style="
+                        display:flex;
+                        justify-content:space-between;
+                        align-items:center;
+                        padding:15px;
+                        opacity:${d.completed ? 0.6 : 1};
+                    "
+                    id="p-${i}-${j}"
+                >
+
+                    <div>
+
+                        <div
+                            style="
+                                font-size:12px;
+                                font-weight:600;
+                                text-transform:uppercase;
+                                ${colorToday}
+                            "
+                        >
+                            ${dStr}
+                        </div>
+
+                        <div
+                            onclick="openPlanReading(
+                                ${first.bookIdx},
+                                ${first.chapIdx},
+                                ${targetVerse}
+                            )"
+                            style="
+                                color:var(--primary);
+                                font-weight:600;
+                                font-size:15px;
+                                margin-top:2px;
+                                cursor:pointer;
+                            "
+                        >
+                            ${title}
+                        </div>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        style="width:22px;height:22px;"
+                        ${d.completed ? 'checked' : ''}
+                        onchange="toggleDayStatus(
+                            ${i},
+                            ${j},
+                            this.checked
+                        )"
+                    >
+
+                </div>
+            `;
         });
-        document.getElementById('plan-details-content').innerHTML = html; togglePlanView('detail');
+
+        document.getElementById('plan-details-content').innerHTML =
+            html;
+
+        togglePlanView('detail');
+
+        /*
+        * Depois que a lista for inserida na tela,
+        * posiciona automaticamente no próximo dia
+        * ainda não concluído.
+        */
+        requestAnimationFrame(() => {
+
+            const firstPendingIndex =
+                plan.schedule.findIndex(
+                    day => !day.completed
+                );
+
+            if (firstPendingIndex < 0) return;
+
+            const target =
+                document.getElementById(
+                    `p-${i}-${firstPendingIndex}`
+                );
+
+            if (!target) return;
+
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+
+        });
     }
+
     function toggleDayStatus(pI, dI, st) { 
         savedPlans[pI].schedule[dI].completed = st; localStorage.setItem('bible_plans', JSON.stringify(savedPlans)); 
         document.getElementById(`p-${pI}-${dI}`).style.opacity = st ? '0.6' : '1'; 
