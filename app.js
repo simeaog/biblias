@@ -8,15 +8,16 @@
     // 1. INICIALIZAÇÃO ASSÍNCRONA E VERSÕES
     // ==========================================
     const versoesDisponiveis = [
-        { id: 'acf.json', abbrev: 'ACF', nome: 'Almeida Corrigida Fiel' },
-        { id: 'ara.json', abbrev: 'ARA', nome: 'Almeida Revista e Atualizada' },
-        { id: 'arc.json', abbrev: 'ARC', nome: 'Almeida Revista e Corrigida' },
-        { id: 'as21.json', abbrev: 'AS21', nome: 'Almeida Século 21' },
-        { id: 'naa.json', abbrev: 'NAA', nome: 'Nova Almeida Atualizada' },
-        { id: 'ntlh.json', abbrev: 'NTLH', nome: 'Nova Tradução na Linguagem de Hoje' },
-        { id: 'nvi.json', abbrev: 'NVI', nome: 'Nova Versão Internacional' },
-        { id: 'nvt.json', abbrev: 'NVT', nome: 'Nova Versão Transformadora' },
-        { id: 'int.json', abbrev: 'INT', nome: 'Bíblia Interlinear Trilíngue' }
+        { id: 'acf.json', abbrev: 'ACF', nome: 'Almeida Corrigida Fiel', tipo: 'translation' },
+        { id: 'ara.json', abbrev: 'ARA', nome: 'Almeida Revista e Atualizada', tipo: 'translation' },
+        { id: 'arc.json', abbrev: 'ARC', nome: 'Almeida Revista e Corrigida' , tipo: 'translation'},
+        { id: 'as21.json', abbrev: 'AS21', nome: 'Almeida Século 21' , tipo: 'translation'},
+        { id: 'MENS.json', abbrev: 'MENS', nome: 'A Mensagem', tipo: 'paraphrase'},
+        { id: 'naa.json', abbrev: 'NAA', nome: 'Nova Almeida Atualizada', tipo: 'translation'},
+        { id: 'ntlh.json', abbrev: 'NTLH', nome: 'Nova Tradução na Linguagem de Hoje', tipo: 'translation' },
+        { id: 'nvi.json', abbrev: 'NVI', nome: 'Nova Versão Internacional', tipo: 'translation' },
+        { id: 'nvt.json', abbrev: 'NVT', nome: 'Nova Versão Transformadora', tipo: 'translation' },
+        { id: 'int.json', abbrev: 'INT', nome: 'Bíblia Interlinear Trilíngue', tipo: 'translation' }
     ];
 
 let bibleData = [];
@@ -32,6 +33,168 @@ let lexiconLoadError = null;
 let morphologyData = null;
 let morphologyIndex = new Map();
 let morphologyLoadError = null;
+// ==========================================
+// CAMADA DE PERÍCОPES
+// ==========================================
+// Estrutura editorial separada do texto bíblico.
+// ==========================================
+
+let pericopeData = null;
+let pericopeLoadError = null;
+
+function getComparisonVerseSegments(
+    chapter,
+    verseNumber,
+    versionId
+) {
+    if (!chapter) return [];
+
+    const meta = versoesDisponiveis.find(
+        v => v.id === versionId
+    );
+
+    const isParaphrase =
+        meta?.tipo === 'paraphrase';
+
+    // ==========================================================
+    // PARÁFRASES / MENS
+    // ==========================================================
+
+    if (isParaphrase) {
+
+        const verses = Array.isArray(chapter?.verses)
+            ? chapter.verses
+            : [];
+
+        return verses
+            .map((verse, index) => {
+
+                const start =
+                    Number(
+                        verse?.number ??
+                        index + 1
+                    );
+
+                const end =
+                    Number(
+                        verse?.endNumber ??
+                        verse?.number ??
+                        index + 1
+                    );
+
+                return {
+                    verse,
+                    start,
+                    end
+                };
+            })
+            .filter(item =>
+                verseNumber + 1 >= item.start &&
+                verseNumber + 1 <= item.end
+            );
+    }
+
+    // ==========================================================
+    // TRADUÇÕES NORMAIS
+    // ==========================================================
+
+    if (Array.isArray(chapter)) {
+
+        const verse = chapter[verseNumber];
+
+        if (verse === undefined) {
+            return [];
+        }
+
+        return [{
+            verse,
+            start: verseNumber + 1,
+            end: verseNumber + 1
+        }];
+    }
+
+    return [];
+}
+
+async function carregarPericopes() {
+
+    try {
+
+        const response = await fetch(
+            'pericopes-2joao.json',
+            { cache: 'no-cache' }
+        );
+
+        if (!response.ok) {
+            throw new Error(
+                'Arquivo pericopes-2joao.json não encontrado'
+            );
+        }
+
+        pericopeData =
+            await response.json();
+
+        pericopeLoadError = null;
+
+        console.info(
+            'Perícopes de 2 João carregadas.'
+        );
+
+    } catch (error) {
+
+        pericopeData = null;
+        pericopeLoadError = error;
+
+        console.warn(
+            'Perícopes de 2 João indisponíveis.',
+            error
+        );
+    }
+}
+
+function getPericopesForChapter(
+    book,
+    cIdx
+) {
+
+    if (!pericopeData) {
+        return [];
+    }
+
+    if (!book) {
+        return [];
+    }
+
+    if (
+        normalizeStr(book.name) !==
+        normalizeStr('2 João')
+    ) {
+        return [];
+    }
+
+    const chapterNumber =
+        String(cIdx + 1);
+
+    return (
+        pericopeData.book &&
+        pericopeData.book.chapters &&
+        pericopeData.book.chapters[chapterNumber]
+    ) || [];
+}
+
+function getPericopeForVerse(
+    pericopes,
+    verseNumber
+) {
+
+    return pericopes.find(
+        pericope =>
+            verseNumber >=
+                pericope.start_verse &&
+            verseNumber <=
+                pericope.end_verse
+    ) || null;
+}
 
 let currentVersionId = localStorage.getItem('bible_current_version') || 'int.json';
 
@@ -294,8 +457,12 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         // Carrega a morfologia por ocorrência
         await carregarMorfologia();
 
+        // Carrega as pericopes
+        carregarPericopes()
+
         // Depois carrega a Bíblia selecionada
         await carregarTraducao(currentVersionId);
+
     }
 
     async function carregarTraducao(versaoId) {
@@ -601,11 +768,155 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     }
 
     function formatMorphology(morphology) {
+
         if (!morphology) return [];
-        if (typeof morphology === 'string') return [morphology];
-        if (Array.isArray(morphology)) return morphology.filter(Boolean).map(String);
-        const labels = { pessoa:'Pessoa', numero:'Número', genero:'Gênero', caso:'Caso', tempo:'Tempo', modo:'Modo', voz:'Voz', forma:'Forma', aspecto:'Aspecto', grau:'Grau', funcao:'Função sintática' };
-        return Object.entries(morphology).filter(([,v]) => v !== null && v !== undefined && v !== '').map(([k,v]) => `${labels[k] || k}: ${v}`);
+
+        if (typeof morphology === 'string') {
+            return [morphology];
+        }
+
+        if (Array.isArray(morphology)) {
+            return morphology
+                .filter(Boolean)
+                .map(String);
+        }
+
+        const labels = {
+            pessoa: 'Pessoa',
+            numero: 'Número',
+            genero: 'Gênero',
+            caso: 'Caso',
+            tempo: 'Tempo',
+            modo: 'Modo',
+            voz: 'Voz',
+            forma: 'Forma',
+            aspecto: 'Aspecto',
+            grau: 'Grau',
+            funcao: 'Função sintática'
+        };
+
+        const result = [];
+
+        Object.entries(morphology)
+            .forEach(([key, value]) => {
+
+                if (
+                    value === null ||
+                    value === undefined ||
+                    value === ''
+                ) {
+                    return;
+                }
+
+                if (key === 'codigo_pos') {
+                    return;
+                }
+
+                if (key === 'codigo_parse') {
+                    return;
+                }
+
+                result.push({
+                    key,
+                    label: labels[key] || key,
+                    value: String(value)
+                });
+            });
+
+        return result;
+    }
+
+    function getMorphologyExplanation(key, value) {
+
+        const explanations = {
+
+            tempo: {
+                presente:
+                    'Apresenta normalmente a ação como presente, em desenvolvimento ou característica; o valor exato depende do contexto.',
+                imperfeito:
+                    'Apresenta normalmente uma ação passada em desenvolvimento, habitual ou contínua no contexto.',
+                aoristo:
+                    'Apresenta a ação de forma global, sem necessariamente definir sua duração interna. O valor contextual deve ser considerado.',
+                perfeito:
+                    'Apresenta uma ação ou estado visto em relação a um resultado ou estado presente.',
+                mais_que_perfeito:
+                    'Apresenta uma ação anterior a outra referência passada.',
+                futuro:
+                    'Apresenta normalmente uma ação ou estado futuro.'
+            },
+
+            voz: {
+                ativa:
+                    'O sujeito é apresentado como agente da ação.',
+                passiva:
+                    'O sujeito é apresentado como aquele que recebe ou sofre a ação.',
+                média:
+                    'A forma média pode apresentar envolvimento especial do sujeito na ação; o sentido preciso depende do verbo e do contexto.'
+            },
+
+            modo: {
+                indicativo:
+                    'Apresenta a ação ou estado como uma afirmação ou declaração.',
+                subjuntivo:
+                    'Pode expressar possibilidade, intenção, finalidade, exortação ou outras relações dependentes do contexto.',
+                imperativo:
+                    'Expressa normalmente uma ordem, instrução ou exortação.',
+                infinitivo:
+                    'Forma verbal não finita que pode funcionar em diferentes relações sintáticas.',
+                particípio:
+                    'Forma verbal não finita que combina características verbais e adjetivais.'
+            },
+
+            caso: {
+                nominativo:
+                    'Normalmente associado ao sujeito ou predicativo.',
+                genitivo:
+                    'Pode expressar relações como posse, origem, descrição ou associação.',
+                dativo:
+                    'Pode expressar relações como destinatário, interesse, instrumento ou localização, conforme o contexto.',
+                acusativo:
+                    'Frequentemente marca o objeto direto ou a extensão da ação, entre outras funções.'
+            },
+
+            numero: {
+                singular:
+                    'Refere-se a uma unidade.',
+                plural:
+                    'Refere-se a mais de uma unidade.'
+            },
+
+            genero: {
+                masculino:
+                    'Gênero gramatical masculino.',
+                feminino:
+                    'Gênero gramatical feminino.',
+                neutro:
+                    'Gênero gramatical neutro.'
+            },
+
+            pessoa: {
+                '1ª':
+                    'Primeira pessoa: quem fala ou escreve.',
+                '2ª':
+                    'Segunda pessoa: a quem se fala ou escreve.',
+                '3ª':
+                    'Terceira pessoa: aquele ou aquilo de que se fala.'
+            },
+
+            forma: {
+                'verbo finito':
+                    'Forma verbal que apresenta pessoa e número.',
+                particípio:
+                    'Forma verbal não finita com características verbais e adjetivais.',
+                infinitivo:
+                    'Forma verbal não finita.'
+            }
+        };
+
+        return (
+            explanations[key] &&
+            explanations[key][value]
+        ) || '';
     }
 
     function renderDictionaryEntry(strongCode, data, occurrence) {
@@ -621,7 +932,18 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         const observations = pt.observacoes || pt.observacao || data.observations || '';
         const derivation = pt.derivacao || source.derivacao || data.derivation || '';
         const grammar = study.classe_lexical || study.classe_gramatical || data.grammar || '';
-        const tags = formatMorphology(occurrence && (occurrence.morphology || occurrence.morph || occurrence.grammar));
+        const morphologyData =
+            occurrence &&
+            (
+                occurrence.morphology ||
+                occurrence.morph ||
+                occurrence.grammar
+            );
+
+        const morphologyFields =
+            formatMorphology(
+                morphologyData
+            );
         const occurrenceForm = occurrence && (occurrence.form || occurrence.word || '');
         const occurrenceGloss = occurrence && (occurrence.gloss_pt || occurrence.text_pt || '');
         const transHtml = Array.isArray(translations) ? translations.filter(Boolean).map(escapeHTML).join(', ') : escapeHTML(translations);
@@ -630,7 +952,106 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
             ${translit ? `<div class="panel-pronuncia">Transliteração: ${escapeHTML(translit)}</div>` : ''}
             ${pron ? `<div class="panel-pronuncia">Pronúncia: [ ${escapeHTML(pron)} ]</div>` : ''}
             ${grammar ? `<div class="panel-grammar">${escapeHTML(grammar)}</div>` : ''}
-            ${occurrenceForm ? `<div class="dictionary-section"><div class="dictionary-section-title">Nesta ocorrência</div><div class="dictionary-occurrence"><div class="dictionary-occurrence-form">${escapeHTML(occurrenceForm)}</div>${occurrenceGloss ? `<div class="dictionary-occurrence-gloss">Equivalência: ${escapeHTML(occurrenceGloss)}</div>` : ''}${tags.length ? `<div class="dictionary-tags">${tags.map(t=>`<span class="dictionary-tag">${escapeHTML(t)}</span>`).join('')}</div>` : ''}${!tags.length ? `<div class="dictionary-note" style="margin-top:8px;">A morfologia desta ocorrência ainda não está disponível no arquivo interlinear.</div>` : ''}</div></div>` : ''}
+            ${occurrenceForm ? `
+                <div class="dictionary-section">
+
+                    <div class="dictionary-section-title">
+                        Nesta ocorrência
+                    </div>
+
+                    <div class="dictionary-occurrence">
+
+                        <div class="dictionary-occurrence-form">
+                            ${escapeHTML(occurrenceForm)}
+                        </div>
+
+                        ${
+                            occurrenceGloss
+                                ? `
+                                    <div class="dictionary-occurrence-gloss">
+                                        Equivalência:
+                                        ${escapeHTML(occurrenceGloss)}
+                                    </div>
+                                `
+                                : ''
+                        }
+
+                        ${
+                            morphologyFields.length
+                                ? `
+                                    <div class="morphology-study">
+
+                                        <div class="morphology-study-title">
+                                            Análise morfológica
+                                        </div>
+
+                                        ${morphologyFields.map(field => {
+
+                                            const explanation =
+                                                getMorphologyExplanation(
+                                                    field.key,
+                                                    field.value
+                                                );
+
+                                            return `
+                                                <div class="morphology-field">
+
+                                                    <div class="morphology-field-label">
+                                                        ${escapeHTML(field.label)}
+                                                    </div>
+
+                                                    <div class="morphology-field-value">
+                                                        ${escapeHTML(field.value)}
+                                                    </div>
+
+                                                    ${
+                                                        explanation
+                                                            ? `
+                                                                <div class="morphology-field-help">
+                                                                    ${escapeHTML(explanation)}
+                                                                </div>
+                                                            `
+                                                            : ''
+                                                    }
+
+                                                </div>
+                                            `;
+
+                                        }).join('')}
+
+                                    </div>
+                                `
+                                : `
+                                    <div class="dictionary-note">
+                                        A morfologia desta ocorrência ainda
+                                        não está disponível.
+                                    </div>
+                                `
+                        }
+
+                    </div>
+                </div>
+            ` : ''}
+            ${
+                morphologyData &&
+                morphologyData.codigo_parse
+                    ? `
+                        <div class="dictionary-section">
+
+                            <div class="dictionary-section-title">
+                                Código morfológico
+                            </div>
+
+                            <div class="morphology-code">
+                                ${escapeHTML(
+                                    morphologyData.codigo_parse
+                                )}
+                            </div>
+
+                        </div>
+                    `
+                    : ''
+            }
             ${transHtml ? `<div class="dictionary-section"><div class="dictionary-section-title">Traduções principais</div><div class="panel-traducoes" style="font-weight:normal;">${transHtml}</div></div>` : ''}
             ${definition ? `<div class="dictionary-section"><div class="dictionary-section-title">Definição</div><div class="dictionary-definition">${escapeHTML(definition)}</div></div>` : ''}
             ${summary ? `<div class="dictionary-section"><div class="dictionary-section-title">Resumo para estudo</div><div class="dictionary-summary">${escapeHTML(summary)}</div></div>` : ''}
@@ -805,13 +1226,87 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
                 words: []
             };
         }
-        return verse;
+
+        return verse || {
+            id: `${bibleData[currentBook]?.id || 'verse'}-${index + 1}`,
+            text_pt: '',
+            words: []
+        };
     }
 
+
+    // ==========================================================
+    // NORMALIZAÇÃO DA ESTRUTURA DO CAPÍTULO
+    // ==========================================================
+    // Traduções normais:
+    //     chapter = [versículo, versículo, ...]
+    //
+    // A Mensagem:
+    //     chapter = {
+    //         verses: [versículo, versículo, ...]
+    //     }
+    //
+    // Todas as funções de leitura devem passar por aqui.
+    // ==========================================================
+
+    function getChapterVerses(chapterData) {
+        if (Array.isArray(chapterData)) {
+            return chapterData;
+        }
+
+        if (Array.isArray(chapterData?.verses)) {
+            return chapterData.verses;
+        }
+
+        return [];
+    }
+
+
+    function getChapterVerse(chapterData, vIdx) {
+        const verses = getChapterVerses(chapterData);
+        return verses[vIdx];
+    }
+
+
     function getVerseTextForCopy(verseObj) {
-        if (typeof verseObj === 'string') return verseObj;
-        if (verseObj.text_pt) return verseObj.text_pt;
-        return (verseObj.words || []).map(w => w.text_pt || w.word).join(' ').replace(/\s+/g, ' ').trim();
+
+        if (typeof verseObj === 'string') {
+            return verseObj;
+        }
+
+        if (!verseObj || typeof verseObj !== 'object') {
+            return '';
+        }
+
+        // Texto principal das traduções normais
+        if (verseObj.text_pt) {
+            return verseObj.text_pt;
+        }
+
+        // Estrutura alternativa usada por algumas versões
+        if (verseObj.text) {
+            return verseObj.text;
+        }
+
+        // Outros nomes possíveis de campo de texto
+        if (verseObj.content) {
+            return verseObj.content;
+        }
+
+        if (verseObj.texto) {
+            return verseObj.texto;
+        }
+
+        // Fallback para estruturas baseadas em palavras
+        if (Array.isArray(verseObj.words)) {
+            return verseObj.words
+                .map(w => w.text_pt || w.word || '')
+                .join(' ')
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+
+        return '';
     }
 
     function renderChapter(bIdx, cIdx) {
@@ -820,16 +1315,49 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         const sameChapter = currentBook === bIdx && currentChap === cIdx;
         currentBook = bIdx;
         currentChap = cIdx;
-        localStorage.setItem('bible_last_read', JSON.stringify({ bookIdx: bIdx, chapIdx: cIdx }));
+        localStorage.setItem('bible_last_read', JSON.stringify({
+            bookIdx: bIdx,
+            chapIdx: cIdx
+        }));
+
         clearSelection();
         fecharGavetas();
 
         const book = bibleData[bIdx];
-        const verses = book.chapters[cIdx];
-        document.getElementById('pill-title').innerText = `${book.name} ${cIdx + 1}`;
-        const notesInChap = savedNotes.filter(n => n.bookIdx === bIdx && n.chapIdx === cIdx);
 
-        let html = `<div class="chapter-header"><div class="book-name">${escapeHTML(book.name)}</div><div class="chap-number">${cIdx + 1}</div></div>`;
+        const chapterData = book.chapters[cIdx];
+
+        const verses = Array.isArray(chapterData)
+            ? chapterData
+            : (Array.isArray(chapterData?.verses)
+                ? chapterData.verses
+                : []);
+
+        document.getElementById('pill-title').innerText =
+            `${book.name} ${cIdx + 1}`;
+
+        const notesInChap =
+            savedNotes.filter(
+                n => n.bookIdx === bIdx && n.chapIdx === cIdx
+            );
+
+        const pericopes =
+            getPericopesForChapter(
+                book,
+                cIdx
+            );
+
+        let html = `
+            <div class="chapter-header">
+                <div class="book-name">
+                    ${escapeHTML(book.name)}
+                </div>
+
+                <div class="chap-number">
+                    ${cIdx + 1}
+                </div>
+            </div>
+        `;
         const numActiveLangs = (estadoIdiomas.pt ? 1 : 0) + (estadoIdiomas.en ? 1 : 0) + (estadoIdiomas.orig ? 1 : 0);
         const isInt = currentVersionId === 'int.json';
         const isFluidMode = !isInt || numActiveLangs === 1;
@@ -837,17 +1365,98 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
 
         verses.forEach((verse, i) => {
             const verseObj = normalizeVerseObject(verse, i);
+            const verseNumber = i + 1;
+
+            const currentPericope =
+                getPericopeForVerse(
+                    pericopes,
+                    verseNumber
+                );
+            const isPericopeStart =
+                currentPericope &&
+                verseNumber ===
+                    currentPericope.start_verse;
             const hasNote = notesInChap.some(n => Array.isArray(n.verses) && n.verses.includes(i));
             const hasSaved = getSavedMatch(bIdx, cIdx, i);
             const stateClasses = `${hasNote ? 'has-note' : ''} ${hasSaved ? 'has-saved' : ''}`.trim();
 
             if (isFluidMode || !verseObj.words || verseObj.words.length === 0) {
+
                 let fluidText = '';
-                if (typeof verse === 'string') fluidText = verse;
-                else if (estadoIdiomas.pt) fluidText = verseObj.text_pt || (verseObj.words || []).map(w => w.text_pt).join(' ');
-                else if (estadoIdiomas.en) fluidText = (verseObj.words || []).map(w => w.text_en).join(' ');
-                else if (estadoIdiomas.orig) fluidText = (verseObj.words || []).map(w => w.word).join(' ');
-                fluidText = fluidText.replace(/\s+/g, ' ').trim();
+
+                // ==========================================================
+                // TRADUÇÕES / PARÁFRASES NÃO INTERLINEARES
+                // ==========================================================
+                // MENS não deve depender do estado dos idiomas do
+                // interlinear. A gaveta de idiomas só controla o INT.
+                // ==========================================================
+
+                if (!isInt) {
+
+                    fluidText = getVerseTextForCopy(verseObj);
+
+                } else {
+
+                    // ======================================================
+                    // INT — respeita os idiomas selecionados
+                    // ======================================================
+
+                    if (typeof verse === 'string') {
+
+                        fluidText = verse;
+
+                    } else if (estadoIdiomas.pt) {
+
+                        fluidText =
+                            verseObj.text_pt ||
+                            (verseObj.words || [])
+                                .map(w => w.text_pt || '')
+                                .join(' ');
+
+                    } else if (estadoIdiomas.en) {
+
+                        fluidText =
+                            (verseObj.words || [])
+                                .map(w => w.text_en || '')
+                                .join(' ');
+
+                    } else if (estadoIdiomas.orig) {
+
+                        fluidText =
+                            (verseObj.words || [])
+                                .map(w => w.word || '')
+                                .join(' ');
+                    }
+                }
+
+                fluidText =
+                    String(fluidText || '')
+                        .replace(/\s+/g, ' ')
+                        .trim();
+
+                if (isPericopeStart) {
+
+                    html += `
+                        <div
+                            class="pericope-header"
+                            data-pericope-id="${escapeHTML(
+                                currentPericope.id
+                            )}"
+                        >
+
+                            <div class="pericope-title">
+                                ${escapeHTML(
+                                    currentPericope.title
+                                )}
+                            </div>
+
+                            <div class="pericope-range">
+                                ${currentPericope.start_verse}–${currentPericope.end_verse}
+                            </div>
+
+                        </div>
+                    `;
+                }
 
                 html += `<div class="verse fluid-mode ${stateClasses} ${estadoIdiomas.orig && !estadoIdiomas.pt && !estadoIdiomas.en ? 'original-only':''}" ${dirAttr} id="v-${i}" onclick="toggleVerse(${i})"><span class="verse-num">${i + 1}</span> ${escapeHTML(fluidText)}</div>`;
             } else {
@@ -1003,45 +1612,6 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
             }
         });
 
-        function bindDictionaryWordClicks() {
-
-            const words = document.querySelectorAll(
-                '#chapter-content .dictionary-word'
-            );
-
-            words.forEach(word => {
-
-                word.addEventListener(
-                    'click',
-                    function(event) {
-
-                        event.stopPropagation();
-
-                        const strongCode =
-                            this.dataset.strong || '';
-
-                        const occurrenceForm =
-                            this.dataset.occurrenceForm || '';
-
-                        const occurrenceGloss =
-                            this.dataset.occurrenceGloss || '';
-
-                        const occurrenceMorphology =
-                            this.dataset.occurrenceMorphology || '';
-
-                        openDictionary(
-                            event,
-                            strongCode,
-                            currentBook,
-                            occurrenceForm,
-                            occurrenceGloss,
-                            occurrenceMorphology
-                        );
-                    }
-                );
-            });
-        }
-
         document.getElementById('chapter-content').innerHTML = html;
 
         bindDictionaryWordClicks();
@@ -1066,12 +1636,6 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
 
     function bindDictionaryWordClicks() {
 
-                event,
-                    strongCode,
-                    currentBook,
-                    occurrenceForm,
-                    occurrenceGloss,
-                    occurrenceMorphology
         const words = document.querySelectorAll(
             '#chapter-content .dictionary-word'
         );
@@ -1095,8 +1659,16 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
                     this.dataset.occurrenceMorphology || '';
 
                 openDictionary(
+                    event,
+                    strongCode,
+                    currentBook,
+                    occurrenceForm,
+                    occurrenceGloss,
+                    occurrenceMorphology
                 );
+
             });
+
         });
     }
 
@@ -1157,48 +1729,50 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
 
     function renderVerseGridModal(bIdx, cIdx) {
 
-        const book = bibleData[bIdx];
+    const book = bibleData[bIdx];
 
-        if (!book) return;
+    if (!book) return;
 
-        const chapter = book.chapters[cIdx];
+    const chapter = book.chapters[cIdx];
 
-        if (!chapter) return;
+    if (!chapter) return;
 
-        document.getElementById('modal-title').innerText =
-            `${book.name} ${cIdx + 1}`;
+    const verses = getChapterVerses(chapter);
 
-        let html = `
-            <div style="margin-bottom:15px;">
-                <button
-                    class="btn-min"
-                    onclick="renderChapterGridModal(${bIdx})"
-                >
-                    &#10094; Capítulos
-                </button>
+    document.getElementById('modal-title').innerText =
+        `${book.name} ${cIdx + 1}`;
+
+    let html = `
+        <div style="margin-bottom:15px;">
+            <button
+                class="btn-min"
+                onclick="renderChapterGridModal(${bIdx})"
+            >
+                &#10094; Capítulos
+            </button>
+        </div>
+
+        <div class="grid-chapters">
+    `;
+
+    verses.forEach((_, vIdx) => {
+
+        html += `
+            <div
+                class="grid-item"
+                onclick="selectVerseFromModal(${bIdx}, ${cIdx}, ${vIdx})"
+            >
+                ${vIdx + 1}
             </div>
-
-            <div class="grid-chapters">
         `;
 
-        chapter.forEach((_, vIdx) => {
+    });
 
-            html += `
-                <div
-                    class="grid-item"
-                    onclick="selectVerseFromModal(${bIdx}, ${cIdx}, ${vIdx})"
-                >
-                    ${vIdx + 1}
-                </div>
-            `;
+    html += `</div>`;
 
-        });
-
-        html += `</div>`;
-
-        document.getElementById('modal-body').innerHTML =
-            html;
-    }
+    document.getElementById('modal-body').innerHTML =
+        html;
+}
 
 
     function selectVerseFromModal(bIdx, cIdx, vIdx) {
@@ -1339,60 +1913,372 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     // BUSCA
     // ==========================================
     function searchBible() {
-        const query = document.getElementById('search-input').value;
-        if(!query || query.trim().length < 3) return showToast("Digite pelo menos 3 caracteres.");
-        
-        const nQuery = normalizeForSearch(query);
-        const results = [];
 
-        for(let bIdx = 0; bIdx < bibleData.length; bIdx++) {
-            const book = bibleData[bIdx];
-            for(let cIdx = 0; cIdx < book.chapters.length; cIdx++) {
-                for(let vIdx = 0; vIdx < book.chapters[cIdx].length; vIdx++) {
-                    const verseObj = book.chapters[cIdx][vIdx];
-                    let searchable = "";
-                    if(typeof verseObj === 'string') {
-                        searchable = verseObj;
-                    } else {
-                        searchable = (verseObj.text_pt || '') + " " + (verseObj.words || []).map(w => (w.word||'') + " " + (w.text_pt||'') + " " + (w.text_en||'')).join(' ');
-                    }
-                    
-                    if(normalizeForSearch(searchable).includes(nQuery)) {
-                        results.push({ bIdx, cIdx, vIdx, bookName: book.name, text: getVerseTextForCopy(verseObj) });
-                    }
-                    if(results.length >= 100) break;
-                }
-                if(results.length >= 100) break;
-            }
-            if(results.length >= 100) break;
+        const input =
+            document.getElementById('search-input');
+
+        const resDiv =
+            document.getElementById('search-results');
+
+        if (!input || !resDiv) return;
+
+        const query =
+            input.value.trim();
+
+        if (!query) {
+            resDiv.innerHTML =
+                '<p style="color:#777;">Digite uma palavra ou frase para pesquisar.</p>';
+            return;
         }
 
-        const resDiv = document.getElementById('search-results');
-        let html = `<h3 style="font-size:16px;">${results.length}${results.length === 100 ? '+' : ''} resultados</h3>`;
-        if(results.length === 0) html += `<p style="color:#777;">Nenhum resultado para "${escapeHTML(query)}".</p>`;
-        
-        results.forEach(res => {
-            html += `<div class="card" style="padding:15px; cursor:pointer;" onclick="openSearchResult(${res.bIdx}, ${res.cIdx}, ${res.vIdx})">
-                    <p style="font-weight:700; color:var(--secondary); font-size:14px; margin-bottom:6px;">${res.bookName} ${res.cIdx + 1}:${res.vIdx + 1}</p>
-                    <p style="font-size:15px; color:#444; line-height:1.4;">${escapeHTML(res.text)}</p></div>`;
-        });
+        const nQuery =
+            normalizeForSearch(query);
+
+        const results = [];
+
+        for (let bIdx = 0; bIdx < bibleData.length; bIdx++) {
+
+            const book =
+                bibleData[bIdx];
+
+            if (!book || !Array.isArray(book.chapters)) {
+                continue;
+            }
+
+            for (
+                let cIdx = 0;
+                cIdx < book.chapters.length;
+                cIdx++
+            ) {
+
+                const verses =
+                    getChapterVerses(
+                        book.chapters[cIdx]
+                    );
+
+                for (
+                    let vIdx = 0;
+                    vIdx < verses.length;
+                    vIdx++
+                ) {
+
+                    const verseObj =
+                        verses[vIdx];
+
+                    let searchable = '';
+
+                    // ------------------------------------------
+                    // Texto principal do versículo
+                    // ------------------------------------------
+
+                    searchable =
+                        getVerseTextForCopy(
+                            verseObj
+                        );
+
+                    // ------------------------------------------
+                    // Segurança para estruturas alternativas
+                    // ------------------------------------------
+
+                    if (
+                        !searchable &&
+                        typeof verseObj === 'string'
+                    ) {
+                        searchable =
+                            verseObj;
+                    }
+
+                    // ------------------------------------------
+                    // Para o INT, também pesquisamos as palavras
+                    // ------------------------------------------
+
+                    if (
+                        verseObj &&
+                        typeof verseObj === 'object' &&
+                        Array.isArray(verseObj.words)
+                    ) {
+
+                        const wordsText =
+                            verseObj.words
+                                .map(w =>
+                                    [
+                                        w?.word || '',
+                                        w?.text_pt || '',
+                                        w?.text_en || ''
+                                    ].join(' ')
+                                )
+                                .join(' ');
+
+                        searchable +=
+                            ' ' +
+                            wordsText;
+                    }
+
+                    // ------------------------------------------
+                    // Compara sem acentos/pontuação
+                    // ------------------------------------------
+
+                    const normalizedText =
+                        normalizeForSearch(
+                            searchable
+                        );
+
+                    if (
+                        normalizedText.includes(
+                            nQuery
+                        )
+                    ) {
+
+                        results.push({
+                            bIdx,
+                            cIdx,
+                            vIdx,
+                            bookName:
+                                book.name,
+                            text:
+                                getVerseTextForCopy(
+                                    verseObj
+                                )
+                        });
+                    }
+
+                    // Limite de segurança
+                    if (results.length >= 100) {
+                        break;
+                    }
+                }
+
+                if (results.length >= 100) {
+                    break;
+                }
+            }
+
+            if (results.length >= 100) {
+                break;
+            }
+        }
+
+        // ------------------------------------------
+        // Renderiza resultados
+        // ------------------------------------------
+
+        let html =
+            `<h3 style="font-size:16px;">
+                ${results.length}${results.length === 100 ? '+' : ''} resultados
+            </h3>`;
+
+        if (results.length === 0) {
+
+            html += `
+                <p style="color:#777;">
+                    Nenhum resultado para
+                    "${escapeHTML(query)}".
+                </p>
+            `;
+
+        } else {
+
+            results.forEach(res => {
+
+                html += `
+                    <div
+                        class="card"
+                        style="padding:15px; cursor:pointer;"
+                        onclick="openSearchResult(
+                            ${res.bIdx},
+                            ${res.cIdx},
+                            ${res.vIdx}
+                        )"
+                    >
+
+                        <p
+                            style="
+                                font-weight:700;
+                                color:var(--secondary);
+                                font-size:14px;
+                                margin-bottom:6px;
+                            "
+                        >
+                            ${escapeHTML(res.bookName)}
+                            ${res.cIdx + 1}:${res.vIdx + 1}
+                        </p>
+
+                        <p
+                            style="
+                                font-size:15px;
+                                color:#444;
+                                line-height:1.4;
+                            "
+                        >
+                            ${escapeHTML(res.text)}
+                        </p>
+
+                    </div>
+                `;
+            });
+        }
+
         resDiv.innerHTML = html;
     }
 
-    // ==========================================
-    // SELEÇÃO DE VERSÍCULOS
-    // ==========================================
-    function toggleVerse(vIdx) {
+    async function toggleVerse(vIdx) {
+
         const el = document.getElementById(`v-${vIdx}`);
+
         if (!el) return;
+
+
+        // ==========================================================
+        // VERIFICA SE A GAVETA DE COMPARAÇÃO ESTÁ ABERTA
+        // ==========================================================
+
+        const comparisonDrawer =
+            document.getElementById('comparison-drawer');
+
+        const comparisonOpen =
+            !!comparisonDrawer &&
+            comparisonDrawer.classList.contains('open');
+
+
+        // ==========================================================
+        // COMPARAÇÃO ABERTA
+        // ==========================================================
+        // Enquanto a comparação estiver aberta:
+        //
+        // - só pode existir UM versículo selecionado;
+        // - o último clicado substitui o anterior;
+        // - a comparação é atualizada automaticamente.
+        // ==========================================================
+
+        if (comparisonOpen) {
+
+            // Remove seleção visual de todos os versículos
+            document
+                .querySelectorAll(
+                    '#chapter-content .verse.selected'
+                )
+                .forEach(item => {
+                    item.classList.remove('selected');
+                });
+
+
+            // Limpa o estado interno
+            selectedVersesMap.clear();
+
+
+            // Obtém o capítulo respeitando o formato da tradução
+            const chapterData =
+                bibleData[currentBook]
+                    ?.chapters
+                    ?. [currentChap];
+
+
+            // Obtém o versículo pelo helper
+            const verseObj =
+                getChapterVerse(
+                    chapterData,
+                    vIdx
+                );
+
+
+            // Texto seguro
+            const plainText =
+                getVerseTextForCopy(
+                    verseObj
+                );
+
+
+            // Agora este é o único versículo selecionado
+            selectedVersesMap.set(
+                vIdx,
+                {
+                    v: vIdx,
+                    text: plainText
+                }
+            );
+
+
+            // Atualiza destaque visual
+            el.classList.add('selected');
+
+
+            // Atualiza barra de seleção
+            updateSelectionBar();
+
+
+            // ======================================================
+            // ATUALIZA A COMPARAÇÃO
+            // ======================================================
+
+            const activeButton =
+                comparisonDrawer.querySelector(
+                    '.comparison-version-btn.active'
+                );
+
+
+            const activeVersionId =
+                activeButton?.dataset?.versionId ||
+                null;
+
+
+            if (activeVersionId) {
+
+                await selectComparisonVersion(
+                    activeVersionId
+                );
+            }
+
+
+            return;
+        }
+
+
+        // ==========================================================
+        // COMPORTAMENTO NORMAL
+        // ==========================================================
+        // Fora da comparação, continua permitindo seleção múltipla.
+        // ==========================================================
+
         if (selectedVersesMap.has(vIdx)) {
+
             selectedVersesMap.delete(vIdx);
+
             el.classList.remove('selected');
+
         } else {
-            const plainText = getVerseTextForCopy(bibleData[currentBook].chapters[currentChap][vIdx]);
-            selectedVersesMap.set(vIdx, { v: vIdx, text: plainText });
+
+            const chapterData =
+                bibleData[currentBook]
+                    ?.chapters
+                    ?. [currentChap];
+
+
+            const verseObj =
+                getChapterVerse(
+                    chapterData,
+                    vIdx
+                );
+
+
+            const plainText =
+                getVerseTextForCopy(
+                    verseObj
+                );
+
+
+            selectedVersesMap.set(
+                vIdx,
+                {
+                    v: vIdx,
+                    text: plainText
+                }
+            );
+
+
             el.classList.add('selected');
         }
+
+
         updateSelectionBar();
     }
 
@@ -1579,8 +2465,54 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         return data;
     }
 
+    function getSelectedSourceReferenceRange() {
+
+        const selected =
+            getSelectedOrdered()[0];
+
+        if (!selected) {
+            return null;
+        }
+
+        const book =
+            bibleData[currentBook];
+
+        if (!book) {
+            return null;
+        }
+
+        const chapter =
+            book.chapters[currentChap];
+
+        const meta =
+            versoesDisponiveis.find(
+                v => v.id === currentVersionId
+            );
+
+        // MENS / paráfrases
+        if(meta?.tipo === 'paraphrase') {
+
+            const verseObj =
+                getChapterVerse(
+                    chapter,
+                    selected.v
+                );
+
+            return getVerseReferenceRange(
+                verseObj,
+                selected.v
+            );
+        }
+
+        // Traduções normais
+        return {
+            start: selected.v + 1,
+            end: selected.v + 1
+        };
+    }
 
     function getComparisonReference() {
+
         const book =
             bibleData[currentBook];
 
@@ -1588,7 +2520,23 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
             return '';
         }
 
-        return `${getAbbrev(book.name)} ${currentChap + 1}:${getSelectedOrdered()[0].v + 1}`;
+        const range =
+            getSelectedSourceReferenceRange();
+
+        if (!range) {
+            return '';
+        }
+
+        const chapterRef =
+            `${getAbbrev(book.name)} ${currentChap + 1}`;
+
+        if(range.start === range.end) {
+
+            return `${chapterRef}:${range.start}`;
+
+        }
+
+        return `${chapterRef}:${range.start}-${range.end}`;
     }
 
 
@@ -1628,6 +2576,29 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
             });
     }
 
+    function getComparisonSegments(chapter, verseNumber) {
+
+        if (!chapter) return [];
+
+        // Traduções normais:
+        // cada posição do array corresponde a um versículo.
+        if (Array.isArray(chapter)) {
+
+            const direct = chapter[verseNumber];
+
+            if (direct !== undefined) {
+                return [{
+                    verse: direct,
+                    start: verseNumber + 1,
+                    end: verseNumber + 1
+                }];
+            }
+
+            return [];
+        }
+
+        return [];
+    }
 
     async function selectComparisonVersion(versionId) {
 
@@ -1686,17 +2657,102 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
             const selected =
                 getSelectedOrdered()[0];
 
-            const verse =
-                chapter[selected.v];
+            const sourceRange =
+                getSelectedSourceReferenceRange();
 
-            if (verse === undefined) {
+            let segments = [];
+
+            if(sourceRange) {
+
+                const targetMeta =
+                    versoesDisponiveis.find(
+                        v => v.id === versionId
+                    );
+
+                /*
+                * Se a tradução secundária também for uma
+                * paráfrase, basta procurar pelo início
+                * do segmento.
+                */
+                if(targetMeta?.tipo === 'paraphrase') {
+
+                    segments =
+                        getComparisonVerseSegments(
+                            chapter,
+                            sourceRange.start - 1,
+                            versionId
+                        );
+
+                } else {
+
+                    /*
+                    * Tradução normal:
+                    * um segmento da MENS pode corresponder
+                    * a vários versículos normais.
+                    */
+                    for(
+                        let n = sourceRange.start;
+                        n <= sourceRange.end;
+                        n++
+                    ) {
+
+                        const found =
+                            getComparisonVerseSegments(
+                                chapter,
+                                n - 1,
+                                versionId
+                            );
+
+                        segments.push(...found);
+                    }
+
+                }
+
+                /*
+                * Remove possíveis duplicações.
+                */
+                const uniqueSegments = [];
+                const seenSegments = new Set();
+
+                segments.forEach(segment => {
+
+                    const key =
+                        `${segment.start}-${segment.end}-${getComparisonVerseText(segment.verse)}`;
+
+                    if(!seenSegments.has(key)) {
+
+                        seenSegments.add(key);
+                        uniqueSegments.push(segment);
+
+                    }
+
+                });
+
+                segments = uniqueSegments;
+            }
+
+            if (!segments.length) {
                 throw new Error(
                     'Versículo não encontrado na tradução selecionada.'
                 );
             }
 
-            const text =
-                getComparisonVerseText(verse);
+            const text = segments
+                .map(segment => {
+
+                    const segmentText =
+                        getComparisonVerseText(
+                            segment.verse
+                        );
+
+                    if (segment.start === segment.end) {
+                        return `${segment.start}. ${segmentText}`;
+                    }
+
+                    return `${segment.start}-${segment.end}. ${segmentText}`;
+
+                })
+                .join('\n\n');
 
             const meta =
                 versoesDisponiveis.find(
@@ -1732,6 +2788,25 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         }
     }
 
+    function getVerseReferenceRange(verseObj, index) {
+
+        const start =
+            Number(
+                verseObj?.number ??
+                index + 1
+            );
+
+        const end =
+            Number(
+                verseObj?.endNumber ??
+                start
+            );
+
+        return {
+            start,
+            end
+        };
+    }
 
     async function compareSelectedVerse() {
 

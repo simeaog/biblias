@@ -109,7 +109,7 @@
     .chapter-header .book-name { font-size: 18px; font-weight: 600; color: #7f8c8d; text-transform: uppercase; letter-spacing: 1px;}
     .chapter-header .chap-number { font-size: 56px; font-weight: 700; color: var(--primary); line-height: 1; margin-top: 5px;}
     
-    .verse { margin-bottom: 20px; border-radius: 6px; cursor: pointer; transition: background 0.2s; position: relative; }
+    .verse { margin-bottom: 1px; border-radius: 6px; cursor: pointer; transition: background 0.2s; position: relative; }
     .verse-num { font-weight: 700; color: #95a5a6; font-size: 11px; margin-right: 6px; pointer-events: none; flex: 0 0 auto; }
     .verse.selected { background-color: var(--accent); }
     .verse.has-note { border-left: 3px solid var(--note-border); background-color: var(--note-bg); padding-left: 10px;}
@@ -536,4 +536,84 @@
     margin-right: 0;
     line-height: 1.45;
     white-space: pre-wrap;
+}
+
+/* =========================================================
+   MORFOLOGIA — ESTUDO DA OCORRÊNCIA
+   ========================================================= */
+
+.morphology-study {
+    margin-top: 12px;
+}
+
+.morphology-study-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.morphology-field {
+    padding: 8px 0;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.morphology-field:last-child {
+    border-bottom: none;
+}
+
+.morphology-field-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.morphology-field-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 2px;
+}
+
+.morphology-field-help {
+    font-size: 12px;
+    line-height: 1.45;
+    color: #777;
+    margin-top: 3px;
+}
+
+.morphology-code {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: 700;
+    background: #f4f6f7;
+    border: 1px solid #e0e4e7;
+    border-radius: 6px;
+    padding: 6px 9px;
+    letter-spacing: 0.04em;
+}
+
+/* =========================================================
+   TÍTULOS DAS PERÍCOPES
+   ========================================================= */
+
+.pericope-header {
+    margin: 26px 0 10px;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.pericope-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: inherit;
+}
+
+.pericope-range {
+    display: none;
 }
