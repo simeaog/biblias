@@ -573,6 +573,50 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         };
     }
 
+    function getSavedVersionId(item) {
+
+        if (!item) {
+            return currentVersionId;
+        }
+
+        // Preferimos o ID exato salvo no registro.
+        if (item.versionId) {
+            const exists = versoesDisponiveis.some(
+                v => v.id === item.versionId
+            );
+
+            if (exists) {
+                return item.versionId;
+            }
+        }
+
+        // Compatibilidade com registros antigos
+        // que possuem apenas a abreviação da tradução.
+        if (item.version) {
+
+            const normalizedVersion =
+                String(item.version)
+                    .replace('.json', '')
+                    .trim()
+                    .toUpperCase();
+
+            const meta =
+                versoesDisponiveis.find(
+                    v =>
+                        String(v.abbrev).toUpperCase() ===
+                        normalizedVersion
+                );
+
+            if (meta) {
+                return meta.id;
+            }
+        }
+
+        // Último recurso:
+        // mantém a tradução atualmente ativa.
+        return currentVersionId;
+    }
+
     function formatSavedDate(value) {
         if (!value) return '';
         const d = new Date(value);
@@ -3130,12 +3174,31 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
             });
     }
 
-    function openSavedReference(i) {
+    async function openSavedReference(i) {
+
         const item = savedVerses[i];
+
         if (!item) return;
-        pendingVerseScroll = Array.isArray(item.verses) && item.verses.length ? item.verses[0] : null;
+
+        const versionId =
+            getSavedVersionId(item);
+
+        pendingVerseScroll =
+            Array.isArray(item.verses) &&
+            item.verses.length
+                ? item.verses[0]
+                : null;
+
         switchTab('read');
-        renderChapter(item.bookIdx, item.chapIdx);
+
+        // Restaura a tradução em que o trecho foi salvo.
+        await carregarTraducao(versionId);
+
+        // Depois abre o capítulo correspondente.
+        renderChapter(
+            item.bookIdx,
+            item.chapIdx
+        );
     }
 
     function refreshCurrentVerseHighlights() {
@@ -3328,12 +3391,31 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         );
     }
 
-    function openNoteReference(i) {
+    async function openNoteReference(i) {
+
         const item = savedNotes[i];
+
         if (!item) return;
-        pendingVerseScroll = Array.isArray(item.verses) && item.verses.length ? item.verses[0] : null;
+
+        const versionId =
+            getSavedVersionId(item);
+
+        pendingVerseScroll =
+            Array.isArray(item.verses) &&
+            item.verses.length
+                ? item.verses[0]
+                : null;
+
         switchTab('read');
-        renderChapter(item.bookIdx, item.chapIdx);
+
+        // Primeiro restaura a tradução em que a nota foi criada.
+        await carregarTraducao(versionId);
+
+        // Depois garante o capítulo correto.
+        renderChapter(
+            item.bookIdx,
+            item.chapIdx
+        );
     }
 
     async function editNote(i) {
