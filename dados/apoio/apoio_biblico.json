@@ -1,0 +1,1429 @@
+{
+  "versao": "1.0",
+  "titulo": "Material de Apoio Bíblico",
+  "descricao": "Pesos, moedas e medidas mencionados no material de apoio fotografado.",
+  "categorias": [
+    {
+      "id": "pesos",
+      "titulo": "Pesos",
+      "icone": "⚖️",
+      "ordem": 1,
+      "descricao": "Pesos e unidades de massa.",
+      "conteudo": [
+        {
+          "tipo": "observacao",
+          "titulo": "Observação",
+          "texto": "A tabela apresenta as unidades em sequência ascendente, começando pela unidade menor e terminando com a maior. A unidade básica é indicada com o valor 1 na coluna Proporção. Os valores atuais são apresentados como aproximados."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Nome",
+            "Referência",
+            "Correspondente bíblico",
+            "Proporção",
+            "Equivalente atual"
+          ],
+          "linhas": [
+            {
+              "nome": "Gera",
+              "referencia": "Êx 30.13",
+              "correspondente": "1/10 do beca ou 1/20 do siclo",
+              "proporcao": "1/20",
+              "equivalente": "0,571 g"
+            },
+            {
+              "nome": "Beca",
+              "referencia": "Êx 38.26",
+              "correspondente": "10 geras ou 1/2 do siclo",
+              "proporcao": "1/2",
+              "equivalente": "5,712 g"
+            },
+            {
+              "nome": "Siclo",
+              "referencia": "Gn 24.22",
+              "correspondente": "20 geras ou 2 becas",
+              "proporcao": "1",
+              "equivalente": "11,424 g"
+            },
+            {
+              "nome": "Mina ou arrátel",
+              "referencia": "Ed 2.69",
+              "correspondente": "50 siclos",
+              "proporcao": "50",
+              "equivalente": "571,2 g"
+            },
+            {
+              "nome": "Talento",
+              "referencia": "2Sm 12.30",
+              "correspondente": "3000 siclos ou 60 minas",
+              "proporcao": "3000",
+              "equivalente": "34,272 kg"
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "* A mina em Ezequiel (45.12) é igual a 60 siclos e equivale a 685,44 g. ** O nome arrátel também é usado para a libra romana (Jo 12.3; 19.39), que equivale a 325 g. *** O talento em Apocalipse (16.21) equivale a 40 kg."
+        }
+      ]
+    },
+    {
+      "id": "moedas",
+      "titulo": "Moedas",
+      "icone": "💰",
+      "ordem": 2,
+      "descricao": "Moedas e referências monetárias.",
+      "conteudo": [
+        {
+          "tipo": "subtitulo",
+          "titulo": "No Antigo Testamento"
+        },
+        {
+          "tipo": "lista",
+          "itens": [
+            "O siclo, a mina e o talento eram peças ou barras de metal (prata, ouro) usadas como meio de pagamento (2Rs 18.14).",
+            "Como moeda, aparece o darico (1Cr 29.7; Ed 2.69; 8.27; Ne 7.70; RC, “dracma”), uma moeda de ouro que pesava 8,4 g.",
+            "A peça de dinheiro (Gn 33.19, quesita) é de valor ignorado."
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "titulo": "No Novo Testamento"
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Nome",
+            "Referência",
+            "Tipo / correspondente bíblico",
+            "Proporção",
+            "Equivalente"
+          ],
+          "linhas": [
+            {
+              "nome": "Lépto",
+              "referencia": "Mc 12.42",
+              "tipo": "Moeda de cobre ou de bronze; 1/2 do quadrante ou 1/128 do denário",
+              "proporcao": "1/128",
+              "equivalente": ""
+            },
+            {
+              "nome": "Quadrante",
+              "referencia": "Mc 12.42",
+              "tipo": "Moeda romana de cobre; 1/4 do asse ou 1/64 do denário",
+              "proporcao": "1/64",
+              "equivalente": ""
+            },
+            {
+              "nome": "Asse (ceitil)",
+              "referencia": "Mt 10.29",
+              "tipo": "Moeda romana de cobre",
+              "proporcao": "1/16 do denário",
+              "equivalente": ""
+            },
+            {
+              "nome": "Denário (dinheiro)",
+              "referencia": "Mt 20.2; RC",
+              "tipo": "Moeda romana de prata; unidade básica",
+              "proporcao": "1",
+              "equivalente": "salário de um dia de trabalho"
+            },
+            {
+              "nome": "Dracma",
+              "referencia": "Lc 15.8",
+              "tipo": "Moeda grega de prata",
+              "proporcao": "igual a 1 denário",
+              "equivalente": ""
+            },
+            {
+              "nome": "Didracma",
+              "referencia": "Mt 17.24; RC",
+              "tipo": "Moeda grega de prata",
+              "proporcao": "2 dracmas ou 2 denários",
+              "equivalente": "2"
+            },
+            {
+              "nome": "Tetradracma",
+              "referencia": "Mt 26.15",
+              "tipo": "Moeda grega de prata",
+              "proporcao": "4 dracmas ou 4 denários",
+              "equivalente": "4"
+            },
+            {
+              "nome": "Estáter",
+              "referencia": "Mt 17.27",
+              "tipo": "Moeda grega de ouro",
+              "proporcao": "2 didracmas ou 4 denários",
+              "equivalente": "4"
+            },
+            {
+              "nome": "Mina",
+              "referencia": "Lc 19.13",
+              "tipo": "Moeda grega de ouro",
+              "proporcao": "100 denários",
+              "equivalente": "100"
+            },
+            {
+              "nome": "Talento",
+              "referencia": "Mt 25.15",
+              "tipo": "Prata ou ouro",
+              "proporcao": "6.000 denários",
+              "equivalente": "6.000"
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "Calculando-se que um diarista no Brasil ganhe o equivalente a 10 dólares por dia (igual a um denário), um talento de prata valeria 60.000 dólares. O talento de ouro valia umas trinta vezes mais do que o talento de prata."
+        }
+      ]
+    },
+    {
+      "id": "capacidade",
+      "titulo": "Medidas de capacidade",
+      "icone": "🪣",
+      "ordem": 3,
+      "descricao": "Medidas para secos e líquidos.",
+      "conteudo": [
+        {
+          "tipo": "subtitulo",
+          "titulo": "Para secos"
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Nome",
+            "Referência",
+            "Correspondente bíblico",
+            "Proporção",
+            "Equivalente atual"
+          ],
+          "linhas": [
+            {
+              "nome": "Cabo",
+              "referencia": "2Rs 6.25, RC",
+              "correspondente": "1/18 do efa ou 1/6 da medida",
+              "proporcao": "1/18",
+              "equivalente": "1 litro"
+            },
+            {
+              "nome": "Gômer",
+              "referencia": "Êx 16.16, RC",
+              "correspondente": "1/10 do efa",
+              "proporcao": "1/10",
+              "equivalente": "1,761 l"
+            },
+            {
+              "nome": "Alqueire ou Seá",
+              "referencia": "2Rs 7.1, RA",
+              "correspondente": "1/3 do efa",
+              "proporcao": "1/3",
+              "equivalente": "5,871 l"
+            },
+            {
+              "nome": "Chaliche e Medida",
+              "referencia": "Is 40.12; Gn 18.6, RA, RC",
+              "correspondente": "",
+              "proporcao": "",
+              "equivalente": ""
+            },
+            {
+              "nome": "Efa",
+              "referencia": "Lv 19.36",
+              "correspondente": "10 gômeres ou 1/10 do ômer",
+              "proporcao": "1",
+              "equivalente": "17,621 l"
+            },
+            {
+              "nome": "Leteque",
+              "referencia": "Os 3.2",
+              "correspondente": "5 efas ou 1/2 do ômer",
+              "proporcao": "5",
+              "equivalente": "88,11 l"
+            },
+            {
+              "nome": "Coro",
+              "referencia": "Ez 45.11",
+              "correspondente": "10 efas ou 10 ômeres",
+              "proporcao": "10",
+              "equivalente": "176,21 l"
+            }
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "titulo": "Para líquidos"
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Nome",
+            "Referência",
+            "Correspondente bíblico",
+            "Proporção",
+            "Equivalente atual"
+          ],
+          "linhas": [
+            {
+              "nome": "Sextário ou Logue",
+              "referencia": "Lv 14.10",
+              "correspondente": "1/12 do him",
+              "proporcao": "1/72",
+              "equivalente": "0,291 l"
+            },
+            {
+              "nome": "Him",
+              "referencia": "Lv 19.36",
+              "correspondente": "1/6 do bato",
+              "proporcao": "1/6",
+              "equivalente": "3,47 l"
+            },
+            {
+              "nome": "Bato",
+              "referencia": "Is 5.10; Lc 16.6",
+              "correspondente": "1/10 do coro",
+              "proporcao": "1",
+              "equivalente": "20,82 l"
+            },
+            {
+              "nome": "Coro",
+              "referencia": "1Rs 5.11",
+              "correspondente": "10 batos",
+              "proporcao": "10",
+              "equivalente": "208,21 l"
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "* Outros consideram a metreta (Jo 2.6) também igual ao bato, mas é mais provável que a metreta tivesse 30 a 40 litros. ** Outros entendem que o bato tinha entre 30 e 34 litros."
+        }
+      ]
+    },
+    {
+      "id": "comprimento",
+      "titulo": "Medidas de comprimento",
+      "icone": "📏",
+      "ordem": 4,
+      "descricao": "Unidades de comprimento.",
+      "conteudo": [
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Nome",
+            "Referência",
+            "Correspondente bíblico",
+            "Proporção",
+            "Equivalente atual"
+          ],
+          "linhas": [
+            {
+              "nome": "Dedo",
+              "referencia": "Jr 52.21",
+              "correspondente": "1/4 de quatro dedos",
+              "proporcao": "1/24",
+              "equivalente": "1,8 cm"
+            },
+            {
+              "nome": "Quatro dedos",
+              "referencia": "Êx 37.12",
+              "correspondente": "1/3 do palmo ou 1/6 do côvado",
+              "proporcao": "1/6",
+              "equivalente": "7,4 cm"
+            },
+            {
+              "nome": "Palmo",
+              "referencia": "Êx 28.16",
+              "correspondente": "1/2 do côvado",
+              "proporcao": "1/2",
+              "equivalente": "22,2 cm"
+            },
+            {
+              "nome": "Côvado",
+              "referencia": "Gn 6.15",
+              "correspondente": "2 palmos",
+              "proporcao": "1",
+              "equivalente": "44,4 cm"
+            },
+            {
+              "nome": "Braça",
+              "referencia": "At 27.28",
+              "correspondente": "4 côvados",
+              "proporcao": "4",
+              "equivalente": "1,80 m"
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "* Quatro dedos é a medida da palma da mão (Êx 37.12, RC.) na base dos quatro dedos. ** Palmo é a distância entre a ponta dos dedos extremos com a mão espalmada. *** Côvado é a distância entre o cotovelo e a ponta do dedo médio. O côvado em Ezequiel (43.13) equivale a 51,8 cm, pois soma um côvado mais quatro dedos. Em consequência, a cana (Ez 41.8) equivale a 3,11 m, pois é igual a seis côvados de Ezequiel."
+        }
+      ]
+    },
+    {
+      "id": "distancia",
+      "titulo": "Medidas de distância",
+      "icone": "🧭",
+      "ordem": 5,
+      "descricao": "Distâncias e equivalentes atuais.",
+      "conteudo": [
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Nome",
+            "Referência",
+            "Correspondente bíblico",
+            "Equivalente atual"
+          ],
+          "linhas": [
+            {
+              "nome": "Tiro de pedra",
+              "referencia": "Lc 22.41",
+              "correspondente": "",
+              "equivalente": "20 a 30 m"
+            },
+            {
+              "nome": "Tiro de arco",
+              "referencia": "Gn 21.16",
+              "correspondente": "",
+              "equivalente": "100 a 150 m"
+            },
+            {
+              "nome": "Jornada",
+              "referencia": "",
+              "correspondente": "",
+              "equivalente": "888 m"
+            },
+            {
+              "nome": "Jornada de um sábado",
+              "referencia": "At 1.12",
+              "correspondente": "2.000 côvados",
+              "equivalente": "888 m"
+            },
+            {
+              "nome": "Jornada de um dia",
+              "referencia": "Gn 31.23",
+              "correspondente": "",
+              "equivalente": "30 a 40 km"
+            },
+            {
+              "nome": "Estádio romano",
+              "referencia": "Lc 24.13",
+              "correspondente": "8 estádios",
+              "equivalente": "185 m"
+            },
+            {
+              "nome": "Milha romana",
+              "referencia": "Mt 5.41",
+              "correspondente": "",
+              "equivalente": "1.479 m"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "area",
+      "titulo": "Medida de área",
+      "icone": "⬛",
+      "ordem": 6,
+      "descricao": "Medidas de área.",
+      "conteudo": [
+        {
+          "tipo": "item",
+          "titulo": "Jeira",
+          "referencia": "1Sm 14.14",
+          "texto": "Área que uma junta de bois pode arar em um dia, mais ou menos um quarteirão quadrado com 50 m de lado, o que equivale a 2.500 m²."
+        }
+      ]
+    },
+    {
+      "id": "tempo",
+      "titulo": "Medidas de tempo",
+      "icone": "⏳",
+      "ordem": 7,
+      "descricao": "Unidades e divisões de tempo.",
+      "conteudo": [
+        {
+          "tipo": "lista_detalhada",
+          "itens": [
+            {
+              "nome": "Hora",
+              "texto": "1/12 do dia e 1/12 da noite; a extensão da hora variava de acordo com a estação do ano. As horas do dia eram contadas a partir do nascer do sol e as da noite, a partir do pôr do sol.",
+              "referencias": [
+                "Mt 20.3"
+              ]
+            },
+            {
+              "nome": "Vigília",
+              "texto": "Os israelitas dividiam a noite em 3 vigílias, sendo cada uma de 4 horas. Os romanos a dividiam em 4 vigílias, com 3 horas cada uma.",
+              "referencias": [
+                "Jz 7.19",
+                "Mt 14.25"
+              ]
+            },
+            {
+              "nome": "Noite",
+              "texto": "12 horas, do pôr do sol até o seu nascer.",
+              "referencias": [
+                "Gn 7.4"
+              ]
+            },
+            {
+              "nome": "Dia",
+              "texto": "12 horas, do nascer ao pôr do sol; 24 horas, de um pôr do sol até outro.",
+              "referencias": [
+                "Gn 7.4",
+                "Êx 20.8-11"
+              ]
+            },
+            {
+              "nome": "Semana",
+              "texto": "7 dias, terminando com o sábado.",
+              "referencias": [
+                "Êx 20.10"
+              ]
+            },
+            {
+              "nome": "Mês",
+              "texto": "29 a 30 dias, iniciando com a lua nova.",
+              "referencias": [
+                "Nm 28.14"
+              ]
+            },
+            {
+              "nome": "Ano",
+              "texto": "12 meses lunares (354 dias). De três em três anos acrescentava-se um mês (pela repetição do último mês) para tirar a diferença entre os 12 meses lunares e o ano solar.",
+              "referencias": [
+                "1Cr 27.1-15"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+	    {
+      "id": "encontrar-ajuda",
+      "ordem": 1,
+      "icone": "📖",
+      "titulo": "Como encontrar ajuda na Bíblia",
+      "descricao": "Temas e referências bíblicas para diferentes circunstâncias da vida.",
+      "conteudo": [
+        {
+          "tipo": "lista_detalhada",
+          "itens": [
+            {
+              "nome": "Como enfrentar o sofrimento e a perseguição",
+              "referencias": [
+                "Salmo 109",
+                "Salmo 119.153-160",
+                "Mateus 5.3-12",
+                "João 15.18-16.4",
+                "Romanos 8.18-30",
+                "2Coríntios 4.1-15",
+                "Hebreus 12.1-11",
+                "1Pedro 4.12-19"
+              ]
+            },
+            {
+              "nome": "Como tomar uma decisão difícil",
+              "referencias": [
+                "1Reis 3",
+                "Ester 4-7",
+                "Salmo 139",
+                "Daniel 2.14-23",
+                "Colossenses 3.12-17"
+              ]
+            },
+            {
+              "nome": "Como enfrentar o divórcio",
+              "referencias": [
+                "Salmo 25",
+                "Mateus 19.1-9",
+                "Filipenses 3.1-11"
+              ]
+            },
+            {
+              "nome": "Como enfrentar o desamparo",
+              "referencias": [
+                "Salmo 90.1-2",
+                "Isaías 65.17-25",
+                "Lamentações 3.19-24",
+                "Lucas 9.57-62",
+                "Apocalipse 21.1-4"
+              ]
+            },
+            {
+              "nome": "Como enfrentar a prisão",
+              "referencias": [
+                "Lamentações 3.34-36",
+                "Mateus 25.31-46",
+                "Lucas 4.16-21"
+              ]
+            },
+            {
+              "nome": "Diante de uma vida solitária",
+              "referencias": [
+                "1Coríntios 7.25-38",
+                "1Coríntios 12.1-31"
+              ]
+            },
+            {
+              "nome": "Como enfrentar os desastres da natureza",
+              "referencias": [
+                "Gênesis 8.1-9.17",
+                "Jó 36.22-37.13",
+                "Salmo 29",
+                "Salmo 124",
+                "Salmo 36.5-9",
+                "Jeremias 31.35-37",
+                "Romanos 8.31-39",
+                "1Pedro 1.3-12"
+              ]
+            },
+            {
+              "nome": "Diante de um julgamento ou demanda judicial",
+              "referencias": [
+                "Salmo 26",
+                "Isaías 50.4-11",
+                "Mateus 5.25-26",
+                "Lucas 18.1-8"
+              ]
+            },
+            {
+              "nome": "Ao perder o emprego",
+              "referencias": [
+                "Jeremias 29.10-14",
+                "Lucas 16.1-13",
+                "Filipenses 4.10-13"
+              ]
+            },
+            {
+              "nome": "Ao perder posses ou propriedades",
+              "referencias": [
+                "Jó 1.13-22",
+                "Jó 42.7-17",
+                "Isaías 30.19-26",
+                "Isaías 41.17-20",
+                "Romanos 8.18-39"
+              ]
+            },
+            {
+              "nome": "Como aproveitar o tempo",
+              "referencias": [
+                "Provérbios 12.11",
+                "Provérbios 28.19",
+                "Marcos 13.32-37",
+                "Lucas 21.34-37",
+                "1Timóteo 4.11-16",
+                "Tito 3.8-14"
+              ]
+            },
+            {
+              "nome": "Ao mudar-se para uma casa nova",
+              "referencias": [
+                "Salmo 127.1-2",
+                "Provérbios 24.3-4",
+                "João 14.1-7",
+                "Efésios 3.14-21",
+                "Apocalipse 3.20-21"
+              ]
+            },
+            {
+              "nome": "Como superar os vícios",
+              "referencias": [
+                "Salmo 40.1-5,11-17",
+                "Salmo 116.1-7",
+                "Provérbios 23.29-35",
+                "2Coríntios 5.16-21",
+                "Efésios 4.22-24"
+              ]
+            },
+            {
+              "nome": "Como evitar rixas",
+              "referencias": [
+                "Levítico 19.17-18",
+                "Mateus 5.23-26",
+                "Lucas 6.36-37",
+                "Efésios 4.25-32"
+              ]
+            },
+            {
+              "nome": "Como superar os preconceitos",
+              "referencias": [
+                "Mateus 7.1-5",
+                "Atos 10.34-36",
+                "Gálatas 3.26-29",
+                "Efésios 2.11-22",
+                "Colossenses 3.5-11",
+                "Tiago 2.1-13"
+              ]
+            },
+            {
+              "nome": "Para dominar o orgulho",
+              "referencias": [
+                "Salmo 131",
+                "Marcos 9.33-37",
+                "Lucas 14.7-11",
+                "Lucas 18.9-14",
+                "Lucas 22.24-27",
+                "Romanos 12.14-16",
+                "1Coríntios 1.18-31",
+                "2Coríntios 12.1-10"
+              ]
+            },
+            {
+              "nome": "Não deixe para amanhã o que pode fazer hoje",
+              "referencias": [
+                "Mateus 22.1-14",
+                "Mateus 25.1-13",
+                "2Coríntios 6.1-2"
+              ]
+            },
+            {
+              "nome": "Como instruir as crianças",
+              "referencias": [
+                "Provérbios 22.6",
+                "Efésios 6.4",
+                "Colossenses 3.21"
+              ]
+            },
+            {
+              "nome": "O respeito à autoridade civil",
+              "referencias": [
+                "Marcos 12.13-17",
+                "Romanos 13.1-7",
+                "Tito 3.1-2",
+                "1Pedro 2.13-17"
+              ]
+            },
+            {
+              "nome": "O respeito aos pais",
+              "referencias": [
+                "Êxodo 20.12",
+                "Provérbios 23.22",
+                "Efésios 6.1-3",
+                "Colossenses 3.20"
+              ]
+            },
+            {
+              "nome": "Ao aposentar-se",
+              "referencias": [
+                "Números 6.24-26",
+                "Salmo 145",
+                "Mateus 25.31-46",
+                "Romanos 12.1-2",
+                "Filipenses 3.12-21",
+                "2Pedro 1.2"
+              ]
+            },
+            {
+              "nome": "Como obter perdão",
+              "referencias": [
+                "Salmo 32.1-5",
+                "Salmo 51",
+                "Provérbios 28.13",
+                "Joel 2.12-17",
+                "Mateus 6.14-15",
+                "Lucas 15",
+                "Filemom",
+                "Hebreus 4.14-16",
+                "1João 1.5-10"
+              ]
+            },
+            {
+              "nome": "Como buscar ajuda de Deus",
+              "referencias": [
+                "Salmo 5",
+                "Salmo 57",
+                "Salmo 86",
+                "Salmo 119.169-176",
+                "Salmo 121",
+                "Salmo 130",
+                "Mateus 7.7-12"
+              ]
+            },
+            {
+              "nome": "Onde buscar justiça",
+              "referencias": [
+                "Salmo 10",
+                "Salmo 17",
+                "Salmo 75",
+                "Salmo 94",
+                "Isaías 42.1-7",
+                "Isaías 61.1-9",
+                "Amós 5.21-24",
+                "Habacuque 1.1-2.4"
+              ]
+            },
+            {
+              "nome": "Onde buscar salvação",
+              "referencias": [
+                "João 3.1-21",
+                "Romanos 1.16-17",
+                "Romanos 3.21-31",
+                "Romanos 5.1-11",
+                "Romanos 10.5-13",
+                "Efésios 1.3-14",
+                "Efésios 2.1-10"
+              ]
+            },
+            {
+              "nome": "Onde buscar refúgio e fortaleza",
+              "referencias": [
+                "Salmo 46",
+                "Salmo 138",
+                "Isaías 40.27-31",
+                "Isaías 51.12-16",
+                "Efésios 6.10-20",
+                "2Tessalonicenses 2.16-17"
+              ]
+            },
+            {
+              "nome": "Onde buscar a verdade",
+              "referencias": [
+                "Salmo 119.153-160",
+                "João 8.31-47",
+                "João 14.6-14",
+                "João 16.8-15",
+                "1Timóteo 2.1-7"
+              ]
+            },
+            {
+              "nome": "Como compartilhar seus dons",
+              "referencias": [
+                "Êxodo 35.20-29",
+                "Malaquias 3.6-12",
+                "Lucas 21.1-4",
+                "Atos 2.43-47",
+                "Atos 4.32-37",
+                "Romanos 12.9-13",
+                "1Coríntios 16.1-4",
+                "2Coríntios 8.1-15",
+                "2Coríntios 9.6-15"
+              ]
+            },
+            {
+              "nome": "Ao iniciar um novo trabalho",
+              "referencias": [
+                "Provérbios 11.3",
+                "Provérbios 22.29",
+                "Romanos 12.3-11",
+                "1Tessalonicenses 5.12-18",
+                "2Tessalonicenses 3.6-13",
+                "1Pedro 4.7-11"
+              ]
+            },
+            {
+              "nome": "Para entender seu relacionamento com Deus",
+              "referencias": [
+                "Deuteronômio 5.1-22",
+                "Salmo 139",
+                "João 15.1-17",
+                "Romanos 5.1-11",
+                "Romanos 8.1-17"
+              ]
+            },
+            {
+              "nome": "Para entender seu relacionamento com o próximo",
+              "referencias": [
+                "Deuteronômio 5.16-21",
+                "Provérbios 3.27-35",
+                "Mateus 18.15-17,21-35",
+                "Romanos 14.13-23",
+                "Romanos 15.1-6",
+                "Gálatas 6.1-10",
+                "Colossenses 3.12-17",
+                "1João 4.7-12"
+              ]
+            },
+            {
+              "nome": "Confiança no futuro",
+              "referencias": [
+                "Isaías 35",
+                "Isaías 60",
+                "Jeremias 29.10-14",
+                "1Pedro 1.3-5",
+                "Apocalipse 21.1-8"
+              ]
+            },
+            {
+              "nome": "Preocupação com a velhice",
+              "referencias": [
+                "Salmo 37.23-29",
+                "Isaías 46.3-4"
+              ]
+            },
+            {
+              "nome": "Como ser um bom amigo",
+              "referencias": [
+                "Provérbios 17.17",
+                "Lucas 10.25-37",
+                "João 15.11-17",
+                "Romanos 16.1-2"
+              ]
+            },
+            {
+              "nome": "Como ser um líder",
+              "referencias": [
+                "Isaías 11.1-9",
+                "Isaías 32.1-8",
+                "1Timóteo 3.1-7",
+                "2Timóteo 2.14-26",
+                "Tito 1.5-9"
+              ]
+            },
+            {
+              "nome": "Como cuidar das viúvas e dos anciãos",
+              "referencias": [
+                "Gênesis 47.1-12",
+                "Rute 1",
+                "Provérbios 23.22",
+                "1Timóteo 5.3-8"
+              ]
+            },
+            {
+              "nome": "Como celebrar o nascimento ou a adoção de uma criança",
+              "referencias": [
+                "Salmo 100",
+                "Provérbios 22.6",
+                "Lucas 18.15-17",
+                "João 16.16-22"
+              ]
+            },
+            {
+              "nome": "Como celebrar uma formatura",
+              "referencias": [
+                "Salmo 119.105",
+                "Provérbios 9.10-12",
+                "Gálatas 5.16-26",
+                "Filipenses 4.4-9"
+              ]
+            },
+            {
+              "nome": "Como celebrar um casamento",
+              "referencias": [
+                "Gênesis 2.18-24",
+                "Cântico dos Cânticos 8.6-7",
+                "Efésios 5.21-33",
+                "Colossenses 2.6-7"
+              ]
+            },
+            {
+              "nome": "Como celebrar um aniversário de casamento",
+              "referencias": [
+                "Salmo 100",
+                "1Coríntios 13"
+              ]
+            },
+            {
+              "nome": "Como controlar seu temperamento",
+              "referencias": [
+                "Provérbios 14.17-29",
+                "Provérbios 15.18",
+                "Provérbios 19.11",
+                "Provérbios 29.22",
+                "Eclesiastes 7.9",
+                "Gálatas 5.16-26"
+              ]
+            },
+            {
+              "nome": "Como controlar a língua",
+              "referencias": [
+                "Salmo 12",
+                "Salmo 19.14",
+                "Provérbios 11.13",
+                "Provérbios 26.20",
+                "2Tessalonicenses 2.16-17",
+                "Tiago 3.1-12"
+              ]
+            },
+            {
+              "nome": "Como descobrir a vontade de Deus",
+              "referencias": [
+                "Salmo 15",
+                "Miqueias 6.6-8",
+                "Mateus 5.14-16",
+                "Lucas 9.21-27",
+                "Romanos 13.8-14",
+                "2Pedro 1.3-9",
+                "1João 4.7-21"
+              ]
+            },
+            {
+              "nome": "Como enfrentar ensinamento falso",
+              "referencias": [
+                "Mateus 7.15-20",
+                "2Pedro 2",
+                "1João 4.1-6",
+                "Judas"
+              ]
+            },
+            {
+              "nome": "Como enfrentar a prisão de companheiros",
+              "referencias": [
+                "Provérbios 1.7-19",
+                "Romanos 12.1-2",
+                "Gálatas 5.1-5",
+                "Efésios 5.1-20"
+              ]
+            },
+            {
+              "nome": "Ao ingressar na universidade",
+              "referencias": [
+                "Provérbios 2.1-8",
+                "Provérbios 3.1-18",
+                "Provérbios 4.1-27",
+                "Provérbios 23.12",
+                "Romanos 8.1-17",
+                "1Coríntios 1.18-31"
+              ]
+            },
+            {
+              "nome": "Ao ingressar no serviço militar",
+              "referencias": [
+                "2Samuel 22.2-51",
+                "Salmo 91",
+                "Efésios 6.10-20",
+                "2Timóteo 2.1-13"
+              ]
+            },
+            {
+              "nome": "Como enfrentar a morte de um ente querido",
+              "referencias": [
+                "Jó 19.25-27",
+                "João 11.25-27",
+                "João 14.1-7",
+                "Romanos 8.31-39",
+                "Romanos 14.7-9",
+                "1Tessalonicenses 4.13-18"
+              ]
+            },
+            {
+              "nome": "Como enfrentar a enfermidade",
+              "referencias": [
+                "Salmo 23",
+                "Marcos 1.29-34",
+                "Marcos 6.53-56",
+                "Tiago 5.14-16"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leituras-dias-especiais",
+      "ordem": 2,
+      "icone": "📅",
+      "titulo": "Leituras para dias especiais",
+      "descricao": "Datas e ocasiões especiais com referências bíblicas.",
+      "conteudo": [
+        {
+          "tipo": "lista_detalhada",
+          "itens": [
+            {
+              "nome": "Ano Novo",
+              "referencias": [
+                "Colossenses 3.5-17"
+              ]
+            },
+            {
+              "nome": "Epifania (Dia dos Reis Magos)",
+              "referencias": [
+                "Mateus 2.1-12"
+              ]
+            },
+            {
+              "nome": "Domingo de Ramos",
+              "referencias": [
+                "Marcos 11.1-11",
+                "João 12.12-19",
+                "Filipenses 2.1-5"
+              ]
+            },
+            {
+              "nome": "Quinta-feira Santa",
+              "referencias": [
+                "João 13.1-17,34",
+                "Salmo 116"
+              ]
+            },
+            {
+              "nome": "Sexta-feira Santa",
+              "referencias": [
+                "João 18.1-19.42",
+                "Salmo 22",
+                "Isaías 52.13-53.12"
+              ]
+            },
+            {
+              "nome": "Páscoa - Domingo da Ressurreição",
+              "referencias": [
+                "Êxodo 12",
+                "Mateus 28",
+                "Lucas 24",
+                "João 20",
+                "Atos 10.34-43",
+                "Salmo 33"
+              ]
+            },
+            {
+              "nome": "Dia do Trabalho",
+              "referencias": [
+                "Gênesis 1.26-2.4"
+              ]
+            },
+            {
+              "nome": "Dia das Mães",
+              "referencias": [
+                "1Samuel 1.1-28",
+                "Provérbios 23.22-25",
+                "Provérbios 31.10-31",
+                "Lucas 1.26-56"
+              ]
+            },
+            {
+              "nome": "Pentecostes",
+              "referencias": [
+                "Atos 2.1-11"
+              ]
+            },
+            {
+              "nome": "Santíssima Trindade",
+              "referencias": [
+                "Efésios 1.3-14",
+                "Mateus 28.16-20"
+              ]
+            },
+            {
+              "nome": "Dia dos Pais",
+              "referencias": [
+                "Provérbios 4",
+                "Provérbios 20.7",
+                "Lucas 15.11-32"
+              ]
+            },
+            {
+              "nome": "Dia da Independência",
+              "referencias": [
+                "Salmo 33"
+              ]
+            },
+            {
+              "nome": "Dia de Eleições",
+              "referencias": [
+                "1Pedro 2.13-17"
+              ]
+            },
+            {
+              "nome": "Dia das Crianças",
+              "referencias": [
+                "Lucas 18.15-17",
+                "Provérbios 22.6"
+              ]
+            },
+            {
+              "nome": "Dia de Ações de Graças",
+              "referencias": [
+                "Salmo 65",
+                "1Timóteo 2.1-8",
+                "Lucas 17.11-19"
+              ]
+            },
+            {
+              "nome": "Dia da Bíblia",
+              "referencias": [
+                "2Timóteo 3.10-17",
+                "Salmo 19",
+                "Salmo 119.105-112",
+                "Isaías 40.1-11"
+              ]
+            },
+            {
+              "nome": "Primeiro Domingo de Advento",
+              "referencias": [
+                "Isaías 63.16-64.9",
+                "Mateus 24.36-44",
+                "Lucas 21.25-36",
+                "Salmo 25"
+              ]
+            },
+            {
+              "nome": "Segundo Domingo de Advento",
+              "referencias": [
+                "Malaquias 3.1-5",
+                "Mateus 3.1-12",
+                "Salmo 8"
+              ]
+            },
+            {
+              "nome": "Terceiro Domingo de Advento",
+              "referencias": [
+                "Isaías 12.1-6",
+                "Mateus 11.2-19",
+                "Lucas 3.7-18",
+                "Filipenses 4.4-9"
+              ]
+            },
+            {
+              "nome": "Quarto Domingo de Advento",
+              "referencias": [
+                "Isaías 7.10-17",
+                "Miqueias 5.1-4",
+                "Lucas 1.26-56",
+                "Salmo 89.1-18"
+              ]
+            },
+            {
+              "nome": "Natal",
+              "referencias": [
+                "Lucas 2.1-20",
+                "Mateus 1.18-25",
+                "João 1.1-18",
+                "Tito 3.4-7"
+              ]
+            },
+            {
+              "nome": "Dia de Aniversário",
+              "referencias": [
+                "Salmo 145"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "perdao-de-deus",
+      "ordem": 3,
+      "icone": "❤️",
+      "titulo": "O que a Bíblia diz sobre o perdão de Deus",
+      "descricao": "Temas apresentados na seção sobre o perdão de Deus.",
+      "conteudo": [
+        {
+          "tipo": "lista_detalhada",
+          "itens": [
+            {
+              "nome": "Todos estamos afastados de Deus por causa do pecado",
+              "referencias": [
+                "Isaías 59.1-15",
+                "Romanos 3.9-20",
+                "Romanos 5.12-21",
+                "Romanos 7.14-25",
+                "Eclesiastes 7.20"
+              ]
+            },
+            {
+              "nome": "Deus sempre buscou um relacionamento mais próximo com a humanidade",
+              "referencias": [
+                "Êxodo 19.3b-8",
+                "Jeremias 31.31-34",
+                "Isaías 54.1-10",
+                "1Pedro 1.1-10",
+                "1João 3.1-10"
+              ]
+            },
+            {
+              "nome": "Deus pessoalmente fez contato conosco ao enviar seu Filho Jesus Cristo",
+              "referencias": [
+                "Colossenses 1.15-23",
+                "Romanos 5.1-11",
+                "1Pedro 2.9-25",
+                "João 3.1-21",
+                "2Timóteo 1.3-14",
+                "Efésios 2.1-10"
+              ]
+            },
+            {
+              "nome": "O perdão de Deus, através de seu Filho Jesus Cristo, está ao alcance de todos",
+              "referencias": [
+                "Salmo 51.1-17",
+                "1João 1.5-10",
+                "Salmo 32",
+                "Romanos 3.21-26",
+                "Romanos 8.31-39",
+                "Romanos 10.5-15"
+              ]
+            },
+            {
+              "nome": "Vivemos a nova vida em Cristo quando vivemos como ele viveu",
+              "referencias": [
+                "Romanos 6.1-14",
+                "Romanos 12.1-21",
+                "Mateus 20.20-28",
+                "Efésios 4.17-32",
+                "Gálatas 5.16-26",
+                "1João 4.7-21"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sentimentos-que-perturbam",
+      "ordem": 4,
+      "icone": "🧭",
+      "titulo": "Confrontando sentimentos que perturbam",
+      "descricao": "Referências bíblicas para sentimentos e situações emocionais apresentados nas fotografias.",
+      "conteudo": [
+        {
+          "tipo": "lista_detalhada",
+          "itens": [
+            {
+              "nome": "Ganância por dinheiro",
+              "referencias": [
+                "Provérbios 11.7",
+                "Eclesiastes 5.10-20",
+                "Mateus 6.24-34",
+                "Lucas 12.13-21",
+                "1Timóteo 6.6-10"
+              ]
+            },
+            {
+              "nome": "Sente medo?",
+              "referencias": [
+                "Salmo 27",
+                "Salmo 91",
+                "Isaías 41.5-13",
+                "Marcos 4.35-41",
+                "Hebreus 13.5-6",
+                "1João 4.13-18"
+              ]
+            },
+            {
+              "nome": "Sente medo da morte?",
+              "referencias": [
+                "Salmo 23",
+                "Salmo 63.1-8",
+                "João 6.35-40",
+                "Romanos 8.18-39",
+                "1Coríntios 15.35-57",
+                "2Coríntios 5.1-10",
+                "2Timóteo 1.8-10"
+              ]
+            },
+            {
+              "nome": "Está irado?",
+              "referencias": [
+                "Provérbios 14.17-29",
+                "Provérbios 15.18",
+                "Romanos 12.17-21",
+                "Mateus 5.21-24",
+                "Efésios 4.26-32",
+                "Tiago 1.19-21"
+              ]
+            },
+            {
+              "nome": "Está ansioso?",
+              "referencias": [
+                "Salmo 25",
+                "Mateus 6.24-34",
+                "Mateus 10.26-31",
+                "1Pedro 1.3-5",
+                "1Pedro 5.7"
+              ]
+            },
+            {
+              "nome": "Sente-se deprimido?",
+              "referencias": [
+                "Salmo 16",
+                "Salmo 43",
+                "Salmo 130",
+                "Isaías 61.1-4",
+                "Jeremias 15.10-21",
+                "Lamentações 3.55-57",
+                "João 3.14-17",
+                "Efésios 3.14-21"
+              ]
+            },
+            {
+              "nome": "Sente-se frustrado ou enganado?",
+              "referencias": [
+                "Salmo 55",
+                "Salmo 62.1-8",
+                "Jeremias 20.7-18"
+              ]
+            },
+            {
+              "nome": "Está desanimado?",
+              "referencias": [
+                "Salmo 34",
+                "Isaías 12.1-6",
+                "Romanos 15.13",
+                "2Coríntios 4.16-18",
+                "Filipenses 4.10-13",
+                "Colossenses 1.9-14",
+                "Hebreus 6.9-12"
+              ]
+            },
+            {
+              "nome": "Tem dúvidas quanto à sua fé em Deus?",
+              "referencias": [
+                "Salmo 8",
+                "Salmo 146",
+                "Provérbios 30.5",
+                "Mateus 7.7-12",
+                "Lucas 17.5-6",
+                "João 20.24-31",
+                "Romanos 4.13-25",
+                "Hebreus 11",
+                "1João 5.13-15"
+              ]
+            },
+            {
+              "nome": "Está frustrado?",
+              "referencias": [
+                "Jó 21.1-16",
+                "Jó 24.1-17",
+                "Jó 36.1-26",
+                "Mateus 7.13-14"
+              ]
+            },
+            {
+              "nome": "Está impaciente?",
+              "referencias": [
+                "Salmo 13",
+                "Salmo 37.1-7",
+                "Salmo 40.1-5",
+                "Eclesiastes 3.1-15",
+                "Lamentações 3.25-33",
+                "Hebreus 6.13-20",
+                "Tiago 5.7-11"
+              ]
+            },
+            {
+              "nome": "Sente insegurança? Falta-lhe autoestima?",
+              "referencias": [
+                "Deuteronômio 31.1-8",
+                "Salmo 73.21-26",
+                "Salmo 108",
+                "Filipenses 4.10-20",
+                "1João 3.19-24"
+              ]
+            },
+            {
+              "nome": "Sente inveja?",
+              "referencias": [
+                "Salmo 49",
+                "Provérbios 23.17",
+                "Tiago 3.13-18"
+              ]
+            },
+            {
+              "nome": "Sente-se sozinho?",
+              "referencias": [
+                "Salmo 22",
+                "Salmo 42",
+                "João 14.15-31a"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+ 
+  ]
+}

@@ -375,13 +375,14 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         cIdx,
         vIdx,
         wordIndex,
-        wordObj
+        wordObj,
+        data = bibleData
     ) {
         if (!morphologyIndex.size) {
             return null;
         }
 
-        const book = bibleData[bIdx];
+        const book = data[bIdx];
 
         if (!book) {
             return null;
@@ -557,6 +558,176 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     let selectedVersesMap = new Map();
     let pendingVerseScroll = null;
 
+    // ==========================================================
+    // CONTEXTO INDEPENDENTE DO LEITOR DOS PLANOS
+    // ==========================================================
+    // Este estado nunca substitui nem modifica o estado da aba Ler.
+    let planReadingState = {
+        active: false,
+        planIndex: null,
+        dayIndex: null,
+        plan: null,
+        day: null,
+        versionId: null,
+        bibleData: [],
+        bookIdx: 0,
+        chapIdx: 0,
+        startItem: null,
+        endItem: null,
+        type: 'chapters',
+        pendingVerseScroll: null
+    };
+
+    let planSelectionContext = {
+        bookIdx: 0,
+        chapIdx: 0,
+        versionId: null
+    };
+
+    let planSelectedVersesMap = new Map();
+    const planBibleCache = new Map();
+    let planReaderReturnScrollTop = 0;
+
+    function isPlanReaderActive() {
+        return !!planReadingState.active;
+    }
+
+    function getReaderContext() {
+        if (isPlanReaderActive()) {
+            return {
+                kind: 'plan',
+                bibleData: planReadingState.bibleData,
+                bookIdx: planReadingState.bookIdx,
+                chapIdx: planReadingState.chapIdx,
+                versionId: planReadingState.versionId,
+                selectedMap: planSelectedVersesMap,
+                containerId: 'plan-chapter-content'
+            };
+        }
+
+        return {
+            kind: 'read',
+            bibleData,
+            bookIdx: currentBook,
+            chapIdx: currentChap,
+            versionId: currentVersionId,
+            selectedMap: selectedVersesMap,
+            containerId: 'chapter-content'
+        };
+    }
+
+    function getReaderVersionMeta() {
+        const ctx = getReaderContext();
+        return versoesDisponiveis.find(v => v.id === ctx.versionId) || {
+            id: ctx.versionId,
+            abbrev: String(ctx.versionId || '').replace('.json','').toUpperCase(),
+            nome: ctx.versionId || ''
+        };
+    }
+
+    function getPlanVersionId(plan) {
+        if (plan?.versionId && versoesDisponiveis.some(v => v.id === plan.versionId)) {
+            return plan.versionId;
+        }
+
+        // Planos antigos sem versionId usam a tradução atual somente como fallback.
+        return currentVersionId;
+    }
+
+    function getPlanDayTitle(day) {
+        if (!day?.startItem || !day?.endItem) return 'Leitura';
+
+        const first = day.startItem;
+        const last = day.endItem;
+        const b1 = getAbbrev(first.bookName);
+        const b2 = getAbbrev(last.bookName);
+        const isVersePlan = day.type === 'verses' || first.verseIdx !== undefined;
+
+        if (isVersePlan) {
+            const startRef = `${b1} ${first.chapIdx + 1}:${first.verseIdx + 1}`;
+            const endRef = `${b2} ${last.chapIdx + 1}:${last.verseIdx + 1}`;
+            return startRef === endRef ? `Leitura de ${startRef}` : `Leitura de ${startRef} - ${endRef}`;
+        }
+
+        if (first.bookIdx === last.bookIdx) {
+            const ref = first.chapIdx === last.chapIdx
+                ? `${b1} ${first.chapIdx + 1}`
+                : `${b1} ${first.chapIdx + 1}-${last.chapIdx + 1}`;
+            return `Leitura de ${ref}`;
+        }
+
+        return `Leitura de ${b1} ${first.chapIdx + 1} - ${b2} ${last.chapIdx + 1}`;
+    }
+
+    function getPlanVerseBounds(ctx, bIdx, cIdx) {
+        if (ctx.kind !== 'plan') {
+            return { start: 0, end: getChapterVerses(ctx.bibleData[bIdx]?.chapters?.[cIdx]).length - 1 };
+        }
+
+        const first = planReadingState.startItem;
+        const last = planReadingState.endItem;
+        if (!first || !last) return null;
+
+        if (bIdx < first.bookIdx || bIdx > last.bookIdx) return null;
+        if (bIdx === first.bookIdx && cIdx < first.chapIdx) return null;
+        if (bIdx === last.bookIdx && cIdx > last.chapIdx) return null;
+
+        const verses = getChapterVerses(ctx.bibleData[bIdx]?.chapters?.[cIdx]);
+        if (!verses.length) return null;
+
+        const start = (bIdx === first.bookIdx && cIdx === first.chapIdx && first.verseIdx !== undefined)
+            ? first.verseIdx
+            : 0;
+        const end = (bIdx === last.bookIdx && cIdx === last.chapIdx && last.verseIdx !== undefined)
+            ? Math.min(last.verseIdx, verses.length - 1)
+            : verses.length - 1;
+
+        return start <= end ? { start, end } : null;
+    }
+
+    function isPlanLastChapter(bIdx, cIdx) {
+        return isPlanReaderActive() &&
+            planReadingState.endItem &&
+            bIdx === planReadingState.endItem.bookIdx &&
+            cIdx === planReadingState.endItem.chapIdx;
+    }
+
+    function getPlanCurrentChapterIsAtEnd(bIdx, cIdx) {
+        const bounds = getPlanVerseBounds(getReaderContext(), bIdx, cIdx);
+        if (!bounds || !isPlanLastChapter(bIdx, cIdx)) return false;
+        const last = planReadingState.endItem;
+        return last.verseIdx === undefined || bounds.end === last.verseIdx;
+    }
+
+    async function carregarTraducaoPlano(versionId) {
+        if (planBibleCache.has(versionId)) {
+            return planBibleCache.get(versionId);
+        }
+
+        const response = await fetch(versionId, { cache: 'no-cache' });
+        if (!response.ok) {
+            throw new Error(`Não foi possível carregar ${versionId} para o Plano.`);
+        }
+
+        const data = await response.json();
+        planBibleCache.set(versionId, data);
+        return data;
+    }
+
+    function getPlanChapterNumberBounds() {
+        if (!isPlanReaderActive()) return null;
+        return {
+            firstBookIdx: planReadingState.startItem?.bookIdx ?? 0,
+            firstChapIdx: planReadingState.startItem?.chapIdx ?? 0,
+            lastBookIdx: planReadingState.endItem?.bookIdx ?? 0,
+            lastChapIdx: planReadingState.endItem?.chapIdx ?? 0
+        };
+    }
+
+    function getReaderSelectionCount() {
+        return getReaderContext().selectedMap.size;
+    }
+
     const comparisonCache = new Map();
 
     const bookNameIndexMap = {};
@@ -655,22 +826,35 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         return Array.isArray(item.verses) ? item.verses.map(Number).sort((a,b)=>a-b) : [];
     }
 
-    function getSavedMatch(bIdx, cIdx, vIdx) {
-        const version = getVersionMeta().abbrev;
+    function getSavedMatch(bIdx, cIdx, vIdx, context = getReaderContext()) {
+        const meta = versoesDisponiveis.find(v => v.id === context.versionId);
+        const version = meta?.abbrev || String(context.versionId || '').replace('.json','').toUpperCase();
         return savedVerses.some(item => {
             if (item.bookIdx !== bIdx || item.chapIdx !== cIdx) return false;
+            if (item.versionId && item.versionId !== context.versionId) return false;
             if (item.version && String(item.version).toUpperCase() !== String(version).toUpperCase()) return false;
             return getSavedVerseSet(item).includes(vIdx);
         });
     }
 
-    function getNoteMatch(bIdx, cIdx, vIdx) {
-        return savedNotes.some(item => item.bookIdx === bIdx && item.chapIdx === cIdx && Array.isArray(item.verses) && item.verses.includes(vIdx));
+    function getNoteMatch(bIdx, cIdx, vIdx, context = getReaderContext()) {
+        return savedNotes.some(item => {
+            if (item.bookIdx !== bIdx || item.chapIdx !== cIdx) return false;
+            if (item.versionId && item.versionId !== context.versionId) return false;
+            return Array.isArray(item.verses) && item.verses.includes(vIdx);
+        });
     }
 
     function getSelectedNotes() {
+        const ctx = getReaderContext();
         const selected = new Set(getSelectedOrdered().map(x => x.v));
-        return savedNotes.filter(item => item.bookIdx === currentBook && item.chapIdx === currentChap && Array.isArray(item.verses) && item.verses.some(v => selected.has(v)));
+        return savedNotes.filter(item =>
+            item.bookIdx === ctx.bookIdx &&
+            item.chapIdx === ctx.chapIdx &&
+            (!item.versionId || item.versionId === ctx.versionId) &&
+            Array.isArray(item.verses) &&
+            item.verses.some(v => selected.has(v))
+        );
     }
 
     function scrollToVerse(vIdx) {
@@ -787,23 +971,25 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         estadoIdiomas[lang] = !estadoIdiomas[lang];
         if(!estadoIdiomas.orig && !estadoIdiomas.pt && !estadoIdiomas.en) {
             estadoIdiomas[lang] = true;
-            return showToast("Pelo menos um idioma deve estar ativo.");
+            return showToast('Pelo menos um idioma deve estar ativo.');
         }
         localStorage.setItem('bible_lang_state', JSON.stringify(estadoIdiomas));
         syncLangButtons();
-        renderChapter(currentBook, currentChap);
+        const ctx = getReaderContext();
+        if (ctx.kind === 'plan') renderChapterForContext(ctx, ctx.bookIdx, ctx.chapIdx);
+        else renderChapter(currentBook, currentChap);
     }
 
     function normalizarStrongCode(strongCode) {
         return String(strongCode || '').trim().toUpperCase().replace(/^([GH])0+/, '$1');
     }
 
-    function getLexiconEntry(strongCode, bIdx) {
+    function getLexiconEntry(strongCode, bIdx, data = bibleData) {
         const code = normalizarStrongCode(strongCode);
         if (globalLexicon && globalLexicon.entries && globalLexicon.entries[code]) {
             return { ...globalLexicon.entries[code], _source: 'global' };
         }
-        const bookDict = bibleData[bIdx] && bibleData[bIdx].dictionary;
+        const bookDict = data[bIdx] && data[bIdx].dictionary;
         if (bookDict) {
             const legacyEntry = bookDict[code] || bookDict[strongCode] || bookDict[String(strongCode || '').toLowerCase()];
             if (legacyEntry) return { ...legacyEntry, _source: 'book' };
@@ -1122,10 +1308,12 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
                 'dictionary-content'
             );
 
+        const reader = getReaderContext();
         const data =
             getLexiconEntry(
                 strongCode,
-                bIdx
+                bIdx,
+                reader.bibleData
             );
 
         let morphology = null;
@@ -1262,17 +1450,17 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         setTimeout(() => buildBookSelectionUI(), 100);
     }
 
-    function normalizeVerseObject(verse, index) {
+    function normalizeVerseObject(verse, index, data = bibleData, bIdx = currentBook) {
         if (typeof verse === 'string') {
             return {
-                id: `${bibleData[currentBook]?.id || 'verse'}-${index + 1}`,
+                id: `${data[bIdx]?.id || 'verse'}-${index + 1}`,
                 text_pt: verse,
                 words: []
             };
         }
 
         return verse || {
-            id: `${bibleData[currentBook]?.id || 'verse'}-${index + 1}`,
+            id: `${data[bIdx]?.id || 'verse'}-${index + 1}`,
             text_pt: '',
             words: []
         };
@@ -1354,31 +1542,45 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     }
 
     function renderChapter(bIdx, cIdx) {
-        if (!bibleData || !bibleData[bIdx]) return;
+        renderChapterForContext(getReaderContext(), bIdx, cIdx);
+    }
 
-        const sameChapter = currentBook === bIdx && currentChap === cIdx;
-        currentBook = bIdx;
-        currentChap = cIdx;
-        localStorage.setItem('bible_last_read', JSON.stringify({
-            bookIdx: bIdx,
-            chapIdx: cIdx
-        }));
+    function renderChapterForContext(ctx, bIdx, cIdx) {
+        const data = ctx.bibleData;
+        if (!data || !data[bIdx]) return;
+
+        const sameChapter = ctx.bookIdx === bIdx && ctx.chapIdx === cIdx;
+        if (ctx.kind === 'read') {
+            currentBook = bIdx;
+            currentChap = cIdx;
+            localStorage.setItem('bible_last_read', JSON.stringify({ bookIdx: bIdx, chapIdx: cIdx }));
+        } else {
+            planReadingState.bookIdx = bIdx;
+            planReadingState.chapIdx = cIdx;
+            planSelectionContext.bookIdx = bIdx;
+            planSelectionContext.chapIdx = cIdx;
+        }
 
         clearSelection();
         fecharGavetas();
 
-        const book = bibleData[bIdx];
+        const book = data[bIdx];
 
         const chapterData = book.chapters[cIdx];
 
-        const verses = Array.isArray(chapterData)
-            ? chapterData
-            : (Array.isArray(chapterData?.verses)
-                ? chapterData.verses
-                : []);
+        const allVerses = getChapterVerses(chapterData);
+        const bounds = getPlanVerseBounds(ctx, bIdx, cIdx);
+        if (!bounds) return;
+        const renderStart = bounds.start;
+        const renderEnd = bounds.end;
+        const verses = allVerses.slice(renderStart, renderEnd + 1);
 
         document.getElementById('pill-title').innerText =
-            `${book.name} ${cIdx + 1}`;
+            ctx.kind === 'plan' ? `${book.name} ${cIdx + 1}` : `${book.name} ${cIdx + 1}`;
+
+        if (ctx.kind === 'plan') {
+            document.getElementById('app-title').innerText = getPlanDayTitle(planReadingState.day);
+        }
 
         const notesInChap =
             savedNotes.filter(
@@ -1403,12 +1605,13 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
             </div>
         `;
         const numActiveLangs = (estadoIdiomas.pt ? 1 : 0) + (estadoIdiomas.en ? 1 : 0) + (estadoIdiomas.orig ? 1 : 0);
-        const isInt = currentVersionId === 'int.json';
+        const isInt = ctx.versionId === 'int.json';
         const isFluidMode = !isInt || numActiveLangs === 1;
         const dirAttr = (isFluidMode && estadoIdiomas.orig && !estadoIdiomas.pt && !estadoIdiomas.en && isInt) ? 'dir="rtl"' : 'dir="ltr"';
 
-        verses.forEach((verse, i) => {
-            const verseObj = normalizeVerseObject(verse, i);
+        verses.forEach((verse, localIndex) => {
+            const i = renderStart + localIndex;
+            const verseObj = normalizeVerseObject(verse, i, data, bIdx);
             const verseNumber = i + 1;
 
             const currentPericope =
@@ -1420,9 +1623,17 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
                 currentPericope &&
                 verseNumber ===
                     currentPericope.start_verse;
-            const hasNote = notesInChap.some(n => Array.isArray(n.verses) && n.verses.includes(i));
-            const hasSaved = getSavedMatch(bIdx, cIdx, i);
-            const stateClasses = `${hasNote ? 'has-note' : ''} ${hasSaved ? 'has-saved' : ''}`.trim();
+            const hasNote = getNoteMatch(bIdx, cIdx, i, ctx);
+            const hasSaved = getSavedMatch(bIdx, cIdx, i, ctx);
+
+            const isSelected =
+                ctx.selectedMap.has(i);
+
+            const stateClasses = `
+                ${hasNote ? 'has-note' : ''}
+                ${hasSaved ? 'has-saved' : ''}
+                ${isSelected ? 'selected' : ''}
+            `.trim();
 
             if (isFluidMode || !verseObj.words || verseObj.words.length === 0) {
 
@@ -1502,14 +1713,14 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
                     `;
                 }
 
-                html += `<div class="verse fluid-mode ${stateClasses} ${estadoIdiomas.orig && !estadoIdiomas.pt && !estadoIdiomas.en ? 'original-only':''}" ${dirAttr} id="v-${i}" onclick="toggleVerse(${i})"><span class="verse-num">${i + 1}</span> ${escapeHTML(fluidText)}</div>`;
+                html += `<div class="verse fluid-mode ${stateClasses} ${estadoIdiomas.orig && !estadoIdiomas.pt && !estadoIdiomas.en ? 'original-only':''}" ${dirAttr} id="v-${i}" onclick="${ctx.kind === 'plan' ? `togglePlanVerse(${i})` : `toggleVerse(${i})`}"><span class="verse-num">${i + 1}</span> ${escapeHTML(fluidText)}</div>`;
             } else {
 
                 html += `
                     <div
                         class="verse interlinear-mode ${stateClasses}"
                         id="v-${i}"
-                        onclick="toggleVerse(${i})"
+                        onclick="${ctx.kind === 'plan' ? `togglePlanVerse(${i})` : `toggleVerse(${i})`}"
                     >
                         <span class="verse-num">${i + 1}</span>
 
@@ -1542,7 +1753,8 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
                                 cIdx,
                                 i,
                                 wordIndex,
-                                w
+                                w,
+                                data
                             );
 
 
@@ -1656,72 +1868,96 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
             }
         });
 
-        document.getElementById('chapter-content').innerHTML = html;
+        document.getElementById(ctx.containerId).innerHTML = html;
 
-        bindDictionaryWordClicks();
+        bindDictionaryWordClicks(ctx);
 
-        if (!document.getElementById('tab-read').classList.contains('active')) {
+        if (ctx.kind === 'read' && !document.getElementById('tab-read').classList.contains('active')) {
             switchTab('read');
         }
 
-        if (pendingVerseScroll !== null) {
-            const target = pendingVerseScroll;
-            pendingVerseScroll = null;
-            scrollToVerse(target);
+        if (ctx.kind === 'plan' && getPlanCurrentChapterIsAtEnd(bIdx, cIdx)) {
+            document.getElementById(ctx.containerId).insertAdjacentHTML('beforeend', `
+                <div class="plan-complete-wrap">
+                    <button class="btn" type="button" onclick="completePlanReading()">Concluir leitura</button>
+                </div>
+            `);
+        }
+
+        const pending = ctx.kind === 'plan' ? planReadingState.pendingVerseScroll : pendingVerseScroll;
+        if (pending !== null && pending !== undefined) {
+            if (ctx.kind === 'plan') planReadingState.pendingVerseScroll = null;
+            else pendingVerseScroll = null;
+            scrollToVerse(pending);
         } else if (!sameChapter) {
             requestAnimationFrame(() => document.getElementById('main-scroll').scrollTo({ top: 0, behavior: 'auto' }));
         }
     }
 
     function prevChapter() {
+        const ctx = getReaderContext();
+        if (ctx.kind === 'plan') {
+            const first = planReadingState.startItem;
+            if (!first) return;
+            if (ctx.chapIdx > first.chapIdx && ctx.bookIdx === first.bookIdx) {
+                renderChapterForContext(ctx, ctx.bookIdx, ctx.chapIdx - 1);
+                return;
+            }
+            if (ctx.bookIdx > first.bookIdx) {
+                const prevBook = ctx.bibleData[ctx.bookIdx - 1];
+                if (prevBook) renderChapterForContext(ctx, ctx.bookIdx - 1, prevBook.chapters.length - 1);
+            }
+            return;
+        }
+
         if (currentChap > 0) renderChapter(currentBook, currentChap - 1);
         else if (currentBook > 0) renderChapter(currentBook - 1, bibleData[currentBook - 1].chapters.length - 1);
     }
 
-    function bindDictionaryWordClicks() {
-
+    function bindDictionaryWordClicks(context = getReaderContext()) {
         const words = document.querySelectorAll(
-            '#chapter-content .dictionary-word'
+            `#${context.containerId} .dictionary-word`
         );
 
         words.forEach(word => {
-
             word.addEventListener('click', function(event) {
-
                 event.stopPropagation();
-
-                const strongCode =
-                    this.dataset.strong || '';
-
-                const occurrenceForm =
-                    this.dataset.occurrenceForm || '';
-
-                const occurrenceGloss =
-                    this.dataset.occurrenceGloss || '';
-
-                const occurrenceMorphology =
-                    this.dataset.occurrenceMorphology || '';
-
+                const strongCode = this.dataset.strong || '';
+                const occurrenceForm = this.dataset.occurrenceForm || '';
+                const occurrenceGloss = this.dataset.occurrenceGloss || '';
+                const occurrenceMorphology = this.dataset.occurrenceMorphology || '';
                 openDictionary(
                     event,
                     strongCode,
-                    currentBook,
+                    context.bookIdx,
                     occurrenceForm,
                     occurrenceGloss,
                     occurrenceMorphology
                 );
-
             });
-
         });
     }
 
     function nextChapter() {
+        const ctx = getReaderContext();
+        if (ctx.kind === 'plan') {
+            const last = planReadingState.endItem;
+            if (!last) return;
+            if (ctx.chapIdx < last.chapIdx && ctx.bookIdx === last.bookIdx) {
+                renderChapterForContext(ctx, ctx.bookIdx, ctx.chapIdx + 1);
+                return;
+            }
+            if (ctx.bookIdx < last.bookIdx) {
+                renderChapterForContext(ctx, ctx.bookIdx + 1, 0);
+            }
+            return;
+        }
+
         if (currentChap < bibleData[currentBook].chapters.length - 1) renderChapter(currentBook, currentChap + 1);
         else if (currentBook < bibleData.length - 1) renderChapter(currentBook + 1, 0);
     }
 
-    function openSelector() { fecharGavetas(); document.getElementById('selector-modal').style.display = 'flex'; renderBookListModal(); }
+    function openSelector() { if (isPlanReaderActive()) return showToast('A leitura do Plano está limitada ao trecho do dia.'); fecharGavetas(); document.getElementById('selector-modal').style.display = 'flex'; renderBookListModal(); }
     function closeSelector() { document.getElementById('selector-modal').style.display = 'none'; }
     function renderBookListModal() {
         document.getElementById('modal-title').innerText = "Selecione o Livro";
@@ -1909,25 +2145,54 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     // ABAS
     // ==========================================
     function switchTab(tabId) {
+        if (isPlanReaderActive()) {
+            if (tabId === 'plans') return;
+            closePlanReading();
+        }
+
         fecharGavetas();
         document.querySelectorAll('.tab-content, nav button').forEach(el => el.classList.remove('active'));
         document.getElementById('tab-' + tabId).classList.add('active');
         document.getElementById('nav-' + tabId).classList.add('active');
         document.getElementById('reader-pill').style.display = (tabId === 'read') ? 'flex' : 'none';
-        
-        // Exibe "Idiomas" (Visão) somente se for INT
+
         const btnLang = document.getElementById('btn-lang-menu');
-        if(tabId === 'read' && currentVersionId === 'int.json') {
-            btnLang.classList.remove('hidden');
-        } else {
-            btnLang.classList.add('hidden');
+        const btnApoio = document.getElementById('btn-apoio');
+
+        if (btnApoio) {
+            btnApoio.classList.toggle(
+                'hidden',
+                tabId !== 'read'
+            );
+        }
+
+        if(tabId === 'read' && currentVersionId === 'int.json') btnLang.classList.remove('hidden');
+        else btnLang.classList.add('hidden');
+
+        /*document.getElementById('btn-version-menu').classList.remove('hidden');*/
+        document.getElementById('btn-plan-close').classList.add('hidden');
+        document.getElementById('plan-version-label')?.classList.add('hidden');
+        const versionMenu = document.getElementById('btn-version-menu');
+
+        if (versionMenu) {
+            versionMenu.classList.toggle(
+                'hidden',
+                tabId !== 'read'
+            );
+        }
+
+        document.getElementById('app-title').classList.remove('plan-reader-app-title');
+        document.getElementById('app-title').innerText = 'Bíblia';
+
+        if (tabId === 'read') {
+            renderChapter(currentBook, currentChap);
         }
 
         if (tabId === 'plans') renderPlanList();
         if (tabId === 'saved') renderSavedVerses();
         if (tabId === 'notes') renderNotesList();
-        
-        clearSelection(); 
+
+        clearSelection();
         document.getElementById('main-scroll').scrollTo(0,0);
     }
 
@@ -2166,209 +2431,135 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     }
 
     async function toggleVerse(vIdx) {
-
+        const ctx = getReaderContext();
         const el = document.getElementById(`v-${vIdx}`);
-
         if (!el) return;
 
-
-        // ==========================================================
-        // VERIFICA SE A GAVETA DE COMPARAÇÃO ESTÁ ABERTA
-        // ==========================================================
-
-        const comparisonDrawer =
-            document.getElementById('comparison-drawer');
-
-        const comparisonOpen =
-            !!comparisonDrawer &&
-            comparisonDrawer.classList.contains('open');
-
-
-        // ==========================================================
-        // COMPARAÇÃO ABERTA
-        // ==========================================================
-        // Enquanto a comparação estiver aberta:
-        //
-        // - só pode existir UM versículo selecionado;
-        // - o último clicado substitui o anterior;
-        // - a comparação é atualizada automaticamente.
-        // ==========================================================
+        const comparisonDrawer = document.getElementById('comparison-drawer');
+        const comparisonOpen = !!comparisonDrawer && comparisonDrawer.classList.contains('open');
+        const map = ctx.selectedMap;
 
         if (comparisonOpen) {
-
-            // Remove seleção visual de todos os versículos
             document
-                .querySelectorAll(
-                    '#chapter-content .verse.selected'
-                )
-                .forEach(item => {
-                    item.classList.remove('selected');
-                });
+                .querySelectorAll(`#${ctx.containerId} .verse.selected`)
+                .forEach(item => item.classList.remove('selected'));
 
+            map.clear();
 
-            // Limpa o estado interno
-            selectedVersesMap.clear();
+            const chapterData = ctx.bibleData[ctx.bookIdx]?.chapters?.[ctx.chapIdx];
+            const verseObj = getChapterVerse(chapterData, vIdx);
+            const plainText = getVerseTextForCopy(verseObj);
 
-
-            // Obtém o capítulo respeitando o formato da tradução
-            const chapterData =
-                bibleData[currentBook]
-                    ?.chapters
-                    ?. [currentChap];
-
-
-            // Obtém o versículo pelo helper
-            const verseObj =
-                getChapterVerse(
-                    chapterData,
-                    vIdx
-                );
-
-
-            // Texto seguro
-            const plainText =
-                getVerseTextForCopy(
-                    verseObj
-                );
-
-
-            // Agora este é o único versículo selecionado
-            selectedVersesMap.set(
-                vIdx,
-                {
-                    v: vIdx,
-                    text: plainText
-                }
-            );
-
-
-            // Atualiza destaque visual
+            map.set(vIdx, { v: vIdx, text: plainText });
             el.classList.add('selected');
-
-
-            // Atualiza barra de seleção
             updateSelectionBar();
 
-
-            // ======================================================
-            // ATUALIZA A COMPARAÇÃO
-            // ======================================================
-
-            const activeButton =
-                comparisonDrawer.querySelector(
-                    '.comparison-version-btn.active'
-                );
-
-
-            const activeVersionId =
-                activeButton?.dataset?.versionId ||
-                null;
-
-
+            const activeButton = comparisonDrawer.querySelector('.comparison-version-btn.active');
+            const activeVersionId = activeButton?.dataset?.versionId || null;
             if (activeVersionId) {
-
-                await selectComparisonVersion(
-                    activeVersionId
-                );
+                await selectComparisonVersion(activeVersionId);
             }
-
-
             return;
         }
 
-
-        // ==========================================================
-        // COMPORTAMENTO NORMAL
-        // ==========================================================
-        // Fora da comparação, continua permitindo seleção múltipla.
-        // ==========================================================
-
-        if (selectedVersesMap.has(vIdx)) {
-
-            selectedVersesMap.delete(vIdx);
-
+        if (map.has(vIdx)) {
+            map.delete(vIdx);
             el.classList.remove('selected');
-
         } else {
-
-            const chapterData =
-                bibleData[currentBook]
-                    ?.chapters
-                    ?. [currentChap];
-
-
-            const verseObj =
-                getChapterVerse(
-                    chapterData,
-                    vIdx
-                );
-
-
-            const plainText =
-                getVerseTextForCopy(
-                    verseObj
-                );
-
-
-            selectedVersesMap.set(
-                vIdx,
-                {
-                    v: vIdx,
-                    text: plainText
-                }
-            );
-
-
+            const chapterData = ctx.bibleData[ctx.bookIdx]?.chapters?.[ctx.chapIdx];
+            const verseObj = getChapterVerse(chapterData, vIdx);
+            const plainText = getVerseTextForCopy(verseObj);
+            map.set(vIdx, { v: vIdx, text: plainText });
             el.classList.add('selected');
         }
 
+        updateSelectionBar();
+    }
 
+    function togglePlanVerse(vIdx) {
+
+        const el =
+            document
+                .getElementById('plan-chapter-content')
+                ?.querySelector(`#v-${vIdx}`);
+
+        if (!el) return;
+
+        // Se já estiver selecionado,
+        // remove a seleção.
+        if (
+            planSelectedVersesMap.has(vIdx)
+        ) {
+
+            planSelectedVersesMap.delete(
+                vIdx
+            );
+
+            el.classList.remove(
+                'selected'
+            );
+
+        } else {
+
+            const chapter =
+                planReadingState.bibleData?.[
+                    planReadingState.bookIdx
+                ]?.chapters?.[
+                    planReadingState.chapIdx
+                ];
+
+            const verseObj =
+                getChapterVerse(
+                    chapter,
+                    vIdx
+                );
+
+            planSelectedVersesMap.set(
+                vIdx,
+                {
+                    v: vIdx,
+                    text:
+                        getVerseTextForCopy(
+                            verseObj
+                        )
+                }
+            );
+
+            // Mantém o fundo azul
+            // enquanto estiver selecionado.
+            el.classList.add(
+                'selected'
+            );
+        }
+
+        updatePlanSelectionBar();
+    }
+
+    function updatePlanSelectionBar() {
         updateSelectionBar();
     }
 
     function clearSelection() {
-        selectedVersesMap.clear();
-        document.querySelectorAll('.verse.selected').forEach(el => el.classList.remove('selected'));
+        const ctx = getReaderContext();
+        ctx.selectedMap.clear();
+        document.querySelectorAll(`#${ctx.containerId} .verse.selected`).forEach(el => el.classList.remove('selected'));
         updateSelectionBar();
     }
 
     function updateSelectionBar() {
+        const ctx = getReaderContext();
         const bar = document.getElementById('selection-bar');
-        const count = selectedVersesMap.size;
+        const count = ctx.selectedMap.size;
 
-        const viewNoteBtn =
-            document.getElementById('selection-view-note');
+        const viewNoteBtn = document.getElementById('selection-view-note');
+        const compareBtn = document.getElementById('selection-compare');
+        const hasNote = getSelectedNotes().length > 0;
 
-        const compareBtn =
-            document.getElementById('selection-compare');
-
-        const hasNote =
-            getSelectedNotes().length > 0;
-
-        // Ver nota:
-        // aparece quando existe pelo menos uma nota
-        // relacionada à seleção.
-        if (viewNoteBtn) {
-            viewNoteBtn.classList.toggle(
-                'hidden',
-                !hasNote
-            );
-        }
-
-        // Comparar:
-        // deliberadamente disponível somente para
-        // exatamente um versículo.
-        if (compareBtn) {
-            compareBtn.classList.toggle(
-                'hidden',
-                count !== 1
-            );
-        }
+        if (viewNoteBtn) viewNoteBtn.classList.toggle('hidden', !hasNote);
+        if (compareBtn) compareBtn.classList.toggle('hidden', count !== 1);
 
         if (count > 0) {
-            document.getElementById('selection-count').innerText =
-                `${count} versículo${count > 1 ? 's' : ''}`;
-
+            document.getElementById('selection-count').innerText = `${count} versículo${count > 1 ? 's' : ''}`;
             bar.style.display = 'flex';
         } else {
             bar.style.display = 'none';
@@ -2510,114 +2701,69 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     }
 
     function getSelectedSourceReferenceRange() {
+        const ctx = getReaderContext();
+        const selected = getSelectedOrdered()[0];
+        if (!selected) return null;
 
-        const selected =
-            getSelectedOrdered()[0];
+        const book = ctx.bibleData[ctx.bookIdx];
+        if (!book) return null;
 
-        if (!selected) {
-            return null;
+        const chapter = book.chapters[ctx.chapIdx];
+        const meta = versoesDisponiveis.find(v => v.id === ctx.versionId);
+
+        if (meta?.tipo === 'paraphrase') {
+            const verseObj = getChapterVerse(chapter, selected.v);
+            return getVerseReferenceRange(verseObj, selected.v);
         }
 
-        const book =
-            bibleData[currentBook];
-
-        if (!book) {
-            return null;
-        }
-
-        const chapter =
-            book.chapters[currentChap];
-
-        const meta =
-            versoesDisponiveis.find(
-                v => v.id === currentVersionId
-            );
-
-        // MENS / paráfrases
-        if(meta?.tipo === 'paraphrase') {
-
-            const verseObj =
-                getChapterVerse(
-                    chapter,
-                    selected.v
-                );
-
-            return getVerseReferenceRange(
-                verseObj,
-                selected.v
-            );
-        }
-
-        // Traduções normais
-        return {
-            start: selected.v + 1,
-            end: selected.v + 1
-        };
+        return { start: selected.v + 1, end: selected.v + 1 };
     }
 
     function getComparisonReference() {
+        const ctx = getReaderContext();
+        const book = ctx.bibleData[ctx.bookIdx];
+        if (!book) return '';
 
-        const book =
-            bibleData[currentBook];
+        const range = getSelectedSourceReferenceRange();
+        if (!range) return '';
 
-        if (!book) {
-            return '';
-        }
-
-        const range =
-            getSelectedSourceReferenceRange();
-
-        if (!range) {
-            return '';
-        }
-
-        const chapterRef =
-            `${getAbbrev(book.name)} ${currentChap + 1}`;
-
-        if(range.start === range.end) {
-
-            return `${chapterRef}:${range.start}`;
-
-        }
-
-        return `${chapterRef}:${range.start}-${range.end}`;
+        const chapterRef = `${getAbbrev(book.name)} ${ctx.chapIdx + 1}`;
+        return range.start === range.end
+            ? `${chapterRef}:${range.start}`
+            : `${chapterRef}:${range.start}-${range.end}`;
     }
 
 
     function renderComparisonVersionButtons(activeVersionId) {
-
-        const container =
-            document.getElementById(
-                'comparison-version-list'
-            );
-
+        const ctx = getReaderContext();
+        const container = document.getElementById('comparison-version-list');
         if (!container) return;
 
-        const available =
-            versoesDisponiveis.filter(
-                version =>
-                    version.id !== currentVersionId
-            );
+        const primary = versoesDisponiveis.find(version => version.id === ctx.versionId);
+        const available = versoesDisponiveis.filter(version => version.id !== ctx.versionId);
+        const primaryButton = primary ? `
+            <button
+                type="button"
+                class="comparison-version-btn primary-source"
+                data-version-id="${escapeHTML(primary.id)}"
+                aria-label="Tradução primária: ${escapeHTML(primary.nome)}"
+                disabled>
+                ${escapeHTML(primary.abbrev)}
+            </button>
+        ` : '';
+        container.innerHTML = primaryButton + available.map(version => `
+            <button
+                type="button"
+                class="comparison-version-btn"
+                data-version-id="${escapeHTML(version.id)}"
+                onclick="selectComparisonVersion('${escapeJS(version.id)}')">
+                ${escapeHTML(version.abbrev)}
+            </button>
+        `).join('');
 
-        container.innerHTML =
-            available.map(version => `
-                <button
-                    type="button"
-                    class="comparison-version-btn"
-                    data-version-id="${escapeHTML(version.id)}"
-                    onclick="selectComparisonVersion('${escapeJS(version.id)}')">
-                    ${escapeHTML(version.abbrev)}
-                </button>
-            `).join('');
-
-        container
-            .querySelectorAll('.comparison-version-btn')
-            .forEach(button => {
-                button.classList.toggle(
-                    'active',
-                    button.dataset.versionId === activeVersionId
-                );
-            });
+        container.querySelectorAll('.comparison-version-btn').forEach(button => {
+            button.classList.toggle('active', button.dataset.versionId === activeVersionId || (button.classList.contains('primary-source') && !activeVersionId));
+        });
     }
 
     function getComparisonSegments(chapter, verseNumber) {
@@ -2645,190 +2791,67 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     }
 
     async function selectComparisonVersion(versionId) {
+        const ctx = getReaderContext();
+        if (!ctx.selectedMap.size || ctx.selectedMap.size !== 1) return;
 
-        if (!selectedVersesMap.size ||
-            selectedVersesMap.size !== 1) {
-            return;
-        }
-
-        const content =
-            document.getElementById(
-                'comparison-content'
-            );
-
+        const content = document.getElementById('comparison-content');
         if (!content) return;
 
         renderComparisonVersionButtons(versionId);
-
-        content.innerHTML = `
-            <p class="comparison-loading">
-                Carregando tradução...
-            </p>
-        `;
+        content.innerHTML = '<p class="comparison-loading">Carregando tradução...</p>';
 
         try {
+            const data = await loadComparisonVersion(versionId);
+            const currentBookName = ctx.bibleData[ctx.bookIdx]?.name;
+            const comparisonBookIndex = findComparisonBook(data, currentBookName);
+            if (comparisonBookIndex === null) throw new Error('Livro não encontrado na tradução selecionada.');
 
-            const data =
-                await loadComparisonVersion(
-                    versionId
-                );
+            const chapter = data[comparisonBookIndex]?.chapters?.[ctx.chapIdx];
+            if (!chapter) throw new Error('Capítulo não encontrado na tradução selecionada.');
 
-            const currentBookName =
-                bibleData[currentBook]?.name;
-
-            const comparisonBookIndex =
-                findComparisonBook(
-                    data,
-                    currentBookName
-                );
-
-            if (comparisonBookIndex === null) {
-                throw new Error(
-                    'Livro não encontrado na tradução selecionada.'
-                );
-            }
-
-            const chapter =
-                data[comparisonBookIndex]
-                    ?.chapters?.[currentChap];
-
-            if (!chapter) {
-                throw new Error(
-                    'Capítulo não encontrado na tradução selecionada.'
-                );
-            }
-
-            const selected =
-                getSelectedOrdered()[0];
-
-            const sourceRange =
-                getSelectedSourceReferenceRange();
-
+            const sourceRange = getSelectedSourceReferenceRange();
             let segments = [];
 
-            if(sourceRange) {
-
-                const targetMeta =
-                    versoesDisponiveis.find(
-                        v => v.id === versionId
-                    );
-
-                /*
-                * Se a tradução secundária também for uma
-                * paráfrase, basta procurar pelo início
-                * do segmento.
-                */
-                if(targetMeta?.tipo === 'paraphrase') {
-
-                    segments =
-                        getComparisonVerseSegments(
-                            chapter,
-                            sourceRange.start - 1,
-                            versionId
-                        );
-
+            if (sourceRange) {
+                const targetMeta = versoesDisponiveis.find(v => v.id === versionId);
+                if (targetMeta?.tipo === 'paraphrase') {
+                    segments = getComparisonVerseSegments(chapter, sourceRange.start - 1, versionId);
                 } else {
-
-                    /*
-                    * Tradução normal:
-                    * um segmento da MENS pode corresponder
-                    * a vários versículos normais.
-                    */
-                    for(
-                        let n = sourceRange.start;
-                        n <= sourceRange.end;
-                        n++
-                    ) {
-
-                        const found =
-                            getComparisonVerseSegments(
-                                chapter,
-                                n - 1,
-                                versionId
-                            );
-
-                        segments.push(...found);
+                    for (let n = sourceRange.start; n <= sourceRange.end; n++) {
+                        segments.push(...getComparisonVerseSegments(chapter, n - 1, versionId));
                     }
-
                 }
 
-                /*
-                * Remove possíveis duplicações.
-                */
                 const uniqueSegments = [];
                 const seenSegments = new Set();
-
                 segments.forEach(segment => {
-
-                    const key =
-                        `${segment.start}-${segment.end}-${getComparisonVerseText(segment.verse)}`;
-
-                    if(!seenSegments.has(key)) {
-
+                    const key = `${segment.start}-${segment.end}-${getComparisonVerseText(segment.verse)}`;
+                    if (!seenSegments.has(key)) {
                         seenSegments.add(key);
                         uniqueSegments.push(segment);
-
                     }
-
                 });
-
                 segments = uniqueSegments;
             }
 
-            if (!segments.length) {
-                throw new Error(
-                    'Versículo não encontrado na tradução selecionada.'
-                );
-            }
+            if (!segments.length) throw new Error('Versículo não encontrado na tradução selecionada.');
 
-            const text = segments
-                .map(segment => {
+            const text = segments.map(segment => {
+                const segmentText = getComparisonVerseText(segment.verse);
+                return segment.start === segment.end
+                    ? `${segment.start}. ${segmentText}`
+                    : `${segment.start}-${segment.end}. ${segmentText}`;
+            }).join('\n\n');
 
-                    const segmentText =
-                        getComparisonVerseText(
-                            segment.verse
-                        );
-
-                    if (segment.start === segment.end) {
-                        return `${segment.start}. ${segmentText}`;
-                    }
-
-                    return `${segment.start}-${segment.end}. ${segmentText}`;
-
-                })
-                .join('\n\n');
-
-            const meta =
-                versoesDisponiveis.find(
-                    v => v.id === versionId
-                );
-
+            const meta = versoesDisponiveis.find(v => v.id === versionId);
             content.innerHTML = `
-                <div class="comparison-reference">
-                    ${escapeHTML(getComparisonReference())}
-                </div>
-
-                <div class="comparison-version-name">
-                    ${escapeHTML(meta?.nome || versionId)}
-                </div>
-
-                <div class="comparison-text">
-                    ${escapeHTML(text)}
-                </div>
+                <div class="comparison-reference">${escapeHTML(getComparisonReference())}</div>
+                <div class="comparison-version-name">${escapeHTML(meta?.nome || versionId)}</div>
+                <div class="comparison-text">${escapeHTML(text)}</div>
             `;
-
         } catch (error) {
-
-            console.error(
-                'Erro na comparação:',
-                error
-            );
-
-            content.innerHTML = `
-                <p class="comparison-error">
-                    Não foi possível carregar esta tradução.
-                </p>
-            `;
+            console.error('Erro na comparação:', error);
+            content.innerHTML = '<p class="comparison-error">Não foi possível carregar esta tradução.</p>';
         }
     }
 
@@ -2853,78 +2876,59 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     }
 
     async function compareSelectedVerse() {
+        const ctx = getReaderContext();
+        if (ctx.selectedMap.size !== 1) return showToast('Selecione apenas um versículo para comparar.');
 
-        if (selectedVersesMap.size !== 1) {
-            return showToast(
-                'Selecione apenas um versículo para comparar.'
-            );
-        }
-
-        const selected =
-            getSelectedOrdered()[0];
-
-        // Mantém o versículo selecionado visível
-        // e faz o mesmo destaque usado na navegação.
+        const selected = getSelectedOrdered()[0];
         scrollToVerse(selected.v);
 
-        const drawer =
-            document.getElementById(
-                'comparison-drawer'
-            );
-
+        const drawer = document.getElementById('comparison-drawer');
         if (!drawer) return;
 
         fecharGavetas();
-
         drawer.classList.add('open');
+        drawer.setAttribute('aria-hidden', 'false');
 
-        drawer.setAttribute(
-            'aria-hidden',
-            'false'
-        );
-
-        // A tradução ativa fica fora da lista.
-        const alternatives =
-            versoesDisponiveis.filter(
-                version =>
-                    version.id !== currentVersionId
-            );
-
+        const alternatives = versoesDisponiveis.filter(version => version.id !== ctx.versionId);
         if (!alternatives.length) {
-            document.getElementById(
-                'comparison-content'
-            ).innerHTML = `
-                <p class="comparison-error">
-                    Não existem outras traduções disponíveis.
-                </p>
-            `;
-
+            document.getElementById('comparison-content').innerHTML = '<p class="comparison-error">Não existem outras traduções disponíveis.</p>';
             return;
         }
 
-        // Primeira alternativa disponível.
-        await selectComparisonVersion(
-            alternatives[0].id
-        );
+        await selectComparisonVersion(alternatives[0].id);
     }
 
-    function getSelectedOrdered() { return Array.from(selectedVersesMap.values()).sort((a, b) => a.v - b.v); }
+    function getSelectedOrdered() {
+        return Array.from(getReaderContext().selectedMap.values()).sort((a, b) => a.v - b.v);
+    }
 
     function getShortReference() {
-        if(selectedVersesMap.size === 0) return "";
-        let arr = getSelectedOrdered(), ranges = [], start = arr[0].v, prev = start;
-        for(let i = 1; i < arr.length; i++) {
-            if(arr[i].v === prev + 1) prev = arr[i].v;
-            else { ranges.push(start === prev ? (start + 1) : `${start + 1}-${prev + 1}`); start = arr[i].v; prev = start; }
+        const ctx = getReaderContext();
+        if (ctx.selectedMap.size === 0) return '';
+        const arr = getSelectedOrdered();
+        const ranges = [];
+        let start = arr[0].v;
+        let prev = start;
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i].v === prev + 1) {
+                prev = arr[i].v;
+            } else {
+                ranges.push(start === prev ? `${start + 1}` : `${start + 1}-${prev + 1}`);
+                start = arr[i].v;
+                prev = start;
+            }
         }
-        ranges.push(start === prev ? (start + 1) : `${start + 1}-${prev + 1}`);
-        let abbrev = getAbbrev(bibleData[currentBook].name);
-        return `${abbrev} ${currentChap + 1}:${ranges.join(', ')}`;
+
+        ranges.push(start === prev ? `${start + 1}` : `${start + 1}-${prev + 1}`);
+        const book = ctx.bibleData[ctx.bookIdx];
+        return `${getAbbrev(book.name)} ${ctx.chapIdx + 1}:${ranges.join(', ')}`;
     }
 
     function getFormattedReference() {
-        if(selectedVersesMap.size === 0) return "";
-        let arr = getSelectedOrdered();
+        const ctx = getReaderContext();
+        if (ctx.selectedMap.size === 0) return '';
+        const arr = getSelectedOrdered();
         return arr.map(item => `${item.v + 1}. ${item.text}`).join(' ') + `\n${getShortReference()}`;
     }
 
@@ -2941,41 +2945,66 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
 
     // SALVOS
     function getSelectionKey() {
-        const verses = getSelectedOrdered().map(x => x.v).sort((a,b)=>a-b);
-        return `${currentBook}|${currentChap}|${getVersionMeta().abbrev}|${verses.join(',')}`;
+        const ctx = getReaderContext();
+        const verses = getSelectedOrdered().map(x => x.v).sort((a,b) => a-b);
+        return `${ctx.bookIdx}|${ctx.chapIdx}|${getReaderVersionMeta().abbrev}|${verses.join(',')}`;
     }
 
     function savedSelectionExists() {
+        const ctx = getReaderContext();
         const key = getSelectionKey();
         return savedVerses.some(item => {
-            if (item.bookIdx !== currentBook || item.chapIdx !== currentChap) return false;
-            if (item.version && String(item.version).toUpperCase() !== String(getVersionMeta().abbrev).toUpperCase()) return false;
+            if (item.bookIdx !== ctx.bookIdx || item.chapIdx !== ctx.chapIdx) return false;
+            if (item.versionId && item.versionId !== ctx.versionId) return false;
+            if (item.version && String(item.version).toUpperCase() !== String(getReaderVersionMeta().abbrev).toUpperCase()) return false;
             const verses = getSavedVerseSet(item);
-            return verses.length && `${currentBook}|${currentChap}|${item.version || getVersionMeta().abbrev}|${verses.join(',')}` === key;
+            return verses.length && `${ctx.bookIdx}|${ctx.chapIdx}|${item.version || getReaderVersionMeta().abbrev}|${verses.join(',')}` === key;
         });
     }
 
     async function saveVerses() {
-        if (selectedVersesMap.size === 0) return;
+        const ctx = getReaderContext();
+        if (ctx.selectedMap.size === 0) return;
         if (savedSelectionExists()) {
             clearSelection();
             return showToast('Este trecho já está salvo nesta tradução.');
         }
+
         const arr = getSelectedOrdered();
         const refStr = getFormattedReference();
         const shortRef = getShortReference();
         const themes = getExistingThemes(savedVerses);
-        const tName = await showDialog({type:'custom', title:'Salvar', msg:'Tema:', customHTML:generateThemeSelectHTML(themes,'Geral'), onRender:()=>bindThemeSelectLogic(themes), extractData:extractThemeData});
+        const tName = await showDialog({
+            type:'custom',
+            title:'Salvar',
+            msg:'Tema:',
+            customHTML:generateThemeSelectHTML(themes,'Geral'),
+            onRender:()=>bindThemeSelectLogic(themes),
+            extractData:extractThemeData
+        });
         if (!tName) return;
+
+        const meta = getReaderVersionMeta();
         const now = new Date().toISOString();
         savedVerses.push({
-            id: Date.now(), theme: tName, bookIdx: currentBook, chapIdx: currentChap, verses: arr.map(a=>a.v),
-            bookName: bibleData[currentBook].name, content: refStr, reference: shortRef,
-            version: getVersionMeta().abbrev, versionId: currentVersionId, versionName: getVersionMeta().nome,
-            createdAt: now, preview: arr[0].text.substring(0, 50) + '...'
+            id: Date.now(),
+            theme: tName,
+            bookIdx: ctx.bookIdx,
+            chapIdx: ctx.chapIdx,
+            verses: arr.map(a=>a.v),
+            bookName: ctx.bibleData[ctx.bookIdx].name,
+            content: refStr,
+            reference: shortRef,
+            version: meta.abbrev,
+            versionId: ctx.versionId,
+            versionName: meta.nome,
+            createdAt: now,
+            preview: arr[0].text.substring(0, 50) + '...'
         });
+
         localStorage.setItem('bible_saved_verses', JSON.stringify(savedVerses));
-        renderChapter(currentBook, currentChap);
+        if (ctx.kind === 'plan') renderChapterForContext(ctx, ctx.bookIdx, ctx.chapIdx);
+        else renderChapter(ctx.bookIdx, ctx.chapIdx);
         showToast('Trecho salvo!');
     }
 
@@ -3220,26 +3249,44 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
 
     // NOTAS
     async function noteVerses() {
-        if (selectedVersesMap.size === 0) return;
+        const ctx = getReaderContext();
+        if (ctx.selectedMap.size === 0) return;
+
         const arr = getSelectedOrdered();
         const refStr = getFormattedReference();
         const shortRef = getShortReference();
         const themes = getExistingThemes(savedNotes);
         const res = await showDialog({
-            type:'custom', title:'Anotação', msg:shortRef,
+            type:'custom',
+            title:'Anotação',
+            msg:shortRef,
             customHTML:`${generateThemeSelectHTML(themes,'Geral')}<textarea id="cd-input-note" placeholder="Nota..." style="width:100%;margin-top:10px;padding:12px;"></textarea>`,
             onRender:()=>bindThemeSelectLogic(themes),
             extractData:()=>({theme:extractThemeData(), text:document.getElementById('cd-input-note').value.trim()})
         });
         if (!res || !res.text) return;
+
+        const meta = getReaderVersionMeta();
         const now = new Date().toISOString();
         savedNotes.push({
-            id:Date.now(), theme:res.theme, bookIdx:currentBook, chapIdx:currentChap, verses:arr.map(a=>a.v),
-            bookName:bibleData[currentBook].name, reference:shortRef, refStr, noteText:res.text,
-            version:getVersionMeta().abbrev, versionId:currentVersionId, versionName:getVersionMeta().nome, createdAt:now
+            id:Date.now(),
+            theme:res.theme,
+            bookIdx:ctx.bookIdx,
+            chapIdx:ctx.chapIdx,
+            verses:arr.map(a=>a.v),
+            bookName:ctx.bibleData[ctx.bookIdx].name,
+            reference:shortRef,
+            refStr,
+            noteText:res.text,
+            version:meta.abbrev,
+            versionId:ctx.versionId,
+            versionName:meta.nome,
+            createdAt:now
         });
+
         localStorage.setItem('bible_notes', JSON.stringify(savedNotes));
-        renderChapter(currentBook, currentChap);
+        if (ctx.kind === 'plan') renderChapterForContext(ctx, ctx.bookIdx, ctx.chapIdx);
+        else renderChapter(ctx.bookIdx, ctx.chapIdx);
         showToast('Anotação salva!');
     }
 
@@ -3463,7 +3510,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         const resDiv = document.getElementById('plan-result');
         if(sBooks.length === 0) return resDiv.innerText = "Selecione livros.";
         let tItems = 0; const sType = document.getElementById('plan-split').value;
-        sBooks.forEach(bName => { const bIdx = bookNameIndexMap[normalizeStr(bName)]; if(bIdx !== undefined) { const b = bibleData[bIdx]; if(sType === 'chapters') tItems += b.chapters.length; else b.chapters.forEach(c => { tItems += c.length; }); } });
+        sBooks.forEach(bName => { const bIdx = bookNameIndexMap[normalizeStr(bName)]; if(bIdx !== undefined) { const b = bibleData[bIdx]; if(sType === 'chapters') tItems += b.chapters.length; else b.chapters.forEach(c => { tItems += getChapterVerses(c).length; }); } });
         const mode = document.getElementById('plan-mode').value, sVal = document.getElementById('plan-start').value, lbl = sType === 'chapters' ? 'cap.' : 'vers.';
         if(!sVal) return resDiv.innerText = `Total: ${tItems} ${lbl} selecionados.`;
         const start = new Date(sVal + "T00:00:00");
@@ -3484,7 +3531,12 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
             const bIdx = bookNameIndexMap[normalizeStr(bName)];
             if(bIdx !== undefined) bibleData[bIdx].chapters.forEach((arr, cIdx) => {
                 if(sType === 'chapters') flat.push({ bookIdx: bIdx, chapIdx: cIdx, bookName: bibleData[bIdx].name });
-                else arr.forEach((_, vIdx) => flat.push({ bookIdx: bIdx, chapIdx: cIdx, verseIdx: vIdx, bookName: bibleData[bIdx].name }));
+                else getChapterVerses(arr).forEach((_, vIdx) => flat.push({
+                    bookIdx: bIdx,
+                    chapIdx: cIdx,
+                    verseIdx: vIdx,
+                    bookName: bibleData[bIdx].name
+                }));
             });
         });
         const mode = document.getElementById('plan-mode').value; let sched = [], cDate = new Date(sVal + "T00:00:00");
@@ -3499,7 +3551,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         }
         let pName = await showDialog({type:'prompt', title:'Nome', defaultValue:'Meu Plano'});
         if(pName === null) return;
-        savedPlans.push({ id: Date.now(), name: pName.trim() || 'Meu Plano', created: new Date().toISOString(), schedule: sched });
+        savedPlans.push({ id: Date.now(), name: pName.trim() || 'Meu Plano', created: new Date().toISOString(), versionId: currentVersionId, version: getVersionMeta().abbrev, versionName: getVersionMeta().nome, schedule: sched });
         localStorage.setItem('bible_plans', JSON.stringify(savedPlans)); togglePlanView('list'); renderPlanList(); showToast("Criado!");
     }
 
@@ -3515,28 +3567,152 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     async function deletePlan(i) { if(await showDialog({type:'confirm', title:'Excluir', msg:'Excluir plano?'})) { savedPlans.splice(i, 1); localStorage.setItem('bible_plans', JSON.stringify(savedPlans)); renderPlanList(); } }
 
     function getPlanDelayStatus(plan) {
-            const today = new Date(); today.setHours(0,0,0,0);
-            const firstUncomp = plan.schedule.find(d => !d.completed);
-            return firstUncomp && (new Date(firstUncomp.date) < today);
+        const today = new Date(); today.setHours(0,0,0,0);
+        const firstUncomp = plan.schedule.find(d => !d.completed);
+        return firstUncomp && (new Date(firstUncomp.date) < today);
+    }
+
+    function closePlanReading() {
+        if (!isPlanReaderActive()) return;
+
+        const restoreScroll = planReaderReturnScrollTop;
+        planSelectedVersesMap.clear();
+        document.querySelectorAll('#plan-chapter-content .verse.selected').forEach(el => el.classList.remove('selected'));
+        fecharGavetas();
+
+        document.getElementById('plan-reader-view').classList.add('hidden');
+        document.getElementById('plan-list-view').classList.add('hidden');
+        document.getElementById('plan-create-view').classList.add('hidden');
+        document.getElementById('plan-version-label')?.classList.add('hidden');
+        document.getElementById('plan-detail-view').classList.remove('hidden');
+
+        document.getElementById('reader-pill').style.display = 'none';
+        document.getElementById('btn-plan-close').classList.add('hidden');
+        document.getElementById('btn-version-menu').classList.remove('hidden');
+        document.getElementById('app-title').classList.remove('plan-reader-app-title');
+        document.getElementById('app-title').innerText = 'Bíblia';
+
+        if (currentVersionId === 'int.json') document.getElementById('btn-lang-menu').classList.remove('hidden');
+        else document.getElementById('btn-lang-menu').classList.add('hidden');
+
+        planReadingState = {
+            active: false,
+            planIndex: null,
+            dayIndex: null,
+            plan: null,
+            day: null,
+            versionId: null,
+            bibleData: [],
+            bookIdx: 0,
+            chapIdx: 0,
+            startItem: null,
+            endItem: null,
+            type: 'chapters',
+            pendingVerseScroll: null
+        };
+        planSelectionContext = { bookIdx: 0, chapIdx: 0, versionId: null };
+
+        document.getElementById('nav-plans').classList.add('active');
+        document.querySelectorAll('nav button:not(#nav-plans)').forEach(btn => btn.classList.remove('active'));
+        document.getElementById('main-scroll').scrollTo(0, restoreScroll);
+        updateSelectionBar();
+    }
+
+    function completePlanReading() {
+        if (!isPlanReaderActive()) return;
+
+        const planIndex = planReadingState.planIndex;
+        const dayIndex = planReadingState.dayIndex;
+        const plan = savedPlans[planIndex];
+        if (!plan?.schedule?.[dayIndex]) return;
+
+        plan.schedule[dayIndex].completed = true;
+        localStorage.setItem('bible_plans', JSON.stringify(savedPlans));
+
+        closePlanReading();
+        renderPlanList();
+        openPlanDetail(planIndex);
+        showToast('Leitura concluída!');
+    }
+
+    async function openPlanReading(planIndex, dayIndex) {
+        const plan = savedPlans[planIndex];
+        const day = plan?.schedule?.[dayIndex];
+        if (!plan || !day?.startItem || !day?.endItem) return;
+
+        const versionId = getPlanVersionId(plan);
+        const previousTab = document.querySelector('nav button.active')?.id || 'nav-plans';
+        if (previousTab !== 'nav-plans') {
+            switchTab('plans');
         }
 
-        function openPlanReading(bIdx, cIdx, vIdx = null) {
+        planReaderReturnScrollTop = document.getElementById('main-scroll')?.scrollTop || 0;
 
-        /*
-        * Se o plano for dividido por versículos,
-        * guardamos o versículo para o renderChapter()
-        * localizar depois que o capítulo for renderizado.
-        */
-        pendingVerseScroll = vIdx;
+        let data;
+        try {
+            data = await carregarTraducaoPlano(versionId);
+        } catch (error) {
+            console.error('Erro ao carregar tradução do Plano:', error);
+            showToast('Não foi possível carregar a tradução deste Plano.');
+            return;
+        }
 
-        /*
-        * renderChapter() já cuida de:
-        * - mudar para Ler;
-        * - renderizar o capítulo;
-        * - rolar até o versículo;
-        * - aplicar o destaque azul com esmaecimento.
-        */
-        renderChapter(bIdx, cIdx);
+        planReadingState = {
+            active: true,
+            planIndex,
+            dayIndex,
+            plan,
+            day,
+            versionId,
+            bibleData: data,
+            bookIdx: day.startItem.bookIdx,
+            chapIdx: day.startItem.chapIdx,
+            startItem: day.startItem,
+            endItem: day.endItem,
+            type: day.type || (day.startItem.verseIdx !== undefined ? 'verses' : 'chapters'),
+            pendingVerseScroll: day.startItem.verseIdx !== undefined ? day.startItem.verseIdx : 0
+        };
+
+        planSelectionContext = {
+            bookIdx: planReadingState.bookIdx,
+            chapIdx: planReadingState.chapIdx,
+            versionId
+        };
+        planSelectedVersesMap.clear();
+
+        document.getElementById('plan-list-view').classList.add('hidden');
+        document.getElementById('plan-create-view').classList.add('hidden');
+        document.getElementById('plan-detail-view').classList.add('hidden');
+        document.getElementById('plan-reader-view').classList.remove('hidden');
+        document.getElementById('nav-plans').classList.add('active');
+        document.querySelectorAll('nav button:not(#nav-plans)').forEach(btn => btn.classList.remove('active'));
+        document.getElementById('reader-pill').style.display = 'flex';
+        document.getElementById('btn-version-menu').classList.add('hidden');
+        document.getElementById('btn-lang-menu').classList.add('hidden');
+        document.getElementById('btn-plan-close').classList.remove('hidden');
+        const planVersionMeta =
+            versoesDisponiveis.find(
+                v => v.id === versionId
+            );
+
+        const planVersionLabel =
+            document.getElementById('plan-version-label');
+
+        if (planVersionLabel) {
+            planVersionLabel.innerText =
+                planVersionMeta?.abbrev ||
+                String(versionId || '')
+                    .replace('.json', '')
+                    .toUpperCase();
+
+            planVersionLabel.classList.remove('hidden');
+        }
+        document.getElementById('app-title').classList.add('plan-reader-app-title');
+        document.getElementById('app-title').innerText = getPlanDayTitle(day);
+
+        const main = document.getElementById('main-scroll');
+        main.scrollTo(0, 0);
+        renderChapterForContext(getReaderContext(), planReadingState.bookIdx, planReadingState.chapIdx);
     }
 
     function openPlanDetail(i) {
@@ -3624,24 +3800,6 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
                     ? 'color:#e74c3c;'
                     : 'color:#95a5a6;';
 
-            /*
-            * Decide exatamente qual versículo deverá
-            * receber o destaque.
-            *
-            * Plano por versículos:
-            * usa o primeiro versículo do dia.
-            *
-            * Plano por capítulos:
-            * usa sempre o versículo 1 do primeiro capítulo.
-            */
-            const targetVerse =
-                (
-                    d.type === 'verses' ||
-                    first.verseIdx !== undefined
-                )
-                    ? first.verseIdx
-                    : 0;
-
             html += `
                 <div
                     class="card"
@@ -3669,10 +3827,11 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
                         </div>
 
                         <div
-                            onclick="openPlanReading(
-                                ${first.bookIdx},
-                                ${first.chapIdx},
-                                ${targetVerse}
+                            <div
+                                onclick="openPlanReading(
+                                    ${i},
+                                    ${j}
+                                )"
                             )"
                             style="
                                 color:var(--primary);
@@ -3743,20 +3902,24 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         openPlanDetail(pI); // Refresh detail and reorg badge
     }
 
-    function getItemsForDay(startItem, endItem, type) {
-        let items = [], inRange = false;
-        for(let b=startItem.bookIdx; b<=endItem.bookIdx; b++) {
-            if(!bibleData[b]) continue;
-            for(let c=0; c<bibleData[b].chapters.length; c++) {
-                if(type === 'chapters') {
-                    if(b === startItem.bookIdx && c === startItem.chapIdx) inRange = true;
-                    if(inRange) items.push({bookIdx: b, chapIdx: c, bookName: bibleData[b].name});
-                    if(b === endItem.bookIdx && c === endItem.chapIdx) return items;
+    function getItemsForDay(startItem, endItem, type, data = bibleData) {
+        const items = [];
+        let inRange = false;
+
+        for (let b = startItem.bookIdx; b <= endItem.bookIdx; b++) {
+            if (!data[b]) continue;
+            for (let c = 0; c < data[b].chapters.length; c++) {
+                const chapterVerses = getChapterVerses(data[b].chapters[c]);
+
+                if (type === 'chapters') {
+                    if (b === startItem.bookIdx && c === startItem.chapIdx) inRange = true;
+                    if (inRange) items.push({ bookIdx:b, chapIdx:c, bookName:data[b].name });
+                    if (b === endItem.bookIdx && c === endItem.chapIdx) return items;
                 } else {
-                    for(let v=0; v<bibleData[b].chapters[c].length; v++) {
-                        if(b === startItem.bookIdx && c === startItem.chapIdx && v === startItem.verseIdx) inRange = true;
-                        if(inRange) items.push({bookIdx: b, chapIdx: c, verseIdx: v, bookName: bibleData[b].name});
-                        if(b === endItem.bookIdx && c === endItem.chapIdx && v === endItem.verseIdx) return items;
+                    for (let v = 0; v < chapterVerses.length; v++) {
+                        if (b === startItem.bookIdx && c === startItem.chapIdx && v === startItem.verseIdx) inRange = true;
+                        if (inRange) items.push({ bookIdx:b, chapIdx:c, verseIdx:v, bookName:data[b].name });
+                        if (b === endItem.bookIdx && c === endItem.chapIdx && v === endItem.verseIdx) return items;
                     }
                 }
             }
@@ -3776,9 +3939,17 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
         });
         if(!mode) return;
 
+        let planData;
+        try {
+            planData = await carregarTraducaoPlano(getPlanVersionId(plan));
+        } catch (error) {
+            console.error('Erro ao carregar a tradução do Plano para reorganização:', error);
+            return showToast('Não foi possível carregar a tradução deste Plano.');
+        }
+
         let unread = [], type = plan.schedule[firstUncompIdx].type || 'chapters';
         for(let i = firstUncompIdx; i < plan.schedule.length; i++) {
-            let day = plan.schedule[i]; if(day.startItem && day.endItem) unread = unread.concat(getItemsForDay(day.startItem, day.endItem, type));
+            let day = plan.schedule[i]; if(day.startItem && day.endItem) unread = unread.concat(getItemsForDay(day.startItem, day.endItem, type, planData));
         }
         if(unread.length === 0) return;
 
@@ -3802,7 +3973,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
             }
         }
         if (mode === 'pace') {
-            let origPace = getItemsForDay(plan.schedule[firstUncompIdx].startItem, plan.schedule[firstUncompIdx].endItem, type).length;
+            let origPace = getItemsForDay(plan.schedule[firstUncompIdx].startItem, plan.schedule[firstUncompIdx].endItem, type, planData).length;
             if(origPace <= 0) origPace = 3; 
             let iter = new Date(today);
             for(let i = 0; i < unread.length; i += origPace) {
@@ -3818,3 +3989,213 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'int.jso
     }
 
     window.onload = initAppAsync;
+
+    // =========================================================
+// MATERIAL DE APOIO BÍBLICO
+// Arquivo externo: dados/apoio/apoio_biblico.json
+// =========================================================
+
+let apoioBiblicoData = null;
+let apoioBiblicoCarregado = false;
+
+async function carregarMaterialApoio() {
+    if (apoioBiblicoCarregado && apoioBiblicoData) return apoioBiblicoData;
+
+    const resposta = await fetch('dados/apoio/apoio_biblico.json', {
+        cache: 'no-cache'
+    });
+
+    if (!resposta.ok) {
+        throw new Error(`Falha ao carregar material de apoio: HTTP ${resposta.status}`);
+    }
+
+    apoioBiblicoData = await resposta.json();
+    apoioBiblicoCarregado = true;
+    return apoioBiblicoData;
+}
+
+async function abrirMaterialApoio() {
+    try {
+        await carregarMaterialApoio();
+        renderizarCategoriasApoio();
+
+        const busca = document.getElementById('apoio-search');
+        if (busca) {
+            busca.value = '';
+            busca.oninput = pesquisarMaterialApoio;
+        }
+
+        openDrawer('apoio-drawer');
+    } catch (erro) {
+        console.error(erro);
+        if (typeof showToast === 'function') {
+            showToast('Não foi possível carregar o material de apoio.');
+        }
+    }
+}
+
+function renderizarCategoriasApoio() {
+    const box = document.getElementById('apoio-categorias');
+    const conteudo = document.getElementById('apoio-conteudo');
+    if (!box || !apoioBiblicoData) return;
+
+    box.classList.remove('hidden');
+    if (conteudo) conteudo.classList.add('hidden');
+
+    const categorias = [...(apoioBiblicoData.categorias || [])]
+        .sort((a, b) => (a.ordem || 999) - (b.ordem || 999));
+
+    box.innerHTML = categorias.map(cat => `
+        <button class="apoio-cat-btn" type="button"
+                onclick="abrirCategoriaApoio('${cat.id}')">
+            <strong>${escapeHTML(cat.icone || '')} ${escapeHTML(cat.titulo)}</strong>
+            <small>${escapeHTML(cat.descricao || '')}</small>
+        </button>
+    `).join('');
+}
+
+function abrirCategoriaApoio(id) {
+    const categoria = (apoioBiblicoData?.categorias || [])
+        .find(cat => cat.id === id);
+    if (!categoria) return;
+
+    const box = document.getElementById('apoio-categorias');
+    const conteudo = document.getElementById('apoio-conteudo');
+    if (!box || !conteudo) return;
+
+    box.classList.add('hidden');
+    conteudo.classList.remove('hidden');
+
+    conteudo.innerHTML = `
+        <button class="apoio-voltar" type="button"
+                onclick="renderizarCategoriasApoio()">
+            ← Categorias
+        </button>
+        <h4 class="apoio-section-title">
+            ${escapeHTML(categoria.icone || '')} ${escapeHTML(categoria.titulo)}
+        </h4>
+        ${renderizarConteudoApoio(categoria.conteudo || [])}
+    `;
+}
+
+function renderizarConteudoApoio(conteudos) {
+    return conteudos.map(bloco => {
+        if (bloco.tipo === 'observacao') {
+            return `<p class="apoio-text"><strong>${escapeHTML(bloco.titulo || '')}</strong><br>${escapeHTML(bloco.texto || '')}</p>`;
+        }
+
+        if (bloco.tipo === 'subtitulo') {
+            return `<h5 class="apoio-subtitle">${escapeHTML(bloco.titulo || '')}</h5>`;
+        }
+
+        if (bloco.tipo === 'nota') {
+            return `<div class="apoio-note">${escapeHTML(bloco.texto || '')}</div>`;
+        }
+
+        if (bloco.tipo === 'lista') {
+            return `<ul class="apoio-list">${
+                (bloco.itens || []).map(item => `<li>${escapeHTML(item)}</li>`).join('')
+            }</ul>`;
+        }
+
+        if (bloco.tipo === 'item') {
+            return `
+                <div class="apoio-item">
+                    <div class="apoio-item-title">
+                        ${escapeHTML(bloco.titulo || '')}
+                        ${bloco.referencia ? `<span class="apoio-ref">${escapeHTML(bloco.referencia)}</span>` : ''}
+                    </div>
+                    <div class="apoio-text">${escapeHTML(bloco.texto || '')}</div>
+                </div>
+            `;
+        }
+
+        if (bloco.tipo === 'lista_detalhada') {
+            return (bloco.itens || []).map(item => `
+                <div class="apoio-item">
+                    <div class="apoio-item-title">
+                        ${escapeHTML(item.nome || '')}
+                        ${(item.referencias || []).length
+                            ? `<span class="apoio-ref">${escapeHTML(item.referencias.join('; '))}</span>`
+                            : ''}
+                    </div>
+                    <div class="apoio-text">${escapeHTML(item.texto || '')}</div>
+                </div>
+            `).join('');
+        }
+
+        if (bloco.tipo === 'tabela') {
+            const cabecalho = (bloco.colunas || [])
+                .map(col => `<th>${escapeHTML(col)}</th>`).join('');
+
+            const linhas = (bloco.linhas || []).map(linha => `
+                <tr>
+                    ${(bloco.colunas || []).map(coluna => {
+                        const mapa = {
+                            'Nome': 'nome',
+                            'Referência': 'referencia',
+                            'Correspondente bíblico': 'correspondente',
+                            'Tipo / correspondente bíblico': 'tipo',
+                            'Proporção': 'proporcao',
+                            'Equivalente atual': 'equivalente',
+                            'Equivalente': 'equivalente'
+                        };
+                        return `<td>${escapeHTML(String(linha[mapa[coluna]] ?? ''))}</td>`;
+                    }).join('')}
+                </tr>
+            `).join('');
+
+            return `
+                <div class="apoio-table-wrap">
+                    <table class="apoio-table">
+                        <thead><tr>${cabecalho}</tr></thead>
+                        <tbody>${linhas}</tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        return '';
+    }).join('');
+}
+
+function pesquisarMaterialApoio() {
+    const termo = String(document.getElementById('apoio-search')?.value || '')
+        .trim()
+        .toLocaleLowerCase('pt-BR');
+
+    if (!termo) {
+        renderizarCategoriasApoio();
+        return;
+    }
+
+    const resultados = [];
+
+    for (const categoria of (apoioBiblicoData?.categorias || [])) {
+        const texto = JSON.stringify(categoria).toLocaleLowerCase('pt-BR');
+        if (texto.includes(termo)) {
+            resultados.push(categoria);
+        }
+    }
+
+    const box = document.getElementById('apoio-categorias');
+    const conteudo = document.getElementById('apoio-conteudo');
+
+    box?.classList.remove('hidden');
+    conteudo?.classList.add('hidden');
+
+    if (!box) return;
+
+    if (!resultados.length) {
+        box.innerHTML = `<p class="apoio-text">Nenhum resultado encontrado.</p>`;
+        return;
+    }
+
+    box.innerHTML = resultados.map(cat => `
+        <button class="apoio-cat-btn" type="button"
+                onclick="abrirCategoriaApoio('${cat.id}')">
+            <strong>${escapeHTML(cat.icone || '')} ${escapeHTML(cat.titulo)}</strong>
+            <small>Resultado relacionado à busca</small>
+        </button>
+    `).join('');
+}

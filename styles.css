@@ -617,3 +617,212 @@
 .pericope-range {
     display: none;
 }
+
+/* ==========================================
+   LEITOR INDEPENDENTE DOS PLANOS
+   ========================================== */
+.plan-reader-view {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 0 110px;
+}
+
+.plan-reader-view #plan-chapter-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.plan-reader-app-title {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 1.15;
+    max-width: calc(100% - 90px);
+    text-align: left;
+    margin-right: auto !important;
+}
+
+.plan-close-btn {
+    min-width: 34px;
+    width: 34px;
+    height: 28px;
+    padding: 0 7px !important;
+    border-radius: 16px !important;
+    font-size: 11px !important;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-complete-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 25px 10px 35px;
+}
+
+.plan-complete-wrap .btn {
+    max-width: 320px;
+    margin: 0;
+}
+
+/* Tradução utilizada pelo leitor do Plano */
+#plan-version-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0.9;
+    margin-left: auto;
+    margin-right: 12px;
+    margin-top: 7px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* ===== MATERIAL DE APOIO ===== */
+.apoio-drawer {
+    z-index: 1000;
+}
+
+.apoio-search-wrap {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e6e9ec;
+}
+
+#apoio-search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #d7dce1;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.apoio-categorias {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding: 12px 14px;
+}
+
+.apoio-cat-btn {
+    border: 1px solid #d9e0e6;
+    background: #fff;
+    border-radius: 10px;
+    padding: 11px 10px;
+    text-align: left;
+    cursor: pointer;
+    color: var(--secondary, #2c3e50);
+}
+
+.apoio-cat-btn strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.apoio-cat-btn small {
+    color: #7b8791;
+    font-size: 11px;
+}
+
+.apoio-conteudo {
+    padding: 12px 14px 24px;
+    overflow-y: auto;
+}
+
+.apoio-voltar {
+    border: 0;
+    background: transparent;
+    padding: 4px 0 12px;
+    color: var(--secondary, #2c3e50);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.apoio-section-title {
+    margin: 8px 0 6px;
+    font-size: 16px;
+    color: var(--secondary, #2c3e50);
+}
+
+.apoio-subtitle {
+    margin: 18px 0 8px;
+    font-size: 14px;
+    color: var(--secondary, #2c3e50);
+}
+
+.apoio-text {
+    color: #444;
+    line-height: 1.5;
+    font-size: 14px;
+    margin: 6px 0 12px;
+}
+
+.apoio-note {
+    background: #f7f8f9;
+    border-left: 3px solid #9aa7b2;
+    padding: 9px 10px;
+    border-radius: 5px;
+    color: #555;
+    font-size: 12px;
+    line-height: 1.45;
+    margin: 10px 0;
+}
+
+.apoio-table-wrap {
+    overflow-x: auto;
+    margin: 8px 0 14px;
+}
+
+.apoio-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 620px;
+    font-size: 12px;
+}
+
+.apoio-table th,
+.apoio-table td {
+    border-bottom: 1px solid #e4e7ea;
+    padding: 8px 7px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.apoio-table th {
+    background: #f4f6f8;
+    color: var(--secondary, #2c3e50);
+    font-weight: 700;
+}
+
+.apoio-list {
+    margin: 0 0 14px 18px;
+    padding: 0;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.apoio-item {
+    padding: 9px 0;
+    border-bottom: 1px solid #eceff1;
+}
+
+.apoio-item-title {
+    font-weight: 700;
+    color: var(--secondary, #2c3e50);
+}
+
+.apoio-ref {
+    color: #7b8791;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+@media (max-width: 520px) {
+    .apoio-categorias {
+        grid-template-columns: 1fr 1fr;
+    }
+}

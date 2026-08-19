@@ -11,8 +11,11 @@
 <header>
     <h1 id="app-title">Bíblia</h1>
     <div class="header-actions">
+        <button id="btn-apoio" class="header-btn" type="button" onclick="abrirMaterialApoio()">Apoio</button>
         <button id="btn-version-menu" class="header-btn" onclick="openDrawer('version-drawer')">INT</button>
         <button id="btn-lang-menu" class="header-btn hidden" onclick="openDrawer('language-drawer')">Idioma</button>
+        <span id="plan-version-label" class="hidden"></span>
+        <button id="btn-plan-close" class="header-btn plan-close-btn hidden" onclick="closePlanReading()" aria-label="Fechar leitura do Plano">X</button>
     </div>
 </header>
 
@@ -129,6 +132,10 @@
             <div id="reorg-btn-container" style="margin-bottom: 15px;"></div>
             <div id="plan-details-content"></div>
         </div>
+
+        <div id="plan-reader-view" class="plan-reader-view hidden">
+            <div id="plan-chapter-content"></div>
+        </div>
     </div>
 
     <div id="tab-notes" class="tab-content">
@@ -191,6 +198,44 @@
 </div>
 
 <div id="toast" class="toast">Notificação</div>
+
+<!-- GAVETA: Material de Apoio -->
+<div
+    id="apoio-drawer"
+    class="bottom-drawer apoio-drawer"
+    aria-hidden="true"
+>
+    <div class="drawer-header">
+        <h3>Material de Apoio</h3>
+
+        <button
+            type="button"
+            class="drawer-close"
+            onclick="fecharGavetas()"
+        >
+            ✖
+        </button>
+    </div>
+
+    <div class="apoio-search-wrap">
+        <input
+            id="apoio-search"
+            type="search"
+            placeholder="Pesquisar no material..."
+            autocomplete="off"
+        >
+    </div>
+
+    <div
+        id="apoio-categorias"
+        class="apoio-categorias"
+    ></div>
+
+    <div
+        id="apoio-conteudo"
+        class="apoio-conteudo hidden"
+    ></div>
+</div>
 
 <script src="app.js" defer></script>
 </body>
