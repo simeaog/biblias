@@ -826,3 +826,84 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+#btn-apoio {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+
+    color: #fff;
+}
+
+/* =========================================================
+   TELA DE ABERTURA — BIBLIAS
+   ========================================================= */
+
+#splash-screen {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100dvh;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 99999;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity 180ms ease,
+        visibility 180ms ease;
+}
+
+#splash-screen.splash-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.splash-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    text-align: center;
+}
+
+.splash-title {
+    color: var(--primary);
+
+    font-size: 68px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+
+    margin: 0 0 1px;
+}
+
+.splash-logo {
+    display: block;
+
+    width: 250px;
+    height: auto;
+
+    object-fit: contain;
+}

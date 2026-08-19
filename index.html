@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Bíblia & Planos</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="fav-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Bíblia & Planos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div id="splash-screen">
+    <div class="splash-content">
+        <div class="splash-title">Bíblia</div>
+
+        <img
+            src="fav-icon.png"
+            alt=""
+            class="splash-logo"
+        >
+    </div>
+</div>
 
 <header>
     <h1 id="app-title">Bíblia</h1>
     <div class="header-actions">
-        <button id="btn-apoio" class="header-btn" type="button" onclick="abrirMaterialApoio()">Apoio</button>
-        <button id="btn-version-menu" class="header-btn" onclick="openDrawer('version-drawer')">INT</button>
+        <button id="btn-apoio" class="header-btn" type="button" onclick="abrirMaterialApoio()">i</button>
+        <button id="btn-version-menu" class="header-btn" onclick="openDrawer('version-drawer')">ARA</button>
         <button id="btn-lang-menu" class="header-btn hidden" onclick="openDrawer('language-drawer')">Idioma</button>
         <span id="plan-version-label" class="hidden"></span>
         <button id="btn-plan-close" class="header-btn plan-close-btn hidden" onclick="closePlanReading()" aria-label="Fechar leitura do Plano">X</button>

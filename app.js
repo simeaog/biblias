@@ -196,7 +196,7 @@ function getPericopeForVerse(
     ) || null;
 }
 
-let currentVersionId = localStorage.getItem('bible_current_version') || 'int.json';
+let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.json';
 
     async function carregarLexicoGlobal() {
         try {
@@ -4199,3 +4199,22 @@ function pesquisarMaterialApoio() {
         </button>
     `).join('');
 }
+
+/* =========================================================
+   SPLASH SCREEN
+   ========================================================= */
+
+window.addEventListener('load', () => {
+    const splash = document.getElementById('splash-screen');
+
+    if (!splash) return;
+
+    setTimeout(() => {
+        splash.classList.add('splash-hidden');
+
+        setTimeout(() => {
+            splash.remove();
+        }, 200);
+
+    }, 1500);
+});
