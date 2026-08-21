@@ -8,7 +8,8 @@ const APP_SHELL = [
     './manifest.json',
     './fav-icon_192.png',
     './fav-icon_512.png',
-    './icon-splash.png'
+    './icon-splash_a.png',
+    './icon-splash_b.png'
 ];
 
 self.addEventListener('install', event => {

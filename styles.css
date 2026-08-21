@@ -1944,12 +1944,13 @@ nav button {
 }
 
 .splash-title {
-    color: var(--primary);
+    color: #30485c;
 }
 
 .splash-title.splash-title-dark {
     color: #f4f7fa;
 }
+
 /* Traduções offline */
 .version-offline-btn {
     background: var(--surface-2);

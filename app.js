@@ -2340,6 +2340,8 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             appSettings.theme;
 
         atualizarInterfaceConfig();
+
+        atualizarSplashTema();
     }
 
 
@@ -4825,18 +4827,45 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
 
         if (!splashLogo || !splashTitle) return;
 
-        const temaEscuro =
-            document.documentElement.classList.contains('dark') ||
-            document.body.classList.contains('dark') ||
-            document.documentElement.getAttribute('data-theme') === 'dark' ||
-            document.body.getAttribute('data-theme') === 'dark';
+        let temaEscuro = false;
+
+        /*
+        * Tema definido explicitamente pelo usuário.
+        */
+        if (appSettings.theme === 'dark') {
+
+            temaEscuro = true;
+
+        } else if (appSettings.theme === 'light') {
+
+            temaEscuro = false;
+
+        } else if (appSettings.theme === 'system') {
+
+            /*
+            * Quando estiver em "Sistema", acompanha
+            * a preferência de aparência do dispositivo/navegador.
+            */
+            temaEscuro =
+                window.matchMedia &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
 
         if (temaEscuro) {
+
             splashLogo.src = './icon-splash_b.png';
-            splashTitle.classList.add('splash-title-dark');
+
+            splashTitle.classList.add(
+                'splash-title-dark'
+            );
+
         } else {
+
             splashLogo.src = './icon-splash_a.png';
-            splashTitle.classList.remove('splash-title-dark');
+
+            splashTitle.classList.remove(
+                'splash-title-dark'
+            );
         }
     }
 
