@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="manifest" href="manifest.json">
-    <link rel="icon" type="image/png" href="fav-icon.png">
+    <link rel="icon" type="image/png" href="fav-icon_192.png">
+    <link rel="apple-touch-icon" href="fav-icon_192.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Bíblia & Planos</title>
     <link rel="stylesheet" href="styles.css">
@@ -12,10 +13,11 @@
 
 <div id="splash-screen">
     <div class="splash-content">
-        <div class="splash-title">Bíblia</div>
+        <div id="splash-title" class="splash-title">Bíblia</div>
 
         <img
-            src="fav-icon.png"
+            id="splash-logo"
+            src="icon-splash_a.png"
             alt=""
             class="splash-logo"
         >
@@ -161,6 +163,183 @@
         <h2>Trechos Salvos</h2>
         <div id="saved-list" style="margin-top: 15px;"></div>
     </div>
+
+    <div id="tab-config" class="tab-content">
+
+        <div class="config-header">
+            <h2>Configurações</h2>
+            <!--p>Personalize sua experiência de leitura.</p--->
+        </div>
+
+        <section class="config-section">
+
+            <h3>Leitura</h3>
+
+            <div class="config-card">
+
+                <div class="config-row">
+
+                    <div class="config-row-info">
+                        <strong>Tamanho da fonte</strong>
+                        <!--span>Texto da Bíblia</span--->
+                    </div>
+
+                    <div class="font-control">
+
+                        <button
+                            type="button"
+                            class="config-icon-btn"
+                            onclick="alterarFonte(-1)"
+                        >
+                            A−
+                        </button>
+
+                        <span
+                            id="font-size-value"
+                            class="font-size-value"
+                        >
+                            100%
+                        </span>
+
+                        <button
+                            type="button"
+                            class="config-icon-btn"
+                            onclick="alterarFonte(1)"
+                        >
+                            A+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="config-divider"></div>
+
+                <div class="config-row config-column-mobile">
+
+                    <div class="config-row-info">
+                        <strong>Espaçamento</strong>
+                        <!--span>Distância entre as linhas</span--->
+                    </div>
+
+                    <div class="config-segmented">
+
+                        <button
+                            type="button"
+                            data-line-height="compact"
+                            onclick="definirEspacamento('compact')"
+                        >
+                            Compacto
+                        </button>
+
+                        <button
+                            type="button"
+                            data-line-height="normal"
+                            onclick="definirEspacamento('normal')"
+                        >
+                            Normal
+                        </button>
+
+                        <button
+                            type="button"
+                            data-line-height="comfortable"
+                            onclick="definirEspacamento('comfortable')"
+                        >
+                            Confortável
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="config-section">
+
+            <h3>Aparência</h3>
+
+            <div class="config-card">
+
+                <div class="config-row config-column-mobile">
+
+                    <div class="config-row-info">
+                        <strong>Tema</strong>
+                        <!--span>Aparência do aplicativo</span--->
+                    </div>
+
+                    <div class="config-segmented">
+
+                        <button
+                            type="button"
+                            data-theme="light"
+                            onclick="definirTema('light')"
+                        >
+                            Claro
+                        </button>
+
+                        <button
+                            type="button"
+                            data-theme="dark"
+                            onclick="definirTema('dark')"
+                        >
+                            Escuro
+                        </button>
+
+                        <button
+                            type="button"
+                            data-theme="system"
+                            onclick="definirTema('system')"
+                        >
+                            Sistema
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="config-section">
+            <h3>Aplicativo</h3>
+
+            <div class="config-card">
+                <div class="config-row">
+                    <div class="config-row-info">
+                        <strong>Instalar aplicativo</strong>
+                        <!--span>Instale a Bíblia no seu dispositivo para acesso rápido.</span--->
+                    </div>
+
+                    <button
+                        id="btn-install-app"
+                        type="button"
+                        class="config-action-button hidden"
+                        aria-label="Instalar aplicativo"
+                    >
+                        Instalar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="config-section">
+
+            <button
+                type="button"
+                class="config-reset-btn"
+                onclick="restaurarConfiguracoes()"
+            >
+                Restaurar configurações
+            </button>
+
+        </section>
+
+    </div>
+    
 </main>
 
 <nav>
@@ -169,6 +348,7 @@
     <button id="nav-plans" onclick="switchTab('plans')">Planos</button>
     <button id="nav-notes" onclick="switchTab('notes')">Notas</button>
     <button id="nav-saved" onclick="switchTab('saved')">Salvos</button>
+    <button id="nav-config" onclick="switchTab('config')">Config</button>
 </nav>
 
 <div id="reader-pill" class="reader-pill-container">

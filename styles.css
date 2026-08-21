@@ -14,6 +14,36 @@
         --pt-color: #222;
         --en-color: #7f8c8d;
     }
+
+    /* ==========================================================
+    CONFIGURAÇÕES DE TEMA
+    ========================================================== */
+
+    :root {
+        --bible-font-scale: 1;
+    }
+
+    :root[data-theme="dark"] {
+        --bg: #101820;
+        --text: #e8edf2;
+        --card: #18232d;
+    }
+
+    :root[data-theme="system"] {
+        --bg: #fdfdfd;
+        --text: #222;
+        --card: #fff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+        :root[data-theme="system"] {
+            --bg: #101820;
+            --text: #e8edf2;
+            --card: #18232d;
+        }
+    }
+
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
     
     /* Trava o tamanho exato da tela */
@@ -114,7 +144,28 @@
     .verse.selected { background-color: var(--accent); }
     .verse.has-note { border-left: 3px solid var(--note-border); background-color: var(--note-bg); padding-left: 10px;}
 
-    .verse.fluid-mode { display: block; padding: 6px; font-size: 18px; line-height: 1.55; }
+    .verse.fluid-mode {
+        display: block;
+        padding: 6px;
+        font-size: calc(
+            18px * var(--bible-font-scale, 1)
+        );
+        line-height: var(
+            --bible-line-height,
+            1.55
+        );
+    }
+    :root[data-line-height="compact"] {
+        --bible-line-height: 1.35;
+    }
+
+    :root[data-line-height="normal"] {
+        --bible-line-height: 1.55;
+    }
+
+    :root[data-line-height="comfortable"] {
+        --bible-line-height: 1.80;
+    }
     .verse.fluid-mode.original-only { font-size: 20px; }
     .verse[dir="rtl"] { text-align: right; }
     .verse[dir="rtl"] .verse-num { margin-left: 8px; margin-right: 0; }
@@ -242,7 +293,7 @@
 }
 
 .jump-highlight {
-    animation: verseJumpHighlight 1.8s ease-out;
+    animation: verseJumpHighlight 5.0s ease-out;
 }
 
 @keyframes verseJumpHighlight {
@@ -906,4 +957,1781 @@
     height: auto;
 
     object-fit: contain;
+}
+
+/* =========================================================
+   GAVETA DE TRADUÇÕES — GERENCIAMENTO OFFLINE
+   ========================================================= */
+.version-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.version-row .version-btn {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.version-info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.version-offline-btn {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border: 1px solid #d8d8d8;
+    border-radius: 12px;
+    background: #fff;
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    line-height: 1;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.version-offline-btn:active {
+    background: #f5f5f5;
+    transform: scale(0.97);
+}
+
+.version-offline-btn.is-offline {
+    border-color: var(--primary);
+    background: #f7f9fb;
+}
+
+.version-offline-btn.is-loading {
+    opacity: 0.55;
+    cursor: wait;
+}
+
+.version-offline-btn:disabled {
+    cursor: wait;
+}
+
+@media (max-width: 520px) {
+    .version-offline-btn {
+        flex-basis: 44px;
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+    }
+}
+
+/* ==========================================================
+   CONFIGURAÇÕES
+   ========================================================== */
+
+.config-header {
+    margin-bottom: 24px;
+}
+
+.config-header h2 {
+    margin-bottom: 5px;
+}
+
+.config-header p {
+    margin: 0;
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.config-section {
+    margin-bottom: 24px;
+}
+
+.config-section h3 {
+    font-size: 15px;
+    margin: 0 0 10px 4px;
+}
+
+.config-card {
+    background: var(--card);
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    overflow: hidden;
+}
+
+.config-row {
+    min-height: 72px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.config-row-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.config-row-info strong {
+    color: var(--text);
+    font-size: 15px;
+}
+
+.config-row-info span {
+    color: var(--secondary);
+    font-size: 13px;
+}
+
+.config-divider {
+    height: 1px;
+    background: #eeeeee;
+    margin: 0 16px;
+}
+
+.font-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.config-icon-btn {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #dce2e7;
+    border-radius: 9px;
+    background: var(--card);
+    color: var(--primary);
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.config-icon-btn:active {
+    background: var(--primary);
+    color: white;
+}
+
+.font-size-value {
+    min-width: 48px;
+    text-align: center;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.config-segmented {
+    display: flex;
+    gap: 5px;
+    background: #f4f6f8;
+    padding: 4px;
+    border-radius: 9px;
+}
+
+.config-segmented button {
+    width: auto;
+    margin: 0;
+    padding: 9px 11px;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    color: #65727e;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.config-segmented button.active {
+    background: var(--primary);
+    color: white;
+}
+
+.config-solid-icon {
+    font-size: 13px;
+    margin-right: 3px;
+}
+
+.config-reset-btn {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce2e7;
+    border-radius: 9px;
+    background: var(--card);
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.config-reset-btn:active {
+    background: var(--primary);
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    .config-row.config-column-mobile {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .config-segmented {
+        width: 100%;
+    }
+
+    .config-segmented button {
+        flex: 1;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+}
+
+/* ==========================================================
+   ESCALA DO TEXTO BÍBLICO
+   ========================================================== */
+
+#chapter-content,
+#plan-chapter-content {
+    --reader-font-size: calc(
+        17px * var(--bible-font-scale, 1)
+    );
+}
+
+#chapter-content .verse-text,
+#plan-chapter-content .verse-text {
+    font-size: var(--reader-font-size);
+}
+
+/* ==========================================================
+   ABA CONFIG
+   ========================================================== */
+
+.config-header {
+    margin-bottom: 24px;
+}
+
+.config-header h2 {
+    margin-bottom: 5px;
+}
+
+.config-header p {
+    margin: 0;
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.config-section {
+    margin-bottom: 24px;
+}
+
+.config-section h3 {
+    font-size: 15px;
+    margin: 0 0 10px 4px;
+}
+
+.config-card {
+    background: var(--card);
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    overflow: hidden;
+}
+
+.config-row {
+    min-height: 72px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.config-row-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.config-row-info strong {
+    color: var(--text);
+    font-size: 15px;
+}
+
+.config-row-info span {
+    color: #7f8c8d;
+    font-size: 13px;
+}
+
+.config-divider {
+    height: 1px;
+    background: #eeeeee;
+    margin: 0 16px;
+}
+
+.font-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.config-icon-btn {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #dce2e7;
+    border-radius: 9px;
+    background: var(--card);
+    color: var(--primary);
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.config-icon-btn:active {
+    background: var(--primary);
+    color: white;
+}
+
+.font-size-value {
+    min-width: 48px;
+    text-align: center;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.config-segmented {
+    display: flex;
+    gap: 4px;
+    background: #f4f6f8;
+    padding: 4px;
+    border-radius: 9px;
+}
+
+.config-segmented button {
+    width: auto;
+    margin: 0;
+    padding: 9px 11px;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    color: #65727e;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.config-segmented button.active {
+    background: var(--primary);
+    color: white;
+}
+
+.config-reset-btn {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce2e7;
+    border-radius: 9px;
+    background: var(--card);
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.config-reset-btn:active {
+    background: var(--primary);
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    .config-row.config-column-mobile {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .config-segmented {
+        width: 100%;
+    }
+
+    .config-segmented button {
+        flex: 1;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+/* ==========================================================
+   CORREÇÃO GLOBAL DE TEMAS — LIGHT / DARK / SYSTEM
+   ==========================================================
+   Texto = maior contraste.
+   Superfícies = tons sobre tons.
+   Inputs/controles = superfície coerente com o tema.
+   Estados semânticos mantêm as bordas verde/amarela, mas
+   usam preenchimento azul discreto no tema escuro.
+   ========================================================== */
+
+:root {
+    --surface-0: var(--bg);
+    --surface-1: var(--card);
+    --surface-2: #f4f7fa;
+    --surface-3: #e9eef3;
+    --border: #dfe5ea;
+    --border-soft: #edf0f2;
+    --text-main: var(--text);
+    --text-muted: #687782;
+    --text-subtle: #8a969e;
+    --control-bg: #ffffff;
+    --control-border: #d8e0e6;
+    --control-text: #25313a;
+
+    --dark-surface-0: #0d171e;
+    --dark-surface-1: #15232d;
+    --dark-surface-2: #1b2b37;
+    --dark-surface-3: #223543;
+    --dark-border: #334653;
+    --dark-border-soft: #293b47;
+    --dark-text-main: #f2f6f8;
+    --dark-text-muted: #aab8c2;
+    --dark-text-subtle: #81929d;
+    --dark-control-bg: #e9eef4;
+    --dark-control-text: #1d2831;
+    --reader-saved-bg: #e9f8ee;
+    --reader-note-bg: #fffde7;
+}
+
+:root[data-theme="light"] {
+    --bg: #fdfdfd;
+    --card: #ffffff;
+    --text: #222b32;
+    --surface-0: #fdfdfd;
+    --surface-1: #ffffff;
+    --surface-2: #f4f7fa;
+    --surface-3: #e9eef3;
+    --border: #dfe5ea;
+    --border-soft: #edf0f2;
+    --text-main: #222b32;
+    --text-muted: #687782;
+    --text-subtle: #8a969e;
+    --control-bg: #ffffff;
+    --control-border: #d8e0e6;
+    --control-text: #25313a;
+}
+
+:root[data-theme="dark"] {
+    --bg: var(--dark-surface-0);
+    --card: var(--dark-surface-1);
+    --text: var(--dark-text-main);
+    --surface-0: var(--dark-surface-0);
+    --surface-1: var(--dark-surface-1);
+    --surface-2: var(--dark-surface-2);
+    --surface-3: var(--dark-surface-3);
+    --border: var(--dark-border);
+    --border-soft: var(--dark-border-soft);
+    --text-main: var(--dark-text-main);
+    --text-muted: var(--dark-text-muted);
+    --text-subtle: var(--dark-text-subtle);
+    --control-bg: var(--dark-control-bg);
+    --control-border: #b9c5cf;
+    --control-text: var(--dark-control-text);
+    --note-bg: #243b4d;
+    --note-border: #f1c40f;
+    --accent: #1d3547;
+    --pt-color: #f2f6f8;
+    --en-color: #aab8c2;
+    --reader-saved-bg: #18384a;
+    --reader-note-bg: #243b4d;
+}
+
+:root[data-theme="system"] {
+    --bg: #fdfdfd;
+    --card: #ffffff;
+    --text: #222b32;
+    --surface-0: #fdfdfd;
+    --surface-1: #ffffff;
+    --surface-2: #f4f7fa;
+    --surface-3: #e9eef3;
+    --border: #dfe5ea;
+    --border-soft: #edf0f2;
+    --text-main: #222b32;
+    --text-muted: #687782;
+    --text-subtle: #8a969e;
+    --control-bg: #ffffff;
+    --control-border: #d8e0e6;
+    --control-text: #25313a;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root[data-theme="system"] {
+        --bg: var(--dark-surface-0);
+        --card: var(--dark-surface-1);
+        --text: var(--dark-text-main);
+        --surface-0: var(--dark-surface-0);
+        --surface-1: var(--dark-surface-1);
+        --surface-2: var(--dark-surface-2);
+        --surface-3: var(--dark-surface-3);
+        --border: var(--dark-border);
+        --border-soft: var(--dark-border-soft);
+        --text-main: var(--dark-text-main);
+        --text-muted: var(--dark-text-muted);
+        --text-subtle: var(--dark-text-subtle);
+        --control-bg: var(--dark-control-bg);
+        --control-border: #b9c5cf;
+        --control-text: var(--dark-control-text);
+        --note-bg: #243b4d;
+        --note-border: #f1c40f;
+        --accent: #1d3547;
+        --pt-color: #f2f6f8;
+        --en-color: #aab8c2;
+        --reader-saved-bg: #18384a;
+        --reader-note-bg: #243b4d;
+    }
+}
+
+/* Superfícies gerais */
+body, main {
+    background-color: var(--surface-0);
+    color: var(--text-main);
+}
+
+.tab-content,
+.plan-reader-view {
+    color: var(--text-main);
+}
+
+.card,
+.config-card,
+.saved-card,
+.note-card {
+    background: var(--surface-1);
+    color: var(--text-main);
+    border-color: var(--border);
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6,
+p, span, label, li,
+.list-item,
+.dictionary-summary,
+.dictionary-definition,
+.dictionary-note,
+.dictionary-occurrence-gloss,
+.apoio-text,
+.apoio-list,
+.apoio-note,
+.apoio-table td,
+.morphology-field-value,
+.morphology-field-help,
+.expandable-text,
+.comparison-content,
+.comparison-loading,
+.comparison-error {
+    color: var(--text-main);
+}
+
+.chapter-header .book-name,
+.verse-num,
+.saved-date,
+.ref-right,
+.panel-pronuncia,
+.panel-grammar,
+.dictionary-section-title,
+.morphology-field-label,
+.saved-card .saved-date {
+    color: var(--text-muted);
+}
+
+.chapter-header .chap-number,
+h2, h3,
+.dialog-title,
+.theme-group-header,
+.drawer-header h3,
+.drawer-close,
+.modal-header h3,
+.modal-header button {
+    color: var(--primary);
+}
+
+/* Inputs, selects e textareas */
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea,
+#apoio-search {
+    background: var(--control-bg);
+    color: var(--control-text);
+    border-color: var(--control-border);
+}
+
+input::placeholder,
+textarea::placeholder,
+#apoio-search::placeholder {
+    color: #7c8993;
+    opacity: 1;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+#apoio-search:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 2px rgba(52,152,219,.16);
+}
+
+/* Botões */
+.btn-min {
+    border-color: var(--border);
+    color: var(--primary);
+    background: transparent;
+}
+
+.btn-min:active {
+    background: var(--surface-3);
+}
+
+.btn-min.danger {
+    border-color: #e74c3c;
+    color: #ff6b5f;
+}
+
+button.btn {
+    background: var(--primary);
+    color: #fff;
+}
+
+button.btn:active {
+    background: var(--secondary);
+}
+
+/* Navegação */
+nav {
+    background: var(--surface-1);
+    border-top: 1px solid var(--border-soft);
+}
+
+nav button {
+    color: var(--text-muted);
+}
+
+/* Leitor */
+.verse.fluid-mode {
+    color: var(--text-main);
+}
+
+.verse.selected {
+    background-color: var(--accent);
+}
+
+.verse.has-saved {
+    background-color: var(--reader-saved-bg);
+    border-left: 3px solid #27ae60;
+    color: var(--text-main);
+    padding-left: 10px;
+}
+
+.verse.has-note {
+    background-color: var(--reader-note-bg);
+    border-left: 3px solid #f1c40f;
+    color: var(--text-main);
+    padding-left: 10px;
+}
+
+/* No escuro: verde/amarelo ficam apenas como bordas semânticas;
+   o preenchimento passa para azul sobre azul. */
+:root[data-theme="dark"] .verse.has-saved,
+:root[data-theme="system"] .verse.has-saved {
+    background-color: #18384a;
+}
+
+:root[data-theme="dark"] .verse.has-note,
+:root[data-theme="system"] .verse.has-note {
+    background-color: #243b4d;
+}
+
+.verse.selected,
+.verse.selected.has-note,
+.verse.selected.has-saved,
+.verse.selected.has-note.has-saved {
+    color: var(--text-main);
+}
+
+.verse.selected.has-note {
+    border-left-color: #1f6feb !important;
+    box-shadow: inset 3px 0 0 #f1c40f;
+}
+
+.verse.selected.has-saved {
+    border-left-color: #1f6feb !important;
+    box-shadow: inset 3px 0 0 #27ae60;
+}
+
+.verse.selected.has-note.has-saved {
+    box-shadow: inset 3px 0 0 #f1c40f;
+}
+
+/* Interlinear */
+.lang-pt { color: var(--pt-color); }
+.lang-en { color: var(--en-color); }
+
+.palavra-bloco:hover {
+    background-color: var(--surface-3);
+}
+
+.palavra-bloco:active {
+    background-color: var(--accent);
+}
+
+/* Drawers e modais */
+.bottom-drawer,
+.modal-fullscreen,
+.modal-header {
+    background: var(--surface-1);
+    color: var(--text-main);
+}
+
+.drawer-header {
+    background: var(--surface-1);
+    border-bottom-color: var(--border);
+}
+
+.drawer-btn {
+    background: transparent;
+    border-color: var(--border);
+    color: var(--text-main);
+}
+
+.drawer-btn:active {
+    background: var(--surface-3);
+}
+
+.drawer-btn.active {
+    border-color: var(--primary);
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.panel-traducoes {
+    color: var(--text-main);
+}
+
+/* Listas e capítulos */
+.list-item {
+    color: var(--text-main);
+    border-bottom-color: var(--border-soft);
+}
+
+.list-item:active,
+.grid-item:active {
+    background: var(--surface-3);
+}
+
+.grid-item {
+    background: var(--surface-1);
+    border-color: var(--border);
+    color: var(--primary);
+}
+
+/* Notas e salvos */
+.note-box {
+    background: var(--reader-note-bg);
+    border-left-color: #f1c40f;
+    color: var(--text-main);
+}
+
+.saved-card .expandable-text,
+.note-card .expandable-text {
+    color: var(--text-main);
+}
+
+.ver-badge {
+    background: var(--surface-3);
+    color: var(--text-main);
+}
+
+:root[data-theme="dark"] .note-box,
+:root[data-theme="system"] .note-box {
+    background: #243b4d;
+}
+
+/* Dicionário */
+.dictionary-definition {
+    background: var(--surface-2);
+    color: var(--text-main);
+}
+
+.dictionary-occurrence {
+    background: var(--surface-2);
+    border-color: var(--border);
+}
+
+.dictionary-occurrence-gloss {
+    color: var(--text-muted);
+}
+
+.dictionary-tag {
+    background: var(--surface-3);
+    color: var(--text-main);
+}
+
+/* Comparação */
+.comparison-version-list {
+    border-bottom-color: var(--border);
+}
+
+.comparison-version-btn {
+    border-color: var(--border);
+    background: var(--surface-2);
+    color: var(--text-main);
+}
+
+.comparison-version-btn.active {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+.comparison-content {
+    color: var(--text-main);
+}
+
+.comparison-version-name,
+.comparison-loading,
+.comparison-error {
+    color: var(--text-muted);
+}
+
+/* Planos */
+.plan-testament-label,
+.plan-block-label,
+.book-item {
+    color: var(--text-main);
+}
+
+.plan-testament-label {
+    border-bottom-color: var(--border);
+}
+
+/* Material de apoio */
+.apoio-search-wrap {
+    border-bottom-color: var(--border);
+}
+
+.apoio-cat-btn {
+    background: var(--surface-2);
+    border-color: var(--border);
+    color: var(--primary);
+}
+
+.apoio-cat-btn small,
+.apoio-ref {
+    color: var(--text-muted);
+}
+
+.apoio-note {
+    background: var(--surface-2);
+    border-left-color: #7f8c8d;
+    color: var(--text-main);
+}
+
+.apoio-table th,
+.apoio-table td {
+    border-bottom-color: var(--border);
+}
+
+.apoio-table th {
+    background: var(--surface-3);
+    color: var(--primary);
+}
+
+.apoio-item {
+    border-bottom-color: var(--border-soft);
+}
+
+/* Morfologia */
+.morphology-field {
+    border-bottom-color: var(--border-soft);
+}
+
+.morphology-field-label,
+.morphology-field-help {
+    color: var(--text-muted);
+}
+
+.morphology-field-value {
+    color: var(--text-main);
+}
+
+.morphology-code {
+    background: var(--surface-3);
+    border-color: var(--border);
+    color: var(--text-main);
+}
+
+/* Configurações */
+.config-card {
+    background: var(--surface-1);
+    border-color: var(--border);
+}
+
+.config-row-info strong {
+    color: var(--text-main);
+}
+
+.config-row-info span {
+    color: var(--text-muted);
+}
+
+.config-divider {
+    background: var(--border);
+}
+
+.config-icon-btn {
+    background: var(--surface-2);
+    border-color: var(--border);
+    color: var(--primary);
+}
+
+.config-icon-btn:active {
+    background: var(--primary);
+    color: #fff;
+}
+
+.font-size-value {
+    color: var(--primary);
+}
+
+.config-segmented {
+    background: var(--surface-3);
+}
+
+.config-segmented button {
+    color: var(--text-muted);
+}
+
+.config-segmented button.active {
+    background: var(--primary);
+    color: #fff;
+}
+
+.config-reset-btn {
+    background: var(--surface-2);
+    border-color: var(--border);
+    color: var(--primary);
+}
+
+.config-reset-btn:active {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* Splash */
+#splash-screen {
+    background: var(--surface-0);
+}
+
+.splash-title {
+    color: var(--primary);
+}
+
+.splash-title.splash-title-dark {
+    color: #f4f7fa;
+}
+/* Traduções offline */
+.version-offline-btn {
+    background: var(--surface-2);
+    border-color: var(--border);
+    color: var(--primary);
+}
+
+.version-offline-btn:active,
+.version-offline-btn.is-offline {
+    background: var(--surface-3);
+}
+
+/* Diálogos */
+.dialog-card {
+    background: var(--surface-1);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+}
+
+.dialog-msg {
+    color: var(--text-main);
+}
+
+.radio-group label {
+    color: var(--text-main);
+    border-bottom-color: var(--border-soft);
+}
+
+.theme-group {
+    border-bottom-color: var(--border);
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    accent-color: var(--primary);
+}
+
+/* Controles nativos claros dentro do tema escuro:
+   o campo continua claro para manter legibilidade do teclado
+   e dos menus nativos do Android. */
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] input[type="date"],
+:root[data-theme="dark"] input[type="time"],
+:root[data-theme="dark"] input[type="number"],
+:root[data-theme="system"] select,
+:root[data-theme="system"] input[type="date"],
+:root[data-theme="system"] input[type="time"],
+:root[data-theme="system"] input[type="number"] {
+    color-scheme: light;
+}
+
+/* Garantia final contra cores legadas */
+:root[data-theme="dark"] .panel-traducoes,
+:root[data-theme="dark"] .expandable-text,
+:root[data-theme="dark"] .dictionary-summary,
+:root[data-theme="dark"] .dictionary-note,
+:root[data-theme="dark"] .apoio-text,
+:root[data-theme="dark"] .apoio-list,
+:root[data-theme="dark"] .morphology-field-value,
+:root[data-theme="dark"] .comparison-content,
+:root[data-theme="dark"] .dialog-msg,
+:root[data-theme="dark"] .list-item,
+:root[data-theme="dark"] .book-item,
+:root[data-theme="dark"] .plan-block-label,
+:root[data-theme="dark"] .plan-testament-label {
+    color: var(--text-main);
+}
+
+/* ==========================================================
+   V2 — REFORÇO DE CONTRASTE PARA TELAS PEQUENAS / DARK
+   ==========================================================
+   Objetivo:
+   - azul de destaque precisa ser claramente separado do fundo;
+   - títulos precisam ser legíveis;
+   - controles deixam de usar branco no tema escuro;
+   - seleção do leitor usa azul escuro + texto claro;
+   - resultados da Busca recebem contraste próprio;
+   - botões secundários ficam visíveis sem competir com o botão
+     destrutivo vermelho.
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   PALETA DARK REFORÇADA
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"],
+:root[data-theme="system"] {
+    --dark-surface-0: #0b151c;
+    --dark-surface-1: #14232d;
+    --dark-surface-2: #1a2d39;
+    --dark-surface-3: #223b4b;
+
+    --dark-border: #38515f;
+    --dark-border-soft: #2a404d;
+
+    --dark-text-main: #f4f7fa;
+    --dark-text-muted: #b7c5ce;
+    --dark-text-subtle: #8fa2ae;
+
+    /* Azul suficientemente luminoso para títulos e detalhes */
+    --dark-primary-readable: #86c9f7;
+    --dark-secondary-readable: #62b9f2;
+
+    /* Campos no tema escuro: não usar branco */
+    --dark-control-bg: #1b2d38;
+    --dark-control-border: #486170;
+    --dark-control-text: #f3f7fa;
+
+    --dark-selected-bg: #1d4056;
+    --dark-selected-border: #55b9f5;
+
+    --dark-search-card: #162934;
+    --dark-search-border: #385363;
+
+    --reader-saved-bg: #18384a;
+    --reader-note-bg: #263d4d;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root[data-theme="system"] {
+        --dark-primary-readable: #86c9f7;
+        --dark-secondary-readable: #62b9f2;
+        --dark-control-bg: #1b2d38;
+        --dark-control-border: #486170;
+        --dark-control-text: #f3f7fa;
+        --dark-selected-bg: #1d4056;
+        --dark-selected-border: #55b9f5;
+        --dark-search-card: #162934;
+        --dark-search-border: #385363;
+    }
+}
+
+/* ----------------------------------------------------------
+   TÍTULOS DE PÁGINAS E SEÇÕES
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] h1,
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] h3,
+:root[data-theme="dark"] h4,
+:root[data-theme="dark"] .config-header h2,
+:root[data-theme="dark"] .config-section h3,
+:root[data-theme="dark"] .tab-content > h2,
+:root[data-theme="dark"] .theme-group-header,
+:root[data-theme="dark"] .drawer-header h3,
+:root[data-theme="dark"] .apoio-section-title,
+:root[data-theme="dark"] .apoio-subtitle,
+:root[data-theme="dark"] .morphology-study-title,
+:root[data-theme="dark"] .plan-reader-app-title,
+:root[data-theme="dark"] .plan-testament-label,
+:root[data-theme="dark"] .plan-block-label,
+:root[data-theme="dark"] .dialog-title,
+:root[data-theme="dark"] .modal-header h3,
+:root[data-theme="system"] h1,
+:root[data-theme="system"] h2,
+:root[data-theme="system"] h3,
+:root[data-theme="system"] h4,
+:root[data-theme="system"] .config-header h2,
+:root[data-theme="system"] .config-section h3,
+:root[data-theme="system"] .tab-content > h2,
+:root[data-theme="system"] .theme-group-header,
+:root[data-theme="system"] .drawer-header h3,
+:root[data-theme="system"] .apoio-section-title,
+:root[data-theme="system"] .apoio-subtitle,
+:root[data-theme="system"] .morphology-study-title,
+:root[data-theme="system"] .plan-reader-app-title,
+:root[data-theme="system"] .plan-testament-label,
+:root[data-theme="system"] .plan-block-label,
+:root[data-theme="system"] .dialog-title,
+:root[data-theme="system"] .modal-header h3 {
+    color: var(--dark-primary-readable) !important;
+}
+
+/* Títulos principais ficam ainda mais claros */
+:root[data-theme="dark"] .config-header h2,
+:root[data-theme="dark"] .tab-content > h2,
+:root[data-theme="dark"] .apoio-section-title,
+:root[data-theme="dark"] .drawer-header h3,
+:root[data-theme="system"] .config-header h2,
+:root[data-theme="system"] .tab-content > h2,
+:root[data-theme="system"] .apoio-section-title,
+:root[data-theme="system"] .drawer-header h3 {
+    color: #a5d8fa !important;
+}
+
+/* Descrição abaixo do título */
+:root[data-theme="dark"] .config-header p,
+:root[data-theme="system"] .config-header p {
+    color: var(--dark-secondary-readable) !important;
+}
+
+/* ----------------------------------------------------------
+   AZUIS / TEXTOS DE DESTAQUE
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] .secondary,
+:root[data-theme="dark"] .apoio-cat-btn strong,
+:root[data-theme="dark"] .apoio-item-title,
+:root[data-theme="dark"] .comparison-reference,
+:root[data-theme="dark"] .font-size-value,
+:root[data-theme="dark"] .config-icon-btn,
+:root[data-theme="dark"] .config-reset-btn,
+:root[data-theme="dark"] .btn-min:not(.danger),
+:root[data-theme="dark"] .ref-right,
+:root[data-theme="dark"] .saved-date,
+:root[data-theme="system"] .secondary,
+:root[data-theme="system"] .apoio-cat-btn strong,
+:root[data-theme="system"] .apoio-item-title,
+:root[data-theme="system"] .comparison-reference,
+:root[data-theme="system"] .font-size-value,
+:root[data-theme="system"] .config-icon-btn,
+:root[data-theme="system"] .config-reset-btn,
+:root[data-theme="system"] .btn-min:not(.danger),
+:root[data-theme="system"] .ref-right,
+:root[data-theme="system"] .saved-date {
+    color: var(--dark-primary-readable) !important;
+}
+
+/* ----------------------------------------------------------
+   INPUTS — DARK DE VERDADE
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] input:not([type="checkbox"]):not([type="radio"]),
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] textarea,
+:root[data-theme="dark"] #apoio-search,
+:root[data-theme="dark"] #search-input,
+:root[data-theme="system"] input:not([type="checkbox"]):not([type="radio"]),
+:root[data-theme="system"] select,
+:root[data-theme="system"] textarea,
+:root[data-theme="system"] #apoio-search,
+:root[data-theme="system"] #search-input {
+    background: var(--dark-control-bg) !important;
+    color: var(--dark-control-text) !important;
+    border: 1px solid var(--dark-control-border) !important;
+    color-scheme: dark;
+}
+
+:root[data-theme="dark"] input::placeholder,
+:root[data-theme="dark"] textarea::placeholder,
+:root[data-theme="dark"] #apoio-search::placeholder,
+:root[data-theme="dark"] #search-input::placeholder,
+:root[data-theme="system"] input::placeholder,
+:root[data-theme="system"] textarea::placeholder,
+:root[data-theme="system"] #apoio-search::placeholder,
+:root[data-theme="system"] #search-input::placeholder {
+    color: #8fa5b2 !important;
+    opacity: 1;
+}
+
+:root[data-theme="dark"] input:focus,
+:root[data-theme="dark"] select:focus,
+:root[data-theme="dark"] textarea:focus,
+:root[data-theme="dark"] #apoio-search:focus,
+:root[data-theme="dark"] #search-input:focus,
+:root[data-theme="system"] input:focus,
+:root[data-theme="system"] select:focus,
+:root[data-theme="system"] textarea:focus,
+:root[data-theme="system"] #apoio-search:focus,
+:root[data-theme="system"] #search-input:focus {
+    border-color: var(--dark-secondary-readable) !important;
+    box-shadow: 0 0 0 2px rgba(98,185,242,.20) !important;
+}
+
+/* ----------------------------------------------------------
+   LEITOR — SELEÇÃO
+   ---------------------------------------------------------- */
+
+/* A seleção nunca deve virar um azul claro quase branco. */
+:root[data-theme="dark"] .verse.selected,
+:root[data-theme="dark"] .verse.selected.has-note,
+:root[data-theme="dark"] .verse.selected.has-saved,
+:root[data-theme="dark"] .verse.selected.has-note.has-saved,
+:root[data-theme="system"] .verse.selected,
+:root[data-theme="system"] .verse.selected.has-note,
+:root[data-theme="system"] .verse.selected.has-saved,
+:root[data-theme="system"] .verse.selected.has-note.has-saved {
+    background: var(--dark-selected-bg) !important;
+    color: #f7fbfd !important;
+    border-radius: 7px;
+}
+
+/* Verde/amarelo continuam identificando o estado,
+   mas sem perder o contraste do texto. */
+:root[data-theme="dark"] .verse.selected.has-saved,
+:root[data-theme="system"] .verse.selected.has-saved {
+    border-left: 4px solid #32d27b !important;
+}
+
+:root[data-theme="dark"] .verse.selected.has-note,
+:root[data-theme="system"] .verse.selected.has-note {
+    border-left: 4px solid #f4cf32 !important;
+}
+
+:root[data-theme="dark"] .verse.selected.has-note.has-saved,
+:root[data-theme="system"] .verse.selected.has-note.has-saved {
+    border-left: 4px solid #f4cf32 !important;
+}
+
+/* Número do versículo selecionado */
+:root[data-theme="dark"] .verse.selected .verse-num,
+:root[data-theme="system"] .verse.selected .verse-num {
+    color: #b8d9ea !important;
+}
+
+/* ----------------------------------------------------------
+   MATERIAL DE APOIO
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] .apoio-cat-btn,
+:root[data-theme="system"] .apoio-cat-btn {
+    background: #172b37 !important;
+    border-color: #385363 !important;
+    color: #f2f7fa !important;
+}
+
+:root[data-theme="dark"] .apoio-cat-btn strong,
+:root[data-theme="system"] .apoio-cat-btn strong {
+    color: #9dd5f8 !important;
+}
+
+:root[data-theme="dark"] .apoio-cat-btn small,
+:root[data-theme="dark"] .apoio-ref,
+:root[data-theme="system"] .apoio-cat-btn small,
+:root[data-theme="system"] .apoio-ref {
+    color: #a7bac5 !important;
+}
+
+:root[data-theme="dark"] .apoio-table th,
+:root[data-theme="system"] .apoio-table th {
+    background: #203b4b !important;
+    color: #a8daf9 !important;
+    border-bottom-color: #426070 !important;
+}
+
+:root[data-theme="dark"] .apoio-table td,
+:root[data-theme="system"] .apoio-table td {
+    color: #eaf2f6 !important;
+    border-bottom-color: #314a58 !important;
+}
+
+:root[data-theme="dark"] .apoio-note,
+:root[data-theme="system"] .apoio-note {
+    background: #1a2d39 !important;
+    color: #d9e5eb !important;
+    border-left-color: #718692 !important;
+}
+
+/* ----------------------------------------------------------
+   NOTAS / SALVOS
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] .note-card,
+:root[data-theme="dark"] .saved-card,
+:root[data-theme="system"] .note-card,
+:root[data-theme="system"] .saved-card {
+    background: #142731 !important;
+    border-color: #38515f !important;
+}
+
+:root[data-theme="dark"] .note-card .expandable-text,
+:root[data-theme="dark"] .saved-card .expandable-text,
+:root[data-theme="system"] .note-card .expandable-text,
+:root[data-theme="system"] .saved-card .expandable-text {
+    color: #edf4f7 !important;
+}
+
+:root[data-theme="dark"] .saved-date,
+:root[data-theme="dark"] .ref-right,
+:root[data-theme="system"] .saved-date,
+:root[data-theme="system"] .ref-right {
+    color: #a8bbc5 !important;
+}
+
+:root[data-theme="dark"] .ver-badge,
+:root[data-theme="system"] .ver-badge {
+    background: #243b49 !important;
+    color: #d8e6ed !important;
+}
+
+/* ----------------------------------------------------------
+   BOTÕES ABRIR / EDITAR / MOVER
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] .btn-min:not(.danger),
+:root[data-theme="system"] .btn-min:not(.danger) {
+    background: #182c38 !important;
+    border-color: #5b7280 !important;
+    color: #bfe2f7 !important;
+}
+
+:root[data-theme="dark"] .btn-min:not(.danger):active,
+:root[data-theme="system"] .btn-min:not(.danger):active {
+    background: #28485b !important;
+    border-color: #79c7f5 !important;
+    color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .btn-min.danger,
+:root[data-theme="system"] .btn-min.danger {
+    background: rgba(231,76,60,.05) !important;
+    border-color: #e95d51 !important;
+    color: #ff776b !important;
+}
+
+/* ----------------------------------------------------------
+   CONFIGURAÇÕES — A+, A-, SEGMENTADOS E RESET
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] .config-card,
+:root[data-theme="system"] .config-card {
+    background: #142731 !important;
+    border-color: #38515f !important;
+}
+
+:root[data-theme="dark"] .config-icon-btn,
+:root[data-theme="system"] .config-icon-btn {
+    background: #1b3442 !important;
+    border-color: #57717f !important;
+    color: #a9dafa !important;
+}
+
+:root[data-theme="dark"] .font-size-value,
+:root[data-theme="system"] .font-size-value {
+    color: #9ed7fa !important;
+}
+
+:root[data-theme="dark"] .config-segmented,
+:root[data-theme="system"] .config-segmented {
+    background: #1c3442 !important;
+}
+
+:root[data-theme="dark"] .config-segmented button,
+:root[data-theme="system"] .config-segmented button {
+    color: #b6c8d1 !important;
+}
+
+:root[data-theme="dark"] .config-segmented button.active,
+:root[data-theme="system"] .config-segmented button.active {
+    background: #315269 !important;
+    color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .config-reset-btn,
+:root[data-theme="system"] .config-reset-btn {
+    background: #182d39 !important;
+    border-color: #4e6674 !important;
+    color: #9fd3f3 !important;
+}
+
+:root[data-theme="dark"] .config-reset-btn:active,
+:root[data-theme="system"] .config-reset-btn:active {
+    background: #315269 !important;
+    color: #ffffff !important;
+}
+
+/* ----------------------------------------------------------
+   PLANOS
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] .plan-testament-label,
+:root[data-theme="dark"] .plan-block-label,
+:root[data-theme="system"] .plan-testament-label,
+:root[data-theme="system"] .plan-block-label {
+    color: #a7d9f8 !important;
+}
+
+:root[data-theme="dark"] #my-plans .card h3,
+:root[data-theme="system"] #my-plans .card h3 {
+    color: #a7d9f8 !important;
+}
+
+:root[data-theme="dark"] #my-plans .card h3 span,
+:root[data-theme="system"] #my-plans .card h3 span {
+    color: #e7f2f7 !important;
+}
+
+:root[data-theme="dark"] #my-plans .card,
+:root[data-theme="system"] #my-plans .card {
+    background: #142731 !important;
+    border-color: #38515f !important;
+}
+
+:root[data-theme="dark"] #plan-result,
+:root[data-theme="system"] #plan-result {
+    background: #1c3442 !important;
+    color: #a8d9f6 !important;
+    border: 1px solid #3b5868;
+}
+
+/* ----------------------------------------------------------
+   BUSCAR — RESULTADOS
+   ----------------------------------------------------------
+   O texto dos resultados é gerado pelo JS com color:#444 inline.
+   Por isso os !important abaixo são intencionais.
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] #search-results .card,
+:root[data-theme="system"] #search-results .card {
+    background: #142731 !important;
+    border: 1px solid #38515f !important;
+    color: #eef5f8 !important;
+}
+
+:root[data-theme="dark"] #search-results .card p,
+:root[data-theme="system"] #search-results .card p {
+    color: #eaf2f6 !important;
+}
+
+:root[data-theme="dark"] #search-results .card p:first-child,
+:root[data-theme="system"] #search-results .card p:first-child {
+    color: #65c0fa !important;
+}
+
+:root[data-theme="dark"] #search-results > h3,
+:root[data-theme="system"] #search-results > h3 {
+    color: #9ed7fa !important;
+}
+
+:root[data-theme="dark"] #search-results > p,
+:root[data-theme="system"] #search-results > p {
+    color: #b4c5ce !important;
+}
+
+/* ----------------------------------------------------------
+   NAV — ABA ATIVA
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] nav button,
+:root[data-theme="system"] nav button {
+    color: #aebfc8 !important;
+}
+
+:root[data-theme="dark"] nav button.active,
+:root[data-theme="system"] nav button.active {
+    color: #9ed7fa !important;
+}
+
+:root[data-theme="dark"] nav button.active::after,
+:root[data-theme="system"] nav button.active::after {
+    background: #68bff5 !important;
+}
+
+/* ----------------------------------------------------------
+   CABEÇALHO / BOTÕES DO CABEÇALHO
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] header,
+:root[data-theme="system"] header {
+    background: #2b4255 !important;
+}
+
+:root[data-theme="dark"] .header-btn,
+:root[data-theme="system"] .header-btn {
+    color: #f4f8fa !important;
+    border-color: rgba(235,245,250,.72) !important;
+}
+
+/* ----------------------------------------------------------
+   DEMAIS TEXTOS QUE NÃO PODEM HERDAR AZUL ESCURO
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] .config-row-info strong,
+:root[data-theme="system"] .config-row-info strong {
+    color: #f2f6f8 !important;
+}
+
+:root[data-theme="dark"] .config-row-info span,
+:root[data-theme="system"] .config-row-info span {
+    color: #b3c4cd !important;
+}
+
+:root[data-theme="dark"] .apoio-text,
+:root[data-theme="system"] .apoio-text {
+    color: #e3edf2 !important;
+}
+
+:root[data-theme="dark"] .apoio-list,
+:root[data-theme="system"] .apoio-list {
+    color: #e3edf2 !important;
+}
+
+/* Drawer de Material de Apoio */
+:root[data-theme="dark"] .apoio-drawer,
+:root[data-theme="system"] .apoio-drawer {
+    background: #12232c !important;
+    color: #eef5f8 !important;
+}
+
+/* Barra de seleção inferior */
+:root[data-theme="dark"] .selection-bar,
+:root[data-theme="system"] .selection-bar {
+    background: #29465a !important;
+    color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .selection-bar button,
+:root[data-theme="system"] .selection-bar button,
+:root[data-theme="dark"] .selection-bar span,
+:root[data-theme="system"] .selection-bar span {
+    color: #ffffff !important;
+}
+
+/* ==========================================================
+   V3 — AJUSTES PONTUAIS
+   ==========================================================
+   1. Badge "Atrasado" no cartão do plano.
+   2. Referência da leitura de cada dia dentro do plano.
+   3. Grade de capítulos/versículos da navegação da aba Ler.
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   1) PLANO — BADGE "ATRASADO"
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] .delay-badge,
+:root[data-theme="system"] .delay-badge {
+    display: inline-block !important;
+    color: #ff8b82 !important;
+    background: #3a2023 !important;
+    border: 1px solid #8f4744 !important;
+    padding: 3px 8px !important;
+    border-radius: 6px !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    margin-left: 8px !important;
+    vertical-align: middle;
+}
+
+/* ----------------------------------------------------------
+   2) PLANO — REFERÊNCIA DE CADA DIA
+   ----------------------------------------------------------
+   O JS cria essa referência com color:var(--primary).
+   Aqui damos uma cor própria e mais luminosa para o dark.
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] #plan-details-content .card > div > div:nth-child(2),
+:root[data-theme="system"] #plan-details-content .card > div > div:nth-child(2) {
+    color: #9ed7fa !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+}
+
+/* Referência clicável */
+:root[data-theme="dark"] #plan-details-content .card > div > div:nth-child(2)[onclick],
+:root[data-theme="system"] #plan-details-content .card > div > div:nth-child(2)[onclick] {
+    color: #9ed7fa !important;
+}
+
+/* Data do dia continua secundária, mas legível */
+:root[data-theme="dark"] #plan-details-content .card > div > div:first-child,
+:root[data-theme="system"] #plan-details-content .card > div > div:first-child {
+    color: #aebfc8 !important;
+}
+
+/* Quando o dia estiver atrasado, o vermelho permanece sem
+   ficar apagado sobre o fundo escuro. */
+:root[data-theme="dark"] #plan-details-content .card > div > div:first-child[style*="e74c3c"],
+:root[data-theme="system"] #plan-details-content .card > div > div:first-child[style*="e74c3c"] {
+    color: #ff8178 !important;
+}
+
+/* ----------------------------------------------------------
+   3) SELETOR DA ABA LER — CAPÍTULOS E VERSÍCULOS
+   ----------------------------------------------------------
+   Os .grid-item usam var(--primary), que no dark antigo ainda
+   ficava muito próximo do fundo. Agora os números têm contraste
+   equivalente ao restante do app.
+   ---------------------------------------------------------- */
+
+:root[data-theme="dark"] .grid-item,
+:root[data-theme="system"] .grid-item {
+    background: #142832 !important;
+    border: 1px solid #46606f !important;
+    color: #a8dafa !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    box-shadow: none !important;
+}
+
+:root[data-theme="dark"] .grid-item:active,
+:root[data-theme="system"] .grid-item:active {
+    background: #29485b !important;
+    border-color: #78c8f5 !important;
+    color: #ffffff !important;
+}
+
+/* Botão "Capítulos" / "Voltar" dentro do seletor */
+:root[data-theme="dark"] #modal-body .btn-min,
+:root[data-theme="system"] #modal-body .btn-min {
+    background: #182f3c !important;
+    border-color: #557180 !important;
+    color: #a8dafa !important;
+}
+
+:root[data-theme="dark"] #modal-body .btn-min:active,
+:root[data-theme="system"] #modal-body .btn-min:active {
+    background: #29485b !important;
+    border-color: #78c8f5 !important;
+    color: #ffffff !important;
+}
+
+/* Nome do livro/capítulo no topo do seletor */
+:root[data-theme="dark"] #modal-title,
+:root[data-theme="system"] #modal-title {
+    color: #9ed7fa !important;
+}
+
+/* Lista de livros no primeiro nível do seletor */
+:root[data-theme="dark"] #modal-body .list-item,
+:root[data-theme="system"] #modal-body .list-item {
+    color: #edf5f8 !important;
+    border-bottom-color: #304955 !important;
+    background: transparent !important;
+}
+
+:root[data-theme="dark"] #modal-body .list-item span:last-child,
+:root[data-theme="system"] #modal-body .list-item span:last-child {
+    color: #8fcdf0 !important;
+}
+
+/* ----------------------------------------------------------
+   PEQUENO REFORÇO PARA TELAS DE NAVEGAÇÃO
+   ---------------------------------------------------------- */
+
+@media (max-width: 600px) {
+    :root[data-theme="dark"] .grid-item,
+    :root[data-theme="system"] .grid-item {
+        min-height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #a8dafa !important;
+    }
+
+    :root[data-theme="dark"] #plan-details-content .card > div > div:nth-child(2),
+    :root[data-theme="system"] #plan-details-content .card > div > div:nth-child(2) {
+        color: #a5d9f8 !important;
+    }
+}
+
+/* ==========================================================
+   CONFIGURAÇÕES — BOTÃO DE AÇÃO
+   ========================================================== */
+
+.config-action-button {
+    appearance: none;
+    border: 1px solid var(--border-color, #6f8494);
+    border-radius: 10px;
+    background: var(--surface-button, #30485c);
+    color: var(--text-primary, #f1f5f8);
+    padding: 8px 16px;
+    min-height: 38px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.config-action-button:hover {
+    background: var(--accent-blue, #3f6682);
+}
+
+.config-action-button:active {
+    transform: scale(0.97);
+}
+
+.config-action-button.hidden {
+    display: none !important;
+}
+
+/* ==========================================================
+   CABEÇALHO — TÍTULO SEMPRE CLARO
+   ========================================================== */
+
+.app-header,
+.app-header .app-title,
+#app-title {
+    color: #f4f7fa;
 }

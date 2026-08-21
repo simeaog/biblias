@@ -20,6 +20,19 @@
         { id: 'int.json', abbrev: 'INT', nome: 'Bíblia Interlinear Trilíngue', tipo: 'translation' }
     ];
 
+    // ==========================================================
+    // CAMINHO CENTRAL DAS TRADUÇÕES
+    // Os IDs continuam sendo apenas os nomes dos arquivos
+    // (ex.: ara.json), enquanto os arquivos físicos ficam em
+    // dados/. Isso preserva a compatibilidade com Ler, Planos,
+    // Salvos, Notas e Comparação.
+    // ==========================================================
+    function getTranslationPath(versionId) {
+        const id = String(versionId || '').trim();
+        if (!id) throw new Error('ID de tradução não informado.');
+        return `dados/${id}`;
+    }
+
 let bibleData = [];
 let globalLexicon = null;
 let lexiconLoadError = null;
@@ -121,7 +134,7 @@ async function carregarPericopes() {
     try {
 
         const response = await fetch(
-            'pericopes-2joao.json',
+            'dados/pericopes-2joao.json',
             { cache: 'no-cache' }
         );
 
@@ -200,7 +213,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
 
     async function carregarLexicoGlobal() {
         try {
-            const response = await fetch('lexicon-pt.json', { cache: 'no-cache' });
+            const response = await fetch('dados/lexicon-pt.json', { cache: 'no-cache' });
             if (!response.ok) throw new Error('Léxico global não encontrado');
             globalLexicon = await response.json();
             lexiconLoadError = null;
@@ -333,7 +346,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         try {
 
             const response = await fetch(
-                'morphology-2joao.json',
+                'dados/morphology-2joao.json',
                 { cache: 'no-cache' }
             );
 
@@ -450,6 +463,9 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     }
 
     async function initAppAsync() {
+
+        aplicarConfiguracoes();
+
         renderVersionList();
 
         // Carrega o léxico global
@@ -470,7 +486,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         try {
             document.getElementById('chapter-content').innerHTML = '<p style="text-align:center; color:#999; margin-top:50px;">Carregando tradução...</p>';
             
-            const response = await fetch(versaoId);
+            const response = await fetch(getTranslationPath(versaoId));
             if (!response.ok) throw new Error("Erro na rede ou arquivo não encontrado");
             bibleData = await response.json();
             
@@ -549,7 +565,19 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     let savedVerses = JSON.parse(localStorage.getItem('bible_saved_verses')) || [];
     let savedNotes = JSON.parse(localStorage.getItem('bible_notes')) || [];
     let lastRead = JSON.parse(localStorage.getItem('bible_last_read')) || { bookIdx: 0, chapIdx: 0 };
-    
+    const DEFAULT_APP_SETTINGS = {
+        fontScale: 1,
+        lineHeight: 'normal',
+        theme: 'light'
+    };
+
+    let appSettings = {
+        ...DEFAULT_APP_SETTINGS,
+        ...(JSON.parse(
+            localStorage.getItem('bible_app_settings') || '{}'
+        ))
+    };
+
     // Estado de Idiomas Interlinear
     let estadoIdiomas = JSON.parse(localStorage.getItem('bible_lang_state')) || { orig: false, pt: true, en: false };
     
@@ -557,6 +585,17 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     let currentChap = lastRead.chapIdx;
     let selectedVersesMap = new Map();
     let pendingVerseScroll = null;
+    const tabScrollPositions = {
+        read: 0,
+        search: 0,
+        plans: 0,
+        notes: 0,
+        saved: 0,
+        config: 0
+    };
+
+    // Aba atualmente ativa.
+    let currentTabId = 'read';
 
     // ==========================================================
     // CONTEXTO INDEPENDENTE DO LEITOR DOS PLANOS
@@ -704,7 +743,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             return planBibleCache.get(versionId);
         }
 
-        const response = await fetch(versionId, { cache: 'no-cache' });
+        const response = await fetch(getTranslationPath(versionId), { cache: 'no-cache' });
         if (!response.ok) {
             throw new Error(`Não foi possível carregar ${versionId} para o Plano.`);
         }
@@ -865,7 +904,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             const top = el.offsetTop - 24;
             main.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
             el.classList.add('jump-highlight');
-            setTimeout(() => el.classList.remove('jump-highlight'), 1800);
+            setTimeout(() => el.classList.remove('jump-highlight'), 5000);
         });
     }
 
@@ -936,14 +975,130 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         });
     }
 
+    const TRANSLATIONS_CACHE_NAME = 'biblias-translations-v1';
+
+    function getTranslationCacheFilename(request) {
+        try {
+            const url = new URL(request.url || request, window.location.href);
+            const parts = url.pathname.split('/').filter(Boolean);
+            return decodeURIComponent(parts[parts.length - 1] || '');
+        } catch (error) {
+            return '';
+        }
+    }
+
+    async function getOfflineTranslationIds() {
+        if (!('caches' in window)) return new Set();
+
+        try {
+            const cache = await caches.open(TRANSLATIONS_CACHE_NAME);
+            const requests = await cache.keys();
+            const ids = new Set();
+
+            requests.forEach(request => {
+                const filename = getTranslationCacheFilename(request);
+                if (filename) ids.add(filename);
+            });
+
+            return ids;
+        } catch (error) {
+            console.warn('Não foi possível consultar o cache de traduções.', error);
+            return new Set();
+        }
+    }
+
+    async function atualizarEstadoOfflineTraducoes() {
+        const offlineIds = await getOfflineTranslationIds();
+
+        document.querySelectorAll('.version-offline-btn').forEach(button => {
+            const id = button.dataset.id;
+            const offline = offlineIds.has(id);
+
+            button.dataset.offline = offline ? 'true' : 'false';
+            button.classList.toggle('is-offline', offline);
+            button.classList.remove('is-loading');
+            button.disabled = false;
+            button.innerHTML = offline ? '🗑' : '☁️';
+            button.title = offline
+                ? `Remover ${id} do armazenamento offline`
+                : `Baixar ${id} para uso offline`;
+            button.setAttribute('aria-label', offline
+                ? `Remover ${id} do armazenamento offline`
+                : `Baixar ${id} para uso offline`);
+        });
+
+        document.querySelectorAll('.version-btn').forEach(button => {
+            button.classList.toggle('active', button.dataset.id === currentVersionId);
+        });
+
+        return offlineIds;
+    }
+
+    async function removerArquivoTraducaoDoCache(versaoId) {
+        const cache = await caches.open(TRANSLATIONS_CACHE_NAME);
+        const requests = await cache.keys();
+        let removido = false;
+
+        for (const request of requests) {
+            if (getTranslationCacheFilename(request) === versaoId) {
+                removido = (await cache.delete(request)) || removido;
+            }
+        }
+
+        return removido;
+    }
+
+    async function baixarTraducaoOffline(versaoId) {
+        const cache = await caches.open(TRANSLATIONS_CACHE_NAME);
+        const offlineIds = await getOfflineTranslationIds();
+
+        if (offlineIds.has(versaoId)) return true;
+
+        const response = await fetch(getTranslationPath(versaoId), { cache: 'no-cache' });
+        if (!response.ok) {
+            throw new Error(`Não foi possível baixar ${versaoId}. HTTP ${response.status}.`);
+        }
+
+        await cache.put(new Request(new URL(getTranslationPath(versaoId), window.location.href).href), response.clone());
+        return true;
+    }
+
+    async function alternarDownloadTraducao(versaoId, button) {
+        if (!button || button.disabled) return;
+
+        button.disabled = true;
+        button.classList.add('is-loading');
+
+        try {
+            const offlineIds = await getOfflineTranslationIds();
+
+            if (offlineIds.has(versaoId)) {
+                const removido = await removerArquivoTraducaoDoCache(versaoId);
+                if (!removido) {
+                    throw new Error('A tradução estava marcada como offline, mas não foi possível removê-la do cache.');
+                }
+                showToast(`${versaoId} removida do modo offline.`);
+            } else {
+                await baixarTraducaoOffline(versaoId);
+                showToast(`${versaoId} disponível offline.`);
+            }
+        } catch (error) {
+            console.error(error);
+            showToast(error.message || 'Não foi possível alterar o armazenamento offline.');
+        } finally {
+            await atualizarEstadoOfflineTraducoes();
+        }
+    }
+
     function openDrawer(id) {
         fecharGavetas();
         const drawer = document.getElementById(id);
+        if (!drawer) return;
+
         if (id === 'version-drawer') {
-            document.querySelectorAll('.version-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.id === currentVersionId);
-            });
+            atualizarEstadoOfflineTraducoes();
         }
+
         if (id === 'language-drawer') syncLangButtons();
         
         drawer.classList.add('open');
@@ -952,13 +1107,31 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
 
     function renderVersionList() {
         const list = document.getElementById('version-list');
+        if (!list) return;
+
         let html = '';
         versoesDisponiveis.forEach(v => {
-            html += `<button class="drawer-btn version-btn" data-id="${v.id}" onclick="carregarTraducao('${v.id}')">
-                        <strong>${v.abbrev}</strong> ${v.nome}
-                     </button>`;
+            html += `
+                <div class="version-row">
+                    <button class="drawer-btn version-btn" data-id="${v.id}" type="button" onclick="carregarTraducao('${v.id}')">
+                        <span class="version-info">
+                            <strong>${v.abbrev}</strong> ${v.nome}
+                        </span>
+                    </button>
+                    <button
+                        class="version-offline-btn"
+                        data-id="${v.id}"
+                        data-offline="false"
+                        type="button"
+                        title="Verificando armazenamento offline"
+                        aria-label="Verificando armazenamento offline"
+                        onclick="alternarDownloadTraducao('${v.id}', this)"
+                    >☁️</button>
+                </div>`;
         });
+
         list.innerHTML = html;
+        atualizarEstadoOfflineTraducoes();
     }
 
     function syncLangButtons() {
@@ -2141,23 +2314,321 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         return (sel === '_NEW_') ? (document.getElementById('cd-input-theme').value.trim() || 'Geral') : sel;
     }
 
+    // ==========================================================
+    // CONFIGURAÇÕES
+    // ==========================================================
+
+    function salvarConfiguracoes() {
+        localStorage.setItem(
+            'bible_app_settings',
+            JSON.stringify(appSettings)
+        );
+    }
+
+
+    function aplicarConfiguracoes() {
+
+        document.documentElement.style.setProperty(
+            '--bible-font-scale',
+            appSettings.fontScale
+        );
+
+        document.documentElement.dataset.lineHeight =
+            appSettings.lineHeight;
+
+        document.documentElement.dataset.theme =
+            appSettings.theme;
+
+        atualizarInterfaceConfig();
+    }
+
+
+    function alterarFonte(direcao) {
+
+        const passo = 0.05;
+
+        let novoValor =
+            Number(appSettings.fontScale) +
+            (direcao * passo);
+
+        novoValor =
+            Math.max(
+                0.85,
+                Math.min(1.30, novoValor)
+            );
+
+        appSettings.fontScale =
+            Number(novoValor.toFixed(2));
+
+        salvarConfiguracoes();
+        aplicarConfiguracoes();
+    }
+
+
+    function definirEspacamento(valor) {
+
+        if (
+            ![
+                'compact',
+                'normal',
+                'comfortable'
+            ].includes(valor)
+        ) {
+            valor = 'normal';
+        }
+
+        appSettings.lineHeight = valor;
+
+        salvarConfiguracoes();
+        aplicarConfiguracoes();
+    }
+
+
+    function definirTema(valor) {
+
+        if (
+            ![
+                'light',
+                'dark',
+                'system'
+            ].includes(valor)
+        ) {
+            valor = 'light';
+        }
+
+        appSettings.theme = valor;
+
+        salvarConfiguracoes();
+        aplicarConfiguracoes();
+    }
+
+
+    function atualizarInterfaceConfig() {
+
+        const percentual =
+            Math.round(
+                Number(appSettings.fontScale) * 100
+            );
+
+        const indicador =
+            document.getElementById(
+                'font-size-value'
+            );
+
+        if (indicador) {
+            indicador.innerText =
+                `${percentual}%`;
+        }
+
+
+        document
+            .querySelectorAll(
+                '[data-line-height]'
+            )
+            .forEach(botao => {
+
+                botao.classList.toggle(
+                    'active',
+                    botao.dataset.lineHeight ===
+                    appSettings.lineHeight
+                );
+            });
+
+
+        document
+            .querySelectorAll(
+                '[data-theme]'
+            )
+            .forEach(botao => {
+
+                botao.classList.toggle(
+                    'active',
+                    botao.dataset.theme ===
+                    appSettings.theme
+                );
+            });
+    }
+
+
+    function restaurarConfiguracoes() {
+
+        appSettings = {
+            ...DEFAULT_APP_SETTINGS
+        };
+
+        salvarConfiguracoes();
+        aplicarConfiguracoes();
+
+        showToast(
+            'Configurações restauradas.'
+        );
+    }
+
+    function saveCurrentTabScroll() {
+        const main = document.getElementById('main-scroll');
+        if (!main || !currentTabId) return;
+
+        tabScrollPositions[currentTabId] = main.scrollTop;
+    }
+
+    function restoreTabScroll(tabId) {
+        const main = document.getElementById('main-scroll');
+        if (!main) return;
+
+        const position = tabScrollPositions[tabId] || 0;
+
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                main.scrollTo(0, position);
+            });
+        });
+    }
+
     // ==========================================
     // ABAS
     // ==========================================
+
     function switchTab(tabId) {
-        if (isPlanReaderActive()) {
-            if (tabId === 'plans') return;
-            closePlanReading();
+
+        saveCurrentTabScroll();
+
+        /*
+        * ------------------------------------------------------
+        * RETORNO AO LEITOR DE PLANO
+        * ------------------------------------------------------
+        *
+        * Se existe uma leitura de Plano ativa e o usuário voltou
+        * para a aba Planos, não devemos:
+        *
+        * - fechar a leitura;
+        * - renderizar a lista;
+        * - resetar o título;
+        * - esconder o botão de fechar;
+        * - perder a posição da leitura.
+        *
+        * Apenas reativamos visualmente a aba e restauramos o
+        * leitor que continua existente na memória.
+        */
+        if (isPlanReaderActive() && tabId === 'plans') {
+
+            fecharGavetas();
+
+            document.querySelectorAll(
+                '.tab-content, nav button'
+            ).forEach(
+                el => el.classList.remove('active')
+            );
+
+            document.getElementById(
+                'tab-plans'
+            ).classList.add('active');
+
+            document.getElementById(
+                'nav-plans'
+            ).classList.add('active');
+
+            document.getElementById(
+                'plan-reader-view'
+            ).classList.remove('hidden');
+
+            document.getElementById(
+                'plan-list-view'
+            ).classList.add('hidden');
+
+            document.getElementById(
+                'plan-create-view'
+            ).classList.add('hidden');
+
+            document.getElementById(
+                'plan-detail-view'
+            ).classList.add('hidden');
+
+            document.getElementById(
+                'reader-pill'
+            ).style.display = 'flex';
+
+            document.getElementById(
+                'btn-plan-close'
+            ).classList.remove('hidden');
+
+            document.getElementById(
+                'btn-version-menu'
+            ).classList.add('hidden');
+
+            document.getElementById(
+                'btn-lang-menu'
+            ).classList.add('hidden');
+
+            const planVersionLabel =
+                document.getElementById(
+                    'plan-version-label'
+                );
+
+            if (planVersionLabel) {
+                planVersionLabel.classList.remove('hidden');
+            }
+
+            document.getElementById(
+                'app-title'
+            ).classList.add(
+                'plan-reader-app-title'
+            );
+
+            document.getElementById(
+                'app-title'
+            ).innerText =
+                getPlanDayTitle(
+                    planReadingState.day
+                );
+
+            currentTabId = 'plans';
+            restoreTabScroll('plans');
+            updateSelectionBar();
+            return;
         }
 
-        fecharGavetas();
-        document.querySelectorAll('.tab-content, nav button').forEach(el => el.classList.remove('active'));
-        document.getElementById('tab-' + tabId).classList.add('active');
-        document.getElementById('nav-' + tabId).classList.add('active');
-        document.getElementById('reader-pill').style.display = (tabId === 'read') ? 'flex' : 'none';
+        if (isPlanReaderActive()) {
+        }
 
-        const btnLang = document.getElementById('btn-lang-menu');
-        const btnApoio = document.getElementById('btn-apoio');
+        const preservePendingVerseScroll =
+            tabId === 'read' &&
+            pendingVerseScroll !== null &&
+            pendingVerseScroll !== undefined;
+
+        fecharGavetas();
+
+        document.querySelectorAll(
+            '.tab-content, nav button'
+        ).forEach(
+            el => el.classList.remove('active')
+        );
+
+        document.getElementById(
+            'tab-' + tabId
+        ).classList.add('active');
+
+        document.getElementById(
+            'nav-' + tabId
+        ).classList.add('active');
+
+        document.getElementById(
+            'reader-pill'
+        ).style.display =
+            (tabId === 'read')
+                ? 'flex'
+                : 'none';
+
+
+        const btnLang =
+            document.getElementById(
+                'btn-lang-menu'
+            );
+
+        const btnApoio =
+            document.getElementById(
+                'btn-apoio'
+            );
+
 
         if (btnApoio) {
             btnApoio.classList.toggle(
@@ -2166,13 +2637,33 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             );
         }
 
-        if(tabId === 'read' && currentVersionId === 'int.json') btnLang.classList.remove('hidden');
-        else btnLang.classList.add('hidden');
+        if (
+            tabId === 'read' &&
+            currentVersionId === 'int.json'
+        ) {
+            btnLang.classList.remove(
+                'hidden'
+            );
+        } else {
+            btnLang.classList.add(
+                'hidden'
+            );
+        }
 
-        /*document.getElementById('btn-version-menu').classList.remove('hidden');*/
-        document.getElementById('btn-plan-close').classList.add('hidden');
-        document.getElementById('plan-version-label')?.classList.add('hidden');
-        const versionMenu = document.getElementById('btn-version-menu');
+        document.getElementById(
+            'btn-plan-close'
+        ).classList.add('hidden');
+
+        document.getElementById(
+            'plan-version-label'
+        )?.classList.add('hidden');
+
+
+        const versionMenu =
+            document.getElementById(
+                'btn-version-menu'
+            );
+
 
         if (versionMenu) {
             versionMenu.classList.toggle(
@@ -2181,19 +2672,54 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             );
         }
 
-        document.getElementById('app-title').classList.remove('plan-reader-app-title');
-        document.getElementById('app-title').innerText = 'Bíblia';
+
+        document.getElementById(
+            'app-title'
+        ).classList.remove(
+            'plan-reader-app-title'
+        );
+
+        document.getElementById(
+            'app-title'
+        ).innerText = 'Bíblia';
 
         if (tabId === 'read') {
-            renderChapter(currentBook, currentChap);
+
+            renderChapter(
+                currentBook,
+                currentChap
+            );
         }
 
-        if (tabId === 'plans') renderPlanList();
-        if (tabId === 'saved') renderSavedVerses();
-        if (tabId === 'notes') renderNotesList();
+        if (
+            tabId === 'plans' &&
+            !isPlanReaderActive()
+        ) {
+            renderPlanList();
+        }
+
+
+        if (tabId === 'saved') {
+            renderSavedVerses();
+        }
+
+
+        if (tabId === 'notes') {
+
+            renderNotesList();
+        }
 
         clearSelection();
-        document.getElementById('main-scroll').scrollTo(0,0);
+
+        if (!preservePendingVerseScroll) {
+            currentTabId = tabId;
+            restoreTabScroll(
+                tabId
+            );
+        } else {
+            currentTabId = tabId;
+        }
+
     }
 
     function openSearchResult(bIdx, cIdx, vIdx) {
@@ -2680,7 +3206,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         }
 
         const response =
-            await fetch(versionId, {
+            await fetch(getTranslationPath(versionId), {
                 cache: 'no-cache'
             });
 
@@ -3212,18 +3738,16 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         const versionId =
             getSavedVersionId(item);
 
+        switchTab('read');
+
+        await carregarTraducao(versionId);
+
         pendingVerseScroll =
             Array.isArray(item.verses) &&
             item.verses.length
                 ? item.verses[0]
                 : null;
 
-        switchTab('read');
-
-        // Restaura a tradução em que o trecho foi salvo.
-        await carregarTraducao(versionId);
-
-        // Depois abre o capítulo correspondente.
         renderChapter(
             item.bookIdx,
             item.chapIdx
@@ -3447,18 +3971,16 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         const versionId =
             getSavedVersionId(item);
 
+        switchTab('read');
+
+        await carregarTraducao(versionId);
+
         pendingVerseScroll =
             Array.isArray(item.verses) &&
             item.verses.length
                 ? item.verses[0]
                 : null;
 
-        switchTab('read');
-
-        // Primeiro restaura a tradução em que a nota foi criada.
-        await carregarTraducao(versionId);
-
-        // Depois garante o capítulo correto.
         renderChapter(
             item.bookIdx,
             item.chapIdx
@@ -3990,231 +4512,347 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
 
     window.onload = initAppAsync;
 
+    // PWA: o Service Worker cuida apenas da infraestrutura offline.
+    // A lógica da Bíblia continua neste app.js.
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./service-worker.js')
+                .then(registration => {
+                    console.info('Service Worker registrado:', registration.scope);
+                })
+                .catch(error => {
+                    console.warn('Service Worker não pôde ser registrado.', error);
+                });
+        });
+    }
+
+    // ==========================================================
+    // INSTALAÇÃO DO WEB APP (PWA)
+    // ==========================================================
+
+    let deferredInstallPrompt = null;
+
+    function configurarInstalacaoPWA() {
+
+        const btnInstall = document.getElementById('btn-install-app');
+
+        if (!btnInstall) return;
+
+        // Se o aplicativo já estiver instalado como PWA,
+        // não exibe o botão.
+        const appJaInstalado =
+            window.matchMedia('(display-mode: standalone)').matches ||
+            window.navigator.standalone === true;
+
+        if (appJaInstalado) {
+            btnInstall.classList.add('hidden');
+            return;
+        }
+
+        // O navegador disponibiliza o evento quando
+        // considera o aplicativo instalável.
+        window.addEventListener('beforeinstallprompt', event => {
+
+            event.preventDefault();
+
+            deferredInstallPrompt = event;
+
+            btnInstall.classList.remove('hidden');
+
+            console.info('Aplicativo disponível para instalação.');
+        });
+
+        btnInstall.addEventListener('click', async () => {
+
+            if (!deferredInstallPrompt) return;
+
+            const promptEvent = deferredInstallPrompt;
+
+            deferredInstallPrompt = null;
+
+            btnInstall.classList.add('hidden');
+
+            try {
+
+                await promptEvent.prompt();
+
+                const resultado = await promptEvent.userChoice;
+
+                console.info(
+                    'Resultado da instalação:',
+                    resultado.outcome
+                );
+
+            } catch (error) {
+
+                console.warn(
+                    'Não foi possível iniciar a instalação:',
+                    error
+                );
+
+            }
+        });
+
+        // Quando a instalação realmente for concluída.
+        window.addEventListener('appinstalled', () => {
+
+            deferredInstallPrompt = null;
+
+            btnInstall.classList.add('hidden');
+
+            console.info('Aplicativo instalado.');
+        });
+    }
+
     // =========================================================
-// MATERIAL DE APOIO BÍBLICO
-// Arquivo externo: dados/apoio/apoio_biblico.json
-// =========================================================
+    // MATERIAL DE APOIO BÍBLICO
+    // Arquivo externo: dados/apoio/apoio_biblico.json
+    // =========================================================
 
-let apoioBiblicoData = null;
-let apoioBiblicoCarregado = false;
+    let apoioBiblicoData = null;
+    let apoioBiblicoCarregado = false;
 
-async function carregarMaterialApoio() {
-    if (apoioBiblicoCarregado && apoioBiblicoData) return apoioBiblicoData;
+    async function carregarMaterialApoio() {
+        if (apoioBiblicoCarregado && apoioBiblicoData) return apoioBiblicoData;
 
-    const resposta = await fetch('dados/apoio/apoio_biblico.json', {
-        cache: 'no-cache'
-    });
+        const resposta = await fetch('dados/apoio/apoio_biblico.json', {
+            cache: 'no-cache'
+        });
 
-    if (!resposta.ok) {
-        throw new Error(`Falha ao carregar material de apoio: HTTP ${resposta.status}`);
+        if (!resposta.ok) {
+            throw new Error(`Falha ao carregar material de apoio: HTTP ${resposta.status}`);
+        }
+
+        apoioBiblicoData = await resposta.json();
+        apoioBiblicoCarregado = true;
+        return apoioBiblicoData;
     }
 
-    apoioBiblicoData = await resposta.json();
-    apoioBiblicoCarregado = true;
-    return apoioBiblicoData;
-}
+    async function abrirMaterialApoio() {
+        try {
+            await carregarMaterialApoio();
+            renderizarCategoriasApoio();
 
-async function abrirMaterialApoio() {
-    try {
-        await carregarMaterialApoio();
-        renderizarCategoriasApoio();
+            const busca = document.getElementById('apoio-search');
+            if (busca) {
+                busca.value = '';
+                busca.oninput = pesquisarMaterialApoio;
+            }
 
-        const busca = document.getElementById('apoio-search');
-        if (busca) {
-            busca.value = '';
-            busca.oninput = pesquisarMaterialApoio;
-        }
-
-        openDrawer('apoio-drawer');
-    } catch (erro) {
-        console.error(erro);
-        if (typeof showToast === 'function') {
-            showToast('Não foi possível carregar o material de apoio.');
+            openDrawer('apoio-drawer');
+        } catch (erro) {
+            console.error(erro);
+            if (typeof showToast === 'function') {
+                showToast('Não foi possível carregar o material de apoio.');
+            }
         }
     }
-}
 
-function renderizarCategoriasApoio() {
-    const box = document.getElementById('apoio-categorias');
-    const conteudo = document.getElementById('apoio-conteudo');
-    if (!box || !apoioBiblicoData) return;
+    function renderizarCategoriasApoio() {
+        const box = document.getElementById('apoio-categorias');
+        const conteudo = document.getElementById('apoio-conteudo');
+        if (!box || !apoioBiblicoData) return;
 
-    box.classList.remove('hidden');
-    if (conteudo) conteudo.classList.add('hidden');
+        box.classList.remove('hidden');
+        if (conteudo) conteudo.classList.add('hidden');
 
-    const categorias = [...(apoioBiblicoData.categorias || [])]
-        .sort((a, b) => (a.ordem || 999) - (b.ordem || 999));
+        const categorias = [...(apoioBiblicoData.categorias || [])]
+            .sort((a, b) => (a.ordem || 999) - (b.ordem || 999));
 
-    box.innerHTML = categorias.map(cat => `
-        <button class="apoio-cat-btn" type="button"
-                onclick="abrirCategoriaApoio('${cat.id}')">
-            <strong>${escapeHTML(cat.icone || '')} ${escapeHTML(cat.titulo)}</strong>
-            <small>${escapeHTML(cat.descricao || '')}</small>
-        </button>
-    `).join('');
-}
+        box.innerHTML = categorias.map(cat => `
+            <button class="apoio-cat-btn" type="button"
+                    onclick="abrirCategoriaApoio('${cat.id}')">
+                <strong>${escapeHTML(cat.icone || '')} ${escapeHTML(cat.titulo)}</strong>
+                <small>${escapeHTML(cat.descricao || '')}</small>
+            </button>
+        `).join('');
+    }
 
-function abrirCategoriaApoio(id) {
-    const categoria = (apoioBiblicoData?.categorias || [])
-        .find(cat => cat.id === id);
-    if (!categoria) return;
+    function abrirCategoriaApoio(id) {
+        const categoria = (apoioBiblicoData?.categorias || [])
+            .find(cat => cat.id === id);
+        if (!categoria) return;
 
-    const box = document.getElementById('apoio-categorias');
-    const conteudo = document.getElementById('apoio-conteudo');
-    if (!box || !conteudo) return;
+        const box = document.getElementById('apoio-categorias');
+        const conteudo = document.getElementById('apoio-conteudo');
+        if (!box || !conteudo) return;
 
-    box.classList.add('hidden');
-    conteudo.classList.remove('hidden');
+        box.classList.add('hidden');
+        conteudo.classList.remove('hidden');
 
-    conteudo.innerHTML = `
-        <button class="apoio-voltar" type="button"
-                onclick="renderizarCategoriasApoio()">
-            ← Categorias
-        </button>
-        <h4 class="apoio-section-title">
-            ${escapeHTML(categoria.icone || '')} ${escapeHTML(categoria.titulo)}
-        </h4>
-        ${renderizarConteudoApoio(categoria.conteudo || [])}
-    `;
-}
+        conteudo.innerHTML = `
+            <button class="apoio-voltar" type="button"
+                    onclick="renderizarCategoriasApoio()">
+                ← Categorias
+            </button>
+            <h4 class="apoio-section-title">
+                ${escapeHTML(categoria.icone || '')} ${escapeHTML(categoria.titulo)}
+            </h4>
+            ${renderizarConteudoApoio(categoria.conteudo || [])}
+        `;
+    }
 
-function renderizarConteudoApoio(conteudos) {
-    return conteudos.map(bloco => {
-        if (bloco.tipo === 'observacao') {
-            return `<p class="apoio-text"><strong>${escapeHTML(bloco.titulo || '')}</strong><br>${escapeHTML(bloco.texto || '')}</p>`;
-        }
+    function renderizarConteudoApoio(conteudos) {
+        return conteudos.map(bloco => {
+            if (bloco.tipo === 'observacao') {
+                return `<p class="apoio-text"><strong>${escapeHTML(bloco.titulo || '')}</strong><br>${escapeHTML(bloco.texto || '')}</p>`;
+            }
 
-        if (bloco.tipo === 'subtitulo') {
-            return `<h5 class="apoio-subtitle">${escapeHTML(bloco.titulo || '')}</h5>`;
-        }
+            if (bloco.tipo === 'subtitulo') {
+                return `<h5 class="apoio-subtitle">${escapeHTML(bloco.titulo || '')}</h5>`;
+            }
 
-        if (bloco.tipo === 'nota') {
-            return `<div class="apoio-note">${escapeHTML(bloco.texto || '')}</div>`;
-        }
+            if (bloco.tipo === 'nota') {
+                return `<div class="apoio-note">${escapeHTML(bloco.texto || '')}</div>`;
+            }
 
-        if (bloco.tipo === 'lista') {
-            return `<ul class="apoio-list">${
-                (bloco.itens || []).map(item => `<li>${escapeHTML(item)}</li>`).join('')
-            }</ul>`;
-        }
+            if (bloco.tipo === 'lista') {
+                return `<ul class="apoio-list">${
+                    (bloco.itens || []).map(item => `<li>${escapeHTML(item)}</li>`).join('')
+                }</ul>`;
+            }
 
-        if (bloco.tipo === 'item') {
-            return `
-                <div class="apoio-item">
-                    <div class="apoio-item-title">
-                        ${escapeHTML(bloco.titulo || '')}
-                        ${bloco.referencia ? `<span class="apoio-ref">${escapeHTML(bloco.referencia)}</span>` : ''}
+            if (bloco.tipo === 'item') {
+                return `
+                    <div class="apoio-item">
+                        <div class="apoio-item-title">
+                            ${escapeHTML(bloco.titulo || '')}
+                            ${bloco.referencia ? `<span class="apoio-ref">${escapeHTML(bloco.referencia)}</span>` : ''}
+                        </div>
+                        <div class="apoio-text">${escapeHTML(bloco.texto || '')}</div>
                     </div>
-                    <div class="apoio-text">${escapeHTML(bloco.texto || '')}</div>
-                </div>
-            `;
-        }
+                `;
+            }
 
-        if (bloco.tipo === 'lista_detalhada') {
-            return (bloco.itens || []).map(item => `
-                <div class="apoio-item">
-                    <div class="apoio-item-title">
-                        ${escapeHTML(item.nome || '')}
-                        ${(item.referencias || []).length
-                            ? `<span class="apoio-ref">${escapeHTML(item.referencias.join('; '))}</span>`
-                            : ''}
+            if (bloco.tipo === 'lista_detalhada') {
+                return (bloco.itens || []).map(item => `
+                    <div class="apoio-item">
+                        <div class="apoio-item-title">
+                            ${escapeHTML(item.nome || '')}
+                            ${(item.referencias || []).length
+                                ? `<span class="apoio-ref">${escapeHTML(item.referencias.join('; '))}</span>`
+                                : ''}
+                        </div>
+                        <div class="apoio-text">${escapeHTML(item.texto || '')}</div>
                     </div>
-                    <div class="apoio-text">${escapeHTML(item.texto || '')}</div>
-                </div>
-            `).join('');
-        }
+                `).join('');
+            }
 
-        if (bloco.tipo === 'tabela') {
-            const cabecalho = (bloco.colunas || [])
-                .map(col => `<th>${escapeHTML(col)}</th>`).join('');
+            if (bloco.tipo === 'tabela') {
+                const cabecalho = (bloco.colunas || [])
+                    .map(col => `<th>${escapeHTML(col)}</th>`).join('');
 
-            const linhas = (bloco.linhas || []).map(linha => `
-                <tr>
-                    ${(bloco.colunas || []).map(coluna => {
-                        const mapa = {
-                            'Nome': 'nome',
-                            'Referência': 'referencia',
-                            'Correspondente bíblico': 'correspondente',
-                            'Tipo / correspondente bíblico': 'tipo',
-                            'Proporção': 'proporcao',
-                            'Equivalente atual': 'equivalente',
-                            'Equivalente': 'equivalente'
-                        };
-                        return `<td>${escapeHTML(String(linha[mapa[coluna]] ?? ''))}</td>`;
-                    }).join('')}
-                </tr>
-            `).join('');
+                const linhas = (bloco.linhas || []).map(linha => `
+                    <tr>
+                        ${(bloco.colunas || []).map(coluna => {
+                            const mapa = {
+                                'Nome': 'nome',
+                                'Referência': 'referencia',
+                                'Correspondente bíblico': 'correspondente',
+                                'Tipo / correspondente bíblico': 'tipo',
+                                'Proporção': 'proporcao',
+                                'Equivalente atual': 'equivalente',
+                                'Equivalente': 'equivalente'
+                            };
+                            return `<td>${escapeHTML(String(linha[mapa[coluna]] ?? ''))}</td>`;
+                        }).join('')}
+                    </tr>
+                `).join('');
 
-            return `
-                <div class="apoio-table-wrap">
-                    <table class="apoio-table">
-                        <thead><tr>${cabecalho}</tr></thead>
-                        <tbody>${linhas}</tbody>
-                    </table>
-                </div>
-            `;
-        }
+                return `
+                    <div class="apoio-table-wrap">
+                        <table class="apoio-table">
+                            <thead><tr>${cabecalho}</tr></thead>
+                            <tbody>${linhas}</tbody>
+                        </table>
+                    </div>
+                `;
+            }
 
-        return '';
-    }).join('');
-}
-
-function pesquisarMaterialApoio() {
-    const termo = String(document.getElementById('apoio-search')?.value || '')
-        .trim()
-        .toLocaleLowerCase('pt-BR');
-
-    if (!termo) {
-        renderizarCategoriasApoio();
-        return;
+            return '';
+        }).join('');
     }
 
-    const resultados = [];
+    function pesquisarMaterialApoio() {
+        const termo = String(document.getElementById('apoio-search')?.value || '')
+            .trim()
+            .toLocaleLowerCase('pt-BR');
 
-    for (const categoria of (apoioBiblicoData?.categorias || [])) {
-        const texto = JSON.stringify(categoria).toLocaleLowerCase('pt-BR');
-        if (texto.includes(termo)) {
-            resultados.push(categoria);
+        if (!termo) {
+            renderizarCategoriasApoio();
+            return;
+        }
+
+        const resultados = [];
+
+        for (const categoria of (apoioBiblicoData?.categorias || [])) {
+            const texto = JSON.stringify(categoria).toLocaleLowerCase('pt-BR');
+            if (texto.includes(termo)) {
+                resultados.push(categoria);
+            }
+        }
+
+        const box = document.getElementById('apoio-categorias');
+        const conteudo = document.getElementById('apoio-conteudo');
+
+        box?.classList.remove('hidden');
+        conteudo?.classList.add('hidden');
+
+        if (!box) return;
+
+        if (!resultados.length) {
+            box.innerHTML = `<p class="apoio-text">Nenhum resultado encontrado.</p>`;
+            return;
+        }
+
+        box.innerHTML = resultados.map(cat => `
+            <button class="apoio-cat-btn" type="button"
+                    onclick="abrirCategoriaApoio('${cat.id}')">
+                <strong>${escapeHTML(cat.icone || '')} ${escapeHTML(cat.titulo)}</strong>
+                <small>Resultado relacionado à busca</small>
+            </button>
+        `).join('');
+    }
+
+    /* =========================================================
+    SPLASH SCREEN
+    ========================================================= */
+
+    function atualizarSplashTema() {
+
+        const splashLogo = document.getElementById('splash-logo');
+        const splashTitle = document.getElementById('splash-title');
+
+        if (!splashLogo || !splashTitle) return;
+
+        const temaEscuro =
+            document.documentElement.classList.contains('dark') ||
+            document.body.classList.contains('dark') ||
+            document.documentElement.getAttribute('data-theme') === 'dark' ||
+            document.body.getAttribute('data-theme') === 'dark';
+
+        if (temaEscuro) {
+            splashLogo.src = './icon-splash_b.png';
+            splashTitle.classList.add('splash-title-dark');
+        } else {
+            splashLogo.src = './icon-splash_a.png';
+            splashTitle.classList.remove('splash-title-dark');
         }
     }
 
-    const box = document.getElementById('apoio-categorias');
-    const conteudo = document.getElementById('apoio-conteudo');
+    window.addEventListener('load', () => {
+        const splash = document.getElementById('splash-screen');
 
-    box?.classList.remove('hidden');
-    conteudo?.classList.add('hidden');
-
-    if (!box) return;
-
-    if (!resultados.length) {
-        box.innerHTML = `<p class="apoio-text">Nenhum resultado encontrado.</p>`;
-        return;
-    }
-
-    box.innerHTML = resultados.map(cat => `
-        <button class="apoio-cat-btn" type="button"
-                onclick="abrirCategoriaApoio('${cat.id}')">
-            <strong>${escapeHTML(cat.icone || '')} ${escapeHTML(cat.titulo)}</strong>
-            <small>Resultado relacionado à busca</small>
-        </button>
-    `).join('');
-}
-
-/* =========================================================
-   SPLASH SCREEN
-   ========================================================= */
-
-window.addEventListener('load', () => {
-    const splash = document.getElementById('splash-screen');
-
-    if (!splash) return;
-
-    setTimeout(() => {
-        splash.classList.add('splash-hidden');
+        if (!splash) return;
 
         setTimeout(() => {
-            splash.remove();
-        }, 200);
+            splash.classList.add('splash-hidden');
 
-    }, 1500);
-});
+            setTimeout(() => {
+                splash.remove();
+            }, 200);
+
+        }, 1500);
+    });
+
+    configurarInstalacaoPWA();
