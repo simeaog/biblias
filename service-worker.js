@@ -1,4 +1,4 @@
-const CACHE_NAME = 'biblia-app-v2';
+const CACHE_NAME = 'biblia-app-v3';
 
 const APP_SHELL = [
     './',
@@ -9,7 +9,8 @@ const APP_SHELL = [
     './fav-icon_192.png',
     './fav-icon_512.png',
     './icon-splash_a.png',
-    './icon-splash_b.png'
+    './icon-splash_b.png',
+    './dados/apoio/apoio_biblico.json'
 ];
 
 self.addEventListener('install', event => {
