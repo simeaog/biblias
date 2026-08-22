@@ -739,17 +739,64 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     }
 
     async function carregarTraducaoPlano(versionId) {
+
         if (planBibleCache.has(versionId)) {
             return planBibleCache.get(versionId);
         }
 
-        const response = await fetch(getTranslationPath(versionId), { cache: 'no-cache' });
+        const translationPath = getTranslationPath(versionId);
+
+        if ('caches' in window) {
+            try {
+                const translationCache =
+                    await caches.open(TRANSLATIONS_CACHE_NAME);
+
+                const cacheRequest =
+                    new Request(
+                        new URL(
+                            translationPath,
+                            window.location.href
+                        ).href
+                    );
+
+                const cachedResponse =
+                    await translationCache.match(cacheRequest);
+
+                if (cachedResponse) {
+                    const data = await cachedResponse.json();
+
+                    planBibleCache.set(versionId, data);
+
+                    console.info(
+                        `Plano: ${versionId} carregado do armazenamento offline.`
+                    );
+
+                    return data;
+                }
+
+            } catch (error) {
+                console.warn(
+                    'Não foi possível ler a tradução do cache offline do Plano.',
+                    error
+                );
+            }
+        }
+
+        const response = await fetch(
+            translationPath,
+            { cache: 'no-cache' }
+        );
+
         if (!response.ok) {
-            throw new Error(`Não foi possível carregar ${versionId} para o Plano.`);
+            throw new Error(
+                `Não foi possível carregar ${versionId} para o Plano.`
+            );
         }
 
         const data = await response.json();
+
         planBibleCache.set(versionId, data);
+
         return data;
     }
 
