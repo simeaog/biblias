@@ -1,59 +1,34 @@
 
-    // ==========================================
-    // DADOS DE FALLBACK (Garante funcionamento inicial)
-    // ==========================================
-    const fallbackData = [];
+const fallbackData = [];
 
-    // ==========================================
-    // 1. INICIALIZAÇÃO ASSÍNCRONA E VERSÕES
-    // ==========================================
-    const versoesDisponiveis = [
-        { id: 'acf.json', abbrev: 'ACF', nome: 'Almeida Corrigida Fiel', tipo: 'translation' },
-        { id: 'ara.json', abbrev: 'ARA', nome: 'Almeida Revista e Atualizada', tipo: 'translation' },
-        { id: 'arc.json', abbrev: 'ARC', nome: 'Almeida Revista e Corrigida' , tipo: 'translation'},
-        { id: 'as21.json', abbrev: 'AS21', nome: 'Almeida Século 21' , tipo: 'translation'},
-        { id: 'MENS.json', abbrev: 'MENS', nome: 'A Mensagem', tipo: 'paraphrase'},
-        { id: 'naa.json', abbrev: 'NAA', nome: 'Nova Almeida Atualizada', tipo: 'translation'},
-        { id: 'ntlh.json', abbrev: 'NTLH', nome: 'Nova Tradução na Linguagem de Hoje', tipo: 'translation' },
-        { id: 'nvi.json', abbrev: 'NVI', nome: 'Nova Versão Internacional', tipo: 'translation' },
-        { id: 'nvt.json', abbrev: 'NVT', nome: 'Nova Versão Transformadora', tipo: 'translation' },
-        { id: 'int.json', abbrev: 'INT', nome: 'Bíblia Interlinear Trilíngue', tipo: 'translation' }
-    ];
+const versoesDisponiveis = [
+    { id: 'acf.json', abbrev: 'ACF', nome: 'Almeida Corrigida Fiel', tipo: 'translation' },
+    { id: 'ara.json', abbrev: 'ARA', nome: 'Almeida Revista e Atualizada', tipo: 'translation' },
+    { id: 'arc.json', abbrev: 'ARC', nome: 'Almeida Revista e Corrigida' , tipo: 'translation'},
+    { id: 'as21.json', abbrev: 'AS21', nome: 'Almeida Século 21' , tipo: 'translation'},
+    { id: 'MENS.json', abbrev: 'MENS', nome: 'A Mensagem', tipo: 'paraphrase'},
+    { id: 'naa.json', abbrev: 'NAA', nome: 'Nova Almeida Atualizada', tipo: 'translation'},
+    { id: 'ntlh.json', abbrev: 'NTLH', nome: 'Nova Tradução na Linguagem de Hoje', tipo: 'translation' },
+    { id: 'nvi.json', abbrev: 'NVI', nome: 'Nova Versão Internacional', tipo: 'translation' },
+    { id: 'nvt.json', abbrev: 'NVT', nome: 'Nova Versão Transformadora', tipo: 'translation' },
+    { id: 'int.json', abbrev: 'INT', nome: 'Bíblia Interlinear Trilíngue', tipo: 'translation' }
+];
 
-    // ==========================================================
-    // CAMINHO CENTRAL DAS TRADUÇÕES
-    // Os IDs continuam sendo apenas os nomes dos arquivos
-    // (ex.: ara.json), enquanto os arquivos físicos ficam em
-    // dados/. Isso preserva a compatibilidade com Ler, Planos,
-    // Salvos, Notas e Comparação.
-    // ==========================================================
-    function getTranslationPath(versionId) {
-        const id = String(versionId || '').trim();
-        if (!id) throw new Error('ID de tradução não informado.');
-        return `dados/${id}`;
-    }
+const PERICOPES_BASE_PATH = 'dados/pericopes/';
+const pericopesCache = new Map();
+
+function getTranslationPath(versionId) {
+    const id = String(versionId || '').trim();
+    if (!id) throw new Error('ID de tradução não informado.');
+    return `dados/${id}`;
+}
 
 let bibleData = [];
 let globalLexicon = null;
 let lexiconLoadError = null;
-
-// ==========================================
-// CAMADA DE MORFOLOGIA POR OCORRÊNCIA
-// ==========================================
-// Fica separada do léxico para não duplicar
-// informações.
-// ==========================================
 let morphologyData = null;
 let morphologyIndex = new Map();
 let morphologyLoadError = null;
-// ==========================================
-// CAMADA DE PERÍCОPES
-// ==========================================
-// Estrutura editorial separada do texto bíblico.
-// ==========================================
-
-let pericopeData = null;
-let pericopeLoadError = null;
 
 function getComparisonVerseSegments(
     chapter,
@@ -68,10 +43,6 @@ function getComparisonVerseSegments(
 
     const isParaphrase =
         meta?.tipo === 'paraphrase';
-
-    // ==========================================================
-    // PARÁFRASES / MENS
-    // ==========================================================
 
     if (isParaphrase) {
 
@@ -129,84 +100,255 @@ function getComparisonVerseSegments(
     return [];
 }
 
-async function carregarPericopes() {
+async function carregarPericopes(versionId) {
+    if (!versionId) {
+        return null;
+    }
+
+    if (pericopesCache.has(versionId)) {
+        return pericopesCache.get(versionId);
+    }
+
+    const path = `${PERICOPES_BASE_PATH}${versionId}`;
 
     try {
-
-        const response = await fetch(
-            'dados/pericopes-2joao.json',
-            { cache: 'no-cache' }
-        );
+        const response = await fetch(path, {
+            cache: 'no-cache'
+        });
 
         if (!response.ok) {
-            throw new Error(
-                'Arquivo pericopes-2joao.json não encontrado'
+            console.info(
+                `Nenhum arquivo de perícopes disponível para ${versionId}.`
             );
+
+            pericopesCache.set(versionId, null);
+
+            return null;
         }
 
-        pericopeData =
-            await response.json();
+        const data = await response.json();
 
-        pericopeLoadError = null;
+        pericopesCache.set(versionId, data);
 
         console.info(
-            'Perícopes de 2 João carregadas.'
+            `Perícopes de ${versionId} carregadas.`
         );
+
+        return data;
 
     } catch (error) {
 
-        pericopeData = null;
-        pericopeLoadError = error;
-
         console.warn(
-            'Perícopes de 2 João indisponíveis.',
+            `Não foi possível carregar as perícopes de ${versionId}.`,
             error
         );
+
+        pericopesCache.set(versionId, null);
+
+        return null;
     }
 }
 
-function getPericopesForChapter(
-    book,
-    cIdx
-) {
+function getPericopesForChapter(book, cIdx, versionId) {
+    if (!book || !versionId) return [];
 
-    if (!pericopeData) {
+    const data = pericopesCache.get(versionId);
+
+    if (!data) {
+        console.warn(
+            '[PERÍCOPES] Nenhum dado no cache para:',
+            versionId
+        );
         return [];
     }
 
-    if (!book) {
+    /*
+     * ==========================================================
+     * NORMALIZAÇÃO DA RAIZ
+     * Aceita:
+     *
+     * 1. Array:
+     * [
+     *   { name, abbrev, book_id, chapters }
+     * ]
+     *
+     * 2. { books: [...] }
+     *
+     * 3. { pericopes: [...] }
+     *
+     * 4. { book: {...} }
+     * ==========================================================
+     */
+
+    let books = [];
+
+    if (Array.isArray(data)) {
+        books = data;
+    } else if (Array.isArray(data.books)) {
+        books = data.books;
+    } else if (Array.isArray(data.pericopes)) {
+        books = data.pericopes;
+    } else if (data.book && typeof data.book === 'object') {
+        books = [data.book];
+    } else if (
+        data.name &&
+        data.chapters &&
+        typeof data.chapters === 'object'
+    ) {
+        books = [data];
+    }
+
+    if (!books.length) {
+        console.warn(
+            '[PERÍCOPES] Estrutura de arquivo não reconhecida:',
+            data
+        );
+        return [];
+    }
+
+    /*
+     * ==========================================================
+     * LOCALIZA O LIVRO
+     * ==========================================================
+     */
+
+    const bookName = normalizeStr(
+        String(book.name || '')
+    );
+
+    const bookAbbrev = normalizeStr(
+        String(book.abbrev || '')
+    );
+
+    const bookId = String(
+        book.book_id ??
+        book.bookId ??
+        ''
+    );
+
+    /*
+     * Primeiro tenta metadados.
+     */
+    let pericopeBook = books.find(item => {
+
+        const itemName = normalizeStr(
+            String(item.name || '')
+        );
+
+        const itemAbbrev = normalizeStr(
+            String(item.abbrev || '')
+        );
+
+        const itemBookId = String(
+            item.book_id ??
+            item.bookId ??
+            ''
+        );
+
+        return (
+            (bookId &&
+                itemBookId &&
+                itemBookId === bookId) ||
+
+            (bookName &&
+                itemName &&
+                itemName === bookName) ||
+
+            (bookAbbrev &&
+                itemAbbrev &&
+                itemAbbrev === bookAbbrev)
+        );
+    });
+
+    /*
+     * ==========================================================
+     * FALLBACK POR POSIÇÃO
+     *
+     * Os arquivos de perícopes seguem a mesma ordem canônica
+     * dos 66 livros.
+     * ==========================================================
+     */
+
+    if (!pericopeBook && Number.isInteger(book.book_id)) {
+        pericopeBook = books[Number(book.book_id) - 1];
+    }
+
+    if (!pericopeBook) {
+        console.warn(
+            '[PERÍCOPES] Livro não encontrado:',
+            {
+                versionId,
+                bookName: book.name,
+                bookAbbrev: book.abbrev,
+                bookId
+            }
+        );
+
         return [];
     }
 
     if (
-        normalizeStr(book.name) !==
-        normalizeStr('2 João')
+        !pericopeBook.chapters ||
+        typeof pericopeBook.chapters !== 'object'
     ) {
+        console.warn(
+            '[PERÍCOPES] Livro encontrado, mas sem capítulos:',
+            pericopeBook
+        );
+
         return [];
     }
 
-    const chapterNumber =
-        String(cIdx + 1);
+    const chapterNumber = String(cIdx + 1);
 
-    return (
-        pericopeData.book &&
-        pericopeData.book.chapters &&
-        pericopeData.book.chapters[chapterNumber]
-    ) || [];
+    const result =
+        pericopeBook.chapters[chapterNumber] || [];
+
+    console.info(
+        `[PERÍCOPES] ${book.name} ${chapterNumber}:`,
+        result.length,
+        'perícope(s)'
+    );
+
+    return Array.isArray(result)
+        ? result
+        : [];
 }
 
 function getPericopeForVerse(
     pericopes,
     verseNumber
 ) {
+    if (!Array.isArray(pericopes)) {
+        return null;
+    }
 
-    return pericopes.find(
-        pericope =>
-            verseNumber >=
-                pericope.start_verse &&
-            verseNumber <=
-                pericope.end_verse
-    ) || null;
+    const verse = Number(verseNumber);
+
+    if (!Number.isFinite(verse)) {
+        return null;
+    }
+
+    return pericopes.find(pericope => {
+
+        const start =
+            Number(pericope?.start_verse);
+
+        const end =
+            Number(pericope?.end_verse);
+
+        if (
+            !Number.isFinite(start) ||
+            !Number.isFinite(end)
+        ) {
+            return false;
+        }
+
+        return (
+            verse >= start &&
+            verse <= end
+        );
+    }) || null;
 }
 
 let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.json';
@@ -468,16 +610,12 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
 
         renderVersionList();
 
-        // Carrega o léxico global
         await carregarLexicoGlobal();
 
-        // Carrega a morfologia por ocorrência
         await carregarMorfologia();
 
-        // Carrega as pericopes
-        carregarPericopes()
+        await carregarPericopes(currentVersionId);
 
-        // Depois carrega a Bíblia selecionada
         await carregarTraducao(currentVersionId);
 
     }
@@ -497,24 +635,52 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         }
 
         currentVersionId = versaoId;
-        localStorage.setItem('bible_current_version', currentVersionId);
-        
-        const versaoAtiva = versoesDisponiveis.find(v => v.id === versaoId);
-        if(versaoAtiva) {
-            document.getElementById('btn-version-menu').innerText = versaoAtiva.abbrev;
+
+        localStorage.setItem(
+            'bible_current_version',
+            currentVersionId
+        );
+
+        const versaoAtiva =
+            versoesDisponiveis.find(
+                v => v.id === versaoId
+            );
+
+        if (versaoAtiva) {
+            document.getElementById(
+                'btn-version-menu'
+            ).innerText = versaoAtiva.abbrev;
         }
-        
-        // Exibe o botão de idiomas SOMENTE se a versão for INT
-        const btnLangMenu = document.getElementById('btn-lang-menu');
+
+        /*
+        * ==========================================================
+        * GARANTE QUE AS PERÍCОPES DA VERSÃO ATUAL ESTEJAM
+        * CARREGADAS ANTES DE RENDERIZAR O CAPÍTULO.
+        * ==========================================================
+        */
+
+        await carregarPericopes(versaoId);
+
+        /*
+        * ==========================================================
+        * BOTÃO DE IDIOMAS
+        * ==========================================================
+        */
+
+        const btnLangMenu =
+            document.getElementById('btn-lang-menu');
+
         if (versaoId === 'int.json') {
             btnLangMenu.classList.remove('hidden');
         } else {
             btnLangMenu.classList.add('hidden');
         }
-        
+
         fecharGavetas();
-        atualizarIndexLivros(); 
-        initApp(); 
+
+        atualizarIndexLivros();
+
+        initApp();
     }
 
     // Abreviaturas para Planos e Referências
@@ -1086,8 +1252,16 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         const requests = await cache.keys();
         let removido = false;
 
+        const pericopesUrl = new URL(
+            `${PERICOPES_BASE_PATH}${versaoId}`,
+            window.location.href
+        ).href;
+
         for (const request of requests) {
-            if (getTranslationCacheFilename(request) === versaoId) {
+            if (
+                getTranslationCacheFilename(request) === versaoId ||
+                request.url === pericopesUrl
+            ) {
                 removido = (await cache.delete(request)) || removido;
             }
         }
@@ -1099,14 +1273,90 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         const cache = await caches.open(TRANSLATIONS_CACHE_NAME);
         const offlineIds = await getOfflineTranslationIds();
 
-        if (offlineIds.has(versaoId)) return true;
+        const translationUrl =
+            new URL(
+                getTranslationPath(versaoId),
+                window.location.href
+            ).href;
 
-        const response = await fetch(getTranslationPath(versaoId), { cache: 'no-cache' });
-        if (!response.ok) {
-            throw new Error(`Não foi possível baixar ${versaoId}. HTTP ${response.status}.`);
+        const pericopesUrl =
+            new URL(
+                `${PERICOPES_BASE_PATH}${versaoId}`,
+                window.location.href
+            ).href;
+
+        /*
+        * ============================================================
+        * 1. GARANTE QUE A TRADUÇÃO ESTEJA NO CACHE
+        * ============================================================
+        */
+
+        if (!offlineIds.has(versaoId)) {
+
+            const response = await fetch(
+                getTranslationPath(versaoId),
+                { cache: 'no-cache' }
+            );
+
+            if (!response.ok) {
+                throw new Error(
+                    `Não foi possível baixar ${versaoId}. HTTP ${response.status}.`
+                );
+            }
+
+            await cache.put(
+                new Request(translationUrl),
+                response.clone()
+            );
         }
 
-        await cache.put(new Request(new URL(getTranslationPath(versaoId), window.location.href).href), response.clone());
+        /*
+        * ============================================================
+        * 2. TENTA BAIXAR AS PERÍCopes DA TRADUÇÃO
+        * ============================================================
+        *
+        * As perícopes são um recurso complementar.
+        * Se a tradução ainda não possuir arquivo de perícopes,
+        * o download da Bíblia continua válido.
+        */
+
+        try {
+
+            const pericopesResponse = await fetch(
+                `${PERICOPES_BASE_PATH}${versaoId}`,
+                { cache: 'no-cache' }
+            );
+
+            if (pericopesResponse.ok) {
+
+                await cache.put(
+                    new Request(pericopesUrl),
+                    pericopesResponse.clone()
+                );
+
+                console.info(
+                    `Perícopes de ${versaoId} armazenadas para uso offline.`
+                );
+
+            } else {
+
+                console.info(
+                    `A tradução ${versaoId} não possui arquivo de perícopes.`
+                );
+            }
+
+        } catch (error) {
+
+            /*
+            * Não impedir o download da Bíblia caso as perícopes
+            * ainda não estejam disponíveis.
+            */
+
+            console.info(
+                `Perícopes de ${versaoId} não puderam ser baixadas.`
+            );
+        }
+
         return true;
     }
 
@@ -1807,11 +2057,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
                 n => n.bookIdx === bIdx && n.chapIdx === cIdx
             );
 
-        const pericopes =
-            getPericopesForChapter(
-                book,
-                cIdx
-            );
+        const pericopes=getPericopesForChapter(book,cIdx,ctx.versionId);
 
         let html = `
             <div class="chapter-header">
