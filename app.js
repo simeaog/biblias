@@ -6,7 +6,7 @@ const versoesDisponiveis = [
     { id: 'ara.json', abbrev: 'ARA', nome: 'Almeida Revista e Atualizada', tipo: 'translation' },
     { id: 'arc.json', abbrev: 'ARC', nome: 'Almeida Revista e Corrigida' , tipo: 'translation'},
     { id: 'as21.json', abbrev: 'AS21', nome: 'Almeida Século 21' , tipo: 'translation'},
-    { id: 'MENS.json', abbrev: 'MENS', nome: 'A Mensagem', tipo: 'paraphrase'},
+    { id: 'mens.json', abbrev: 'MENS', nome: 'A Mensagem', tipo: 'paraphrase'},
     { id: 'naa.json', abbrev: 'NAA', nome: 'Nova Almeida Atualizada', tipo: 'translation'},
     { id: 'ntlh.json', abbrev: 'NTLH', nome: 'Nova Tradução na Linguagem de Hoje', tipo: 'translation' },
     { id: 'nvi.json', abbrev: 'NVI', nome: 'Nova Versão Internacional', tipo: 'translation' },
