@@ -610,6 +610,8 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
 
         renderVersionList();
 
+        await registrarServiceWorkerPWA();
+
         await carregarLexicoGlobal();
 
         await carregarMorfologia();
@@ -734,7 +736,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     const DEFAULT_APP_SETTINGS = {
         fontScale: 1,
         lineHeight: 'normal',
-        theme: 'light'
+        theme: 'default'
     };
 
     let appSettings = {
@@ -2683,20 +2685,20 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
 
         if (
             ![
-                'light',
-                'dark',
-                'system'
+                'default',
+                'blue',
+                'pink'
             ].includes(valor)
         ) {
-            valor = 'light';
+            valor = 'default';
         }
 
         appSettings.theme = valor;
 
         salvarConfiguracoes();
+
         aplicarConfiguracoes();
     }
-
 
     function atualizarInterfaceConfig() {
 
@@ -2751,8 +2753,22 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             ...DEFAULT_APP_SETTINGS
         };
 
+        appSettings.theme = 'default';
+
         salvarConfiguracoes();
+
         aplicarConfiguracoes();
+
+        document
+            .querySelectorAll('[data-theme]')
+            .forEach(botao => {
+
+                botao.classList.toggle(
+                    'active',
+                    botao.dataset.theme === 'default'
+                );
+
+            });
 
         showToast(
             'Configurações restauradas.'
@@ -4807,96 +4823,281 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
 
     window.onload = initAppAsync;
 
-    // PWA: o Service Worker cuida apenas da infraestrutura offline.
-    // A lógica da Bíblia continua neste app.js.
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('./service-worker.js')
-                .then(registration => {
-                    console.info('Service Worker registrado:', registration.scope);
-                })
-                .catch(error => {
-                    console.warn('Service Worker não pôde ser registrado.', error);
+    let pwaRegistration = null;
+    let pwaUpdateAvailable = false;
+    let pwaReloading = false;
+    let pwaCheckingUpdate = false;
+
+    async function registrarServiceWorkerPWA() {
+        if (!('serviceWorker' in navigator)) return null;
+
+        try {
+            pwaRegistration = await navigator.serviceWorker.register(
+                './service-worker.js',
+                { updateViaCache: 'none' }
+            );
+
+            console.info(
+                'Service Worker registrado:',
+                pwaRegistration.scope
+            );
+
+            pwaRegistration.addEventListener('updatefound', () => {
+                const novoWorker = pwaRegistration.installing;
+                if (!novoWorker) return;
+
+                novoWorker.addEventListener('statechange', () => {
+                    if (
+                        novoWorker.state === 'installed' &&
+                        navigator.serviceWorker.controller
+                    ) {
+                        pwaUpdateAvailable = true;
+                        atualizarInterfacePWA();
+                        console.info('Nova versão do aplicativo disponível.');
+                    }
                 });
-        });
+            });
+
+            if (pwaRegistration.waiting) {
+                pwaUpdateAvailable = true;
+                atualizarInterfacePWA();
+            }
+
+            if (navigator.onLine) {
+                await verificarAtualizacaoPWA(true);
+            }
+
+            return pwaRegistration;
+
+        } catch (error) {
+            console.warn(
+                'Service Worker não pôde ser registrado.',
+                error
+            );
+            return null;
+        }
     }
 
     // ==========================================================
-    // INSTALAÇÃO DO WEB APP (PWA)
+    // INSTALAÇÃO E ATUALIZAÇÃO DO WEB APP (PWA)
     // ==========================================================
 
     let deferredInstallPrompt = null;
 
-    function configurarInstalacaoPWA() {
-
-        const btnInstall = document.getElementById('btn-install-app');
-
-        if (!btnInstall) return;
-
-        // Se o aplicativo já estiver instalado como PWA,
-        // não exibe o botão.
-        const appJaInstalado =
+    function aplicativoEstaInstalado() {
+        return (
             window.matchMedia('(display-mode: standalone)').matches ||
-            window.navigator.standalone === true;
+            window.navigator.standalone === true
+        );
+    }
 
-        if (appJaInstalado) {
-            btnInstall.classList.add('hidden');
+    function atualizarInterfacePWA() {
+        const btn = document.getElementById('btn-install-app');
+        const label = document.getElementById('pwa-install-label');
+
+        if (!btn || !label) return;
+
+        if (!aplicativoEstaInstalado()) {
+            label.innerText = 'Instalar aplicativo';
+            btn.innerText = 'Instalar';
+            btn.title = 'Instalar aplicativo';
+            btn.setAttribute('aria-label', 'Instalar aplicativo');
+            btn.classList.remove('hidden');
             return;
         }
 
-        // O navegador disponibiliza o evento quando
-        // considera o aplicativo instalável.
-        window.addEventListener('beforeinstallprompt', event => {
+        if (pwaUpdateAvailable) {
+            label.innerText = 'Nova versão disponível';
+            btn.innerText = 'Atualizar';
+            btn.title = 'Atualizar aplicativo';
+            btn.setAttribute('aria-label', 'Atualizar aplicativo');
+            btn.classList.remove('hidden');
+            return;
+        }
 
-            event.preventDefault();
+        label.innerText = 'Buscar atualizações';
+        btn.innerText = 'Buscar';
+        btn.title = 'Buscar atualizações';
+        btn.setAttribute('aria-label', 'Buscar atualizações');
+        btn.classList.remove('hidden');
+    }
 
-            deferredInstallPrompt = event;
+    async function verificarAtualizacaoPWA(silenciosa = false) {
+        if (!navigator.onLine || !pwaRegistration) return false;
 
-            btnInstall.classList.remove('hidden');
+        if (pwaCheckingUpdate) return false;
 
-            console.info('Aplicativo disponível para instalação.');
+        pwaCheckingUpdate = true;
+
+        try {
+            if (pwaRegistration.waiting) {
+                pwaUpdateAvailable = true;
+                atualizarInterfacePWA();
+                return true;
+            }
+
+            await pwaRegistration.update();
+
+            /*
+             * O novo Service Worker pode ainda estar instalando.
+             * A confirmação definitiva também é feita pelo
+             * evento updatefound/statechange.
+             */
+            if (pwaRegistration.waiting) {
+                pwaUpdateAvailable = true;
+                atualizarInterfacePWA();
+                return true;
+            }
+
+            if (!silenciosa) {
+                showToast('Última versão já instalada.');
+            }
+
+            atualizarInterfacePWA();
+            return false;
+
+        } catch (error) {
+            console.warn(
+                'Não foi possível verificar atualizações.',
+                error
+            );
+            return false;
+
+        } finally {
+            pwaCheckingUpdate = false;
+        }
+    }
+
+    async function atualizarAplicativoPWA() {
+        if (!pwaRegistration) return;
+
+        if (!pwaRegistration.waiting) {
+            const encontrou =
+                await verificarAtualizacaoPWA(false);
+
+            if (!encontrou) return;
+        }
+
+        const novoWorker = pwaRegistration.waiting;
+
+        if (!novoWorker) {
+            showToast(
+                'A nova versão ainda está sendo preparada. Tente novamente em alguns segundos.'
+            );
+            return;
+        }
+
+        pwaReloading = true;
+
+        navigator.serviceWorker.addEventListener(
+            'controllerchange',
+            () => {
+                if (!pwaReloading) return;
+
+                pwaReloading = false;
+                window.location.reload();
+            },
+            { once: true }
+        );
+
+        novoWorker.postMessage({
+            type: 'SKIP_WAITING'
         });
+    }
 
-        btnInstall.addEventListener('click', async () => {
+    function configurarInstalacaoPWA() {
+        const btnInstall =
+            document.getElementById('btn-install-app');
 
-            if (!deferredInstallPrompt) return;
+        if (!btnInstall) return;
 
-            const promptEvent = deferredInstallPrompt;
-
-            deferredInstallPrompt = null;
-
-            btnInstall.classList.add('hidden');
-
-            try {
-
-                await promptEvent.prompt();
-
-                const resultado = await promptEvent.userChoice;
+        window.addEventListener(
+            'beforeinstallprompt',
+            event => {
+                event.preventDefault();
+                deferredInstallPrompt = event;
+                atualizarInterfacePWA();
 
                 console.info(
-                    'Resultado da instalação:',
-                    resultado.outcome
+                    'Aplicativo disponível para instalação.'
                 );
-
-            } catch (error) {
-
-                console.warn(
-                    'Não foi possível iniciar a instalação:',
-                    error
-                );
-
             }
-        });
+        );
 
-        // Quando a instalação realmente for concluída.
-        window.addEventListener('appinstalled', () => {
+        btnInstall.addEventListener(
+            'click',
+            async () => {
 
-            deferredInstallPrompt = null;
+                if (!aplicativoEstaInstalado()) {
 
-            btnInstall.classList.add('hidden');
+                    if (!deferredInstallPrompt) {
+                        showToast(
+                            'A instalação ainda não está disponível.'
+                        );
+                        return;
+                    }
 
-            console.info('Aplicativo instalado.');
-        });
+                    const promptEvent =
+                        deferredInstallPrompt;
+
+                    deferredInstallPrompt = null;
+
+                    try {
+                        await promptEvent.prompt();
+
+                        const resultado =
+                            await promptEvent.userChoice;
+
+                        console.info(
+                            'Resultado da instalação:',
+                            resultado.outcome
+                        );
+
+                    } catch (error) {
+                        console.warn(
+                            'Não foi possível iniciar a instalação:',
+                            error
+                        );
+                    }
+
+                    atualizarInterfacePWA();
+                    return;
+                }
+
+                if (pwaUpdateAvailable) {
+                    await atualizarAplicativoPWA();
+                    return;
+                }
+
+                await verificarAtualizacaoPWA(false);
+            }
+        );
+
+        window.addEventListener(
+            'appinstalled',
+            () => {
+                deferredInstallPrompt = null;
+                pwaUpdateAvailable = false;
+                atualizarInterfacePWA();
+
+                console.info(
+                    'Aplicativo instalado.'
+                );
+            }
+        );
+
+        /*
+         * Se o usuário perder e depois recuperar a conexão,
+         * a próxima abertura não é necessária para verificar.
+         */
+        window.addEventListener(
+            'online',
+            () => {
+                verificarAtualizacaoPWA(true);
+            }
+        );
+
+        atualizarInterfacePWA();
     }
 
     // =========================================================
@@ -5120,7 +5321,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
 
         if (!splashLogo || !splashTitle) return;
 
-        let temaEscuro = false;
+        let temaEscuro=appSettings.theme==='blue'||appSettings.theme==='pink';
 
         /*
         * Tema definido explicitamente pelo usuário.

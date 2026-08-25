@@ -23,7 +23,7 @@
         --bible-font-scale: 1;
     }
 
-    :root[data-theme="dark"] {
+    :root[data-theme="blue"] {
         --bg: #101820;
         --text: #e8edf2;
         --card: #18232d;
@@ -1413,7 +1413,7 @@
     --reader-note-bg: #fffde7;
 }
 
-:root[data-theme="light"] {
+:root[data-theme="default"] {
     --bg: #fdfdfd;
     --card: #ffffff;
     --text: #222b32;
@@ -1431,7 +1431,7 @@
     --control-text: #25313a;
 }
 
-:root[data-theme="dark"] {
+:root[data-theme="blue"] {
     --bg: var(--dark-surface-0);
     --card: var(--dark-surface-1);
     --text: var(--dark-text-main);
@@ -1652,12 +1652,12 @@ nav button {
 
 /* No escuro: verde/amarelo ficam apenas como bordas semânticas;
    o preenchimento passa para azul sobre azul. */
-:root[data-theme="dark"] .verse.has-saved,
+:root[data-theme="blue"] .verse.has-saved,
 :root[data-theme="system"] .verse.has-saved {
     background-color: #18384a;
 }
 
-:root[data-theme="dark"] .verse.has-note,
+:root[data-theme="blue"] .verse.has-note,
 :root[data-theme="system"] .verse.has-note {
     background-color: #243b4d;
 }
@@ -1762,7 +1762,7 @@ nav button {
     color: var(--text-main);
 }
 
-:root[data-theme="dark"] .note-box,
+:root[data-theme="blue"] .note-box,
 :root[data-theme="system"] .note-box {
     background: #243b4d;
 }
@@ -1991,10 +1991,10 @@ input[type="checkbox"] {
 /* Controles nativos claros dentro do tema escuro:
    o campo continua claro para manter legibilidade do teclado
    e dos menus nativos do Android. */
-:root[data-theme="dark"] select,
-:root[data-theme="dark"] input[type="date"],
-:root[data-theme="dark"] input[type="time"],
-:root[data-theme="dark"] input[type="number"],
+:root[data-theme="blue"] select,
+:root[data-theme="blue"] input[type="date"],
+:root[data-theme="blue"] input[type="time"],
+:root[data-theme="blue"] input[type="number"],
 :root[data-theme="system"] select,
 :root[data-theme="system"] input[type="date"],
 :root[data-theme="system"] input[type="time"],
@@ -2003,19 +2003,19 @@ input[type="checkbox"] {
 }
 
 /* Garantia final contra cores legadas */
-:root[data-theme="dark"] .panel-traducoes,
-:root[data-theme="dark"] .expandable-text,
-:root[data-theme="dark"] .dictionary-summary,
-:root[data-theme="dark"] .dictionary-note,
-:root[data-theme="dark"] .apoio-text,
-:root[data-theme="dark"] .apoio-list,
-:root[data-theme="dark"] .morphology-field-value,
-:root[data-theme="dark"] .comparison-content,
-:root[data-theme="dark"] .dialog-msg,
-:root[data-theme="dark"] .list-item,
-:root[data-theme="dark"] .book-item,
-:root[data-theme="dark"] .plan-block-label,
-:root[data-theme="dark"] .plan-testament-label {
+:root[data-theme="blue"] .panel-traducoes,
+:root[data-theme="blue"] .expandable-text,
+:root[data-theme="blue"] .dictionary-summary,
+:root[data-theme="blue"] .dictionary-note,
+:root[data-theme="blue"] .apoio-text,
+:root[data-theme="blue"] .apoio-list,
+:root[data-theme="blue"] .morphology-field-value,
+:root[data-theme="blue"] .comparison-content,
+:root[data-theme="blue"] .dialog-msg,
+:root[data-theme="blue"] .list-item,
+:root[data-theme="blue"] .book-item,
+:root[data-theme="blue"] .plan-block-label,
+:root[data-theme="blue"] .plan-testament-label {
     color: var(--text-main);
 }
 
@@ -2036,7 +2036,7 @@ input[type="checkbox"] {
    PALETA DARK REFORÇADA
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"],
+:root[data-theme="blue"],
 :root[data-theme="system"] {
     --dark-surface-0: #0b151c;
     --dark-surface-1: #14232d;
@@ -2087,23 +2087,23 @@ input[type="checkbox"] {
    TÍTULOS DE PÁGINAS E SEÇÕES
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] h1,
-:root[data-theme="dark"] h2,
-:root[data-theme="dark"] h3,
-:root[data-theme="dark"] h4,
-:root[data-theme="dark"] .config-header h2,
-:root[data-theme="dark"] .config-section h3,
-:root[data-theme="dark"] .tab-content > h2,
-:root[data-theme="dark"] .theme-group-header,
-:root[data-theme="dark"] .drawer-header h3,
-:root[data-theme="dark"] .apoio-section-title,
-:root[data-theme="dark"] .apoio-subtitle,
-:root[data-theme="dark"] .morphology-study-title,
-:root[data-theme="dark"] .plan-reader-app-title,
-:root[data-theme="dark"] .plan-testament-label,
-:root[data-theme="dark"] .plan-block-label,
-:root[data-theme="dark"] .dialog-title,
-:root[data-theme="dark"] .modal-header h3,
+:root[data-theme="blue"] h1,
+:root[data-theme="blue"] h2,
+:root[data-theme="blue"] h3,
+:root[data-theme="blue"] h4,
+:root[data-theme="blue"] .config-header h2,
+:root[data-theme="blue"] .config-section h3,
+:root[data-theme="blue"] .tab-content > h2,
+:root[data-theme="blue"] .theme-group-header,
+:root[data-theme="blue"] .drawer-header h3,
+:root[data-theme="blue"] .apoio-section-title,
+:root[data-theme="blue"] .apoio-subtitle,
+:root[data-theme="blue"] .morphology-study-title,
+:root[data-theme="blue"] .plan-reader-app-title,
+:root[data-theme="blue"] .plan-testament-label,
+:root[data-theme="blue"] .plan-block-label,
+:root[data-theme="blue"] .dialog-title,
+:root[data-theme="blue"] .modal-header h3,
 :root[data-theme="system"] h1,
 :root[data-theme="system"] h2,
 :root[data-theme="system"] h3,
@@ -2125,10 +2125,10 @@ input[type="checkbox"] {
 }
 
 /* Títulos principais ficam ainda mais claros */
-:root[data-theme="dark"] .config-header h2,
-:root[data-theme="dark"] .tab-content > h2,
-:root[data-theme="dark"] .apoio-section-title,
-:root[data-theme="dark"] .drawer-header h3,
+:root[data-theme="blue"] .config-header h2,
+:root[data-theme="blue"] .tab-content > h2,
+:root[data-theme="blue"] .apoio-section-title,
+:root[data-theme="blue"] .drawer-header h3,
 :root[data-theme="system"] .config-header h2,
 :root[data-theme="system"] .tab-content > h2,
 :root[data-theme="system"] .apoio-section-title,
@@ -2137,7 +2137,7 @@ input[type="checkbox"] {
 }
 
 /* Descrição abaixo do título */
-:root[data-theme="dark"] .config-header p,
+:root[data-theme="blue"] .config-header p,
 :root[data-theme="system"] .config-header p {
     color: var(--dark-secondary-readable) !important;
 }
@@ -2146,16 +2146,16 @@ input[type="checkbox"] {
    AZUIS / TEXTOS DE DESTAQUE
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] .secondary,
-:root[data-theme="dark"] .apoio-cat-btn strong,
-:root[data-theme="dark"] .apoio-item-title,
-:root[data-theme="dark"] .comparison-reference,
-:root[data-theme="dark"] .font-size-value,
-:root[data-theme="dark"] .config-icon-btn,
-:root[data-theme="dark"] .config-reset-btn,
-:root[data-theme="dark"] .btn-min:not(.danger),
-:root[data-theme="dark"] .ref-right,
-:root[data-theme="dark"] .saved-date,
+:root[data-theme="blue"] .secondary,
+:root[data-theme="blue"] .apoio-cat-btn strong,
+:root[data-theme="blue"] .apoio-item-title,
+:root[data-theme="blue"] .comparison-reference,
+:root[data-theme="blue"] .font-size-value,
+:root[data-theme="blue"] .config-icon-btn,
+:root[data-theme="blue"] .config-reset-btn,
+:root[data-theme="blue"] .btn-min:not(.danger),
+:root[data-theme="blue"] .ref-right,
+:root[data-theme="blue"] .saved-date,
 :root[data-theme="system"] .secondary,
 :root[data-theme="system"] .apoio-cat-btn strong,
 :root[data-theme="system"] .apoio-item-title,
@@ -2173,11 +2173,11 @@ input[type="checkbox"] {
    INPUTS — DARK DE VERDADE
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] input:not([type="checkbox"]):not([type="radio"]),
-:root[data-theme="dark"] select,
-:root[data-theme="dark"] textarea,
-:root[data-theme="dark"] #apoio-search,
-:root[data-theme="dark"] #search-input,
+:root[data-theme="blue"] input:not([type="checkbox"]):not([type="radio"]),
+:root[data-theme="blue"] select,
+:root[data-theme="blue"] textarea,
+:root[data-theme="blue"] #apoio-search,
+:root[data-theme="blue"] #search-input,
 :root[data-theme="system"] input:not([type="checkbox"]):not([type="radio"]),
 :root[data-theme="system"] select,
 :root[data-theme="system"] textarea,
@@ -2189,10 +2189,10 @@ input[type="checkbox"] {
     color-scheme: dark;
 }
 
-:root[data-theme="dark"] input::placeholder,
-:root[data-theme="dark"] textarea::placeholder,
-:root[data-theme="dark"] #apoio-search::placeholder,
-:root[data-theme="dark"] #search-input::placeholder,
+:root[data-theme="blue"] input::placeholder,
+:root[data-theme="blue"] textarea::placeholder,
+:root[data-theme="blue"] #apoio-search::placeholder,
+:root[data-theme="blue"] #search-input::placeholder,
 :root[data-theme="system"] input::placeholder,
 :root[data-theme="system"] textarea::placeholder,
 :root[data-theme="system"] #apoio-search::placeholder,
@@ -2201,11 +2201,11 @@ input[type="checkbox"] {
     opacity: 1;
 }
 
-:root[data-theme="dark"] input:focus,
-:root[data-theme="dark"] select:focus,
-:root[data-theme="dark"] textarea:focus,
-:root[data-theme="dark"] #apoio-search:focus,
-:root[data-theme="dark"] #search-input:focus,
+:root[data-theme="blue"] input:focus,
+:root[data-theme="blue"] select:focus,
+:root[data-theme="blue"] textarea:focus,
+:root[data-theme="blue"] #apoio-search:focus,
+:root[data-theme="blue"] #search-input:focus,
 :root[data-theme="system"] input:focus,
 :root[data-theme="system"] select:focus,
 :root[data-theme="system"] textarea:focus,
@@ -2220,10 +2220,10 @@ input[type="checkbox"] {
    ---------------------------------------------------------- */
 
 /* A seleção nunca deve virar um azul claro quase branco. */
-:root[data-theme="dark"] .verse.selected,
-:root[data-theme="dark"] .verse.selected.has-note,
-:root[data-theme="dark"] .verse.selected.has-saved,
-:root[data-theme="dark"] .verse.selected.has-note.has-saved,
+:root[data-theme="blue"] .verse.selected,
+:root[data-theme="blue"] .verse.selected.has-note,
+:root[data-theme="blue"] .verse.selected.has-saved,
+:root[data-theme="blue"] .verse.selected.has-note.has-saved,
 :root[data-theme="system"] .verse.selected,
 :root[data-theme="system"] .verse.selected.has-note,
 :root[data-theme="system"] .verse.selected.has-saved,
@@ -2235,23 +2235,23 @@ input[type="checkbox"] {
 
 /* Verde/amarelo continuam identificando o estado,
    mas sem perder o contraste do texto. */
-:root[data-theme="dark"] .verse.selected.has-saved,
+:root[data-theme="blue"] .verse.selected.has-saved,
 :root[data-theme="system"] .verse.selected.has-saved {
     border-left: 4px solid #32d27b !important;
 }
 
-:root[data-theme="dark"] .verse.selected.has-note,
+:root[data-theme="blue"] .verse.selected.has-note,
 :root[data-theme="system"] .verse.selected.has-note {
     border-left: 4px solid #f4cf32 !important;
 }
 
-:root[data-theme="dark"] .verse.selected.has-note.has-saved,
+:root[data-theme="blue"] .verse.selected.has-note.has-saved,
 :root[data-theme="system"] .verse.selected.has-note.has-saved {
     border-left: 4px solid #f4cf32 !important;
 }
 
 /* Número do versículo selecionado */
-:root[data-theme="dark"] .verse.selected .verse-num,
+:root[data-theme="blue"] .verse.selected .verse-num,
 :root[data-theme="system"] .verse.selected .verse-num {
     color: #b8d9ea !important;
 }
@@ -2260,39 +2260,39 @@ input[type="checkbox"] {
    MATERIAL DE APOIO
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] .apoio-cat-btn,
+:root[data-theme="blue"] .apoio-cat-btn,
 :root[data-theme="system"] .apoio-cat-btn {
     background: #172b37 !important;
     border-color: #385363 !important;
     color: #f2f7fa !important;
 }
 
-:root[data-theme="dark"] .apoio-cat-btn strong,
+:root[data-theme="blue"] .apoio-cat-btn strong,
 :root[data-theme="system"] .apoio-cat-btn strong {
     color: #9dd5f8 !important;
 }
 
-:root[data-theme="dark"] .apoio-cat-btn small,
-:root[data-theme="dark"] .apoio-ref,
+:root[data-theme="blue"] .apoio-cat-btn small,
+:root[data-theme="blue"] .apoio-ref,
 :root[data-theme="system"] .apoio-cat-btn small,
 :root[data-theme="system"] .apoio-ref {
     color: #a7bac5 !important;
 }
 
-:root[data-theme="dark"] .apoio-table th,
+:root[data-theme="blue"] .apoio-table th,
 :root[data-theme="system"] .apoio-table th {
     background: #203b4b !important;
     color: #a8daf9 !important;
     border-bottom-color: #426070 !important;
 }
 
-:root[data-theme="dark"] .apoio-table td,
+:root[data-theme="blue"] .apoio-table td,
 :root[data-theme="system"] .apoio-table td {
     color: #eaf2f6 !important;
     border-bottom-color: #314a58 !important;
 }
 
-:root[data-theme="dark"] .apoio-note,
+:root[data-theme="blue"] .apoio-note,
 :root[data-theme="system"] .apoio-note {
     background: #1a2d39 !important;
     color: #d9e5eb !important;
@@ -2303,29 +2303,29 @@ input[type="checkbox"] {
    NOTAS / SALVOS
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] .note-card,
-:root[data-theme="dark"] .saved-card,
+:root[data-theme="blue"] .note-card,
+:root[data-theme="blue"] .saved-card,
 :root[data-theme="system"] .note-card,
 :root[data-theme="system"] .saved-card {
     background: #142731 !important;
     border-color: #38515f !important;
 }
 
-:root[data-theme="dark"] .note-card .expandable-text,
-:root[data-theme="dark"] .saved-card .expandable-text,
+:root[data-theme="blue"] .note-card .expandable-text,
+:root[data-theme="blue"] .saved-card .expandable-text,
 :root[data-theme="system"] .note-card .expandable-text,
 :root[data-theme="system"] .saved-card .expandable-text {
     color: #edf4f7 !important;
 }
 
-:root[data-theme="dark"] .saved-date,
-:root[data-theme="dark"] .ref-right,
+:root[data-theme="blue"] .saved-date,
+:root[data-theme="blue"] .ref-right,
 :root[data-theme="system"] .saved-date,
 :root[data-theme="system"] .ref-right {
     color: #a8bbc5 !important;
 }
 
-:root[data-theme="dark"] .ver-badge,
+:root[data-theme="blue"] .ver-badge,
 :root[data-theme="system"] .ver-badge {
     background: #243b49 !important;
     color: #d8e6ed !important;
@@ -2335,21 +2335,21 @@ input[type="checkbox"] {
    BOTÕES ABRIR / EDITAR / MOVER
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] .btn-min:not(.danger),
+:root[data-theme="blue"] .btn-min:not(.danger),
 :root[data-theme="system"] .btn-min:not(.danger) {
     background: #182c38 !important;
     border-color: #5b7280 !important;
     color: #bfe2f7 !important;
 }
 
-:root[data-theme="dark"] .btn-min:not(.danger):active,
+:root[data-theme="blue"] .btn-min:not(.danger):active,
 :root[data-theme="system"] .btn-min:not(.danger):active {
     background: #28485b !important;
     border-color: #79c7f5 !important;
     color: #ffffff !important;
 }
 
-:root[data-theme="dark"] .btn-min.danger,
+:root[data-theme="blue"] .btn-min.danger,
 :root[data-theme="system"] .btn-min.danger {
     background: rgba(231,76,60,.05) !important;
     border-color: #e95d51 !important;
@@ -2360,48 +2360,48 @@ input[type="checkbox"] {
    CONFIGURAÇÕES — A+, A-, SEGMENTADOS E RESET
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] .config-card,
+:root[data-theme="blue"] .config-card,
 :root[data-theme="system"] .config-card {
     background: #142731 !important;
     border-color: #38515f !important;
 }
 
-:root[data-theme="dark"] .config-icon-btn,
+:root[data-theme="blue"] .config-icon-btn,
 :root[data-theme="system"] .config-icon-btn {
     background: #1b3442 !important;
     border-color: #57717f !important;
     color: #a9dafa !important;
 }
 
-:root[data-theme="dark"] .font-size-value,
+:root[data-theme="blue"] .font-size-value,
 :root[data-theme="system"] .font-size-value {
     color: #9ed7fa !important;
 }
 
-:root[data-theme="dark"] .config-segmented,
+:root[data-theme="blue"] .config-segmented,
 :root[data-theme="system"] .config-segmented {
     background: #1c3442 !important;
 }
 
-:root[data-theme="dark"] .config-segmented button,
+:root[data-theme="blue"] .config-segmented button,
 :root[data-theme="system"] .config-segmented button {
     color: #b6c8d1 !important;
 }
 
-:root[data-theme="dark"] .config-segmented button.active,
+:root[data-theme="blue"] .config-segmented button.active,
 :root[data-theme="system"] .config-segmented button.active {
     background: #315269 !important;
     color: #ffffff !important;
 }
 
-:root[data-theme="dark"] .config-reset-btn,
+:root[data-theme="blue"] .config-reset-btn,
 :root[data-theme="system"] .config-reset-btn {
     background: #182d39 !important;
     border-color: #4e6674 !important;
     color: #9fd3f3 !important;
 }
 
-:root[data-theme="dark"] .config-reset-btn:active,
+:root[data-theme="blue"] .config-reset-btn:active,
 :root[data-theme="system"] .config-reset-btn:active {
     background: #315269 !important;
     color: #ffffff !important;
@@ -2411,30 +2411,30 @@ input[type="checkbox"] {
    PLANOS
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] .plan-testament-label,
-:root[data-theme="dark"] .plan-block-label,
+:root[data-theme="blue"] .plan-testament-label,
+:root[data-theme="blue"] .plan-block-label,
 :root[data-theme="system"] .plan-testament-label,
 :root[data-theme="system"] .plan-block-label {
     color: #a7d9f8 !important;
 }
 
-:root[data-theme="dark"] #my-plans .card h3,
+:root[data-theme="blue"] #my-plans .card h3,
 :root[data-theme="system"] #my-plans .card h3 {
     color: #a7d9f8 !important;
 }
 
-:root[data-theme="dark"] #my-plans .card h3 span,
+:root[data-theme="blue"] #my-plans .card h3 span,
 :root[data-theme="system"] #my-plans .card h3 span {
     color: #e7f2f7 !important;
 }
 
-:root[data-theme="dark"] #my-plans .card,
+:root[data-theme="blue"] #my-plans .card,
 :root[data-theme="system"] #my-plans .card {
     background: #142731 !important;
     border-color: #38515f !important;
 }
 
-:root[data-theme="dark"] #plan-result,
+:root[data-theme="blue"] #plan-result,
 :root[data-theme="system"] #plan-result {
     background: #1c3442 !important;
     color: #a8d9f6 !important;
@@ -2448,29 +2448,29 @@ input[type="checkbox"] {
    Por isso os !important abaixo são intencionais.
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] #search-results .card,
+:root[data-theme="blue"] #search-results .card,
 :root[data-theme="system"] #search-results .card {
     background: #142731 !important;
     border: 1px solid #38515f !important;
     color: #eef5f8 !important;
 }
 
-:root[data-theme="dark"] #search-results .card p,
+:root[data-theme="blue"] #search-results .card p,
 :root[data-theme="system"] #search-results .card p {
     color: #eaf2f6 !important;
 }
 
-:root[data-theme="dark"] #search-results .card p:first-child,
+:root[data-theme="blue"] #search-results .card p:first-child,
 :root[data-theme="system"] #search-results .card p:first-child {
     color: #65c0fa !important;
 }
 
-:root[data-theme="dark"] #search-results > h3,
+:root[data-theme="blue"] #search-results > h3,
 :root[data-theme="system"] #search-results > h3 {
     color: #9ed7fa !important;
 }
 
-:root[data-theme="dark"] #search-results > p,
+:root[data-theme="blue"] #search-results > p,
 :root[data-theme="system"] #search-results > p {
     color: #b4c5ce !important;
 }
@@ -2479,17 +2479,17 @@ input[type="checkbox"] {
    NAV — ABA ATIVA
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] nav button,
+:root[data-theme="blue"] nav button,
 :root[data-theme="system"] nav button {
     color: #aebfc8 !important;
 }
 
-:root[data-theme="dark"] nav button.active,
+:root[data-theme="blue"] nav button.active,
 :root[data-theme="system"] nav button.active {
     color: #9ed7fa !important;
 }
 
-:root[data-theme="dark"] nav button.active::after,
+:root[data-theme="blue"] nav button.active::after,
 :root[data-theme="system"] nav button.active::after {
     background: #68bff5 !important;
 }
@@ -2498,12 +2498,12 @@ input[type="checkbox"] {
    CABEÇALHO / BOTÕES DO CABEÇALHO
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] header,
+:root[data-theme="blue"] header,
 :root[data-theme="system"] header {
     background: #2b4255 !important;
 }
 
-:root[data-theme="dark"] .header-btn,
+:root[data-theme="blue"] .header-btn,
 :root[data-theme="system"] .header-btn {
     color: #f4f8fa !important;
     border-color: rgba(235,245,250,.72) !important;
@@ -2513,43 +2513,43 @@ input[type="checkbox"] {
    DEMAIS TEXTOS QUE NÃO PODEM HERDAR AZUL ESCURO
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] .config-row-info strong,
+:root[data-theme="blue"] .config-row-info strong,
 :root[data-theme="system"] .config-row-info strong {
     color: #f2f6f8 !important;
 }
 
-:root[data-theme="dark"] .config-row-info span,
+:root[data-theme="blue"] .config-row-info span,
 :root[data-theme="system"] .config-row-info span {
     color: #b3c4cd !important;
 }
 
-:root[data-theme="dark"] .apoio-text,
+:root[data-theme="blue"] .apoio-text,
 :root[data-theme="system"] .apoio-text {
     color: #e3edf2 !important;
 }
 
-:root[data-theme="dark"] .apoio-list,
+:root[data-theme="blue"] .apoio-list,
 :root[data-theme="system"] .apoio-list {
     color: #e3edf2 !important;
 }
 
 /* Drawer de Material de Apoio */
-:root[data-theme="dark"] .apoio-drawer,
+:root[data-theme="blue"] .apoio-drawer,
 :root[data-theme="system"] .apoio-drawer {
     background: #12232c !important;
     color: #eef5f8 !important;
 }
 
 /* Barra de seleção inferior */
-:root[data-theme="dark"] .selection-bar,
+:root[data-theme="blue"] .selection-bar,
 :root[data-theme="system"] .selection-bar {
     background: #29465a !important;
     color: #ffffff !important;
 }
 
-:root[data-theme="dark"] .selection-bar button,
+:root[data-theme="blue"] .selection-bar button,
 :root[data-theme="system"] .selection-bar button,
-:root[data-theme="dark"] .selection-bar span,
+:root[data-theme="blue"] .selection-bar span,
 :root[data-theme="system"] .selection-bar span {
     color: #ffffff !important;
 }
@@ -2566,7 +2566,7 @@ input[type="checkbox"] {
    1) PLANO — BADGE "ATRASADO"
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] .delay-badge,
+:root[data-theme="blue"] .delay-badge,
 :root[data-theme="system"] .delay-badge {
     display: inline-block !important;
     color: #ff8b82 !important;
@@ -2588,7 +2588,7 @@ input[type="checkbox"] {
    Aqui damos uma cor própria e mais luminosa para o dark.
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] #plan-details-content .card > div > div:nth-child(2),
+:root[data-theme="blue"] #plan-details-content .card > div > div:nth-child(2),
 :root[data-theme="system"] #plan-details-content .card > div > div:nth-child(2) {
     color: #9ed7fa !important;
     font-weight: 600 !important;
@@ -2596,20 +2596,20 @@ input[type="checkbox"] {
 }
 
 /* Referência clicável */
-:root[data-theme="dark"] #plan-details-content .card > div > div:nth-child(2)[onclick],
+:root[data-theme="blue"] #plan-details-content .card > div > div:nth-child(2)[onclick],
 :root[data-theme="system"] #plan-details-content .card > div > div:nth-child(2)[onclick] {
     color: #9ed7fa !important;
 }
 
 /* Data do dia continua secundária, mas legível */
-:root[data-theme="dark"] #plan-details-content .card > div > div:first-child,
+:root[data-theme="blue"] #plan-details-content .card > div > div:first-child,
 :root[data-theme="system"] #plan-details-content .card > div > div:first-child {
     color: #aebfc8 !important;
 }
 
 /* Quando o dia estiver atrasado, o vermelho permanece sem
    ficar apagado sobre o fundo escuro. */
-:root[data-theme="dark"] #plan-details-content .card > div > div:first-child[style*="e74c3c"],
+:root[data-theme="blue"] #plan-details-content .card > div > div:first-child[style*="e74c3c"],
 :root[data-theme="system"] #plan-details-content .card > div > div:first-child[style*="e74c3c"] {
     color: #ff8178 !important;
 }
@@ -2622,7 +2622,7 @@ input[type="checkbox"] {
    equivalente ao restante do app.
    ---------------------------------------------------------- */
 
-:root[data-theme="dark"] .grid-item,
+:root[data-theme="blue"] .grid-item,
 :root[data-theme="system"] .grid-item {
     background: #142832 !important;
     border: 1px solid #46606f !important;
@@ -2632,7 +2632,7 @@ input[type="checkbox"] {
     box-shadow: none !important;
 }
 
-:root[data-theme="dark"] .grid-item:active,
+:root[data-theme="blue"] .grid-item:active,
 :root[data-theme="system"] .grid-item:active {
     background: #29485b !important;
     border-color: #78c8f5 !important;
@@ -2640,14 +2640,14 @@ input[type="checkbox"] {
 }
 
 /* Botão "Capítulos" / "Voltar" dentro do seletor */
-:root[data-theme="dark"] #modal-body .btn-min,
+:root[data-theme="blue"] #modal-body .btn-min,
 :root[data-theme="system"] #modal-body .btn-min {
     background: #182f3c !important;
     border-color: #557180 !important;
     color: #a8dafa !important;
 }
 
-:root[data-theme="dark"] #modal-body .btn-min:active,
+:root[data-theme="blue"] #modal-body .btn-min:active,
 :root[data-theme="system"] #modal-body .btn-min:active {
     background: #29485b !important;
     border-color: #78c8f5 !important;
@@ -2655,20 +2655,20 @@ input[type="checkbox"] {
 }
 
 /* Nome do livro/capítulo no topo do seletor */
-:root[data-theme="dark"] #modal-title,
+:root[data-theme="blue"] #modal-title,
 :root[data-theme="system"] #modal-title {
     color: #9ed7fa !important;
 }
 
 /* Lista de livros no primeiro nível do seletor */
-:root[data-theme="dark"] #modal-body .list-item,
+:root[data-theme="blue"] #modal-body .list-item,
 :root[data-theme="system"] #modal-body .list-item {
     color: #edf5f8 !important;
     border-bottom-color: #304955 !important;
     background: transparent !important;
 }
 
-:root[data-theme="dark"] #modal-body .list-item span:last-child,
+:root[data-theme="blue"] #modal-body .list-item span:last-child,
 :root[data-theme="system"] #modal-body .list-item span:last-child {
     color: #8fcdf0 !important;
 }
@@ -2678,7 +2678,7 @@ input[type="checkbox"] {
    ---------------------------------------------------------- */
 
 @media (max-width: 600px) {
-    :root[data-theme="dark"] .grid-item,
+    :root[data-theme="blue"] .grid-item,
     :root[data-theme="system"] .grid-item {
         min-height: 62px;
         display: flex;
@@ -2687,7 +2687,7 @@ input[type="checkbox"] {
         color: #a8dafa !important;
     }
 
-    :root[data-theme="dark"] #plan-details-content .card > div > div:nth-child(2),
+    :root[data-theme="blue"] #plan-details-content .card > div > div:nth-child(2),
     :root[data-theme="system"] #plan-details-content .card > div > div:nth-child(2) {
         color: #a5d9f8 !important;
     }
@@ -2737,17 +2737,814 @@ input[type="checkbox"] {
     color: #f4f7fa;
 }
 
+/* ==========================================================
+   TEMA ROSA — versão escura
+   ========================================================== */
 
-/* =========================================================
-   AJUSTE DOS TÍTULOS DAS PERÍCOPES
-   ========================================================= */
+:root[data-theme="pink"] {
+    color-scheme: dark;
 
+    --bg: #24171f;
+    --card: #302029;
+    --text: #fff3f8;
+
+    --surface-0: #24171f;
+    --surface-1: #302029;
+    --surface-2: #382630;
+    --surface-3: #422d38;
+
+    --text-main: #fff3f8;
+    --text-secondary: #e9cdd9;
+    --muted: #c9a9b8;
+
+    --primary: #e58ab2;
+    --primary-dark: #c96d96;
+    --primary-light: #f1a9c8;
+
+    --border: #5a3b4a;
+    --border-soft: #4a303d;
+
+    --control-bg: #34232c;
+    --control-border: #5a3b4a;
+    --control-text: #fff3f8;
+
+    --input-bg: #34232c;
+    --input-text: #fff3f8;
+
+    --en-color: #d6b4c5;
+    --reader-saved-bg: #3b2631;
+    --reader-note-bg: #43303a;
+}
+
+:root[data-theme="pink"] input,
+:root[data-theme="pink"] textarea {
+    background: var(--input-bg);
+    color: var(--input-text);
+    border-color: var(--control-border);
+}
+
+:root[data-theme="pink"] input::placeholder,
+:root[data-theme="pink"] textarea::placeholder {
+    color: var(--muted);
+}
+
+:root[data-theme="pink"] select {
+    background: var(--control-bg);
+    color: var(--control-text);
+    border-color: var(--control-border);
+}
+
+:root[data-theme="pink"] .config-segmented {
+    background: var(--surface-2);
+}
+
+:root[data-theme="pink"] .config-segmented button {
+    color: var(--text-secondary);
+}
+
+:root[data-theme="pink"] .config-segmented button.active {
+    background: var(--primary);
+    color: #2b1822;
+}
+
+:root[data-theme="pink"] .config-icon-btn,
+:root[data-theme="pink"] .config-reset-btn {
+    background: var(--card);
+    color: var(--primary);
+    border-color: var(--border);
+}
+
+:root[data-theme="pink"] .verse.has-saved {
+    background-color: #3b2631;
+}
+
+:root[data-theme="pink"] .verse.has-note {
+    background-color: #43303a;
+}
+
+:root[data-theme="pink"] .note-box {
+    background: #43303a;
+}
+
+
+/* ==========================================================
+   PERÍCOPES — título editorial
+   ========================================================== */
 .pericope-header {
-    margin-top: 30px;
-    margin-bottom: 18px;
-    padding-left: 18px;
+    margin-top: 30px !important;
+    margin-bottom: 18px !important;
+    padding-left: 18px !important;
 }
 
 .pericope-title {
-    font-style: italic;
+    font-style: italic !important;
+    font-weight: 600 !important;
 }
+
+/* ==========================================================
+   MATRIZ FINAL DE TEMAS — 4 VARIAÇÕES
+   Padrão = claro + azul
+   Azul = escuro + azul
+   Rosa claro = claro + rosa
+   Rosa = escuro + rosa
+   ========================================================== */
+
+/* -------------------------
+   PALETA ROSA CLARA
+   ------------------------- */
+:root[data-theme="pink-light"] {
+    color-scheme: light;
+
+    --primary: #b84f78;
+    --secondary: #d56b98;
+
+    --bg: #fffafd;
+    --card: #ffffff;
+    --text: #33262d;
+
+    --surface-0: #fffafd;
+    --surface-1: #ffffff;
+    --surface-2: #fff2f7;
+    --surface-3: #f9e3ec;
+
+    --border: #e8cbd7;
+    --border-soft: #f1dfe7;
+
+    --text-main: #33262d;
+    --text-muted: #795f6b;
+    --text-subtle: #9b7f8b;
+
+    --control-bg: #ffffff;
+    --control-border: #dfc2cf;
+    --control-text: #33262d;
+
+    --accent: rgba(213,107,152,.16);
+    --note-bg: #fffde7;
+    --note-border: #f1c40f;
+
+    --orig-color: #a53f50;
+    --pt-color: #33262d;
+    --en-color: #795f6b;
+
+    --reader-saved-bg: #e9f8ee;
+    --reader-note-bg: #fffde7;
+}
+
+/* -------------------------
+   PALETA ROSA ESCURA
+   ------------------------- */
+:root[data-theme="pink"] {
+    color-scheme: dark;
+
+    --primary: #e58ab2;
+    --secondary: #f0a1c3;
+
+    --bg: #24171f;
+    --card: #302029;
+    --text: #fff3f8;
+
+    --surface-0: #24171f;
+    --surface-1: #302029;
+    --surface-2: #382630;
+    --surface-3: #422d38;
+
+    --border: #5a3b4a;
+    --border-soft: #4a303d;
+
+    --text-main: #fff3f8;
+    --text-muted: #d4b5c3;
+    --text-subtle: #b895a6;
+
+    --control-bg: #34232c;
+    --control-border: #765063;
+    --control-text: #fff3f8;
+
+    --accent: #4b293b;
+    --note-bg: #43303a;
+    --note-border: #f1c40f;
+
+    --orig-color: #ff9eb7;
+    --pt-color: #fff3f8;
+    --en-color: #d6b4c5;
+
+    --reader-saved-bg: #3b2631;
+    --reader-note-bg: #43303a;
+
+    --dark-selected-bg: #563044;
+    --dark-selected-border: #f09bc0;
+}
+
+/* ----------------------------------------------------------
+   ROSA CLARO — elementos de identidade
+   ---------------------------------------------------------- */
+:root[data-theme="pink-light"] header {
+    background: var(--primary) !important;
+}
+
+:root[data-theme="pink-light"] nav button.active {
+    color: var(--primary) !important;
+}
+
+:root[data-theme="pink-light"] nav button.active::after {
+    background: var(--primary) !important;
+}
+
+:root[data-theme="pink-light"] h1,
+:root[data-theme="pink-light"] h2,
+:root[data-theme="pink-light"] h3,
+:root[data-theme="pink-light"] h4,
+:root[data-theme="pink-light"] .chapter-header .chap-number,
+:root[data-theme="pink-light"] .dialog-title,
+:root[data-theme="pink-light"] .drawer-header h3,
+:root[data-theme="pink-light"] .drawer-close,
+:root[data-theme="pink-light"] .modal-header h3,
+:root[data-theme="pink-light"] .modal-header button,
+:root[data-theme="pink-light"] .theme-group-header {
+    color: var(--primary) !important;
+}
+
+:root[data-theme="pink-light"] .apoio-cat-btn,
+:root[data-theme="pink-light"] .apoio-voltar,
+:root[data-theme="pink-light"] .apoio-section-title,
+:root[data-theme="pink-light"] .apoio-subtitle,
+:root[data-theme="pink-light"] .apoio-item-title,
+:root[data-theme="pink-light"] .comparison-reference,
+:root[data-theme="pink-light"] .font-size-value,
+:root[data-theme="pink-light"] .config-icon-btn,
+:root[data-theme="pink-light"] .config-reset-btn,
+:root[data-theme="pink-light"] .btn-min:not(.danger),
+:root[data-theme="pink-light"] .ref-right,
+:root[data-theme="pink-light"] .saved-date {
+    color: var(--primary) !important;
+}
+
+:root[data-theme="pink-light"] .apoio-cat-btn {
+    border-color: var(--border) !important;
+    background: var(--surface-2) !important;
+}
+
+:root[data-theme="pink-light"] .apoio-cat-btn strong,
+:root[data-theme="pink-light"] .apoio-item-title,
+:root[data-theme="pink-light"] .apoio-table th {
+    color: var(--primary) !important;
+}
+
+:root[data-theme="pink-light"] .apoio-text,
+:root[data-theme="pink-light"] .apoio-list,
+:root[data-theme="pink-light"] .apoio-note,
+:root[data-theme="pink-light"] .apoio-table td,
+:root[data-theme="pink-light"] .dictionary-summary,
+:root[data-theme="pink-light"] .dictionary-note,
+:root[data-theme="pink-light"] .expandable-text,
+:root[data-theme="pink-light"] .comparison-content {
+    color: var(--text-main) !important;
+}
+
+:root[data-theme="pink-light"] .apoio-table th {
+    background: var(--surface-3) !important;
+    border-bottom-color: var(--border) !important;
+}
+
+:root[data-theme="pink-light"] .apoio-table td {
+    border-bottom-color: var(--border-soft) !important;
+}
+
+:root[data-theme="pink-light"] .apoio-note {
+    background: var(--surface-2) !important;
+    border-left-color: #b98a9d !important;
+}
+
+:root[data-theme="pink-light"] .grid-item {
+    background: var(--surface-1) !important;
+    border-color: var(--border) !important;
+    color: var(--primary) !important;
+}
+
+:root[data-theme="pink-light"] .grid-item:active,
+:root[data-theme="pink-light"] #modal-body .btn-min:active {
+    background: var(--surface-3) !important;
+    border-color: var(--primary) !important;
+}
+
+:root[data-theme="pink-light"] #modal-title {
+    color: var(--primary) !important;
+}
+
+:root[data-theme="pink-light"] #modal-body .list-item span:last-child {
+    color: var(--secondary) !important;
+}
+
+:root[data-theme="pink-light"] #plan-result {
+    background: var(--surface-2) !important;
+    border-color: var(--border) !important;
+    color: var(--primary) !important;
+}
+
+:root[data-theme="pink-light"] #search-results .card {
+    background: var(--surface-1) !important;
+    border-color: var(--border) !important;
+    color: var(--text-main) !important;
+}
+
+:root[data-theme="pink-light"] #search-results .card p {
+    color: var(--text-main) !important;
+}
+
+:root[data-theme="pink-light"] #search-results .card p:first-child,
+:root[data-theme="pink-light"] #search-results > h3 {
+    color: var(--primary) !important;
+}
+
+:root[data-theme="pink-light"] #search-results > p {
+    color: var(--text-muted) !important;
+}
+
+/* ----------------------------------------------------------
+   ROSA ESCURO — eliminar todo resíduo azul
+   ---------------------------------------------------------- */
+:root[data-theme="pink"] header {
+    background: #63334c !important;
+}
+
+:root[data-theme="pink"] nav button {
+    color: #d2b4c1 !important;
+}
+
+:root[data-theme="pink"] nav button.active {
+    color: #f2a7c7 !important;
+}
+
+:root[data-theme="pink"] nav button.active::after {
+    background: #ef9fc2 !important;
+}
+
+:root[data-theme="pink"] h1,
+:root[data-theme="pink"] h2,
+:root[data-theme="pink"] h3,
+:root[data-theme="pink"] h4,
+:root[data-theme="pink"] .chapter-header .chap-number,
+:root[data-theme="pink"] .dialog-title,
+:root[data-theme="pink"] .drawer-header h3,
+:root[data-theme="pink"] .drawer-close,
+:root[data-theme="pink"] .modal-header h3,
+:root[data-theme="pink"] .modal-header button,
+:root[data-theme="pink"] .theme-group-header {
+    color: #f0a5c5 !important;
+}
+
+:root[data-theme="pink"] .apoio-cat-btn,
+:root[data-theme="pink"] .apoio-voltar,
+:root[data-theme="pink"] .apoio-section-title,
+:root[data-theme="pink"] .apoio-subtitle,
+:root[data-theme="pink"] .apoio-item-title,
+:root[data-theme="pink"] .comparison-reference,
+:root[data-theme="pink"] .font-size-value,
+:root[data-theme="pink"] .config-icon-btn,
+:root[data-theme="pink"] .config-reset-btn,
+:root[data-theme="pink"] .btn-min:not(.danger),
+:root[data-theme="pink"] .ref-right,
+:root[data-theme="pink"] .saved-date {
+    color: #efa1c2 !important;
+}
+
+:root[data-theme="pink"] .apoio-cat-btn {
+    background: #382530 !important;
+    border-color: #644254 !important;
+    color: #fff1f7 !important;
+}
+
+:root[data-theme="pink"] .apoio-cat-btn strong,
+:root[data-theme="pink"] .apoio-item-title,
+:root[data-theme="pink"] .apoio-table th {
+    color: #f1abc9 !important;
+}
+
+:root[data-theme="pink"] .apoio-cat-btn small,
+:root[data-theme="pink"] .apoio-ref {
+    color: #c9aab8 !important;
+}
+
+:root[data-theme="pink"] .apoio-text,
+:root[data-theme="pink"] .apoio-list,
+:root[data-theme="pink"] .apoio-note,
+:root[data-theme="pink"] .apoio-table td,
+:root[data-theme="pink"] .dictionary-summary,
+:root[data-theme="pink"] .dictionary-note,
+:root[data-theme="pink"] .expandable-text,
+:root[data-theme="pink"] .comparison-content {
+    color: #f4e7ed !important;
+}
+
+:root[data-theme="pink"] .apoio-table th {
+    background: #49303d !important;
+    border-bottom-color: #694658 !important;
+}
+
+:root[data-theme="pink"] .apoio-table td {
+    border-bottom-color: #523746 !important;
+}
+
+:root[data-theme="pink"] .apoio-note {
+    background: #382731 !important;
+    border-left-color: #8f6878 !important;
+}
+
+:root[data-theme="pink"] .grid-item {
+    background: #34242d !important;
+    border-color: #684656 !important;
+    color: #efa6c5 !important;
+}
+
+:root[data-theme="pink"] .grid-item:active,
+:root[data-theme="pink"] #modal-body .btn-min:active {
+    background: #543343 !important;
+    border-color: #e9a0c0 !important;
+    color: #fff !important;
+}
+
+:root[data-theme="pink"] #modal-title {
+    color: #f0a5c5 !important;
+}
+
+:root[data-theme="pink"] #modal-body .list-item {
+    color: #f5eaf0 !important;
+    border-bottom-color: #513644 !important;
+}
+
+:root[data-theme="pink"] #modal-body .list-item span:last-child {
+    color: #d995b4 !important;
+}
+
+:root[data-theme="pink"] #plan-result {
+    background: #382731 !important;
+    border-color: #684657 !important;
+    color: #efa6c5 !important;
+}
+
+:root[data-theme="pink"] #search-results .card {
+    background: #30232b !important;
+    border-color: #614252 !important;
+    color: #f5eaf0 !important;
+}
+
+:root[data-theme="pink"] #search-results .card p {
+    color: #f0e4ea !important;
+}
+
+:root[data-theme="pink"] #search-results .card p:first-child,
+:root[data-theme="pink"] #search-results > h3 {
+    color: #f0a5c5 !important;
+}
+
+:root[data-theme="pink"] #search-results > p {
+    color: #cbb1bd !important;
+}
+
+/* Seleção do versículo: rosa, não azul.
+   Notas e salvos continuam amarelo/verde semanticamente. */
+:root[data-theme="pink-light"] .verse.selected,
+:root[data-theme="pink-light"] .verse.selected.has-note,
+:root[data-theme="pink-light"] .verse.selected.has-saved,
+:root[data-theme="pink-light"] .verse.selected.has-note.has-saved {
+    background: #f8dce8 !important;
+    color: #33262d !important;
+    border-left-color: #c85d89 !important;
+}
+
+:root[data-theme="pink"] .verse.selected,
+:root[data-theme="pink"] .verse.selected.has-note,
+:root[data-theme="pink"] .verse.selected.has-saved,
+:root[data-theme="pink"] .verse.selected.has-note.has-saved {
+    background: #563044 !important;
+    color: #fff3f8 !important;
+    border-left-color: #ef9fc2 !important;
+}
+
+:root[data-theme="pink-light"] .verse.selected .verse-num {
+    color: #9d496e !important;
+}
+
+:root[data-theme="pink"] .verse.selected .verse-num {
+    color: #f0b4cc !important;
+}
+
+/* A seleção com Nota/Salvo conserva o amarelo como marca semântica. */
+:root[data-theme="pink-light"] .verse.selected.has-note,
+:root[data-theme="pink-light"] .verse.selected.has-note.has-saved {
+    border-left-color: #f1c40f !important;
+}
+
+:root[data-theme="pink"] .verse.selected.has-note,
+:root[data-theme="pink"] .verse.selected.has-note.has-saved {
+    border-left-color: #f4cf32 !important;
+}
+
+:root[data-theme="pink-light"] .verse.has-note,
+:root[data-theme="pink-light"] .note-box,
+:root[data-theme="pink"] .verse.has-note,
+:root[data-theme="pink"] .note-box {
+    border-left-color: #f1c40f !important;
+}
+
+:root[data-theme="pink-light"] .verse.has-saved {
+    border-left-color: #27ae60 !important;
+}
+
+/* Busca: referências deixam de herdar azul. */
+:root[data-theme="pink-light"] #search-results .card p:first-child,
+:root[data-theme="pink"] #search-results .card p:first-child {
+    color: var(--primary) !important;
+}
+
+/* Material de apoio e demais textos não devem receber azul legado. */
+:root[data-theme="pink-light"] .comparison-reference,
+:root[data-theme="pink"] .comparison-reference {
+    color: var(--primary) !important;
+}
+
+/* Campos */
+:root[data-theme="pink-light"] input:not([type="checkbox"]):not([type="radio"]),
+:root[data-theme="pink-light"] select,
+:root[data-theme="pink-light"] textarea,
+:root[data-theme="pink-light"] #apoio-search,
+:root[data-theme="pink-light"] #search-input {
+    background: #ffffff !important;
+    color: #33262d !important;
+    border-color: #dfc2cf !important;
+}
+
+:root[data-theme="pink"] input:not([type="checkbox"]):not([type="radio"]),
+:root[data-theme="pink"] select,
+:root[data-theme="pink"] textarea,
+:root[data-theme="pink"] #apoio-search,
+:root[data-theme="pink"] #search-input {
+    background: #34232c !important;
+    color: #fff3f8 !important;
+    border-color: #765063 !important;
+}
+
+:root[data-theme="pink"] input::placeholder,
+:root[data-theme="pink"] textarea::placeholder,
+:root[data-theme="pink"] #apoio-search::placeholder,
+:root[data-theme="pink"] #search-input::placeholder {
+    color: #c9aab8 !important;
+}
+
+/* Configuração */
+:root[data-theme="pink-light"] .config-segmented {
+    background: #f9e3ec !important;
+}
+
+:root[data-theme="pink-light"] .config-segmented button.active {
+    background: var(--primary) !important;
+    color: #fff !important;
+}
+
+:root[data-theme="pink"] .config-segmented {
+    background: #422d38 !important;
+}
+
+:root[data-theme="pink"] .config-segmented button.active {
+    background: #b95f88 !important;
+    color: #fff !important;
+}
+
+/* Planos — "Selecionar livros" e controles. */
+:root[data-theme="pink-light"] .plan-testament-label,
+:root[data-theme="pink-light"] .plan-block-label,
+:root[data-theme="pink-light"] .book-item {
+    color: var(--text-main) !important;
+}
+
+:root[data-theme="pink-light"] .plan-testament-label {
+    border-bottom-color: var(--border) !important;
+}
+
+:root[data-theme="pink"] .plan-testament-label,
+:root[data-theme="pink"] .plan-block-label,
+:root[data-theme="pink"] .book-item {
+    color: #f2e7ed !important;
+}
+
+:root[data-theme="pink"] .plan-testament-label {
+    border-bottom-color: #5a3b4a !important;
+}
+
+/* Cabeçalho do app permanece claro nos quatro temas. */
+:root[data-theme="default"] #app-title,
+:root[data-theme="blue"] #app-title,
+:root[data-theme="pink-light"] #app-title,
+:root[data-theme="pink"] #app-title {
+    color: #f4f7fa !important;
+}
+
+/* Splash: tema claro rosa usa título rosa; temas escuros usam título claro. */
+:root[data-theme="pink-light"] .splash-title {
+    color: #b84f78 !important;
+}
+
+:root[data-theme="pink"] .splash-title {
+    color: #f4d7e4 !important;
+}
+
+/* ==========================================================
+   COMPATIBILIDADE — "system" deixa de ser um tema utilizável.
+   Se algum dado antigo ainda estiver salvo como system, ele
+   passa a se comportar como Padrão até o app.js normalizar.
+   ========================================================== */
+:root[data-theme="system"] {
+    --bg: #fdfdfd;
+    --card: #ffffff;
+    --text: #222b32;
+    --surface-0: #fdfdfd;
+    --surface-1: #ffffff;
+    --surface-2: #f4f7fa;
+    --surface-3: #e9eef3;
+    --border: #dfe5ea;
+    --border-soft: #edf0f2;
+    --text-main: #222b32;
+    --text-muted: #687782;
+    --text-subtle: #8a969e;
+    --control-bg: #ffffff;
+    --control-border: #d8e0e6;
+    --control-text: #25313a;
+}
+
+/* A cor de destaque de foco acompanha a identidade do tema. */
+:root[data-theme="pink-light"] input:focus,
+:root[data-theme="pink-light"] select:focus,
+:root[data-theme="pink-light"] textarea:focus,
+:root[data-theme="pink-light"] #apoio-search:focus,
+:root[data-theme="pink-light"] #search-input:focus {
+    border-color: #d56b98 !important;
+    box-shadow: 0 0 0 2px rgba(213,107,152,.18) !important;
+}
+
+:root[data-theme="pink"] input:focus,
+:root[data-theme="pink"] select:focus,
+:root[data-theme="pink"] textarea:focus,
+:root[data-theme="pink"] #apoio-search:focus,
+:root[data-theme="pink"] #search-input:focus {
+    border-color: #f0a1c3 !important;
+    box-shadow: 0 0 0 2px rgba(240,161,195,.20) !important;
+}
+
+
+/* ==========================================================
+   AJUSTES FINAIS — TEMA ROSA
+   Somente:
+   1. botão ativo da navegação "Ler"
+   2. botão "Instalar aplicativo"
+   ========================================================== */
+
+/* Tema Rosa claro */
+:root[data-theme="pink-light"] nav #nav-read.active {
+    color: #b84f78 !important;
+}
+
+:root[data-theme="pink-light"] nav #nav-read.active::after {
+    background: #b84f78 !important;
+}
+
+/* Tema Rosa escuro */
+:root[data-theme="pink"] nav #nav-read.active {
+    color: #f0a5c5 !important;
+}
+
+:root[data-theme="pink"] nav #nav-read.active::after {
+    background: #f0a5c5 !important;
+}
+
+/* Botão "Instalar aplicativo" — Rosa claro */
+:root[data-theme="pink-light"] .config-action-button {
+    background: #b84f78 !important;
+    border-color: #b84f78 !important;
+    color: #ffffff !important;
+}
+
+:root[data-theme="pink-light"] .config-action-button:hover {
+    background: #a7446c !important;
+    border-color: #a7446c !important;
+}
+
+/* Botão "Instalar aplicativo" — Rosa escuro */
+:root[data-theme="pink"] .config-action-button {
+    background: #b95f88 !important;
+    border-color: #d982a8 !important;
+    color: #ffffff !important;
+}
+
+:root[data-theme="pink"] .config-action-button:hover {
+    background: #c96d96 !important;
+    border-color: #e58ab2 !important;
+}
+
+
+/* ==========================================================
+   CORREÇÃO — NAVEGAÇÃO DA ABA LER NO TEMA ROSA
+   ========================================================== */
+
+/* Rosa claro */
+:root[data-theme="pink-light"] nav button.active,
+:root[data-theme="pink-light"] nav #nav-read.active {
+    color: #b84f78 !important;
+}
+
+:root[data-theme="pink-light"] nav button.active::after,
+:root[data-theme="pink-light"] nav #nav-read.active::after {
+    background: #b84f78 !important;
+}
+
+/* Rosa escuro */
+:root[data-theme="pink"] nav button.active,
+:root[data-theme="pink"] nav #nav-read.active {
+    color: #f0a5c5 !important;
+}
+
+:root[data-theme="pink"] nav button.active::after,
+:root[data-theme="pink"] nav #nav-read.active::after {
+    background: #f0a5c5 !important;
+}
+
+
+/* ==========================================================
+   AJUSTE FINAL — ROSA
+   1. Navegação entre livros (pill)
+   2. Contorno do versículo selecionado
+   ========================================================== */
+
+/* -------------------------
+   ROSA ESCURO
+   ------------------------- */
+:root[data-theme="pink"] .reader-pill {
+    background: #65364f !important;
+    color: #ffffff !important;
+}
+
+:root[data-theme="pink"] .reader-pill button,
+:root[data-theme="pink"] .reader-pill .pill-title {
+    color: #ffffff !important;
+}
+
+:root[data-theme="pink"] .reader-pill button:active {
+    background: rgba(255,255,255,0.12) !important;
+}
+
+/* Contorno do versículo selecionado — rosa */
+:root[data-theme="pink"] .verse.selected,
+:root[data-theme="pink"] .verse.selected.has-note,
+:root[data-theme="pink"] .verse.selected.has-saved,
+:root[data-theme="pink"] .verse.selected.has-note.has-saved {
+    border-left-color: #e58ab2 !important;
+}
+
+/* -------------------------
+   ROSA CLARO
+   ------------------------- */
+:root[data-theme="pink-light"] .reader-pill {
+    background: #b84f78 !important;
+    color: #ffffff !important;
+}
+
+:root[data-theme="pink-light"] .reader-pill button,
+:root[data-theme="pink-light"] .reader-pill .pill-title {
+    color: #ffffff !important;
+}
+
+:root[data-theme="pink-light"] .reader-pill button:active {
+    background: rgba(255,255,255,0.12) !important;
+}
+
+:root[data-theme="pink-light"] .verse.selected,
+:root[data-theme="pink-light"] .verse.selected.has-note,
+:root[data-theme="pink-light"] .verse.selected.has-saved,
+:root[data-theme="pink-light"] .verse.selected.has-note.has-saved {
+    border-left-color: #b84f78 !important;
+}
+
+
+/* ==========================================================
+   ÚLTIMO AJUSTE — CONTORNO DE ESMAECER NO TEMA ROSA
+   O azul vinha da animação global .jump-highlight.
+   ========================================================== */
+
+@keyframes verseJumpHighlightPink {
+    0% {
+        outline: 3px solid rgba(229, 138, 178, 0.70);
+        outline-offset: 3px;
+    }
+
+    100% {
+        outline: 3px solid rgba(229, 138, 178, 0);
+        outline-offset: 3px;
+    }
+}
+
+:root[data-theme="pink"] .jump-highlight {
+    animation-name: verseJumpHighlightPink !important;
+}
+
+:root[data-theme="pink-light"] .jump-highlight {
+    animation-name: verseJumpHighlightPink !important;
+}
+

@@ -272,30 +272,9 @@
 
                     <div class="config-segmented">
 
-                        <button
-                            type="button"
-                            data-theme="light"
-                            onclick="definirTema('light')"
-                        >
-                            Claro
-                        </button>
-
-                        <button
-                            type="button"
-                            data-theme="dark"
-                            onclick="definirTema('dark')"
-                        >
-                            Escuro
-                        </button>
-
-                        <button
-                            type="button"
-                            data-theme="system"
-                            onclick="definirTema('system')"
-                        >
-                            Sistema
-                        </button>
-
+<button type="button" data-theme="default" onclick="definirTema('default')">Padrão</button>
+<button type="button" data-theme="blue" onclick="definirTema('blue')">Azul</button>
+<button type="button" data-theme="pink" onclick="definirTema('pink')">Rosa</button>
                     </div>
 
                 </div>
@@ -309,8 +288,11 @@
 
             <div class="config-card">
                 <div class="config-row">
+
                     <div class="config-row-info">
-                        <strong>Instalar aplicativo</strong>
+                        <strong id="pwa-install-label">
+                            Instalar aplicativo
+                        </strong>
                         <!--span>Instale a Bíblia no seu dispositivo para acesso rápido.</span--->
                     </div>
 
@@ -322,6 +304,7 @@
                     >
                         Instalar
                     </button>
+
                 </div>
             </div>
         </section>
