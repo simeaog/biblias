@@ -6,7 +6,7 @@ const versoesDisponiveis = [
     { id: 'ara.json', abbrev: 'ARA', nome: 'Almeida Revista e Atualizada', tipo: 'translation' },
     { id: 'arc.json', abbrev: 'ARC', nome: 'Almeida Revista e Corrigida' , tipo: 'translation'},
     { id: 'as21.json', abbrev: 'AS21', nome: 'Almeida Século 21' , tipo: 'translation'},
-    { id: 'mens.json', abbrev: 'MENS', nome: 'A Mensagem', tipo: 'paraphrase'},
+    { id: 'MENS.json', abbrev: 'MENS', nome: 'A Mensagem', tipo: 'paraphrase'},
     { id: 'naa.json', abbrev: 'NAA', nome: 'Nova Almeida Atualizada', tipo: 'translation'},
     { id: 'ntlh.json', abbrev: 'NTLH', nome: 'Nova Tradução na Linguagem de Hoje', tipo: 'translation' },
     { id: 'nvi.json', abbrev: 'NVI', nome: 'Nova Versão Internacional', tipo: 'translation' },
@@ -848,11 +848,14 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         const last = day.endItem;
         const b1 = getAbbrev(first.bookName);
         const b2 = getAbbrev(last.bookName);
+        const isPericopePlan = day.type === 'pericopes';
         const isVersePlan = day.type === 'verses' || first.verseIdx !== undefined;
 
-        if (isVersePlan) {
-            const startRef = `${b1} ${first.chapIdx + 1}:${first.verseIdx + 1}`;
-            const endRef = `${b2} ${last.chapIdx + 1}:${last.verseIdx + 1}`;
+        if (isPericopePlan) {
+            const startVerse = Number(first.verseStart ?? (first.verseIdx + 1));
+            const endVerse = Number(last.verseEnd ?? (last.verseIdx + 1));
+            const startRef = `${b1} ${first.chapIdx + 1}:${startVerse}`;
+            const endRef = `${b2} ${last.chapIdx + 1}:${endVerse}`;
             return startRef === endRef ? `Leitura de ${startRef}` : `Leitura de ${startRef} - ${endRef}`;
         }
 
@@ -885,8 +888,15 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         const start = (bIdx === first.bookIdx && cIdx === first.chapIdx && first.verseIdx !== undefined)
             ? first.verseIdx
             : 0;
-        const end = (bIdx === last.bookIdx && cIdx === last.chapIdx && last.verseIdx !== undefined)
-            ? Math.min(last.verseIdx, verses.length - 1)
+        const end = (bIdx === last.bookIdx && cIdx === last.chapIdx)
+            ? Math.min(
+                last.verseEnd !== undefined
+                    ? Number(last.verseEnd) - 1
+                    : last.verseIdx !== undefined
+                        ? last.verseIdx
+                        : verses.length - 1,
+                verses.length - 1
+            )
             : verses.length - 1;
 
         return start <= end ? { start, end } : null;
@@ -903,7 +913,10 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         const bounds = getPlanVerseBounds(getReaderContext(), bIdx, cIdx);
         if (!bounds || !isPlanLastChapter(bIdx, cIdx)) return false;
         const last = planReadingState.endItem;
-        return last.verseIdx === undefined || bounds.end === last.verseIdx;
+        const lastVerseIndex = last.verseEnd !== undefined
+            ? Number(last.verseEnd) - 1
+            : last.verseIdx;
+        return lastVerseIndex === undefined || bounds.end === lastVerseIndex;
     }
 
     async function carregarTraducaoPlano(versionId) {
@@ -2870,6 +2883,12 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
                 'btn-lang-menu'
             ).classList.add('hidden');
 
+            // O Material de Apoio pertence exclusivamente à aba Ler.
+            const btnApoioPlan = document.getElementById('btn-apoio');
+            if (btnApoioPlan) {
+                btnApoioPlan.classList.add('hidden');
+            }
+
             const planVersionLabel =
                 document.getElementById(
                     'plan-version-label'
@@ -3036,23 +3055,23 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     function openSearchResult(bIdx, cIdx, vIdx) {
 
         /*
-        * Informa ao renderChapter qual versículo
-        * deverá ser localizado depois da renderização.
+        * Busca -> Ler precisa preparar o capítulo ANTES de
+        * switchTab('read'), pois switchTab() renderiza o
+        * capítulo ativo. Assim evitamos uma segunda renderização
+        * que poderia consumir o pendingVerseScroll e depois
+        * executar um scroll para o topo.
         */
+        currentBook = bIdx;
+        currentChap = cIdx;
         pendingVerseScroll = vIdx;
 
-        /*
-        * renderChapter já:
-        *
-        * - muda para a aba Ler;
-        * - renderiza o capítulo;
-        * - faz o scroll;
-        * - aplica o destaque azul;
-        */
-        renderChapter(
-            bIdx,
-            cIdx
-        );
+        const tabRead = document.getElementById('tab-read');
+
+        if (tabRead && tabRead.classList.contains('active')) {
+            renderChapter(bIdx, cIdx);
+        } else {
+            switchTab('read');
+        }
     }
 
     // ==========================================
@@ -4314,8 +4333,55 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         document.getElementById('plan-detail-view').classList.toggle('hidden', view !== 'detail');
         if(view === 'create') calculatePlanPreview();
     }
-    function togglePlanSplit() { document.getElementById('lbl-pace').innerText = document.getElementById('plan-split').value === 'verses' ? 'Versículos por dia' : 'Capítulos por dia'; calculatePlanPreview(); }
-    function togglePlanMode() { const m = document.getElementById('plan-mode').value; document.getElementById('mode-dates').classList.toggle('hidden', m !== 'dates'); document.getElementById('mode-pace').classList.toggle('hidden', m !== 'pace'); calculatePlanPreview(); }
+    function togglePlanSplit() {
+        const split = document.getElementById('plan-split').value;
+        const mode = document.getElementById('plan-mode');
+        const pace = document.getElementById('plan-chapters-day');
+        const paceLabel = document.getElementById('lbl-pace');
+
+        const isPericope = split === 'pericopes';
+
+        // Perícopes são distribuídas automaticamente pelo número de dias.
+        // O usuário não define "capítulos por dia" nesse modo.
+        pace.disabled = isPericope;
+        paceLabel.innerText = isPericope
+            ? 'Quantidade por dia (calculada automaticamente)'
+            : split === 'verses'
+                ? 'Versículos por dia'
+                : 'Capítulos por dia';
+
+        const paceOption = mode.querySelector('option[value="pace"]');
+        if (paceOption) {
+            paceOption.disabled = isPericope;
+        }
+
+        if (isPericope) {
+            mode.value = 'dates';
+        }
+
+        togglePlanMode();
+    }
+
+    function togglePlanMode() {
+        const m = document.getElementById('plan-mode').value;
+        const split = document.getElementById('plan-split').value;
+
+        // Perícopes sempre usam o período definido por datas.
+        const effectiveMode =
+            split === 'pericopes' ? 'dates' : m;
+
+        document.getElementById('mode-dates').classList.toggle(
+            'hidden',
+            effectiveMode !== 'dates'
+        );
+
+        document.getElementById('mode-pace').classList.toggle(
+            'hidden',
+            effectiveMode !== 'pace'
+        );
+
+        calculatePlanPreview();
+    }
 
     function buildBookSelectionUI() {
         const container = document.getElementById('book-selection'); let html = '';
@@ -4344,7 +4410,13 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         if(sBooks.length === 0) return resDiv.innerText = "Selecione livros.";
         let tItems = 0; const sType = document.getElementById('plan-split').value;
         sBooks.forEach(bName => { const bIdx = bookNameIndexMap[normalizeStr(bName)]; if(bIdx !== undefined) { const b = bibleData[bIdx]; if(sType === 'chapters') tItems += b.chapters.length; else b.chapters.forEach(c => { tItems += getChapterVerses(c).length; }); } });
-        const mode = document.getElementById('plan-mode').value, sVal = document.getElementById('plan-start').value, lbl = sType === 'chapters' ? 'cap.' : 'vers.';
+        const mode = document.getElementById('plan-mode').value;
+        const sVal = document.getElementById('plan-start').value;
+        const lbl = sType === 'chapters'
+            ? 'cap.'
+            : sType === 'pericopes'
+                ? 'vers.'
+                : 'vers.';
         if(!sVal) return resDiv.innerText = `Total: ${tItems} ${lbl} selecionados.`;
         const start = new Date(sVal + "T00:00:00");
         if(mode === 'dates') {
@@ -4356,36 +4428,424 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         }
     }
 
-    async function generatePlan() {
-        const sBooks = Array.from(document.querySelectorAll('.plan-book-cb:checked')).map(cb => cb.value), sVal = document.getElementById('plan-start').value;
-        if(sBooks.length === 0 || !sVal) return showDialog({type:'alert', title:'Erro', msg:'Dados incompletos.'});
-        const sType = document.getElementById('plan-split').value; let flat = [];
-        sBooks.forEach(bName => {
+
+    function getPlanUnitWeight(item, type) {
+        if (type !== 'pericopes') return 1;
+        const start = Number(item?.verseStart ?? item?.verseIdx + 1);
+        const end = Number(item?.verseEnd ?? item?.verseIdx + 1);
+        return Number.isFinite(start) && Number.isFinite(end) && end >= start
+            ? (end - start + 1)
+            : 1;
+    }
+
+    function buildPericopeUnitsForChapter(book, cIdx, versionId, data = bibleData) {
+        const chapter = data?.[book?.__bookIndex ?? -1]?.chapters?.[cIdx];
+        const chapterVerses = getChapterVerses(chapter);
+        const totalVerses = chapterVerses.length;
+        if (!totalVerses) return [];
+
+        const raw = getPericopesForChapter(book, cIdx, versionId)
+            .map(p => ({
+                id: p?.id || null,
+                start: Number(p?.start_verse),
+                end: Number(p?.end_verse)
+            }))
+            .filter(p =>
+                Number.isInteger(p.start) &&
+                Number.isInteger(p.end) &&
+                p.start >= 1 &&
+                p.end >= p.start &&
+                p.start <= totalVerses
+            )
+            .map(p => ({
+                ...p,
+                end: Math.min(p.end, totalVerses)
+            }))
+            .sort((a, b) => a.start - b.start || a.end - b.end);
+
+        const units = [];
+        let cursor = 1;
+
+        raw.forEach(p => {
+            // Há traduções/arquivos de perícopes que deixam pequenos trechos
+            // sem título. Esses trechos continuam sendo leitura válida e
+            // tornam-se unidades indivisíveis de fallback.
+            if (p.start > cursor) {
+                units.push({
+                    kind: 'gap',
+                    bookIdx: book.__bookIndex,
+                    chapIdx: cIdx,
+                    verseStart: cursor,
+                    verseEnd: p.start - 1,
+                    bookName: book.name
+                });
+            }
+
+            // Evita sobreposição acidental no arquivo de perícopes.
+            const start = Math.max(p.start, cursor);
+            if (start <= p.end) {
+                units.push({
+                    kind: 'pericope',
+                    pericopeId: p.id,
+                    bookIdx: book.__bookIndex,
+                    chapIdx: cIdx,
+                    verseStart: start,
+                    verseEnd: p.end,
+                    verseIdx: start - 1,
+                    bookName: book.name
+                });
+                cursor = p.end + 1;
+            }
+        });
+
+        if (cursor <= totalVerses) {
+            units.push({
+                kind: 'gap',
+                bookIdx: book.__bookIndex,
+                chapIdx: cIdx,
+                verseStart: cursor,
+                verseEnd: totalVerses,
+                bookName: book.name
+            });
+        }
+
+        return units;
+    }
+
+    async function buildPlanUnits(sBooks, type, versionId, data = bibleData) {
+        const flat = [];
+
+        for (const bName of sBooks) {
             const bIdx = bookNameIndexMap[normalizeStr(bName)];
-            if(bIdx !== undefined) bibleData[bIdx].chapters.forEach((arr, cIdx) => {
-                if(sType === 'chapters') flat.push({ bookIdx: bIdx, chapIdx: cIdx, bookName: bibleData[bIdx].name });
-                else getChapterVerses(arr).forEach((_, vIdx) => flat.push({
+            if (bIdx === undefined || !data[bIdx]) continue;
+
+            const book = data[bIdx];
+            if (type === 'chapters') {
+                book.chapters.forEach((arr, cIdx) => {
+                    flat.push({
+                        bookIdx: bIdx,
+                        chapIdx: cIdx,
+                        bookName: book.name
+                    });
+                });
+                continue;
+            }
+
+            if (type === 'pericopes') {
+                const bookForPericopes = { ...book, __bookIndex: bIdx };
+                book.chapters.forEach((arr, cIdx) => {
+                    flat.push(...buildPericopeUnitsForChapter(
+                        bookForPericopes,
+                        cIdx,
+                        versionId,
+                        data
+                    ));
+                });
+                continue;
+            }
+
+            book.chapters.forEach((arr, cIdx) => {
+                getChapterVerses(arr).forEach((_, vIdx) => flat.push({
                     bookIdx: bIdx,
                     chapIdx: cIdx,
                     verseIdx: vIdx,
-                    bookName: bibleData[bIdx].name
+                    bookName: book.name
                 }));
             });
-        });
-        const mode = document.getElementById('plan-mode').value; let sched = [], cDate = new Date(sVal + "T00:00:00");
-        if(mode === 'dates') {
-            const eVal = document.getElementById('plan-end').value; if(!eVal) return;
-            let d = Math.ceil(Math.abs(new Date(eVal + "T00:00:00") - new Date(sVal + "T00:00:00"))/86400000)+1;
-            const bItems = Math.floor(flat.length/d); let ext = flat.length%d, ptr = 0;
-            for(let i=0; i<d; i++) { let count = bItems + (ext > 0 ? 1 : 0); ext--; if(count > 0 && ptr < flat.length) { sched.push({ date: new Date(cDate).toISOString(), startItem: flat[ptr], endItem: flat[ptr+count-1], type: sType, completed: false }); ptr+=count; } cDate.setDate(cDate.getDate()+1); }
-        } else {
-            const pace = parseInt(document.getElementById('plan-chapters-day').value);
-            for(let i=0; i<flat.length; i+=pace) { sched.push({ date: new Date(cDate).toISOString(), startItem: flat[i], endItem: flat[Math.min(i+pace-1, flat.length-1)], type: sType, completed: false }); cDate.setDate(cDate.getDate()+1); }
         }
-        let pName = await showDialog({type:'prompt', title:'Nome', defaultValue:'Meu Plano'});
-        if(pName === null) return;
-        savedPlans.push({ id: Date.now(), name: pName.trim() || 'Meu Plano', created: new Date().toISOString(), versionId: currentVersionId, version: getVersionMeta().abbrev, versionName: getVersionMeta().nome, schedule: sched });
-        localStorage.setItem('bible_plans', JSON.stringify(savedPlans)); togglePlanView('list'); renderPlanList(); showToast("Criado!");
+
+        return flat;
+    }
+
+    function partitionPlanUnits(units, dayCount, type) {
+        if (!units.length || dayCount <= 0) return [];
+
+        const days = Math.min(dayCount, units.length);
+        const result = [];
+        let ptr = 0;
+
+        for (let day = 0; day < days; day++) {
+            const remainingUnits = units.length - ptr;
+            const remainingDays = days - day;
+
+            if (remainingDays === 1) {
+                result.push(units.slice(ptr));
+                break;
+            }
+
+            const remainingWeight = units
+                .slice(ptr)
+                .reduce((sum, item) => sum + getPlanUnitWeight(item, type), 0);
+
+            const target = remainingWeight / remainingDays;
+
+            let acc = 0;
+            let end = ptr;
+
+            while (end < units.length) {
+                const w = getPlanUnitWeight(units[end], type);
+
+                if (end === ptr) {
+                    acc = w;
+                    end++;
+                    continue;
+                }
+
+                const before = Math.abs(target - acc);
+                const after = Math.abs(target - (acc + w));
+
+                // Escolhe o limite que deixa o dia mais próximo da meta,
+                // sem jamais cortar uma unidade de perícope.
+                if (after <= before) {
+                    acc += w;
+                    end++;
+                } else {
+                    break;
+                }
+            }
+
+            result.push(units.slice(ptr, end));
+            ptr = end;
+        }
+
+        return result;
+    }
+
+    function getPlanUnitsBetween(startItem, endItem, type, data, versionId) {
+        if (type !== 'pericopes') {
+            return getItemsForDay(startItem, endItem, type, data);
+        }
+
+        const units = [];
+        const firstBook = startItem.bookIdx;
+        const lastBook = endItem.bookIdx;
+
+        for (let b = firstBook; b <= lastBook; b++) {
+            const book = data?.[b];
+            if (!book) continue;
+
+            const firstChapter = b === firstBook ? startItem.chapIdx : 0;
+            const lastChapter = b === lastBook ? endItem.chapIdx : book.chapters.length - 1;
+
+            const bookForPericopes = { ...book, __bookIndex: b };
+
+            for (let c = firstChapter; c <= lastChapter; c++) {
+                let chapterUnits = buildPericopeUnitsForChapter(
+                    bookForPericopes,
+                    c,
+                    versionId,
+                    data
+                );
+
+                chapterUnits = chapterUnits.filter(unit => {
+                    if (b === firstBook && c === startItem.chapIdx) {
+                        const startVerse = startItem.verseIdx !== undefined
+                            ? startItem.verseIdx + 1
+                            : 1;
+                        if (unit.verseEnd < startVerse) return false;
+                    }
+
+                    if (b === lastBook && c === endItem.chapIdx) {
+                        const endVerse = endItem.verseEnd !== undefined
+                            ? Number(endItem.verseEnd)
+                            : endItem.verseIdx !== undefined
+                                ? endItem.verseIdx + 1
+                                : getChapterVerses(book.chapters[c]).length;
+                        if (unit.verseStart > endVerse) return false;
+                    }
+
+                    return true;
+                });
+
+                units.push(...chapterUnits);
+            }
+        }
+
+        return units;
+    }
+
+    function makePlanBoundaryItems(group, type) {
+        if (!Array.isArray(group) || !group.length) {
+            return { startItem: null, endItem: null };
+        }
+
+        const first = { ...group[0] };
+        const last = { ...group[group.length - 1] };
+
+        if (type === 'pericopes') {
+            // A unidade de perícope guarda o intervalo completo em
+            // verseStart/verseEnd. Os limites do dia também precisam
+            // carregar esses limites, e não apenas o primeiro versículo
+            // da última perícope.
+            first.verseIdx = Number(first.verseStart) - 1;
+            last.verseIdx = Number(last.verseEnd) - 1;
+        }
+
+        return { startItem: first, endItem: last };
+    }
+
+    async function generatePlan() {
+        const sBooks = Array.from(
+            document.querySelectorAll('.plan-book-cb:checked')
+        ).map(cb => cb.value);
+
+        const sVal = document.getElementById('plan-start').value;
+
+        if (sBooks.length === 0 || !sVal) {
+            return showDialog({
+                type: 'alert',
+                title: 'Erro',
+                msg: 'Dados incompletos.'
+            });
+        }
+
+        const sType = document.getElementById('plan-split').value;
+        const versionId = currentVersionId;
+
+        // "Permitir quebra de capítulos" usa perícopes da própria tradução.
+        // Se não houver arquivo de perícopes, cai automaticamente para
+        // unidades de versículos, sem cortar um capítulo inteiro à força.
+        let effectiveType = sType;
+
+        if (sType === 'pericopes') {
+            const pericopes = await carregarPericopes(versionId);
+
+            if (!pericopes) {
+                effectiveType = 'verses';
+                showToast(
+                    'Esta tradução não possui perícopes. O plano usará versículos.'
+                );
+            }
+        }
+
+        const flat = await buildPlanUnits(
+            sBooks,
+            effectiveType,
+            versionId,
+            bibleData
+        );
+
+        if (!flat.length) {
+            return showDialog({
+                type: 'alert',
+                title: 'Erro',
+                msg: 'Não foi possível montar as unidades de leitura.'
+            });
+        }
+
+        const mode = document.getElementById('plan-mode').value;
+        let sched = [];
+        let cDate = new Date(sVal + "T00:00:00");
+
+        if (effectiveType === 'pericopes' && mode !== 'dates') {
+            // No modo por perícopes a distribuição é determinada pelo
+            // número de dias. "Capítulos por dia" não participa.
+            document.getElementById('plan-mode').value = 'dates';
+        }
+
+        if (mode === 'dates' || effectiveType === 'pericopes') {
+            const eVal = document.getElementById('plan-end').value;
+
+            if (!eVal) {
+                return showDialog({
+                    type: 'alert',
+                    title: 'Erro',
+                    msg: 'Informe a data final.'
+                });
+            }
+
+            const endDate = new Date(eVal + "T00:00:00");
+
+            if (endDate < cDate) {
+                return showDialog({
+                    type: 'alert',
+                    title: 'Erro',
+                    msg: 'A data final deve ser igual ou posterior à data inicial.'
+                });
+            }
+
+            const dayCount =
+                Math.ceil((endDate - cDate) / 86400000) + 1;
+
+            const groups = partitionPlanUnits(
+                flat,
+                dayCount,
+                effectiveType
+            );
+
+            groups.forEach(group => {
+                if (!group.length) return;
+
+                const boundaries = makePlanBoundaryItems(group, effectiveType);
+
+                sched.push({
+                    date: new Date(cDate).toISOString(),
+                    startItem: boundaries.startItem,
+                    endItem: boundaries.endItem,
+                    type: effectiveType,
+                    completed: false
+                });
+
+                cDate.setDate(cDate.getDate() + 1);
+            });
+
+        } else {
+            const pace = parseInt(
+                document.getElementById('plan-chapters-day').value,
+                10
+            );
+
+            if (!Number.isFinite(pace) || pace <= 0) {
+                return showDialog({
+                    type: 'alert',
+                    title: 'Erro',
+                    msg: 'Informe uma quantidade válida por dia.'
+                });
+            }
+
+            for (let i = 0; i < flat.length; i += pace) {
+                const group = flat.slice(i, i + pace);
+
+                const boundaries = makePlanBoundaryItems(group, effectiveType);
+
+                sched.push({
+                    date: new Date(cDate).toISOString(),
+                    startItem: boundaries.startItem,
+                    endItem: boundaries.endItem,
+                    type: effectiveType,
+                    completed: false
+                });
+
+                cDate.setDate(cDate.getDate() + 1);
+            }
+        }
+
+        let pName = await showDialog({
+            type: 'prompt',
+            title: 'Nome',
+            defaultValue: 'Meu Plano'
+        });
+
+        if (pName === null) return;
+
+        savedPlans.push({
+            id: Date.now(),
+            name: pName.trim() || 'Meu Plano',
+            created: new Date().toISOString(),
+            versionId: currentVersionId,
+            version: getVersionMeta().abbrev,
+            versionName: getVersionMeta().nome,
+            schedule: sched
+        });
+
+        localStorage.setItem(
+            'bible_plans',
+            JSON.stringify(savedPlans)
+        );
+
+        togglePlanView('list');
+        renderPlanList();
+        showToast("Criado!");
     }
 
     function renderPlanList() {
@@ -4522,6 +4982,8 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         document.getElementById('reader-pill').style.display = 'flex';
         document.getElementById('btn-version-menu').classList.add('hidden');
         document.getElementById('btn-lang-menu').classList.add('hidden');
+        const btnApoioPlanReader = document.getElementById('btn-apoio');
+        if (btnApoioPlanReader) btnApoioPlanReader.classList.add('hidden');
         document.getElementById('btn-plan-close').classList.remove('hidden');
         const planVersionMeta =
             versoesDisponiveis.find(
@@ -4584,9 +5046,22 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             let title = '';
 
             /*
+            * PLANO POR PERÍCOPES
+            */
+            if (d.type === 'pericopes') {
+                const startVerse = Number(first.verseStart ?? (first.verseIdx + 1));
+                const endVerse = Number(last.verseEnd ?? (last.verseIdx + 1));
+
+                const t1 = `${b1} ${first.chapIdx + 1}:${startVerse}`;
+                const t2 = `${b2} ${last.chapIdx + 1}:${endVerse}`;
+
+                title = (t1 === t2) ? t1 : `${t1} - ${t2}`;
+            }
+
+            /*
             * PLANO POR VERSÍCULOS
             */
-            if (
+            else if (
                 d.type === 'verses' ||
                 first.verseIdx !== undefined
             ) {
@@ -4763,59 +5238,224 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     async function reorganizePlan(planIdx) {
         const plan = savedPlans[planIdx];
         const firstUncompIdx = plan.schedule.findIndex(d => !d.completed);
-        if (firstUncompIdx === -1) return showDialog({type:'alert', title:'Concluído', msg:'Este plano já está todo concluído!'});
+
+        if (firstUncompIdx === -1) {
+            return showDialog({
+                type: 'alert',
+                title: 'Concluído',
+                msg: 'Este plano já está todo concluído!'
+            });
+        }
 
         let mode = await showDialog({
-            type: 'custom', title: 'Reorganizar Plano', msg: 'Reajustar a leitura pendente a partir de hoje.',
-            customHTML: `<div class="radio-group"><label><input type="radio" name="r_mod" value="end" checked> Manter data final</label><label><input type="radio" name="r_mod" value="pace"> Manter ritmo atual</label></div>`,
-            extractData: () => document.querySelector('input[name="r_mod"]:checked').value
+            type: 'custom',
+            title: 'Reorganizar Plano',
+            msg: 'Reajustar a leitura pendente a partir de hoje.',
+            customHTML: `
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="r_mod" value="end" checked>
+                        Manter data final
+                    </label>
+                    <label>
+                        <input type="radio" name="r_mod" value="pace">
+                        Manter ritmo atual
+                    </label>
+                </div>`,
+            extractData: () =>
+                document.querySelector('input[name="r_mod"]:checked').value
         });
-        if(!mode) return;
+
+        if (!mode) return;
+
+        const versionId = getPlanVersionId(plan);
 
         let planData;
         try {
-            planData = await carregarTraducaoPlano(getPlanVersionId(plan));
+            planData = await carregarTraducaoPlano(versionId);
+
+            if (plan.schedule[firstUncompIdx].type === 'pericopes') {
+                await carregarPericopes(versionId);
+            }
+
         } catch (error) {
-            console.error('Erro ao carregar a tradução do Plano para reorganização:', error);
-            return showToast('Não foi possível carregar a tradução deste Plano.');
+            console.error(
+                'Erro ao carregar a tradução do Plano para reorganização:',
+                error
+            );
+            return showToast(
+                'Não foi possível carregar a tradução deste Plano.'
+            );
         }
 
-        let unread = [], type = plan.schedule[firstUncompIdx].type || 'chapters';
-        for(let i = firstUncompIdx; i < plan.schedule.length; i++) {
-            let day = plan.schedule[i]; if(day.startItem && day.endItem) unread = unread.concat(getItemsForDay(day.startItem, day.endItem, type, planData));
-        }
-        if(unread.length === 0) return;
+        const type =
+            plan.schedule[firstUncompIdx].type || 'chapters';
 
-        let today = new Date(); today.setHours(0,0,0,0);
-        let newTail = [];
+        const firstPendingDay = plan.schedule[firstUncompIdx];
+        const lastPlanDay = plan.schedule[plan.schedule.length - 1];
 
-        if (mode === 'end') {
-            const endObj = new Date(plan.schedule[plan.schedule.length - 1].date);
-            let diffDays = Math.ceil((endObj - today) / 86400000) + 1;
-            if (diffDays <= 0) {
-                if(!await showDialog({type:'confirm', title:'Atenção', msg:'A data final já passou. Mudar para ritmo atual?'})) return;
-                mode = 'pace'; 
-            } else {
-                const bItems = Math.floor(unread.length / diffDays); let ext = unread.length % diffDays, ptr = 0, iter = new Date(today);
-                for(let i = 0; i < diffDays; i++) {
-                    let dCount = bItems + (ext > 0 ? 1 : 0); ext--;
-                    if (dCount > 0 && ptr < unread.length) {
-                        newTail.push({ date: new Date(iter).toISOString(), startItem: unread[ptr], endItem: unread[ptr + dCount - 1], type: type, completed: false }); ptr += dCount;
-                    } iter.setDate(iter.getDate() + 1);
+        let unread;
+
+        if (type === 'pericopes') {
+            // Reconstrói as unidades originais do arquivo de perícopes.
+            // Isso impede que a reorganização volte a cortar uma perícope.
+            unread = getPlanUnitsBetween(
+                firstPendingDay.startItem,
+                lastPlanDay.endItem,
+                type,
+                planData,
+                versionId
+            );
+        } else {
+            unread = [];
+
+            for (
+                let i = firstUncompIdx;
+                i < plan.schedule.length;
+                i++
+            ) {
+                const day = plan.schedule[i];
+
+                if (day.startItem && day.endItem) {
+                    unread = unread.concat(
+                        getItemsForDay(
+                            day.startItem,
+                            day.endItem,
+                            type,
+                            planData
+                        )
+                    );
                 }
             }
         }
-        if (mode === 'pace') {
-            let origPace = getItemsForDay(plan.schedule[firstUncompIdx].startItem, plan.schedule[firstUncompIdx].endItem, type, planData).length;
-            if(origPace <= 0) origPace = 3; 
-            let iter = new Date(today);
-            for(let i = 0; i < unread.length; i += origPace) {
-                newTail.push({ date: new Date(iter).toISOString(), startItem: unread[i], endItem: unread[Math.min(i + origPace - 1, unread.length - 1)], type: type, completed: false });
-                iter.setDate(iter.getDate() + 1);
+
+        if (!unread.length) return;
+
+        let today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        let newTail = [];
+
+        if (mode === 'end') {
+            const endObj =
+                new Date(
+                    plan.schedule[plan.schedule.length - 1].date
+                );
+
+            let diffDays =
+                Math.ceil((endObj - today) / 86400000) + 1;
+
+            if (diffDays <= 0) {
+                if (
+                    !await showDialog({
+                        type: 'confirm',
+                        title: 'Atenção',
+                        msg: 'A data final já passou. Mudar para ritmo atual?'
+                    })
+                ) {
+                    return;
+                }
+
+                mode = 'pace';
+
+            } else {
+                const groups = partitionPlanUnits(
+                    unread,
+                    diffDays,
+                    type
+                );
+
+                groups.forEach(group => {
+                    if (!group.length) return;
+
+                    const boundaries = makePlanBoundaryItems(group, type);
+
+                    newTail.push({
+                        date: new Date(today).toISOString(),
+                        startItem: boundaries.startItem,
+                        endItem: boundaries.endItem,
+                        type,
+                        completed: false
+                    });
+
+                    today.setDate(today.getDate() + 1);
+                });
             }
         }
-        plan.schedule = plan.schedule.slice(0, firstUncompIdx).concat(newTail);
-        localStorage.setItem('bible_plans', JSON.stringify(savedPlans));
+
+        if (mode === 'pace') {
+            let origPace;
+
+            if (type === 'pericopes') {
+                // O ritmo original é medido em versículos, mas as
+                // perícopes continuam sendo as unidades indivisíveis.
+                origPace = getItemsForDay(
+                    firstPendingDay.startItem,
+                    firstPendingDay.endItem,
+                    'verses',
+                    planData
+                ).length;
+            } else {
+                origPace = getItemsForDay(
+                    firstPendingDay.startItem,
+                    firstPendingDay.endItem,
+                    type,
+                    planData
+                ).length;
+            }
+
+            if (!Number.isFinite(origPace) || origPace <= 0) {
+                origPace = type === 'pericopes' ? 20 : 3;
+            }
+
+            let ptr = 0;
+
+            while (ptr < unread.length) {
+                let acc = 0;
+                let end = ptr;
+
+                while (end < unread.length) {
+                    const weight = type === 'pericopes'
+                        ? getPlanUnitWeight(unread[end], type)
+                        : 1;
+
+                    if (end === ptr || acc + weight <= origPace) {
+                        acc += weight;
+                        end++;
+                    } else {
+                        break;
+                    }
+                }
+
+                const group = unread.slice(ptr, end);
+
+                if (group.length) {
+                    const boundaries = makePlanBoundaryItems(group, type);
+
+                    newTail.push({
+                        date: new Date(today).toISOString(),
+                        startItem: boundaries.startItem,
+                        endItem: boundaries.endItem,
+                        type,
+                        completed: false
+                    });
+                }
+
+                ptr = end;
+                today.setDate(today.getDate() + 1);
+            }
+        }
+
+        plan.schedule =
+            plan.schedule
+                .slice(0, firstUncompIdx)
+                .concat(newTail);
+
+        localStorage.setItem(
+            'bible_plans',
+            JSON.stringify(savedPlans)
+        );
+
         renderPlanList();
         showToast('Plano reorganizado!');
         openPlanDetail(planIdx);
