@@ -1,0 +1,469 @@
+{
+  "schema": "indice-referencias-v1",
+  "politica_traducao": "independente",
+  "descricao": "Índice das referências cruzadas canônicas por livro de origem.",
+  "livros": [
+    {
+      "livro": "Gn",
+      "nome": "Gênesis",
+      "arquivo": "referencias/Gn.json",
+      "entradas": 683,
+      "reversas": "referencias-reversas/Gn.json"
+    },
+    {
+      "livro": "Ex",
+      "nome": "Êxodo",
+      "arquivo": "referencias/Ex.json",
+      "entradas": 752,
+      "reversas": "referencias-reversas/Ex.json"
+    },
+    {
+      "livro": "Lv",
+      "nome": "Levítico",
+      "arquivo": "referencias/Lv.json",
+      "entradas": 580,
+      "reversas": "referencias-reversas/Lv.json"
+    },
+    {
+      "livro": "Nm",
+      "nome": "Números",
+      "arquivo": "referencias/Nm.json",
+      "entradas": 744,
+      "reversas": "referencias-reversas/Nm.json"
+    },
+    {
+      "livro": "Dt",
+      "nome": "Deuteronômio",
+      "arquivo": "referencias/Dt.json",
+      "entradas": 818,
+      "reversas": "referencias-reversas/Dt.json"
+    },
+    {
+      "livro": "Js",
+      "nome": "Josué",
+      "arquivo": "referencias/Js.json",
+      "entradas": 418,
+      "reversas": "referencias-reversas/Js.json"
+    },
+    {
+      "livro": "Jz",
+      "nome": "Juízes",
+      "arquivo": "referencias/Jz.json",
+      "entradas": 375,
+      "reversas": "referencias-reversas/Jz.json"
+    },
+    {
+      "livro": "Rt",
+      "nome": "Rute",
+      "arquivo": "referencias/Rt.json",
+      "entradas": 56,
+      "reversas": "referencias-reversas/Rt.json"
+    },
+    {
+      "livro": "1Sm",
+      "nome": "1Samuel",
+      "arquivo": "referencias/1Sm.json",
+      "entradas": 501,
+      "reversas": "referencias-reversas/1Sm.json"
+    },
+    {
+      "livro": "2Sm",
+      "nome": "2Samuel",
+      "arquivo": "referencias/2Sm.json",
+      "entradas": 424,
+      "reversas": "referencias-reversas/2Sm.json"
+    },
+    {
+      "livro": "1Rs",
+      "nome": "1Reis",
+      "arquivo": "referencias/1Rs.json",
+      "entradas": 468,
+      "reversas": "referencias-reversas/1Rs.json"
+    },
+    {
+      "livro": "2Rs",
+      "nome": "2Reis",
+      "arquivo": "referencias/2Rs.json",
+      "entradas": 433,
+      "reversas": "referencias-reversas/2Rs.json"
+    },
+    {
+      "livro": "1Cr",
+      "nome": "1Crônicas",
+      "arquivo": "referencias/1Cr.json",
+      "entradas": 355,
+      "reversas": "referencias-reversas/1Cr.json"
+    },
+    {
+      "livro": "2Cr",
+      "nome": "2Crônicas",
+      "arquivo": "referencias/2Cr.json",
+      "entradas": 493,
+      "reversas": "referencias-reversas/2Cr.json"
+    },
+    {
+      "livro": "Ed",
+      "nome": "Esdras",
+      "arquivo": "referencias/Ed.json",
+      "entradas": 127,
+      "reversas": "referencias-reversas/Ed.json"
+    },
+    {
+      "livro": "Ne",
+      "nome": "Neemias",
+      "arquivo": "referencias/Ne.json",
+      "entradas": 201,
+      "reversas": "referencias-reversas/Ne.json"
+    },
+    {
+      "livro": "Et",
+      "nome": "Ester",
+      "arquivo": "referencias/Et.json",
+      "entradas": 91,
+      "reversas": "referencias-reversas/Et.json"
+    },
+    {
+      "livro": "Job",
+      "nome": "Jó",
+      "arquivo": "referencias/Job.json",
+      "entradas": 477,
+      "reversas": "referencias-reversas/Job.json"
+    },
+    {
+      "livro": "Sl",
+      "nome": "Salmos",
+      "arquivo": "referencias/Sl.json",
+      "entradas": 773,
+      "reversas": "referencias-reversas/Sl.json"
+    },
+    {
+      "livro": "Pv",
+      "nome": "Provérbios",
+      "arquivo": "referencias/Pv.json",
+      "entradas": 526,
+      "reversas": "referencias-reversas/Pv.json"
+    },
+    {
+      "livro": "Ec",
+      "nome": "Eclesiastes",
+      "arquivo": "referencias/Ec.json",
+      "entradas": 129,
+      "reversas": "referencias-reversas/Ec.json"
+    },
+    {
+      "livro": "Ct",
+      "nome": "Cantares",
+      "arquivo": "referencias/Ct.json",
+      "entradas": 63,
+      "reversas": "referencias-reversas/Ct.json"
+    },
+    {
+      "livro": "Is",
+      "nome": "Isaías",
+      "arquivo": "referencias/Is.json",
+      "entradas": 924,
+      "reversas": "referencias-reversas/Is.json"
+    },
+    {
+      "livro": "Jr",
+      "nome": "Jeremias",
+      "arquivo": "referencias/Jr.json",
+      "entradas": 991,
+      "reversas": "referencias-reversas/Jr.json"
+    },
+    {
+      "livro": "Lm",
+      "nome": "Lamentações",
+      "arquivo": "referencias/Lm.json",
+      "entradas": 106,
+      "reversas": "referencias-reversas/Lm.json"
+    },
+    {
+      "livro": "Ez",
+      "nome": "Ezequiel",
+      "arquivo": "referencias/Ez.json",
+      "entradas": 882,
+      "reversas": "referencias-reversas/Ez.json"
+    },
+    {
+      "livro": "Dn",
+      "nome": "Daniel",
+      "arquivo": "referencias/Dn.json",
+      "entradas": 236,
+      "reversas": "referencias-reversas/Dn.json"
+    },
+    {
+      "livro": "Os",
+      "nome": "Oseias",
+      "arquivo": "referencias/Os.json",
+      "entradas": 174,
+      "reversas": "referencias-reversas/Os.json"
+    },
+    {
+      "livro": "Jl",
+      "nome": "Joel",
+      "arquivo": "referencias/Jl.json",
+      "entradas": 67,
+      "reversas": "referencias-reversas/Jl.json"
+    },
+    {
+      "livro": "Am",
+      "nome": "Amós",
+      "arquivo": "referencias/Am.json",
+      "entradas": 121,
+      "reversas": "referencias-reversas/Am.json"
+    },
+    {
+      "livro": "Ob",
+      "nome": "Obadias",
+      "arquivo": "referencias/Ob.json",
+      "entradas": 0,
+      "reversas": "referencias-reversas/Ob.json"
+    },
+    {
+      "livro": "Jn",
+      "nome": "Jonas",
+      "arquivo": "referencias/Jn.json",
+      "entradas": 28,
+      "reversas": "referencias-reversas/Jn.json"
+    },
+    {
+      "livro": "Mq",
+      "nome": "Miqueias",
+      "arquivo": "referencias/Mq.json",
+      "entradas": 85,
+      "reversas": "referencias-reversas/Mq.json"
+    },
+    {
+      "livro": "Na",
+      "nome": "Naum",
+      "arquivo": "referencias/Na.json",
+      "entradas": 39,
+      "reversas": "referencias-reversas/Na.json"
+    },
+    {
+      "livro": "Hc",
+      "nome": "Habacuque",
+      "arquivo": "referencias/Hc.json",
+      "entradas": 36,
+      "reversas": "referencias-reversas/Hc.json"
+    },
+    {
+      "livro": "Sf",
+      "nome": "Sofonias",
+      "arquivo": "referencias/Sf.json",
+      "entradas": 48,
+      "reversas": "referencias-reversas/Sf.json"
+    },
+    {
+      "livro": "Ag",
+      "nome": "Ageu",
+      "arquivo": "referencias/Ag.json",
+      "entradas": 27,
+      "reversas": "referencias-reversas/Ag.json"
+    },
+    {
+      "livro": "Zc",
+      "nome": "Zacarias",
+      "arquivo": "referencias/Zc.json",
+      "entradas": 163,
+      "reversas": "referencias-reversas/Zc.json"
+    },
+    {
+      "livro": "Ml",
+      "nome": "Malaquias",
+      "arquivo": "referencias/Ml.json",
+      "entradas": 48,
+      "reversas": "referencias-reversas/Ml.json"
+    },
+    {
+      "livro": "Mt",
+      "nome": "Mateus",
+      "arquivo": "referencias/Mt.json",
+      "entradas": 677,
+      "reversas": "referencias-reversas/Mt.json"
+    },
+    {
+      "livro": "Mc",
+      "nome": "Marcos",
+      "arquivo": "referencias/Mc.json",
+      "entradas": 376,
+      "reversas": "referencias-reversas/Mc.json"
+    },
+    {
+      "livro": "Lc",
+      "nome": "Lucas",
+      "arquivo": "referencias/Lc.json",
+      "entradas": 679,
+      "reversas": "referencias-reversas/Lc.json"
+    },
+    {
+      "livro": "Jo",
+      "nome": "João",
+      "arquivo": "referencias/Jo.json",
+      "entradas": 591,
+      "reversas": "referencias-reversas/Jo.json"
+    },
+    {
+      "livro": "At",
+      "nome": "Atos",
+      "arquivo": "referencias/At.json",
+      "entradas": 685,
+      "reversas": "referencias-reversas/At.json"
+    },
+    {
+      "livro": "Rm",
+      "nome": "Romanos",
+      "arquivo": "referencias/Rm.json",
+      "entradas": 366,
+      "reversas": "referencias-reversas/Rm.json"
+    },
+    {
+      "livro": "1Co",
+      "nome": "1Coríntios",
+      "arquivo": "referencias/1Co.json",
+      "entradas": 352,
+      "reversas": "referencias-reversas/1Co.json"
+    },
+    {
+      "livro": "2Co",
+      "nome": "2Coríntios",
+      "arquivo": "referencias/2Co.json",
+      "entradas": 217,
+      "reversas": "referencias-reversas/2Co.json"
+    },
+    {
+      "livro": "Gl",
+      "nome": "Gálatas",
+      "arquivo": "referencias/Gl.json",
+      "entradas": 131,
+      "reversas": "referencias-reversas/Gl.json"
+    },
+    {
+      "livro": "Ef",
+      "nome": "Efésios",
+      "arquivo": "referencias/Ef.json",
+      "entradas": 151,
+      "reversas": "referencias-reversas/Ef.json"
+    },
+    {
+      "livro": "Fp",
+      "nome": "Filipenses",
+      "arquivo": "referencias/Fp.json",
+      "entradas": 94,
+      "reversas": "referencias-reversas/Fp.json"
+    },
+    {
+      "livro": "Cl",
+      "nome": "Colossenses",
+      "arquivo": "referencias/Cl.json",
+      "entradas": 95,
+      "reversas": "referencias-reversas/Cl.json"
+    },
+    {
+      "livro": "1Ts",
+      "nome": "1Tessalonicenses",
+      "arquivo": "referencias/1Ts.json",
+      "entradas": 86,
+      "reversas": "referencias-reversas/1Ts.json"
+    },
+    {
+      "livro": "2Ts",
+      "nome": "2Tessalonicenses",
+      "arquivo": "referencias/2Ts.json",
+      "entradas": 45,
+      "reversas": "referencias-reversas/2Ts.json"
+    },
+    {
+      "livro": "1Tm",
+      "nome": "1Timóteo",
+      "arquivo": "referencias/1Tm.json",
+      "entradas": 102,
+      "reversas": "referencias-reversas/1Tm.json"
+    },
+    {
+      "livro": "2Tm",
+      "nome": "2Timóteo",
+      "arquivo": "referencias/2Tm.json",
+      "entradas": 79,
+      "reversas": "referencias-reversas/2Tm.json"
+    },
+    {
+      "livro": "Tt",
+      "nome": "Tito",
+      "arquivo": "referencias/Tt.json",
+      "entradas": 44,
+      "reversas": "referencias-reversas/Tt.json"
+    },
+    {
+      "livro": "Fm",
+      "nome": "Filemom",
+      "arquivo": "referencias/Fm.json",
+      "entradas": 0,
+      "reversas": "referencias-reversas/Fm.json"
+    },
+    {
+      "livro": "Hb",
+      "nome": "Hebreus",
+      "arquivo": "referencias/Hb.json",
+      "entradas": 282,
+      "reversas": "referencias-reversas/Hb.json"
+    },
+    {
+      "livro": "Tg",
+      "nome": "Tiago",
+      "arquivo": "referencias/Tg.json",
+      "entradas": 89,
+      "reversas": "referencias-reversas/Tg.json"
+    },
+    {
+      "livro": "1Pe",
+      "nome": "1Pedro",
+      "arquivo": "referencias/1Pe.json",
+      "entradas": 107,
+      "reversas": "referencias-reversas/1Pe.json"
+    },
+    {
+      "livro": "2Pe",
+      "nome": "2Pedro",
+      "arquivo": "referencias/2Pe.json",
+      "entradas": 60,
+      "reversas": "referencias-reversas/2Pe.json"
+    },
+    {
+      "livro": "1Jo",
+      "nome": "1João",
+      "arquivo": "referencias/1Jo.json",
+      "entradas": 101,
+      "reversas": "referencias-reversas/1Jo.json"
+    },
+    {
+      "livro": "2Jo",
+      "nome": "2João",
+      "arquivo": "referencias/2Jo.json",
+      "entradas": 0,
+      "reversas": "referencias-reversas/2Jo.json"
+    },
+    {
+      "livro": "3Jo",
+      "nome": "3João",
+      "arquivo": "referencias/3Jo.json",
+      "entradas": 0,
+      "reversas": "referencias-reversas/3Jo.json"
+    },
+    {
+      "livro": "Jd",
+      "nome": "Judas",
+      "arquivo": "referencias/Jd.json",
+      "entradas": 0,
+      "reversas": "referencias-reversas/Jd.json"
+    },
+    {
+      "livro": "Ap",
+      "nome": "Apocalipse",
+      "arquivo": "referencias/Ap.json",
+      "entradas": 387,
+      "reversas": "referencias-reversas/Ap.json"
+    }
+  ]
+}

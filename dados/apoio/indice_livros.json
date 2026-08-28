@@ -1,0 +1,469 @@
+{
+  "schema": "indice-material-apoio-v1",
+  "politica_traducao": "independente",
+  "descricao": "Material editorial único compartilhado por todas as traduções.",
+  "livros": [
+    {
+      "id": "Gn",
+      "nome": "Gênesis",
+      "abreviacao": "Gn",
+      "arquivo": "livros/Gn.json",
+      "referencias": "referencias/Gn.json"
+    },
+    {
+      "id": "Ex",
+      "nome": "Êxodo",
+      "abreviacao": "Ex",
+      "arquivo": "livros/Ex.json",
+      "referencias": "referencias/Ex.json"
+    },
+    {
+      "id": "Lv",
+      "nome": "Levítico",
+      "abreviacao": "Lv",
+      "arquivo": "livros/Lv.json",
+      "referencias": "referencias/Lv.json"
+    },
+    {
+      "id": "Nm",
+      "nome": "Números",
+      "abreviacao": "Nm",
+      "arquivo": "livros/Nm.json",
+      "referencias": "referencias/Nm.json"
+    },
+    {
+      "id": "Dt",
+      "nome": "Deuteronômio",
+      "abreviacao": "Dt",
+      "arquivo": "livros/Dt.json",
+      "referencias": "referencias/Dt.json"
+    },
+    {
+      "id": "Js",
+      "nome": "Josué",
+      "abreviacao": "Js",
+      "arquivo": "livros/Js.json",
+      "referencias": "referencias/Js.json"
+    },
+    {
+      "id": "Jz",
+      "nome": "Juízes",
+      "abreviacao": "Jz",
+      "arquivo": "livros/Jz.json",
+      "referencias": "referencias/Jz.json"
+    },
+    {
+      "id": "Rt",
+      "nome": "Rute",
+      "abreviacao": "Rt",
+      "arquivo": "livros/Rt.json",
+      "referencias": "referencias/Rt.json"
+    },
+    {
+      "id": "1Sm",
+      "nome": "1Samuel",
+      "abreviacao": "1Sm",
+      "arquivo": "livros/1Sm.json",
+      "referencias": "referencias/1Sm.json"
+    },
+    {
+      "id": "2Sm",
+      "nome": "2Samuel",
+      "abreviacao": "2Sm",
+      "arquivo": "livros/2Sm.json",
+      "referencias": "referencias/2Sm.json"
+    },
+    {
+      "id": "1Rs",
+      "nome": "1Reis",
+      "abreviacao": "1Rs",
+      "arquivo": "livros/1Rs.json",
+      "referencias": "referencias/1Rs.json"
+    },
+    {
+      "id": "2Rs",
+      "nome": "2Reis",
+      "abreviacao": "2Rs",
+      "arquivo": "livros/2Rs.json",
+      "referencias": "referencias/2Rs.json"
+    },
+    {
+      "id": "1Cr",
+      "nome": "1Crônicas",
+      "abreviacao": "1Cr",
+      "arquivo": "livros/1Cr.json",
+      "referencias": "referencias/1Cr.json"
+    },
+    {
+      "id": "2Cr",
+      "nome": "2Crônicas",
+      "abreviacao": "2Cr",
+      "arquivo": "livros/2Cr.json",
+      "referencias": "referencias/2Cr.json"
+    },
+    {
+      "id": "Ed",
+      "nome": "Esdras",
+      "abreviacao": "Ed",
+      "arquivo": "livros/Ed.json",
+      "referencias": "referencias/Ed.json"
+    },
+    {
+      "id": "Ne",
+      "nome": "Neemias",
+      "abreviacao": "Ne",
+      "arquivo": "livros/Ne.json",
+      "referencias": "referencias/Ne.json"
+    },
+    {
+      "id": "Et",
+      "nome": "Ester",
+      "abreviacao": "Et",
+      "arquivo": "livros/Et.json",
+      "referencias": "referencias/Et.json"
+    },
+    {
+      "id": "Job",
+      "nome": "Jó",
+      "abreviacao": "Job",
+      "arquivo": "livros/Job.json",
+      "referencias": "referencias/Job.json"
+    },
+    {
+      "id": "Sl",
+      "nome": "Salmos",
+      "abreviacao": "Sl",
+      "arquivo": "livros/Sl.json",
+      "referencias": "referencias/Sl.json"
+    },
+    {
+      "id": "Pv",
+      "nome": "Provérbios",
+      "abreviacao": "Pv",
+      "arquivo": "livros/Pv.json",
+      "referencias": "referencias/Pv.json"
+    },
+    {
+      "id": "Ec",
+      "nome": "Eclesiastes",
+      "abreviacao": "Ec",
+      "arquivo": "livros/Ec.json",
+      "referencias": "referencias/Ec.json"
+    },
+    {
+      "id": "Ct",
+      "nome": "Cantares",
+      "abreviacao": "Ct",
+      "arquivo": "livros/Ct.json",
+      "referencias": "referencias/Ct.json"
+    },
+    {
+      "id": "Is",
+      "nome": "Isaías",
+      "abreviacao": "Is",
+      "arquivo": "livros/Is.json",
+      "referencias": "referencias/Is.json"
+    },
+    {
+      "id": "Jr",
+      "nome": "Jeremias",
+      "abreviacao": "Jr",
+      "arquivo": "livros/Jr.json",
+      "referencias": "referencias/Jr.json"
+    },
+    {
+      "id": "Lm",
+      "nome": "Lamentações",
+      "abreviacao": "Lm",
+      "arquivo": "livros/Lm.json",
+      "referencias": "referencias/Lm.json"
+    },
+    {
+      "id": "Ez",
+      "nome": "Ezequiel",
+      "abreviacao": "Ez",
+      "arquivo": "livros/Ez.json",
+      "referencias": "referencias/Ez.json"
+    },
+    {
+      "id": "Dn",
+      "nome": "Daniel",
+      "abreviacao": "Dn",
+      "arquivo": "livros/Dn.json",
+      "referencias": "referencias/Dn.json"
+    },
+    {
+      "id": "Os",
+      "nome": "Oseias",
+      "abreviacao": "Os",
+      "arquivo": "livros/Os.json",
+      "referencias": "referencias/Os.json"
+    },
+    {
+      "id": "Jl",
+      "nome": "Joel",
+      "abreviacao": "Jl",
+      "arquivo": "livros/Jl.json",
+      "referencias": "referencias/Jl.json"
+    },
+    {
+      "id": "Am",
+      "nome": "Amós",
+      "abreviacao": "Am",
+      "arquivo": "livros/Am.json",
+      "referencias": "referencias/Am.json"
+    },
+    {
+      "id": "Ob",
+      "nome": "Obadias",
+      "abreviacao": "Ob",
+      "arquivo": "livros/Ob.json",
+      "referencias": "referencias/Ob.json"
+    },
+    {
+      "id": "Jn",
+      "nome": "Jonas",
+      "abreviacao": "Jn",
+      "arquivo": "livros/Jn.json",
+      "referencias": "referencias/Jn.json"
+    },
+    {
+      "id": "Mq",
+      "nome": "Miqueias",
+      "abreviacao": "Mq",
+      "arquivo": "livros/Mq.json",
+      "referencias": "referencias/Mq.json"
+    },
+    {
+      "id": "Na",
+      "nome": "Naum",
+      "abreviacao": "Na",
+      "arquivo": "livros/Na.json",
+      "referencias": "referencias/Na.json"
+    },
+    {
+      "id": "Hc",
+      "nome": "Habacuque",
+      "abreviacao": "Hc",
+      "arquivo": "livros/Hc.json",
+      "referencias": "referencias/Hc.json"
+    },
+    {
+      "id": "Sf",
+      "nome": "Sofonias",
+      "abreviacao": "Sf",
+      "arquivo": "livros/Sf.json",
+      "referencias": "referencias/Sf.json"
+    },
+    {
+      "id": "Ag",
+      "nome": "Ageu",
+      "abreviacao": "Ag",
+      "arquivo": "livros/Ag.json",
+      "referencias": "referencias/Ag.json"
+    },
+    {
+      "id": "Zc",
+      "nome": "Zacarias",
+      "abreviacao": "Zc",
+      "arquivo": "livros/Zc.json",
+      "referencias": "referencias/Zc.json"
+    },
+    {
+      "id": "Ml",
+      "nome": "Malaquias",
+      "abreviacao": "Ml",
+      "arquivo": "livros/Ml.json",
+      "referencias": "referencias/Ml.json"
+    },
+    {
+      "id": "Mt",
+      "nome": "Mateus",
+      "abreviacao": "Mt",
+      "arquivo": "livros/Mt.json",
+      "referencias": "referencias/Mt.json"
+    },
+    {
+      "id": "Mc",
+      "nome": "Marcos",
+      "abreviacao": "Mc",
+      "arquivo": "livros/Mc.json",
+      "referencias": "referencias/Mc.json"
+    },
+    {
+      "id": "Lc",
+      "nome": "Lucas",
+      "abreviacao": "Lc",
+      "arquivo": "livros/Lc.json",
+      "referencias": "referencias/Lc.json"
+    },
+    {
+      "id": "Jo",
+      "nome": "João",
+      "abreviacao": "Jo",
+      "arquivo": "livros/Jo.json",
+      "referencias": "referencias/Jo.json"
+    },
+    {
+      "id": "At",
+      "nome": "Atos",
+      "abreviacao": "At",
+      "arquivo": "livros/At.json",
+      "referencias": "referencias/At.json"
+    },
+    {
+      "id": "Rm",
+      "nome": "Romanos",
+      "abreviacao": "Rm",
+      "arquivo": "livros/Rm.json",
+      "referencias": "referencias/Rm.json"
+    },
+    {
+      "id": "1Co",
+      "nome": "1Coríntios",
+      "abreviacao": "1Co",
+      "arquivo": "livros/1Co.json",
+      "referencias": "referencias/1Co.json"
+    },
+    {
+      "id": "2Co",
+      "nome": "2Coríntios",
+      "abreviacao": "2Co",
+      "arquivo": "livros/2Co.json",
+      "referencias": "referencias/2Co.json"
+    },
+    {
+      "id": "Gl",
+      "nome": "Gálatas",
+      "abreviacao": "Gl",
+      "arquivo": "livros/Gl.json",
+      "referencias": "referencias/Gl.json"
+    },
+    {
+      "id": "Ef",
+      "nome": "Efésios",
+      "abreviacao": "Ef",
+      "arquivo": "livros/Ef.json",
+      "referencias": "referencias/Ef.json"
+    },
+    {
+      "id": "Fp",
+      "nome": "Filipenses",
+      "abreviacao": "Fp",
+      "arquivo": "livros/Fp.json",
+      "referencias": "referencias/Fp.json"
+    },
+    {
+      "id": "Cl",
+      "nome": "Colossenses",
+      "abreviacao": "Cl",
+      "arquivo": "livros/Cl.json",
+      "referencias": "referencias/Cl.json"
+    },
+    {
+      "id": "1Ts",
+      "nome": "1Tessalonicenses",
+      "abreviacao": "1Ts",
+      "arquivo": "livros/1Ts.json",
+      "referencias": "referencias/1Ts.json"
+    },
+    {
+      "id": "2Ts",
+      "nome": "2Tessalonicenses",
+      "abreviacao": "2Ts",
+      "arquivo": "livros/2Ts.json",
+      "referencias": "referencias/2Ts.json"
+    },
+    {
+      "id": "1Tm",
+      "nome": "1Timóteo",
+      "abreviacao": "1Tm",
+      "arquivo": "livros/1Tm.json",
+      "referencias": "referencias/1Tm.json"
+    },
+    {
+      "id": "2Tm",
+      "nome": "2Timóteo",
+      "abreviacao": "2Tm",
+      "arquivo": "livros/2Tm.json",
+      "referencias": "referencias/2Tm.json"
+    },
+    {
+      "id": "Tt",
+      "nome": "Tito",
+      "abreviacao": "Tt",
+      "arquivo": "livros/Tt.json",
+      "referencias": "referencias/Tt.json"
+    },
+    {
+      "id": "Fm",
+      "nome": "Filemom",
+      "abreviacao": "Fm",
+      "arquivo": "livros/Fm.json",
+      "referencias": "referencias/Fm.json"
+    },
+    {
+      "id": "Hb",
+      "nome": "Hebreus",
+      "abreviacao": "Hb",
+      "arquivo": "livros/Hb.json",
+      "referencias": "referencias/Hb.json"
+    },
+    {
+      "id": "Tg",
+      "nome": "Tiago",
+      "abreviacao": "Tg",
+      "arquivo": "livros/Tg.json",
+      "referencias": "referencias/Tg.json"
+    },
+    {
+      "id": "1Pe",
+      "nome": "1Pedro",
+      "abreviacao": "1Pe",
+      "arquivo": "livros/1Pe.json",
+      "referencias": "referencias/1Pe.json"
+    },
+    {
+      "id": "2Pe",
+      "nome": "2Pedro",
+      "abreviacao": "2Pe",
+      "arquivo": "livros/2Pe.json",
+      "referencias": "referencias/2Pe.json"
+    },
+    {
+      "id": "1Jo",
+      "nome": "1João",
+      "abreviacao": "1Jo",
+      "arquivo": "livros/1Jo.json",
+      "referencias": "referencias/1Jo.json"
+    },
+    {
+      "id": "2Jo",
+      "nome": "2João",
+      "abreviacao": "2Jo",
+      "arquivo": "livros/2Jo.json",
+      "referencias": "referencias/2Jo.json"
+    },
+    {
+      "id": "3Jo",
+      "nome": "3João",
+      "abreviacao": "3Jo",
+      "arquivo": "livros/3Jo.json",
+      "referencias": "referencias/3Jo.json"
+    },
+    {
+      "id": "Jd",
+      "nome": "Judas",
+      "abreviacao": "Jd",
+      "arquivo": "livros/Jd.json",
+      "referencias": "referencias/Jd.json"
+    },
+    {
+      "id": "Ap",
+      "nome": "Apocalipse",
+      "abreviacao": "Ap",
+      "arquivo": "livros/Ap.json",
+      "referencias": "referencias/Ap.json"
+    }
+  ]
+}
