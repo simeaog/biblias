@@ -1,0 +1,379 @@
+
+/* ============================================================
+   Material de Apoio + Referências — estilos isolados
+   Não altera o CSS do leitor existente.
+   ============================================================ */
+
+.apoio-opt-generated {
+    order: -1;
+}
+
+.apoio-opt-book-primary {
+    border-left: 3px solid var(--secondary, #3498db);
+}
+
+.apoio-opt-book-secondary {
+    border-left: 3px solid rgba(52, 152, 219, .35);
+}
+
+.apoio-opt-back {
+    display: inline-flex;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    color: var(--primary, #2c3e50);
+    font-weight: 700;
+    padding: 4px 0 14px;
+    cursor: pointer;
+}
+
+.apoio-opt-title {
+    font-size: 19px;
+    margin: 4px 0 16px;
+    color: var(--text, #222);
+}
+
+.apoio-opt-section {
+    border: 1px solid rgba(127, 140, 141, .22);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+    background: var(--card, #fff);
+}
+
+.apoio-opt-section-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    padding: 13px 14px;
+    font-weight: 700;
+    color: var(--text, #222);
+    cursor: pointer;
+    text-align: left;
+}
+
+.apoio-opt-section-body {
+    display: none;
+    padding: 0 14px 14px;
+}
+
+.apoio-opt-section.is-open .apoio-opt-section-body {
+    display: block;
+}
+
+.apoio-opt-text {
+    line-height: 1.62;
+    font-size: 14px;
+    color: var(--text, #222);
+}
+
+.apoio-opt-muted,
+.apoio-opt-loading,
+.apoio-opt-error {
+    color: #7f8c8d;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.apoio-opt-error {
+    color: #b33;
+}
+
+.apoio-opt-outline {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.apoio-opt-outline-item {
+    line-height: 1.45;
+    color: var(--text, #222);
+}
+
+.apoio-opt-outline-item.level-2 {
+    padding-left: 18px;
+    color: #65727a;
+}
+
+.apoio-opt-books {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.apoio-opt-book {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    border: 1px solid rgba(127, 140, 141, .25);
+    border-radius: 9px;
+    background: var(--card, #fff);
+    padding: 10px;
+    color: var(--text, #222);
+    cursor: pointer;
+    text-align: left;
+}
+
+.apoio-opt-book strong {
+    font-size: 13px;
+}
+
+.apoio-opt-book span {
+    font-size: 12px;
+    opacity: .78;
+}
+
+.apoio-opt-ref-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 8px 0 10px;
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+.apoio-opt-ref-mode {
+    display: flex;
+    gap: 4px;
+}
+
+.apoio-opt-ref-mode button {
+    border: 1px solid rgba(127, 140, 141, .28);
+    background: transparent;
+    color: var(--text, #222);
+    border-radius: 16px;
+    padding: 6px 9px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.apoio-opt-ref-mode button.active {
+    background: var(--primary, #2c3e50);
+    color: #fff;
+}
+
+.apoio-opt-ref-group {
+    border: 1px solid rgba(127, 140, 141, .18);
+    border-radius: 8px;
+    margin-bottom: 6px;
+    background: var(--card, #fff);
+}
+
+.apoio-opt-ref-group summary {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text, #222);
+}
+
+.apoio-opt-ref-direction {
+    padding: 0 10px 10px;
+    font-size: 12px;
+    color: var(--text, #222);
+}
+
+.apoio-opt-ref-direction strong {
+    display: block;
+    margin: 8px 0 5px;
+}
+
+.apoio-opt-back-title {
+    margin-top: 12px !important;
+}
+
+.apoio-opt-ref-targets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.apoio-opt-ref-link {
+    border: 1px solid rgba(52, 152, 219, .28);
+    border-radius: 14px;
+    background: transparent;
+    color: var(--secondary, #3498db);
+    padding: 5px 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.apoio-opt-ref-link.active {
+    background: var(--secondary, #3498db);
+    color: #fff;
+}
+
+.apoio-opt-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 10px 0 4px;
+    color: #7f8c8d;
+    font-size: 12px;
+}
+
+.apoio-opt-pagination button {
+    border: 1px solid rgba(127, 140, 141, .3);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: var(--card, #fff);
+    color: var(--text, #222);
+    cursor: pointer;
+}
+
+.apoio-opt-pagination button:disabled {
+    opacity: .35;
+    cursor: default;
+}
+
+.apoio-opt-crossref-drawer {
+    z-index: 1200;
+}
+
+.apoio-opt-crossref-source {
+    padding: 12px 16px 8px;
+    color: var(--text, #222);
+}
+
+.apoio-opt-crossref-source strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.apoio-opt-crossref-source div {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+.apoio-opt-crossref-list {
+    padding: 0 16px 8px;
+}
+
+.apoio-opt-reference-current {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.apoio-opt-crossref-preview {
+    padding: 8px 16px 20px;
+    overflow-y: auto;
+}
+
+.apoio-opt-preview-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 4px 0 10px;
+    color: var(--text, #222);
+}
+
+.apoio-opt-preview-header span {
+    font-size: 11px;
+    color: #7f8c8d;
+}
+
+.apoio-opt-preview-text {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.apoio-opt-preview-verse {
+    display: flex;
+    gap: 8px;
+    line-height: 1.5;
+    color: var(--text, #222);
+    font-size: 14px;
+}
+
+.apoio-opt-preview-verse sup {
+    min-width: 20px;
+    color: var(--secondary, #3498db);
+    font-weight: 700;
+}
+
+.apoio-opt-context-button {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    padding: 11px;
+    margin-top: 14px;
+    background: var(--primary, #2c3e50);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 430px) {
+    .apoio-opt-books {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ------------------------------------------------------------
+   Ícone discreto de referências no próprio versículo
+   ------------------------------------------------------------ */
+.verse.has-crossref {
+    padding-right: 34px;
+}
+
+.crossref-verse-button {
+    position: absolute;
+    right: 7px;
+    bottom: 5px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--secondary, #3498db);
+    opacity: .72;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.crossref-verse-button:hover,
+.crossref-verse-button:focus-visible {
+    opacity: 1;
+    background: color-mix(in srgb, var(--secondary, #3498db) 12%, transparent);
+    outline: none;
+}
+
+.crossref-verse-button svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .verse.has-crossref {
+        padding-right: 31px;
+    }
+
+    .crossref-verse-button {
+        right: 5px;
+        bottom: 4px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .crossref-verse-button svg {
+        width: 15px;
+        height: 15px;
+    }
+}

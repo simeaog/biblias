@@ -800,7 +800,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     }
 
     function getReaderContext() {
-        if (isPlanReaderActive()) {
+        if (isPlanReaderActive() && currentTabId === 'plans') {
             return {
                 kind: 'plan',
                 bibleData: planReadingState.bibleData,
@@ -1124,17 +1124,87 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         );
     }
 
-    function scrollToVerse(vIdx) {
+    function scrollToVerse(vIdx, attempt = 0) {
+        const targetIndex = Number(vIdx);
+        if (!Number.isInteger(targetIndex) || targetIndex < 0) return;
+
+        const main = document.getElementById('main-scroll');
+        const el = document.getElementById(`v-${targetIndex}`);
+
+        if (!main || !el) {
+            if (attempt < 20) {
+                setTimeout(() => scrollToVerse(targetIndex, attempt + 1), 50);
+            }
+            return;
+        }
+
+        const drawer = document.querySelector('.bottom-drawer.open');
+        const drawerHeight = drawer
+            ? Math.max(0, drawer.getBoundingClientRect().height)
+            : 0;
+
+        // Garante espaço suficiente para que inclusive o último versículo
+        // possa ser colocado no topo sem ficar atrás da gaveta.
+        let spacer = document.getElementById('verse-drawer-scroll-spacer');
+
+        if (drawerHeight > 0) {
+            if (!spacer) {
+                spacer = document.createElement('div');
+                spacer.id = 'verse-drawer-scroll-spacer';
+                spacer.setAttribute('aria-hidden', 'true');
+                spacer.style.pointerEvents = 'none';
+                spacer.style.visibility = 'hidden';
+                main.appendChild(spacer);
+            }
+
+            spacer.style.height =
+                `${Math.max(main.clientHeight + drawerHeight + 48, 160)}px`;
+        }
+
+        const mainRect = main.getBoundingClientRect();
+        const elRect = el.getBoundingClientRect();
+        const offset =
+            elRect.top - mainRect.top + main.scrollTop - 16;
+
+        main.scrollTo({
+            top: Math.max(0, offset),
+            behavior: 'smooth'
+        });
+
+        el.classList.remove('jump-highlight');
+        void el.offsetWidth;
+        el.classList.add('jump-highlight');
+
+        setTimeout(() => {
+            el.classList.remove('jump-highlight');
+        }, 5000);
+    }
+
+    function scrollVerseForDrawer(vIdx, drawer = null) {
+        const drawerEl = typeof drawer === 'string'
+            ? document.getElementById(drawer)
+            : drawer;
+
+        if (drawerEl && !drawerEl.classList.contains('open')) {
+            drawerEl.classList.add('open');
+            drawerEl.setAttribute('aria-hidden', 'false');
+        }
+
         requestAnimationFrame(() => {
-            const el = document.getElementById(`v-${vIdx}`);
-            const main = document.getElementById('main-scroll');
-            if (!el || !main) return;
-            const top = el.offsetTop - 24;
-            main.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
-            el.classList.add('jump-highlight');
-            setTimeout(() => el.classList.remove('jump-highlight'), 5000);
+            requestAnimationFrame(() => {
+                scrollToVerse(vIdx);
+            });
         });
     }
+
+    window.scrollVersiculoParaGaveta = scrollVerseForDrawer;
+
+    function limparEspacoScrollGaveta() {
+        document.getElementById('verse-drawer-scroll-spacer')?.remove();
+    }
+
+    window.limparEspacoScrollGaveta = limparEspacoScrollGaveta;
+
 
     function toggleExpandable(id, button) {
         const box = document.getElementById(id);
@@ -1200,7 +1270,59 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         document.querySelectorAll('.bottom-drawer').forEach(el => {
             el.classList.remove('open');
             el.setAttribute('aria-hidden', 'true');
+            el.dataset.verseAnchorApplied = 'false';
         });
+        limparEspacoScrollGaveta();
+    }
+
+    // ==========================================================
+    // POSICIONAMENTO DE VERSÍCULO AO ABRIR GAVETAS
+    // ==========================================================
+    // Guarda o último versículo tocado. O módulo de referências cruzadas
+    // é opcional e pode abrir sua própria gaveta; neste caso o app principal
+    // ainda consegue aplicar o mesmo comportamento visual da comparação.
+    let lastVerseInteraction = null;
+
+    document.addEventListener('click', event => {
+        const verse = event.target?.closest?.('.verse');
+        if (!verse) return;
+
+        const match = String(verse.id || '').match(/^v-(\d+)$/);
+        if (!match) return;
+
+        lastVerseInteraction = Number(match[1]);
+    }, true);
+
+    const drawerObserver = new MutationObserver(() => {
+        const drawer = document.querySelector('.bottom-drawer.open');
+        if (!drawer || lastVerseInteraction === null) return;
+
+        // Só age quando a gaveta acabou de ficar visível.
+        if (drawer.dataset.verseAnchorApplied === 'true') return;
+
+        drawer.dataset.verseAnchorApplied = 'true';
+
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                scrollVerseForDrawer(lastVerseInteraction, drawer);
+            });
+        });
+    });
+
+    function iniciarObservadorDeGavetas() {
+        if (!document.body) return;
+
+        drawerObserver.observe(document.body, {
+            subtree: true,
+            attributes: true,
+            attributeFilter: ['class']
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', iniciarObservadorDeGavetas, { once: true });
+    } else {
+        iniciarObservadorDeGavetas();
     }
 
     const TRANSLATIONS_CACHE_NAME = 'biblias-translations-v1';
@@ -1413,6 +1535,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
 
         if (id === 'language-drawer') syncLangButtons();
         
+        drawer.dataset.verseAnchorApplied = 'false';
         drawer.classList.add('open');
         drawer.setAttribute('aria-hidden', 'false');
     }
@@ -1928,10 +2051,41 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     // ==========================================
     function initApp() {
         if (!bibleData || bibleData.length === 0) return;
-        if(!bibleData[currentBook] || !bibleData[currentBook].chapters || !bibleData[currentBook].chapters[currentChap]) {
-            currentBook = 0; currentChap = 0;
+
+        const openedFromShare = applySharedBibleDestination();
+
+        if (
+            !bibleData[currentBook] ||
+            !bibleData[currentBook].chapters ||
+            !bibleData[currentBook].chapters[currentChap]
+        ) {
+            currentBook = 0;
+            currentChap = 0;
         }
+
         renderChapter(currentBook, currentChap);
+
+        // O renderChapter() é a única rotina responsável por consumir
+        // pendingVerseScroll. Não tentar rolar novamente aqui: isso podia
+        // ocorrer depois que o valor já tivesse sido consumido e, em uma
+        // sessão nova/dispositivo diferente, deixar o link cair no início
+        // do capítulo.
+        //
+        // Mantemos openedFromShare somente para preservar o fluxo existente
+        // sem executar um segundo scroll.
+        if (openedFromShare) {
+            requestAnimationFrame(() => {
+                const destinationVerse = Number(
+                    document.querySelector('.verse.jump-highlight')
+                        ?.id?.replace('v-', '')
+                );
+
+                if (Number.isInteger(destinationVerse)) {
+                    scrollToVerse(destinationVerse);
+                }
+            });
+        }
+
         setTimeout(() => buildBookSelectionUI(), 100);
     }
 
@@ -2026,8 +2180,22 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         return '';
     }
 
+    function getNormalReaderContext() {
+        return {
+            kind: 'read',
+            bibleData,
+            bookIdx: currentBook,
+            chapIdx: currentChap,
+            versionId: currentVersionId,
+            selectedMap: selectedVersesMap,
+            containerId: 'chapter-content'
+        };
+    }
+
     function renderChapter(bIdx, cIdx) {
-        renderChapterForContext(getReaderContext(), bIdx, cIdx);
+        // O leitor normal nunca deve herdar o contexto do leitor de Plano.
+        // O Plano só é renderizado explicitamente com seu próprio contexto.
+        renderChapterForContext(getNormalReaderContext(), bIdx, cIdx);
     }
 
     function renderChapterForContext(ctx, bIdx, cIdx) {
@@ -2353,6 +2521,11 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
 
         bindDictionaryWordClicks(ctx);
 
+        // Referências cruzadas são decoradas de forma assíncrona e somente
+        // quando o módulo opcional estiver presente. Não há carga nem
+        // re-renderização do capítulo aqui.
+        window.aplicarIconesReferencias?.(ctx.bookIdx, ctx.chapIdx, ctx.containerId, window.navegarReferenciaNoLeitor);
+
         if (ctx.kind === 'read' && !document.getElementById('tab-read').classList.contains('active')) {
             switchTab('read');
         }
@@ -2375,6 +2548,25 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         }
     }
 
+
+    // Reaplica as referências depois que a navegação terminou de renderizar o DOM.
+    // O renderChapter() mantém seu fluxo original; esta segunda aplicação usa
+    // o contexto REAL já atualizado, exatamente como ocorre após Salvar.
+    function atualizarReferenciasAposNavegacao() {
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                const novoCtx = getReaderContext();
+                if (!novoCtx || !Number.isInteger(novoCtx.bookIdx) || !Number.isInteger(novoCtx.chapIdx)) return;
+                window.aplicarIconesReferencias?.(
+                    novoCtx.bookIdx,
+                    novoCtx.chapIdx,
+                    novoCtx.containerId,
+                    window.navegarReferenciaNoLeitor
+                );
+            });
+        });
+    }
+
     function prevChapter() {
         const ctx = getReaderContext();
         if (ctx.kind === 'plan') {
@@ -2382,17 +2574,26 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             if (!first) return;
             if (ctx.chapIdx > first.chapIdx && ctx.bookIdx === first.bookIdx) {
                 renderChapterForContext(ctx, ctx.bookIdx, ctx.chapIdx - 1);
+                atualizarReferenciasAposNavegacao();
                 return;
             }
             if (ctx.bookIdx > first.bookIdx) {
                 const prevBook = ctx.bibleData[ctx.bookIdx - 1];
-                if (prevBook) renderChapterForContext(ctx, ctx.bookIdx - 1, prevBook.chapters.length - 1);
+                if (prevBook) {
+                    renderChapterForContext(ctx, ctx.bookIdx - 1, prevBook.chapters.length - 1);
+                    atualizarReferenciasAposNavegacao();
+                }
             }
             return;
         }
 
-        if (currentChap > 0) renderChapter(currentBook, currentChap - 1);
-        else if (currentBook > 0) renderChapter(currentBook - 1, bibleData[currentBook - 1].chapters.length - 1);
+        if (currentChap > 0) {
+            renderChapter(currentBook, currentChap - 1);
+            atualizarReferenciasAposNavegacao();
+        } else if (currentBook > 0) {
+            renderChapter(currentBook - 1, bibleData[currentBook - 1].chapters.length - 1);
+            atualizarReferenciasAposNavegacao();
+        }
     }
 
     function bindDictionaryWordClicks(context = getReaderContext()) {
@@ -2426,19 +2627,26 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             if (!last) return;
             if (ctx.chapIdx < last.chapIdx && ctx.bookIdx === last.bookIdx) {
                 renderChapterForContext(ctx, ctx.bookIdx, ctx.chapIdx + 1);
+                atualizarReferenciasAposNavegacao();
                 return;
             }
             if (ctx.bookIdx < last.bookIdx) {
                 renderChapterForContext(ctx, ctx.bookIdx + 1, 0);
+                atualizarReferenciasAposNavegacao();
             }
             return;
         }
 
-        if (currentChap < bibleData[currentBook].chapters.length - 1) renderChapter(currentBook, currentChap + 1);
-        else if (currentBook < bibleData.length - 1) renderChapter(currentBook + 1, 0);
+        if (currentChap < bibleData[currentBook].chapters.length - 1) {
+            renderChapter(currentBook, currentChap + 1);
+            atualizarReferenciasAposNavegacao();
+        } else if (currentBook < bibleData.length - 1) {
+            renderChapter(currentBook + 1, 0);
+            atualizarReferenciasAposNavegacao();
+        }
     }
 
-    function openSelector() { if (isPlanReaderActive()) return showToast('A leitura do Plano está limitada ao trecho do dia.'); fecharGavetas(); document.getElementById('selector-modal').style.display = 'flex'; renderBookListModal(); }
+    function openSelector() { if (isPlanReaderActive() && currentTabId === 'plans') return showToast('A leitura do Plano está limitada ao trecho do dia.'); fecharGavetas(); document.getElementById('selector-modal').style.display = 'flex'; renderBookListModal(); }
     function closeSelector() { document.getElementById('selector-modal').style.display = 'none'; }
     function renderBookListModal() {
         document.getElementById('modal-title').innerText = "Selecione o Livro";
@@ -2560,6 +2768,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             bIdx,
             cIdx
         );
+        atualizarReferenciasAposNavegacao();
     }
 
 
@@ -2575,6 +2784,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             bIdx,
             cIdx
         );
+        atualizarReferenciasAposNavegacao();
     }
 
     // ==========================================
@@ -2912,6 +3122,18 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
                 );
 
             currentTabId = 'plans';
+
+            // Reconstrói o leitor visual a partir do estado exclusivo do Plano.
+            // Assim o livro/capítulo consultado na aba Ler nunca deixa o
+            // navegador ou a pílula do Plano presos ao último livro consultado.
+            if (planReadingState.bibleData?.[planReadingState.bookIdx]) {
+                renderChapterForContext(
+                    getReaderContext(),
+                    planReadingState.bookIdx,
+                    planReadingState.chapIdx
+                );
+            }
+
             restoreTabScroll('plans');
             updateSelectionBar();
             return;
@@ -2924,6 +3146,11 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             tabId === 'read' &&
             pendingVerseScroll !== null &&
             pendingVerseScroll !== undefined;
+
+        // O leitor de Plano continua ativo em memória enquanto o usuário
+        // consulta a aba Ler. O contexto do leitor passa a ser o normal
+        // assim que a aba Ler é selecionada, sem encerrar o Plano.
+        currentTabId = tabId;
 
         fecharGavetas();
 
@@ -3042,12 +3269,7 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         clearSelection();
 
         if (!preservePendingVerseScroll) {
-            currentTabId = tabId;
-            restoreTabScroll(
-                tabId
-            );
-        } else {
-            currentTabId = tabId;
+            restoreTabScroll(tabId);
         }
 
     }
@@ -3073,6 +3295,86 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             switchTab('read');
         }
     }
+
+    // API mínima para módulos opcionais navegarem para o leitor normal
+    // sem acessar diretamente as variáveis internas do app.js.
+    window.abrirCapituloNoLeitor = function (bIdx, cIdx, vIdx = null) {
+
+        // Módulos externos podem enviar o destino já resolvido.
+        // Preferimos isso a reinterpretar a etiqueta textual da referência.
+        if (bIdx && typeof bIdx === 'object') {
+            const destino = bIdx;
+            bIdx = destino.bookIdx ?? destino.bookIndex;
+            cIdx = destino.chapIdx ?? destino.chapterIdx ?? destino.chapterIndex;
+            vIdx = destino.verseIdx ?? destino.verseIndex ?? destino.verse ?? vIdx;
+        }
+
+        const bookIndex = Number(bIdx);
+        const chapterIndex = Number(cIdx);
+
+        if (
+            !Number.isInteger(bookIndex) ||
+            !Number.isInteger(chapterIndex) ||
+            !bibleData?.[bookIndex]?.chapters?.[chapterIndex]
+        ) {
+            console.warn(
+                '[NAVEGAÇÃO] Destino inválido:',
+                { bIdx, cIdx, vIdx }
+            );
+            return;
+        }
+
+        currentBook = bookIndex;
+        currentChap = chapterIndex;
+
+        pendingVerseScroll =
+            vIdx === null ||
+            vIdx === undefined ||
+            vIdx === ''
+                ? null
+                : Number(vIdx);
+
+        if (
+            pendingVerseScroll !== null &&
+            (
+                !Number.isInteger(pendingVerseScroll) ||
+                pendingVerseScroll < 0
+            )
+        ) {
+            pendingVerseScroll = null;
+        }
+
+        localStorage.setItem(
+            'bible_last_read',
+            JSON.stringify({
+                bookIdx: currentBook,
+                chapIdx: currentChap
+            })
+        );
+
+        currentTabId = 'read';
+
+        // Se o leitor já estiver visível, renderizamos diretamente.
+        // Caso contrário, switchTab('read') fará a renderização.
+        const tabRead = document.getElementById('tab-read');
+
+        if (tabRead?.classList.contains('active')) {
+            renderChapter(
+                currentBook,
+                currentChap
+            );
+        } else {
+            switchTab('read');
+        }
+    };
+
+    // API estável para o módulo de referências.
+    // Recebe preferencialmente {bookIdx, chapIdx, verseIdx}.
+    window.navegarReferenciaNoLeitor = function (destino) {
+        return window.abrirCapituloNoLeitor(destino);
+    };
+
+    window.compartilharVersiculo = shareSelectedVerses;
 
     // ==========================================
     // BUSCA
@@ -3402,6 +3704,75 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         updateSelectionBar();
     }
 
+    function getSelectionDisplayReference() {
+        const ctx = getReaderContext();
+        if (!ctx || !ctx.selectedMap || ctx.selectedMap.size === 0) return '';
+
+        const arr = getSelectedOrdered();
+        if (!arr.length) return '';
+
+        const ranges = [];
+        let start = arr[0].v;
+        let prev = start;
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i].v === prev + 1) {
+                prev = arr[i].v;
+            } else {
+                ranges.push(
+                    start === prev
+                        ? `${start + 1}`
+                        : `${start + 1}-${prev + 1}`
+                );
+                start = arr[i].v;
+                prev = start;
+            }
+        }
+
+        ranges.push(
+            start === prev
+                ? `${start + 1}`
+                : `${start + 1}-${prev + 1}`
+        );
+
+        const book = ctx.bibleData?.[ctx.bookIdx];
+        if (!book) return '';
+
+        return `${getAbbrev(book.name)} ${ctx.chapIdx + 1}.${ranges.join(', ')}`;
+    }
+
+    function ensureShareSelectionButton() {
+        const actions = document.querySelector('#selection-bar .actions');
+        if (!actions) return null;
+
+        let button = document.getElementById('selection-share');
+
+        if (!button) {
+            button = document.createElement('button');
+            button.id = 'selection-share';
+            button.type = 'button';
+            button.innerText = 'Link';
+            button.addEventListener('click', shareSelectedVerses);
+            const saveButton = actions.querySelector('button[onclick="saveVerses()"]');
+
+            if (saveButton) {
+                actions.insertBefore(button, saveButton);
+            } else {
+                const clearButton = actions.querySelector(
+                    'button[onclick="clearSelection()"]'
+                );
+
+                if (clearButton) {
+                    actions.insertBefore(button, clearButton);
+                } else {
+                    actions.appendChild(button);
+                }
+            }
+        }
+
+        return button;
+    }
+
     function updateSelectionBar() {
         const ctx = getReaderContext();
         const bar = document.getElementById('selection-bar');
@@ -3410,12 +3781,21 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         const viewNoteBtn = document.getElementById('selection-view-note');
         const compareBtn = document.getElementById('selection-compare');
         const hasNote = getSelectedNotes().length > 0;
+        const shareBtn = ensureShareSelectionButton();
 
         if (viewNoteBtn) viewNoteBtn.classList.toggle('hidden', !hasNote);
         if (compareBtn) compareBtn.classList.toggle('hidden', count !== 1);
+        if (shareBtn) shareBtn.classList.toggle('hidden', count === 0);
 
         if (count > 0) {
-            document.getElementById('selection-count').innerText = `${count} versículo${count > 1 ? 's' : ''}`;
+            const label = document.getElementById('selection-count');
+            const reference = getSelectionDisplayReference();
+
+            if (label) {
+                label.innerText = reference;
+                label.title = `${reference} — ${count} versículo${count > 1 ? 's' : ''}`;
+            }
+
             bar.style.display = 'flex';
         } else {
             bar.style.display = 'none';
@@ -3736,7 +4116,6 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         if (ctx.selectedMap.size !== 1) return showToast('Selecione apenas um versículo para comparar.');
 
         const selected = getSelectedOrdered()[0];
-        scrollToVerse(selected.v);
 
         const drawer = document.getElementById('comparison-drawer');
         if (!drawer) return;
@@ -3744,6 +4123,8 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         fecharGavetas();
         drawer.classList.add('open');
         drawer.setAttribute('aria-hidden', 'false');
+
+        scrollVerseForDrawer(selected.v, drawer);
 
         const alternatives = versoesDisponiveis.filter(version => version.id !== ctx.versionId);
         if (!alternatives.length) {
@@ -3788,15 +4169,187 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         return arr.map(item => `${item.v + 1}. ${item.text}`).join(' ') + `\n${getShortReference()}`;
     }
 
+    function getFormattedCopyText() {
+        const ctx = getReaderContext();
+        if (!ctx || ctx.selectedMap.size === 0) return '';
+
+        const arr = getSelectedOrdered();
+        const body = arr
+            .map(item => `${item.v + 1}. ${item.text}`)
+            .join(' ');
+
+        return `${body}[ ${getShortReference()} ]`;
+    }
+
     function copyFallback(text) {
         let ta = document.createElement("textarea"); ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta);
         ta.focus(); ta.select(); try { document.execCommand('copy'); showToast('Copiado!'); } catch(e) { showToast('Erro ao copiar.'); }
         document.body.removeChild(ta); clearSelection();
     }
     function copyVerses() {
-        const txt = getFormattedReference();
-        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(txt).then(() => { showToast('Copiado!'); clearSelection(); }).catch(() => copyFallback(txt));
-        else copyFallback(txt);
+        const txt = getFormattedCopyText();
+        if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(txt)
+                .then(() => {
+                    showToast('Copiado!');
+                    clearSelection();
+                })
+                .catch(() => copyFallback(txt));
+        } else {
+            copyFallback(txt);
+        }
+    }
+
+    function buildBibleShareUrl() {
+        const ctx = getReaderContext();
+        const arr = getSelectedOrdered();
+
+        if (!ctx || !arr.length) return null;
+
+        const url = new URL(window.location.href);
+        url.search = '';
+
+        url.searchParams.set('biblia', '1');
+        url.searchParams.set('b', String(ctx.bookIdx));
+        url.searchParams.set('c', String(ctx.chapIdx));
+        url.searchParams.set('v', String(arr[0].v));
+
+        // Para uma seleção contínua, preserva também o último versículo.
+        if (arr.length > 1) {
+            let contiguous = true;
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i].v !== arr[i - 1].v + 1) {
+                    contiguous = false;
+                    break;
+                }
+            }
+
+            if (contiguous) {
+                url.searchParams.set('e', String(arr[arr.length - 1].v));
+            }
+        }
+
+        return url.href;
+    }
+
+    async function shareSelectedVerses() {
+        const ctx = getReaderContext();
+        if (!ctx || !ctx.selectedMap.size) return;
+
+        const url = buildBibleShareUrl();
+        if (!url) return;
+
+        const reference = getSelectionDisplayReference();
+        const title = `Bíblia — ${reference}`;
+
+        try {
+            if (navigator.share) {
+                await navigator.share({
+                    title,
+                    text: reference,
+                    url
+                });
+                return;
+            }
+
+            if (navigator.clipboard && window.isSecureContext) {
+                await navigator.clipboard.writeText(url);
+                showToast('Link copiado!');
+            } else {
+                copyFallback(url);
+                return;
+            }
+
+            clearSelection();
+        } catch (error) {
+            // Cancelamento do compartilhamento nativo não é erro para o usuário.
+            if (error?.name === 'AbortError') return;
+
+            try {
+                if (navigator.clipboard && window.isSecureContext) {
+                    await navigator.clipboard.writeText(url);
+                    showToast('Link copiado!');
+                } else {
+                    copyFallback(url);
+                    return;
+                }
+                clearSelection();
+            } catch (fallbackError) {
+                console.error('Erro ao compartilhar referência:', fallbackError);
+                showToast('Não foi possível compartilhar o link.');
+            }
+        }
+    }
+
+    function getSharedBibleDestination() {
+        try {
+            const url = new URL(window.location.href);
+
+            if (url.searchParams.get('biblia') !== '1') {
+                return null;
+            }
+
+            const bIdx = Number(url.searchParams.get('b'));
+            const cIdx = Number(url.searchParams.get('c'));
+            const vIdx = Number(url.searchParams.get('v'));
+
+            if (
+                !Number.isInteger(bIdx) ||
+                bIdx < 0 ||
+                !Number.isInteger(cIdx) ||
+                cIdx < 0 ||
+                !Number.isInteger(vIdx) ||
+                vIdx < 0
+            ) {
+                return null;
+            }
+
+            return { bIdx, cIdx, vIdx };
+        } catch (error) {
+            return null;
+        }
+    }
+
+    function applySharedBibleDestination() {
+        const destination = getSharedBibleDestination();
+        if (!destination) return false;
+
+        if (
+            !bibleData?.[destination.bIdx]?.chapters?.[destination.cIdx]
+        ) {
+            return false;
+        }
+
+        // Um destino recebido pela URL tem prioridade absoluta sobre
+        // lastRead/localStorage. Guardamos os três índices juntos antes
+        // de qualquer renderização para que a sessão nova abra exatamente
+        // no livro/capítulo/versículo compartilhado.
+        const targetBook = destination.bIdx;
+        const targetChap = destination.cIdx;
+        const targetVerse = destination.vIdx;
+
+        currentBook = targetBook;
+        currentChap = targetChap;
+        pendingVerseScroll = targetVerse;
+
+        localStorage.setItem(
+            'bible_last_read',
+            JSON.stringify({
+                bookIdx: targetBook,
+                chapIdx: targetChap
+            })
+        );
+
+        // Remove o destino da barra de endereço sem recarregar a aplicação.
+        try {
+            const cleanUrl = new URL(window.location.href);
+            cleanUrl.search = '';
+            window.history.replaceState({}, document.title, cleanUrl.href);
+        } catch (error) {
+            // Navegação continua normalmente mesmo se replaceState não estiver disponível.
+        }
+
+        return true;
     }
 
     // SALVOS
@@ -4082,6 +4635,11 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             item.bookIdx,
             item.chapIdx
         );
+
+        // Assim como na navegação normal, reaplica as referências somente
+        // depois que o capítulo salvo já foi renderizado e o contexto atual
+        // do leitor foi atualizado.
+        atualizarReferenciasAposNavegacao();
     }
 
     function refreshCurrentVerseHighlights() {
@@ -4315,6 +4873,10 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             item.bookIdx,
             item.chapIdx
         );
+
+        // O destino da anotação pode ser outro capítulo. Reaplica as
+        // referências usando o contexto NOVO após a renderização.
+        atualizarReferenciasAposNavegacao();
     }
 
     async function editNote(i) {
