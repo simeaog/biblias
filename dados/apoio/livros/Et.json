@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Et",
+  "nome": "Ester",
+  "abreviacao": "Et",
+  "material": {
+    "titulo": "Sobre Ester",
+    "introducao": "Este livro conta a história de Ester, a moça judia que se torna rainha por causa do seu casamento com Assuero, rei da Pérsia. Hamã, o primeiro-ministro do reino, planeja acabar com todos os judeus do reino, mas Ester e o seu primo Mardoqueu conseguem fazer com que o plano perverso de Hamã fracasse, e ele acaba morrendo na forca que havia mandado construir para enforcar Mardoqueu. Para festejar a vitória contra os inimigos, os judeus começaram a comemorar a Festa de Purim, o que fazem até hoje.",
+    "esquema_conteudo": "1. Ester se torna rainha (1.1—2.23) 2. Hamã planeja a morte dos judeus (3.1—5.14) 3. Hamã é denunciado e morto (6.1—7.10) 4. Os judeus acabam com seus inimigos (8.1—9.19) 5. A Festa de Purim (9.20—10.3)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

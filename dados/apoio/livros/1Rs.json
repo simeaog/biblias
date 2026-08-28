@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "1Rs",
+  "nome": "1Reis",
+  "abreviacao": "1Rs",
+  "material": {
+    "titulo": "Sobre 1Reis",
+    "introducao": "A história dos reis israelitas começa nos Livros de Samuel e continua no Primeiro Livro dos Reis . Este livro pode ser dividido em três partes: 1) O começo do reinado de Salomão em Israel e em Judá e a morte do seu pai, Davi. 2) O reinado e as realizações de Salomão, especialmente a construção do templo em Jerusalém. 3) A divisão da nação em dois reinos, o do Norte e o do Sul, e a história dos reis que os governaram até a metade do século nono antes de Cristo. Nos dois Livros dos Reis , cada rei é julgado de acordo com a sua fidelidade a Deus: o progresso da nação depende da fidelidade do seu rei, ao passo que a idolatria e a desobediência levam à desgraça. Os reis do Reino do Norte falharam todos nessa prova, enquanto que em Judá alguns reis falharam, e outros não. No Primeiro Livro dos Reis aparecem os profetas de Deus, homens corajosos que falavam em nome dele e que diziam ao povo que não adorasse ídolos nem desobedecesse a Deus. Especialmente notáveis são Elias e a história da sua discussão com os profetas de Baal ( cap. 18).",
+    "esquema_conteudo": "1. Fim do reinado de Davi. Salomão proclamado rei (1.1—2.12) 2. Salomão torna-se rei (2.13-46) 3. Reinado de Salomão (3.1—11.43) a. Os primeiros anos (3.1—4.34) b. A construção do templo (5.1—8.66) c. Os últimos anos (9.1—11.43) 4. Dois reinos (12.1—22.54) a. A revolta das tribos do Norte (12.1—14.20) b. Reis de Judá e de Israel (14.21—16.34) c. O profeta Elias (17.1—19.21) d. O rei Acabe (20.1—22.40) e. Reinados de Josafá e de Acazias (22.41-54)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

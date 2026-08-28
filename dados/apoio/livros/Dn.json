@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Dn",
+  "nome": "Daniel",
+  "abreviacao": "Dn",
+  "material": {
+    "titulo": "Sobre Daniel",
+    "introducao": "O Livro de Daniel foi escrito em tempos de perseguição e sofrimento para o povo judaico. Por meio de histórias e de visões, o autor procura explicar ao povo por que eles estão sendo perseguidos e também os anima a continuarem fiéis a Deus. Chegará o tempo em que Deus acabará com o domínio dos gentios, e mais uma vez Israel será uma nação livre e independente. O livro se divide em duas partes: 1. Histórias a respeito de Daniel e de alguns dos seus companheiros, que estão vivendo na Babilônia, para onde foram levados como prisioneiros. Eles continuam firmes na sua fé em Deus e obedecem às suas leis, e por isso Ele os salva do sofrimento e da morte. 2. As visões de Daniel, que tratam de vários impérios que aparecem e depois desaparecem. Essas visões deixam bem claro que os perseguidores serão derrotados e que a vitória final será do povo judaico.",
+    "esquema_conteudo": "1. Histórias de Daniel e de seus companheiros (1.1—6.28) 2. Visões apocalípticas de Daniel (7.1—11.45) a. Os quatro animais (7.1-28) b. O carneiro e o bode (8.1—9.27) c. O mensageiro do céu (10.1—11.45) 3. O tempo do fim (12.1-13)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

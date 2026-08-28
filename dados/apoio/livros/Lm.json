@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Lm",
+  "nome": "Lamentações",
+  "abreviacao": "Lm",
+  "material": {
+    "titulo": "Sobre Lamentações",
+    "introducao": "Lamentações é uma coleção de cinco poemas nos quais se chora a destruição da cidade de Jerusalém no ano 586 a.C. O país havia sido arrasado, e o povo havia sido levado prisioneiro. Embora neste livro se fale muito de coisas tristes, não deixa de haver nele uma nota de confiança em Deus e de esperança no futuro. Esses poemas são recitados pelos judeus, com jejum e orações, para lembrarem todos os anos a destruição de Jerusalém.",
+    "esquema_conteudo": "1. As tristezas de Jerusalém (1.1-22) 2. Deus castiga Jerusalém (2.1-22) 3. Castigo, arrependimento e esperança (3.1-66) 4. Jerusalém arrasada (4.1-22) 5. Oração pedindo misericórdia (5.1-22)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

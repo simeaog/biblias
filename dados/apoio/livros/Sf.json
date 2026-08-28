@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Sf",
+  "nome": "Sofonias",
+  "abreviacao": "Sf",
+  "material": {
+    "titulo": "Sobre Sofonias",
+    "introducao": "Sofonias viveu na mesma época em que viveram os profetas Naum e Habacuque. A sua mensagem parece ter sido anunciada antes da reforma religiosa feita por Josias, rei de Judá, em 621 a.C. O profeta fala do Dia do Senhor, em que ele vai castigar o povo de Judá e os moradores de Jerusalém. Porém ele castigará também os outros povos, e as cidades dos filisteus serão destruídas. Mas a cidade de Jerusalém, depois de ser castigada, receberá de novo a graça e as bênçãos de Deus.",
+    "esquema_conteudo": "1. O dia da ira de Deus (1.1-18) 2. Juízos contra as nações vizinhas (2.1-15) 3. O pecado e a redenção de Jerusalém (3.1-20)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

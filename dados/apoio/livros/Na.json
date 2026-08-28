@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Na",
+  "nome": "Naum",
+  "abreviacao": "Na",
+  "material": {
+    "titulo": "Sobre Naum",
+    "introducao": "O profeta Naum viveu na mesma época em que viveram os profetas Habacuque e Sofonias. O Livro de Naum é uma poesia sobre a queda de Nínive, a capital da Assíria. Durante cento e cinquenta anos, a Assíria havia dominado os países do Oriente Médio, mas no ano 612 a.C. os babilônios conquistaram Nínive. O profeta Naum vê a queda de Nínive como o castigo que Deus manda sobre um povo perseguidor e cruel. A linguagem do profeta é brilhante, e por meio de várias figuras ele descreve a queda da grande e poderosa capital da Assíria.",
+    "esquema_conteudo": "1. O julgamento de Deus contra Nínive (1.1-15) 2. A queda de Nínive (2.1—3.19) a. Cerco e tomada (2.1-13) b. Ruína completa (3.1-19)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

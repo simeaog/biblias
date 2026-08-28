@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "2Cr",
+  "nome": "2Crônicas",
+  "abreviacao": "2Cr",
+  "material": {
+    "titulo": "Sobre 2Crônicas",
+    "introducao": "O Segundo Livro das Crônicas , que é a continuação do Primeiro Livro das Crônicas , começa com a narração dos acontecimentos do reinado de Salomão em Israel e Judá. Depois da morte do rei Salomão, a nação se dividiu em dois reinos, o do Norte e o do Sul ( cap. 10). Daí em diante, conta-se a história de Judá, o Reino do Sul, até a queda de Jerusalém no ano 586 a.C. , quando os judeus foram levados cativos para a Babilônia. O livro termina falando sobre o decreto de Ciro, rei da Pérsia, que permitiu que os judeus voltassem para Jerusalém e reconstruíssem o templo.",
+    "esquema_conteudo": "1. O reinado de Salomão (1.1—9.31) a. Os primeiros anos (1.1-17) b. A construção do templo (2.1—7.10) c. Os últimos anos (7.11—9.31) 2. A revolta das tribos do Norte (10.1-19) 3. Os reis de Judá (11.1—36.12) 4. A queda de Jerusalém (36.13-23)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

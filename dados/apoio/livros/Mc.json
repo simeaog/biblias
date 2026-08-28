@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Mc",
+  "nome": "Marcos",
+  "abreviacao": "Mc",
+  "material": {
+    "titulo": "Sobre Marcos",
+    "introducao": "O Evangelho de Marcos , considerado o mais antigo de todos os Evangelhos, anuncia a boa notícia a respeito de Jesus Cristo, dando atenção especial à sua atividade constante e à sua autoridade. Jesus vai de um lugar para outro, anunciando a vinda do Reino de Deus, ensinando multidões, fazendo milagres e curando doentes. Para ajudá-lo, ele escolhe doze homens, a quem chama de “apóstolos”. Estes acompanham Jesus por toda parte, aprendem o mistério do Reino de Deus e depois saem para anunciar a mensagem da salvação e curar pessoas. A autoridade de Jesus vem de Deus. Ele é o Filho do Homem, aquele que Deus escolheu e enviou para ser o Salvador de todos (10.45). Portanto, ele tem autoridade para expulsar demônios, curar doentes e perdoar pecados. Este Evangelho começa com o batismo de Jesus no rio Jordão por João Batista (1.9-11) e termina com a ressurreição de Jesus (16.1-8).",
+    "esquema_conteudo": "Prólogo (1.1-15) Pregação de João Batista (1.1-8) Começo do ministério de Jesus (1.9-15) 1. Jesus, o Messias (1.16—8.30) a. Atividades e ensinamentos de Jesus (1.16—3.12) b. Proclamação do Reino de Deus (3.13—6.6) c. Jesus se revela como o Messias (6.7—8.30) 2. Jesus, o Filho do Homem (8.31—16.20) a. Jesus anuncia a sua morte (8.31—11.11) b. Atividades de Jesus em Jerusalém (11.12—13.37) c. Paixão, morte e ressurreição (14.1—16.20)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

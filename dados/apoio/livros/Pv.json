@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Pv",
+  "nome": "Provérbios",
+  "abreviacao": "Pv",
+  "material": {
+    "titulo": "Sobre Provérbios",
+    "introducao": "Provérbios é um livro de sabedoria prática. Ensina que a religião está ligada aos problemas comuns da vida. Começa lembrando que “o temor do S ENHOR é o princípio do saber”. Trata também de assuntos de moral, de bom senso e de boas maneiras. Os provérbios revelam a sabedoria dos antigos mestres israelitas sobre o que a pessoa sábia deve fazer em certas situações. Alguns provérbios são a respeito das relações familiares; outros, sobre o comportamento nos negócios. Alguns tratam de boa educação nas relações sociais; e outros, da necessidade de a pessoa saber se controlar. Entre outras coisas, eles ensinam a humildade, a paciência, o respeito pelos pobres e a lealdade para com os amigos.",
+    "esquema_conteudo": "1. Elogio da sabedoria (1.1—4.27) 2. Conselhos contra o adultério e outros pecados (5.1—7.27) 3. A Sabedoria e a falta de juízo (8.1—9.18) 4. Primeira coleção de provérbios (10.1—22.16) 5. Trinta provérbios dos sábios (22.17—24.34) 6. Segunda coleção de provérbios (25.1—29.27) 7. Provérbios variados (30.1—31.9) 8. A mulher virtuosa (31.10-31)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

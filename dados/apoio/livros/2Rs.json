@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "2Rs",
+  "nome": "2Reis",
+  "abreviacao": "2Rs",
+  "material": {
+    "titulo": "Sobre 2Reis",
+    "introducao": "O Segundo Livro dos Reis é a continuação da história dos dois reinos israelitas. Este livro começa onde a história parou em 1Reis . O Livro de 2Reis pode ser dividido em duas partes: 1) A história dos dois reinos, desde o ano 850 a.C. até a queda de Samaria e o fim do Reino do Norte (Israel), em 721 a.C. 2) A história do Reino do Sul (Judá), desde a queda do Reino de Israel até a conquista e destruição de Jerusalém pelo rei Nabucodonosor, da Babilônia, em 586 a.C. O livro termina com a história de Gedalias como governador de Judá e conta como o rei Joaquim foi libertado da prisão na Babilônia. A queda dos reinos de Israel e de Judá acontece porque os reis e o povo foram infiéis ao Senhor. A destruição de Jerusalém e a ida de grande parte do povo de Judá para o cativeiro marcam um momento decisivo na história israelita.",
+    "esquema_conteudo": "1. O Reino dividido (1.1—17.41) a. O profeta Elias e o rei Acazias (1.1-18) b. O profeta Eliseu sucede a Elias (2.1-25) c. Atividades de Eliseu (3.1—8.15) d. Os reis de Judá e de Israel (8.16—17.4) e. Queda de Samaria (17.5-41) 2. O Reino de Judá (18.1—24.20) a. De Ezequias a Josias (18.1—21.26) b. O reinado de Josias (22.1—23.30) c. Os últimos reis de Judá (23.31—24.20) 3. A queda de Jerusalém (25.1-30)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

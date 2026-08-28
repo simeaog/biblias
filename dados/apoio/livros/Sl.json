@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Sl",
+  "nome": "Salmos",
+  "abreviacao": "Sl",
+  "material": {
+    "titulo": "Sobre Salmos",
+    "introducao": "Salmos é o livro de hinos e de orações da Bíblia. Os Salmos foram escritos por diferentes autores, durante um período de mais ou menos setecentos anos (de 1000 a 333 a.C. ), e foram usados pelo povo de Israel nas suas reuniões de adoração a Deus. Há vários tipos de Salmos: hinos de louvor a Deus; orações pedindo ajuda, proteção e salvação; pedidos de perdão; canções de agradecimento pelas bênçãos de Deus; orações em favor do rei; canções para ensinar as pessoas a praticarem o bem; súplicas para que Deus castigue os inimigos; e outros. As orações são pessoais ou nacionais: algumas mostram os sentimentos íntimos de uma pessoa, enquanto outras representam as necessidades e os sentimentos de todo o povo de Deus. A forma geralmente usada na poesia dos Salmos se chama paralelismo, que é a repetição de uma ideia, com outras palavras, na linha ou nas linhas seguintes. O paralelismo, nas suas várias formas, e a riqueza de comparações dão graça e beleza à poesia hebraica. Jesus cantou Salmos e os citou várias vezes. Eles foram citados mais de cem vezes pelos escritores dos livros do Novo Testamento. Através dos séculos, os Salmos têm sido uma fonte de inspiração e devoção para os cristãos e para a Igreja, tanto nos seus cultos de adoração a Deus como no seu trabalho de evangelização.",
+    "esquema_conteudo": "Os Salmos estão agrupados em cinco livros, assim: Livro I: Salmos 1—41 Livro II: Salmos 42—72 Livro III: Salmos 73—89 Livro IV: Salmos 90—106 Livro V: Salmos 107—150"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Ag",
+  "nome": "Ageu",
+  "abreviacao": "Ag",
+  "material": {
+    "titulo": "Sobre Ageu",
+    "introducao": "Em 538 a.C. , os israelitas começaram a voltar da Babilônia, onde tinham vivido como prisioneiros. Eles construíram as suas casas em Jerusalém, porém não deram atenção ao templo, que estava destruído. Em 520 a.C. , o profeta Ageu anunciou algumas mensagens de Deus, ordenando ao povo que construísse de novo o templo. Os israelitas deviam voltar para Deus, e assim Deus os abençoaria, e eles viveriam em paz e prosperidade. Ageu foi companheiro do profeta Zacarias.",
+    "esquema_conteudo": "1. Exortação para a reedificação do templo (1.1-15) 2. A glória do novo templo (2.1-9) 3. Repreensão da infidelidade do povo (2.10-19) 4. Promessa do Senhor a Zorobabel (2.20-23)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

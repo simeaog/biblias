@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "1Cr",
+  "nome": "1Crônicas",
+  "abreviacao": "1Cr",
+  "material": {
+    "titulo": "Sobre 1Crônicas",
+    "introducao": "Os Livros de 1 e 2Crônicas contam novamente os acontecimentos já registrados nos Livros de Samuel e de Reis , mas de um ponto de vista diferente. A história dos reis israelitas, como aparece nos Livros das Crônicas , tem dois propósitos principais: 1. Mostrar que, embora tivessem caído desgraças sobre os reinos de Israel e de Judá, Deus mantinha as promessas que havia feito à nação e continuava a realizar o seu plano para o seu povo através das pessoas que moravam em Judá. Como base para essa afirmação, o escritor conta as conquistas de Davi e Salomão, as reformas de Josafá, Ezequias e Josias e fala sobre o povo que continuou fiel a Deus. 2. Descrever o início da adoração a Deus no templo de Jerusalém e especialmente a organização do trabalho dos sacerdotes e dos levitas, que eram os encarregados do culto. Davi é apresentado como aquele que planejou o templo e o culto, embora tivesse sido Salomão quem construiu o templo.",
+    "esquema_conteudo": "1. Genealogias de Adão até Davi (1.1—9.44) 2. A morte de Saul (10.1-14) 3. O reinado de Davi (11.1—29.30) a. Problemas e conquistas (11.1—21.30) b. Preparativos para a construção do templo (22.1—29.30)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "2Jo",
+  "nome": "2João",
+  "abreviacao": "2Jo",
+  "material": {
+    "titulo": "Sobre 2João",
+    "introducao": "Esta pequena epístola foi escrita por um “presbítero”, isto é, um dirigente de uma igreja. A epístola é dirigida aos membros de outra igreja, os quais o autor conhece bem. Ele pede aos leitores que amem uns aos outros e que tomem cuidado com certas doutrinas falsas que estão sendo espalhadas pelo mundo.",
+    "esquema_conteudo": "Prefácio e saudação (vs. 1-3) 1. Permanecei firmes na verdade (vs. 4-6) 2. Cuidado com os enganadores (vs. 7-11) Saudações (vs. 12-13)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

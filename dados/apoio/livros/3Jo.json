@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "3Jo",
+  "nome": "3João",
+  "abreviacao": "3Jo",
+  "material": {
+    "titulo": "Sobre 3João",
+    "introducao": "Esta epístola, escrita pelo mesmo “presbítero” que escreveu a Segunda Epístola de João , é enviada a Gaio, dirigente de uma igreja. O autor elogia Gaio, condena a oposição de Diótrefes e fala bem de Demétrio.",
+    "esquema_conteudo": "Prefácio e saudação (vs. 1-4) 1. Elogio à hospitalidade de Gaio (vs. 5-8) 2. A oposição de Diótrefes (vs. 9-10) 3. Bom testemunho acerca de Demétrio (vs. 11-12) Saudações (vs. 13-15)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

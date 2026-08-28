@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Ct",
+  "nome": "Cantares",
+  "abreviacao": "Ct",
+  "material": {
+    "titulo": "Sobre Cantares",
+    "introducao": "Cantares é uma coleção de poemas de amor, a maior parte em forma de canções próprias para festas de casamento ( Jr 33.11). Em algumas traduções, o livro é chamado de “Cântico dos Cânticos de Salomão”. Essas canções de amor têm sido muitas vezes interpretadas pelos judeus como um retrato de Deus como esposo do seu povo ( Os 2.16-20). Alguns cristãos entendem que se trata de uma figura do relacionamento entre Cristo e a Igreja ( Ap 21.2,9). Na opinião de outros, este livro ensina a dignidade e a beleza do amor humano. Cantares foi incluído entre os livros sagrados da Bíblia porque trata da pureza e da santidade do casamento, que foi instituído por Deus. O povo tende a considerar a infidelidade como coisa sem importância, mas o verdadeiro amor permanece fiel, apesar de todas as dificuldades e tentações.",
+    "esquema_conteudo": "1. Título (1.1) 2. Cânticos (1.2—8.14) a. Primeiro (1.2—2.7) b. Segundo (2.8—3.5) c. Terceiro (3.6—5.1) d. Quarto (5.2—6.3) e. Quinto (6.4—8.4) f. Sexto (8.5-14)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

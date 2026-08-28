@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Jo",
+  "nome": "João",
+  "abreviacao": "Jo",
+  "material": {
+    "titulo": "Sobre João",
+    "introducao": "No Evangelho de João , Jesus é apresentado como o Verbo de Deus que existiu desde a eternidade com Deus e que se fez um ser humano, mostrando assim o amor e a verdade de Deus. O autor diz que o propósito deste Evangelho é fazer com que os leitores creiam que Jesus é o Messias, o Filho de Deus, e com que, por meio dessa fé, tenham vida (20.31). Na primeira parte do Evangelho, o autor trata principalmente dos milagres que Jesus fez ( caps. 1—11). Esses milagres são sinais, isto é, eles mostram quem é Jesus e qual a razão por que ele veio ao mundo. O maior desses milagres é a ressurreição de Lázaro, pela qual Jesus mostra que ele é a ressurreição e a vida ( cap. 11). Outros milagres demonstram que Jesus é o pão da vida (6.22-71), é a luz do mundo (8.12-20) e é aquele que dá vida às pessoas (11.25-26). Os milagres provam também que ele recebeu autoridade de Deus para julgar todos os seres humanos (5.19-30). A segunda parte deste Evangelho ( caps. 12—21) fala da ligação que existe entre Jesus e os seus seguidores. Fala também dos ensinamentos que ele lhes deu e da promessa de que, depois que ele fosse embora, viria o Espírito Santo para ensinar-lhes toda a verdade a respeito de Jesus. E o Evangelho termina contando o julgamento, a morte, a ressurreição e as aparições de Jesus.",
+    "esquema_conteudo": "Prólogo: A encarnação do Verbo (1.1-18) 1. Ministério público de Jesus, o Cristo (1.19—12.50) a. João Batista (1.19-34) b. Jesus começa o seu ministério (1.35—3.36) c. Revelação de Jesus como o Cristo e confronto com as autoridades judaicas (4.1—6.71) d. Revelação de Jesus como a luz e a vida para o mundo (7.1—12.50) 2. Paixão, morte e ressurreição (13.1—21.23) a. A última ceia (13.1—17.26) A ceia. O novo mandamento. Discursos de despedida (13.1—16.33) A oração sacerdotal (17.1-26) b. Prisão, julgamento, morte e sepultamento (18.1—19.42) c. A ressurreição (20.1—21.23) O sepulcro vazio (20.1-10) Jesus aparece a Maria Madalena (20.11-18) Jesus aparece aos discípulos (20.19—21.23) Epílogo (21.24-25)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}

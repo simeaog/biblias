@@ -1,0 +1,17 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "Ed",
+  "nome": "Esdras",
+  "abreviacao": "Ed",
+  "material": {
+    "titulo": "Sobre Esdras",
+    "introducao": "O Livro de Esdras é continuação do Segundo Livro das Crônicas . Ele descreve a volta de alguns dos israelitas que estavam cativos na Babilônia, a vida deles em Jerusalém e a adoração no templo. Esses acontecimentos são apresentados na seguinte ordem: 1. O primeiro grupo de israelitas volta da Babilônia, por ordem de Ciro, rei da Pérsia. 2. O templo é reconstruído e inaugurado, e o Senhor é adorado de novo em Jerusalém. 3. Anos depois, outro grupo volta para Jerusalém, dirigido por Esdras, um escriba versado na Lei de Deus. Esdras ajuda o povo a reorganizar a sua vida religiosa e social a fim de que as tradições espirituais de Israel sejam conservadas.",
+    "esquema_conteudo": "1. O primeiro grupo volta da Babilônia (1.1—2.70) 2. O templo é reconstruído em Jerusalém (3.1—6.22) 3. Esdras volta com outro grupo (7.1—10.44)"
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fontes_editoriais": [
+    "ARC-2009",
+    "NTLH-2000"
+  ]
+}
