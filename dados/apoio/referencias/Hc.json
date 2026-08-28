@@ -1,0 +1,458 @@
+{
+  "schema": "referencias-cruzadas-v1",
+  "livro": "Hc",
+  "nome": "Habacuque",
+  "politica_traducao": "independente",
+  "descricao": "Referências canônicas compartilhadas por todas as traduções.",
+  "entradas": [
+    {
+      "origem": "1.1",
+      "destinos": [],
+      "notas": [
+        "ou A sentença"
+      ]
+    },
+    {
+      "origem": "1.2",
+      "destinos": [
+        {
+          "livro": "Lm",
+          "referencia": "3.8"
+        }
+      ]
+    },
+    {
+      "origem": "1.4",
+      "destinos": [
+        {
+          "livro": "Jr",
+          "referencia": "12.1"
+        }
+      ],
+      "notas": [
+        "Jó 21.7"
+      ]
+    },
+    {
+      "origem": "1.5",
+      "destinos": [
+        {
+          "livro": "Is",
+          "referencia": "29.14"
+        },
+        {
+          "livro": "At",
+          "referencia": "13.41"
+        }
+      ]
+    },
+    {
+      "origem": "1.6",
+      "destinos": [
+        {
+          "livro": "Dt",
+          "referencia": "28.49-50"
+        },
+        {
+          "livro": "2Rs",
+          "referencia": "24.2"
+        }
+      ]
+    },
+    {
+      "origem": "1.8",
+      "destinos": [
+        {
+          "livro": "Jr",
+          "referencia": "5.6"
+        },
+        {
+          "livro": "Sf",
+          "referencia": "3.3"
+        },
+        {
+          "livro": "Jr",
+          "referencia": "4.13"
+        }
+      ],
+      "notas": [
+        "ou ferozes"
+      ]
+    },
+    {
+      "origem": "1.12",
+      "destinos": [
+        {
+          "livro": "2Rs",
+          "referencia": "19.25"
+        },
+        {
+          "livro": "Is",
+          "referencia": "10.5-7"
+        },
+        {
+          "livro": "Ez",
+          "referencia": "30.25"
+        }
+      ]
+    },
+    {
+      "origem": "1.13",
+      "destinos": [
+        {
+          "livro": "Jr",
+          "referencia": "12.1"
+        }
+      ]
+    },
+    {
+      "origem": "1.15",
+      "destinos": [
+        {
+          "livro": "Jr",
+          "referencia": "16.16"
+        },
+        {
+          "livro": "Am",
+          "referencia": "4.2"
+        }
+      ]
+    },
+    {
+      "origem": "2.1",
+      "destinos": [
+        {
+          "livro": "Is",
+          "referencia": "21.8,11"
+        }
+      ]
+    },
+    {
+      "origem": "2.2",
+      "destinos": [
+        {
+          "livro": "Is",
+          "referencia": "8.1"
+        }
+      ]
+    },
+    {
+      "origem": "2.3",
+      "destinos": [
+        {
+          "livro": "Dn",
+          "referencia": "10.14"
+        },
+        {
+          "livro": "Hb",
+          "referencia": "10.37"
+        }
+      ]
+    },
+    {
+      "origem": "2.4",
+      "destinos": [
+        {
+          "livro": "Jo",
+          "referencia": "8.36"
+        },
+        {
+          "livro": "Rm",
+          "referencia": "1.17"
+        },
+        {
+          "livro": "Gl",
+          "referencia": "3.11"
+        },
+        {
+          "livro": "Hb",
+          "referencia": "10.38"
+        },
+        {
+          "livro": "Is",
+          "referencia": "11.9"
+        }
+      ],
+      "notas": [
+        "a"
+      ]
+    },
+    {
+      "origem": "2.5",
+      "destinos": [
+        {
+          "livro": "Pv",
+          "referencia": "27.20"
+        }
+      ]
+    },
+    {
+      "origem": "2.6",
+      "destinos": [
+        {
+          "livro": "Mq",
+          "referencia": "2.4"
+        }
+      ]
+    },
+    {
+      "origem": "2.8",
+      "destinos": [
+        {
+          "livro": "Is",
+          "referencia": "33.1"
+        }
+      ]
+    },
+    {
+      "origem": "2.9",
+      "destinos": [
+        {
+          "livro": "Jr",
+          "referencia": "22.13"
+        },
+        {
+          "livro": "Jr",
+          "referencia": "49.16"
+        },
+        {
+          "livro": "Ob",
+          "referencia": "1.4"
+        }
+      ]
+    },
+    {
+      "origem": "2.12",
+      "destinos": [
+        {
+          "livro": "Jr",
+          "referencia": "22.13"
+        },
+        {
+          "livro": "Ez",
+          "referencia": "24.9"
+        },
+        {
+          "livro": "Mq",
+          "referencia": "3.10"
+        },
+        {
+          "livro": "Na",
+          "referencia": "3.1"
+        }
+      ]
+    },
+    {
+      "origem": "2.13",
+      "destinos": [
+        {
+          "livro": "Jr",
+          "referencia": "51.53"
+        }
+      ]
+    },
+    {
+      "origem": "2.14",
+      "destinos": [
+        {
+          "livro": "Is",
+          "referencia": "11.9"
+        }
+      ]
+    },
+    {
+      "origem": "2.15",
+      "destinos": [
+        {
+          "livro": "Os",
+          "referencia": "7.5"
+        },
+        {
+          "livro": "Gn",
+          "referencia": "9.22"
+        }
+      ],
+      "notas": [
+        "Naquele tempo a nudez em público era o cúmulo da vergonha e da desgraça."
+      ]
+    },
+    {
+      "origem": "2.16",
+      "destinos": [
+        {
+          "livro": "Jr",
+          "referencia": "25.26-27"
+        }
+      ]
+    },
+    {
+      "origem": "2.17",
+      "destinos": [
+        {
+          "livro": "Hc",
+          "referencia": "2.8"
+        }
+      ]
+    },
+    {
+      "origem": "2.18",
+      "destinos": [
+        {
+          "livro": "Is",
+          "referencia": "44.9-10"
+        },
+        {
+          "livro": "Jr",
+          "referencia": "10.8,14"
+        },
+        {
+          "livro": "Zc",
+          "referencia": "10.2"
+        }
+      ]
+    },
+    {
+      "origem": "2.20",
+      "destinos": [
+        {
+          "livro": "Sf",
+          "referencia": "1.7"
+        },
+        {
+          "livro": "Zc",
+          "referencia": "2.13"
+        }
+      ]
+    },
+    {
+      "origem": "3.3",
+      "destinos": [
+        {
+          "livro": "Dt",
+          "referencia": "33.2"
+        },
+        {
+          "livro": "Jz",
+          "referencia": "5.4"
+        }
+      ]
+    },
+    {
+      "origem": "3.4",
+      "destinos": [
+        {
+          "livro": "Na",
+          "referencia": "1.3"
+        }
+      ]
+    },
+    {
+      "origem": "3.6",
+      "destinos": [
+        {
+          "livro": "Na",
+          "referencia": "1.5"
+        },
+        {
+          "livro": "Gn",
+          "referencia": "49.26"
+        }
+      ]
+    },
+    {
+      "origem": "3.8",
+      "destinos": [
+        {
+          "livro": "Dt",
+          "referencia": "33.26-27"
+        }
+      ]
+    },
+    {
+      "origem": "3.10",
+      "destinos": [
+        {
+          "livro": "Jz",
+          "referencia": "5.4-5"
+        },
+        {
+          "livro": "Js",
+          "referencia": "3.16"
+        }
+      ],
+      "notas": [
+        "Êx 14.22 ; 19.16,18"
+      ]
+    },
+    {
+      "origem": "3.11",
+      "destinos": [
+        {
+          "livro": "Js",
+          "referencia": "10.11-13"
+        }
+      ]
+    },
+    {
+      "origem": "3.12",
+      "destinos": [
+        {
+          "livro": "Jr",
+          "referencia": "51.33"
+        },
+        {
+          "livro": "Am",
+          "referencia": "1.3"
+        },
+        {
+          "livro": "Mq",
+          "referencia": "4.13"
+        }
+      ]
+    },
+    {
+      "origem": "3.13",
+      "destinos": [
+        {
+          "livro": "Js",
+          "referencia": "10.24"
+        }
+      ]
+    },
+    {
+      "origem": "3.15",
+      "destinos": [
+        {
+          "livro": "Hc",
+          "referencia": "3.8"
+        }
+      ]
+    },
+    {
+      "origem": "3.18",
+      "destinos": [
+        {
+          "livro": "Is",
+          "referencia": "41.16"
+        }
+      ]
+    },
+    {
+      "origem": "3.19",
+      "destinos": [
+        {
+          "livro": "2Sm",
+          "referencia": "22.34"
+        },
+        {
+          "livro": "Dt",
+          "referencia": "32.13"
+        },
+        {
+          "livro": "Sl",
+          "referencia": "18.33"
+        }
+      ]
+    }
+  ]
+}

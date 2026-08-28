@@ -1,0 +1,628 @@
+{
+  "schema": "referencias-cruzadas-v1",
+  "livro": "Ct",
+  "nome": "Cantares",
+  "politica_traducao": "independente",
+  "descricao": "Referências canônicas compartilhadas por todas as traduções.",
+  "entradas": [
+    {
+      "origem": "1.1",
+      "destinos": [
+        {
+          "livro": "1Rs",
+          "referencia": "4.32"
+        }
+      ]
+    },
+    {
+      "origem": "1.3",
+      "destinos": [
+        {
+          "livro": "Jo",
+          "referencia": "14.2"
+        },
+        {
+          "livro": "Ef",
+          "referencia": "2.6"
+        },
+        {
+          "livro": "Fp",
+          "referencia": "3.12-14"
+        }
+      ]
+    },
+    {
+      "origem": "1.8",
+      "destinos": [],
+      "notas": [
+        "ou os teus cabritos"
+      ]
+    },
+    {
+      "origem": "1.9",
+      "destinos": [
+        {
+          "livro": "2Cr",
+          "referencia": "1.16-17"
+        },
+        {
+          "livro": "Ct",
+          "referencia": "2.2,10,13"
+        },
+        {
+          "livro": "Jo",
+          "referencia": "15.14-15"
+        }
+      ]
+    },
+    {
+      "origem": "1.10",
+      "destinos": [
+        {
+          "livro": "Ez",
+          "referencia": "16.11-13"
+        }
+      ]
+    },
+    {
+      "origem": "1.14",
+      "destinos": [],
+      "notas": [
+        "ou canteiro de flores de alfena"
+      ]
+    },
+    {
+      "origem": "1.15",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "4.1"
+        }
+      ]
+    },
+    {
+      "origem": "2.3",
+      "destinos": [
+        {
+          "livro": "Ap",
+          "referencia": "22.1-2"
+        }
+      ]
+    },
+    {
+      "origem": "2.4",
+      "destinos": [],
+      "notas": [
+        "Hebr. casa do vinho"
+      ]
+    },
+    {
+      "origem": "2.6",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "8.3"
+        }
+      ]
+    },
+    {
+      "origem": "2.7",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "3.5"
+        }
+      ]
+    },
+    {
+      "origem": "2.9",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "2.17"
+        }
+      ]
+    },
+    {
+      "origem": "2.10",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "2.13"
+        }
+      ]
+    },
+    {
+      "origem": "2.13",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "2.10"
+        }
+      ]
+    },
+    {
+      "origem": "2.14",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "8.13"
+        }
+      ]
+    },
+    {
+      "origem": "2.15",
+      "destinos": [
+        {
+          "livro": "Ez",
+          "referencia": "13.4"
+        },
+        {
+          "livro": "Lc",
+          "referencia": "13.32"
+        }
+      ]
+    },
+    {
+      "origem": "2.16",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "6.3"
+        }
+      ]
+    },
+    {
+      "origem": "2.17",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "4.6"
+        },
+        {
+          "livro": "Ct",
+          "referencia": "2.9"
+        }
+      ]
+    },
+    {
+      "origem": "3.1",
+      "destinos": [
+        {
+          "livro": "Is",
+          "referencia": "26.9"
+        }
+      ]
+    },
+    {
+      "origem": "3.3",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "5.7"
+        }
+      ]
+    },
+    {
+      "origem": "3.5",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "2.7"
+        }
+      ]
+    },
+    {
+      "origem": "3.6",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "8.5"
+        }
+      ]
+    },
+    {
+      "origem": "3.7",
+      "destinos": [],
+      "notas": [
+        "Cadeira coberta, sustentada por dois cabos de madeira e carregada por dois animais ou dois homens, um na frente e o outro atrás."
+      ]
+    },
+    {
+      "origem": "4.1",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "1.15"
+        }
+      ]
+    },
+    {
+      "origem": "4.2",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "6.6"
+        }
+      ]
+    },
+    {
+      "origem": "4.3",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "6.7"
+        }
+      ],
+      "notas": [
+        "ou atrás do teu véu"
+      ]
+    },
+    {
+      "origem": "4.4",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "7.4"
+        }
+      ]
+    },
+    {
+      "origem": "4.5",
+      "destinos": [
+        {
+          "livro": "Pv",
+          "referencia": "5.19"
+        },
+        {
+          "livro": "Ct",
+          "referencia": "7.3"
+        }
+      ]
+    },
+    {
+      "origem": "4.6",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "2.17"
+        }
+      ]
+    },
+    {
+      "origem": "4.7",
+      "destinos": [
+        {
+          "livro": "Ef",
+          "referencia": "5.27"
+        }
+      ]
+    },
+    {
+      "origem": "4.8",
+      "destinos": [
+        {
+          "livro": "Dt",
+          "referencia": "3.9"
+        }
+      ]
+    },
+    {
+      "origem": "4.10",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "1.2"
+        }
+      ]
+    },
+    {
+      "origem": "4.11",
+      "destinos": [
+        {
+          "livro": "Gn",
+          "referencia": "27.27"
+        },
+        {
+          "livro": "Pv",
+          "referencia": "24.13-14"
+        },
+        {
+          "livro": "Ct",
+          "referencia": "5.1"
+        },
+        {
+          "livro": "Os",
+          "referencia": "14.6-7"
+        }
+      ]
+    },
+    {
+      "origem": "4.15",
+      "destinos": [
+        {
+          "livro": "Jo",
+          "referencia": "4.10"
+        }
+      ]
+    },
+    {
+      "origem": "5.1",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "4.11,16"
+        },
+        {
+          "livro": "Jo",
+          "referencia": "15.14"
+        }
+      ],
+      "notas": [
+        "ou bebei abundantemente do amor"
+      ]
+    },
+    {
+      "origem": "5.2",
+      "destinos": [
+        {
+          "livro": "Ap",
+          "referencia": "3.20"
+        }
+      ]
+    },
+    {
+      "origem": "5.6",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "3.1"
+        }
+      ]
+    },
+    {
+      "origem": "5.7",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "3.3"
+        }
+      ]
+    },
+    {
+      "origem": "5.9",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "1.8"
+        }
+      ]
+    },
+    {
+      "origem": "5.12",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "1.15"
+        }
+      ]
+    },
+    {
+      "origem": "5.13",
+      "destinos": [],
+      "notas": [
+        "ou outeiros aromáticos"
+      ]
+    },
+    {
+      "origem": "5.14",
+      "destinos": [],
+      "notas": [
+        "ou corpo"
+      ]
+    },
+    {
+      "origem": "5.16",
+      "destinos": [],
+      "notas": [
+        "Hebr. paladar"
+      ]
+    },
+    {
+      "origem": "6.1",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "1.8"
+        }
+      ]
+    },
+    {
+      "origem": "6.3",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "2.16"
+        },
+        {
+          "livro": "Ct",
+          "referencia": "4.1"
+        }
+      ]
+    },
+    {
+      "origem": "6.5",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "4.1"
+        }
+      ]
+    },
+    {
+      "origem": "6.6",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "4.2"
+        }
+      ]
+    },
+    {
+      "origem": "6.7",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "6.4"
+        }
+      ],
+      "notas": [
+        "ou atrás do teu véu"
+      ]
+    },
+    {
+      "origem": "6.10",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "7.12"
+        }
+      ]
+    },
+    {
+      "origem": "6.13",
+      "destinos": [],
+      "notas": [
+        "ou como para a dança de dois bandos?",
+        "Esta palavra quer dizer mulher natural de Sulam ou noiva de Salomão."
+      ]
+    },
+    {
+      "origem": "7.3",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "4.5"
+        }
+      ]
+    },
+    {
+      "origem": "7.4",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "4.4"
+        }
+      ]
+    },
+    {
+      "origem": "7.10",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "2.16"
+        }
+      ]
+    },
+    {
+      "origem": "7.12",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "6.11"
+        }
+      ]
+    },
+    {
+      "origem": "7.13",
+      "destinos": [
+        {
+          "livro": "Gn",
+          "referencia": "30.14"
+        },
+        {
+          "livro": "Mt",
+          "referencia": "13.52"
+        }
+      ],
+      "notas": [
+        "Acreditava-se que a raiz dessa planta ajudava as mulheres a engravidar e a ter sorte no amor."
+      ]
+    },
+    {
+      "origem": "8.2",
+      "destinos": [
+        {
+          "livro": "Pv",
+          "referencia": "9.2"
+        }
+      ]
+    },
+    {
+      "origem": "8.3",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "2.6"
+        }
+      ]
+    },
+    {
+      "origem": "8.4",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "2.7"
+        }
+      ]
+    },
+    {
+      "origem": "8.5",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "3.6"
+        }
+      ]
+    },
+    {
+      "origem": "8.6",
+      "destinos": [
+        {
+          "livro": "Ag",
+          "referencia": "2.23"
+        }
+      ]
+    },
+    {
+      "origem": "8.11",
+      "destinos": [
+        {
+          "livro": "Mt",
+          "referencia": "21.33"
+        }
+      ],
+      "notas": [
+        "Em hebraico, “siclos”. O siclo era a unidade de prata pura que pesava 11,4 gramas."
+      ]
+    },
+    {
+      "origem": "8.13",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "2.14"
+        }
+      ]
+    },
+    {
+      "origem": "8.14",
+      "destinos": [
+        {
+          "livro": "Ct",
+          "referencia": "2.17"
+        }
+      ]
+    }
+  ]
+}

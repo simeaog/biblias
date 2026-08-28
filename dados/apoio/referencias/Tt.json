@@ -1,0 +1,672 @@
+{
+  "schema": "referencias-cruzadas-v1",
+  "livro": "Tt",
+  "nome": "Tito",
+  "politica_traducao": "independente",
+  "descricao": "Referências canônicas compartilhadas por todas as traduções.",
+  "entradas": [
+    {
+      "origem": "1.1",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "3.16"
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "2.25"
+        }
+      ]
+    },
+    {
+      "origem": "1.2",
+      "destinos": [
+        {
+          "livro": "2Tm",
+          "referencia": "1.1,9"
+        },
+        {
+          "livro": "Rm",
+          "referencia": "16.25"
+        }
+      ]
+    },
+    {
+      "origem": "1.3",
+      "destinos": [
+        {
+          "livro": "2Tm",
+          "referencia": "1.10"
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "2.4"
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "1.11"
+        }
+      ]
+    },
+    {
+      "origem": "1.4",
+      "destinos": [
+        {
+          "livro": "2Co",
+          "referencia": "2.13"
+        },
+        {
+          "livro": "Gl",
+          "referencia": "2.3"
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "1.2"
+        },
+        {
+          "livro": "2Co",
+          "referencia": "8.23"
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "4.10"
+        }
+      ]
+    },
+    {
+      "origem": "1.5",
+      "destinos": [
+        {
+          "livro": "1Co",
+          "referencia": "11.34"
+        },
+        {
+          "livro": "At",
+          "referencia": "14.22"
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "2.2"
+        }
+      ]
+    },
+    {
+      "origem": "1.6",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "3.2,4,12"
+        }
+      ]
+    },
+    {
+      "origem": "1.6-9",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "3.2-7"
+        }
+      ]
+    },
+    {
+      "origem": "1.7",
+      "destinos": [
+        {
+          "livro": "Mt",
+          "referencia": "24.45"
+        },
+        {
+          "livro": "1Co",
+          "referencia": "4.1-2"
+        },
+        {
+          "livro": "Lv",
+          "referencia": "10.9"
+        }
+      ]
+    },
+    {
+      "origem": "1.8",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "3.2"
+        }
+      ]
+    },
+    {
+      "origem": "1.9",
+      "destinos": [
+        {
+          "livro": "2Ts",
+          "referencia": "2.15"
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "1.13"
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "1.15"
+        }
+      ]
+    },
+    {
+      "origem": "1.11",
+      "destinos": [
+        {
+          "livro": "Mt",
+          "referencia": "23.14"
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "6.5"
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "3.6"
+        }
+      ]
+    },
+    {
+      "origem": "1.12",
+      "destinos": [
+        {
+          "livro": "At",
+          "referencia": "17.28"
+        }
+      ],
+      "notas": [
+        "ou glutões",
+        "Epimênides, que viveu no sexto século antes de Cristo."
+      ]
+    },
+    {
+      "origem": "1.13",
+      "destinos": [
+        {
+          "livro": "2Co",
+          "referencia": "13.10"
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "4.2"
+        }
+      ]
+    },
+    {
+      "origem": "1.14",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "1.4"
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "4.4"
+        },
+        {
+          "livro": "Is",
+          "referencia": "29.13"
+        }
+      ]
+    },
+    {
+      "origem": "1.15",
+      "destinos": [
+        {
+          "livro": "Lc",
+          "referencia": "11.39-41"
+        },
+        {
+          "livro": "Rm",
+          "referencia": "14.14,20,23"
+        }
+      ]
+    },
+    {
+      "origem": "1.16",
+      "destinos": [
+        {
+          "livro": "2Tm",
+          "referencia": "3.5,8"
+        },
+        {
+          "livro": "Jd",
+          "referencia": "1.4"
+        },
+        {
+          "livro": "Rm",
+          "referencia": "1.28"
+        }
+      ]
+    },
+    {
+      "origem": "2.1",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "1.10,13"
+        }
+      ]
+    },
+    {
+      "origem": "2.2",
+      "destinos": [
+        {
+          "livro": "Tt",
+          "referencia": "1.13"
+        }
+      ],
+      "notas": [
+        "ou na caridade"
+      ]
+    },
+    {
+      "origem": "2.3",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "2.9-10"
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "3.3-4"
+        }
+      ]
+    },
+    {
+      "origem": "2.4",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "5.14"
+        }
+      ]
+    },
+    {
+      "origem": "2.5",
+      "destinos": [
+        {
+          "livro": "1Co",
+          "referencia": "14.34"
+        },
+        {
+          "livro": "Ef",
+          "referencia": "5.22"
+        },
+        {
+          "livro": "Cl",
+          "referencia": "3.18"
+        }
+      ]
+    },
+    {
+      "origem": "2.7",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "4.12"
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "5.3"
+        },
+        {
+          "livro": "Ef",
+          "referencia": "6.24"
+        }
+      ]
+    },
+    {
+      "origem": "2.8",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "5.14"
+        },
+        {
+          "livro": "Ne",
+          "referencia": "5.9"
+        }
+      ]
+    },
+    {
+      "origem": "2.9",
+      "destinos": [
+        {
+          "livro": "Ef",
+          "referencia": "6.5"
+        },
+        {
+          "livro": "Cl",
+          "referencia": "3.22"
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "6.1-2"
+        }
+      ]
+    },
+    {
+      "origem": "2.10",
+      "destinos": [
+        {
+          "livro": "Mt",
+          "referencia": "5.16"
+        },
+        {
+          "livro": "Fp",
+          "referencia": "2.15"
+        }
+      ]
+    },
+    {
+      "origem": "2.11",
+      "destinos": [
+        {
+          "livro": "Rm",
+          "referencia": "5.15"
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "5.12"
+        },
+        {
+          "livro": "Lc",
+          "referencia": "3.6"
+        }
+      ]
+    },
+    {
+      "origem": "2.12",
+      "destinos": [
+        {
+          "livro": "Lc",
+          "referencia": "1.75"
+        },
+        {
+          "livro": "Rm",
+          "referencia": "6.19"
+        },
+        {
+          "livro": "Ef",
+          "referencia": "1.4"
+        }
+      ]
+    },
+    {
+      "origem": "2.13",
+      "destinos": [
+        {
+          "livro": "1Co",
+          "referencia": "1.7"
+        },
+        {
+          "livro": "Fp",
+          "referencia": "3.20"
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "3.12"
+        }
+      ]
+    },
+    {
+      "origem": "2.14",
+      "destinos": [
+        {
+          "livro": "Gl",
+          "referencia": "1.4"
+        },
+        {
+          "livro": "Ef",
+          "referencia": "5.2"
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "2.6"
+        },
+        {
+          "livro": "Sl",
+          "referencia": "130.8"
+        },
+        {
+          "livro": "Dt",
+          "referencia": "4.20"
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "2.9"
+        }
+      ],
+      "notas": [
+        "a"
+      ]
+    },
+    {
+      "origem": "2.15",
+      "destinos": [
+        {
+          "livro": "2Tm",
+          "referencia": "4.2"
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "4.12"
+        }
+      ]
+    },
+    {
+      "origem": "3.1",
+      "destinos": [
+        {
+          "livro": "Rm",
+          "referencia": "13.1"
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "2.13"
+        },
+        {
+          "livro": "Cl",
+          "referencia": "1.10"
+        }
+      ]
+    },
+    {
+      "origem": "3.2",
+      "destinos": [
+        {
+          "livro": "Ef",
+          "referencia": "4.31"
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "2.24-25"
+        }
+      ]
+    },
+    {
+      "origem": "3.3",
+      "destinos": [
+        {
+          "livro": "1Co",
+          "referencia": "6.11"
+        },
+        {
+          "livro": "Ef",
+          "referencia": "2.1"
+        },
+        {
+          "livro": "Cl",
+          "referencia": "1.21"
+        }
+      ]
+    },
+    {
+      "origem": "3.4",
+      "destinos": [
+        {
+          "livro": "Tt",
+          "referencia": "2.11"
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "2.3"
+        }
+      ],
+      "notas": [
+        "ou a caridade"
+      ]
+    },
+    {
+      "origem": "3.5",
+      "destinos": [
+        {
+          "livro": "Rm",
+          "referencia": "3.20"
+        },
+        {
+          "livro": "Gl",
+          "referencia": "2.16"
+        },
+        {
+          "livro": "Ef",
+          "referencia": "2.4,8-9"
+        }
+      ],
+      "notas": [
+        "Maneira de falar do batismo."
+      ]
+    },
+    {
+      "origem": "3.6",
+      "destinos": [
+        {
+          "livro": "Ez",
+          "referencia": "36.25"
+        },
+        {
+          "livro": "Jl",
+          "referencia": "2.28"
+        },
+        {
+          "livro": "Jo",
+          "referencia": "1.16"
+        }
+      ]
+    },
+    {
+      "origem": "3.7",
+      "destinos": [
+        {
+          "livro": "Gl",
+          "referencia": "2.16"
+        },
+        {
+          "livro": "Rm",
+          "referencia": "8.23-24"
+        }
+      ]
+    },
+    {
+      "origem": "3.8",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "1.15"
+        },
+        {
+          "livro": "Tt",
+          "referencia": "2.14"
+        }
+      ]
+    },
+    {
+      "origem": "3.9",
+      "destinos": [
+        {
+          "livro": "1Tm",
+          "referencia": "1.4"
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "2.14,23"
+        }
+      ],
+      "notas": [
+        "Nomes de patriarcas e heróis hebreus, a respeito de quem histórias eram inventadas (ver 1Timóteo 1.4 , nota)."
+      ]
+    },
+    {
+      "origem": "3.10",
+      "destinos": [
+        {
+          "livro": "2Co",
+          "referencia": "13.2"
+        },
+        {
+          "livro": "Mt",
+          "referencia": "18.17"
+        },
+        {
+          "livro": "Rm",
+          "referencia": "16.17"
+        }
+      ]
+    },
+    {
+      "origem": "3.11",
+      "destinos": [
+        {
+          "livro": "At",
+          "referencia": "13.46"
+        }
+      ]
+    },
+    {
+      "origem": "3.12",
+      "destinos": [
+        {
+          "livro": "At",
+          "referencia": "20.4"
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "4.12"
+        }
+      ]
+    },
+    {
+      "origem": "3.13",
+      "destinos": [
+        {
+          "livro": "At",
+          "referencia": "18.24"
+        }
+      ]
+    },
+    {
+      "origem": "3.14",
+      "destinos": [
+        {
+          "livro": "Tt",
+          "referencia": "3.8"
+        },
+        {
+          "livro": "Rm",
+          "referencia": "15.28"
+        },
+        {
+          "livro": "Fp",
+          "referencia": "1.11"
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "1.8"
+        }
+      ]
+    }
+  ]
+}
