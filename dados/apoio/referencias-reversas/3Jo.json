@@ -1,0 +1,62 @@
+{
+  "schema": "referencias-reversas-v1",
+  "livro": "3Jo",
+  "descricao": "Relações reversas derivadas das referências cruzadas canônicas.",
+  "entradas": [
+    {
+      "destino": "1.11",
+      "origens": [
+        {
+          "livro": "1Jo",
+          "referencia": "3.6",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "3.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.12",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "21.24",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.5",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "25.35",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.5-6",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "16.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.9",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "23.6",
+          "notas": []
+        }
+      ]
+    }
+  ]
+}

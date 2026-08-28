@@ -1,0 +1,6466 @@
+{
+  "schema": "referencias-reversas-v1",
+  "livro": "1Co",
+  "descricao": "Relações reversas derivadas das referências cruzadas canônicas.",
+  "entradas": [
+    {
+      "destino": "1.1",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "1.1",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "1.1",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "18.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.10",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "13.11",
+          "notas": []
+        },
+        {
+          "livro": "Fp",
+          "referencia": "1.27",
+          "notas": []
+        },
+        {
+          "livro": "Fp",
+          "referencia": "2.2",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "12.16",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "15.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.10-12",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "11.18",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.11",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "3.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.12",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "3.4",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "3.21",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "4.6",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "16.12",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "18.24",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "19.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.13",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "4.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.13,23",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "4.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.14",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "16.23",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "At",
+          "referencia": "18.8",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "19.29",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.16",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "16.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.17",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "2.4",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "2.13",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "11.6",
+          "notas": []
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "1.16",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "10.48",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.18",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "1.24",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "2.15",
+          "notas": [
+            "Linguagem figurada, na qual o trabalho de Paulo e dos seus companheiros é apresentado por Cristo a Deus como uma oferta que agrada a Deus (ver Filipenses 4.18 )."
+          ]
+        },
+        {
+          "livro": "2Co",
+          "referencia": "4.3",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "1.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.18,23",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "2.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.19",
+      "origens": [
+        {
+          "livro": "Job",
+          "referencia": "12.17",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "29.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.19,27",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "11.25",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.2",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "3.1",
+          "notas": []
+        },
+        {
+          "livro": "Fp",
+          "referencia": "1.1",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "4.7",
+          "notas": []
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "2.22",
+          "notas": [
+            "ou a caridade"
+          ]
+        },
+        {
+          "livro": "At",
+          "referencia": "9.14",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "15.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.2,30",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "17.19",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.2-3",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "1.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.20",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "3.19",
+          "notas": [
+            "Jó 5.13"
+          ]
+        },
+        {
+          "livro": "1Co",
+          "referencia": "5.10",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "19.12",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "33.18",
+          "notas": [
+            "ou que pesa o tributo"
+          ]
+        },
+        {
+          "livro": "Is",
+          "referencia": "44.25",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.20,26",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "7.48",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.21",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "15.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.22",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "4.48",
+          "notas": []
+        },
+        {
+          "livro": "Jo",
+          "referencia": "6.30",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "12.38",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "16.1",
+          "notas": []
+        },
+        {
+          "livro": "1Rs",
+          "referencia": "13.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.23",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "2.34",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "11.6",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "9.32",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "26.24",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.24",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "1.18",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "2.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.25",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "5.39",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.26",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "19.23",
+          "notas": []
+        },
+        {
+          "livro": "Job",
+          "referencia": "32.9",
+          "notas": []
+        },
+        {
+          "livro": "Job",
+          "referencia": "37.24",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.26,28",
+      "origens": [
+        {
+          "livro": "Tg",
+          "referencia": "2.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.27",
+      "origens": [
+        {
+          "livro": "Sl",
+          "referencia": "8.2",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "4.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.27-28",
+      "origens": [
+        {
+          "livro": "1Sm",
+          "referencia": "17.42",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.28",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "4.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.29",
+      "origens": [
+        {
+          "livro": "Jz",
+          "referencia": "7.2",
+          "notas": []
+        },
+        {
+          "livro": "Job",
+          "referencia": "32.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.29,31",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "3.27",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.29-31",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "2.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.3",
+      "origens": [
+        {
+          "livro": "2Ts",
+          "referencia": "1.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.31",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "10.17",
+          "notas": []
+        },
+        {
+          "livro": "Jr",
+          "referencia": "9.24",
+          "notas": []
+        },
+        {
+          "livro": "Sl",
+          "referencia": "34.2",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "45.25",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.4",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "7.4",
+          "notas": []
+        },
+        {
+          "livro": "Fp",
+          "referencia": "1.3",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "1.3",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "1.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.5",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "8.7",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "1.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.6",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "2.1",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "1.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.7",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "12.13",
+          "notas": []
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "3.12",
+          "notas": []
+        },
+        {
+          "livro": "Tt",
+          "referencia": "2.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.8",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "3.13",
+          "notas": [
+            "O Dia do Juízo Final."
+          ]
+        },
+        {
+          "livro": "1Co",
+          "referencia": "5.5",
+          "notas": [
+            "Jó 2.6",
+            "Ver 1Coríntios 3.13 , nota."
+          ]
+        },
+        {
+          "livro": "2Co",
+          "referencia": "1.13-14",
+          "notas": [
+            "O Dia do Juízo Final (ver 1Coríntios 1.13 )."
+          ]
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "3.14",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "3.13",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "5.23",
+          "notas": [
+            "O Dia do Juízo Final."
+          ]
+        },
+        {
+          "livro": "2Ts",
+          "referencia": "2.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.9",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "10.23",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "5.24",
+          "notas": []
+        },
+        {
+          "livro": "1Jo",
+          "referencia": "1.3",
+          "notas": []
+        },
+        {
+          "livro": "Dt",
+          "referencia": "7.9",
+          "notas": [
+            "Êx 20.6"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "10.1",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "14.22",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "9.18",
+          "notas": []
+        },
+        {
+          "livro": "Ne",
+          "referencia": "9.19",
+          "notas": [
+            "Êx 13.21-22"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "10.1-2",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "14.22",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.10",
+      "origens": [
+        {
+          "livro": "Nm",
+          "referencia": "14.37",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.11",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "9.26",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.12",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "11.18",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.13",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "1.9",
+          "notas": []
+        },
+        {
+          "livro": "Hb",
+          "referencia": "12.4",
+          "notas": []
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "2.9",
+          "notas": []
+        },
+        {
+          "livro": "Gn",
+          "referencia": "22.13",
+          "notas": []
+        },
+        {
+          "livro": "Job",
+          "referencia": "5.5",
+          "notas": []
+        },
+        {
+          "livro": "Job",
+          "referencia": "5.19",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.14",
+      "origens": [
+        {
+          "livro": "1Jo",
+          "referencia": "5.21",
+          "notas": [
+            "Ver 1João 2.1 , nota."
+          ]
+        },
+        {
+          "livro": "Lv",
+          "referencia": "19.4",
+          "notas": [
+            "Êx 20.4 ; 34.17",
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "10.16",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "22.20",
+          "notas": [
+            "ou Pacto"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "10.17",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "12.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.18",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "24.11",
+          "notas": []
+        },
+        {
+          "livro": "Ez",
+          "referencia": "44.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.18,21,31",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "18.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.19",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "8.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.19-20",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "2.20",
+          "notas": [
+            "Nome usado para indicar uma mulher que agia como agia a esposa idólatra de Acabe, rei de Israel (ver 1Reis 16.30-31 ; 2Reis 9.22 )."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "10.2",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "13.21",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.20",
+      "origens": [
+        {
+          "livro": "2Cr",
+          "referencia": "11.15",
+          "notas": []
+        },
+        {
+          "livro": "Sl",
+          "referencia": "106.37",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "9.20",
+          "notas": [
+            "Os ídolos que eles adoravam."
+          ]
+        },
+        {
+          "livro": "Nm",
+          "referencia": "25.2",
+          "notas": []
+        },
+        {
+          "livro": "Lv",
+          "referencia": "17.7",
+          "notas": [
+            "Êx 34.15"
+          ]
+        },
+        {
+          "livro": "Dt",
+          "referencia": "32.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.21",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "11.27",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "65.11",
+          "notas": [
+            "Hebr. Gade"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "10.22",
+      "origens": [
+        {
+          "livro": "Dt",
+          "referencia": "32.21",
+          "notas": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "10.23",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "6.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.24",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "13.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.24,33",
+      "origens": [
+        {
+          "livro": "Fp",
+          "referencia": "2.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.25",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "14.2",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "14.14",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "10.15",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "4.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.26",
+      "origens": [
+        {
+          "livro": "Sl",
+          "referencia": "24.1",
+          "notas": [
+            "Êx 9.29 ; 19.5"
+          ]
+        },
+        {
+          "livro": "Ex",
+          "referencia": "9.29",
+          "notas": []
+        },
+        {
+          "livro": "Ex",
+          "referencia": "19.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.26,28",
+      "origens": [
+        {
+          "livro": "Job",
+          "referencia": "41.11",
+          "notas": [
+            "Êx 19.5"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "10.27",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "10.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.28,32",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "8.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.3",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "6.31",
+          "notas": [
+            "Êx 16.15",
+            "Êx 16.4-16"
+          ]
+        },
+        {
+          "livro": "Sl",
+          "referencia": "78.24",
+          "notas": [
+            "Êx 16.4,14"
+          ]
+        },
+        {
+          "livro": "Ex",
+          "referencia": "16.4",
+          "notas": []
+        },
+        {
+          "livro": "Ex",
+          "referencia": "16.15",
+          "notas": [
+            "Hebr. Man hu que também pode significar Isto é maná"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "10.30",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "6.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.31",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "14.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.32",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "11.22",
+          "notas": []
+        },
+        {
+          "livro": "Rt",
+          "referencia": "3.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.33",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "9.18",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "12.14",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "12.19",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.4",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "17.6",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "20.11",
+          "notas": [
+            "Êx 17.6"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "10.5",
+      "origens": [
+        {
+          "livro": "Nm",
+          "referencia": "14.32",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "14.35",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.6",
+      "origens": [
+        {
+          "livro": "Nm",
+          "referencia": "11.4",
+          "notas": [
+            "Êx 12.38"
+          ]
+        },
+        {
+          "livro": "Nm",
+          "referencia": "26.10",
+          "notas": []
+        },
+        {
+          "livro": "Dt",
+          "referencia": "24.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.6,11",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "4.23",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.7",
+      "origens": [
+        {
+          "livro": "Fp",
+          "referencia": "2.14",
+          "notas": []
+        },
+        {
+          "livro": "Ex",
+          "referencia": "32.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.8",
+      "origens": [
+        {
+          "livro": "Nm",
+          "referencia": "25.1",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "25.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "10.9",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "17.2",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "21.5-6",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "21.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11",
+      "origens": [
+        {
+          "livro": "Dt",
+          "referencia": "13.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.1",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "4.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.10",
+      "origens": [
+        {
+          "livro": "Ec",
+          "referencia": "5.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.16",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "14.33",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "6.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.19",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "17.1",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "18.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.2",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "4.17",
+          "notas": []
+        },
+        {
+          "livro": "2Ts",
+          "referencia": "2.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.2,23",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "15.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.22",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "10.32",
+          "notas": []
+        },
+        {
+          "livro": "Tg",
+          "referencia": "2.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.23",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "10.16",
+          "notas": []
+        },
+        {
+          "livro": "Mc",
+          "referencia": "14.22",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.23-25",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "26.26",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.24",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "14.16",
+          "notas": []
+        },
+        {
+          "livro": "Lc",
+          "referencia": "22.19",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.25",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "31.31",
+          "notas": []
+        },
+        {
+          "livro": "Ex",
+          "referencia": "24.8",
+          "notas": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "11.28",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "13.5",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "6.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.29",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "10.29",
+          "notas": [
+            "ou comum",
+            "Êx 24.8"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "11.3",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "3.23",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "1.18",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "5.23",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.34",
+      "origens": [
+        {
+          "livro": "Tt",
+          "referencia": "1.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.4-5",
+      "origens": [
+        {
+          "livro": "1Rs",
+          "referencia": "18.29",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.7",
+      "origens": [
+        {
+          "livro": "Pv",
+          "referencia": "12.4",
+          "notas": []
+        },
+        {
+          "livro": "Gn",
+          "referencia": "1.26",
+          "notas": [
+            "ou roja"
+          ]
+        },
+        {
+          "livro": "Gn",
+          "referencia": "5.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "11.8-9",
+      "origens": [
+        {
+          "livro": "1Tm",
+          "referencia": "2.13",
+          "notas": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "11.9",
+      "origens": [
+        {
+          "livro": "Gn",
+          "referencia": "2.18",
+          "notas": [
+            "ou lhe assista"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "12.10",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "14.29",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.10,28",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "11.4",
+          "notas": []
+        },
+        {
+          "livro": "Mc",
+          "referencia": "16.17",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "12.6",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "2.18",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.10,28,30",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "2.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.11",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "12.3",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "4.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.12",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "3.16",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "12.4",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "12.4-5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.12,27",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "1.23",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.12-13",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "4.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.13",
+      "origens": [
+        {
+          "livro": "Mc",
+          "referencia": "1.8",
+          "notas": [
+            "com ou em.",
+            "com o ou no."
+          ]
+        },
+        {
+          "livro": "Jl",
+          "referencia": "2.29",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "3.11",
+          "notas": [
+            "ou calçado",
+            "com ou em.",
+            "com o ou no."
+          ]
+        },
+        {
+          "livro": "Cl",
+          "referencia": "3.11",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "10.35",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.2",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "6.11",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "1.9",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "1.10",
+          "notas": [
+            "Domingo."
+          ]
+        },
+        {
+          "livro": "Ef",
+          "referencia": "2.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.21",
+      "origens": [
+        {
+          "livro": "Pv",
+          "referencia": "22.2",
+          "notas": [
+            "Jó 31.15"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "12.26",
+      "origens": [
+        {
+          "livro": "Sl",
+          "referencia": "35.27",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "12.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.27",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "6.15",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "10.17",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "12.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.28",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "4.11",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "11.27",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "20.28",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.3",
+      "origens": [
+        {
+          "livro": "Mc",
+          "referencia": "9.39",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "3.28",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.31",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "14.1",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "14.39",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.4",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "12.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.4-11",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "12.6-8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.7",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "4.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.7,11,29",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "25.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.8",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "13.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.8-9",
+      "origens": [
+        {
+          "livro": "Dt",
+          "referencia": "3.23",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "12.9",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "17.20",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "1.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "13.1",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "12.10",
+          "notas": [
+            "Não línguas conhecidas, mas falas que, para serem entendidas, exigiam a presença de um intérprete especial ( 1Coríntios 14.2,5-19 )."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "13.11",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "5.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "13.12",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "3.18",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "22.4",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "5.8",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "12.8",
+          "notas": [
+            "Êx 33.11,19"
+          ]
+        },
+        {
+          "livro": "Job",
+          "referencia": "19.26",
+          "notas": []
+        },
+        {
+          "livro": "Job",
+          "referencia": "36.26",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "13.2",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "12.9",
+          "notas": []
+        },
+        {
+          "livro": "Mc",
+          "referencia": "11.23",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "7.22",
+          "notas": [
+            "O Dia do Juízo Final."
+          ]
+        },
+        {
+          "livro": "Mt",
+          "referencia": "17.20",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "21.21",
+          "notas": []
+        },
+        {
+          "livro": "1Jo",
+          "referencia": "2.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "13.4",
+      "origens": [
+        {
+          "livro": "Pv",
+          "referencia": "10.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "13.5",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "10.24",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "13.7",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "5.22",
+          "notas": [
+            "ou caridade"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "13.8",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "8.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.1",
+      "origens": [
+        {
+          "livro": "1Sm",
+          "referencia": "10.5",
+          "notas": [
+            "Êx 15.20-21",
+            "Dominados pelo Espírito de Deus, eles dançavam e cantavam."
+          ]
+        },
+        {
+          "livro": "Nm",
+          "referencia": "11.25",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.1,37",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "12.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.1,39",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "12.31",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "5.20",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.11",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "28.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.12",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "14.19",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.16",
+      "origens": [
+        {
+          "livro": "Dt",
+          "referencia": "27.15",
+          "notas": [
+            "Êx 20.4,23 ; 34.17",
+            "Êx 20.4 ; 34.17"
+          ]
+        },
+        {
+          "livro": "Ne",
+          "referencia": "8.6",
+          "notas": [
+            "Êx 4.31 ; 12.27"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "14.20",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "2.6",
+          "notas": [
+            "Isto é, dos seres espirituais maus, cujo poder no mundo se manifesta por meio daqueles que obedecem a eles (ver Efésios 2.2 ; 6.12 ; Colossenses 2.15 )."
+          ]
+        },
+        {
+          "livro": "Lc",
+          "referencia": "18.16",
+          "notas": []
+        },
+        {
+          "livro": "Mc",
+          "referencia": "10.14",
+          "notas": []
+        },
+        {
+          "livro": "Sl",
+          "referencia": "131.2",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "10.16",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "18.3",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "16.19",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "4.13",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "4.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.21",
+      "origens": [
+        {
+          "livro": "Is",
+          "referencia": "28.11",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "28.11-12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.22",
+      "origens": [
+        {
+          "livro": "Dt",
+          "referencia": "32.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.25",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "5.16",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "45.14",
+          "notas": []
+        },
+        {
+          "livro": "Zc",
+          "referencia": "8.23",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.26",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "12.7",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "14.6",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "3.16",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "5.18",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.29",
+      "origens": [
+        {
+          "livro": "1Jo",
+          "referencia": "4.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.3",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "12.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.3,24-25",
+      "origens": [
+        {
+          "livro": "1Sm",
+          "referencia": "19.20",
+          "notas": [
+            "Ver 1Samuel 10.5 , nota."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "14.30",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "5.19",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.33",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.15",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "14.40",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "15.33",
+          "notas": []
+        },
+        {
+          "livro": "2Ts",
+          "referencia": "3.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.34",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "5.22",
+          "notas": []
+        },
+        {
+          "livro": "Tt",
+          "referencia": "2.5",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "3.1",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "2.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "14.37",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "10.7",
+          "notas": []
+        },
+        {
+          "livro": "1Jo",
+          "referencia": "4.6",
+          "notas": [
+            "O escritor desta carta e os seus colegas que ensinavam a verdade cristã, em contraste com os falsos profetas ( versículo 5 )."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "14.6",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "14.26",
+          "notas": [
+            "Ver 1Coríntios 12.10 , nota."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "15",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "10.13",
+          "notas": [
+            "Ver Hebreus 1.13 , nota."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "15.1",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "1.11",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "5.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.1,3",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "1.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.1,4,20",
+      "origens": [
+        {
+          "livro": "2Tm",
+          "referencia": "2.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.10",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "2.16",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "11.5",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "2.8",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "1.29",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "1.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.10,30-32",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "11.23",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.12",
+      "origens": [
+        {
+          "livro": "2Tm",
+          "referencia": "2.18",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.13,18,23",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "4.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.17",
+      "origens": [
+        {
+          "livro": "Ed",
+          "referencia": "9.15",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "4.25",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.18",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "14.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.18,51",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "11.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.19",
+      "origens": [
+        {
+          "livro": "1Tm",
+          "referencia": "1.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.2",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "11.22",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.20",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "15.23",
+          "notas": []
+        },
+        {
+          "livro": "Jo",
+          "referencia": "14.19",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "1.5",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "At",
+          "referencia": "26.23",
+          "notas": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "15.21",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "5.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.21-22,45",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "5.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.22,49,52",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "20.36",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.23,52",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "4.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.24",
+      "origens": [
+        {
+          "livro": "2Pe",
+          "referencia": "3.16",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "3.22",
+          "notas": [
+            "O lugar de honra e autoridade.",
+            "Seres espirituais, bons ou maus, cujo poder se manifesta no Universo (ver Romanos 8.38 ; Efésios 1.21 ; Colossenses 1.16 ; 2.10 )."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "15.24,33",
+      "origens": [
+        {
+          "livro": "Fp",
+          "referencia": "2.21",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.25",
+      "origens": [
+        {
+          "livro": "Sl",
+          "referencia": "110.1",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "22.44",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.26,54",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "21.4",
+          "notas": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "15.26,54-56",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "20.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.27",
+      "origens": [
+        {
+          "livro": "Dn",
+          "referencia": "7.14",
+          "notas": []
+        },
+        {
+          "livro": "Jo",
+          "referencia": "13.3",
+          "notas": []
+        },
+        {
+          "livro": "Sl",
+          "referencia": "8.6",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "11.27",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "Mt",
+          "referencia": "28.18",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "1.22",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.29",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "6.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.3",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "5.7",
+          "notas": [
+            "Êx 12.5"
+          ]
+        },
+        {
+          "livro": "1Co",
+          "referencia": "11.23",
+          "notas": []
+        },
+        {
+          "livro": "Jo",
+          "referencia": "1.29",
+          "notas": [
+            "Êx 12.3"
+          ]
+        },
+        {
+          "livro": "Mt",
+          "referencia": "26.24",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "53.5",
+          "notas": [
+            "ou quebrantado"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "15.30",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "5.11",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "8.36",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "15.26",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.31",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "4.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.31,49",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "4.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.32",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "1.8",
+          "notas": []
+        },
+        {
+          "livro": "Lc",
+          "referencia": "12.19",
+          "notas": []
+        },
+        {
+          "livro": "Ec",
+          "referencia": "2.24",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "22.13",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "56.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.33,48-49",
+      "origens": [
+        {
+          "livro": "Fp",
+          "referencia": "3.21",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.34",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "4.5",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "5.7",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "13.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.36",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "12.24",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.4",
+      "origens": [
+        {
+          "livro": "Os",
+          "referencia": "6.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.41-42",
+      "origens": [
+        {
+          "livro": "Dn",
+          "referencia": "12.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.42",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "13.43",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.42,49,52",
+      "origens": [
+        {
+          "livro": "Mc",
+          "referencia": "12.25",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.43",
+      "origens": [
+        {
+          "livro": "Cl",
+          "referencia": "3.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.45",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "3.17",
+          "notas": []
+        },
+        {
+          "livro": "Gn",
+          "referencia": "2.7",
+          "notas": [
+            "terra… ser humano: em hebraico a palavra “terra” (adamá) é parecida com “ser humano” (adam)."
+          ]
+        },
+        {
+          "livro": "Rm",
+          "referencia": "8.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.47",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "3.13",
+          "notas": []
+        },
+        {
+          "livro": "Jo",
+          "referencia": "3.31",
+          "notas": []
+        },
+        {
+          "livro": "Gn",
+          "referencia": "2.7",
+          "notas": [
+            "terra… ser humano: em hebraico a palavra “terra” (adamá) é parecida com “ser humano” (adam)."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "15.48",
+      "origens": [
+        {
+          "livro": "Gn",
+          "referencia": "5.3",
+          "notas": [
+            "Jó 25.4"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "15.5",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "24.34",
+          "notas": []
+        },
+        {
+          "livro": "Lc",
+          "referencia": "24.36",
+          "notas": []
+        },
+        {
+          "livro": "Mc",
+          "referencia": "16.14",
+          "notas": []
+        },
+        {
+          "livro": "Jo",
+          "referencia": "20.19",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "1.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.5-7",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "13.30",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.50",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "6.12",
+          "notas": [
+            "Seres espirituais maus, cujo poder se manifesta no Universo (ver 1Coríntios 15.24 ; Colossenses 2.15 )."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "15.51",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "4.15",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "4.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.51-52",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "4.15-17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.52",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "5.29",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "24.31",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.53-54",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "5.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.54",
+      "origens": [
+        {
+          "livro": "Is",
+          "referencia": "25.8",
+          "notas": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "15.54-55",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "2.14",
+          "notas": []
+        },
+        {
+          "livro": "Os",
+          "referencia": "13.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.55",
+      "origens": [
+        {
+          "livro": "Os",
+          "referencia": "13.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.56",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "4.15",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "7.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.57",
+      "origens": [
+        {
+          "livro": "1Jo",
+          "referencia": "5.5",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "7.25",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "8.37",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.8",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "9.1",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "9.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "15.9",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "3.8",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "8.3",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "1.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.1",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "1.16",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "9.1",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "1.2",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "11.29",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.1-2",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "15.26",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.1-4",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "2.10",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "15.25-26",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.10",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "3.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.11",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "15.33",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "4.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.13",
+      "origens": [
+        {
+          "livro": "1Sm",
+          "referencia": "4.9",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "25.13",
+          "notas": []
+        },
+        {
+          "livro": "2Sm",
+          "referencia": "10.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.15",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "1.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.15,17",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "1.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.15,19",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "16.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.17",
+      "origens": [
+        {
+          "livro": "Fp",
+          "referencia": "2.30",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.18",
+      "origens": [
+        {
+          "livro": "Fp",
+          "referencia": "2.29",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "5.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.19",
+      "origens": [
+        {
+          "livro": "Cl",
+          "referencia": "4.15",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "18.2",
+          "notas": [
+            "No ano 49 ou 50 depois de Cristo."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "16.2",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "1.10",
+          "notas": [
+            "Domingo."
+          ]
+        },
+        {
+          "livro": "At",
+          "referencia": "20.7",
+          "notas": [
+            "Conforme a maneira de contarem os dias da semana, o último dia da semana (sábado) terminava ao pôr do sol; aí começava o primeiro dia da semana (domingo).",
+            "Ver Atos 2.42 , nota."
+          ]
+        },
+        {
+          "livro": "Dt",
+          "referencia": "16.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.20",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "16.16",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "5.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.21",
+      "origens": [
+        {
+          "livro": "Cl",
+          "referencia": "4.18",
+          "notas": []
+        },
+        {
+          "livro": "2Ts",
+          "referencia": "3.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.22",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "1.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.23",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "16.20",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.3-4",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "8.19",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.5",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "20.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.5-6",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "1.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.6,11",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "15.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.7",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "32.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.8",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "20.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "16.9",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "2.12",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "3.8",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "4.3",
+          "notas": [
+            "Ver Colossenses 1.26-27 ; 2.2 ."
+          ]
+        },
+        {
+          "livro": "At",
+          "referencia": "14.27",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.1",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "1.6",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "12.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.1,4,13",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "1.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.10",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "31.34",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "4.8",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "16.17",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "4.32",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.11",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "3.8",
+          "notas": []
+        },
+        {
+          "livro": "Pv",
+          "referencia": "20.27",
+          "notas": []
+        },
+        {
+          "livro": "Job",
+          "referencia": "15.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.11,15",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "5.21",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.12",
+      "origens": [
+        {
+          "livro": "1Jo",
+          "referencia": "4.4",
+          "notas": [
+            "Ver 1João 2.1 , nota."
+          ]
+        },
+        {
+          "livro": "Rm",
+          "referencia": "8.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.14",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "14.17",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "8.5",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "8.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.14-15",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "3.1",
+          "notas": []
+        },
+        {
+          "livro": "Hb",
+          "referencia": "5.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.15",
+      "origens": [
+        {
+          "livro": "Pv",
+          "referencia": "28.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.16",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "23.18",
+          "notas": [
+            "Jó 15.8"
+          ]
+        },
+        {
+          "livro": "Rm",
+          "referencia": "11.34",
+          "notas": [
+            "Jó 15.8"
+          ]
+        },
+        {
+          "livro": "Job",
+          "referencia": "21.22",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "40.13",
+          "notas": [
+            "Jó 21.22"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "2.3",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "2.7",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "4.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.3-4",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "10.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.4",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "6.7",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "1.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.4,13",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "1.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.4-5",
+      "origens": [
+        {
+          "livro": "Mc",
+          "referencia": "16.20",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.5",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "4.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.6",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "1.28",
+          "notas": []
+        },
+        {
+          "livro": "Fp",
+          "referencia": "3.15",
+          "notas": []
+        },
+        {
+          "livro": "Sl",
+          "referencia": "146.4",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "4.12",
+          "notas": [
+            "ou completos"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "2.6-7",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "12.8",
+          "notas": []
+        },
+        {
+          "livro": "Tg",
+          "referencia": "3.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.7",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "13.35",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "1.26",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "16.25",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "3.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.8",
+      "origens": [
+        {
+          "livro": "Tg",
+          "referencia": "2.1",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "3.17",
+          "notas": [
+            "ou magistrados"
+          ]
+        },
+        {
+          "livro": "At",
+          "referencia": "13.27",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.9",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "25.34",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "3.20",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "64.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.1",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "1.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.1-3",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "5.12",
+          "notas": [
+            "ou instruidores",
+            "Figura de ensinamentos adiantados em contraste com primeiras lições."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "3.10",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "12.3",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "4.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.12",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "15.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.13",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "4.5",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "4.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.16",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "6.19",
+          "notas": []
+        },
+        {
+          "livro": "Hb",
+          "referencia": "3.6",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "6.16",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "Jo",
+          "referencia": "2.21",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "8.9",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "8.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.17",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "19.6",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "2.21",
+          "notas": []
+        },
+        {
+          "livro": "Lv",
+          "referencia": "18.24",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.19",
+      "origens": [
+        {
+          "livro": "Job",
+          "referencia": "5.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.2",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "5.12-13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.20",
+      "origens": [
+        {
+          "livro": "Sl",
+          "referencia": "94.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.21",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "5.6",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "4.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.21-22",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "8.28",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.23",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "11.3",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "15.28",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.3",
+      "origens": [
+        {
+          "livro": "Tg",
+          "referencia": "3.16",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "5.19",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.4",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "1.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.5",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "4.1",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "12.18",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "3.3",
+          "notas": [
+            "a Êx 24.12 ; b"
+          ]
+        },
+        {
+          "livro": "2Co",
+          "referencia": "3.6",
+          "notas": [
+            "ou Concerto"
+          ]
+        },
+        {
+          "livro": "Nm",
+          "referencia": "16.11",
+          "notas": [
+            "Êx 16.8"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "3.5,10",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "10.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.6",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "18.27",
+          "notas": []
+        },
+        {
+          "livro": "Dt",
+          "referencia": "32.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.7",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "12.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.8",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "15.58",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "6.5",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "16.27",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "Rm",
+          "referencia": "2.6",
+          "notas": [
+            "Jó 34.11"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "3.9",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "6.1",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "5.3",
+          "notas": [
+            "Gr. o cargo"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "3.9-10",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "2.20",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.1",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "9.17",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "6.4",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "3.2",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "3.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.1-2",
+      "origens": [
+        {
+          "livro": "Tt",
+          "referencia": "1.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.10",
+      "origens": [
+        {
+          "livro": "2Rs",
+          "referencia": "9.11",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "11.19",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "13.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.11",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "11.27",
+          "notas": []
+        },
+        {
+          "livro": "Fp",
+          "referencia": "4.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.11-12",
+      "origens": [
+        {
+          "livro": "1Tm",
+          "referencia": "4.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.12",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "9.15",
+          "notas": []
+        },
+        {
+          "livro": "Lc",
+          "referencia": "23.34",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "2.9",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "5.44",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "12.14",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "18.3",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "20.34",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.13",
+      "origens": [
+        {
+          "livro": "Lm",
+          "referencia": "3.45",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.14",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "6.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.15",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "3.6",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "1Co",
+          "referencia": "3.10",
+          "notas": []
+        },
+        {
+          "livro": "Tg",
+          "referencia": "1.18",
+          "notas": [
+            "Referência ao nascimento espiritual."
+          ]
+        },
+        {
+          "livro": "Gl",
+          "referencia": "4.19",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.16",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "11.1",
+          "notas": []
+        },
+        {
+          "livro": "Fp",
+          "referencia": "3.17",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "1.6",
+          "notas": []
+        },
+        {
+          "livro": "2Ts",
+          "referencia": "3.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.17",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.17",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "11.2",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "16.10",
+          "notas": []
+        },
+        {
+          "livro": "Fp",
+          "referencia": "2.22",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "1.2",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "1.1",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "16.1",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "1.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.18",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "5.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.19",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "6.3",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "1.15",
+          "notas": []
+        },
+        {
+          "livro": "Tg",
+          "referencia": "4.15",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "15.32",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "18.21",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.2",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "12.42",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "24.45",
+          "notas": []
+        },
+        {
+          "livro": "Ne",
+          "referencia": "13.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.21",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "1.23",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "10.2",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "12.20",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "13.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.3,5",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "7.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.4",
+      "origens": [
+        {
+          "livro": "Pv",
+          "referencia": "20.9",
+          "notas": []
+        },
+        {
+          "livro": "1Jo",
+          "referencia": "3.20",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "23.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.4,7",
+      "origens": [
+        {
+          "livro": "Dt",
+          "referencia": "9.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.5",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "3.13",
+          "notas": [
+            "O Dia do Juízo Final."
+          ]
+        },
+        {
+          "livro": "1Co",
+          "referencia": "3.14",
+          "notas": []
+        },
+        {
+          "livro": "1Co",
+          "referencia": "11.26",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "10.18",
+          "notas": []
+        },
+        {
+          "livro": "Tg",
+          "referencia": "4.11",
+          "notas": []
+        },
+        {
+          "livro": "Tg",
+          "referencia": "5.9",
+          "notas": []
+        },
+        {
+          "livro": "Jo",
+          "referencia": "21.22",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "2.16",
+          "notas": []
+        },
+        {
+          "livro": "Ec",
+          "referencia": "12.14",
+          "notas": []
+        },
+        {
+          "livro": "Job",
+          "referencia": "12.22",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.7",
+      "origens": [
+        {
+          "livro": "Tg",
+          "referencia": "1.17",
+          "notas": []
+        },
+        {
+          "livro": "Jo",
+          "referencia": "3.27",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "4.10",
+          "notas": []
+        },
+        {
+          "livro": "Dt",
+          "referencia": "8.14",
+          "notas": []
+        },
+        {
+          "livro": "Dt",
+          "referencia": "8.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.8",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "3.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.9",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "11.34",
+          "notas": []
+        },
+        {
+          "livro": "Hb",
+          "referencia": "10.33",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "6.9",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "3.3",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "5.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.1",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "2.5",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "12.21",
+          "notas": []
+        },
+        {
+          "livro": "Jr",
+          "referencia": "18.13",
+          "notas": []
+        },
+        {
+          "livro": "Gn",
+          "referencia": "35.22",
+          "notas": []
+        },
+        {
+          "livro": "Lv",
+          "referencia": "18.8",
+          "notas": []
+        },
+        {
+          "livro": "Dt",
+          "referencia": "22.30",
+          "notas": []
+        },
+        {
+          "livro": "Ez",
+          "referencia": "22.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.1,4",
+      "origens": [
+        {
+          "livro": "2Pe",
+          "referencia": "1.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.10",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "4.5",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "2.23",
+          "notas": [
+            "ou pestilência",
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "5.11",
+      "origens": [
+        {
+          "livro": "1Rs",
+          "referencia": "13.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.12",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "6.4",
+          "notas": []
+        },
+        {
+          "livro": "Mc",
+          "referencia": "4.11",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "3.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.13",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "5.12",
+          "notas": []
+        },
+        {
+          "livro": "Dt",
+          "referencia": "13.5",
+          "notas": []
+        },
+        {
+          "livro": "Dt",
+          "referencia": "17.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.2",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "4.18",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.3",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "2.17",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "2.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.4",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "13.3",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "18.18",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.4-5",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "2.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.5",
+      "origens": [
+        {
+          "livro": "Pv",
+          "referencia": "23.14",
+          "notas": [
+            "Hebr. Sheol"
+          ]
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "1.20",
+          "notas": [
+            "Por terem sido expulsos da comunidade cristã, esses dois homens ficaram debaixo do poder destruidor de Satanás (ver 1Coríntios 5.5 )."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "5.6",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "15.33",
+          "notas": []
+        },
+        {
+          "livro": "Tg",
+          "referencia": "4.16",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "5.9",
+          "notas": [
+            "Neste caso um símbolo de ensinamento falso que se espalha e contamina os outros."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "5.7",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "20.29",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.8",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "12.8",
+          "notas": [
+            "Êx 34.25"
+          ]
+        },
+        {
+          "livro": "Lv",
+          "referencia": "2.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.9",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "6.14",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "18.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "5.9,11",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "16.17",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "5.11",
+          "notas": []
+        },
+        {
+          "livro": "2Ts",
+          "referencia": "3.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.1",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "5.12",
+          "notas": []
+        },
+        {
+          "livro": "Ex",
+          "referencia": "18.16",
+          "notas": [
+            "Êx 23.7"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "6.11",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "12.2",
+          "notas": []
+        },
+        {
+          "livro": "1Jo",
+          "referencia": "1.7",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "8.30",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "2.2",
+          "notas": [
+            "O Diabo, que dirige os seres espirituais maus (ver Efésios 6.11-12 )."
+          ]
+        },
+        {
+          "livro": "Tt",
+          "referencia": "3.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.12",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "10.23",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.13",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "15.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.14",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "4.14",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "6.4",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "8.11",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "2.24",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.15",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "5.30",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.15,18",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "4.3",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "4.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.16",
+      "origens": [
+        {
+          "livro": "Mc",
+          "referencia": "10.7",
+          "notas": []
+        },
+        {
+          "livro": "Gn",
+          "referencia": "2.24",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "19.5",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "5.31",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.18",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "10.8",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "1.24",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "5.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.19",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "3.16",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "5.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.19-20",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "14.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.2",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "22.30",
+          "notas": []
+        },
+        {
+          "livro": "Dn",
+          "referencia": "7.22",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "3.21",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.2-3",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "20.4",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "19.28",
+          "notas": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "6.20",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.23",
+          "notas": []
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "2.1",
+          "notas": [
+            "ou instrutores"
+          ]
+        },
+        {
+          "livro": "Sl",
+          "referencia": "95.6",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "5.9",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "12.1",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "1.18",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.3",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "2.26",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.7",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "6.29",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "5.15",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "5.39",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.8",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "4.6",
+          "notas": []
+        },
+        {
+          "livro": "Lv",
+          "referencia": "25.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.9",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "13.4",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "6.7",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "13.13",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "5.5",
+          "notas": []
+        },
+        {
+          "livro": "Lv",
+          "referencia": "18.20",
+          "notas": [
+            "Êx 20.14"
+          ]
+        },
+        {
+          "livro": "Lv",
+          "referencia": "18.22",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.9,11",
+      "origens": [
+        {
+          "livro": "Gn",
+          "referencia": "19.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "6.9,18",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "15.20",
+          "notas": [
+            "a Êx 34.15-17 ; b"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "6.9-10",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "21.8",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "22.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.1,26",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.1,8",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.26",
+          "notas": [
+            "Tempo de desordens e perseguições ou o fim do mundo (ver os versículos 29 e 31 )."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "7.10",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "5.32",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.10-11",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "16.18",
+          "notas": []
+        },
+        {
+          "livro": "Mc",
+          "referencia": "10.11",
+          "notas": []
+        },
+        {
+          "livro": "Mc",
+          "referencia": "10.11-12",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "5.32",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "19.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.12,25",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.12,25,40",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.14",
+      "origens": [
+        {
+          "livro": "Ml",
+          "referencia": "2.15",
+          "notas": [
+            "ou ainda que tenha o resto do espírito"
+          ]
+        },
+        {
+          "livro": "Dt",
+          "referencia": "29.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.16",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "9.22",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "11.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.17",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "11.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.19",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "5.6",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "6.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.2,7,9,17",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "19.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.20",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.24",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.22",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "9.21",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "3.24",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "6.18",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "2.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.23",
+      "origens": [
+        {
+          "livro": "Lv",
+          "referencia": "25.42",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.25",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.40",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "4.1",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "8.10",
+          "notas": []
+        },
+        {
+          "livro": "1Ts",
+          "referencia": "2.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.28,36,38",
+      "origens": [
+        {
+          "livro": "1Tm",
+          "referencia": "4.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.3",
+      "origens": [
+        {
+          "livro": "1Pe",
+          "referencia": "3.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.31",
+      "origens": [
+        {
+          "livro": "1Jo",
+          "referencia": "2.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.32",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "10.38",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "5.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.32,34",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "19.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.36",
+      "origens": [
+        {
+          "livro": "Rt",
+          "referencia": "3.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.39",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "7.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.40",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "1.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.5",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "3.5",
+          "notas": []
+        },
+        {
+          "livro": "Jl",
+          "referencia": "2.16",
+          "notas": [
+            "Êx 19.10,22"
+          ]
+        },
+        {
+          "livro": "Mt",
+          "referencia": "9.15",
+          "notas": [
+            "Gr. os filhos da câmara nupcial"
+          ]
+        },
+        {
+          "livro": "Ex",
+          "referencia": "19.15",
+          "notas": [
+            "Êx 19.11"
+          ]
+        },
+        {
+          "livro": "Ex",
+          "referencia": "21.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.6",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.12",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "8.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.6,10,40",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.25",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.6,12",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "11.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.7",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "26.29",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.8,26",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "7.9",
+      "origens": [
+        {
+          "livro": "1Tm",
+          "referencia": "5.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.1",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "10.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.1,7,10",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "15.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.10",
+      "origens": [
+        {
+          "livro": "Am",
+          "referencia": "2.8",
+          "notas": [
+            "Êx 22.26"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "8.10,12",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "10.28",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.11",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "14.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.13",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "11.29",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "14.21",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.2",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "13.9",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "6.3",
+          "notas": []
+        },
+        {
+          "livro": "Ex",
+          "referencia": "36.5",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "6.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.3",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "4.9",
+          "notas": [
+            "Ver Gálatas 4.3 , nota."
+          ]
+        },
+        {
+          "livro": "1Rs",
+          "referencia": "3.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.4",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "10.19",
+          "notas": []
+        },
+        {
+          "livro": "2Rs",
+          "referencia": "17.15",
+          "notas": []
+        },
+        {
+          "livro": "Jo",
+          "referencia": "17.3",
+          "notas": []
+        },
+        {
+          "livro": "1Sm",
+          "referencia": "12.21",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "14.15",
+          "notas": [
+            "Êx 20.11"
+          ]
+        },
+        {
+          "livro": "1Rs",
+          "referencia": "16.13",
+          "notas": []
+        },
+        {
+          "livro": "1Rs",
+          "referencia": "18.26",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.4,6",
+      "origens": [
+        {
+          "livro": "Dt",
+          "referencia": "6.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.4,7,10",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "34.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.6",
+      "origens": [
+        {
+          "livro": "Ml",
+          "referencia": "2.10",
+          "notas": []
+        },
+        {
+          "livro": "Fp",
+          "referencia": "2.11",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "1.16",
+          "notas": [
+            "Seres espirituais, bons ou maus, cujo poder se manifesta no Universo (ver Romanos 8.38 ; Efésios 1.21 ; 1Pedro 3.22 )."
+          ]
+        },
+        {
+          "livro": "Rm",
+          "referencia": "11.36",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "4.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.8",
+      "origens": [
+        {
+          "livro": "Cl",
+          "referencia": "2.16",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "14.17",
+          "notas": []
+        },
+        {
+          "livro": "Lv",
+          "referencia": "11.8",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "4.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.9,13",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "14.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.9-10",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "2.14",
+          "notas": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "8.9-11",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "14.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "8.9-12",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "14.20",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.1",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "22.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.10",
+      "origens": [
+        {
+          "livro": "2Tm",
+          "referencia": "2.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.10,14",
+      "origens": [
+        {
+          "livro": "1Tm",
+          "referencia": "5.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.11",
+      "origens": [
+        {
+          "livro": "2Rs",
+          "referencia": "4.42",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "15.27",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.11,14",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "6.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.12",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "6.3",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "11.12",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "20.33",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "20.35",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.13",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "13.10",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "18.31",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.14",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "10.7",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "10.10",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "5.18",
+          "notas": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "9.15",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "11.10",
+          "notas": []
+        },
+        {
+          "livro": "Ed",
+          "referencia": "8.22",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.16",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "1.14",
+          "notas": []
+        },
+        {
+          "livro": "Am",
+          "referencia": "3.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.16-17",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "17.10",
+          "notas": [
+            "Jó 22.3 ; 35.7"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "9.17",
+      "origens": [
+        {
+          "livro": "Cl",
+          "referencia": "1.25",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "1.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.18",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.31",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.19",
+      "origens": [
+        {
+          "livro": "Pv",
+          "referencia": "11.30",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.19,22",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "10.33",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "15.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.2",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "3.2",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "12.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.20",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "16.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.21",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "6.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.22",
+      "origens": [
+        {
+          "livro": "Tg",
+          "referencia": "5.20",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.24",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "12.1",
+          "notas": [
+            "Não pessoas que estão vendo o que acontece, mas aqueles que deram o seu testemunho de fé ( capítulo 11 )."
+          ]
+        },
+        {
+          "livro": "Gl",
+          "referencia": "5.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.24-25",
+      "origens": [
+        {
+          "livro": "2Tm",
+          "referencia": "4.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.25",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "1.23",
+          "notas": []
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "2.4",
+          "notas": []
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "4.8",
+          "notas": [
+            "O Dia do Juízo Final."
+          ]
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "5.4",
+          "notas": [
+            "Jesus Cristo."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "9.25-26",
+      "origens": [
+        {
+          "livro": "2Tm",
+          "referencia": "2.5",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "6.12",
+          "notas": [
+            "Gr. e já confessaste a boa confissão",
+            "Provavelmente quando foi separado para o serviço cristão (ver 1Timóteo 1.18 ; 4.14 )."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "9.27",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "5.29",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.4",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "10.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.4,15",
+      "origens": [
+        {
+          "livro": "Ne",
+          "referencia": "5.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.5",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.7",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "1.19",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "8.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.6",
+      "origens": [
+        {
+          "livro": "2Ts",
+          "referencia": "3.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.6,12",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "11.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.7",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "10.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.7,13",
+      "origens": [
+        {
+          "livro": "Pv",
+          "referencia": "27.18",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "9.9",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "15.4",
+          "notas": []
+        },
+        {
+          "livro": "1Tm",
+          "referencia": "5.18",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "Dt",
+          "referencia": "25.4",
+          "notas": [
+            "As espigas de trigo eram espalhadas num terreiro, e fazia-se um boi andar sobre elas a fim de tirar os grãos das espigas. Este mandamento permitia ao boi comer das espigas enquanto trabalhava."
+          ]
+        }
+      ]
+    }
+  ]
+}

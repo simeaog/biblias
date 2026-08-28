@@ -1,0 +1,596 @@
+{
+  "schema": "referencias-reversas-v1",
+  "livro": "Jd",
+  "descricao": "Relações reversas derivadas das referências cruzadas canônicas.",
+  "entradas": [
+    {
+      "destino": "1.1",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "1.2",
+          "notas": []
+        },
+        {
+          "livro": "Tg",
+          "referencia": "1.1",
+          "notas": []
+        },
+        {
+          "livro": "Lc",
+          "referencia": "6.16",
+          "notas": [
+            "ou irmão"
+          ]
+        },
+        {
+          "livro": "Jo",
+          "referencia": "17.11",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "1.13",
+          "notas": []
+        },
+        {
+          "livro": "1Pe",
+          "referencia": "1.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.10",
+      "origens": [
+        {
+          "livro": "2Pe",
+          "referencia": "2.12",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "1.26",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "13.45",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "19.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.11",
+      "origens": [
+        {
+          "livro": "2Pe",
+          "referencia": "2.14",
+          "notas": []
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "2.15",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "2.14",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "1Jo",
+          "referencia": "3.12",
+          "notas": [
+            "Diabo, chefe das forças do mal."
+          ]
+        },
+        {
+          "livro": "Nm",
+          "referencia": "16.1",
+          "notas": [
+            "Êx 6.21"
+          ]
+        },
+        {
+          "livro": "Nm",
+          "referencia": "16.1-2",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "22.5",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "22.23",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.12",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "11.21",
+          "notas": [
+            "Os primeiros cristãos realizavam refeições acompanhadas de atos de adoração a Deus."
+          ]
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "2.13",
+          "notas": [
+            "ou reputam por prazer o viver diariamente em delícias;"
+          ]
+        },
+        {
+          "livro": "Pv",
+          "referencia": "25.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.12-13",
+      "origens": [
+        {
+          "livro": "2Pe",
+          "referencia": "2.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.13",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "8.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.14",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "11.26",
+          "notas": []
+        },
+        {
+          "livro": "Hb",
+          "referencia": "12.22",
+          "notas": [
+            "Figura do céu, que é o templo de Deus."
+          ]
+        },
+        {
+          "livro": "Gn",
+          "referencia": "5.24",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "16.27",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "Mt",
+          "referencia": "25.31",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "Is",
+          "referencia": "26.21",
+          "notas": []
+        },
+        {
+          "livro": "Zc",
+          "referencia": "14.5",
+          "notas": []
+        },
+        {
+          "livro": "2Ts",
+          "referencia": "1.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.14-15",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "16.22",
+          "notas": [
+            "que é o Senhor vem",
+            "“Marana tá” — Vem, nosso Senhor! ou “Maran atá” — O nosso Senhor está vindo!"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.15",
+      "origens": [
+        {
+          "livro": "1Sm",
+          "referencia": "2.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.16",
+      "origens": [
+        {
+          "livro": "2Pe",
+          "referencia": "2.18",
+          "notas": []
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "3.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.17",
+      "origens": [
+        {
+          "livro": "2Pe",
+          "referencia": "3.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.18",
+      "origens": [
+        {
+          "livro": "2Pe",
+          "referencia": "2.1",
+          "notas": [
+            "ou instrutores"
+          ]
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "3.3",
+          "notas": []
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "3.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.19",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "2.14",
+          "notas": []
+        },
+        {
+          "livro": "Hb",
+          "referencia": "10.25",
+          "notas": [
+            "O Dia do Juízo Final."
+          ]
+        },
+        {
+          "livro": "Is",
+          "referencia": "65.5",
+          "notas": [
+            "Eles pensavam que estavam purificados por terem tomado parte nas cerimônias pagãs de adoração e por isso deviam evitar o contato com as pessoas comuns."
+          ]
+        },
+        {
+          "livro": "Dt",
+          "referencia": "13.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.2",
+      "origens": [
+        {
+          "livro": "2Pe",
+          "referencia": "1.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.23",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "3.15",
+          "notas": []
+        },
+        {
+          "livro": "2Co",
+          "referencia": "5.11",
+          "notas": [
+            "Jó 31.23"
+          ]
+        },
+        {
+          "livro": "Ap",
+          "referencia": "3.4",
+          "notas": [
+            "Gr. uns poucos de nomes",
+            "Símbolo de vitória e alegria."
+          ]
+        },
+        {
+          "livro": "Am",
+          "referencia": "4.11",
+          "notas": []
+        },
+        {
+          "livro": "Zc",
+          "referencia": "3.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.24",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "14.5",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "1.22",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "16.25",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "3.20",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.25",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "16.27",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.3",
+      "origens": [
+        {
+          "livro": "Fp",
+          "referencia": "1.27",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "2.6",
+          "notas": []
+        },
+        {
+          "livro": "Ef",
+          "referencia": "4.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.4",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "5.9",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "5.13",
+          "notas": [
+            "Estas palavras são a tradução da palavra grega “carne”, que é muitas vezes usada no Novo Testamento para descrever o ser humano como ele é, separado de Deus e dominado pelo pecado."
+          ]
+        },
+        {
+          "livro": "Rm",
+          "referencia": "9.22",
+          "notas": []
+        },
+        {
+          "livro": "Tt",
+          "referencia": "1.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.4,19",
+      "origens": [
+        {
+          "livro": "2Tm",
+          "referencia": "3.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.4,7-8,10,16",
+      "origens": [
+        {
+          "livro": "2Pe",
+          "referencia": "2.10",
+          "notas": [
+            "Os anjos (ver Judas 8 )."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.5",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "10.5",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "14.37",
+          "notas": []
+        },
+        {
+          "livro": "Dt",
+          "referencia": "1.32",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.6",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "6.3",
+          "notas": []
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "2.4",
+          "notas": [
+            "Jó 4.18"
+          ]
+        },
+        {
+          "livro": "Jo",
+          "referencia": "8.44",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "20.2",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "25.41",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.7",
+      "origens": [
+        {
+          "livro": "Gn",
+          "referencia": "19.7",
+          "notas": []
+        },
+        {
+          "livro": "Gn",
+          "referencia": "19.24",
+          "notas": []
+        },
+        {
+          "livro": "Gn",
+          "referencia": "19.24-25",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.8",
+      "origens": [
+        {
+          "livro": "Ex",
+          "referencia": "22.28",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "12.8",
+          "notas": [
+            "Êx 33.11,19"
+          ]
+        },
+        {
+          "livro": "At",
+          "referencia": "23.5",
+          "notas": [
+            "Êx 22.28"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.9",
+      "origens": [
+        {
+          "livro": "Dn",
+          "referencia": "10.13",
+          "notas": []
+        },
+        {
+          "livro": "Dn",
+          "referencia": "10.21",
+          "notas": []
+        },
+        {
+          "livro": "2Pe",
+          "referencia": "2.11",
+          "notas": []
+        },
+        {
+          "livro": "Ap",
+          "referencia": "12.7",
+          "notas": [
+            "Um dos arcanjos (ver “arcanjo” no Vocabulário)."
+          ]
+        },
+        {
+          "livro": "Dt",
+          "referencia": "34.6",
+          "notas": []
+        },
+        {
+          "livro": "Zc",
+          "referencia": "3.2",
+          "notas": []
+        }
+      ]
+    }
+  ]
+}

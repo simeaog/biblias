@@ -1,0 +1,381 @@
+{
+  "schema": "referencias-reversas-v1",
+  "livro": "Jn",
+  "descricao": "Relações reversas derivadas das referências cruzadas canônicas.",
+  "entradas": [
+    {
+      "destino": "1.1",
+      "origens": [
+        {
+          "livro": "2Rs",
+          "referencia": "14.25",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.12",
+      "origens": [
+        {
+          "livro": "Js",
+          "referencia": "6.18",
+          "notas": [
+            "ou anátema"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.14",
+      "origens": [
+        {
+          "livro": "Dt",
+          "referencia": "21.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.17",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "12.40",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.2",
+      "origens": [
+        {
+          "livro": "Ap",
+          "referencia": "18.5",
+          "notas": []
+        },
+        {
+          "livro": "Jn",
+          "referencia": "4.11",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.3",
+      "origens": [
+        {
+          "livro": "Jn",
+          "referencia": "4.2",
+          "notas": [
+            "Êx 34.6"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.5",
+      "origens": [
+        {
+          "livro": "At",
+          "referencia": "27.19",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.1",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "12.40",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.1,10",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "11.30",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.2",
+      "origens": [
+        {
+          "livro": "Sl",
+          "referencia": "120.1",
+          "notas": []
+        },
+        {
+          "livro": "Lm",
+          "referencia": "3.55",
+          "notas": []
+        },
+        {
+          "livro": "2Sm",
+          "referencia": "22.7",
+          "notas": [
+            "Êx 3.7"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "2.4",
+      "origens": [
+        {
+          "livro": "Dn",
+          "referencia": "6.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "2.8",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "2.5",
+          "notas": []
+        },
+        {
+          "livro": "Dt",
+          "referencia": "32.21",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "1Rs",
+          "referencia": "16.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.10",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "18.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.2-3",
+      "origens": [
+        {
+          "livro": "Jn",
+          "referencia": "1.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.4",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "11.30",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.5",
+      "origens": [
+        {
+          "livro": "2Cr",
+          "referencia": "20.3",
+          "notas": []
+        },
+        {
+          "livro": "Lc",
+          "referencia": "11.32",
+          "notas": []
+        },
+        {
+          "livro": "Gn",
+          "referencia": "37.34",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "12.41",
+          "notas": [
+            "Isto é, o Reino de Deus, anunciado por Jesus."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "3.6",
+      "origens": [
+        {
+          "livro": "Is",
+          "referencia": "58.5",
+          "notas": []
+        },
+        {
+          "livro": "Ez",
+          "referencia": "26.16",
+          "notas": [
+            "Jó 2.13"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "3.6,8",
+      "origens": [
+        {
+          "livro": "Mt",
+          "referencia": "11.21",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.8",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "25.5",
+          "notas": []
+        },
+        {
+          "livro": "Jr",
+          "referencia": "36.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.8-9",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "26.3",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "3.9",
+      "origens": [
+        {
+          "livro": "Jl",
+          "referencia": "2.14",
+          "notas": []
+        },
+        {
+          "livro": "Sf",
+          "referencia": "2.3",
+          "notas": []
+        },
+        {
+          "livro": "2Sm",
+          "referencia": "12.22",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.2",
+      "origens": [
+        {
+          "livro": "Jl",
+          "referencia": "2.13",
+          "notas": []
+        },
+        {
+          "livro": "Ex",
+          "referencia": "32.14",
+          "notas": []
+        },
+        {
+          "livro": "Nm",
+          "referencia": "14.18",
+          "notas": [
+            "Êx 34.6-7",
+            "Êx 20.5 ; 34.7",
+            "Êx 20.5-6 ; 34.6-7"
+          ]
+        },
+        {
+          "livro": "Na",
+          "referencia": "1.3",
+          "notas": [
+            "Êx 34.6-7"
+          ]
+        },
+        {
+          "livro": "Jn",
+          "referencia": "1.3",
+          "notas": []
+        },
+        {
+          "livro": "Dt",
+          "referencia": "4.31",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "4.3",
+      "origens": [
+        {
+          "livro": "Nm",
+          "referencia": "11.15",
+          "notas": []
+        },
+        {
+          "livro": "Job",
+          "referencia": "10.1",
+          "notas": [
+            "Jó 7.11"
+          ]
+        },
+        {
+          "livro": "Jn",
+          "referencia": "4.8",
+          "notas": []
+        },
+        {
+          "livro": "1Rs",
+          "referencia": "19.4",
+          "notas": [
+            "Referência aos israelitas que morreram no deserto quando estavam indo para a Terra Prometida."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "4.3,8",
+      "origens": [
+        {
+          "livro": "1Rs",
+          "referencia": "19.4",
+          "notas": [
+            "Referência aos israelitas que morreram no deserto quando estavam indo para a Terra Prometida."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "4.5",
+      "origens": [
+        {
+          "livro": "Jn",
+          "referencia": "4.3",
+          "notas": []
+        }
+      ]
+    }
+  ]
+}

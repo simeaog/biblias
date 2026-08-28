@@ -1,0 +1,156 @@
+{
+  "schema": "referencias-reversas-v1",
+  "livro": "2Jo",
+  "descricao": "Relações reversas derivadas das referências cruzadas canônicas.",
+  "entradas": [
+    {
+      "destino": "1.1",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "16.13",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.10",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "5.11",
+          "notas": []
+        },
+        {
+          "livro": "Mt",
+          "referencia": "18.17",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "16.17",
+          "notas": []
+        },
+        {
+          "livro": "2Ts",
+          "referencia": "3.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.11",
+      "origens": [
+        {
+          "livro": "1Tm",
+          "referencia": "5.22",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.12",
+      "origens": [
+        {
+          "livro": "1Jo",
+          "referencia": "1.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.4",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "13.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.5",
+      "origens": [
+        {
+          "livro": "Jo",
+          "referencia": "13.34",
+          "notas": []
+        },
+        {
+          "livro": "Jo",
+          "referencia": "15.12",
+          "notas": []
+        },
+        {
+          "livro": "1Jo",
+          "referencia": "2.7",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.6",
+      "origens": [
+        {
+          "livro": "1Jo",
+          "referencia": "2.24",
+          "notas": []
+        },
+        {
+          "livro": "1Jo",
+          "referencia": "5.3",
+          "notas": [
+            "ou esta é a caridade"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.7",
+      "origens": [
+        {
+          "livro": "1Jo",
+          "referencia": "2.22",
+          "notas": []
+        },
+        {
+          "livro": "1Jo",
+          "referencia": "2.26",
+          "notas": []
+        },
+        {
+          "livro": "1Jo",
+          "referencia": "4.3",
+          "notas": [
+            "Ver 1João 2.18 , nota h."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.8",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "10.32",
+          "notas": []
+        },
+        {
+          "livro": "Gl",
+          "referencia": "3.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.9",
+      "origens": [
+        {
+          "livro": "1Jo",
+          "referencia": "2.23",
+          "notas": []
+        }
+      ]
+    }
+  ]
+}

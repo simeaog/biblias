@@ -1,0 +1,326 @@
+{
+  "schema": "referencias-reversas-v1",
+  "livro": "Ob",
+  "descricao": "Relações reversas derivadas das referências cruzadas canônicas.",
+  "entradas": [
+    {
+      "destino": "1.1-14",
+      "origens": [
+        {
+          "livro": "Ml",
+          "referencia": "1.2-5",
+          "notas": []
+        },
+        {
+          "livro": "Jr",
+          "referencia": "49.7-22",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "34.5-17",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "63.1-6",
+          "notas": []
+        },
+        {
+          "livro": "Am",
+          "referencia": "1.11-12",
+          "notas": []
+        },
+        {
+          "livro": "Ez",
+          "referencia": "25.12-14",
+          "notas": []
+        },
+        {
+          "livro": "Ez",
+          "referencia": "35.1-15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.1-3",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "49.14",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.10",
+      "origens": [
+        {
+          "livro": "Ml",
+          "referencia": "1.3",
+          "notas": [
+            "ou chacais",
+            "A terra de Edom."
+          ]
+        },
+        {
+          "livro": "Jl",
+          "referencia": "3.19",
+          "notas": []
+        },
+        {
+          "livro": "Lm",
+          "referencia": "4.21",
+          "notas": []
+        },
+        {
+          "livro": "Ez",
+          "referencia": "25.12",
+          "notas": []
+        },
+        {
+          "livro": "Ez",
+          "referencia": "35.4",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.10,12",
+      "origens": [
+        {
+          "livro": "Dt",
+          "referencia": "23.7",
+          "notas": [
+            "Êx 22.21 ; 23.9",
+            "Ver Deuteronômio 2.4 , nota."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.10-12",
+      "origens": [
+        {
+          "livro": "Nm",
+          "referencia": "20.14",
+          "notas": [
+            "Os israelitas eram descendentes de Jacó, e os edomitas eram descendentes de Esaú, o irmão de Jacó."
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.11",
+      "origens": [
+        {
+          "livro": "Jl",
+          "referencia": "3.3",
+          "notas": []
+        },
+        {
+          "livro": "Na",
+          "referencia": "3.10",
+          "notas": []
+        },
+        {
+          "livro": "Ez",
+          "referencia": "35.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.12",
+      "origens": [
+        {
+          "livro": "Pv",
+          "referencia": "17.5",
+          "notas": [
+            "Jó 31.29"
+          ]
+        },
+        {
+          "livro": "Pv",
+          "referencia": "24.17",
+          "notas": [
+            "Jó 31.29"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.12,15",
+      "origens": [
+        {
+          "livro": "Ez",
+          "referencia": "35.15",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.13",
+      "origens": [
+        {
+          "livro": "Ez",
+          "referencia": "35.10",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.15",
+      "origens": [
+        {
+          "livro": "Jl",
+          "referencia": "2.1",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.16",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "25.29",
+          "notas": []
+        },
+        {
+          "livro": "Jl",
+          "referencia": "3.17",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.17",
+      "origens": [
+        {
+          "livro": "Ez",
+          "referencia": "36.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.18",
+      "origens": [
+        {
+          "livro": "Ml",
+          "referencia": "4.1",
+          "notas": []
+        },
+        {
+          "livro": "Zc",
+          "referencia": "12.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.19",
+      "origens": [
+        {
+          "livro": "Am",
+          "referencia": "9.12",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.20",
+      "origens": [
+        {
+          "livro": "1Rs",
+          "referencia": "17.9",
+          "notas": []
+        },
+        {
+          "livro": "Zc",
+          "referencia": "9.2",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.21",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "1.33",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.3-4",
+      "origens": [
+        {
+          "livro": "Job",
+          "referencia": "20.6",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.4",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "49.16",
+          "notas": []
+        },
+        {
+          "livro": "Hc",
+          "referencia": "2.9",
+          "notas": []
+        },
+        {
+          "livro": "Am",
+          "referencia": "9.2",
+          "notas": [
+            "Jó 20.6"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.5",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "49.9",
+          "notas": []
+        },
+        {
+          "livro": "Job",
+          "referencia": "39.27",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.8",
+      "origens": [
+        {
+          "livro": "Jr",
+          "referencia": "49.7",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "2.11",
+          "notas": []
+        },
+        {
+          "livro": "Is",
+          "referencia": "29.14",
+          "notas": []
+        }
+      ]
+    }
+  ]
+}

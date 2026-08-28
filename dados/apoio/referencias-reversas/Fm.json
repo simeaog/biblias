@@ -1,0 +1,260 @@
+{
+  "schema": "referencias-reversas-v1",
+  "livro": "Fm",
+  "descricao": "Relações reversas derivadas das referências cruzadas canônicas.",
+  "entradas": [
+    {
+      "destino": "1.10",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "4.15",
+          "notas": [
+            "ou pedagogos"
+          ]
+        },
+        {
+          "livro": "Gl",
+          "referencia": "4.19",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "4.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.10-12",
+      "origens": [
+        {
+          "livro": "Cl",
+          "referencia": "4.9",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.11",
+      "origens": [
+        {
+          "livro": "Lc",
+          "referencia": "17.10",
+          "notas": [
+            "Jó 22.3 ; 35.7"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.16",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "7.22",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.2",
+      "origens": [
+        {
+          "livro": "1Co",
+          "referencia": "16.19",
+          "notas": []
+        },
+        {
+          "livro": "Fp",
+          "referencia": "2.25",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "4.17",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "16.5",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.22",
+      "origens": [
+        {
+          "livro": "Hb",
+          "referencia": "13.19",
+          "notas": []
+        },
+        {
+          "livro": "Fp",
+          "referencia": "2.24",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.23",
+      "origens": [
+        {
+          "livro": "Cl",
+          "referencia": "1.7",
+          "notas": []
+        },
+        {
+          "livro": "Cl",
+          "referencia": "4.12",
+          "notas": [
+            "ou completos"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.24",
+      "origens": [
+        {
+          "livro": "2Tm",
+          "referencia": "4.9",
+          "notas": []
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "4.10",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "4.11",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "Cl",
+          "referencia": "4.10",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "Cl",
+          "referencia": "4.14",
+          "notas": [
+            "a"
+          ]
+        },
+        {
+          "livro": "At",
+          "referencia": "15.38",
+          "notas": []
+        },
+        {
+          "livro": "At",
+          "referencia": "19.29",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.25",
+      "origens": [
+        {
+          "livro": "Gl",
+          "referencia": "6.18",
+          "notas": []
+        },
+        {
+          "livro": "2Tm",
+          "referencia": "4.22",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.4",
+      "origens": [
+        {
+          "livro": "1Ts",
+          "referencia": "1.2",
+          "notas": []
+        },
+        {
+          "livro": "Rm",
+          "referencia": "1.8",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.5",
+      "origens": [
+        {
+          "livro": "Ef",
+          "referencia": "1.15",
+          "notas": [
+            "ou caridade"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.6",
+      "origens": [
+        {
+          "livro": "Fp",
+          "referencia": "1.9",
+          "notas": [
+            "ou a vossa caridade"
+          ]
+        }
+      ]
+    },
+    {
+      "destino": "1.7",
+      "origens": [
+        {
+          "livro": "2Tm",
+          "referencia": "1.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.7,20",
+      "origens": [
+        {
+          "livro": "Rm",
+          "referencia": "15.32",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.8,21",
+      "origens": [
+        {
+          "livro": "2Co",
+          "referencia": "7.16",
+          "notas": []
+        }
+      ]
+    },
+    {
+      "destino": "1.9",
+      "origens": [
+        {
+          "livro": "1Pe",
+          "referencia": "5.1",
+          "notas": []
+        }
+      ]
+    }
+  ]
+}
