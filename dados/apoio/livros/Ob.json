@@ -2,16 +2,78 @@
   "schema": "apoio-livro-v1",
   "id": "Ob",
   "nome": "Obadias",
-  "abreviacao": "Ob",
+  "abreviacao": "Obadias",
   "material": {
     "titulo": "Sobre Obadias",
-    "introducao": "Jerusalém foi conquistada pelos babilônios no ano 586 a.C. Os edomitas, povo que morava no país de Edom, ao sul de Judá, não somente se alegraram com a derrota dos israelitas, mas também ajudaram o inimigo e aproveitaram a oportunidade para roubar e levar consigo os bens dos moradores de Jerusalém. O profeta Obadias denunciou o pecado dos edomitas e anunciou que seriam castigados e derrotados, junto com os outros povos que eram inimigos do povo de Deus. E Israel voltaria a ser próspero e poderoso novamente.",
-    "esquema_conteudo": "1. Humilhação de Edom (vs. 1-14) 2. O Dia do Senhor e o juízo das nações (vs. 15-18) 3. A exaltação de Israel (vs. 19-21)"
+    "secoes": [
+      {
+        "id": "tituloeautor",
+        "titulo": "Título e autor",
+        "tipo": "texto",
+        "ordem": 0,
+        "conteudo": "A semelhanqa de outros livros profeticos, essa profecia e intitulada com o nome de seu autor. Sabemos pouco a respeito desse profeta, alem de seu nome, que significa “servo ou adorador do ÿ. Parece que o nome Obadias era muito SENHOR comum, sendo usado para designar 12 pessoas diferentes no Antigo Testamento. A importancia e a autoridade da mensagem residem no fato de que “o SENHOR falou” (v.18), e nao na fama ou na preeminence do mensageiro. de O L I V R O que, finalmente, resultaram na queda de Juda, em 586 a.C.Tanto a Escritura (SI 137; Ez 35.1-15) como a tradição judaica mencionam explicitamente oenvolvimento dos edomitas nessa catastrofe final; e o textode Obadias parece referir-se mais naturalmente aos ataques dos babilonios.Alem disso,algumas semelhanqas notaveis entre os w.1-9 e Jeremias 49.79,14-16 sugerem que Obadiase feremiasestavam se dirigindo a Edom quase ao mesmo tempo. Embora nao possamos datar Obadiascom precisao,sabemos que feremias profetizou desde aproximadamente 626a.C.ate uma data posterior a 586a.C.Alem disso, uma data anterior a campanha dos babilonioscontra Edom em 553 a.C.e sugerida por references a calamidadefutura que virasobre esse povo."
+      },
+      {
+        "id": "dataecircunstancias",
+        "titulo": "Data e circunstâncias",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "Visto que o livro nao contem nenhuma evidencia sobre a família do profeta e nao apresenta nenhuma informaqao cronologica com base no governo de reis, os estudiosos dessa profecia tern debatido sobre a data de sua escrita. O profeta tem em vista um ataque militar contra Jerusalem do qual os edomitas tomaram parte com intenso deleite (vv. 11-14), mas nao da informaqoes que datam com clareza tal catastrofe. Alguns conectam o livro com a invasao de Juda pelos filisteus e arabes durante o reinado de Jeorao (848-841 a.C.), da qual, presume-se, os edomitas participaram (2Rs 8.20-22; 2Cr 21.8-10, 16, 17). Outros relacionam os eventos que motivaram essa profecia as invasoes babilonicas de Juda, poderosa composição de 21 versículos. Ironia, figuras impressionantes, duplo sentido e uso deliberado de repetigao, todos esses recursos sao empregados com bom efeito. A mensagem divina do livro comega por se dirigir as nações, que sao chamadas para executar o julgamento de Deus sobre Edom (v.1). Isso e logo seguido pelas palavras dirigidas a Edom, que apresentam a acusagao de Deus contra essa nação e a natureza de seu castigo (vv. 2-18). Nos versículos finals do livro, Deus descreve a restauração do exilado Israel e o estabelecimento do reino de Deus (vv. 19-21). O anuncio da punição de Edom por se aproveitar de Juda e contrabalangado com a promessa de restabelecimento para o povo de Deus."
+      },
+      {
+        "id": "genero",
+        "titulo": "Gênero",
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "O título do livro o descreve como uma “visao”, uma palavra algumas vezes usada a respeito das mensagens comunicadas por Deus aos profetas (p. ex., Na 1.1; He 2.3, 4). Alem dessa breve introdução em prosa, a visao e apresentada em linguagem poetica."
+      },
+      {
+        "id": "caracteristicasliterarias",
+        "titulo": "Características literárias",
+        "tipo": "texto",
+        "ordem": 3,
+        "conteudo": "Obadias tinha uma habilidade literaria extraordinaria, como e demonstrado em sua breve mas como nagdes. Ambos eram descendentes de Isaque, o filho de Abraao, de quem Rebeca gerou dois irmaos gemeos (Gn 26.20-26). No entanto, embora Esau, tambem conhecido como Edom, fosse o mais velho dos meninos, as promessas de Deus feitas a Abraao foram confirmadas ao irmao mais novo, Jaco, que posteriormente recebeu o nome de Israel. A relação turbulenta entre os dois irmaos e descrita em detalhes em Genesis 25 a 32. Digno de nota e o fato de que Esau/Edom desprezou seu direito de nascimento como primogênito, vendendo-o a Jaco por uma tigela de cozinhado (Gn 25.29-34). Quando, depois, Jaco enganou seu pai para que lhe desse a bênção da primogenitura, Esau jurou que mataria Jaco (Gn 27). Por fim, depois de um tempo de exílio em Pada-Ara, Jaco retornou a Canaa e se reconciliou com Esau (Gn 32). No entanto, o relacionamento futuro entre as duas nações foi carregado de tensao, apesar de seu parentesco. Cf. Malaquias 1.2-5."
+      },
+      {
+        "id": "caracteristicasetemasprincipais",
+        "titulo": "Características e temas principais",
+        "tipo": "texto",
+        "ordem": 4,
+        "conteudo": "A profecia e “a respeito de Edom” (v. 1) e se dirige repetidas vezes a essa nação, mas foi dada a comunidade da aliança como Escritura Sagrada.0 proposito, portanto, mais do que advertir Edom sobre o julgamento iminente, e reassegurar o povo de Deus acerca de sua justiça triunfante em agao a favor deles. Edom estava prospero, Juda permanecia derrotado e a ordem moral do mundo parecia ter sido subvertida pelasforgas fmpias.0 profeta Obadias, porem, foi levantado com uma mensagem da justiça soberana de Deus para fortalecer a fe enfraquecida de seu povo. Os propositos justos de Deus e que determinam a historia, e nao as vontades malignas dos homens (Lm 4.22)."
+      },
+      {
+        "id": "teologiadeobadias",
+        "titulo": "Teologia de Obadias",
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "D E O B A D I A S O livro de Obadias ressalta, em especial, a justiça de Deus e seu poder para chamar as nações a prestarem contas desuas agoes contra os outros. Edom nao acreditava que teria de responder por sua crueldade contra o povo de Juda. Mas Deus convoca as nações para punir Edom, garantindo que seu compromisso pactual com os descendentes de Abraao nao e irrelevante. H I S T O R I A O B A D I A S N A M A I S A M P L A D A B I B L I A O relacionamento entre Edom e Israel e singular por causa de sua ancestralidade compartilhada D E O B A D I A S E S B O C J O I. A DECLARA(AO DE DEUS SOBRE PUNIR EDOM (VV. 1-18) A. Introdução: chamado as naijoes (v.1) B. A resolu;ao de Deus no sentido de humilhar o orgulhoso Edom (vv. 2-4) C. Edom saqueado (vv. 5, 6) D. A vulnerabilidade de Edom ao julgamento de Deus (vv. 7-9) E. A indiferenga cruel de Edom para com a afli^ (vv. 10-14) F. Edom e punido, e Jaco, restaurado (vv. 15-18) II. A PROMESSA DE DEUS DE UMA NOVA ORDEM MORAL (VV. 19-21)"
+      },
+      {
+        "id": "cristoemobadias",
+        "titulo": "Cristo em Obadias",
+        "tipo": "texto",
+        "ordem": 6,
+        "conteudo": "Em Obadias, nao ha references específicas a vinda de um reino messianico futuro. E o proprio Senhor quem intervem para reordenar os afazeres de “todas as nações” (v. 15). O escopo universal do julgamento vindouro e um aspecto dolivramento messianico mais amplo predito por Obadias. Apesar da participagao de Edom na destruição de Jerusalem, o cuidado de Deus em relação a seu povo garantira quesejam restaurados ao gozo da bênção divina, enquanto seus inimigos sao subvertidos. Ha um tempo vindouro no qual a terra sera habitada harmoniosamente por grupos diversos (w. 1920), uma caracterfstica da bênção a ser desfrutada na era messianica (SI 72.7-8). D E I N T E R P R E T A q A O H I S T O R I A No decurso da historia, quando a igreja sofreu nas maos dos inimigos de Deus, a mensagem da profecia de Obadias foi capaz de prover inspiragao e apoio. E nos lembra que Deus cuida de seu povo perseguido, agindo sempre em favor deles por tras das circunstancias presentes. ao de Juda"
+      },
+      {
+        "id": "conteudo_completo_da_fonte",
+        "titulo": "Conteúdo completo da fonte",
+        "tipo": "texto",
+        "ordem": 7,
+        "conteudo": "OBADIAS 1 5 5 4 O L I V R O de T I T U L O E A U T O R que, finalmente, resultaram na queda de Juda, em 586 a.C.Tanto a Escritura (SI 137; Ez 35.1-15) como a tradição judaica mencionam explicitamente oenvolvimento dos edomitas nessa catastrofe final; e o textode Obadias parece referir-se mais naturalmente aos ataques dos babilonios.Alem disso,algumas semelhanqas notaveis entre os w.1-9 e .79,14-16 sugerem que Obadiase feremiasestavam se dirigindo a Edom quase ao mesmo tempo. Embora nao possamos datar Obadiascom precisao,sabemos que feremias profetizou desde aproximadamente 626a.C.ate uma data posterior a 586a.C.Alem disso, uma data anterior a campanha dos babilonioscontra Edom em 553 a.C.e sugerida por references a calamidadefutura que virasobre esse povo. A semelhanqa de outros livros profeticos, essa profecia e intitulada com o nome de seu autor. Sabemos pouco a respeito desse profeta, alem de seu nome, que significa “servo ou adorador do SENHOR ÿ. Parece que o nome Obadias era muito comum, sendo usado para designar 12 pessoas diferentes no Antigo Testamento. A importancia e a autoridade da mensagem residem no fato de que “o SENHOR falou” (v.18), e nao na fama ou na preeminence do mensageiro. D A T A E C I R C U N S T A N C I A S Visto que o livro nao contem nenhuma evidencia sobre a família do profeta e nao apresenta nenhuma informaqao cronologica com base no governo de reis, os estudiosos dessa profecia tern debatido sobre a data de sua escrita. O profeta tem em vista um ataque militar contra Jerusalem do qual os edomitas tomaram parte com intenso deleite (vv. 11-14), mas nao da informaqoes que datam com clareza tal catastrofe. Alguns conectam o livro com a invasao de Juda pelos filisteus e arabes durante o reinado de Jeorao (848-841 a.C.), da qual, presume-se, os edomitas participaram (2Rs 8.20-22; 2Cr 21.8-10, 16, 17). Outros relacionam os eventos que motivaram essa profecia as invasoes babilonicas de Juda, G E N E R O O título do livro o descreve como uma “visao”, uma palavra algumas vezes usada a respeito das mensagens comunicadas por Deus aos profetas (p. ex., Na 1.1; He 2.3, 4). Alem dessa breve introdução em prosa, a visao e apresentada em linguagem poetica. C A R A C T E R I S T I C A S L I T E R A R I A S Obadias tinha uma habilidade literaria extraordinaria, como e demonstrado em sua breve mas 1 5 5 5 O B A D I A S poderosa composição de 21 versículos. Ironia, figuras impressionantes, duplo sentido e uso deliberado de repetigao, todos esses recursos sao empregados com bom efeito. A mensagem divina do livro comega por se dirigir as nações, que sao chamadas para executar o julgamento de Deus sobre Edom (v.1). Isso e logo seguido pelas palavras dirigidas a Edom, que apresentam a acusagao de Deus contra essa nação e a natureza de seu castigo (vv. 2-18). Nos versículos finals do livro, Deus descreve a restauração do exilado Israel e o estabelecimento do reino de Deus (vv. 19-21). O anuncio da punição de Edom por se aproveitar de Juda e contrabalangado com a promessa de restabelecimento para o povo de Deus. como nagdes. Ambos eram descendentes de Isaque, o filho de Abraao, de quem Rebeca gerou dois irmaos gemeos (Gn 26.20-26). No entanto, embora Esau, tambem conhecido como Edom, fosse o mais velho dos meninos, as promessas de Deus feitas a Abraao foram confirmadas ao irmao mais novo, Jaco, que posteriormente recebeu o nome de Israel. A relação turbulenta entre os dois irmaos e descrita em detalhes em a 32. Digno de nota e o fato de que Esau/Edom desprezou seu direito de nascimento como primogênito, vendendo-o a Jaco por uma tigela de cozinhado (Gn 25.29-34). Quando, depois, Jaco enganou seu pai para que lhe desse a bênção da primogenitura, Esau jurou que mataria Jaco (Gn 27). Por fim, depois de um tempo de exílio em Pada-Ara, Jaco retornou a Canaa e se reconciliou com Esau (Gn 32). No entanto, o relacionamento futuro entre as duas nações foi carregado de tensao, apesar de seu parentesco. Cf. Malaquias 1.2-5. C A R A C T E R I S T I C A S E T E M A S P R I N C I P A I S A profecia e “a respeito de Edom” (v. 1) e se dirige repetidas vezes a essa nação, mas foi dada a comunidade da aliança como Escritura Sagrada.0 proposito, portanto, mais do que advertir Edom sobre o julgamento iminente, e reassegurar o povo de Deus acerca de sua justiça triunfante em agao a favor deles. Edom estava prospero, Juda permanecia derrotado e a ordem moral do mundo parecia ter sido subvertida pelasforgas fmpias.0 profeta Obadias, porem, foi levantado com uma mensagem da justiça soberana de Deus para fortalecer a fe enfraquecida de seu povo. Os propositos justos de Deus e que determinam a historia, e nao as vontades malignas dos homens (Lm 4.22). C R I S T O E M O B A D I A S Em Obadias, nao ha references específicas a vinda de um reino messianico futuro. E o proprio Senhor quem intervem para reordenar os afazeres de “todas as nações” (v. 15). O escopo universal do julgamento vindouro e um aspecto dolivramento messianico mais amplo predito por Obadias. Apesar da participagao de Edom na destruição de Jerusalem, o cuidado de Deus em relação a seu povo garantira quesejam restaurados ao gozo da bênção divina, enquanto seus inimigos sao subvertidos. Ha um tempo vindouro no qual a terra sera habitada harmoniosamente por grupos diversos (w. 1920), uma caracterfstica da bênção a ser desfrutada na era messianica (SI 72.7-8). T E O L O G I A D E O B A D I A S O livro de Obadias ressalta, em especial, a justiça de Deus e seu poder para chamar as nações a prestarem contas desuas agoes contra os outros. Edom nao acreditava que teria de responder por sua crueldade contra o povo de Juda. Mas Deus convoca as nações para punir Edom, garantindo que seu compromisso pactual com os descendentes de Abraao nao e irrelevante. H I S T O R I A D E I N T E R P R E T A q A O No decurso da historia, quando a igreja sofreu nas maos dos inimigos de Deus, a mensagem da profecia de Obadias foi capaz de prover inspiragao e apoio. E nos lembra que Deus cuida de seu povo perseguido, agindo sempre em favor deles por tras das circunstancias presentes. O B A D I A S N A H I S T O R I A M A I S A M P L A D A B I B L I A O relacionamento entre Edom e Israel e singular por causa de sua ancestralidade compartilhada 1556 OBADIAS E S B O C J O D E O B A D I A S I. A DECLARA(AO DE DEUS SOBRE PUNIR EDOM (VV. 1-18) A. Introdução: chamado as naijoes (v.1) B. A resolu;ao de Deus no sentido de humilhar o orgulhoso Edom (vv. 2-4) C. Edom saqueado (vv. 5, 6) D. A vulnerabilidade de Edom ao julgamento de Deus (vv. 7-9) E. A indiferenga cruel de Edom para com a afli^ ao de Juda (vv. 10-14) F. Edom e punido, e Jaco, restaurado (vv. 15-18) II. A PROMESSA DE DEUS DE UMA NOVA ORDEM MORAL ( VV. 19-21)"
+      }
+    ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
+  "fonte_base": "31_Obadias.pdf (PDF fornecido pelo usuário; OCR/texto revisado)",
   "fontes_editoriais": [
     "ARC-2009",
     "NTLH-2000"
-  ]
+  ],
+  "revisao": {
+    "base": "PDF fornecido pelo usuário",
+    "metodo": "transcrição do texto do PDF com correções OCR conservadoras; conteúdo integral da fonte preservado em seção final",
+    "observacao": "Trechos cuja imagem/OCR permanece ambíguo não foram substituídos por conhecimento externo."
+  }
 }

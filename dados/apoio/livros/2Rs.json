@@ -1,17 +1,51 @@
 {
   "schema": "apoio-livro-v1",
   "id": "2Rs",
-  "nome": "2Reis",
-  "abreviacao": "2Rs",
+  "nome": "2 Reis",
+  "abreviacao": "2 Reis",
   "material": {
-    "titulo": "Sobre 2Reis",
-    "introducao": "O Segundo Livro dos Reis é a continuação da história dos dois reinos israelitas. Este livro começa onde a história parou em 1Reis . O Livro de 2Reis pode ser dividido em duas partes: 1) A história dos dois reinos, desde o ano 850 a.C. até a queda de Samaria e o fim do Reino do Norte (Israel), em 721 a.C. 2) A história do Reino do Sul (Judá), desde a queda do Reino de Israel até a conquista e destruição de Jerusalém pelo rei Nabucodonosor, da Babilônia, em 586 a.C. O livro termina com a história de Gedalias como governador de Judá e conta como o rei Joaquim foi libertado da prisão na Babilônia. A queda dos reinos de Israel e de Judá acontece porque os reis e o povo foram infiéis ao Senhor. A destruição de Jerusalém e a ida de grande parte do povo de Judá para o cativeiro marcam um momento decisivo na história israelita.",
-    "esquema_conteudo": "1. O Reino dividido (1.1—17.41) a. O profeta Elias e o rei Acazias (1.1-18) b. O profeta Eliseu sucede a Elias (2.1-25) c. Atividades de Eliseu (3.1—8.15) d. Os reis de Judá e de Israel (8.16—17.4) e. Queda de Samaria (17.5-41) 2. O Reino de Judá (18.1—24.20) a. De Ezequias a Josias (18.1—21.26) b. O reinado de Josias (22.1—23.30) c. Os últimos reis de Judá (23.31—24.20) 3. A queda de Jerusalém (25.1-30)"
+    "titulo": "Sobre 2 Reis",
+    "secoes": [
+      {
+        "id": "tituloeautor",
+        "titulo": "Título e autor",
+        "tipo": "texto",
+        "ordem": 0,
+        "conteudo": "O S E G U N D O L I V R O de Originalmente, 1 e 2 Reis formavam um único livro. Para discussões acerca da maioria dos tópicos relacionados a 1 e 2 Reis, ver Introdução a 1 Reis. Reis de esperança para Judá foi 0 reinado de Josias (6 4 0 - 6 0 9 a.C.). Ele tentou livrar Judá do controle assírio para efetuar uma reforma religiosa em Judá e integrar o território do prim eiro reino do norte à sua própria terra. Após a morte de Josias em Megido, em 6 0 9 a.C., Judá foi, por todas as tentativas e propósitos, encerrada como nação. Em 5 8 6 a.C., 0 exército da Babilônia desferiu 0 golpe final quando capturou Judá e Jerusalém, destruiu muitas cidades de Judá e, então, enviou muitos judeus para 0 exílio. No entanto, 0 último evento registrado nesse livro é a libertação de Joaquim da prisão. Sua exaltação acima de todos os demais reis exilados na Babilônia oferece um vislumbre de esperança de que Deus não abandonou seu compromisso de estabelecer a dinastia davídica para sempre. E, por fim, isso se cumpre por intermédio de Jesus Cristo (Mt 1.1). K. Zacarias de Israel (15.8-12) L. Salum de Israel (15.13-16) M. Menaém de Israel (15.17-22) N. Pecaías de Israel (15.23-26) O. Peca de Israel (15.27-31) P. Jotão de Judá (15.32-38) Q. Acaz de Judá (cap. 16) R. Oseias de Israel (17.1-6) S. Reflexão sobre o exílio de Israel (17.7-23) T. Restabelecimento mediante as deportações assírias (17.24-41) V. JUDÁ SOZINHO (18.1-25.30) A. Ezequias (caps. 18-20) 1. Sumário (181-8) 2. Invasão assíria (18.9-37) 3. Livramento divino (cap. 19) 4. Enfermidade de Ezequias (20.1-11) 5. O emissário da Babilônia (20,12-21) B. Manasses (21.1-18) C. Amom (21.19-26) D. Josias (22.1-23.30) 1. Reparação do templo e descoberta do Livro da Lei (cap. 22) 2. Reformas em Jerusalém, Judá e Samaria (23.1-20) 3. Renovação da aliança e a Páscoa (23.21-28) 4. Morte em batalha por Neco do Egito (23.29, 30) E. Jeoacaz (23.31-34) F. Jeoaquim (23.35-24.7) G. Joaquim (24.8-16) H. Zedequias (24.17-20) I. O exílio babilônico de Judá (25.1-21) J. O assassinato de Gedalias (25.22-26) K. Joaquim no exílio (25.27-30)"
+      },
+      {
+        "id": "dataecircunstancias",
+        "titulo": "Data e circunstâncias",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "2 Reis começa com os reinados de Acazias em Israel (8 5 3 - 8 5 2 a.C.) e de Josafá em Judá (8 7 0 - 8 4 8 a.C.). O livro traça a história do reino do norte até sua destruição pelas mãos dos assírios, em 7 2 2 a.C. (2 Rs 1 7.6). Após essa conquista, Ezequias de Judá (7 5 1 - 6 8 6 a.C.) estabelece uma grande reforma religiosa no reino do sul (1 8.1 -4). Sua reforma é um ponto alto no livro; contudo, não tem sequência após a sua morte. Uma das eras finais (Continuação do Esboço de 1 Reis) III. PROFETAS E REIS (IRs 17.1-2RS 8.15) A. Os profetas e Acabe (1Rs 17.1-22.40) B. Josafá de Judá (IRs 22.41-50) C. Acazias de Israel desafia Elias (1Rs 22.51-2RS 1.18) D. Elias é sucedido por Eliseu (2.1-18) E. O ministério de Eliseu (2.19-8.15) 1. Eliseu e os profetas (2.19-25) 2. Eliseu e a guerra contra Moabe (cap. 3) 3. O ministério de Eliseu aos necessitados (cap. 4) 4. Eliseu e Naamã da Síria (cap. 5) 5. Eliseu e os profetas (6.1-7) 6. Eliseu e 0 cerco sírio de Samaria (6.8-7.20) 7. Eliseu e a mulher sunamita (8.1-6) 8. Eliseu e Hazael da Síria (8.7-15) IV. 0 ÚLTIMO REINO DIVIDIDO (8.16-17.41) A. Jeorão de Judá (8.16-24) B. Acazias de Judá (8.25-29) C. Jeú de Israel (caps. 9 e 10) 1. Jeú é ungido rei (9.1-13) 2. O ardil sangrento de Jeú (9.14-37) 3. Jeú massacra a família de Acabe (10.1-17) 4. A campanha de Jeú contra 0 culto de Baal (10.18-36) D. O ardil contra Atalia de Judá (cap. 11) E. Jeoás (Joás) de Judá (cap. 12) F. Jeoacaz de Israel (13.1-9) G. Jeoás de Israel (13.10-25) H. Amazias de Israel (14.1-25) I. Jeroboão II de Israel (14.23-29) J. Azarias de Judá (15.1-7)"
+      },
+      {
+        "id": "esboco_de_2reis",
+        "titulo": "Esboço de 2 Reis",
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "(Continuação do Esboço de 1 Reis) III. PROFETAS E REIS (IRs 17.1-2RS 8.15) A. Os profetas e Acabe (1Rs 17.1-22.40) B. Josafá de Judá (IRs 22.41-50) C. Acazias de Israel desafia Elias (1Rs 22.51-2RS 1.18) D. Elias é sucedido por Eliseu (2.1-18) E. O ministério de Eliseu (2.19-8.15) 1. Eliseu e os profetas (2.19-25) 2. Eliseu e a guerra contra Moabe (cap. 3) 3. O ministério de Eliseu aos necessitados (cap. 4) 4. Eliseu e Naamã da Síria (cap. 5) 5. Eliseu e os profetas (6.1-7) 6. Eliseu e 0 cerco sírio de Samaria (6.8-7.20) 7. Eliseu e a mulher sunamita (8.1-6) 8. Eliseu e Hazael da Síria (8.7-15) IV. 0 ÚLTIMO REINO DIVIDIDO (8.16-17.41) A. Jeorão de Judá (8.16-24) B. Acazias de Judá (8.25-29) C. Jeú de Israel (caps. 9 e 10) 1. Jeú é ungido rei (9.1-13) 2. O ardil sangrento de Jeú (9.14-37) 3. Jeú massacra a família de Acabe (10.1-17) 4. A campanha de Jeú contra 0 culto de Baal (10.18-36) D. O ardil contra Atalia de Judá (cap. 11) E. Jeoás (Joás) de Judá (cap. 12) F. Jeoacaz de Israel (13.1-9) G. Jeoás de Israel (13.10-25) H. Amazias de Israel (14.1-25) I. Jeroboão II de Israel (14.23-29) J. Azarias de Judá (15.1-7)"
+      },
+      {
+        "id": "conteudo_completo_da_fonte",
+        "titulo": "Conteúdo completo da fonte",
+        "tipo": "texto",
+        "ordem": 3,
+        "conteudo": "544 2 REIS O S E G U N D O L I V R O de Reis de esperança para Judá foi 0 reinado de Josias (6 4 0 - 6 0 9 a.C.). Ele tentou livrar Judá do controle assírio para efetuar uma reforma religiosa em Judá e integrar o território do prim eiro reino do norte à sua própria terra. Após a morte de Josias em Megido, em 6 0 9 a.C., Judá foi, por todas as tentativas e propósitos, encerrada como nação. Em 5 8 6 a.C., 0 exército da Babilônia desferiu 0 golpe final quando capturou Judá e Jerusalém, destruiu muitas cidades de Judá e, então, enviou muitos judeus para 0 exílio. No entanto, 0 último evento registrado nesse livro é a libertação de Joaquim da prisão. Sua exaltação acima de todos os demais reis exilados na Babilônia oferece um vislumbre de esperança de que Deus não abandonou seu compromisso de estabelecer a dinastia davídica para sempre. E, por fim, isso se cumpre por intermédio de Jesus Cristo (Mt 1 .1 ). T Í T U L O E A UTO R Originalmente, 1 e 2 Reis formavam um único livro. Para discussões acerca da maioria dos tópicos relacionados a 1 e 2 Reis, ver Introdução a 1 Reis. DATA E C I R C U N S T Â N C I A S 2 Reis começa com os reinados de Acazias em Israel (8 5 3 - 8 5 2 a.C.) e de Josafá em Judá (8 7 0 - 8 4 8 a.C.). O livro traça a história do reino do norte até sua destruição pelas mãos dos assírios, em 7 2 2 a.C. (2 Rs 1 7 .6 ). Após essa conquista, Ezequias de Judá (7 5 1 - 6 8 6 a.C.) estabelece uma grande reforma religiosa no reino do sul (1 8 .1 -4 ). Sua reforma é um ponto alto no livro; contudo, não tem sequência após a sua morte. Uma das eras finais 2 K. Zacarias de Israel (15.8-12) L. Salum de Israel (15.13-16) M. Menaém de Israel (15.17-22) N. Pecaías de Israel (15.23-26) O. Peca de Israel (15.27-31) P. Jotão de Judá (15.32-38) Q. Acaz de Judá (cap. 16) R. Oseias de Israel (17.1-6) S. Reflexão sobre o exílio de Israel (17.7-23) T. Restabelecimento mediante as deportações assírias (17.24-41) V. JUDÁ SOZINHO (18.1-25.30) A. Ezequias (caps. 18-20) 1. Sumário (181-8) 2. Invasão assíria (18.9-37) 3. Livramento divino (cap. 19) 4. Enfermidade de Ezequias (20.1-11) 5. O emissário da Babilônia (20,12-21) B. Manasses (21.1-18) C. Amom (21.19-26) D. Josias (22.1-23.30) 1. Reparação do templo e descoberta do Livro da Lei (cap. 22) 2. Reformas em Jerusalém, Judá e Samaria (23.1-20) 3. Renovação da aliança e a Páscoa (23.21-28) 4. Morte em batalha por Neco do Egito (23.29, 30) E. Jeoacaz (23.31-34) F. Jeoaquim (23.35-24.7) G. Joaquim (24.8-16) H. Zedequias (24.17-20) I. O exílio babilônico de Judá (25.1-21) J. O assassinato de Gedalias (25.22-26) K. Joaquim no exílio (25.27-30) E S B O Ç O DE 2 REI S (Continuação do Esboço de 1 Reis) III. PROFETAS E REIS (IRs 17.1-2RS 8.15) A. Os profetas e Acabe (1Rs 17.1-22.40) B. Josafá de Judá (IRs 22.41-50) C. Acazias de Israel desafia Elias (1Rs 22.51-2RS 1.18) D. Elias é sucedido por Eliseu (2.1-18) E. O ministério de Eliseu (2.19-8.15) 1. Eliseu e os profetas (2.19-25) 2. Eliseu e a guerra contra Moabe (cap. 3) 3. O ministério de Eliseu aos necessitados (cap. 4) 4. Eliseu e Naamã da Síria (cap. 5) 5. Eliseu e os profetas (6.1-7) 6. Eliseu e 0 cerco sírio de Samaria (6.8-7.20) 7. Eliseu e a mulher sunamita (8.1-6) 8. Eliseu e Hazael da Síria (8.7-15) IV. 0 ÚLTIMO REINO DIVIDIDO (8.16-17.41) A. Jeorão de Judá (8.16-24) B. Acazias de Judá (8.25-29) C. Jeú de Israel (caps. 9 e 10) 1. Jeú é ungido rei (9.1-13) 2. O ardil sangrento de Jeú (9.14-37) 3. Jeú massacra a família de Acabe (10.1-17) 4. A campanha de Jeú contra 0 culto de Baal (10.18-36) D. O ardil contra Atalia de Judá (cap. 11) E. Jeoás (Joás) de Judá (cap. 12) F. Jeoacaz de Israel (13.1-9) G. Jeoás de Israel (13.10-25) H. Amazias de Israel (14.1-25) I. Jeroboão II de Israel (14.23-29) J. Azarias de Judá (15.1-7)"
+      }
+    ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
+  "fonte_base": "12_2 Reis.pdf (PDF fornecido pelo usuário; OCR/texto revisado)",
   "fontes_editoriais": [
     "ARC-2009",
     "NTLH-2000"
-  ]
+  ],
+  "revisao": {
+    "base": "PDF fornecido pelo usuário",
+    "metodo": "transcrição do texto do PDF com correções OCR conservadoras; conteúdo integral da fonte preservado em seção final",
+    "observacao": "Trechos cuja imagem/OCR permanece ambíguo não foram substituídos por conhecimento externo."
+  }
 }
