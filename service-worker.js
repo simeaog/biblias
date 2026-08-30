@@ -1,4 +1,4 @@
-const CACHE_NAME = 'biblia-app-v3-referencias-contexto';
+const CACHE_NAME = 'biblia-app-v4-referencias-contexto';
 
 const APP_SHELL = [
     './',

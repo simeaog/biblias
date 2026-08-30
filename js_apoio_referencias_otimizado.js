@@ -552,6 +552,354 @@
         }
     }
 
+    function formatMaterialSectionTitle(key) {
+        const labels = {
+            introducao: 'Introdução',
+            esquema_conteudo: 'Esquema de estudo',
+            titulo: 'Título',
+            autor: 'Autor',
+            data_circunstancias: 'Data e circunstâncias',
+            genero: 'Gênero',
+            caracteristicas_literarias: 'Características literárias',
+            caracteristicas_temas_principais: 'Características e temas principais',
+            temas_principais: 'Temas principais',
+            exodo_historia_ampla_biblia: 'Êxodo na história mais ampla da Bíblia',
+            teologia_exodo: 'Teologia de Êxodo',
+            cristo_em_exodo: 'Cristo em Êxodo',
+            historia_interpretacao: 'História de interpretação',
+            assuntos_especiais: 'Assuntos especiais',
+            esboço_exodo: 'Esboço de Êxodo'
+        };
+
+        if (labels[key]) return labels[key];
+
+        return String(key || '')
+            .replace(/[_-]+/g, ' ')
+            .replace(/\b\w/g, ch => ch.toLocaleUpperCase('pt-BR'))
+            .trim();
+    }
+
+    function normalizeMaterialSections(book) {
+        const material = book?.material;
+        if (!material || typeof material !== 'object') return [];
+
+        /*
+         * Formato preferencial:
+         * material.secoes = [
+         *   {
+         *     id: 'autor',
+         *     titulo: 'Autor',
+         *     tipo: 'texto',
+         *     ordem: 2,
+         *     conteudo: '...'
+         *   }
+         * ]
+         *
+         * Quando esse formato existir, a ordem do JSON é preservada.
+         */
+        if (Array.isArray(material.secoes) && material.secoes.length) {
+            return material.secoes
+                .map((item, index) => {
+                    if (item == null) return null;
+
+                    if (typeof item !== 'object' || Array.isArray(item)) {
+                        return {
+                            id: `secao-${index + 1}`,
+                            titulo: `Seção ${index + 1}`,
+                            tipo: 'texto',
+                            ordem: index,
+                            conteudo: item
+                        };
+                    }
+
+                    return {
+                        id: String(item.id || `secao-${index + 1}`),
+                        titulo: String(
+                            item.titulo ||
+                            item.nome ||
+                            item.id ||
+                            `Seção ${index + 1}`
+                        ),
+                        tipo: String(item.tipo || 'texto'),
+                        ordem: Number.isFinite(Number(item.ordem))
+                            ? Number(item.ordem)
+                            : index,
+                        conteudo:
+                            item.conteudo ??
+                            item.texto ??
+                            item.itens ??
+                            item.linhas ??
+                            ''
+                    };
+                })
+                .filter(Boolean)
+                .sort((a, b) => a.ordem - b.ordem);
+        }
+
+        /*
+         * Compatibilidade com o formato atual/legado:
+         * material.introducao
+         * material.esquema_conteudo
+         * material.autor
+         * material.teologia_exodo
+         * etc.
+         *
+         * Assim, um JSON mais completo pode simplesmente acrescentar
+         * propriedades dentro de "material" sem exigir outra alteração
+         * no JavaScript.
+         */
+        const sections = [];
+
+        const push = (id, titulo, tipo, conteudo, ordem) => {
+            if (
+                conteudo === null ||
+                conteudo === undefined ||
+                conteudo === '' ||
+                (Array.isArray(conteudo) && !conteudo.length)
+            ) {
+                return;
+            }
+
+            sections.push({
+                id,
+                titulo,
+                tipo,
+                conteudo,
+                ordem
+            });
+        };
+
+        push(
+            'intro',
+            'Introdução',
+            'texto',
+            material.introducao,
+            0
+        );
+
+        push(
+            'outline',
+            'Esquema de estudo',
+            'outline',
+            material.esquema_conteudo,
+            1
+        );
+
+        let ordem = 2;
+
+        Object.entries(material).forEach(([key, value]) => {
+            if (
+                key === 'titulo' ||
+                key === 'introducao' ||
+                key === 'esquema_conteudo' ||
+                key === 'secoes'
+            ) {
+                return;
+            }
+
+            if (
+                value === null ||
+                value === undefined ||
+                value === '' ||
+                (Array.isArray(value) && !value.length)
+            ) {
+                return;
+            }
+
+            sections.push({
+                id: key,
+                titulo: formatMaterialSectionTitle(key),
+                tipo: Array.isArray(value) ? 'auto' : 'texto',
+                conteudo: value,
+                ordem: ordem++
+            });
+        });
+
+        return sections;
+    }
+
+    function renderMaterialValue(value, tipo = 'texto') {
+        if (
+            tipo === 'outline' ||
+            tipo === 'esquema' ||
+            tipo === 'esquema_conteudo'
+        ) {
+            return renderOutline(String(value ?? ''));
+        }
+
+        if (tipo === 'lista') {
+            const itens = Array.isArray(value) ? value : [value];
+            return `<ul class="apoio-opt-list">${
+                itens.map(item => `<li>${esc(
+                    typeof item === 'object'
+                        ? (item?.texto ?? item?.nome ?? JSON.stringify(item))
+                        : item
+                )}</li>`).join('')
+            }</ul>`;
+        }
+
+        if (tipo === 'lista_detalhada') {
+            const itens = Array.isArray(value) ? value : [];
+            return itens.map(item => `
+                <div class="apoio-opt-detail-item">
+                    <div class="apoio-opt-detail-title">
+                        ${esc(item?.titulo ?? item?.nome ?? '')}
+                        ${item?.referencia
+                            ? `<span class="apoio-opt-detail-ref">${esc(item.referencia)}</span>`
+                            : ''}
+                    </div>
+                    ${item?.texto || item?.conteudo
+                        ? `<div class="apoio-opt-text">${esc(item.texto ?? item.conteudo)}</div>`
+                        : ''}
+                </div>
+            `).join('');
+        }
+
+        if (tipo === 'tabela') {
+            const columns = Array.isArray(value?.colunas)
+                ? value.colunas
+                : [];
+            const rows = Array.isArray(value?.linhas)
+                ? value.linhas
+                : [];
+
+            if (!columns.length) {
+                return renderMaterialValue(
+                    rows,
+                    'auto'
+                );
+            }
+
+            return `
+                <div class="apoio-opt-table-wrap">
+                    <table class="apoio-opt-table">
+                        <thead>
+                            <tr>${columns.map(col => `<th>${esc(col)}</th>`).join('')}</tr>
+                        </thead>
+                        <tbody>
+                            ${rows.map(row => `
+                                <tr>
+                                    ${columns.map(col => `
+                                        <td>${esc(
+                                            row?.[col] ??
+                                            row?.[String(col).toLocaleLowerCase('pt-BR')] ??
+                                            ''
+                                        )}</td>
+                                    `).join('')}
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        if (Array.isArray(value)) {
+            if (!value.length) {
+                return '<p class="apoio-opt-muted">Conteúdo não disponível.</p>';
+            }
+
+            const hasObjects = value.some(
+                item => item && typeof item === 'object'
+            );
+
+            if (!hasObjects) {
+                return `<ul class="apoio-opt-list">${
+                    value.map(item => `<li>${esc(item)}</li>`).join('')
+                }</ul>`;
+            }
+
+            return value.map((item, index) => {
+                if (!item || typeof item !== 'object') {
+                    return `<p class="apoio-opt-text">${esc(item)}</p>`;
+                }
+
+                const titulo =
+                    item.titulo ??
+                    item.nome ??
+                    item.heading ??
+                    `Item ${index + 1}`;
+
+                const texto =
+                    item.texto ??
+                    item.conteudo ??
+                    item.descricao ??
+                    '';
+
+                const itens =
+                    Array.isArray(item.itens)
+                        ? renderMaterialValue(item.itens, 'lista')
+                        : '';
+
+                return `
+                    <div class="apoio-opt-detail-item">
+                        <div class="apoio-opt-detail-title">${esc(titulo)}</div>
+                        ${texto
+                            ? `<div class="apoio-opt-text">${esc(texto)}</div>`
+                            : ''}
+                        ${itens}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        if (value && typeof value === 'object') {
+            if (value.texto || value.conteudo) {
+                return `<div class="apoio-opt-text">${esc(
+                    value.texto ?? value.conteudo
+                )}</div>`;
+            }
+
+            if (Array.isArray(value.itens)) {
+                return renderMaterialValue(value.itens, 'auto');
+            }
+
+            const entries = Object.entries(value);
+
+            if (!entries.length) {
+                return '<p class="apoio-opt-muted">Conteúdo não disponível.</p>';
+            }
+
+            return entries.map(([key, item]) => `
+                <div class="apoio-opt-detail-item">
+                    <div class="apoio-opt-detail-title">${esc(
+                        formatMaterialSectionTitle(key)
+                    )}</div>
+                    ${renderMaterialValue(item, 'auto')}
+                </div>
+            `).join('');
+        }
+
+        const text = String(value ?? '').trim();
+
+        if (!text) {
+            return '<p class="apoio-opt-muted">Conteúdo não disponível.</p>';
+        }
+
+        return `<div class="apoio-opt-text">${esc(text)}</div>`;
+    }
+
+    function renderMaterialSection(section, index) {
+        return `
+            <section
+                class="apoio-opt-section${index === 0 ? ' is-open' : ''}"
+                data-opt-material-section="${escAttr(section.id)}"
+            >
+                <button
+                    type="button"
+                    class="apoio-opt-section-head"
+                    data-opt-section="${escAttr(section.id)}"
+                >
+                    <span>${esc(section.titulo)}</span>
+                    <span>${index === 0 ? '▼' : '▶'}</span>
+                </button>
+                <div class="apoio-opt-section-body">
+                    ${renderMaterialValue(section.conteudo, section.tipo)}
+                </div>
+            </section>
+        `;
+    }
+
     async function openBook(bookId, section = 'introducao') {
         try {
             const book = await loadBook(bookId);
@@ -566,10 +914,20 @@
             box.classList.add('hidden');
             content.classList.remove('hidden');
 
-            const intro = book.material?.introducao || '';
-            const scheme = book.material?.esquema_conteudo || '';
+            const materialSections = normalizeMaterialSections(book);
+
             const count = (state.refsIndex?.livros || [])
                 .find(x => x.livro === bookId)?.entradas || 0;
+
+            const materialHtml = materialSections.length
+                ? materialSections
+                    .map((item, index) => renderMaterialSection(item, index))
+                    .join('')
+                : `
+                    <p class="apoio-opt-muted">
+                        Material de apoio não disponível para este livro.
+                    </p>
+                `;
 
             content.innerHTML = `
                 <button type="button"
@@ -582,27 +940,7 @@
                     ${esc(book.material?.titulo || `Sobre ${book.nome}`)}
                 </h4>
 
-                <section class="apoio-opt-section is-open">
-                    <button type="button" class="apoio-opt-section-head"
-                        data-opt-section="intro">
-                        <span>Introdução</span><span>▼</span>
-                    </button>
-                    <div class="apoio-opt-section-body">
-                        ${intro
-                            ? `<div class="apoio-opt-text">${esc(intro)}</div>`
-                            : '<p class="apoio-opt-muted">Introdução não disponível.</p>'}
-                    </div>
-                </section>
-
-                <section class="apoio-opt-section">
-                    <button type="button" class="apoio-opt-section-head"
-                        data-opt-section="outline">
-                        <span>Esquema de estudo</span><span>▶</span>
-                    </button>
-                    <div class="apoio-opt-section-body">
-                        ${renderOutline(scheme)}
-                    </div>
-                </section>
+                ${materialHtml}
 
                 <section class="apoio-opt-section">
                     <button type="button" class="apoio-opt-section-head"
@@ -627,23 +965,32 @@
 
             content.querySelectorAll('[data-opt-section]').forEach(head => {
                 head.addEventListener('click', async () => {
-                    const section = head.closest('.apoio-opt-section');
-                    if (!section) return;
+                    const currentSectionEl =
+                        head.closest('.apoio-opt-section');
 
-                    const wasOpen = section.classList.contains('is-open');
+                    if (!currentSectionEl) return;
+
+                    const wasOpen =
+                        currentSectionEl.classList.contains('is-open');
 
                     content.querySelectorAll('.apoio-opt-section')
                         .forEach(s => {
                             s.classList.remove('is-open');
-                            s.querySelector('.apoio-opt-section-head span:last-child')
-                                ?.replaceChildren(document.createTextNode('▶'));
+                            s.querySelector(
+                                '.apoio-opt-section-head span:last-child'
+                            )?.replaceChildren(
+                                document.createTextNode('▶')
+                            );
                         });
 
                     if (wasOpen) return;
 
-                    section.classList.add('is-open');
+                    currentSectionEl.classList.add('is-open');
+
                     head.querySelector('span:last-child')
-                        ?.replaceChildren(document.createTextNode('▼'));
+                        ?.replaceChildren(
+                            document.createTextNode('▼')
+                        );
 
                     if (head.dataset.optSection === 'refs') {
                         await renderBookReferences(bookId);
