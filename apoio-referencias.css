@@ -446,3 +446,22 @@
 .apoio-opt-table th {
     font-weight: 700;
 }
+
+
+/* ============================================================
+   AJUSTE DO ESBOÇO
+   Mesmo tamanho tipográfico das demais seções do Material de Apoio.
+   ============================================================ */
+
+.apoio-opt-outline {
+    font-size: 14px;
+}
+
+.apoio-opt-outline-item {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.apoio-opt-outline-item.level-2 {
+    font-size: 14px;
+}
