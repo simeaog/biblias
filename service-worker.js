@@ -1,4 +1,4 @@
-const CACHE_NAME = 'biblia-app-v7-referencias-contexto';
+const CACHE_NAME = 'biblia-app-v8-icones';
 
 const APP_SHELL = [
     './',
@@ -10,6 +10,7 @@ const APP_SHELL = [
     './manifest.json',
     './fav-icon_192.png',
     './fav-icon_512.png',
+    './fav-icon-maskable_512.png',
     './icon-splash_a.png',
     './icon-splash_b.png',
     './dados/apoio/apoio_biblico.json',
