@@ -1,431 +1,197 @@
 {
-  "schema": "apoio-livro-v2",
+  "schema": "apoio-livro-v1",
   "id": "Is",
   "nome": "Isaías",
-  "abreviacao": "Is",
-  "fonte_pdf": "23_Isa#U00edas.pdf",
   "material": {
     "titulo": "Sobre Isaías",
+    "introducao": "Isaías apresenta o Senhor como o Santo de Israel e combina julgamento contra o pecado com a promessa de restauração. O livro percorre a ameaça assíria, o exílio babilônico, o retorno do remanescente e a esperança do reino glorioso de Deus, destacando o Servo que levará salvação às nações.",
     "secoes": [
       {
-        "titulo": "Cristo",
-        "conteudo": "Isaias"
-      },
-      {
+        "id": "titulo",
         "titulo": "Título",
-        "conteudo": "0 livro recebe o nome do profeta cujos oraculos e ministerio ele relata. O nome “Isaias” significa “o Senhor salva”, que se harmoniza com a enfase central da mensagem do profeta."
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "O livro recebe o nome do profeta cujos oráculos e ministério ele relata. O nome “Isaías” significa “o Senhor salva”, em harmonia com a ênfase central de sua mensagem."
       },
       {
+        "id": "autor",
         "titulo": "Autor",
-        "conteudo": "Isaias era, de nascimento, um aristocrata bem-educado, que tinha acesso ao rei e a corte real. Ele foi o instrumento designado por Deus para transmitir uma mensagem de julgamento e de restauraqao final para Jerusalem. Isaias era casado e tinha dois filhos, cujos nomes sao trazidos no livro: Um-Resto-Volvera e Rapido-Despojo-Presa-Segura (7.3; 8.3). De acordo com a tradiqao, Isaias foi martirizado e serrado ao meio no comeqo do reinado de Manasses."
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "Isaías era, de nascimento, um aristocrata bem-educado, com acesso ao rei e à corte real. Foi o instrumento designado por Deus para transmitir uma mensagem de julgamento e de restauração final para Jerusalém. Era casado e tinha dois filhos, cujos nomes aparecem no livro: Um-Resto-Volverá e Rápido-Despojo-Presa-Segura (7.3; 8.3). A tradição afirma que Isaías foi martirizado e serrado ao meio no começo do reinado de Manassés."
       },
       {
+        "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
-        "conteudo": "Isaias ministrou por mais de 40 anos, de 740 ate depois de 701 a.C., durante os reinados de Uzias, Jotao, Acaz e Ezequias. (A complexidade de datar o reinado de Ezequias torna dificil determinar o momento final preciso para o ministerio de Isaias; cf. notas em 36.1; 38.5.) O rei Uzias goverde nou por um longo periodo de paz e estabilidade. Durante seu reinado, o Egito sofria conflito interno, e a Assfria estava preocupada com a seguranqa em sua fronteira do Norte. Essas condiqoes deixaram Uzias livre para realizar seus negocios amplamente em paz, permitindo tanto ao reino do Norte como ao doSul recapturarem territories perdidos. Perto do final do reinado de Uzias, ambos os reinos haviam quase recuperado os limites estabelecidos no imperio de Salomao. Entretanto, no tempo da morte de Uzias e do chamado de Isaias como profeta, as nuvens de tempestade ja se ajuntavam no Norte, com a ascensao de Tiglate-Pileser III como rei da Assiria. Durante o reinado de Jotao, uma guerra se desencadeou entre Juda e os reinos unidos de Israel eSiria (a crise siro-efraimita de 734-732 a.C.; cf. Isaias 7-9). Nessa guerra, Acaz, o rei de Juda, sofreu oposiqao de uma coalizao de forqas lideradas por Peca, rei de Israel, e Rezim, rei de Ara (Stria). Acaz reagiu com temor e incredulidade. Ele recusou o sinal de Deus (7.12) e tentou encontrar uma soluqao politica, buscando a ajuda dos assirios. Durante o reinado de Ezequias, Juda e varias outras naqoes lutaram contra a Assiria, quando estava sob o governo de Senaqueribe (705-681 a.C.). A reaqao de Senaqueribe foi devastar o interior de Juda e estabelecer cerco contra Jerusalem. Mas, ao contrario de Acaz, Ezequias confiou no Senhor e foi livrado (37.14-35). Problemas dentro de Juda agravaram esses perigos extemos. Isai'as censurou os h'deres por sua hipocrisia (1.10-15), cobiqa (5.8), devassidao (5.11) e cinismo (5.19). Enquanto os ricos prosperavam, os pobres eram oprimidos cada vez mais. A prosperidade havia corrofdo as observances religiosas de tal modo que, embora o povo confessasse, com os labios, o Senhor como seu rei, seu coraqao estava longe doSenhor; e os sacrifi'cios que realizavam no templo eram uma farsa. Deus levantou Isai'as para anunciar o destino deles (6.11-13). Como Isai'as predisse, Israel foi exilado em 722 a.C.; e Ezequias escapou por um milagre da destruiqao assfria (36.1-37.37). Entretanto, seu livramento seria apenas temporario, uma suspensao de execuqao, e nao um perdao. O toco seria queimado de novo, mas um remanescentesobreviveria tambem aquela catastrofe (6.13). O ministerio de encorajamento de Isai'as em seus ultimos anos de serviqo focalizou o remanescente que sobreviveu ao exflio de Juda na Babilonia. Em uma serie de profecias de amplo alcance, Isai'as predisse a queda da Babilonia paga (46.1-47.15) e a salvaqao final do remanescente de Israel. Maisde um seculo antes de Ciro, o persa, chegar ao poder, Isai'as o mencionou pelo nome como o agente ungido de Deus para restabelecer na terra o remanescente de Israel (44.24-45.13). O profeta exortou o remanescente a fugir de Babilonia quando a oportunidade se lhe tomasse disponfvel (48.20-21). Ele desafiou o povo a renovar sua lealdade aoSenhor, depois de haverem retornado finalmente a terra (56.1-8), e a nao se envolverem de novo em atos de traiqao (57.3-13). Alem desse ato de salvaqao futuro, Isai'as predisse a vinda do Servo e Salvador muito maior do que Ciro. Esse Servo anonimo cumpriria o destino original de Israel, trazendo justiqa as naqoes (42.1-4) e tornando-se uma luz para os gentios (49.1-7). O Servo sofreria espontaneamente para remover o pecado de seu povo (52.13-53.12) e, assim, estabelecer uma nova alianqa entre oSenhor e o novo Israel (42.5-7). Por causa dessas vitorias, Deus o recompensaria e o vindicaria (50.4-11). O Novo Testamento identifica o Servo como Jesus Cristo, o verdadeiro Israel e o Senhor encarnado (Mt 12.15-21)."
+        "tipo": "texto",
+        "ordem": 3,
+        "conteudo": "Isaías ministrou por mais de quarenta anos, de cerca de 740 até depois de 701 a.C., durante os reinados de Uzias, Jotão, Acaz e Ezequias. O período foi marcado pela ameaça assíria, pela crise siro-efraimita de 734–732 a.C. e pela campanha de Senaqueribe contra Judá. Acaz respondeu à ameaça com temor e incredulidade, buscando a ajuda da Assíria. Durante Ezequias, Judá e outras nações enfrentaram a Assíria. Problemas internos agravavam os perigos externos: Isaías censurou hipocrisia, cobiça, devassidão e cinismo dos líderes, enquanto os pobres eram oprimidos. Israel foi exilado em 722 a.C., e Ezequias escapou da destruição assíria por intervenção de Deus. Nos últimos anos, a mensagem de Isaías concentrou-se no remanescente de Judá, na queda de Babilônia, no retorno do exílio e na salvação futura. O profeta anunciou Ciro pelo nome como agente de Deus para restaurar o remanescente (44.24–45.13) e também anunciou a vinda do Servo e Salvador, que levaria justiça às nações, seria luz para os gentios e sofreria para remover o pecado do povo (42.1–7; 49.1–7; 52.13–53.12)."
       },
       {
-        "titulo": "Gênero",
-        "conteudo": "E"
+        "id": "genero_e_caracteristicas_literarias",
+        "titulo": "Gênero e características literárias",
+        "tipo": "texto",
+        "ordem": 4,
+        "conteudo": "Isaías combina oráculos, atos-sinais e episódios da vida do profeta, comunicando julgamento e salvação. O relato do chamado no capítulo 6 autentica seu ministério e apresenta características semelhantes ao chamado de Moisés em Êxodo 3. A primeira parte do livro (caps. 1–35) concentra-se no julgamento de Israel e Judá por meio da Assíria; os capítulos 36–39 formam uma ponte para a segunda metade; e os capítulos 40–66 concentram-se no retorno do remanescente da Babilônia e em seu livramento futuro. A segunda metade também começa com uma visão da corte celestial. Isaías emprega imaginação poética, retórica, sátira e sarcasmo, contrastando a confiança em estruturas humanas e ídolos com a confiança no reino de Deus."
       },
       {
-        "titulo": "Características literárias",
-        "conteudo": "A composiqao de Isai'as e semelhante a dos outros escritos profeticos, com uma mistura de oraculos, atos-sinais e episodios da vida do profeta entretecidos para comunicar uma mensagem de julgamento e salvaqao para o povo de Deus. Como varios outros profetas, Isai'as tern uma importante narrativa de chamado (cap. 6), que autentica e valida seu ministerio. Essa narrativa compartilha varias caracterfsticas do chamado de Moises em Exodo 3, demonstrando que Isai'as e tambem um dos profetassemelhantes a Moises prometidos em Deuteronomio 18.18. A primeira parte do livro, capi'tulos 1-35, focaliza o julgamento de Deus sobre Israel e Juda por meio da Assfria. A segunda metade, capitulos 40-66, focaliza o retorno dos remanescentes de Babilonia e seu livramento final no futuro distante (ver nota em 36.1-39.8, como uma ponte de transiqao do foco de Isai'as da Assfria para a Babilonia). A segunda parte, como a primeira, comeqa com uma visao da corte celestial. Isai'as ouve Deus enviando mensageiros para anunciar que a puniqao de Israel e Juda foi satisfeita e chegara ao fim (40.1-8). Em contraste com os deuses das naqoes, que sao l'dolos de madeira e pedra que nao veem, nao falam e nao podem afetar a historia, o Senhor e soberano ate sobre eventos futuros distantes. A visao de Isai'as sobre a vinda do reino de Deus abrange o exflio, o retorno dos judeus do exflio, a missao, o ministerio e o reino de Jesus Cristo, a missao e a esperanqa da igreja, o governo presente de Jesus sobre este mundo e a restauraqao de todas as coisas em santidade e justiqa. Isai'as e um pregador dotado. Por meio de sua imaginaqao poetica e estilo retorico, ele expoe a tolice de confiar nas estruturas humanas, contrastando- -a com a sabedoria de confiar no reino de Deus. Isai'as usa satira e sarcasmo para revelar a natureza ridfcula de confiar em l'dolos feitos de madeira e pedra, que nao podem se mover, falar ou agir. Embora os l'mpios se endureqam contra o Senhor (6.10), tornando-se tao cegos e surdos quanto os l'dolos que eles adoram, os oraculos profeticos de Isai'as levam os piedosos a responder com temor e adoraqao a Deus."
-      },
-      {
+        "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
-        "conteudo": "Isai'as serviu a Deus no papel de promotor da alianqa. Sua mensagem consiste de acusaqoes, condenaqao e julgamentos que declaram a maldiqao de Deus sobre Israel, Juda e as naqoes (1.2- 31; 13-23; 56; 57; 65). O relato autobiografico do chamado de Isai'as para se tornar um mensageiro da corte celestial e registrado no capi'tulo 6, uma visao que revela a totalsantidade e transcendencia de Deus. Esse Deus tern de exigir justiqa e retidao de seu povo. Quando Isai'as foi convocado para representar a corte celestial na corte terrena de Jerusalem, descobriu que Deus o estava enviando nao para salvar Israel e Juda, mas para endurecerseus coraqoes impenitentes (6.9-10). Isai'as deveria apresentar ao povo a queixa do Senhor de que eram incredulos e rebeldes (1.2-3; 31.1-3; 57.3-10). Em seu orgulho, sarcasmo e egoi'smo, o povo de Deus se tornara como as naqoes. Tinham perdido a visao do reino de Deus de justiqa, retidao, amor e paz. E haviam tentado estabelecer seu proprio reino, pelo que, inevitavelmente, enfrentariam julgamento. No entanto, o Senhor ainda estava comprometido em estabelecer um reino de justiqa e retidao. A promessa de um reino messianico nos capi'tulos iniciais se concentra principalmente na funqao de Deus em introduzir esse novo reino (9.6-7; 11.1-9). O Servo vindouro, nos capi'tulos 40-55, estendera a luz prometida nao somente ao remanescente de Juda e Israel, mas tambem as naqoes (49.6). Esse reino nao pode ser introduzido por esforqo humano, mas somente pelos atos redentores do proprio Senhor. Por fim, o Senhor estabelecera os novos ceusea nova terra, onde seu reino de justiqa e retidao dominara (65.17-25). O profeta tambem serve como um defensor da fe em meio a uma geraqao perdida. Ele chama os piedosos a buscarem o Senhor, a esperarem por seu reino, a experimentarem a paz de Deus em seu coraqao e a responderem com fe aos novos e vindouros atos redentores da parte de Deus. A alian - qa do Senhor termina com benqaos sobre Israel, e nao com maldiqoes (Dt 30.1-14; Rm 10.5-21). No final, um remanescente piedoso sobrevivera ao julgamento. Nesse interim, os fieis devem seguir a retidao em suas proprias aqoes, mesmo quando estiverem cercados por outros que ignoram os mandamentos do Senhor. D E"
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "Isaías atua como promotor da aliança: acusa, condena e anuncia julgamento sobre Israel, Judá e as nações. O chamado do capítulo 6 revela a santidade e a transcendência de Deus e mostra a condição de incredulidade e rebeldia do povo. Ao mesmo tempo, o livro anuncia um reino de justiça e retidão que não será estabelecido por esforço humano, mas pelos atos redentores do Senhor. O Servo estenderá a luz de Deus às nações, e o Senhor finalmente estabelecerá novos céus e nova terra (65.17–25). O profeta chama os piedosos a buscar o Senhor, esperar seu reino, viver em retidão e responder com fé aos seus atos redentores."
       },
       {
-        "titulo": "Teologia",
-        "conteudo": "I S A I A S De sua visao do chamado, Isai'as derivou seu entendimento caracteristico de Deus como majestoso, santo e glorioso. Isai'as viu o Senhor elevado majestosamente acima dele, sentado num trono sublime, com as abas de suas vestes enchendo o templo, O Senhor estava cercado de serafins, servos angelicais cujos nomes significam “ardentes”. Seus clamores de adoraqao moveram as portas do templo, e o predio se encheu de fumaqa. Esse Deus e tambem santo, e nao como os seres humanos em seus compromissos pecaminosos. O ti'tulo de Deus favorito para Isai'as e “o Santo de Israel” (1.4; 5.19, 24; etc.). Os caminhos de Deus nao sao semelhantes aos nossos, nem seus pensamentos (55.8-9). Achar-se nas maos desse Deus santo nao e uma boa noticia para o pecaminoso Israel. Ele e tambem o Deus glorioso, diante de quern as naqoes sao um pingo num balde, e seus l'dolos, ainda menos relevantes (40.15). Ele criou todas as coisas e governa sobre tudo (45.5-12). No final, todas as naqoes chegarao a reconhecer essa verdade e se prostrarao diante do unico e verdadeiro Deus, quando a terra se enchera da sua gloria, como a sala do trono divino no ceu (6.3; 40.5; 66.18)."
+        "id": "teologia_de_isaias",
+        "titulo": "Teologia de Isaías",
+        "tipo": "texto",
+        "ordem": 6,
+        "conteudo": "A visão do chamado apresenta Deus como majestoso, santo e glorioso: o Senhor está elevado sobre um trono sublime, cercado de serafins, e sua presença enche o templo. Seu título característico é “o Santo de Israel”. Seus caminhos e pensamentos ultrapassam os humanos (55.8–9). Ele é o Deus glorioso que criou todas as coisas e governa sobre tudo (40.15; 45.5–12). O julgamento decorre de sua santidade e da rebeldia humana, mas o Senhor permanece comprometido com a promessa de um reino de justiça. No final, todas as nações reconhecerão o único Deus verdadeiro e a terra se encherá de sua glória."
       },
       {
-        "titulo": "Na história mais ampla da Bíblia",
-        "conteudo": "I S A I A S Os profetas do seculo VIII a.C., como Isai'as, chamavam o povo de Deus ao arrependimento com base na alianqa que Deus havia feito com Moises. Eles declaravam que as maldiqoes listadas naquela alianqa viriam inevitavelmente sobre o povo, se nao se arrependessem. Mas, se o povo reagisse com arrependimento, eles encontrariam o Senhor de braqos abertos para recebe-los (1.18). Nesse tempo parece ter havido mais esperanqa de uma conversao genui'na ao Senhor do que na epoca dos profetas do seculo VI a.C., em cujos dias o exflio era inevitavel. Entretanto, apesar disso, o Senhor advertiu Isai'as de que o povo nao o ouviria. Eram cegos e surdos, e permaneceriam assim (6.9-13). A linhagem real seria cortada de tal modo que ficaria apenas um tronco de Jesse (11.1). No entanto, o Senhor seria fiel em cumprir sua promessa a Abraao e Sara (51.2). Ele traria o remanescente de volta e o restauraria a si mesmo em uma nova alianga (42.5-7). O templo, que seria destrui'do com Jerusalem, seria erguido de novo nos ultimos dias, como o ponto central do universo (2.2-4)."
+        "id": "isaias_na_historia_mais_ampla_da_biblia",
+        "titulo": "Isaías na história mais ampla da Bíblia",
+        "tipo": "texto",
+        "ordem": 7,
+        "conteudo": "Isaías, como os profetas do século VIII a.C., chama o povo ao arrependimento com base na aliança de Deus com Moisés e anuncia as maldições da aliança quando não há arrependimento. Apesar da incredulidade do povo, o Senhor permanece fiel às promessas feitas a Abraão e Sara. A esperança inclui a preservação de um remanescente, a restauração e a expectativa de que Sião seja novamente o ponto central da ação de Deus nos últimos dias."
       },
       {
-        "titulo": "Cristo",
-        "conteudo": "E M I S A I A S O livro de Isai'as e um dos livros do Antigo Testamento mais frequentemente citados no Novo Testamento. Jesus nasceu de uma virgem em cumprimento de Isai'as 7.14 (Mt 1.23). E Jesus declarou que Isai'as 61.1 se cumpriu em sua vinda (Lc 4.18-21). Jesus e o prometido Filho de Davi e o Rei triunfante que introduz um novo reino de paz e justiga (9.6-7; 11.1-2). Seu corpo e o novo templo cuja exaltagao leva as nagoesa glorificarem a Deus (Jo 2.19-21). Jesus e o Servo que e luz para os gentios (49.6). Isai'as 52.13-53.12 e, sem duvida, bem conhecido por sua descrigao detalhada da obra do Servosofredor, aquele que oferece expiagao perfeita pelos pecados de seu povo e lhes prove a justiga pela qual sao declarados justos aos olhos de Deus. Filipe pregou o evangelho ao eunuco eti'ope com base nessa passagem (At 8.28-35). D E I N T E R P R E T A g A O"
+        "id": "cristo_em_isaias",
+        "titulo": "Cristo em Isaías",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "Isaías é um dos livros do Antigo Testamento mais citados no Novo Testamento. Jesus nasce de uma virgem em cumprimento de Isaías 7.14 (Mt 1.23), aplica a si mesmo Isaías 61.1 (Lc 4.18–21) e é apresentado como o Filho de Davi e Rei que introduz um reino de paz e justiça (9.6–7; 11.1–2). Ele é o Servo que é luz para os gentios (49.6). Isaías 52.13–53.12 descreve o Servo Sofredor que oferece expiação pelos pecados do povo e provê a justiça pela qual são declarados justos; Filipe anuncia o evangelho ao eunuco etíope a partir dessa passagem (At 8.28–35)."
       },
       {
-        "titulo": "Na história mais ampla da Bíblia",
-        "conteudo": "Na maior parte da historia da Igreja, o livro de Isai'as foi reconhecido como as palavras do profeta do seculo VIII a.C. que falou nao somente para confrontar e encorajar o povo de Deus em seus proprios dias, mas tambem para claramente anunciar de antemao os sofrimentos de Cristo e as glorias que se seguiriam (IPe 1.11).Todavia, nos dois ultimos seculos, muitos eruditos da alta crftica tern contestado a unidade de Isai'as, argumentando que o livro e o resultado de uma transmissao complexa que passou por muitas maos. Eles dividem o livro em tres segoes, atribuindo-as a Isai'as de Jerusalem (caps.1-39), a um profeta que viveu no tempo do exilio (segundo ou “Deutero-Isafas”, caps. 40-55) e a um profeta pos-exflico (o “Terceiro Isai'as”, caps. 56-66). As diferengas na linguagem (p. ex., vocabulario diferente) entre as tressegoes sao as principais evidencias que esses eruditos da alta crftica apresentam como prova de pelo menos tres autores para o livro de Isai'as. No entanto, embora haja algumas diferengas lingufsticas entre as tres segoes, a unidade lingufstica entre elas e frequentemente subestimada. Na verdade,o uso das mesmas palavras nas tres segoes, mas em nenhuma outra parte da Bfblia hebraica, e a principal evidencia contraria as afirmagoes desses eruditos. Alem disso, quaisquer variagoes na linguagem entre as supostas divisoes do livro sao facilmente explicadas como resultantes de diferengas no assunto tratado, de mudangas na perspectiva ou da propria maturidade do profeta. Apesar de suas melhores tentativas, os eruditos ja referidos tern sido incapazes de ignorar totalmente as semelhangas entre as tres segoes. Em vez de proporem um unico autor, muitos desses cri'ticos conclui'ram que um editor final (posterior) unificou a obra. Defato, ha tragos unificadores no livro de Isai'asque nao podem ser ignorados com honestidade. Esses tragos incluem a repetigao de temas teologicos (Siao, a vinda de Deus, o representante davfdico e o desenvolvimento do piano soberano de Deus), os nomes de Deus(“oSanto de Israel”; cf. 1.4 e nota) e a mensagem unificada de julgamento e salvagao. Baseados nessa realidade e em muitas outras evidencias, os eruditos conservadores defendem o entendimento tradicional de que o livro e totalmente a obra de um unico profeta, Isai'as.0 livro foi publicado com o nome do profeta (1.1), que e mencionado frequentemente nele (2.1; 7.3; 13.1; etc.). O Novo Testamento cita Isai'as como o autor de passagens de todas as partes do livro (Mt 3.3; 8.17; 12.17; observe especialmente as references combinadas em Joao 12.37-41). Outra razao pela qual certos eruditos da alta crftica questionam a unidade autoral de Isai'as e a suposigao de que um profeta fala apenas a seus contemporaneos. Isso procede de sua crenga de que somente os contemporaneos de Isai'as teriam considerado sua mensagem relevante. E, por isso, Isai'as so teria falado coisas que interessavam diretamente a eles. Esses eruditos argumentam que, se os capftulos 1-39 sao dirigidos a nagao durante as invasoes assfrias (por volta de 740-700 a.C.);se os capftulos 40-55, aos exilados na Babilonia (por volta de 600-539 a.C.); e se os capftulos 56-66, a comunidade depois de seu retorno a terra (por volta de 539-500 a.C.), mais de um profeta deve ter falado, fazendo cada um deles nova aplicagao dos temas do Isai'as de Jerusalem a sua propria geragao. Mas essa suposigao ignora que os profetas instam frequentemente uma geragao a participar, pela fe, da salvagao que esta num future distante. Embora muitas pessoas fossem infieis nos dias do proprio Isai'as, um grupo de disci'pulos fieis (8.16-18) precisava do encorajamento de saber que as promessas de Deus ainda estavam em curso e que, depois da vinda das trevas, sobre a qual Isai'as falou, a luz resplandeceria (Is 9.2-7). Alem disso, Moises predisse a inevitabilidade do exflio e o retorno de Israel (Dt 30.1-3), como fizera Salomao (IRs 8.46-51). Nao e implausi'vel imaginar que, sob a inspiraqao do Senhor, Isai'as tambem abordou interesses futuros semelhantes, que tiveram imediatas implicates vitais em chamar as pessoas de seus dias ao arrependimento e a fe no Senhor, que governa o futuro. Por fim, uma tendencia distintamente antissobrenatural da parte de muitos eruditos da alta crftica explica por que eles dividem o livro de Isai'as em pelo menos tres autores diferentes. Esses criticos defendem, em geral, que a profecia miraculosa, como, por exemplo, citar o nome de Ciro mais de um seculo antes e predizer o nascimento de Jesus de uma virgem, e impossfvel. Essa pressuposiqao insustentavel os leva a conclusao de que a profecia sobre Ciro deve ter sido escrita depois de seu aparecimento e de que Isai'as 7 nada tem a ver com o nascimento de Jesus. No entanto, Isai'as repreende o rei Acaz por esse tipo de incredulidade, quando o rei se recusa a reconhecer a capacidade doSenhor para demonstrar seu poder por meio de sinais (7.10-13).0Senhor deu a Ezequias um sinal como garantia de sua convalescenqa (38.7-8). Nos capi'tulos 40-45, o Senhor valida seu governo soberano sobre as naqoes exatamente pelo poder de seus profetas em falar o futuro antes que aconteqa. Os profetas pagaos nao podiam mostrar que suas profecias passadas se haviam cumprido, nem podiam fazer profecias confiaveis do que aconteceria (41.21-29). Em contrapartida, o Deus de Israel cumpriu as profecias anteriores de Isai'as sobre a Assfria. O profeta tambem predisse o futuro, mencionando Ciro pelo nome. Isai'as entrega essas profecias sobrenaturais (41.21-29; 44.24-45.8) para deixar os incredulos sem desculpa (48.3-5). As notaveis profecias de Isai'as sobre os sofrimentos e a morte de Cristo sao tambem um forte argumento a favor da profecia sobrenatural. D E I S AIA S"
+        "id": "historia_de_interpretacao",
+        "titulo": "História de interpretação",
+        "tipo": "texto",
+        "ordem": 9,
+        "conteudo": "Durante grande parte da história da Igreja, Isaías foi reconhecido como obra do profeta do século VIII a.C., incluindo suas profecias sobre os sofrimentos de Cristo e as glórias posteriores. Nos dois últimos séculos, estudiosos da alta crítica contestaram a unidade do livro e propuseram três seções: Isaías de Jerusalém (caps. 1–39), um profeta do exílio, chamado “Dêutero-Isaías” (40–55), e um profeta pós-exílico, chamado “Terceiro Isaías” (56–66). A principal evidência apresentada são diferenças linguísticas, mas o material também destaca os fortes elementos unificadores: temas teológicos recorrentes, o título “o Santo de Israel”, o desenvolvimento do plano soberano de Deus e a mensagem conjunta de julgamento e salvação. A tradição conservadora sustenta a autoria de Isaías, observando que o Novo Testamento atribui a ele passagens de todas as partes do livro. A discussão também envolve a possibilidade de profecia preditiva, especialmente nas referências a Ciro e às profecias messiânicas."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Isaías",
-        "tipo": "esboco",
-        "ordem": 12,
+        "tipo": "auto",
+        "ordem": 10,
         "conteudo": [
           {
-            "nivel": 1,
-            "titulo": "0 SENHOR E 0 SANTO OE ISRAEL",
-            "referencia": "CAPS.1-12",
-            "subniveis": [
+            "titulo": "I. O SENHOR É O SANTO DE ISRAEL (CAPS. 1–12)",
+            "itens": [
               {
-                "nivel": 2,
-                "titulo": "Oraculos de julgamento e esperanga (caps. 1-5) 1.0 pecado de Juda exposto (cap 1)",
-                "subniveis": [
-                  {
-                    "nivel": 3,
-                    "titulo": "Esperanga",
-                    "referencia": "21-5",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "A culpa de Juda",
-                    "referencia": "2.6-41",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Esperanga",
-                    "referencia": "4.2-6",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Juda condenado",
-                    "referencia": "cap. 5",
-                    "subniveis": []
-                  }
+                "titulo": "A. Oráculos de julgamento e esperança (caps. 1–5)",
+                "itens": [
+                  "1. O pecado de Judá exposto (cap. 1)",
+                  "2. Esperança (2.1–5)",
+                  "3. A culpa de Judá (2.6–4.1)",
+                  "4. Esperança (4.2–6)",
+                  "5. Judá condenado (cap. 5)"
                 ]
               },
+              "B. O chamado profético e a revelação da santidade de Deus (cap. 6)",
               {
-                "nivel": 2,
-                "titulo": "O chamado profetico e a revelagao da santidade de Deus (cap. 6)",
-                "subniveis": []
-              }
+                "titulo": "C. Oráculos de julgamento e esperança durante a guerra com Israel e Síria (caps. 7–11)",
+                "itens": [
+                  "1. Julgamento e esperança para Judá (7.1–9.7)",
+                  "2. Julgamento e esperança para Israel (9.8–11.16)"
+                ]
+              },
+              "D. O hino dos redimidos (cap. 12)"
             ]
           },
           {
-            "nivel": 1,
-            "titulo": "Oraculos de julgamento e esperanga durante a guerra com Israel e Siria (caps. 7-11) 1.Julgamento e esperanga para Juda (71-9.7)",
-            "subniveis": [
+            "titulo": "II. ORÁCULOS CONTRA AS NAÇÕES (CAPS. 13–23)",
+            "itens": [
               {
-                "nivel": 2,
-                "titulo": "Julgamento e esperanga para Israel",
-                "referencia": "9 8-11.16",
-                "subniveis": []
-              }
-            ]
-          },
-          {
-            "nivel": 1,
-            "titulo": "0 hino dos redimidos",
-            "referencia": "cap. 12",
-            "subniveis": []
-          },
-          {
-            "nivel": 1,
-            "titulo": "ORACULOS CONTRA AS NA(OES",
-            "referencia": "CAPS. 13-23",
-            "subniveis": [
-              {
-                "nivel": 2,
-                "titulo": "Primeira serie",
-                "referencia": "caps. 13-20",
-                "subniveis": [
-                  {
-                    "nivel": 3,
-                    "titulo": "Babilonia e Assiria",
-                    "referencia": "13.1-14,27",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "FillStia",
-                    "referencia": "14,28-32",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Moabe",
-                    "referencia": "caps. 15-16",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Damasco e Etiopia",
-                    "referencia": "caps. 17-18",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Egito",
-                    "referencia": "caps. 19-20",
-                    "subniveis": []
-                  }
+                "titulo": "A. Primeira série (caps. 13–20)",
+                "itens": [
+                  "1. Babilônia e Assíria (13.1–14.27)",
+                  "2. Filístia (14.28–32)",
+                  "3. Moabe (caps. 15–16)",
+                  "4. Damasco e Etiópia (caps. 17–18)",
+                  "5. Egito (caps. 19–20)"
                 ]
               },
               {
-                "nivel": 2,
-                "titulo": "Segunda serie",
-                "referencia": "caps. 21-23",
-                "subniveis": [
-                  {
-                    "nivel": 3,
-                    "titulo": "Babilonia",
-                    "referencia": "21.1-10",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Edom",
-                    "referencia": "21.11-12",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Arabia",
-                    "referencia": "21.13-17",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Jerusalem",
-                    "referencia": "cap. 22",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Tiro",
-                    "referencia": "cap. 23",
-                    "subniveis": []
-                  }
+                "titulo": "B. Segunda série (caps. 21–23)",
+                "itens": [
+                  "1. Babilônia (21.1–10)",
+                  "2. Edom (21.11–12)",
+                  "3. Arábia (21.13–17)",
+                  "4. Jerusalém (cap. 22)",
+                  "5. Tiro (cap. 23)"
                 ]
               }
             ]
           },
           {
-            "nivel": 1,
-            "titulo": "0 PE0UEN0 APOCALIPSE",
-            "referencia": "CAPS. 24-27",
-            "subniveis": [
-              {
-                "nivel": 2,
-                "titulo": "A iminencia do Dia do Senhor",
-                "referencia": "cap. 24",
-                "subniveis": []
-              },
-              {
-                "nivel": 2,
-                "titulo": "Alegria na transformagao",
-                "referencia": "cap. 25",
-                "subniveis": []
-              }
+            "titulo": "III. O PEQUENO APOCALIPSE (CAPS. 24–27)",
+            "itens": [
+              "A. A iminência do Dia do Senhor (cap. 24)",
+              "B. Alegria na transformação (cap. 25)",
+              "C. O relacionamento entre Deus e seu povo (26.1–27.1)",
+              "D. Transformação (27.2–13)"
             ]
           },
           {
-            "nivel": 1,
-            "titulo": "0 relacionamento entre Deus e seu povo (26.1-27.1)",
-            "subniveis": []
-          },
-          {
-            "nivel": 1,
-            "titulo": "Transformagao",
-            "referencia": "27.2-13",
-            "subniveis": []
-          },
-          {
-            "nivel": 1,
-            "titulo": "JULGAMENTO E SALVA(AO",
-            "referencia": "CAPS. 28-35",
-            "subniveis": [
+            "titulo": "IV. JULGAMENTO E SALVAÇÃO (CAPS. 28–35)",
+            "itens": [
               {
-                "nivel": 2,
-                "titulo": "Seis ais",
-                "referencia": "caps. 28-33",
-                "subniveis": [
-                  {
-                    "nivel": 3,
-                    "titulo": "Ai para Efraim",
-                    "referencia": "cap. 28",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Ai para Jerusalem",
-                    "referencia": "29.1-14",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Ai para os que confiam em aliangas estrangeiras (29.15-24)",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Ai para Juda, os filhos rebeldes do Senhor",
-                    "referencia": "cap. 30",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Ai para os que confiam no Egito",
-                    "referencia": "31.1-32.20",
-                    "subniveis": []
-                  },
-                  {
-                    "nivel": 3,
-                    "titulo": "Ai para Assiria",
-                    "referencia": "cap. 33",
-                    "subniveis": []
-                  }
+                "titulo": "A. Seis ais (caps. 28–33)",
+                "itens": [
+                  "1. Ai para Efraim (cap. 28)",
+                  "2. Ai para Jerusalém (29.1–14)",
+                  "3. Ai para os que confiam em alianças estrangeiras (29.15–24)",
+                  "4. Ai para Judá, os filhos rebeldes do Senhor (cap. 30)",
+                  "5. Ai para os que confiam no Egito (31.1–32.20)",
+                  "6. Ai para Assíria (cap. 33)"
                 ]
               },
-              {
-                "nivel": 2,
-                "titulo": "0 dia de vinganga e de favor",
-                "referencia": "caps. 34-35",
-                "subniveis": []
-              }
+              "B. O dia de vingança e de favor (caps. 34–35)"
             ]
           },
           {
-            "nivel": 1,
-            "titulo": "ISAIAS E EZE0UIA5",
-            "referencia": "CAPS. 36-39",
-            "subniveis": [
-              {
-                "nivel": 2,
-                "titulo": "Ezequias livre de Senaqueribe",
-                "referencia": "caps. 36-37",
-                "subniveis": []
-              },
-              {
-                "nivel": 2,
-                "titulo": "Ezequias livre de enfermidade",
-                "referencia": "cap. 38",
-                "subniveis": []
-              }
+            "titulo": "V. ISAÍAS E EZEQUIAS (CAPS. 36–39)",
+            "itens": [
+              "A. Ezequias livre de Senaqueribe (caps. 36–37)",
+              "B. Ezequias livre de enfermidade (cap. 38)",
+              "C. A autoconfiança de Ezequias leva ao exílio futuro de Judá (cap. 39)"
             ]
           },
           {
-            "nivel": 1,
-            "titulo": "A autoconfianga de Ezequias leva ao exilio futuro de Juda (cap. 39)",
-            "subniveis": []
-          },
-          {
-            "nivel": 1,
-            "titulo": "0 REINO GLORIOSO DE DEUS",
-            "referencia": "CAPS. 40-48",
-            "subniveis": [
-              {
-                "nivel": 2,
-                "titulo": "A proclamagao da presenga de Deus e da restauragao de Israel (cap. 40)",
-                "subniveis": []
-              },
-              {
-                "nivel": 2,
-                "titulo": "O poder soberano do Senhor sobre a historia (cap. 41)",
-                "subniveis": []
-              }
+            "titulo": "VI. O REINO GLORIOSO DE DEUS (CAPS. 40–48)",
+            "itens": [
+              "A. A proclamação da presença de Deus e da restauração de Israel (cap. 40)",
+              "B. O poder soberano do Senhor sobre a história (cap. 41)",
+              "C. O povo, testemunhas da redenção do Senhor (42.1–13)",
+              "D. A restauração de Israel (42.14–44.23)",
+              "E. O uso de Ciro pelo Senhor (44.24–45.25)",
+              "F. A queda de Babilônia e seus falsos deuses (caps. 46–47)",
+              "G. Um chamado para escapar do julgamento do Senhor sobre a Babilônia (cap. 48)"
             ]
           },
           {
-            "nivel": 1,
-            "titulo": "O povo, testemunhas da redengao do Senhor (42.1-13)",
-            "subniveis": []
-          },
-          {
-            "nivel": 1,
-            "titulo": "A restauragao de Israel",
-            "referencia": "42.14-44.23",
-            "subniveis": [
-              {
-                "nivel": 2,
-                "titulo": "O uso de Ciro pelo Senhor",
-                "referencia": "44.24-45.25",
-                "subniveis": []
-              },
-              {
-                "nivel": 2,
-                "titulo": "A queda de Babilonia e seus falsos deuses (caps. 46-47)",
-                "subniveis": []
-              },
-              {
-                "nivel": 2,
-                "titulo": "Um chamado para escapar do julgamento do Senhor sobre a Babilonia (cap. 48)",
-                "subniveis": []
-              }
+            "titulo": "VII. O MINISTÉRIO DE RESTAURAÇÃO (CAPS. 49–55)",
+            "itens": [
+              "A. O chamado e a missão do Servo (49.1–13)",
+              "B. Conforto para Sião (49.14–26)",
+              "C. O livramento de Israel pelo Servo (cap. 50)",
+              "D. Encorajamento para os santos (51.1–52.12)",
+              "E. O Servo Sofredor (52.13–53.12)",
+              "F. A renovação da aliança (caps. 54–55)"
             ]
           },
           {
-            "nivel": 1,
-            "titulo": "O MINISTERS DE RESTAURAÇÃO",
-            "referencia": "CAPS. 49-55",
-            "subniveis": [
-              {
-                "nivel": 2,
-                "titulo": "O chamado e a missao do Servo",
-                "referencia": "49.1-13",
-                "subniveis": []
-              },
-              {
-                "nivel": 2,
-                "titulo": "Conforto para Siao",
-                "referencia": "49.14-26",
-                "subniveis": []
-              }
-            ]
-          },
-          {
-            "nivel": 1,
-            "titulo": "O livramento de Israel pelo Servo",
-            "referencia": "cap. 50",
-            "subniveis": []
-          },
-          {
-            "nivel": 1,
-            "titulo": "Encorajamento para os santos",
-            "referencia": "51.1-52.12",
-            "subniveis": [
-              {
-                "nivel": 2,
-                "titulo": "O Servo Sofredor F A renovagao da alianga (caps. 54-55)",
-                "referencia": "52.13-53.12",
-                "subniveis": []
-              }
-            ]
-          },
-          {
-            "nivel": 1,
-            "titulo": "RESPONSABILIDADE PARA COM 0 REINO E A CERTEZA DO REINO GLORIOSO (CAP. 56-66)",
-            "subniveis": [
-              {
-                "nivel": 2,
-                "titulo": "O verdadeiro povo de Deus B Os impios sao expostos (56.9-57.13)",
-                "referencia": "56.1-8",
-                "subniveis": []
-              }
-            ]
-          },
-          {
-            "nivel": 1,
-            "titulo": "A divisao entre o verdadeiro povo de Deus e os impios (57.14-21)",
-            "subniveis": []
-          },
-          {
-            "nivel": 1,
-            "titulo": "Chamada ao arrependimento por causa da alianga de Deus (caps. 58-59) E A natureza da salvagao gloriosa (cap. 60)",
-            "subniveis": [
-              {
-                "nivel": 2,
-                "titulo": "A grandeza do favor do Senhor e a gloria de Siao (61.1-63.6)",
-                "subniveis": []
-              },
-              {
-                "nivel": 2,
-                "titulo": "A oragao pelo livramento do Senhor (63.7-64.12)",
-                "subniveis": []
-              },
-              {
-                "nivel": 2,
-                "titulo": "A salvagao de Deus e seu julgamento final (caps. 65-66)",
-                "subniveis": []
-              }
+            "titulo": "VIII. RESPONSABILIDADE PARA COM O REINO E A CERTEZA DO REINO GLORIOSO (CAP. 56–66)",
+            "itens": [
+              "A. O verdadeiro povo de Deus (56.1–8)",
+              "B. Os ímpios são expostos (56.9–57.13)",
+              "C. A divisão entre o verdadeiro povo de Deus e os ímpios (57.14–21)",
+              "D. Chamada ao arrependimento por causa da aliança de Deus (caps. 58–59)",
+              "E. A natureza da salvação gloriosa (cap. 60)",
+              "F. A grandeza do favor do Senhor e a glória de Sião (61.1–63.6)",
+              "G. A oração pelo livramento do Senhor (63.7–64.12)",
+              "H. A salvação de Deus e seu julgamento final (caps. 65–66)"
             ]
           }
         ]

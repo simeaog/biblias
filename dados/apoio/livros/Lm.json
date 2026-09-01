@@ -1,83 +1,99 @@
 {
-  "schema": "apoio-livro-v2",
+  "schema": "apoio-livro-v1",
   "id": "Lm",
   "nome": "Lamentações",
-  "abreviacao": "Lm",
-  "fonte_pdf": "25_Lamenta#U00e7#U00f5es.pdf",
   "material": {
     "titulo": "Sobre Lamentações",
+    "introducao": "Lamentações reúne cinco poemas que respondem à destruição de Jerusalém. O livro expressa a dor do julgamento, reconhece a justiça de Deus e, no centro da angústia, afirma a fidelidade e a misericórdia do Senhor, conduzindo à esperança e ao pedido de restauração.",
     "secoes": [
       {
-        "titulo": "Cristo",
-        "conteudo": "O Lamentações tanto, não é impossível que Jeremias tenha escrito"
-      },
-      {
+        "id": "titulo",
         "titulo": "Título",
-        "conteudo": "uma parte, talvez até mesmo a maior parte, do livro de Lamentações. Entretanto, como 0 livro consiste de Nos tempos antigos, quando os livros eram raros e cinco poemas diferentes que variam de estilo, paretinham de ser guardados na memória, era comum cendo, algumas vezes, ser falados por um indivíduo referir-se aos livros da Bíblia hebraica por sua pri- (cap. 3) e, outras vezes, por uma comunidade (cap. 5), meira palavra, que, no presente caso, é conveniené possível que os poemas venham de penas diferentemente ekah, uma exclamação que introduz um tes. Esta Bíblia de estudo se refere ao autor como “0 grito de lamento. Posteriormente, os rabinos paspoeta” nas notas de estudo. saram a se referir ao livro como qinot (“Lamentos”). Esse título foi preservado na Septuaginta, seguida pela Vulgata (Lamentationes), aparecendo também nas traduções contemporâneas em português."
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "Nos tempos antigos, era comum referir-se aos livros da Bíblia hebraica pela primeira palavra. Em Lamentações, essa palavra é ekah, uma exclamação que introduz um grito de lamento. Posteriormente, os rabinos passaram a usar ginot (“Lamentos”). A designação foi preservada na Septuaginta e na Vulgata (Lamentationes), chegando às traduções contemporâneas."
       },
       {
-        "titulo": "Data e circunstâncias",
-        "conteudo": "A ligação entre Jeremias e Lamentações é plausível não somente por causa de expressões semelhantes,"
-      },
-      {
+        "id": "autor",
         "titulo": "Autor",
-        "conteudo": "mas também por causa do tema e do ambiente do poema. O ambiente é Jerusalém no período após Embora 0 livro de Lamentações não contenha afira queda do reino de Judá para a Babilônia, em 586 mação explícita de autoria, é, tradicionalmente, atria.C., e antes da restauração dos exilados, em 538 a.C. buído ao profeta Jeremias. Isso tem sido verdadeiro 0 lamento referente à perda do rei de Judá (2.2,9), desde, pelo menos, 0 tempo da Septuaginta (por diferente de outras devastações de Jerusalém, fixa volta de 250 a.C.), em que aparece uma nota sobre a essa ocasião para os lamentos. Um ambiente do peautoria do profeta numa linha antes do primeiro verríodo do exílio babilônio faz de Lamentações uma sículo. A ideia de Jeremias como autor do livro pode sequência adequada ao livro de Jeremias. Assim ter sido fortalecida pelo texto de 2 Crônicas 35.25, como Jeremias profetizou a queda de Jerusalém, passagem que afirma que o profeta compôs lamen- Lamentações expressa a tristeza por esse evento. tações para 0 rei Josias. O próprio livro não contém A Septuaginta colocou Lamentações depois de Jenenhuma evidência explícita de que Jeremias tenha remias, e a tradição cristã seguiu essa prática. Na sido seu autor, embora algumas passagens lembrem Bíblia hebraica, o livro de Lamentações se encontra distintamente seu caráter e sua linguagem, em espena seção conhecida como os “Escritos”. ciai 0 capítulo 3 (compare 3.48-51 com Jr 14.17). Por­ de"
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "Lamentações não declara explicitamente seu autor, mas tradicionalmente é atribuído a Jeremias, tradição presente pelo menos desde a Septuaginta. A associação também foi fortalecida por 2Crônicas 35.25, que afirma que Jeremias compôs lamentações para o rei Josias. O próprio livro, porém, não fornece evidência explícita de autoria. Como é composto por cinco poemas diferentes, com variações de estilo e de voz individual e comunitária, é possível que tenham vindo de mais de uma pena. O material de estudo usa a designação “o poeta”."
       },
       {
-        "titulo": "Características literárias",
-        "conteudo": "Os cinco capítulos do livro são cinco poemas. A abordagem mais comum à questão de gênero vê esses poemas como lamentos semelhantes a outros que aparecem nos livros do Antigo Testamento, principalmente no livro de Salmos. Um aspecto singular desses lamentos é que o contexto da tristeza em Lamentações é claramente 0 da cidade caída, enquanto 0 contexto dos lamentos no Saltério é, muitas vezes, menos discemível. O livro de Lamentações (tanto da comunidade como de indivíduos) apresenta certas características peculiares, sendo as mais comuns: (1) queixa sobre a adversidade, que o Senhor ou tolerou ou causou; (2) confissão de confiança; (3) apelo por livramento com base no caráter e na aliança do Senhor; (4) certeza de ser ouvido, frequentemente com a garantia de que os inimigos e os perseguidores experimentarão, por sua vez, a ira de Deus (SI 74). O livro de Lamentações tem essas marcas peculiares, embora apresente variações. Algumas vezes, Lamentações é comparado a um tipo específico de lamento, 0 lamento fúnebre (p. ex., Am 5.1-3), mas não se enquadra totalmente nessa categoria, pois Jerusalém não é retratada uniformemente como “morta”. A evidência mais clara de métrica na poesia hebraica é o livro de Lamentações, que parece usar uma linha de cinco ritmos, divididos em três e dois. Essa métrica é chamada Qinah (“elegíaca”), com base no substantivo hebraico que denota um lamento. Acha-se mais frequentemente em poesia desse tipo melancólico. Uma segunda forma poética que se encontra em Lamentações é 0 acróstico, em que linhas ou grupos de linhas são organizados de acordo com as 22 letras do alfabeto hebraico. Cada linha ou grupo de linhas começa com a letra seguinte do alfabeto. Esse método pode indicar que 0 poeta está oferecendo uma abordagem completa do assunto em questão. O acróstico também provê uma forma para a expressão literária de tristeza, permitindo ao escritor formar uma espécie de ordem a partir do caos que a horrível tragédia produz."
+        "id": "data_e_circunstancias",
+        "titulo": "Data e circunstâncias",
+        "tipo": "texto",
+        "ordem": 3,
+        "conteudo": "O ambiente é Jerusalém depois da queda do reino de Judá diante da Babilônia, em 586 a.C., e antes da restauração dos exilados, em 538 a.C. O lamento pela perda do rei de Judá e a destruição da cidade fixam o contexto histórico. A ligação com Jeremias é plausível pela semelhança de expressões, tema e ambiente. A Septuaginta colocou Lamentações depois de Jeremias, prática seguida pela tradição cristã, enquanto na Bíblia hebraica o livro está entre os Escritos."
       },
       {
+        "id": "genero_e_caracteristicas_literarias",
+        "titulo": "Gênero e características literárias",
+        "tipo": "texto",
+        "ordem": 4,
+        "conteudo": "Os cinco capítulos são cinco poemas. O gênero é o lamento, semelhante aos lamentos do Antigo Testamento, especialmente dos Salmos, mas com a cidade caída como contexto explícito. O livro apresenta queixa pela adversidade, confissão de confiança, apelo por livramento baseado no caráter e na aliança do Senhor e esperança de que os inimigos também enfrentem o juízo de Deus. Lamentações também emprega métrica qinah (“elegíaca”), associada a linhas de cinco ritmos divididos em três e dois. Outra característica é o acróstico: linhas ou grupos de linhas são organizados pelas 22 letras do alfabeto hebraico, criando uma forma de ordenar literariamente a experiência do caos e da tragédia."
+      },
+      {
+        "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
-        "conteudo": "O propósito de Lamentações não pode ser afirmado numa única palavra. O livro foi escrito como um meio para que se conformassem com a destruição de Sião. O âmago é a ira de Deus contra seu povo: Judá havia pecado, e os profetas tinham anunciado a advertência de Deus; portanto, a ira de Deus é justa. Muito antes da queda de Jerusalém, Amós havia falado sobre um dia do Senhor contra seu povo (Am 5.18), um dia que veio finalmente (Lm 1.12). Lamentações não expressa perplexidade total, como às vezes 0 livro de Jó parece fazer. Em vez disso, 0 livro justifica a punição de Deus sobre Judá e oferece uma vindicação dos profetas que a predisseram. Lamentações não é uma obra de resignação passiva. A ira de Deus é aceita, mas não sem grande resistência emocional. Deus se comportaria como os inimigos de seu povo, levando-o a terrores em que até mesmo a descrição é dolorosa (2.4, 5, 20-22)? Embora 0 poeta entenda a justiça de Deus, a agonia e o espanto do evento podem ser livremente expressos. O livro retém seu poder em tempos de tristeza e angústia. No entanto, mesmo em sua angústia, 0 poeta é capaz de afirmar que Deus ainda é misericordioso e fiel (3.22-36). Há um meio de sair da crise do exílio — a aliança feita com Abraão, Isaque e Jacó; e a fidelidade dessa aliança aos patriarcas é, em todos os profetas, 0 fundamento de novos apelos para Israel e Judá depositarem sua confiança no Senhor (p. ex., Mq 7.20). O escritor de Lamentações talvez possa ser contado, com Abraão, no Antigo Testamento, como um dos exemplos supremos de fé em Deus. Jeremias profetizou que havería um fim para 0 exílio na Babilônia (Jr 25.11). O poeta anseia por esse fim e até mesmo espera que os inimigos de Judá sejam julgados por suas ofensas contra ele. Nessa esperança, há um entendimento acerca da soberania de Deus sobre todas as nações, a soberania que abrange todos os mistérios (3.37-39)."
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "O propósito de Lamentações não se resume a uma única palavra. O livro responde à destruição de Jerusalém e reconhece que Judá havia pecado e que os profetas haviam anunciado a advertência de Deus. Por isso, a ira divina é apresentada como justa. Contudo, o livro não é resignação passiva: a dor, a agonia e o espanto diante do julgamento são expressos livremente. Mesmo em meio à angústia, o poeta afirma a misericórdia e a fidelidade de Deus (3.22–36). A aliança feita com Abraão, Isaque e Jacó fundamenta a esperança de restauração. O livro caminha da perda e do sofrimento para a esperança e para a oração por renovação."
       },
       {
-        "titulo": "Teologia",
-        "conteudo": "A passagem central no livro afirma a fidelidade pactual de Deus (hesed) em meio à devastação presente (3.22-24). Deus não está distante de seu povo em seu sofrimento, nem o abandona por completo, embora os pecados sejam grandes e mereçam tal destino. Quando 0 poeta confessa publicamente os pecados do povo, espera que, por meio dessa confissão e desse arrependimento, 0 povo seja restaurado ao favor de Deus e, portanto, a um novo futuro (cap. 5). Esta é a única esperança: não há salvação a ser O livro de Lamentações aponta, portanto, para além buscada ou encontrada em nenhuma outra fonte, porque só o Senhor é a porção de seu povo (3.24). da humilhação e da restauração de Jerusalém; apon- Há, portanto, um movimento dentro do livro, como ta para a humilhação e a exaltação de Cristo. Ao há também na maioria dos lamentos bíblicos, desde contemplar a vida e a obra de Cristo, o mundo pode a expressão de perda e sofrimento horrível até a essaber que Deus é bom e que, no seu tempo, fará 0 perança restaurada e a oração por renovação. bem para “a alma que o busca” (3.25). L A M E N T A Ç Õ E S N A H I S T O R I A M A I S"
+        "id": "teologia_de_lamentacoes",
+        "titulo": "Teologia de Lamentações",
+        "tipo": "texto",
+        "ordem": 6,
+        "conteudo": "A passagem central afirma a fidelidade pactual de Deus em meio à devastação (3.22–24). Deus não abandona completamente seu povo, embora seus pecados sejam grandes e mereçam o julgamento. A confissão pública dos pecados busca restauração do favor de Deus e um novo futuro. A esperança está ligada à aliança e à soberania do Senhor sobre todas as nações. O livro reconhece simultaneamente a justiça do juízo e a misericórdia renovada de Deus."
       },
       {
-        "titulo": "Na história mais ampla da Bíblia",
-        "conteudo": "Na tradição judaica, alguns trechos de Lamenta- O livro de Lamentações ecoa a forma e a terminoloções são lidos anualmente no dia 9 de Av (julhogia dos salmos de lamento. A semelhança dos escriagosto), quando os judeus lembram a destruição tores desses salmos, esse poeta está experimentando um tempo de julgamento: 0 Senhor virou 0 rosto de Jerusalém em 586 a.C., bem como a destruição para longe de seu povo por causa de seus pecados. No do segundo templo em 70 d.C. Serve como um entanto, Lamentações é 0 mais longo, 0 mais profunlembrete anual da justiça e da compaixão de Deus: do e 0 mais intenso lamento na Bíblia porque é uma ele está decidido a punir o pecado, mas oferece a resposta ao mais profundo e ao mais intenso ato de certeza de que sua misericórdia pactuai se renova julgamento da parte do Senhor sobre seu povo: a desa cada manhã. traição de Jerusalém. Esse desastre terrível também ajudou a moldar o livro de Salmos (p. ex., SI 74; 137), Em contrapartida, a tradição cristã tem negligenbem como os escritos dos profetas daquele tempo (como Jeremias e Ezequiel), mas 0 livro de Lamenciado esse livro, assim como a prática do lamento. tações talvez seja a resposta mais completa e mais Não existe nenhum comentário acerca do livro importante a esse evento central da história bíblica. antes do século IX d.C., embora os pais da Igreja tenham citado versículos individuais. Talvez isso se deva ao estudo do livro principalmente como uma"
+        "id": "lamentacoes_na_historia_mais_ampla_da_biblia",
+        "titulo": "Lamentações na história mais ampla da Bíblia",
+        "tipo": "texto",
+        "ordem": 7,
+        "conteudo": "Lamentações ecoa a forma e a terminologia dos salmos de lamento. O livro interpreta a destruição de Jerusalém como o resultado do julgamento divino contra o pecado do povo. A tragédia também influenciou os Salmos, como os Salmos 74 e 137, e os escritos de profetas como Jeremias e Ezequiel. O livro funciona como uma resposta particularmente completa à destruição de Jerusalém, evento central da história bíblica."
       },
       {
-        "titulo": "Cristo",
-        "conteudo": "peça histórica, e não como um instrumento vital de engajamento teológico. Entretanto, em tempos Jesus proferiu seu próprio lamento nos dias que levamais recentes, o livro tem sido valorizado por sua ram à sua rejeição por seu próprio povo (Mt 23.37-39; importância em ajudar pessoas e comunidades a Lc 13.34,35). Ele predisse as consequências terríveis para Jerusalém por causa dessa rejeição (Mt 24). Mas encontrar uma reação apropriada às circunstânele mesmo proferiu seu clamor de abandono quando cias pessoais traumáticas. A advertência, porém, é suportou 0 mistério de seu sofrimento redentor em que nossas experiências de sofrimento podem ser nosso lugar (Mt 27.46). Sua morte na cruz é a expresbem diferentes do sofrimento do poeta, por causão suprema da fidelidade pactuai de Deus que se resa da queda de Jerusalém. Mas há lições a serem nova a cada manhã e capacita os pecadores perdidos aprendidas, tanto individuais como coletivas, soa serem restaurados ao favor de Deus. A solenidade bre como devemos lamentar os eventos trágicos, e a compaixão das palavras de Cristo expressam a especialmente quando conectamos 0 livro com 0 bondade e a severidade de Deus que fundamentam sofrimento e a angústia de Jesus em nosso lugar. 0 evangelho (Rm 11.22,23)."
+        "id": "cristo_em_lamentacoes",
+        "titulo": "Cristo em Lamentações",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "Jesus pronunciou seu próprio lamento diante da rejeição de Jerusalém (Mt 23.37–39; Lc 13.34–35) e anunciou suas consequências. Na cruz, proferiu o clamor de abandono enquanto suportava o sofrimento redentor (Mt 27.46). Sua morte é apresentada no material como expressão suprema da fidelidade pactual de Deus, pela qual pecadores podem ser restaurados ao seu favor. A compaixão e a solenidade das palavras de Cristo expressam a bondade e a severidade de Deus que fundamentam o evangelho."
+      },
+      {
+        "id": "historia_de_interpretacao",
+        "titulo": "História de interpretação",
+        "tipo": "texto",
+        "ordem": 9,
+        "conteudo": "Na tradição judaica, trechos de Lamentações são lidos anualmente no dia 9 de Av, lembrando a destruição de Jerusalém em 586 a.C. e a destruição do segundo templo em 70 d.C. A prática serve como lembrete da justiça e da compaixão de Deus. Na tradição cristã, o livro foi durante muito tempo negligenciado, e não há comentário conhecido anterior ao século IX d.C., embora os pais da Igreja tenham citado versículos individuais. Em tempos recentes, Lamentações passou a ser valorizado por ajudar indivíduos e comunidades a responderem apropriadamente ao trauma e ao sofrimento, sem perder de vista que o sofrimento descrito no livro está ligado à queda de Jerusalém."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Lamentações",
-        "tipo": "esboco",
+        "tipo": "auto",
         "ordem": 10,
         "conteudo": [
           {
-            "nivel": 1,
-            "titulo": "JERUSALÉM OUTRORA GRANDE, AGORA DEVASTADA",
-            "referencia": "CAP. 1",
-            "subniveis": []
+            "titulo": "I. JERUSALÉM OUTRORA GRANDE, AGORA DEVASTADA (CAP. 1)",
+            "itens": []
           },
           {
-            "nivel": 1,
-            "titulo": "A IRA DO SENHOR CONTRA JUDÁ",
-            "referencia": "CAP. 2",
-            "subniveis": []
+            "titulo": "II. A IRA DO SENHOR CONTRA JUDÁ (CAP. 2)",
+            "itens": []
           },
           {
-            "nivel": 1,
-            "titulo": "A TRISTEZA DA COMUNIDADE",
-            "referencia": "CAP. 3",
-            "subniveis": []
+            "titulo": "III. A TRISTEZA DA COMUNIDADE (CAP. 3)",
+            "itens": []
           },
           {
-            "nivel": 1,
-            "titulo": "A DEGRADAÇÃO DE SIÃO",
-            "referencia": "CAP. 4",
-            "subniveis": []
+            "titulo": "IV. A DEGRADAÇÃO DE SIÃO (CAP. 4)",
+            "itens": []
           },
           {
-            "nivel": 1,
-            "titulo": "DESASTRE E PEDIDO POR RESTAURAÇÃO",
-            "referencia": "CAP. 5",
-            "subniveis": []
+            "titulo": "V. DESASTRE E PEDIDO POR RESTAURAÇÃO (CAP. 5)",
+            "itens": []
           }
         ]
       }
