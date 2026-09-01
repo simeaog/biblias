@@ -1,82 +1,324 @@
 {
-  "schema": "apoio-livro-v1",
+  "schema": "apoio-livro-v2",
   "id": "Ez",
   "nome": "Ezequiel",
-  "abreviacao": "Ezequiel",
+  "abreviacao": "Ez",
+  "fonte_pdf": "26_Ezequiel.pdf",
   "material": {
     "titulo": "Sobre Ezequiel",
-    "introducao": "No tempo do profeta Ezequiel, no ano 586 a.C. , a cidade de Jerusalém foi tomada pelos babilônios. O profeta viveu na Babilônia, para onde os israelitas tinham sido levados como prisioneiros. Ezequiel pregou mensagens de Deus dirigidas ao povo que estava ali na Babilônia e também aos moradores de Jerusalém. Deus falou a Ezequiel por meio de visões. O profeta falou ao povo a respeito dessas visões e também anunciou mensagens de Deus por meio de ações simbólicas. Ele ensinou que cada um é responsável pelos seus próprios pecados e que todos devem se renovar no seu íntimo, no coração. Ele também esperava que a própria nação de Israel começasse a viver uma vida nova na presença de Deus. Sendo ao mesmo tempo sacerdote e profeta, Ezequiel mostrou interesse pelo templo de Jerusalém e também ensinou que Deus exige que os seus adoradores vivam uma vida dedicada a ele.",
     "secoes": [
       {
-        "id": "cristo_em_ezequiel",
-        "titulo": "Cristo em Ezequiel",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "A gloria de Deus, que Ezequiel viu chegar ao templo, veio na pessoa de Jesus, de quem Joao testemunhou: “E o Verbo se fez came e habitou entre nos,e vimos a sua gloria, como a gloria do Unigenito do Pai, cheio de graga e de verdade” (Jo 1.14). Assim como a gloria de Deus saiu de Jerusalém e foi habitar com seu povo no exílio, também Jesus deixou a habitagao ao lado do Pai para se identificar com o homem pecador e sofreu “fora do arraial” em beneffcio deseu povo (Hb 13.12,13).O mediador que não foi encontrado para remover o julgamento de Judá (Ez 14) e achado agora em Jesus, o Mediador da nova aliança, que ofereceu seu proprio sangue pelos pecados de seu povo (Hb 9.11-15). Jesus e o Bom Pastor prometido por Ezequiel e aquele que restaura a justiça para suas ovelhas (Jo 10.11). Todos os que estao nele sao novas criaturas, cheios do Espírito de Deus (2Co 5.17; Ef 5.18). Mas a salvação revelada em Jesus e muito maior do que a salvação revelada a Ezequiel. Em Cristo, temos ousadia para nos aproximar do trono da graga (Hb 4.16). A cidade para a qual estamos indo não precisa de templo (Ap 21.22), porque o sacrifício final foi oferecido por Cristo uma vez por todas (Hb 10.10). Deus deu o golpe final sobre todos aqueles que se levantariam contra seu povo e contra sua cidade (cf. caps. 38; 39 com Ap 19; 20). Nessa cidade, estara não somente todo o número das tribos de Israel, mas também uma grande multidao de todas as nagdes, tribos, povos e h'nguas (Ap 7.5-9). Ezequiel foi diagnosticado como tendo sofrido de problemas extremos no relacionamento com sua mae, bem como de abuso sexual na infancia. Essas tentativas não encontraram muitos apoiadores, porque analisar psicologicamente uma pessoa histórica com base em seus escritos e sempre uma empreitada altamente especulativa. Igualmente especulativas tern sido as tentativas de identificar"
+        "titulo": "Cristo",
+        "conteudo": "Ezequiel"
       },
       {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
-        "tipo": "texto",
-        "ordem": 1,
-        "conteudo": "O livro recebe o nome do profeta exflico cujo ministério e relatado. Ezequiel significa “Deus torna forte”, um nome que se harmoniza com a tarefa para a qual ele foi chamado (ver nota em 3.8)."
+        "titulo": "Título",
+        "conteudo": "O livro recebe o nome do profeta exflico cujo ministerio e relatado. Ezequiel significa “Deus torna forte”, um nome que se harmoniza com a tarefa para a qual ele foi chamado (ver nota em 3.8)."
       },
       {
-        "id": "autor",
         "titulo": "Autor",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "Não temos informaqao sobre o profeta Ezequiel além do queseu livro nos diz. Ezequiel estava entre os deportados que Nabucodonosor levou quando capturou Jerusalém, em 597 a.C., e estabeleceu Zedequias como rei. Esses deportados inclufam o rei Joaquim, a familia real, outros cidadaos importantes e artesaos (2Rs 24.10-17). A esposa de Ezequiel faleceu pouco antes de os babilonios destrufrem Jerusalém, em 586 a.C. (24.15-18). Se o profeta tinha 30 anos quando comeqou seu ministério profético (1.1), e essa data corresponde ao quinto ano do exílio de Joaquim (1.2, 3), entao Ezequiel tinha cerca de 26 anos quando foi levado para o exílio. A ultima data registrada no livro (26 de abril de 571 a.C.; 29.17) mostra que o ministério de Ezequiel se estendeu por pelo menos 23 anos, durando até sua idade de 50 anos. As circunstancias de sua morte sao desconhecidas. Ezequiel era um sacerdote (1.3). Em geral, os sacerdotes comeqavam seu ministério no templo aos 30 anos.Entretanto, no ano em que de deveria ter comeqado seu ministério no templo, Ezequiel estava na Babilônia,a mais de 1.100quilometros de Jerusalém. Foi com essa idade significativa de sua vida que Deus o chamou para ser profeta, e sua capacitaqao profética foi reconhecida pelos lideres entre os exilados (8.1; 20.1). Nesse livro, Deus se dirige a Ezequiel varias vezes pela expressao “filho do homem”, significando “pessoa” ou “ser humano”. Nele também, a expressao enfatiza a fragilidade e a insignificancia humanas em comparaqao com a transcendencia de Deus (contraste seu uso como um título messianico em Dn 7.13; Mt 26.64; Me 14.62; Ap 14.14)."
+        "conteudo": "Nao temos informaqao sobre o profeta Ezequiel alem do queseu livro nos diz. Ezequiel estava entre os deportados que Nabucodonosor levou quando capturou Jerusalem, em 597 a.C., e estabeleceu Zedequias como rei. Esses deportados inclufam o rei Joaquim, a familia real, outros cidadaos importantes e artesaos (2Rs 24.10-17). A esposa de Ezequiel faleceu pouco antes de os babilonios destrufrem Jerusalem, em 586 a.C. (24.15-18). Se o profeta tinha 30 anos quando comeqou seu ministerio profetico (1.1), e essa data corresponde ao quinto ano do exilio de Joaquim (1.2, 3), entao Ezequiel tinha cerca de 26 anos quando foi levado para o exilio. A ultima data registrada no livro (26 de abril de 571 a.C.; 29.17) mostra que o ministerio de Ezequiel se estendeu por pelo menos 23 anos, durando ate sua idade de 50 anos. As circunstancias de sua morte sao desconhecidas. Ezequiel era um sacerdote (1.3). Em geral, os sacerdotes comeqavam seu ministerio no templo aos 30 anos.Entretanto, no ano em que de deveria ter comeqado seu ministerio no templo, Ezequiel estava na Babilonia,a mais de 1.100quilometros de Jerusalem. Foi com essa idade significativa de sua vida que Deus o chamou para ser profeta, e sua capacitaqao profetica foi reconhecida pelos lideres entre os exilados (8.1; 20.1). Nesse livro, Deus se dirige a Ezequiel varias vezes pela expressao “filho do homem”, significando “pessoa” ou “ser humano”. Nele tambem, a expressao enfatiza a fragilidade e a insignificancia humanas em comparaqao com a transcendencia de Deus (contraste seu uso como um tftulo messianico em Dn 7.13; Mt 26.64; Me 14.62; Ap 14.14)."
       },
       {
-        "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
-        "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "No final do século VII a.C., os reis de Judá, em Jerusalém, ficaram encurralados entre os babilonios e os exercitos de Faraó-Neco do Egito.O rei Jeoaquim foi colocado no trono por Faraó-Neco (2Rs 23.34) em 609 a.C. Depois de os babilonios haverem derrotado os egfpcios em Carquemis, em 605 a.C.,Jeoaquim transferiu sua lealdade e se tornou vassalo de Nabucodonosor. Ele permaneceu como vassalo da Babilônia por tresanos e, em seguida, transferiu sua lealdade de volta ao Egito (2Rs 24.1). Jeoaquim morreu no mesmo mes em que Nabucodonosor enviou uma expediqao para punilo.Elefoisucedido porseu Nabucodonosor. Após um cerco breve, Joaquim foi levado em cativeiro com grande parte da populagao de Jerusalém, incluindo Ezequiel, em 597 a.C, (2Rs 24.8-12).Ezequielse estabeleceu numa colonia de judeus cativos, provavelmente perto deTel-Abibe, no rio Quebar, umcanal que fluia por 97 quilometrosa sudeste da Babilônia,saindo do Eufrates e retomando a ele.Essecontextode exílio predomina no livro. Nabucodonosor estabeleceu Zedequias, o tio de Joaquim, como governante de Judá. Ele governou até a destruição de Jerusalém, em 586 a.C. Embora Zedequias se tenha tornado o ultimo rei de Judá, muitas pessoas, incluindo Ezequiel, consideravam Joaquim o ultimo governante legi'timo da linhagem davfdica.Todas as datas no livro de Ezequiel sao, portanto, registradas em relação aos anos do exílio de Joaquim. O reino de Zedequias caracterizouse por uma hesitagaosemelhante entre Egitoe Babilônia (17.15-19), resultando nodesastre de sua fracassada rebeliao contra a Babilônia e na destruigao total de Judá e Jerusalém. Nesse contexto, a audiencia de Ezequiel enfrentou a tentagao de se render a desilusao e ao desespero. Sentiramse comose Deusos houvesse abandonado e eles estivessemseparadosda presença dele,espiritualmente mortos (33.10; 37.1-11).Como poderiam manter sua fe noSenhor se estavam cercados pelos sfmbolos das deidades babilonicas, que pareciam conquistar tudo? A resposta esta no glorioso poder e na soberania doSenhor, na fidelidade as suas promessas e em sua graga e misericórdia para com aqueles que ele escolheu e chamou para si mesmo. Não ha razao para duvidar da autoria do livro por parte do proprio profeta, que o escreveu em algum momenta durante a parte inicial do século VI a.C. A obra completa data provavelmente de pouco depois do ultimo oraculo, que foi recebido em 571 a.C. O livro contem os tragos doestilo de um sacerdote, como poderfamos esperar a luz do contexto sacerdotal de Ezequiel. Sua estrutura unificada e sua cosmovisao coerente dao testemunho da obra de um único autor."
+        "conteudo": "No final do seculo VII a.C., os reis de Juda, em Jerusalem, ficaram encurralados entre os babilonios e os exercitos de Farao-Neco do Egito.O rei Jeoaquim foi colocado no trono por Farao-Neco (2Rs 23.34) em 609 a.C. Depois de os babilonios haverem derrotado os egfpcios em Carquemis, em 605 a.C.,Jeoaquim transferiu sua lealdade e se tornou vassalo de Nabucodonosor. Ele permaneceu como vassalo da Babilonia por tresanos e, em seguida, transferiu sua lealdade de volta ao Egito (2Rs 24.1). Jeoaquim morreu no mesmo mes em que Nabucodonosor enviou uma expediqao para puni-lo.Elefoisucedido porseu filho Joaquim,que foideixado para enfrentar a ira de Nabucodonosor. Apos um cerco breve, Joaquim foi levado em cativeiro com grande parte da populagao de Jerusalem, incluindo Ezequiel, em 597 a.C, (2Rs 24.8-12).Ezequielse estabeleceu numa colonia de judeus cativos, provavelmente perto deTel-Abibe, no rio Quebar, umcanal que fluia por 97 quilometrosa sudeste da Babilonia,saindo do Eufrates e retomando a ele.Essecontextode exilio predomina no livro. Nabucodonosor estabeleceu Zedequias, o tio de Joaquim, como governante de Juda. Ele governou ate a destruigao de Jerusalem, em 586 a.C. Embora Zedequias se tenha tornado o ultimo rei de Juda, muitas pessoas, incluindo Ezequiel, consideravam Joaquim o ultimo governante legi'timo da linhagem davfdica.Todas as datas no livro de Ezequiel sao, portanto, registradas em relagao aos anos do exilio de Joaquim. O reino de Zedequias caracterizou-se por uma hesitagaosemelhante entre Egitoe Babilonia (17.15-19), resultando nodesastre de sua fracassada rebeliao contra a Babilonia e na destruigao total de Juda e Jerusalem. Nesse contexto, a audiencia de Ezequiel enfrentou a tentagao de se render a desilusao e ao desespero. Sentiram-se comose Deusos houvesse abandonado e eles estivessemseparadosda presenga dele,espiritualmente mortos (33.10; 37.1-11).Como poderiam manter sua fe noSenhor se estavam cercados pelos sfmbolos das deidades babilonicas, que pareciam conquistar tudo? A resposta esta no glorioso poder e na soberania doSenhor, na fidelidade as suas promessas e em sua graga e misericordia para com aqueles que ele escolheu e chamou para si mesmo. Nao ha razao para duvidar da autoria do livro por parte do proprio profeta, que o escreveu em algum momenta durante a parte inicial do seculo VI a.C. A obra completa data provavelmente de pouco depois do ultimo oraculo, que foi recebido em 571 a.C. O livro contem os tragos doestilo de um sacerdote, como poderfamos esperar a luz do contexto sacerdotal de Ezequiel. Sua estrutura unificada e sua cosmovisao coerente dao testemunho da obra de um unico autor."
       },
       {
-        "id": "genero",
-        "titulo": "Gênero",
-        "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "E C A R A C T E R I S T I C A S L I T E R A R I A S O livro de Ezequiel, tal como as obras de muitos profetas escritores, e uma combinagao de Oraculos sao pronunciamentos imediatos de julgamento ou de esperanga para o povo, ressaltando os pecados pelosquais o julgamentoesta vindo sobre eles (em especial, na primeira parte do livro) ou os atributos de Deus que o levarao a livrar o remanescente de seu povo (na ultima parte do livro). Uma subcategoria desse genero consiste de oraculos contra as nações estrangeiras, que ocorrem a partir do capítulo 24, quando as noticias da queda de Jerusalém chegam aos exilados. Uma sequencia de sete oraculos contra as nações (caps. 25-32) as acusa de se deleitar com a queda de Jerusalém e ajudar os babilonios em seus atos destruidores. Essas eram boas noticias para Israel no exílio, pois mostravam que parte da promessa feita a Abraão, em Genesis 12.3— “amaldigoarei os ainda estava intacta. O que te amaldigoarem” julgamento viria sobre aqueles que se deleitavam com a queda do povo de Deus e se aproveitavam de sua rurna. Os atossinais, por meio dos quais o profeta uniu sua mensagem a uma agao impressionante ou memoravel que ilustra seu argumento, mostraramse especialmente relevantes no ministério de Ezequiel (3.22-26; 4.1-14; 5.1-4; 12.10-20; 21.6, 7, 18-24; 24.15-24; 37.15-28). Foram meios uteis de revelação para audiencias resistentes, as quais relutavam em aceitar a palavra de Deus por meio do profeta.Osatossinaisfuncionavam como parabolas encenadas e reforgavam a mensagem severa. Ezequiel também usou parabolas (caps.15-17; 19; 23) e proverbios (12.21, 22; 16.44;18.2, 3). As visoes que o profeta recebeu conferiram autenticidade a sua mensagem. Ele se encontrou pessoalmente com o Deus de quem falava; e, nas visoes, foilhe mostrado o verdadeiro estado daqueles que haviam sido deixados para tras, em Jerusalém, além do futuro do povo de Deus depois do exílio. Essas visoes acrescentaram consistencia e memorabilidade as palavras do profeta, e o quadro glorioso do futuro que as visoes delineavam representou um encorajamento para o povo de Deus permanecer fiel num presente desanimador e arduo. A profecia de Ezequiel teve profunda influencia no livro de Apocalipse, o qual incorporou muitos dos temas de Ezequiel."
+        "titulo": "Características literárias",
+        "conteudo": "0 livro de Ezequiel, tal como as obras de muitos profetas escritores, e uma combinagao de visoes, oraculos, enigmas e atos-sinais profeticos. Oraculos sao pronunciamentos imediatos de julgamento ou de esperanga para o povo, ressaltando os pecados pelosquais o julgamentoesta vindo sobre eles (em especial, na primeira parte do livro) ou os atributos de Deus que o levarao a livrar o remanescente de seu povo (na ultima parte do livro). Uma subcategoria desse genero consiste de oraculos contra as nagoes estrangeiras, que ocorrem a partir do capftulo 24, quando as noticias da queda de Jerusalem chegam aos exilados. Uma sequencia de sete oraculos contra as nagoes (caps. 25-32) as acusa de se deleitar com a queda de Jerusalem e ajudar os babilonios em seus atos destruidores. Essas eram boas noticias para Israel no exilio, pois mostravam que parte da promessa feita a Abraao, em Genesis 12.3— “amaldigoarei os ainda estava intacta. O que te amaldigoarem” julgamento viria sobre aqueles que se deleitavam com a queda do povo de Deus e se aproveitavam de sua rurna. Os atos-sinais, por meio dos quais o profeta uniu sua mensagem a uma agao impressionante ou memoravel que ilustra seu argumento, mostraram-se especialmente relevantes no ministerio de Ezequiel (3.22-26; 4.1-14; 5.1-4; 12.10-20; 21.6, 7, 18-24; 24.15-24; 37.15-28). Foram meios uteis de revelagao para audiencias resistentes, as quais relutavam em aceitar a palavra de Deus por meio do profeta.Osatos-sinaisfuncionavam como parabolas encenadas e reforgavam a mensagem severa. Ezequiel tambem usou parabolas (caps.15-17; 19; 23) e proverbios (12.21, 22; 16.44;18.2, 3). As visoes que o profeta recebeu conferiram autenticidade a sua mensagem. Ele se encontrou pessoalmente com o Deus de quern falava; e, nas visoes, foi-lhe mostrado o verdadeiro estado daqueles que haviam sido deixados para tras, em Jerusalem, alem do futuro do povo de Deus depois do exilio. Essas visoes acrescentaram consistencia e memorabilidade as palavras do profeta, e o quadro glorioso do futuro que as visoes delineavam representou um encorajamento para o povo de Deus permanecer fiel num presente desanimador e arduo. A profecia de Ezequiel teve profunda influencia no livro de Apocalipse, o qual incorporou muitos dos temas de Ezequiel."
       },
       {
-        "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
-        "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "T E M A S P R I N C I P A I S O livro de Ezequiel pode ser dividido em tres partes. Nas duas primeiras, Ezequiel anuncia julgamento sobre Jerusalém (caps.1-24) e as nações estrangeiras (caps. 25-32). Muitos entre os exilados e os que haviam ficado em Jerusalém esperavam que o exílio durasse pouco, que os deportados retomassem em brevea cidade e que Jerusalemfosse poupada de desastres posteriores. Os falsos profetas estimulavam erroneamente essa crenga. Como o Senhor escolhera Jerusalém com sua habitagao e ele mesmo defendera a cidade no passado (ver Is 36; 37), muitas pessoas acreditavam que Jerusalém era intocavel. Ezequiel tinha de advertir os exilados de que um destino pior ainda estava guardado para Jerusalém por causa da longa e contfnua história de pecado do povo. O ponto de mudança no livro e a chegada das notfcias de destruição de Jerusalém, que delimita os oraculos contra as nações (24.26, 27; 33.21, 22). Em seguida, a pregação de Ezequiel tomase dominada pelas promessas de restauração e misericórdia para o futuro (caps. 33-48). Essa estrutura de tres partes (julgamento contra Israel, julgamento contra nagdes estrangeiras e misericórdia para Israel) também pode ser encontrada em Isafas e Sofonias."
+        "conteudo": "O livro de Ezequiel pode ser dividido em tres partes. Nas duas primeiras, Ezequiel anuncia julgamento sobre Jerusalem (caps.1-24) e as nagoes estrangeiras (caps. 25-32). Muitos entre os exilados e os que haviam ficado em Jerusalem esperavam que o exflio durasse pouco, que os deportados retomassem em brevea cidade e que Jerusalemfosse poupada de desastres posteriores. Os falsos profetas estimulavam erroneamente essa crenga. Como o Senhor escolhera Jerusalem com sua habitagao e ele mesmo defendera a cidade no passado (ver Is 36; 37), muitas pessoas acreditavam que Jerusalem era intocavel. Ezequiel tinha de advertir os exilados de que um destino pior ainda estava guardado para Jerusalem por causa da longa e contfnua historia de pecado do povo. O ponto de mudanga no livro e a chegada das notfcias de destruigao de Jerusalem, que delimita os oraculos contra as nagoes (24.26, 27; 33.21, 22). Em seguida, a pregagao de Ezequiel toma-se dominada pelas promessas de restauragao e misericordia para o futuro (caps. 33-48). Essa estrutura de tres partes (julgamento contra Israel, julgamento contra nagdes estrangeiras e misericordia para Israel) tambem pode ser encontrada em Isafas e Sofonias. E Z E Q U I E L"
       },
       {
-        "id": "ezequiel_na_historia_mais_ampla_da_biblia",
-        "titulo": "Ezequiel na história mais ampla da Bíblia",
-        "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "T E O L O G I A D E O livro de Ezequiel contribui muito para nosso entendimento de Deus e de seus propositos. Entre as enfases teologicas mais importantes do profeta, estao: 1.A santidade e a transcendencia de Deus.Os exilados estavam cercados de emblemas do poder dos deuses babilonicos. Desse modo, Ezequiel proclamava o poder e a gloria ainda maior do Senhor.A revelagao dada a Ezequiel foi, portanto, mediada por um guia angelical (caps. 8; 40-48). Quando Ezequiel teve uma visao de Deus, pode descrevela somente como “a aparencia da gloria do SENHOR, em vez de oferecer detalhes precisos. Deus e juiz, onisciente e onipotente; esta cercado de esplendor e governa os assuntos das nações. Asantidade de Deus e preeminente.0 pecado e uma afronta a santidade de Deus e tern de ser julgado. Israele uma nação rebelde, totalmente merecedora de jui'zo, mas o exílio se destina a produzir uma nação purificada, um remanescente pronto para viver em obediencia diante de Deus (6.8; 9.8;11.12,13; 12.16; 14.22, 23).Talvez nenhum outro profeta apresente a historiade Israel num catalogotaoamplo de pecados e fracassoscomo Ezequiel o faz. 2. A gm;a e a misericórdia de Deus.O julgamento de Deus sobre Judá e Jerusalém não frustra seu propósito de eleger Israel. Deus prometera fazer de Abraão uma grande nação e abengoar seus descendentes (Gn 12.1-3). E, porisso, ele mostraria misericórdia a um remanescente que herdaria suas promessas e desfrutaria a restauração a sua terra. A mensagem de Ezequiel aos exilados era que Deus estaria novamente no meio deles (48.35; cf. 11.20; 14.11; 36.23, 27, 28).Anagao voltaria a ganhar vida sob o reinado de um prfncipe davfdico (37.24, 25; 45.7) que governasse com justiça (34.23). Deus daria a seu povo um novo coragao e um novo espírito (36.24-28). De fato, o que o povo não poderia realizar em sua propria forga, Deus iniciaria e realizaria em seu lugar (cf. caps. 36 e 37). 3.A soberania de Deus.Deus governa sobre os atos e o destino não somente de Israel, mas também de todas as outras nagdes (caps. 25-32). As palavras que Deus falou por meio do profeta certamente se cumpririam, como demonstrou a destruição de Jerusalém durante o ministério do proprio profeta. Mas a soberania de Deus não havia abandonado seu povo para sempre. Ele estaria com o remanescente no exílio (11.16); voltaria a pastorealos (34.11-14) e restauraria seu santuário no meio deles para sempre (37.28). N A H I S T O R I A"
+        "titulo": "Teologia",
+        "conteudo": "0 livro de Ezequiel contribui muito para nosso entendimento de Deus e de seus propositos. Entre as enfases teologicas mais importantes do profeta, estao: 1.A santidade e a transcendencia de Deus.Os exilados estavam cercados de emblemas do poder dos deuses babilonicos. Desse modo, Ezequiel proclamava o poder e a gloria ainda maior do Senhor.A revelagao dada a Ezequiel foi, portanto, mediada por um guia angelical (caps. 8; 40-48). Quando Ezequiel teve uma visao de Deus, pode descreve-la somente como “a aparencia da gloria do SENHOR, em vez de oferecer detalhes precisos. Deus e juiz, onisciente e onipotente; esta cercado de esplendor e governa os assuntos das nagoes. Asantidade de Deus e preeminente.0 pecado e uma afronta a santidade de Deus e tern de ser julgado. Israele uma nagao rebelde, totalmente merecedora de jui'zo, mas o exflio se destina a produzir uma nagao purificada, um remanescente pronto para viver em obediencia diante de Deus (6.8; 9.8;11.12,13; 12.16; 14.22, 23).Talvez nenhum outro profeta apresente a historiade Israel num catalogotaoamplo de pecados e fracassoscomo Ezequiel o faz. 2. A gm;a e a misericordia de Deus.O julgamento de Deus sobre Juda e Jerusalem nao frustra seu proposito de eleger Israel. Deus prometera fazer de Abraao uma grande nagao e abengoar seus descendentes (Gn 12.1-3). E, porisso, ele mostraria misericordia a um remanescente que herdaria suas promessas e desfrutaria a restauragao a sua terra. A mensagem de Ezequiel aos exilados era que Deus estaria novamente no meio deles (48.35; cf. 11.20; 14.11; 36.23, 27, 28).Anagao voltaria a ganhar vida sob o reinado de um prfncipe davfdico (37.24, 25; 45.7) que governasse com justiga (34.23). Deus daria a seu povo um novo coragao e um novo espirito (36.24-28). De fato, o que o povo nao poderia realizar em sua propria forga, Deus iniciaria e realizaria em seu lugar (cf. caps. 36 e 37). 3.A soberania de Deus.Deus governa sobre os atos e o destino nao somente de Israel, mas tambem de todas as outras nagdes (caps. 25-32). As palavras que Deus falou por meio do profeta certamente se cumpririam, como demonstrou a destruigao de Jerusalem durante o ministerio do proprio profeta. Mas a soberania de Deus nao havia abandonado seu povo para sempre. Ele estaria com o remanescente no exflio (11.16); voltaria a pastorea-los (34.11-14) e restauraria seu santuario no meio deles para sempre (37.28)."
       },
       {
-        "id": "historia_de_interpretacao",
-        "titulo": "História de interpretação",
-        "tipo": "texto",
-        "ordem": 7,
-        "conteudo": "D E I N T E R P R E T A Q A O O livro de Ezequiel sempre foi difi'cil para os interpretes. Dizse que um antigo rabino judeu, Hananias ben Ezequias, queimou trezentos barris de oleo em sua lampada antes de resolver todas as diferenças entre Ezequiel e a lei de Moisés. Outros rabinos consideravam o livro muito perigoso para ser lido por qualquer pessoa com menos de 30 anos. Por causa de sua natureza complexa, os interpretes antigos adotavam muitas vezes uma abordagem alegorica a exegese. Em uma homilia sobre Ezequiel 40.6-8, Gregorio, o Grande, identificou a porta oriental do templo como Jesus, e os degraus que conduzem a porta, como os meritos das virtudes que levam a salvação, e o limiar da porta como os ancestrais de Jesus. Para Tomas de Aquino, a porta fechada em Ezequiel 44.1-3 era a prova textual classica da virgindade perpetua de Maria. Desde pelo menos o tempo da Reforma, os capftulos 38 e 39 tem sido lidos frequentemente com o pano de fundo dos eventos contemporaneos. Para Martinho Lutero, Gogue era personificado nos turcos mugulmanos,enquanto Joseph Mede,autor do século XVII, pensava que os habitantes nativos do Novo Mundo eram descendentes dos citas e que eles invadiriam a Europa nos ultimos dias. Mais recentemente,os dispensacionalistas tem identificado o “prfncipe de Ros” (do hebraico rosh),de Ezequiel 38.2, com a Russia; Meseque, com Moscou; e Tubal com Tobolsk, embora esses nomes sejam todos de origem muito mais recente do que o tempo do profeta. Apesar do fracasso de muitas cronologias detalhadas sobre o fim, alguns continuam a argumentar no mesmo sentido. Na primeira parte do século XX, muitos eruditos viram Ezequiel como um profeta que oferece um novo discemimento religioso da “responsabilidade individual”,a qual e radicalmentedistinta de textos bíblicos maisantigosque enfatizam a responsabilidade coletiva (p. ex., cap.18). Estudos mais recentes tem reconhecido que passagens como Ezequiel 18 sao mais a respeito de responsabilidade geracional doque de responsabilidade individual. E Ezequiel e bem claroao mostrar que a história de qualquer geragao naodepende docomportamentodeseus pais, mas, sim,de sua propria obediencia. Alguns tentaram analisar psicologicamente o profeta, tendo em vista seu comportamento estranho. Ezequiel foi diagnosticado como tendo sofrido de problemas extremos no relacionamento com sua mae, bem como de abuso sexual na infancia. Essas tentativas não encontraram muitos apoiadores, porque analisar psicologicamente uma pessoa histórica com base em seus escritos e sempre uma empreitada altamente especulativa. Igualmente especulativas tern sido as tentativas de identificar a visao do carrotrono divino no capi'tulo 1como uma interaqao entre o profeta e uma espaqonave, uma opiniao popularizada pelo autor Erich von Daniken. Associates semelhantes entre a visao de Ezequiel e uma espaqonave tern sido identificadas em varias seitas modernas, como, por exemplo, a naqao do Isla, cujo fundador, Elijah Muhammad, sustentava essa opiniao."
+        "titulo": "Na história mais ampla da Bíblia",
+        "conteudo": "E Z E Q U I E L D A Quando Deus chamou seu povo do Egito e fez uma alianga com ele no deserto, colocou diante desse povo a vida e a morte, uma existencia pacffica na terra ou o exflio, com base na obediencia ou na desobediencia de Israel (ver Dt 28; 29). Mas ele anunciou de antemao que, por causa do apego resoluto de Israel ao pecado, a historia da nagao seria seu exflio, onde, entao, eles comegariam a compreender mais plenamente a amplitude da graga de Deus (Dt 30.1-3). Ezequiel foi chamado a profetizar para o povo sobre o qual as maldigoes da alianga haviam recafdo, apresentando-lhe a esperanga de restauragao. Porem, a visao gloriosa da restauragao e incompleta em Ezequiel. Embora Deus viesse a habitar outra vez com seu povo, o acesso a sua presenga seria limitado, a fim de impedir a profanagao do santuario (caps. 4CM-4). O povo de Deus ainda precisaria de sacriffcios regulares para expiar seus pecados (45.15, 17). A plenitude do que Ezequiel prediz so chega no tempo do Novo Testamento, quando, em Cristo, temos a garantia de um acesso maior do que as visoes de Ezequiel descrevem. No livro de Apocalipse, vemos a Nova Jerusalem, que e um imenso Santo dos Santos. Um cubo perfeito coberto de ouro puro, a cidade nao precisa de templo, pois o Senhor habita ali entre seu povo (Ap 21.22). Nessa cidade, todos os que estao em Cristo podem aproximar-se livremente do trono da graga e beber da fonte da agua da vida que flui do trono (Ap 22.1-3; cf. Ez 47.1-12)."
+      },
+      {
+        "titulo": "Cristo",
+        "conteudo": "E Z E Q U I E L A gloria de Deus, que Ezequiel viu chegar ao templo, veio na pessoa de Jesus, de quem Joao testemunhou: “E o Verbo se fez came e habitou entre nos,e vimos a sua gloria, como a gloria do Unigenito do Pai, cheio de graga e de verdade” (Jo 1.14). Assim como a gloria de Deus saiu de Jerusalem e foi habitar com seu povo no exflio, tambem Jesus deixou a habitagao ao lado do Pai para se identificar com o homem pecador e sofreu “fora do arraial” em beneffcio deseu povo (Hb 13.12,13).O mediador que nao foi encontrado para remover o julgamento de Juda (Ez 14) e achado agora em Jesus, o Mediador da nova alianga, que ofereceu seu proprio sangue pelos pecados de seu povo (Hb 9.11-15). Jesus e o Bom Pastor prometido por Ezequiel e aquele que restaura a justiga para suas ovelhas (Jo 10.11). Todos os que estao nele sao novas criaturas, cheios do Espfrito de Deus (2Co 5.17; Ef 5.18). Mas a salvagao revelada em Jesus e muito maior do que a salvagao revelada a Ezequiel. Em Cristo, temos ousadia para nos aproximar do trono da graga (Hb 4.16). A cidade para a qual estamos indo nao precisa de templo (Ap 21.22), porque o sacriffcio final foi oferecido por Cristo uma vez por todas (Hb 10.10). Deus deu o golpe final sobre todos aqueles que se levantariam contra seu povo e contra sua cidade (cf. caps. 38; 39 com Ap 19; 20). Nessa cidade, estara nao somente todo o numero das tribos de Israel, mas tambem uma grande multidao de todas as nagdes, tribos, povos e h'nguas (Ap 7.5-9). E Z E Q U I E L N A"
+      },
+      {
+        "titulo": "Na história mais ampla da Bíblia",
+        "conteudo": "D E I N T E R P R E T A Q A O O livro de Ezequiel sempre foi difi'cil para os interpretes. Diz-se que um antigo rabino judeu, Hananias ben Ezequias, queimou trezentos barris de oleo em sua lampada antes de resolver todas as diferengas entre Ezequiel e a lei de Moises. Outros rabinos consideravam o livro muito perigoso para ser lido por qualquer pessoa com menos de 30 anos. Por causa de sua natureza complexa, os interpretes antigos adotavam muitas vezes uma abordagem alegorica a exegese. Em uma homilia sobre Ezequiel 40.6-8, Gregorio, o Grande, identificou a porta oriental do templo como Jesus, e os degraus que conduzem a porta, como os meritos das virtudes que levam a salvagao, e o limiar da porta como os ancestrais de Jesus. Para Tomas de Aquino, a porta fechada em Ezequiel 44.1-3 era a prova textual classica da virgindade perpetua de Maria. Desde pelo menos o tempo da Reforma, os capftulos 38 e 39 tem sido lidos frequentemente com o pano de fundo dos eventos contemporaneos. Para Martinho Lutero, Gogue era personificado nos turcos mugulmanos,enquanto Joseph Mede,autor do seculo XVII, pensava que os habitantes nativos do Novo Mundo eram descendentes dos citas e que eles invadiriam a Europa nos ultimos dias. Mais recentemente,os dispensacionalistas tem identificado o “prfncipe de Ros” (do hebraico rosh),de Ezequiel 38.2, com a Russia; Meseque, com Moscou; e Tubal com Tobolsk, embora esses nomes sejam todos de origem muito mais recente do que o tempo do profeta. Apesar do fracasso de muitas cronologias detalhadas sobre o fim, alguns continuam a argumentar no mesmo sentido. Na primeira parte do seculo XX, muitos eruditos viram Ezequiel como um profeta que oferece um novo discemimento religioso da “responsabilidade individual”,a qual e radicalmentedistinta de textos biblicos maisantigosque enfatizam a responsabilidade coletiva (p. ex., cap.18). Estudos mais recentes tem reconhecido que passagens como Ezequiel 18 sao mais a respeito de responsabilidade geracional doque de responsabilidade individual. E Ezequiel e bem claroao mostrar que a historia de qualquer geragao naodepende docomportamentodeseus pais, mas, sim,de sua propria obediencia. Alguns tentaram analisar psicologicamente o profeta, tendo em vista seu comportamento estranho. Ezequiel foi diagnosticado como tendo sofrido de problemas extremos no relacionamento com sua mae, bem como de abuso sexual na infancia. Essas tentativas nao encontraram muitos apoiadores, porque analisar psicologicamente uma pessoa historica com base em seus escritos e sempre uma empreitada altamente especulativa. Igualmente especulativas tern sido as tentativas de identificar a visao do carro-trono divino no capi'tulo 1como uma interaqao entre o profeta e uma espaqonave, uma opiniao popularizada pelo autor Erich von Daniken. Associates semelhantes entre a visao de Ezequiel e uma espaqonave tern sido identificadas em varias seitas modernas, como, por exemplo, a naqao do Isla, cujo fundador, Elijah Muhammad, sustentava essa opiniao."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Ezequiel",
-        "tipo": "outline",
-        "ordem": 8,
-        "conteudo": "1. Vocação de Ezequiel (1.1—3.27) 2. Profecias sobre a queda de Jerusalém (4.1—24.27) 3. Profecias contra as nações pagãs (25.1—32.32) 4. Promessas de Deus ao seu povo (33.1—37.28) 5. Condenação de Gogue (38.1—39.29) 6. O futuro templo e a futura terra de Israel (40.1—48.35)"
+        "tipo": "esboco",
+        "ordem": 11,
+        "conteudo": [
+          {
+            "nivel": 1,
+            "titulo": "0 CHAMADO E 0 COMISSIONAMENTO DE EZEQUIEL (CAPS. 1-3)",
+            "subniveis": [
+              {
+                "nivel": 2,
+                "titulo": "Prefacio",
+                "referencia": "1.1-3",
+                "subniveis": []
+              },
+              {
+                "nivel": 2,
+                "titulo": "A visao do carro-trono",
+                "referencia": "1.4-28",
+                "subniveis": []
+              }
+            ]
+          },
+          {
+            "nivel": 1,
+            "titulo": "0 chamado",
+            "referencia": "2.1-3.15",
+            "subniveis": []
+          },
+          {
+            "nivel": 1,
+            "titulo": "0 atalaia",
+            "referencia": "3.16-27",
+            "subniveis": []
+          },
+          {
+            "nivel": 1,
+            "titulo": "JULGAMENTO SOBRE JUDA E JERUSALEM (CAPS. 4-24)",
+            "subniveis": [
+              {
+                "nivel": 2,
+                "titulo": "Profecias contra Jerusalem e sua terra",
+                "subniveis": [
+                  {
+                    "nivel": 3,
+                    "titulo": "Agoes simbolicas sobre a destruigao de Jerusalem (caps. 4-5)",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Oraculos contra os montes de Israel",
+                    "referencia": "cap. 6",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "0 fim",
+                    "referencia": "cap. 7",
+                    "subniveis": []
+                  }
+                ]
+              },
+              {
+                "nivel": 2,
+                "titulo": "Uma visao de julgamento em Jerusalem (caps. 8-11) C Oraculos sobre os pecados de Israel e Jerusalem (caps. 12-24)",
+                "subniveis": [
+                  {
+                    "nivel": 3,
+                    "titulo": "Duas agoes simbolicas",
+                    "referencia": "12.1-20",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Proverbios populares sobre julgamento demorado (12.21-28)",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Falsos profetas e falsas profetisas",
+                    "referencia": "cap. 13",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Consequencias da idolatria",
+                    "referencia": "cap. 14",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Parabola da videira",
+                    "referencia": "cap. 15",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Parabola da esposa infiel",
+                    "referencia": "cap. 16",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Parabola das duas aguias 8.0 proverbio das uvas verdes (cap. 18)",
+                    "referencia": "cap. 17",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Alegoria de lamento para os reis de Israel",
+                    "referencia": "cap. 19",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Uma revisao da historia de rebeliao de Israel (cap. 20) 11Babilonia, a espada de Deus (cap. 21)",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Os pecados de Jerusalem",
+                    "referencia": "cap. 22",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "A parabola das duas irmas",
+                    "referencia": "cap. 23",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "A parabola da panela",
+                    "referencia": "24.1-14",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "A morte da esposa de Ezequiel",
+                    "referencia": "24.15-27",
+                    "subniveis": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nivel": 1,
+            "titulo": "ORACULOS CONTRA AS NACOES ESTRANGEIRAS (CAPS. 25-32)",
+            "subniveis": [
+              {
+                "nivel": 2,
+                "titulo": "Amom",
+                "referencia": "25.1-7",
+                "subniveis": []
+              },
+              {
+                "nivel": 2,
+                "titulo": "Moabe",
+                "referencia": "25.8-11",
+                "subniveis": []
+              }
+            ]
+          },
+          {
+            "nivel": 1,
+            "titulo": "Edom",
+            "referencia": "25.12-14",
+            "subniveis": []
+          },
+          {
+            "nivel": 1,
+            "titulo": "Filistia",
+            "referencia": "25.15-17",
+            "subniveis": [
+              {
+                "nivel": 2,
+                "titulo": "Tiro",
+                "referencia": "26.1-28.19",
+                "subniveis": []
+              },
+              {
+                "nivel": 2,
+                "titulo": "Sidom",
+                "referencia": "28.20-26",
+                "subniveis": []
+              },
+              {
+                "nivel": 2,
+                "titulo": "Egito",
+                "referencia": "29-32",
+                "subniveis": []
+              }
+            ]
+          },
+          {
+            "nivel": 1,
+            "titulo": "BENCAO PARA JUDA E JERUSALEM",
+            "referencia": "CAPS. 33-48",
+            "subniveis": [
+              {
+                "nivel": 2,
+                "titulo": "Ezequiel, o atalaia",
+                "referencia": "cap. 33",
+                "subniveis": []
+              },
+              {
+                "nivel": 2,
+                "titulo": "Urn novo Pastor",
+                "referencia": "cap. 34",
+                "subniveis": []
+              }
+            ]
+          },
+          {
+            "nivel": 1,
+            "titulo": "Uma nova terra",
+            "referencia": "cap. 35; 36",
+            "subniveis": []
+          },
+          {
+            "nivel": 1,
+            "titulo": "Um novo povo",
+            "referencia": "37.1-14",
+            "subniveis": [
+              {
+                "nivel": 2,
+                "titulo": "Uma nova unidade",
+                "referencia": "37.15-28",
+                "subniveis": []
+              },
+              {
+                "nivel": 2,
+                "titulo": "0 teste final",
+                "referencia": "caps. 38; 39",
+                "subniveis": []
+              },
+              {
+                "nivel": 2,
+                "titulo": "A visao de uma Jerusalem restaurada (caps. 40-48)",
+                "subniveis": [
+                  {
+                    "nivel": 3,
+                    "titulo": "Formando o espago sagrado",
+                    "referencia": "caps. 40-42",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Enchendo o espago sagrado",
+                    "referencia": "caps. 43-46",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Um rio de agua vivificadora",
+                    "referencia": "cap. 47.1-12",
+                    "subniveis": []
+                  },
+                  {
+                    "nivel": 3,
+                    "titulo": "Limites e repartigao da terra",
+                    "referencia": "47.13-48.35",
+                    "subniveis": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
-  },
-  "referencias_inline": true,
-  "politica_traducao": "independente",
-  "fonte_base": "26_Ezequiel.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  }
 }

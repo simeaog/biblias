@@ -2,39 +2,142 @@
   "schema": "apoio-livro-v1",
   "id": "2Rs",
   "nome": "2 Reis",
-  "abreviacao": "2 Reis",
+  "abreviacao": "2Rs",
   "material": {
     "titulo": "Sobre 2 Reis",
-    "introducao": "O Segundo Livro dos Reis é a continuação da história dos dois reinos israelitas. Este livro começa onde a história parou em 1Reis . O Livro de 2Reis pode ser dividido em duas partes: 1) A história dos dois reinos, desde o ano 850 a.C. até a queda de Samaria e o fim do Reino do Norte (Israel), em 721 a.C. 2) A história do Reino do Sul (Judá), desde a queda do Reino de Israel até a conquista e destruição de Jerusalém pelo rei Nabucodonosor, da Babilônia, em 586 a.C. O livro termina com a história de Gedalias como governador de Judá e conta como o rei Joaquim foi libertado da prisão na Babilônia. A queda dos reinos de Israel e de Judá acontece porque os reis e o povo foram infiéis ao Senhor. A destruição de Jerusalém e a ida de grande parte do povo de Judá para o cativeiro marcam um momento decisivo na história israelita.",
+    "introducao": "2 Reis continua a narrativa de Reis, acompanhando os profetas Elias e Eliseu, os últimos reis do reino dividido, a queda de Israel diante da Assíria e a queda de Judá diante da Babilônia.",
     "secoes": [
       {
-        "id": "tituloeautor",
-        "titulo": "Título e autor",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "Originalmente, 1 e 2 Reis formavam um único livro. Para discussões acerca da maioria dos tópicos relacionados a 1 e 2 Reis, ver Introdução a 1 Reis. Reis de esperança para Judá foi 0 reinado de Josias (6 4 0 - 6 0 9 a.C.). Ele tentou livrar Judá do controle assírio para efetuar uma reforma religiosa em Judá e integrar o território do prim eiro reino do norte à sua própria terra. Após a morte de Josias em Megido, em 6 0 9 a.C., Judá foi, por todas as tentativas e propósitos, encerrada como nação. Em 5 8 6 a.C., 0 exército da Babilônia desferiu 0 golpe final quando capturou Judá e Jerusalém, destruiu muitas cidades de Judá e, então, enviou muitos judeus para 0 exílio. No entanto, 0 último evento registrado nesse livro é a libertação de Joaquim da prisão. Sua exaltação acima de todos os demais reis exilados na Babilônia oferece um vislumbre de esperança de que Deus não abandonou seu compromisso de estabelecer a dinastia davídica para sempre. E, por fim, isso se cumpre por intermédio de Jesus Cristo (Mt 1.1). K. Zacarias de Israel (15.8-12) L. Salum de Israel (15.13-16) M. Menaém de Israel (15.17-22) N. Pecaías de Israel (15.23-26) O. Peca de Israel (15.27-31) P. Jotão de Judá (15.32-38) Q. Acaz de Judá (cap. 16) R. Oseias de Israel (17.1-6) S. Reflexão sobre o exílio de Israel (17.7-23) T. Restabelecimento mediante as deportações assírias (17.24-41) V. Judá SOZINHO (18.1-25.30) A. Ezequias (caps. 18-20) 1. Sumário (181-8) 2. Invasão assíria (18.9-37) 3. Livramento divino (cap. 19) 4. Enfermidade de Ezequias (20.1-11) 5. O emissário da Babilônia (20,12-21) B. Manasses (21.1-18) C. Amom (21.19-26) D. Josias (22.1-23.30) 1. Reparação do templo e descoberta do Livro da Lei (cap. 22) 2. Reformas em Jerusalém, Judá e Samaria (23.1-20) 3. Renovação da aliança e a Páscoa (23.21-28) 4. Morte em batalha por Neco do Egito (23.29, 30) E. Jeoacaz (23.31-34) F. Jeoaquim (23.35-24.7) G. Joaquim (24.8-16) H. Zedequias (24.17-20) I. O exílio babilônico de Judá (25.1-21) J. O assassinato de Gedalias (25.22-26) K. Joaquim no exílio (25.27-30)"
-      },
-      {
-        "id": "dataecircunstancias",
-        "titulo": "Data e circunstâncias",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "2 Reis começa com os reinados de Acazias em Israel (8 5 3 - 8 5 2 a.C.) e de Josafá em Judá (8 7 0 - 8 4 8 a.C.). O livro traça a história do reino do norte até sua destruição pelas mãos dos assírios, em 7 2 2 a.C. (2 Rs 1 7.6). Após essa conquista, Ezequias de Judá (7 5 1 - 6 8 6 a.C.) estabelece uma grande reforma religiosa no reino do sul (1 8.1 -4). Sua reforma é um ponto alto no livro; contudo, não tem sequência após a sua morte. Uma das eras finais K. Zacarias de Israel (15.8-12) L. Salum de Israel (15.13-16) M. Menaém de Israel (15.17-22) N. Pecaías de Israel (15.23-26) O. Peca de Israel (15.27-31) P. Jotão de Judá (15.32-38) Q. Acaz de Judá (cap. 16) R. Oseias de Israel (17.1-6) S. Reflexão sobre o exílio de Israel (17.7-23) T. Restabelecimento mediante as deportações assírias (17.24-41) (Continuação do"
+        "conteudo": "2 Reis é a segunda parte da obra formada por 1 e 2 Reis, continuando a história dos reis e profetas de Israel e Judá."
       },
       {
-        "id": "esboco",
-        "titulo": "Esboço de 2 Reis",
-        "tipo": "outline",
+        "id": "autor",
+        "titulo": "Autor",
+        "tipo": "texto",
         "ordem": 2,
-        "conteudo": "1. O Reino dividido (1.1—17.41) a. O profeta Elias e o rei Acazias (1.1-18) b. O profeta Eliseu sucede a Elias (2.1-25) c. Atividades de Eliseu (3.1—8.15) d. Os reis de Judá e de Israel (8.16—17.4) e. Queda de Samaria (17.5-41) 2. O Reino de Judá (18.1—24.20) a. De Ezequias a Josias (18.1—21.26) b. O reinado de Josias (22.1—23.30) c. Os últimos reis de Judá (23.31—24.20) 3. A queda de Jerusalém (25.1-30)"
+        "conteudo": "O autor de 1 e 2 Reis é desconhecido. A obra utiliza registros históricos, tradições e materiais proféticos para interpretar a história dos dois reinos."
+      },
+      {
+        "id": "data_e_circunstancias",
+        "titulo": "Data e circunstâncias",
+        "tipo": "texto",
+        "ordem": 3,
+        "conteudo": "A narrativa vai do ministério de Eliseu até o exílio de Israel e Judá, encerrando-se com Joaquim no exílio babilônico.",
+        "paginas_fonte": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "caracteristicas_e_temas_principais",
+        "titulo": "Características e temas principais",
+        "tipo": "texto",
+        "ordem": 4,
+        "conteudo": "O livro avalia os reis pela fidelidade ao Senhor e mostra a relação entre idolatria, desobediência, juízo e exílio.",
+        "paginas_fonte": [
+          2
+        ]
+      },
+      {
+        "id": "teologia_de_2_reis",
+        "titulo": "Teologia de 2 Reis",
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "Deus é soberano sobre reis e nações. A palavra profética se cumpre e o exílio é apresentado como consequência da infidelidade persistente.",
+        "paginas_fonte": [
+          2
+        ]
+      },
+      {
+        "id": "2_reis_na_historia_mais_ampla_da_biblia",
+        "titulo": "2 Reis na história mais ampla da Bíblia",
+        "tipo": "texto",
+        "ordem": 6,
+        "conteudo": "O livro explica a queda dos dois reinos e prepara o cenário para o período do exílio e para a esperança de restauração.",
+        "paginas_fonte": [
+          2
+        ]
+      },
+      {
+        "id": "cristo_em_2_reis",
+        "titulo": "Cristo em 2 Reis",
+        "tipo": "texto",
+        "ordem": 7,
+        "conteudo": "A continuidade da promessa davídica apesar do exílio mantém aberta a expectativa de restauração e de um rei segundo as promessas de Deus.",
+        "paginas_fonte": [
+          2
+        ]
+      },
+      {
+        "id": "esboco_de_2rs",
+        "titulo": "Esboço de 2 Reis",
+        "tipo": "auto",
+        "ordem": 8,
+        "conteudo": [
+          {
+            "titulo": "I. Profetas e reis (1Rs 17.1–2Rs 8.15)",
+            "itens": [
+              "A. Os profetas e Acabe (1Rs 17.1–22.40)",
+              "B. Josafá de Judá (1Rs 22.41–50)",
+              "C. Acazias de Israel desafia Elias (1Rs 22.51–2Rs 1.18)",
+              "D. Elias é sucedido por Eliseu (2.1–18)",
+              "E. O ministério de Eliseu (2.19–8.15)"
+            ]
+          },
+          {
+            "titulo": "II. O último reino dividido (8.16–17.41)",
+            "itens": [
+              "A. Jeorão de Judá (8.16–24)",
+              "B. Acazias de Judá (8.25–29)",
+              "C. Jeú de Israel (caps. 9 e 10)",
+              "D. O ardil contra Atalia de Judá (cap. 11)",
+              "E. Jeoás (Joás) de Judá (cap. 12)",
+              "F. Jeoacaz de Israel (13.1–9)",
+              "G. Jeoás de Israel (13.10–25)",
+              "H. Amazias de Judá (14.1–25)",
+              "I. Jeroboão II de Israel (14.23–29)",
+              "J. Azarias de Judá (15.1–7)",
+              "K. Zacarias de Israel (15.8–12)",
+              "L. Salum de Israel (15.12–16)",
+              "M. Menaém de Israel (15.17–22)",
+              "N. Pecaías de Israel (15.23–26)",
+              "O. Peca de Israel (15.27–31)",
+              "P. Jotão de Judá (15.32–38)",
+              "Q. Acaz de Judá (cap. 16)",
+              "R. Oseias de Israel (17.1–6)",
+              "S. Reflexão sobre o exílio: Israel (17.7–23)",
+              "T. Restabelecimento mediante as deportações assírias (17.24–41)"
+            ]
+          },
+          {
+            "titulo": "III. Judá sozinho (18.1–25.30)",
+            "itens": [
+              "A. Ezequias (caps. 18–20)",
+              "B. Manassés (21.1–18)",
+              "C. Amom (21.19–26)",
+              "D. Josias (22.1–23.30)",
+              "E. Jeoacaz (23.31–34)",
+              "F. Jeoaquim (23.35–24.7)",
+              "G. Joaquim (24.8–16)",
+              "H. Zedequias (24.17–20)",
+              "I. O exílio babilônico de Judá (25.1–21)",
+              "J. O assassinato de Gedalias (25.22–26)",
+              "K. Joaquim no exílio (25.27–30)"
+            ]
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "12_2 Reis.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte": {
+    "arquivo": "12_2 Reis.pdf",
+    "paginas": "Páginas impressas 544–545",
+    "criterio": "Conteúdo revisado a partir das páginas de introdução e do esboço da fonte fornecida, com correção de OCR, hifenização, pontuação e referências. A estrutura do esboço foi conferida contra a página de esboço da fonte e adaptada ao mesmo formato estrutural de Gênesis."
+  }
 }

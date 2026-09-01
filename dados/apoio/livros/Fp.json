@@ -2,67 +2,136 @@
   "schema": "apoio-livro-v1",
   "id": "Fp",
   "nome": "Filipenses",
-  "abreviacao": "Filipenses",
+  "abreviacao": "Fp",
   "material": {
     "titulo": "Sobre Filipenses",
-    "introducao": "Filipos era uma cidade que ficava na província romana da Macedônia, região que hoje faz parte da Grécia. A igreja de Filipos foi a primeira fundada na Europa por Paulo, na sua segunda viagem missionária ( At 16.12-40). Anos depois, quando estava na cadeia (1.7), Paulo escreveu esta Epístola aos Filipenses . Ele havia recebido notícias a respeito dos cristãos de Filipos e tinha ficado sabendo que havia sérios problemas entre eles. Estava muito preocupado com as falsas doutrinas que algumas pessoas ensinavam lá e também por saber que alguns líderes da igreja eram contra ele. Ao mesmo tempo, Paulo havia recebido ajuda dos cristãos de Filipos; ele escreveu esta epístola não somente para tratar dos problemas da igreja, mas também para agradecer aos filipenses tudo o que tinham feito por ele. Esta epístola mostra o grande amor que Paulo tinha pelos filipenses e fala da confiança, da alegria, do amor cristão e da firmeza que devem ser qualidades dos seguidores de Jesus Cristo. Paulo diz que, acima de tudo, eles devem imitar o exemplo do próprio Cristo, que seguiu o caminho da humildade e da obediência a Deus, caminho esse que o levou à morte na cruz e à altíssima posição de Senhor de todos (2.5-11). É com um carinho todo especial que Paulo se despede dos seus queridos amigos de Filipos (4.1-9).",
+    "introducao": "Filipenses é uma carta marcada por alegria, gratidão e profunda afeição entre Paulo e a igreja. Ao mesmo tempo, enfrenta perseguição, falsos ensinos e conflitos internos. Paulo apresenta Cristo como o modelo supremo de humildade e chama a igreja à unidade, perseverança, contentamento e fidelidade ao evangelho.",
     "secoes": [
       {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "O autor identifica a si mesmo como Paulo (1.1); e a Igreja primitiva atribuia unanimemente essa carta a ele.Acarta tern muitas referencias pessoais,sendo semelhanteaoutrosescritosde Paulo. Essesfatos,em conjunto, não deixamduvida de que ele e oautor. O comego do envolvimento de Paulo com a igreja em Filipos e relatado em Atos 16. Compelido por uma visao(At 16.6-10), Pauloe seus companheiros viajaram para Filipos (At 16.12). Durante a breve permanencia deles, Deus fez obras poderosas, e uma igreja foi estabelecida (At 16.40), a primeira igreja de Paulo em solo europeu. Paulo retornou em, pelo menos, mais duas ocasioes para fortaleceros crentes (At 20.1-6; 2Co 2.13)."
-      },
-      {
-        "id": "data_e_circunstancias",
-        "titulo": "Data e circunstâncias",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "Paulo escreve da prisao (1.12-30), mas a localizagao do aprisionamentoe um assunto polemico.Alguns pensam que ele escreveu de Efeso, embora Atos 19 não diga nada sobre seu aprisionamento durante o longo ministério nesse local. Podese elaborar um argumento mais forte no sentido de que Paulo escreveu esta carta durante seu aprisionamento em Cesareia (At 23.23-26.32). Entretanto, e' mais provavel, em harmonia com a tradição estabelecida, que Paulo tenha escrito Filipenses durante seu aprisionamento em Roma, descrito em Atos 28, e aos que a tenha escrito perto dofinal desse período, por volta de 61 d.C.Suas referenciasa “guarda pretoriana” (1.13) e a “casa de Cesar” (4.22) se harmonizam melhor com um contexto romano, e a linguagem de 1.7-26 (com a possibilidade de execugao)sugere procedimentos legais no nivel maiselevado. Finalmente, o sucesso conti'nuo do ministério de Paulo duranteoaprisionamento(1.12-14)esta em harmonia com sua liberdade de pregar duranteoconfinamentoem Roma (At 28.16-31). A cidade de Filipos recebeu esse nome em honra a Filipe da Macedonia, pai de Alexandre, o Grande. Sua localizagao na estrada principal, entre as provincias orientais e Roma, contribuiu para sua importancia. Uma colonia romana habitada em parte por soldados romanos aposentados, a cidade proporcionava a seus habitantes os privileges da cidadania romana (incluindo isengao de impostose direitoaodevido processolegal nas cortes romanas). As referencias de Paulo a cidadania, em 1.27 e em 3.20(ver notas),seriam especialmentesignificativas para os residentes de uma cidade que era colonia da capital imperial. A ausencia de citagoes do Antigo Testamento (embora aparegam alusoes em 2.5-11, 15e talvez em algunsoutros versículos)ea ausencia de nomes judaicos na carta indicam que a igreja de Filiposera formada amplamente por gentios.O fato de Paulo ter pregado inicialmente em um lugar de oragaofora da cidadesugere que ele naoencontrou nenhuma sinagoga em Filipos, uma inferencia que pareceserconfirmada pela evidenciaarqueologica. O livro de Filipenses vibra com alegria e gratidao pela maneira como Deus estava levando adiante sua obra de salvação entre os filipenses e pelos laqosespeciaisentre Pauloeseusleitores.Ao mesmo tempo, ha seriedade na carta. Osfilipenses enfrentavam perseguição (1.27-30) e sentiam as pressSes exercidas pelos falsos ensinos (3.2-21). Conflitos na igreja colocavam em risco seu testemunho para o mundo e sua capacidade de resistir aos ataques (1.27-2.18; 4.2, 3)."
+        "conteudo": "A carta é dirigida aos cristãos de Filipos e se apresenta como escrita por Paulo e Timóteo. A tradição antiga atribui sua autoria a Paulo, e as referências pessoais reforçam essa identificação."
+      },
+      {
+        "id": "autor",
+        "titulo": "Autor",
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "Paulo se identifica na abertura. As referências ao aprisionamento, à relação com os filipenses e aos cooperadores se harmonizam com seu ministério e com a tradição da igreja primitiva."
+      },
+      {
+        "id": "data_circunstancias",
+        "titulo": "Data e circunstâncias",
+        "tipo": "texto",
+        "ordem": 3,
+        "conteudo": "Paulo escreve da prisão. Referências à guarda pretoriana e à casa de César são compatíveis com o contexto romano, e a linguagem sobre a possibilidade de execução combina com um período de julgamento. A igreja de Filipos tinha história especial com Paulo desde sua primeira visita narrada em Atos 16 e mantinha parceria com ele."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "O livro de Filipenses tern sido classificado por muitoscomo uma “carta de amizade”.O livrosegue,em geral, as convenqoes epistolares tfpicas do século I (ver IntroduqaoasEpfstolas).Contem umaabertura (1.1, 2), um corpo (1.3-4.20)e uma conclusao padrao (4.21-23).Alguns tern sugerido que, embora Filipenses seja claramente uma epístola, classificala mais estritamente como uma “carta de amizade” implica simplificar demais a natureza complexa do livro. Pauloadaptaasconvenqoesepistolares antigas para satisfazer suas proprias necessidades, e Filipenses, portanto,e maiscomplexa que muitasoutras cartas de amizade daantiguidade.Apesar disso,caracterfsticas desse tipo de carta sao proeminentes em muitas passagens desse livro (por exemplo, 1.8, 27; 2.1, 2; 4.15). Mas Paulo não esta meramente repetindo ideiasdeamizade grecoromanas.Ele redefine aamizadeem relaqaoacomunhaodos crentescom Cristo e asua propria comunhaocom outroscrentes. C A R A C T E R I S T I C A S L I T E R A R I A S Muitos eruditos reconhecem que o tema, ou a principal proposigao desta carta, deve ser achado em 1.27: “Vivei, acima de tudo, por modo digno do evangelho de Cristo, para que, ou indo vervos ou estando ausente, ouqa, no tocante a vos outros, que estais firmes em um só espírito, como uma só alma, lutando juntos pela fe evangelica”. Varias preocupaqoes transparecem nesse versículo: a unidade da Igreja, a integridade do evangelho e a firmeza em face de oposiqao. Em varios trechos da carta, Paulo exorta osfilipenses a seguirem a unidade que possuem em Cristo e para a qual Cristo os chama (2.1-18; 4.2, 3).Também os exorta a preservar a integridade do evangelho contra os falsos mestres e o falso ensino (3.1-11). Nunca pode haver verdadeira unidade crista quando o evangelho não e proclamado e mantido com clareza. E uma pessoa não pode abraqar genuinamente o evangelho enquanto se mantem indiferente as afirmaqoes da unidade crista. Paulo da o exemplo de perseverança em face desofrimento,avaliando, alegremente, seu aprisionamento e suas possfveis consequenciasem relaqao ao progresso do evangelholho (1.12-26, 28, 29). Alguns eruditos consideram 2.5-11 um hino cristão primitivo, ou adaptado por Paulo, ou uma composição original dele.Seja ou não um hino, a poesia destaseqao e digna de observaqao.A elegancia da redaqao de Paulo na passagem reflete seu elevado contentamento. Alguns eruditos críticos tern argumentado que o capítulo 3 seria um fragmento independente que foi unido aos capítulos 1 e 2 na formaqao desta epístola. Elesapelam especialmente a mudanqa de tom no infcio de 3.2 (“Acautelaivos dos caes”). Devido a seriedade das questões abordadas por Paulo neste capítulo, a mudanqa de tom não e inesperada.Além disso, Paulo enfatiza, nestecapftulo, duas questões que dominaram seu argumento nos dois primeiros capítulos desta carta: o sofrimento por Cristo(3.10) e a humildade genufna (3.3).Eruditos também notaram varias conexoes de linguagem entre o capítulo 3 e porqoes anteriores da carta. Não ha nenhuma razao convincente para duvidarmos disso; e ha razoes suficientes para aceitarmos a unidade e a integridade desta epístola."
+        "ordem": 4,
+        "conteudo": "Muitos classificam Filipenses como carta de amizade, embora a composição seja mais complexa. Ela segue convenções epistolares antigas, com abertura, corpo e conclusão, adaptadas às necessidades pastorais de Paulo."
       },
       {
-        "id": "caracteristicas_e_temas_principais",
+        "id": "caracteristicas_literarias",
+        "titulo": "Características literárias",
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "A carta combina ação de graças, exortação, autobiografia, ensino cristológico e instruções práticas. O chamado à unidade culmina no hino de Cristo em 2.5-11. Paulo também usa sua própria vida como exemplo de serviço, sofrimento e busca de Cristo."
+      },
+      {
+        "id": "caracteristicas_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "T E M A S P R I N C I P A I S Apesar de sua pequena extensao, Filipenses incorpora varios temas que enriquecem nosso entendimento da pessoa e da obra de Cristo, bem como da natureza do serviqo cristão fiel.Alguns dos temas mais importantes: 1.A afeigao de Paulo por seus leitores.Esta epístola da ample testemunho do vinculo de amor especial que Paulo nutria pelos filipenses (1.3-8;4.10-19). A igreja em Filipos havia sustentado fielmente o ministério de Paulo, e a disposiqao de sofrerem com ele, por causa de Cristo, era uma fonte de encorajamento para Paulo. 2. Alegria.Embora Paulo estivesse na prisao, sua carta ressoa o tema da alegria. Variaqoes da palavra “alegria” ocorrem 16 vezes na carta. A alegria de Paulo esta alicerqada na paz de Deus, o antfdoto para toda ansiedade (4.4-7). referir ao Pai (1.2; 2.11; 4.20). A designagaofavorita de Paulo para Jesus Cristo e “oSenhor” (kyrios,em grego; ver 1.2; 2.11, 19; 3.8, 20; 4.23). Por outro lado, Paulo afirma, nesta carta, que o Pai e o Filho sao um só Deus. Ambos sao divinos, e devese prestar adoragao a ambos (Fp 2.5-11). Ao chamar Jesus Cristo “o Senhor”, Paulo o identifica com Yahweh, o Deus de Israel. Mas, ao chamar o Pai “Deus”, e Jesus, “o Senhor”, Paulo mostra que ha distingao de pessoas na Divindade. Finalmente, Deus, o Espfrito Santo, esta ao lado de Deus, o Pai, e de Jesus Cristo (1.19). A teologia de Paulo e trinitaria, confessando um único Deus em tres pessoas. 4. O exemplo de humildade de Cristo. O magm'fico “Hino para Cristo” (2.5-11) oferece um modelo para os crentes. Antes de encarnar (“se fez carne” — Jo 1.14), Cristo Jesus era verdadeiramente Deus. Mas ele se humilhou e assumiu a forma de servo ao se vestir da natureza humana para ir,obedientemente, a profundeza da humilhagao e da angustia — “morte de cruz\" (2.8). Entretanto, ao adotar uma natureza humana verdadeira e completa, Jesus não deixou de ser Deus. Antes, Cristo manifestou seu carater divino ao se tomar um servo humano;e, por isso, ele foi exaltado pelo Pai como Senhor de todos, para ser adorado por toda criatura,em todo lugar,em cumprimento de Isafas 45.23. Ver História de Interpretagao, a seguir. 5. Justificagdo somente pela graga, somente pelafe.Ao contrariodaquelesqueexigiam obediencia a lei do AntigoTestamento como uma forma de merecer a salvação, Paulo enfatiza a vontade de Deus de que seu povo seja justificado e receba a justiça de Deus como um dom, e não por se esforgarem para estabelecer sua propria justiça. Embora Paulo tivesse sido escrupuloso em sua obediencia a lei, chegou a entender que sua obediencia não poderia merecer uma posigao de justo diante de Deus e que sua confiança nessa obediencia era um grande pecado, porque o impedia de confiar em Deus. Paulo ve com tristeza sua obediencia anterior (3.7, 8) e, agora,sua confiança e apenas Cristo (3.3, 9). 6. A vida crista.A carta esta cheia de instruções sobre o cristianismo pratico. Assim como Cristo se tomou servo, também o cristão tomase o servo de Cristo (1,1).Somente a pessoa escravizada a Cristo e livre para servir e amar os outros (2.3-5). 7. O contribuir cristão.Paulo termina a carta com um indicador significativo da vida crista, ou seja, um ponto de vista dos recursos materials e da contribuigao para atender as necessidades alheias. Em 4.18, Paulo associa as dadivas financeiras as ofertas e aos sacriffcios do culto no tabernáculo e no templo do Antigo Testamento.Também ensina por meio doexemplo da beleza docontentamento na vida (4.11-13).Somente a pessoa escravizada a Cristo e dotada de poder por Cristo pode abragar esse ponto de vista dos recursos pessoais. 8. Identificação com Cristo. Paulo enfatiza a importancia da identificação com Cristo em sua morte e ressurreição. Tal como aconteceu com Cristo, sofrer, para o crente, e o preludio da ressurreição e uma maneira pela qual chega a experimentar agora o poder da ressurreição de Cristo (3.10, 11). No presente, e em meio a luta constante que o cristão experimenta alegriae poder (3.10; 4.13). 9. Perseverança.A importancia de se esforgar pelo alvo da salvação plena e ressaltada. Confiante no chamado de Deus, Paulo prossegue rumo ao premio celestial (3.13, 14). A medida que os cristãos vao agindo, percebem que Deus esta operando neles (2.12, 13). O esforqo humano e precisamente a area em que o poder de Deus se manifesta, e a perseveranga para a gloria e um dom outorgado por Deus a todo aquele que confia somente em Cristo para a salvação. Quando Deus comega uma boa obra numa pessoa,sempre a completa (1.6); e nosso prosseguir em arrependimento, fe e obediencia e evidencia de que estamos somente em Cristo e de que somos herdeiros das promessasdoSenhor. T E O L O G I A D E F I L I P E N S E S Paulo não somente chama os crentes a unidade, como também demonstra como seguir a unidade na Igreja.Unidade e um mandamento de Deus (1.27; 2.2; 4.2, 3). A unidade e possfvel somente quando os crentes se comprometem a langar fora “inveja” e “vangloria”; e, em vez disso, estao comprometidos a nada fazer “por partidarismo ou vangloria, mas por humildade, considerando cada um os outrossuperioresa si mesmo” e ter “cada um em vista...o que e dos outros” (2.3, 4). Cristo prove o maior exemplo desta vida (2.5-11), e ministros comoTimoteo e Epafrodito também exemplificam um padrao de vida desemelhanga com Cristo. O evangelho promove a unidade. A justificação e somente pela fe e com basesomente nos meritos de Cristo,e não em qualquer coisa que ocrente tenha feito (3.9). A vida crista de uma pessoa, embora seja imperfeita (3.12, 13), encontra seu foco e poder na morte e na ressurreiqao de Cristo (3.10-16). Tudo que o crente faz devese a graqa e a forqa de Deus (2.12, 13). Saber dessa realidade nos ajuda a prevenir o ato de se vangloriar na came e promove o glorificarsomente a Deus (3.3).E precisamente essa atitude que conduz a unidade no corpo de Cristo. A alegria e a gratidao, que permeiam esta carta (ver “Características e Temas”; 4.10-20), encontram seu fundamento no evangelho. Aqueles que antes faziam parte de uma “geraqao pervertida e corrupta” e foram libertados da destruição, a qual seus pecados os sujeitaram (3.19), tem razao para ser alegres e agradecidos. Aqueles que receberam “a justiça que precede de Deus, baseada na fe” (3.9), que compartilham a morte e a ressurreiqao de Jesus (3.10) e agora tem sua “patria” nos ceus e a esperança segura de uma ressurreiqao do corpo “igual ao corpo da gloria” de Jesus (3.21), devem responder com alegria e gratidao."
+        "ordem": 6,
+        "conteudo": "Alegria, gratidão, parceria no evangelho, sofrimento, unidade, humildade, perseverança, justiça pela fé, maturidade, contentamento e esperança são temas centrais. A carta confronta tanto o legalismo como o libertinismo e chama os cristãos a viverem de maneira digna do evangelho."
+      },
+      {
+        "id": "teologia_de_filipenses",
+        "titulo": "Teologia de Filipenses",
+        "tipo": "texto",
+        "ordem": 7,
+        "conteudo": "Paulo apresenta uma teologia profundamente centrada em Cristo. O Pai é Deus, Jesus é Senhor e o Espírito participa da vida e do ministério cristãos, revelando uma estrutura trinitária. Cristo, sendo verdadeiramente Deus, humilhou-se assumindo a condição de servo e foi exaltado pelo Pai. A vida cristã é graça e poder de Deus, mas envolve esforço obediente e perseverante."
+      },
+      {
+        "id": "filipenses_na_historia_mais_ampla_da_biblia",
+        "titulo": "Filipenses na história mais ampla da Bíblia",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "A carta chama os crentes de santos em Cristo e apresenta sua vida como participação na história da redenção inaugurada por Cristo. A esperança da ressurreição e da transformação do corpo aponta para a consumação futura do reino."
       },
       {
         "id": "cristo_em_filipenses",
         "titulo": "Cristo em Filipenses",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "N A M A I S A M P L A D A B I B L I A Em cada época, Deus tem chamado as pessoas para viver com alegria e gratidao, a fim de celebrar e seguir a unidade que caracteriza exclusivamente o povo de Deus. Os salmos, por exemplo, estao cheios desses chamados, que sao feitos a luz das misericordias e da bondade do Senhor e Redentor de Israel. E em Filipenses, porém, que vemos os mais profundos e mais completes fundamentos para esses chamados:a morte redentora consumada e a ressurreiqao do Senhor Jesus Cristo. Filipenses ajuda os cristaosa naosomente compreender o piano e a obra de salvação do Deus trino (ver “Caracterfsticas e Temas Principais”), como também a ver que ha um único Deus e um só piano de redenqao em toda a história de redenqao."
+        "ordem": 9,
+        "conteudo": "Cristo é o Senhor exaltado e o modelo de humildade. Seu esvaziamento, encarnação, obediência até a morte e exaltação constituem o centro cristológico da carta. Paulo considera tudo como perda diante da excelência de conhecer Cristo e espera a transformação do corpo segundo o corpo glorioso do Senhor."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "As palavras de Paulo em 3.1-11tem sido cruciais ao entendimentoda Igreja noquediz respeitoaoensino da Bíblia quanto a justificação somente pela fe. Por tal razao, a passagem tomouse central nas discussoes relacionadas a Nova Perspectiva Sobre Paulo (ver Introdução a Galatas: História de Interpretação). A suposta “Passagem Quenotica” ou “Hino Quenotico” de 2.5-11tem sido assunto de intenso debate nas decadas recentes. Na questão em foco,esta a afirmaqao de alguns eruditos de que o hino ensina o despojamento de certos atributos divinos de Cristo na encamaqao, que o Filho de Deus deixou de lado ou renunciou a certosaspectosda deidadequando veio em came. Essa posiqao e insustentavel. A passagem descreve a encamaqao não como uma subtraqao, mas como uma adiqao: o Filho de Deus assumiu a “forma de servo”(v. 7).Sem deixar deser Deusou renunciandoa qualquer dosatributosquefazem deleo Deusque ele e,o Filho de Deus acrescentou asi mesmo uma verdadeira natureza humana.Outras passagens no Novo Testamento deixam claro que o Filho não renunciou a qualquer deseusatributos divinos; antes, por causa de nossa salvação, ele escolheu não exerceralgumas desuas prerrogativasem certosmomentos de seu ministério, embora pudesse fazelo. Em virtude de sua autoridade divina, por exemplo, Cristo poderia ter chamado doze legioes de anjos para livralo dos soldados romanos no Getsemani (Mt 26.53),masele naoexerceusua autoridade legftima parafazer isso porquea cruz era sua missao. Quando o Filho de Deus “a si mesmo se esvaziou”, na encamaqao (2.7), ocultou sua gloria refulgente, mas não renunciou a ela. Em determinados momentosdeseu ministério,o Filho de Deus permitiu que essa gloria fosse vista por seus discfpulos — mais notadamente em sua transfiguraqao (Mt 17.1- 8)— e, em seu retomo, todo olho vera essa gloria e confessara que ele e Senhor de todos (2.9-11). E S B O^ O D E F I L I P E N S E S I. SAUDACAO (1.1, 2) II. MENSAGEM DE ABERTURA: A(A0 DE GRAMAS E GRACAO (1.3-11) III. A VERDADE DO Evangelho (1.12-2.30) A. 0 evangelho e Paulo (1.12-26) 1.0 aprlsionamento de Paulo (112-14) 2. Mensageiros rivals (1.15-18) 3. As perspectivas de Paulo (119-26) B. 0 evangelho e os filipenses (1.27-2.18) 1. Um chamado a unidade (1.27-2.4) 2.0 exemplo de Cristo (2.5-11) 3. Mais um chamado a unidade (2.12-18) C. Dois cooperadores de Paulo no evangelho (2.19-30) IV. A VERDADE CONTRA O ERRO (3.1-4.1) A. 0 evangelho contra os legalistas (3.1-11) B. 0 ja e o ainda não (3.12-16) C. 0 evangelho contra os libertinos (3.17-4.1) V. EXORTACOES (4.2-9) VI. AGRADECIMENTO (4.10-20) A. Contentamento (4.10-13) B. Parceria (4.12-20) VII. SAUDACAO FINAL E BENCA0 (4.21-23)"
+        "ordem": 10,
+        "conteudo": "Filipenses é uma fonte importante para a cristologia, especialmente no debate sobre a divindade e humanidade de Cristo em 2.5-11. Também é central para discussões sobre alegria cristã, humildade, unidade, justificação e a natureza da vida cristã em meio ao sofrimento."
       },
       {
-        "id": "esboco",
+        "id": "esboco_de_filipenses",
         "titulo": "Esboço de Filipenses",
-        "tipo": "outline",
-        "ordem": 6,
-        "conteudo": "Prefácio e saudação (1.1-2) 1. Oração de Paulo pelos filipenses (1.3-11) 2. O evangelho de Cristo também cresce na prisão (1.12-26) 3. Exortação à unidade (1.27—2.18) a. Firmeza e coragem (1.27-30) b. A humildade e a grandeza de Cristo (2.1-11) c. Vivendo como filhos de Deus (2.12-18) 4. Planos de Timóteo e de Epafrodito (2.19-30) 5. Advertências contra falsos mestres (3.1—4.1) a. Completamente unidos com Cristo (3.1-11) b. A corrida do cristão (3.12—4.1) 6. Exortações (4.2-9) 7. Agradecimento de Paulo (4.10-20) Saudações e bênção (4.21-23)"
+        "tipo": "auto",
+        "ordem": 11,
+        "conteudo": [
+          {
+            "titulo": "I. SAUDAÇÃO (Fp 1.1, 2)"
+          },
+          {
+            "titulo": "II. MENSAGEM DE ABERTURA: AÇÃO DE GRAÇAS E ORAÇÃO (Fp 1.3-11)"
+          },
+          {
+            "titulo": "III. A VERDADE DO EVANGELHO (Fp 1.12-2.30)",
+            "itens": [
+              "A. O evangelho e Paulo (Fp 1.12-26)",
+              "1. O aprisionamento de Paulo (Fp 1.12-14)",
+              "2. Mensageiros rivais (Fp 1.15-18)",
+              "3. As perspectivas de Paulo (Fp 1.19-26)",
+              "B. O evangelho e os filipenses (Fp 1.27-2.18)",
+              "1. Um chamado à unidade (Fp 1.27-2.4)",
+              "2. O exemplo de Cristo (Fp 2.5-11)",
+              "3. Mais um chamado à unidade (Fp 2.12-18)",
+              "C. Dois cooperadores de Paulo no evangelho (Fp 2.19-30)"
+            ]
+          },
+          {
+            "titulo": "IV. VERDADE CONTRA O ERRO (Fp 3.1-4.1)",
+            "itens": [
+              "A. O evangelho contra os legalistas (Fp 3.1-11)",
+              "B. O já e o ainda não (Fp 3.12-16)",
+              "C. O evangelho contra os libertinos (Fp 3.17-4.1)"
+            ]
+          },
+          {
+            "titulo": "V. EXORTAÇÕES (Fp 4.2-9)"
+          },
+          {
+            "titulo": "VI. AGRADECIMENTO (Fp 4.10-20)",
+            "itens": [
+              "A. Contentamento (Fp 4.10-13)",
+              "B. Parceria (Fp 4.14-20)"
+            ]
+          },
+          {
+            "titulo": "VII. SAUDAÇÃO FINAL E BÊNÇÃO (Fp 4.21-23)"
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "50_Filipenses.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte": {
+    "arquivo": "imagens do conjunto Fp",
+    "criterio": "Conteúdo reconstruído a partir das imagens fornecidas pelo usuário, com OCR em colunas independentes, normalização de hifenização e correção de erros evidentes de reconhecimento, preservando o sentido e a organização da fonte."
+  }
 }

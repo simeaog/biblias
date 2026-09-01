@@ -2,81 +2,154 @@
   "schema": "apoio-livro-v1",
   "id": "Rm",
   "nome": "Romanos",
-  "abreviacao": "Romanos",
+  "abreviacao": "Rm",
   "material": {
     "titulo": "Sobre Romanos",
-    "introducao": "O apóstolo Paulo procurou anunciar a boa notícia da salvação por todo o Império Romano. Por isso, ele fez planos para visitar Roma, a capital do Império, onde já havia uma igreja cristã. Dali ele pretendia seguir até a Espanha e esperava que os cristãos de Roma o ajudassem naquela viagem (15.22-24). Paulo queria que eles ficassem sabendo como é que ele entendia a mensagem a respeito de Jesus Cristo. Na Epístola aos Romanos aparece uma apresentação completa e ordenada da mensagem de Paulo. Depois de saudar os leitores e falar do seu grande desejo de conhecê-los pessoalmente, Paulo anuncia a doutrina básica: o evangelho é o poder de Deus para a salvação de todos os que o aceitam e conclui que “o justo viverá por fé” (1.17). Na primeira parte da sua epístola (1.18—11.36), Paulo mostra que todos, judeus e gentios, precisam da salvação, pois todos pecaram e estão afastados de Deus. Depois, Paulo mostra como Deus, por causa do seu grande amor, salva as pessoas que creem em Jesus Cristo, as quais, libertadas do poder do pecado, agora têm uma vida nova, uma vida de paz com Deus e com as pessoas. Numa das mais bonitas passagens escritas por Paulo ( cap. 8), ele descreve como vive a pessoa que é governada pelo Espírito Santo e como é forte o amor de Deus, amor que recebemos por estarmos unidos com Jesus Cristo, o nosso Senhor. Depois, Paulo procura explicar a parte que cabe aos judeus e aos gentios no plano divino de salvação da humanidade. Na segunda parte da epístola (12.1—15.13), Paulo mostra como os cristãos devem tratar uns aos outros e quais são os seus deveres para com as autoridades. A epístola termina com uma série de saudações pessoais e uma oração de louvor a Deus.",
+    "introducao": "Romanos é a exposição mais abrangente do evangelho apresentada por Paulo. A carta trata da justiça de Deus revelada no evangelho, da pecaminosidade universal da humanidade, da justificação pela fé, da santificação, do lugar de Israel nos propósitos de Deus e das implicações do evangelho para a vida da igreja e para o relacionamento entre judeus e gentios.",
     "secoes": [
+      {
+        "id": "titulo",
+        "titulo": "Título",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "A palavra inicial da carta e os dados biográficos dos capítulos 1, 15 e 16 identificam Paulo como autor. O título deriva da seção de abertura e acompanha a carta desde os primeiros testemunhos de sua história."
+      },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "A palavra inicial da carta (1.1), bem como os detalhes biograficos registrados nos capítulos 1, 15 e 16, mostram que a Epistola aos Romanos foi escrita pelo apóstolo Paulo. A carta era citada e listada como de Paulo durante o século II. Sua autenticidade tern sido disputada apenas raramente, mas nunca de maneira convincente. O título de Romanos foi extrafdo da segao de abertura; o livro tern levado esse título desde os primeiros dias de sua história (1.1-7)."
+        "ordem": 2,
+        "conteudo": "Paulo se identifica como apóstolo e servo de Cristo Jesus (1.1). A carta contém numerosas referências pessoais que se harmonizam com o ministério de Paulo. A tradição cristã antiga reconheceu Romanos como carta paulina, e a autoria nunca foi convincentemente refutada."
       },
       {
-        "id": "data_e_circunstancias",
+        "id": "data_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 1,
-        "conteudo": "Pauloescreveu Romanos poucoantes desua visita a Jerusalém para entregar os donativos das congregagoes gentias (15.25;cf. At 24.17). Indicagoes internas sugerindo que, nessa época, ele residia em Corinto incluem a referenda a Febe, membro da igreja em Cencreia, o porto de Corinto (16.1, 2), e as references a Gaio como seu anfitriao (ICo 1.14) e a Erasto (At 19.22; 2Tm 4.20). O tempo da escrita foi provavelmente durante os tres meses de permanencia na Grecia, descritos em Atos 20.2, 3. Embora não seja possfvel fixar uma data com certeza,sabemos que Galio (diante de quem Paulo compareceu em Atos 18.12) foi proconsul (uma designação pelo período medio de um ano) na Acaia,em 52 d.C. Paulo esteve o A P O S T O L O, aos em Corinto por “muitos dias” (At 18.18), presumivelmente no período de 51 a 53 d.C. Depois,ele navegou para Efeso, para uma visita breve, e foi para Cesareia e, talvez, Jerusalém, bem como Antioquia (At 18.22). Ao retornar pela Galacia e pela Frigia (At 18.23), em direção a Efeso, Paulo residiu ali por quase tres anos (At 19.8,10),antes de resolverseguir para Jerusalém, passando por Macedonia e Acaia (At 19.21). A data mais antiga possfvel para Romanos e perto dofinal de 54 d.C.; porém, uma data posterior deixa mais espago para as muitas atividades de Paulo. Portanto, a melhor datagao para a carta e algum período entre ofim de 55 d.C.e os primeiros meses de 57 d.C. 0 fato de a fe dos cristãos de Roma ser bem conhecida (1.8) e de Paulo ter desejado estar com eles por algum tempo (1.13) sugere que a fe crista ja estava estabelecida na capital do imperio por um tempo consideravel. Esses fatossao apoiados pela afirmagao do historiador romanoSuetonio, no sentido de que Claudio expulsara os judeus (em 49 d.C.) por tumulto,devido “a instigagao de Crestus”(evidentemente, uma referenda a Cristo).Visitantes de Roma estiveram presentes no dia de Pentecostes (At 2.10, 11) e podem ter sido os primeiros a levar as boasnovas para a cidade. Sua importance estrategica e o grande número de judeus que viviam ali teriam levado o evangelho para Roma, como que atrafdo por um fma. Embora a tradição que remonta a Irineu sustenteocontrario,e certoque a igreja não foi fundada por Pedro ou por Paulo. E claro que Paulo nunca visitou a igreja antesde escrever a carta (1.8- 13),e a ausencia de qualquer referenda a Pedro ou a outro apóstolo sugere que a igreja de Roma não havia experimentado um ministério apostolicodireto no tempoem que Pauloescreveu. Tanto judeus como gentios eram membros da igreja de Roma, e 1.13 indica a predominance de gentios, como possivelmente sugere a adverten cia aos cristãos gentios para que não se orgulhem (11.13-24).0 conflito entre os fracos e os fortes em 14.1-15.13 pode ter surgido em contexto seme- Ihante. E possfvel também que as varias igrejas nos lares em que os cristãos se reuniam refletissem essas divisoes (cf.16.5, 14,15). Paulo percebeu que seu ministério estava num momento decisivo quando a Epístola aos Romanos foi escrita. Ele acreditava que ja havia cumprido seu ministério no leste do Mediterraneo (15.17- 23) e que o tempo era oportuno para se mover em direção a oeste e evangelizar e plantar igrejas na Espanha (15.24).Paulo esperava visitar os cristãos romanos no caminho, cumprindo, assim,seu anseio de muito tempo e talvez obtendo a ajuda deles como uma igreja apoiadora (15.24). A luz disso,era essencial para Pauloapresentarsuas credenciais apostolicas (note “meu evangelho” em 2.16 e 16.25), a fim de que eles reconhecessem a autenticidade de seu ministério.Paulo pode ter julgado necessario defender seu ministério das falsas insinuatesde divulgadores de rumores (3.8). No tempo da escrita de sua carta aos Romanos, Paulo estava profundamente interessadoem que a igreja crista fosse uma comunhao de judeus e gentios reunidos no único corpo de Cristo. Isso fica claro na importancia que ele atribui a oferta de amor dos gentios para a igreja em Jerusalém. Isso também transparece no tema da unificagao de judeus e gentios — no pecado por causa de Adao e, depois, na salvação pela graga em Cristo. Ambos necessitam da justiça salvadora do evangelho, porque todos pecaram;e ambos podem recebela, porque ela vem pela graqa,somente pela fe. A realizaqao dessa justiqa salvadora na história e o indicativo do propósito supremo de Deus para ambos; e a transformaqao salvadora que acompanha essa justiça salvadora deve chegar a expressao na vida de ambos— de maneira pessoal, comunitaria e social— no corpo de Cristo como o novo povo de Deus. A oportunidade para escrever enquanto esteve em Corinto, a pressao de sua visita a Jerusalém e a perspectiva de visitar Roma antes de pregar o evangelho nos limites do mundo conhecido na época, tudo isso motivou Paulo a escrever esta carta."
+        "ordem": 3,
+        "conteudo": "Paulo escreveu Romanos pouco antes de viajar a Jerusalém para entregar a contribuição das igrejas gentílicas (15.25). As referências a Febe, de Cencreia, a Gaio e a Erasto apontam para Corinto como o provável local de composição, durante a permanência de Paulo na Grécia descrita em Atos 20.2, 3. A igreja de Roma já existia, reunia judeus e gentios e não havia sido fundada por Paulo; o apóstolo pretendia visitá-la a caminho da Espanha e desejava contar com sua cooperação missionária (15.24)."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "Embora o livro de Romanosseja uma carta e siga as convenqoes epistolares tfpicas do século I (ver Introduce as Epístolas), também difere, de algumas maneiras importantes, de outras cartas antigas e das outras cartas do Novo Testamento. Como outras cartas do século I, a Epístola aos Romanos content umaabertura (1.1 17), um corpo (1.18-15.13) e uma conclusao (15.14-16.27). Entretanto, de modo diferente da maioria das outras cartas dos dias de Paulo, Romanos e uma epístola excepcionalmente extensa. Sua extensao não e uma característica da maioria das cartas do século I, as quais eram muito mais breves. Acima de tudo, Romanos e um tipo singular de epístola. Eruditos que examinaram as convenqoes epistolares do mundo grecoromano tern distinguido varios tipos de cartas, como cartas de amizade, cartas de exortação e cartas de recomendaqao. Uma comparaqao de Romanos com as outras epístolas paulinas revela que Romanosapresenta características singulares que a identificam como um tipo específico de carta. Romanos e bem semelhante as antigas “cartasensaios\", em que um autor inseria um longo “ensaio” instrucional dentro de uma estrutura epistolar convencional."
+        "ordem": 4,
+        "conteudo": "Romanos é uma carta apostólica do século I, seguindo as convenções epistolares antigas, mas desenvolvendo de forma extensa uma exposição teológica e pastoral do evangelho. A saudação, a apresentação do tema, a argumentação doutrinária e as exortações práticas são integradas em uma única composição."
       },
       {
-        "id": "caracteristicas_e_temas_principais",
+        "id": "caracteristicas_literarias",
+        "titulo": "Características literárias",
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "Romanos combina exposição teológica, argumentação, perguntas retóricas, citações do Antigo Testamento e aplicações pastorais. Paulo constrói seus argumentos frequentemente por meio de diálogo imaginário com um interlocutor, especialmente em 2–3 e 9–11. As amplas citações e alusões ao Antigo Testamento demonstram que o evangelho confirma a Lei e cumpre as promessas proféticas acerca do Filho de Deus."
+      },
+      {
+        "id": "caracteristicas_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "L I T E R A R I A S Um dos traqos mais impressionantes de Romanos e seu uso de perguntas retoricas (3.8; 6.1; 7.7; 9.14). Perguntas retoricas tern o efeito de atrair o leitor para o argumento do autor, articulando uma conclusao equivocada de uma assertiva anterior e, em seguida, introduzindo a correqao e o esclarecimento do apóstolo.Sao, portanto, um artiffcio de comunicaqao eficiente para envolver osleitoresde Paulo, permitindo que “ouqam atentamente”, por assim dizer, a apresentaqao do evangelho por Paulo em pessoa e suas interaqoes com os oponentes teologicos. Em 7.7-25, Paulo emprega outro artiffcio retorico memoravel quando fala na primeira pessoa para descrever a relaqao entre os seres humanos e a lei de Deus. Talvez uma das mais proeminentes caracteristicas literarias de Romanos sejam suas amplas citagoes, references e alusoes ao AntigoTestamento. A maneira como Paulo envolve o Antigo Testamento em Romanos também e variada. As vezes, Paulo cita o AntigoTestamento em grandes blocos (3.10 18; 15.9-12). As vezes, o argumento de Paulo e norteado por citagoes do Antigo Testamento (caps. 9-11). Outras vezes, Paulo interpreta uma narrativa do Antigo Testamento (4.9-25). Tanto a diversidade como a amplitude do envolvimento do Antigo Testamento por Pauloservem para mostrar como o evangelho confirma a lei (Rm 3.31) e como os profetas da antiga aliança prometeram a missao salvadora do Filho de Deus, que agora e proclamada no evangelho (1.1-4; 3.21-26; 16.25, 26)."
-      },
-      {
-        "id": "temas_principais",
-        "titulo": "Temas principais",
-        "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "E Romanos e a mais completa, a maior e a mais abrangente afirmação do evangelho feita por Paulo.Suas declaragoes concisas de verdades profundas sao como molas helicoidais — uma vez liberadas, elas saltam pela mente e pelo coragao para encher o horizonte e moldar a vida da pessoa. Joao Crisostomo, o maior pregador do século IV, ouvia a leitura de Romanos em voz alta uma vez por semana. Agostinho, Martinho Lutero e john Wesley, tres contribuintes supremamente importantes para a heranga crista, chegaram todos a fe segura por meio do impacto de Romanos.Todos os reformadores viam Romanos como a chave dada por Deus para o entendimento de toda a Escritura, visto que Paulo coloca juntos todos os maiores temas da Bíblia: pecado, lei, julgamento, destino humano, fe, obras, graga, justificação, santificagao, eleigao, o piano de salvação, a obra de Cristo, a obra do Espírito, a esperanga crista, a natureza e a vida da Igreja, o lugar do judeu e do não judeu nos propositos de Deus, a filosofia da Igreja e da história mundial, o significado e a mensagem do Antigo Testamento, os deveres da cidadania crista, a natureza e o propósito da liberdade crista e os principios de piedade e moralidade pessoal. A partir da perspectiva dada por Romanos, todo o panorama da Bíblia se descortina, e a relação entre as partes e o todo tornase mais clara.O estudo de Romanos e vitalmente necessario para a saude espiritual e o discernimento do cristão."
+        "ordem": 6,
+        "conteudo": "Romanos reúne temas centrais da fé cristã: pecado, lei, juízo, fé, obras, graça, justificação, santificação, eleição, expiação, obra de Cristo, obra do Espírito, esperança, igreja, lugar de judeus e gentios, liberdade cristã e piedade. O eixo da carta é a justiça de Deus revelada no evangelho e recebida pela fé, seguida pelas consequências dessa graça na vida do povo de Deus."
       },
       {
         "id": "teologia_de_romanos",
         "titulo": "Teologia de Romanos",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "Romanos nos da não somente a mais abrangente afirmação do evangelho feita por Paulo no Novo Testamento, como também um compendio dos principais temas da Bíblia. Na “epi'stoladedicatoria” aoseu comentario sobre o livro de Romanos, Joao Calvino diz: “Quando uma pessoa entende essa epistola, abrese para ela uma passagem para o entendimento de toda a Escritura”. De todos os livros do Novo Testamento, Romanos e o que mais se aproxima de oferecer uma teologia sistematica. E o mais abrangente esbogo da doutrina crista. Romanos se preocupa em apresentar a justiça de Deus no evangelho (1.16, 17). E uma justiça que não temos (1.18-3.20), mase'uma justiça que Deus se agrada em realizar e dar em Cristo (3.21-26). Essa justiça de Deus satisfaz a necessidade singular da humanidade:sair de debaixo da ira de Deus (1.18) para ter paz com ele (5.1). E e a justificagaosomente pela fe unicamente em Cristo que realiza isso. Em toda a epistola, Paulo explica esse evangelho em que a justiça de Deus e revelada. As doutrinas da justificação somente pela fe e da expiação vicaria sao centrais ao evangelho.Somos justificados “por sua graga, mediante a redenção que ha em Cristo Jesus, a quem Deus propos, no seu sangue, como propiciagao, mediante a fe” (3.24, 25). Essa propiciagao e necessaria porque “a ira de Deus se revela do ceu contra toda impiedade” (1.18); e, se o homem deve ser reconciliado com Deus, essa ira precisa ser removida. Jesus e o sacrifi'cio vicario que carrega essa ira em nosso lugar e a remove de nos. Deus estabeleceu Cristo como expiação para mostrar “a sua justiça no tempo presente, para ele mesmo ser justo e o justificador daquele que tern fe em Jesus” (3.26). Aquele que tern fe em Jesus, Deus imputa a justiça de Cristo, e, com base nessa justiça imputada, o crente e declarado justo;ele e justificado somente pela fe (3.21-4.25). Havendo sido justificado tao somente pela fe em Cristo, o crente tern paz com Deus e se torna reconciliado com ele. A justiça que Deus se agrada em imputar a nos e nossa em uniao com Cristo, o segundo Adao crucificado e ressuscitado (5.12-20). Os crentes não só sao justificados apenas pela fe, como também sao santificados; e Paulo desenvolve cuidadosamente esse tema teológico. E em uniao com Cristo e pelo poder do EspiritoSanto que matamos o pecado e nos esforgamos pelo viver santo na alma e no corpo (caps. 6 e 8). Agora, somos Antigo Testamento (16.25-27). Embora todos nos tenhamos cai'do em Adao e sejamos considerados pecadores nele (5.12-21), Deus prometeu esmagar Satanas sob os pes do descendente de Eva e, nele, sob os pes dos crentes (16.20; cf. Gn 3.15). Deus proclamou e Abraão creu na mensagem de justificação somente pela fe (cap. 4).Paulo insiste em que o evangelho não destroi a lei mosaica; ele a estabelece (3.31).Jesuse odescendente de Davi prometido (1.4; cf. 2Sm 7). Jesus e aquele para quem todos os profetas olham (1.2;15.12). Romanos documenta o cumprimento,em Cristo,de tudo que Deusestivera prometendo a seu povo de Israel durante séculos e o fato de que, em Cristo, os gentios recebem a bênção que deveria vir por meio da descendencia de Abraão (cap. 4; cf.Gn 12.1-3). R O M A N O S C R I S T O E M Romanos oferece uma apresentagao plena da pessoa e da obra de Cristo. Ele e tanto divino (9.5) como humano (1.3, 4).Cristo morreu e ressuscitou por seu povo (3.21-26; 4.25). O Espírito do Cristo exaltado habita todo crente (8.9-11) e aplica os beneffcios que Cristo obteve para seu povo por meio de sua obediencia e morte. O exemplo de Cristo molda a maneira como a Igreja deve ordenar sua vida coletiva (15.1-7). Esperamos ansiosamente pela consumação de nossa redenção, quando, entao, seremos plenamente conformados a imagem de Cristo, para que ele seja o primogênito entre muitos irmaos (8.29). H I S T O R I A D E I N T E R P R E T A g A O Como notamos em “Caracten'sticas e Temas Principals”, Romanos ocupou lugar significativo na vida e no ministério de alguns dos maiores pregadores e teologos da Igreja. Foi especialmente importante no tempo da Reforma.Contra a insistencia da Igreja de Roma no sentido de que o crente precisava de um sistema de sacramentos e boas obras a fim de ser justificado, os reformadores proclamaram, com Paulo, que o pecador e justificado somente pela fe'. E insistiram também, com Paulo, em que a justificação somente pela fe nunca e uma licenga para pecar, mas, sim, um mandato para uma vida santa. Os crentes reformados, em especial, tem apontado para Romanos 9 como uma passagem importante para o entendimento da soberania divina, da eleigao,da reprovagao e da responsabilidade humana. VI. DEUS DEMONSTRA SUA Justiça NOS Judeus E NOS Gentios (CAPS. 9-11) A. Ajustiga de Deus estabelecida na história (cap. 9) B. A justiça de Deus recebida somente pela fe (cap. 10) C. Ajustiga de Deus revelada nos judeus e nos gentios (cap. 11) VII. A JUSTICA DE DEUS ASSIMILADA E EXPRESSA NA VIDA DE SEU POVO (12.1-15.IB) A. Na resposta de consagragao (12.1, 2) B. No ministério do corpo de Cristo (12.3-21) C. Nas realidades da vida poh'tica e social (cap. 13) D. Na comunhao de fracos e fortes (14.1-15.13) VIM. OS PLANOS DE PAULO E AS SAUDAgOES CONCLUSIVAS (15.14-16.27) A. A visao de Paulo quanto ao seu ministério (15.14-22) B. 0 piano de Paulo para visitar Roma (15.23-33) C. As saudagoes de Paulo para os cristãos em Roma (16.1-16) D. A advertencia de Paulo contra os inimigos e a certeza da derrota deles (16.17-20) E. Os companheiros de Paulo enviam saudagoes (16.21-24) F. A doxologia apostolica de Paulo (16.25-27)"
+        "ordem": 7,
+        "conteudo": "Paulo apresenta uma justiça que a humanidade não possui e que Deus concede em Cristo. A justificação é pela graça, mediante a redenção em Cristo, e a fé recebe a justiça de Cristo. A morte de Cristo remove a ira de Deus e reconcilia o pecador com ele. A união com Cristo conduz também à santificação: os crentes morreram para o domínio do pecado e vivem pelo Espírito. Romanos 9–11 trata da soberania e fidelidade de Deus em relação a Israel, enquanto 12–15 mostra como o evangelho deve ser assimilado e expresso na vida do povo de Deus."
       },
       {
         "id": "romanos_na_historia_mais_ampla_da_biblia",
         "titulo": "Romanos na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "Romanos nos da não somente a mais abrangente afirmação do evangelho feita por Paulo no Novo Testamento, como também um compendio dos principais temas da Bíblia. Na “epi'stoladedicatoria” aoseu comentario sobre o livro de Romanos, Joao Calvino diz: “Quando uma pessoa entende essa epistola, abrese para ela uma passagem para o entendimento de toda a Escritura”. De todos os livros do Novo Testamento, Romanos e o que mais se aproxima de oferecer uma teologia sistematica. E o mais abrangente esbogo da doutrina crista. Romanos se preocupa em apresentar a justiça de Deus no evangelho (1.16, 17). E uma justiça que não temos (1.18-3.20), mase'uma justiça que Deus se agrada em realizar e dar em Cristo (3.21-26). Essa justiça de Deus satisfaz a necessidade singular da humanidade:sair de debaixo da ira de Deus (1.18) para ter paz com ele (5.1). E e a justificagaosomente pela fe unicamente em Cristo que realiza isso. Em toda a epistola, Paulo explica esse evangelho em que a justiça de Deus e revelada. As doutrinas da justificação somente pela fe e da expiação vicaria sao centrais ao evangelho.Somos justificados “por sua graga, mediante a redenção que ha em Cristo Jesus, a quem Deus propos, no seu sangue, como propiciagao, mediante a fe” (3.24, 25). Essa propiciagao e necessaria porque “a ira de Deus se revela do ceu contra toda impiedade” (1.18); e, se o homem deve ser reconciliado com Deus, essa ira precisa ser removida. Jesus e o sacrifi'cio vicario que carrega essa ira em nosso lugar e a remove de nos. Deus estabeleceu Cristo como expiação para mostrar “a sua justiça no tempo presente, para ele mesmo ser justo e o justificador daquele que tern fe em Jesus” (3.26). Aquele que tern fe em Jesus, Deus imputa a justiça de Cristo, e, com base nessa justiça imputada, o crente e declarado justo;ele e justificado somente pela fe (3.21-4.25). Havendo sido justificado tao somente pela fe em Cristo, o crente tern paz com Deus e se torna reconciliado com ele. A justiça que Deus se agrada em imputar a nos e nossa em uniao com Cristo, o segundo Adao crucificado e ressuscitado (5.12-20). Os crentes não só sao justificados apenas pela fe, como também sao santificados; e Paulo desenvolve cuidadosamente esse tema teológico. E em uniao com Cristo e pelo poder do EspiritoSanto que matamos o pecado e nos esforgamos pelo viver santo na alma e no corpo (caps. 6 e 8). Agora, somos “mortos para o pecado, mas vivos para Deus, em Cristo Jesus” (6.11). Nada no ceu ou na terra pode “separarnos do amor de Deus, que esta em Cristo (esus, nosso Senhor” (8.39). 0lugar de Israel nos propositose no piano de Deus e um tema teologicoimportante,abordado por Paulo nos capi'tulos 9 a 11. Como Israel rejeitou Cristo, algunsconclufram que talvez as promessasde Deus para Israel haviam falhado. Paulo defende a integridade de Deus, explicando que, mesmo na antiga aliança, nem todos os que eram descendentes de Israel pertenciam realmente a Israel (9.6). Deus e soberano e tem misericórdia de quem ele quer ter misericórdia (9.15). Mas Paulo continua a orar pela salvação de Israel (10.1). Nocapitulo 11, ele explica que Deus não rejeitou seu povo, porque, mesmo no tempo presente, um remanescente de judeus esta sendo salvo (11.1-10). Paulo também ensina que a situação presente de Israel, em que a nação como um todo tropegou, enquanto apenas um remanescente esta sendo salvo, sera revertida pela futura obra de graga, por meioda qual Deus tomara o coragao de Israel ao seu Messias (11.11-32). Nos capi'tulos 12 a 15, Paulo aborda as implicagoes do evangelho na vida dos cristãos no mundo e na igreja. Como e verdadeiro o que Paulo disse nos capi'tulos 1 a 11, os cristãos devem apresentar seu corpo como um “sacrifi'cio vivo,santo e agradavel a Deus, que e o vosso culto racional” (12.1). Não devemos ser conformados a este mundo, mas ser transformados pela renovação de nossa mente (12.2). Aqueles que sao crentes em Cristo devem comportarse de uma maneira que e distinta do comportamento do mundo, detestando o mal, abengoando aqueles que os perseguem e vivendo em harmonia uns com os outros (12.9-21). Os cristãos devem submeterse as autoridades governamentais (13.1-7). Não devemos satisfazer a came (13.14). Não devemos julgar uns aos outros (14.1-2) e devemos remover toda pedra de tropego do caminho de nosso irmao (14.13). A uma só voz, os crentes devem glorificar o Deus e Pai de nosso Senhor Jesus Cristo (15.6)."
+        "ordem": 8,
+        "conteudo": "Romanos lê a salvação de judeus e gentios como cumprimento das promessas das Escrituras de Israel. Abraão é apresentado como exemplo de justificação pela fé, e as citações do Antigo Testamento demonstram a continuidade entre a antiga aliança e o evangelho de Cristo. A carta explica como o plano de Deus alcança as nações sem anular suas promessas a Israel."
+      },
+      {
+        "id": "cristo_em_romanos",
+        "titulo": "Cristo em Romanos",
+        "tipo": "texto",
+        "ordem": 9,
+        "conteudo": "Cristo é o centro do evangelho: Filho de Deus, descendente de Davi, aquele cuja morte e ressurreição inauguram a nova realidade da salvação. Ele é a propiciação estabelecida por Deus, cuja justiça é recebida pela fé. A união com Cristo fundamenta tanto a justificação como a santificação, e nada pode separar os que estão nele do amor de Deus (8.31-39)."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 7,
-        "conteudo": "N A M A I S A M P L A D A B I B L I A Romanosesta repleta de citagoes, alusoes e referencias do AntigoTestamento.Também prove um tipo de pesquisa da promessa do evangelho revelada no Antigo Testamento (16.25-27). Embora todos nos tenhamos cai'do em Adao e sejamos considerados pecadores nele (5.12-21), Deus prometeu esmagar Satanas sob os pes do descendente de Eva e, nele, sob os pes dos crentes (16.20; cf. Gn 3.15). Deus proclamou e Abraão creu na mensagem de justificagao somente pela fe (cap. 4).Paulo insiste em que o evangelho não destroi a lei mosaica; ele a estabelece (3.31).Jesuse odescendente de Davi prometido (1.4; cf. 2Sm 7). Jesus e aquele para quem todos os profetas olham (1.2;15.12). Romanos documenta o cumprimento,em Cristo,de tudo que Deusestivera prometendo a seu povo de Israel durante séculos e o fato de que, em Cristo, os gentios recebem a bengao que deveria vir por meio da descendencia de Abraão (cap. 4; cf.Gn 12.1-3)."
+        "ordem": 10,
+        "conteudo": "Romanos ocupou lugar central na interpretação cristã. A carta foi lida como síntese do evangelho e como chave para compreender a Escritura. Sua doutrina da justificação pela fé teve influência decisiva em Agostinho, na Reforma e em outros movimentos de renovação cristã. Ao longo da história, também foram debatidas suas afirmações sobre Israel, eleição, liberdade cristã e a relação entre fé e obras."
       },
       {
-        "id": "esboco",
+        "id": "esboco_de_romanos",
         "titulo": "Esboço de Romanos",
-        "tipo": "outline",
-        "ordem": 8,
-        "conteudo": "Prefácio e saudação (1.1-17) 1. Todos precisam de salvação (1.18—3.20) a. Os gentios (1.18-32) b. Os judeus (2.1—3.8) c. Todos têm culpa (3.9-20) 2. Deus salva as pessoas (3.21—4.25) a. Por meio da fé (3.21-31) b. O exemplo de Abraão (4.1-25) 3. A nova vida em união com Cristo (5.1—8.39) a. Justificados por Deus (5.1-21) b. Livres do poder do pecado (6.1-23) c. Livres do domínio da lei (7.1-25) d. Livres pelo poder do Espírito Santo (8.1-30) e. Vitória por meio de Jesus Cristo (8.31-39) 4. O povo de Israel no plano de Deus (9.1—11.36) 5. A vida cristã (12.1—15.13) a. Na igreja (12.1-21) b. No mundo (13.1-14) c. Os fortes e os fracos na fé (14.1—15.13) 6. Conclusão (15.14-33) Saudações e oração de louvor (16.1-27)"
+        "tipo": "auto",
+        "ordem": 11,
+        "conteudo": [
+          {
+            "titulo": "I. SAUDAÇÕES E INTRODUÇÃO PESSOAL DE PAULO (Rm 1.1-15)"
+          },
+          {
+            "titulo": "II. TEMA: A JUSTIÇA DE DEUS PARA JUDEUS E GENTIOS (Rm 1.16-17)"
+          },
+          {
+            "titulo": "III. A PECAMINOSIDADE UNIVERSAL DA HUMANIDADE (Rm 1.18-3.20)",
+            "itens": [
+              "A. A pecaminosidade dos gentios (Rm 1.18-32)",
+              "B. A pecaminosidade dos judeus (Rm 2.1-3.8)",
+              "C. A pecaminosidade universal (Rm 3.9-20)"
+            ]
+          },
+          {
+            "titulo": "IV. A JUSTIÇA DE DEUS PARA A JUSTIFICAÇÃO (Rm 3.21-5.21)",
+            "itens": [
+              "A. Provida em Cristo pela fé (Rm 3.21-31)",
+              "B. Provada pelo exemplo de Abraão (Rm cap. 4)",
+              "C. Garante bênçãos para os justos (Rm 5.1-11)",
+              "D. Fundamentada na obediência de Cristo: o Novo Adão (Rm 5.12-21)"
+            ]
+          },
+          {
+            "titulo": "V. A GRAÇA REINA POR MEIO DA JUSTIÇA (Rm caps. 6-8)",
+            "itens": [
+              "A. O domínio do pecado é destruído, e sua influência, resistida (Rm cap. 6)",
+              "B. Os crentes estão mortos para a condenação da lei, embora ainda não estejam sem pecado (Rm cap. 7)",
+              "C. Os que vivem pelo Espírito provam vitória sobre a carne (Rm cap. 8)"
+            ]
+          },
+          {
+            "titulo": "VI. DEUS DEMONSTRA SUA JUSTIÇA NOS JUDEUS E NOS GENTIOS (Rm caps. 9-11)",
+            "itens": [
+              "A. A justiça de Deus estabelecida na história (Rm cap. 9)",
+              "B. A justiça de Deus recebida somente pela fé (Rm cap. 10)",
+              "C. A justiça de Deus revelada nos judeus e nos gentios (Rm cap. 11)"
+            ]
+          },
+          {
+            "titulo": "VII. A JUSTIÇA DE DEUS ASSIMILADA E EXPRESSA NA VIDA DE SEU POVO (Rm 12.1-15.13)",
+            "itens": [
+              "A. Na resposta de consagração (Rm 12.1, 2)",
+              "B. No ministério do corpo de Cristo (Rm 12.3-21)",
+              "C. Nas realidades da vida política e social (Rm cap. 13)",
+              "D. Na comunhão de fracos e fortes (Rm 14.1-15.13)"
+            ]
+          },
+          {
+            "titulo": "VIII. OS PLANOS DE PAULO E AS SAUDAÇÕES CONCLUSIVAS (Rm 15.14-16.27)",
+            "itens": [
+              "A. A visão de Paulo quanto ao seu ministério (Rm 15.14-22)",
+              "B. O plano de Paulo para visitar Roma (Rm 15.23-33)",
+              "C. As saudações de Paulo para os cristãos em Roma (Rm 16.1-16)",
+              "D. A advertência de Paulo contra os inimigos e a certeza da derrota deles (Rm 16.17-20)",
+              "E. Os companheiros de Paulo enviam saudações (Rm 16.21-24)",
+              "F. A doxologia apostólica de Paulo (Rm 16.25-27)"
+            ]
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "45_Romanos.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte": {
+    "arquivo": "imagens do conjunto Rm",
+    "criterio": "Conteúdo reconstruído a partir das imagens fornecidas pelo usuário, com OCR em colunas independentes, normalização de hifenização e correção de erros evidentes de reconhecimento, preservando o sentido e a organização da fonte."
+  }
 }

@@ -2,67 +2,185 @@
   "schema": "apoio-livro-v1",
   "id": "Dt",
   "nome": "Deuteronômio",
-  "abreviacao": "Deuteronômio",
+  "abreviacao": "Dt",
   "material": {
     "titulo": "Sobre Deuteronômio",
-    "introducao": "No Livro de Deuteronômio estão os discursos que Moisés fez quando o povo de Israel estava na terra de Moabe, a leste do rio Jordão. Depois de terem caminhado quarenta anos pelo deserto, os israelitas estavam prontos para atravessar o Jordão e tomar posse da terra de Canaã. Nos discursos, Moisés faz com que o povo lembre do que Deus havia feito nesses quarenta anos, como os havia livrado da escravidão do Egito e os havia levado, pelo deserto, para a Terra Prometida. Ele manda que o povo obedeça a Deus e cumpra a sua parte do concerto que Deus havia feito com eles e avisa que serão castigados se forem desobedientes. Moisés entrega novamente os dez mandamentos e fala da importância do primeiro mandamento, que ordena que o povo de Israel adore somente o Senhor, o Deus dos seus antepassados. Moisés também chama a atenção do povo para as outras leis e ordens que devem governar a vida dos israelitas. Finalmente Moisés escolhe Josué para ficar no seu lugar e, obedecendo à ordem de Deus, sobe o monte Pisga, de onde vê a terra de Canaã, no outro lado do rio Jordão. Ali no monte morre Moisés, o maior de todos os profetas de Israel. Acima de tudo, o Livro de Deuteronômio mostra o amor que Deus tem pelos israelitas. O Senhor os escolheu para serem o seu povo. Portanto, eles devem amá-lo e obedecer aos seus mandamentos para que continuem a receber as bênçãos de Deus na terra onde vão morar. A passagem-chave do livro se encontra em 6.4-6. Ali está o mandamento que Jesus chamou de o mais importante de todos: “Amarás, pois, o S ENHOR , teu Deus, de todo o teu coração, de toda a tua alma e de toda a tua força.”",
+    "introducao": "Deuteronômio registra os discursos finais de Moisés às portas de Canaã. O livro relembra a história de Israel, repete e aplica as obrigações da aliança, exorta o povo ao amor e à obediência e prepara a transição da liderança para Josué. Sua estrutura culmina com instruções adicionais da aliança, o cântico e a bênção de Moisés e o registro de sua morte.",
     "secoes": [
       {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "Por seuproprio testemunho (1.1, 5; 31.22), Deuteronomio e uma obra de Moisés. A autoria mosaica e afirmada muitas vezes em outros lugares no AT (p. ex., em 2Rs 14.6), em antigas fontes judaicas (p. ex., em Josefo) e no NT. Esse ponto de vista foi quase universalmente mantido até o surgimento da crftica racionalista nos tempos modernos (ver Introdução ao Pentateuco: Autor e Data). Os estudiosos ressaltam corretamente que o ultimo capftulonao poderia tersidoescrito por Moisés,e ha ampla concordancia nosentido de que ocapftulo 34 foiescrito por outra mao.E possfvel que Josue tenha acrescentado a descrição da morte de Moisés e sua propria aceitaqao porparte deIsrael,afimdeligarseu proprio livroa grande produqao de Moisés.Aluz dos w.10-12, outros sugerem que um escriba posterior acrescentou esse capftulocom vistasa demonstrara unidade entrea Leie osProfetas.Entretanto,adiqoes taoobviasnaonegamaautoria essencial de Moisés. C H A M A D O Em termos mais controversos, alguns cn'ticos tem alegado que a linguagem de 1.1, 5 sugere que o escritor do livro deveria ser localizado no lado ocidental do rio Jordao, ou seja, em Canaã (com frequencia, a frase hebraica aqui traduzida como “além do Jordao” e traduzida como “do outro lado do Jordao” ou “deste lado doJordao”).Elesafirmam que tal descrição compromete a credibilidade de Deuteronomio como uma obra de Moisés, ja que Moisés nunca cruzou o Jordao. Esse argumento presume que a frase hebraica em questão deve sempre referirse a regiao oriental do Jordao. E evidente, contudo, que o significado preciso da expressao tem de ser determinado pelo contexto, podendo referirse ou a Transjordania (a regiao ao oriente do Jordao e do mar Morto; ver 1.1-5; 3.8; 4.41, 47, 49) ou a propria Canaã (3.20, 25; 11.30; Js 9.1, 10) sem imporque o orador, necessariamente, esteja do outro lado do Jordao. Aqui, ela significa claramente a regiao oriental do Jordao, como as describes geograficas indicam (1.1, 5)."
+        "ordem": 1,
+        "conteudo": "Deuteronômio é o quinto livro de Moisés e recebe da Septuaginta o título Deuteronomion, “Segunda Lei” ou “Repetição da Lei”. O material também discute a expressão “além do Jordão”, observando que seu sentido deve ser determinado pelo contexto e que, no início do livro, se refere à região oriental do Jordão."
+      },
+      {
+        "id": "autor",
+        "titulo": "Autor",
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "Pelo próprio testemunho do livro e por referências no Antigo Testamento, em fontes judaicas antigas e no Novo Testamento, Deuteronômio é apresentado como obra de Moisés. O material reconhece que o capítulo 34, que registra a morte de Moisés, não poderia ter sido escrito por ele e pode ter sido acrescentado por outra mão, possivelmente para ligar o livro à produção de Moisés e à unidade entre Lei e Profetas. Isso não é considerado negação da autoria mosaica essencial."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 1,
-        "conteudo": "No século XIX, os cn'ticos bíblicos polemizaram que Deuteronomiofoi escrito por volta de 620a.C., como parte da reforma religiosa do rei Josias, pois ele insistia que o culto tinha de estar centrado em Jerusalém. Esses críticos afirmavam que a regulamentagao do santuário central (cap.12) foi inventada por um escritor que apoiava a reforma de Josias.Em anos mais recentes,contudo,esse ponto de vista tern recebido menos endosso.Alguns tern datado Deuteronomio bem antes de Samuel; outros, bem depois do exílio. Muitos críticos ainda datam o livro no VII a.C.,a saber, no período de Josias.Mas esses estudiosos também questionam a unidade do livro. Se certas partes parecem “primitivas” (do tempode Moisés),algunsasatribuem a uma antiga tradição que ternsido convenientemente preservada. Se outras partes parecem “tardias” (durante ou após o tempo de Josias), sao atribui'das a “edigoes tardias” ou como resultado de uma “edigao tardia”. Entretanto,não ha apoio textual para essasconclusoeselasticas,subjetivas e especulativas. Nenhuma evidencia concreta impede que a composição de Deuteronomio seja da época de Moisés, oferecendo subsfdios razoaveis para adigoes por alguem que anexou ao livro o registro postumo de Moisés e para alguma atualizagao posterior da gramatica hebraica e de nomes de lugares. O pano defundo e o cenariodolivrorefletem condigoes anterioresa conquista de CanaasobJosue.Não ha mengao a um rei emJuda ou a cidade de Jerusalém, a qual e mencionada mais de cem vezes pelo profeta Jeremias (que escreveu nos dias de Josias).E improvavel que um autor do século VI naofizesse qualquer alusao aquela capitalou aoseutemplo.As doze tribossao representadascomo umasonagao (e não,como no período de Josias,pelos reinos de Judá e Israel).As cidadesde refugio da Transjordania sao mencionadas, enquanto as de Canaã (que, mais tarde, sao mencionadas por Josue) não o sao. Não se usam os nomes babilonios para meses, e não ha, no vocabulario, nenhuma palavra persa para emprestimo, embora se espere que tais palavrasaparegam numa obra supostamente escrita no período em que esses imperios eram dominantes. Moisés, Arao e Josuesao mencionados; mais tarde, porém, não se menciona ninguem, tampouco algum incidente histórico. E improvavel que um autor mais moderno, mesmo um bem versado no conhecimento do passado, pudesse evitar tao completamente o uso de termos mais modemos e a mengao a pessoas ou eventos deseu proprio período. Alguns estudiosos tern notado a conformidade geral da estrutura de Deuteronomio com a alianga ou forma de tratado de meados do segundo milenio a.C.(a época aproximada de Moisés).Eles encontram os seguintes elementos de tratado em Deuteronomio:(a) um preambulo que identifica o mediador pactual (1.1-5);(b) um prologo histórico revisando a história pactual anterior (1.6^t.40); (c) estipulagoes expondo o modo de vida pactual (4.44-1132; 12-26); (d) uma declaragao de sangoes proclamando bênçãos pela obediencia e maldições pela desobediencia da aliança (caps. 27 a 30); e (e) uma provisao para a administragao da aliança aposa morte do mediador inaugural (caps. 31 a 34). Ainda que os aspectos dessa abordagem tenham muito merito, o presente piano de Deuteronomio e formado por dois extensos discursos de exortação enunciados por Moisés.Enquanto esses discursos possivelmente espelham, em parte, a forma original da aliança iniciada no Monte Sinai, o presente texto de Deuteronomio incorpora essa forma na narrativa global do Pentateuco.Essa evidencia leva a conclusao de que Moisés,olegislador de Israel, escreveu Deuteronomio (excluindo o registro de sua morte, no capítulo 34) antes de sua morte, em 1406 a.C."
+        "ordem": 3,
+        "conteudo": "Críticos do século XIX propuseram uma data por volta de 620 a.C., relacionada à reforma de Josias e ao santuário central, mas o material considera essa conclusão especulativa e sem apoio textual suficiente. O pano de fundo do livro é anterior à conquista de Canaã sob Josué: não há rei em Judá nem referência a Jerusalém como centro político, as doze tribos aparecem como uma só nação e as cidades de refúgio mencionadas são as da Transjordânia. Deuteronômio registra os acontecimentos entre Números e Josué, quando Moisés fala nas planícies de Moabe pouco antes de Josué assumir a liderança. O material situa a composição essencial antes da morte de Moisés."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "Deuteronomio narra os eventos havidos entre os fatos registrados em Números e aqueles registrados em Josue. Moisesfalou aos israelitas enquanto estavam acampados nas planfcies de Moabe, precisamente antes que Josue assumisse o comando e os guiasse a terra de Canaã. O conteudo dos discursos e conservado em seu contexto; a morte ja se avizinhava de Moisés, e o discurso era constitufdo por palavras de despedida dirigidas ao povo que fora guiado por ele nos ultimos quarenta anos. C A R A C T E R I S T I C A S L1T E R A R I A S Boa parte de Deuteronomioconsiste de dois discursos substanciais enunciados por Moisés, exortando os israelitas ao amor e a obediencia a Deus (caps. 1-4; 5-26).Com a conquista da Transjordania conclufda com sucesso, Moisés desafiou os israelitas nesses discursosde despedida. Deuteronomio combina exortação e instruções, e serve de exemplo de comoas obrigações pactuaisseriam ensinadas. O discurso de abertura (1.5-4.40)rememora asexperiencias de Israelsoba liderança de Moisés. Deuteronomionaofala de comoMoisesconfrontou Faraó ou de como os sinais e prodfgios miraculosos forgaram Faraó a deixar o povo partir,masfaz reiterada alusao ao exodo (cinco vezes no primeiro discurso:1.20, 34; 4.20,34, 37).Moisés relembraoprovidentiale miraculoso cuidadoqueDeus teve com o povodurantea jornada doEgitoaoSinaiEntao,detalhasuaderrota espiritualemilitaremCades-Bameia.Aqui ha referencias aos eventos registrados em Números, mas, como o registroem Números,quase nadaeditosobreoseventoshavidosduranteosquarentaanosda peregrinagao pelodeserto.Mencionasea jomada que rodeia Edom rumo a Transjordania, e registrase a derrota sofrida pelos reisSeomeOguecom maioresdetalhesdoque em Números.Entao,vemaalocagaoda terra naTransjordania para as tribosdeRuben,Gade e a meia tribo de Manasses(comoem Números 32),ea narrativatermina comuma referendaasuplica de Moisesemseu favor para entrarem Canaã, o que Deus desaprovou (como em Números 27.12-23). Moisés conclui o primeirodiscursocom exortagoesalealdadeaoSenhor. O segundo discurso comega com exortagoes (5.1-11.32). A abordagem prossegue até 26.19, com Moisés expondo os estatutos e jrn'zos ligados a aliança sinaftica (caps.12 a 26).O discurso comega com os Dez Mandamentos, quase identico ao vocabulario de Exodo 20,a excegao doquarto mandamento (5.12-15, nota).Moisés rememora o terror da teofania (uma autorrevelagao visfvel de Deus) no Monte Sinai, com uma convocagao dirigida por ele a obediencia a Deus. No Monte Sinai,somente o Dez Mandamentosforam dadosdiretamente pela voz de Deus;as demais obrigações pactuais foram mediadas por Moisés (5.22, nota). O famoso Shema, “Ouve, Israel: OSenhor, nosso Deus, e o único Senhor”, e dado em 6.4, com a exortação ao ensino, a memoria e a obediencia.Os capítulos 6-11 estao recheadosde exemplosdoscuidadose dos jufzos de Deus desde a partida do Egito — todas as alusoes aos elementos em Exodo e Números. Esses exemplos servem para advertir Israel a confiança no Senhor, e não em si mesma. Isso leva a promessa de sucesso no futuroconflito em Canaã. Os estatutos e jufzos nos capítulos 12-26 incluem regulamentagbes para culto, alimentos limpos, escravos e dfvidas, festas anuais, juízes, cidades de refugio e varias questões de conduta.A maior parte tern algum paralelo com o material encontrado nos livros anteriores do Pentateuco, paralelos que sao examinados nos lugares apropriados. Os capítulos finais de Deuteronomio contem um misto de discursos mais breves enunciados por Moisés e relatorios descritivos. Nos capítulos 27-30, Moisés exorta os israelitas a obedecerem ainda uma vez as instruções, ou ao Tora, que ele lhes deu. Moisés da instruções para uma cerimonia solene a ser realizada no vale entre o Monte Ebal e o Monte Gerizim, nas proximidades de Siquem, depois que Israel tiver garantido uma posigaosegura em Canaã— uma cerimonia reminiscente da cerimonia pactual de Exodo 20.1-24.8, e que Josue mais tarde efetuaria (fs 8.30-35). Essas instruções e exortagoes sao dadas por Moisés com enfase para a obrigagao de Israel diante de Deus de ouvir e obedecer aos mandamentos doSenhor. As segoesfinals do livro sao igualmente importantes e poderosas (31.1-34.2). Elas incluem a instalagao de (osue como o sucessor de Moisés;o grande Cantico de Moisés celebrando a grandeza de Deus e seu cuidado em relação ao seu povo pactual, advertindo, porém,o povo acerca desua propensaoa desobediencia (cap. 32); o cantico de Moisés como bênção, dirigidoas doze tribos segundo a forma da bênção de Jaco impetrada sobre seus doze filhos em Genesis 49 (cap. 33); e, finalmente, o adendo descrevendo a morte de Moisés(cap. 34)."
+        "ordem": 4,
+        "conteudo": "Deuteronômio consiste em grande parte de dois discursos substanciais de Moisés, combinando exortação e instrução. Sua estrutura apresenta semelhanças gerais com formas de tratado de aliança do segundo milênio a.C.: preâmbulo, prólogo histórico, estipulações, sanções de bênção e maldição e provisões para a administração da aliança. O texto atual incorpora essa forma na narrativa global do Pentateuco."
+      },
+      {
+        "id": "caracteristicas_literarias",
+        "titulo": "Características literárias",
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "O primeiro discurso (1.5-4.40) relembra as experiências de Israel sob a liderança de Moisés, incluindo o Êxodo, o cuidado de Deus, a derrota espiritual e militar em Cades-Barneia, a jornada em torno de Edom, as derrotas de Seom e Ogue, a distribuição da Transjordânia e a súplica de Moisés para entrar em Canaã. O segundo discurso começa com os Dez Mandamentos e exortações ao amor e à obediência, prosseguindo com estatutos e juízos ligados à aliança. Os capítulos 27-30 retomam a obrigação de obedecer à Torá e incluem a cerimônia de Ebal e Gerizim. As seções finais incluem a instalação de Josué, o cântico de Moisés, sua bênção sobre as doze tribos e o adendo sobre sua morte."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "T E M A S P R I N C I P A I S Como jase notou, Deuteronomio registra os discursosfinaisde Moisesaosisraelitas.Opovo jase encontra nolimiar de um novofuturona terra de Canaã,e Moisés os exorta ao amor e a obediencia aoSenhor, afim de experimentara vida em toda a sua plenitude.Com boa razao,Moisessublinha a necessidade de haver lealdade exclusiva a Deus, advertindo sobre o risco imposto pelas praticas de idolatria das nações que ja vivem em Canaã.Além disso, Moisés volta a ressaltar as obrigagoesda aliança sinaftica,lembrandoo povo de comoa obediencia trara bênção e a desobediencia trara maldição. Deuteronomio conclui com a expectativa de que os israelitas falharao em guardarsuas obrigagfies pactuais. T E O L O G I A D E D E U T E R O N O M I O Ao relembrar oque Deus ja fez pelosisraelitas, libertandoos da servidao no Egito, Moisés retrata Deus como, respectivamente, todopoderoso e compassivo. Além do mais, o Senhor tern sido fiel as promessasfeitasaos patriarcas,a despeito da fidelidade oscilante dos israelitas.Comoem Exodo e Levftico, as obrigações pactuaissublinhama natureza moral de Deus,enfatizandosuasantidade e pureza."
+        "ordem": 6,
+        "conteudo": "Deuteronômio registra os discursos finais de Moisés a uma geração prestes a entrar em Canaã. O grande tema é a exortação ao amor e à obediência ao Senhor. Moisés enfatiza lealdade exclusiva a Deus, adverte contra a idolatria e relembra que obediência traz bênção e desobediência traz maldição. Os estatutos dos capítulos 12-26 tratam de culto, alimentos limpos, escravos e dívidas, festas, juízes, cidades de refúgio e outras questões de conduta. O livro termina antecipando o fracasso de Israel em guardar suas obrigações pactuais."
+      },
+      {
+        "id": "teologia_de_deuteronomio",
+        "titulo": "Teologia de Deuteronômio",
+        "tipo": "texto",
+        "ordem": 7,
+        "conteudo": "Ao relembrar a libertação do Egito, Moisés retrata Deus como todo-poderoso e compassivo e fiel às promessas feitas aos patriarcas. As obrigações da aliança ressaltam a natureza moral de Deus, sua santidade e pureza. O material também apresenta tipos e profecias que apontam para Cristo: ele é relacionado ao Cordeiro Pascal e ao profeta futuro. Moisés mediou a antiga aliança, enquanto Cristo medeia a nova. A antiga aliança foi escrita em tábuas de pedra e exigiu sangue de animais; a nova é associada ao Espírito e ao sangue de Cristo."
       },
       {
         "id": "deuteronomio_na_historia_mais_ampla_da_biblia",
         "titulo": "Deuteronômio na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "M A I S A M P L A D A B I B L I A Como uma exposigao das obrigações pactuais impostasaos israelitas, o livro de Deuteronomio e excepcionalmenteimportante.Como os livros subsequentes do AT revelam,a persistente incapacidade dos israelitas de manter sua parte na aliança finalmente resultou no juízo e na punição divinos. Os profetas do ATse voltaram asestipulagdes pactuais em Deuteronomio quando chamavam Israel ao arrependimento.Como Moisesantecipou e Deus advertiu, os israelitas, por fim, experimentam a forga das maldições anunciadas em Deuteronomio 27 e 28.Seu fracasso sublinha a inadequagao da aliança mosaica e explica por que uma nova aliança foi iniciada por Jesus Cristo.Embora os cristãos naosejam diretamente vinculados as obrigações da aliança mosaica, os valores morais que sublinham essas obrigações permanecem instrutivos e fomecem diretrizes para o viver diario. C R I S T O E M D E U T E R O N O M I O Segundo Deuteronomio 17.14-20, o rei israelita tinha de meditar diariamente no ensino apresentadoem Deuteronomio 5-26 e viver por ele.Como o herdeiro divinamente escolhido para a dinastia davfdica, Jesus, sem duvida, conhecia bem o conteudo do livro de Deuteronomio e o citou quando foi tentado por Satanas (Mt 4.1-11; Lc 4.1-13). Por meio de tipos e profecias, Deuteronomio também aponta para Cristo. Ele e o Cordeiro Pascal (16.1, nota) e o profeta futuro (18.15-19, nota). Moisés, o fundador da teocracia de Israel, mediou a antiga aliança, mas Jesus Cristo, o Filho de Deus, mediou a nova aliança (Jr 31.31-34; Hb 3.1-6). Enquanto a antiga aliança foi escrita em tabuas de pedra, Cristo escreve a nova aliança mediante o Espírito do Deus vivo nas tabuas dos coragoes humanos(2Co 3.3).A antiga aliança requereu derramamento de sangue de animais; a nova e eterna aliança foi instituida uma vez para sempre pelo sangue de Cristo (Jr 32.40; Hb 9.11-28). A antiga aliança requer uma religiao do coragao, mas fracassou, em virtude da fraqueza humana, tornandose obsoleta depois de seu cumprimento no Calvario (Rm 8.3; Hb 7.12; 8.13)."
+        "ordem": 8,
+        "conteudo": "Como exposição das obrigações pactuais de Israel, Deuteronômio é apresentado como fundamental para compreender a história posterior do povo. A incapacidade persistente de Israel em guardar a aliança resulta em juízo, e os profetas recorrem às estipulações de Deuteronômio quando chamam Israel ao arrependimento. As maldições anunciadas nos capítulos 27 e 28 acabam sendo experimentadas. O fracasso da aliança mosaica explica, no argumento do material, a necessidade de uma nova aliança em Jesus Cristo. Os valores morais subjacentes permanecem instrutivos para a vida diária cristã."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "A O ^ Deuteronomio e citado no NT mais de cinquenta vezes, número só excedido por Salmos e Isafas. Desde o infcio do século XIX, a escola crftica influenciou, de maneira significativa, a maneira como o livro de Deuteronomio tern de ser abordado, negando sua origem mosaica e afirmando que ele foi a invengao de um pen'odo posterior. Naturalmente, tal abordagem destroi a autoria da Escritura e distorce o quadro bíblico de como a religiao israelita se desenvolveu desde o tempo de Moisés para ca. A evidencia para a composição tardia de Deuteronomio não e convincente e se apoia largamente em pressuposigoes questionaveis (ver Data e Circunstancias, acima). E S B O g O D E D E U T E R O N O M I O I. INTRODUCAO (1.1-5) II. PRIMEIRO DISCURSO DE Moisés (1.6-4.40) A. Trajeto de Horebe ao rio Arnom (1.6-2.23) B. Campanha da Transjordania e estabelecimento (2.24-3.29) C. Exorta?ao a obediencia a lei de Deus (4.1-14) D. Advertencia contra a idolatria (4.15-40) III. INTERLUDIO: CIDADES DE REFUGIO NA TRANSJORDANIA (4.41-43) IV. INTRODUCAO AO SEGUNDO DISCURSO DE Moisés (4.44-49) V. SEGUNDO DISCURSO DE Moisés (CAPS. 5-26) A. Prefacio e os Dez Mandamentos (4.44-5.22) B. Mediagao do restante da lei por Moisés (5.23-33) C. Amor e obediencia ao Deus único e verdadeiro (cap. 6) D. Promessa de vitoria e chamado a separagao (7.1-10.5) E. Parenteses: os levitas separados para o servigo (10.6-9) F. Dever para com o amor e a obediencia ao grande e verdadeiro Deus (10.10-11.25) ao da liturgia de Ebal-Gerizim G. Primeira men^ (11.26-32) H. Urn lugar de sacrifício, penalidade pela idolatria (caps.12 e 13) J.Instru^ oes para o culto: pureza, juizes, rei, sacerdocio, profeta (caps.14-18) K. Primicias e dizimos, exortagoes conclusivas (cap. 26) VI. INSTRUCdES ADICI0NAIS: A Aliança E A LITURGIA DE EBAL-GERIZIM (CAPS. 27-30) A. Maldives e bênçãos em Ebal e Gerizim (caps. 27 e 28) B. A alian^ a em Moabe (caps. 29 e 30) VII. C0NCLUSA0 DO Ministério DE MOIStS (CAPS. 31-34) A. Transference da liderança para Josue (31.1-29) B. Cantico de Moisés (31.30-32.52) C. Bênção de Moisés sobre as Doze Tribos (cap. 33) D. Adendo: A morte de Moisés e a elegia dedicada a ele (cap. 34)"
+        "ordem": 9,
+        "conteudo": "Deuteronômio é citado mais de cinquenta vezes no Novo Testamento. Desde o século XIX, a escola crítica influenciou sua interpretação ao negar sua origem mosaica e atribuí-lo a um período posterior. O material rejeita essa conclusão como dependente de pressuposições questionáveis e considera insuficiente a evidência para uma composição tardia."
       },
       {
-        "id": "esboco",
+        "id": "cristo_em_deuteronomio",
+        "titulo": "Cristo em Deuteronômio",
+        "tipo": "texto",
+        "ordem": 10,
+        "conteudo": "Deuteronômio 17.14-20 exige que o rei israelita medite no ensino de Deuteronômio 5-26 e viva por ele. O material relaciona Jesus, herdeiro da dinastia davídica, ao conhecimento e uso do livro, especialmente nas tentações registradas em Mateus 4.1-11 e Lucas 4.1-13. Também relaciona Deuteronômio a Cristo como Cordeiro Pascal e como o profeta futuro."
+      },
+      {
+        "id": "esboco_de_dt",
         "titulo": "Esboço de Deuteronômio",
-        "tipo": "outline",
-        "ordem": 6,
-        "conteudo": "1. O primeiro discurso de Moisés (1.1—4.43) 2. O segundo discurso de Moisés (4.44—11.32) 3. O código deuteronômico (12.1—26.19) 4. O terceiro discurso de Moisés (27.1—28.68) 5. O quarto discurso de Moisés (29.1—30.20) 6. As últimas disposições (31.1—32.47) 7. O último dia da vida de Moisés (32.48—34.12) a. A visão de Canaã (32.48-52) b. A bênção de Moisés (33.1-29) c. A morte de Moisés (34.1-12)"
+        "tipo": "auto",
+        "ordem": 11,
+        "conteudo": [
+          {
+            "titulo": "Introdução (1.1-5)"
+          },
+          {
+            "titulo": "Primeiro discurso de Moisés (1.6-4.40)",
+            "itens": [
+              {
+                "texto": "A. Trajeto de Horebe ao rio Arnom (1.6-2.23)"
+              },
+              {
+                "texto": "B. Campanha da Transjordânia e estabelecimento (2.24-3.29)"
+              },
+              {
+                "texto": "C. Exortação à obediência à lei de Deus (4.1-14)"
+              },
+              {
+                "texto": "D. Advertência contra a idolatria (4.15-40)"
+              }
+            ]
+          },
+          {
+            "titulo": "Interlúdio: cidades de refúgio na Transjordânia (4.41-43)"
+          },
+          {
+            "titulo": "Introdução ao segundo discurso de Moisés (4.44-49)"
+          },
+          {
+            "titulo": "Segundo discurso de Moisés (caps. 5-26)",
+            "itens": [
+              {
+                "texto": "A. Prefácio e os Dez Mandamentos (4.44-5.22)"
+              },
+              {
+                "texto": "B. Mediação do restante da lei por Moisés (5.23-33)"
+              },
+              {
+                "texto": "C. Amor e obediência ao Deus único e verdadeiro (cap. 6)"
+              },
+              {
+                "texto": "D. Promessa de vitória e chamado à separação (7.1-10.5)"
+              },
+              {
+                "texto": "E. Parênteses: os levitas separados para o serviço (10.6-9)"
+              },
+              {
+                "texto": "F. Dever para com o amor e a obediência ao grande e verdadeiro Deus (10.10-11.25)"
+              },
+              {
+                "texto": "G. Primeira menção da liturgia de Ebal-Gerizim (11.26-32)"
+              },
+              {
+                "texto": "H. Um lugar de sacrifício, penalidade pela idolatria (caps. 12 e 13)"
+              },
+              {
+                "texto": "J. Instruções para o culto: pureza, juízes, rei, sacerdócio, profeta (caps. 14-18)"
+              },
+              {
+                "texto": "K. Primícias e dízimos, exortações conclusivas (cap. 26)"
+              }
+            ]
+          },
+          {
+            "titulo": "Instruções adicionais: a aliança e a liturgia de Ebal-Gerizim (caps. 27-30)",
+            "itens": [
+              {
+                "texto": "A. Maldições e bênçãos em Ebal e Gerizim (caps. 27 e 28)"
+              },
+              {
+                "texto": "B. A aliança em Moabe (caps. 29 e 30)"
+              }
+            ]
+          },
+          {
+            "titulo": "Conclusão do ministério de Moisés (caps. 31-34)",
+            "itens": [
+              {
+                "texto": "A. Transferência da liderança para Josué (31.1-29)"
+              },
+              {
+                "texto": "B. Cântico de Moisés (31.30-32.52)"
+              },
+              {
+                "texto": "C. Bênção de Moisés sobre as doze tribos (cap. 33)"
+              },
+              {
+                "texto": "D. Adendo: a morte de Moisés e a elegia dedicada a ele (cap. 34)"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "05_Deuteron#U00f4mio.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte": {
+    "arquivo": "05_Deuteronômio.pdf",
+    "paginas": "páginas de introdução e esboço (PDF de 5 páginas)",
+    "criterio": "Conteúdo baseado no material já consolidado do PDF de introdução do livro. A estrutura foi normalizada para coincidir com o padrão de Gênesis: o Esboço é uma seção dentro de material.secoes, com hierarquia expansível. Não foi acrescentado conteúdo externo ao material fornecido."
+  }
 }

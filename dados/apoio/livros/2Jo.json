@@ -2,53 +2,102 @@
   "schema": "apoio-livro-v1",
   "id": "2Jo",
   "nome": "2 João",
-  "abreviacao": "2 João",
+  "abreviacao": "2Jo",
   "material": {
     "titulo": "Sobre 2 João",
-    "introducao": "Esta pequena epístola foi escrita por um “presbítero”, isto é, um dirigente de uma igreja. A epístola é dirigida aos membros de outra igreja, os quais o autor conhece bem. Ele pede aos leitores que amem uns aos outros e que tomem cuidado com certas doutrinas falsas que estão sendo espalhadas pelo mundo.",
+    "introducao": "A Segunda Epístola de João é uma breve carta de encorajamento e advertência que une amor, verdade e obediência e estabelece limites para a hospitalidade cristã diante de falsos mestres.",
     "secoes": [
       {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "O estilo, a fraseologia e 0 conteúdo de João caracterizamna como escrita pelo mesmo autor de 1 João e do Evangelho de João. Tradicionalmente, esse autor tem sido identificado como o apóstolo João, 0 filho de Zebedeu; e nenhuma atribuição mais plausível tem sido proposta. Ver Introdução a 1 João: Título e Autor. D A T A E C I R C U N S T Â N C I A S A Segunda Epístola de João foi escrita para advertir contra a mesma linha de falsa doutrina à qual 1 João se opõe, ou seja, o docetismo (ver Introdução a 1 João: Data e Circunstâncias). Deve ter sido escrita quase no mesmo período, nas duas últimas décadas do século I, talvez na parte final dos anos 90 d.C. Embora repita idéias de 1 João, não pressupõe 0 conhecimento de 1 João por parte do leitor. Provê critério teológico para estender hospitalidade — e apoio implícito — a mestres itinerantes (w. 9,11). A Terceira Epístola de João também aborda a promoção da hospitalidade a mestres ortodoxos (3J0 5,10). E provável que 2 João tenha sido escrita depois de 1 João. Mas a identificação da audiência de 2 João de (v. 1) é mais específica, e os leitores originais desta epístola podiam estar ou não familiarizados com 1 João. Portanto, a ordem de composição das epístolas não afeta nossa interpretação."
-      },
-      {
-        "id": "caracteristicas_literarias",
-        "titulo": "Características literárias",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "A Segunda Epístola de João é uma carta e segue, em geral, as convenções epistolares típicas do século I (ver Introdução às Epístolas). Contém uma abertura (vv. 1-3), um corpo (vv. 4-11) e uma conclusão padrão (vv. 12,13). É também uma epístola muito breve, ao contrário da maior parte das epístolas de Paulo, porém muito semelhante às cartas mais breves escritas no mundo grecoromano. C A R A C T E R Í S T I C A S E T E M A S P R I N C I P A I S Alguns eruditos entendem que a Segunda Epístola de João foi escrita para uma mulher cristã e sua família — ou sua família natural ou a comunhão de crentes a ela associados. É possível que a “senhora eleita” seja a igreja para a qual João estava escrevendo, e “seus filhos”, os membros da igreja. A semelhança das primeiras cartas de Paulo, esta é uma carta de encorajamento e advertência escrita para uma comunidade específica pela qual 0 autor tem responsabilidade pastoral. Como em 1 João, na carta há foco na falsa doutrina daqueles que têm 0 espírito do anticristo e de seus seguidores que enganam."
+        "conteudo": "A Segunda Epístola de João é uma breve carta de encorajamento e advertência que une amor, verdade e obediência e estabelece limites para a hospitalidade cristã diante de falsos mestres."
       },
       {
-        "id": "teologia_de_2_joao",
-        "titulo": "Teologia de 2 João",
+        "id": "autor",
+        "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "A verdade é indispensável para “0 presbítero” que escreveu 2 João. Ele ama os destinatários da carta “na verdade”, como 0 fazem “todos os que conhecem a verdade” (v. 1). Essa verdade “permanece em nós e conosco estará para sempre” (v. 2). Tal linguagem pode sugerir que, como “vida eterna” funciona como um nome para designar Cristo em 1 João 1.2, também aqui “verdade” designa O Filho de Deus, que se descreveu como “a verdade” em João 14.6 e prometeu permanecer em e estar com aqueles que 0 seguem (Jo 15.5; 14.8). Ou a referência pode ser ao Espírito da verdade, que, conforme Jesus prometeu, estará em e com os crentes “para sempre” (Jo 14.16, 17). Por mais pessoal que “a verdade” seja, apresenta um conteúdo doutrinário específico. Andar “na verdade” é confessar que Jesus Cristo veio em came (v. 7) e significa permanecer na “doutrina de Cristo”, que garante a comunhão com O Pai (v. 9). Andar “na verdade” é, também, andar de acordo com os “mandamentos de Cristo”, pelo que os cristãos obedecem ao preeminente mandamento de Deus: “que nos amemos uns aos outros” (vv. 5, 6). O mandamento de amar não é novo; ele nos foi dado “desde 0 princípio” (1 Jo 2.7-11, nota). Visto que 0 amor é definido como andar de acordo com os mandamentos do Pai (v. 6), tem mais a ver com ações concretas e compassivas do que com meros sentimentos afetuosos (1 Jo 3.16-19). Embora nesta carta João não discuta 0 tema da eleição soberana de Deus, ele afirma isso ao se reportar a seus leitores como eleitos e ao transmitir saudações da “tua irmã eleita” (vv. 1,12). O evangelho de João afirma que O Pai dá pessoas ao Filho como ovelhas pelas quais ele entregou sua vida (Jo 10.15,29; 17.6) e que Jesus fez a escolha de seus discípulos (Jo 15.16,19)."
+        "conteudo": "O estilo, a fraseologia e o conteúdo identificam 2 João com o autor de 1 João e do Evangelho de João. A tradição identifica esse autor com o apóstolo João, filho de Zebedeu, e a fonte considera essa atribuição mais plausível que alternativas."
       },
       {
-        "id": "2_joao_na_historia_mais_ampla_da_biblia",
-        "titulo": "2 João na história mais ampla da Bíblia",
+        "id": "data_circunstancias",
+        "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "M A I S A M P L A D A B Í B L I A A confissão de que Jesus é O Cristo vindo na carne (v. 7), aquele que distingue os crentes que andam na verdade e os muitos enganadores em circulação, afirma a encarnação do “Filho do Pai” (v. 3) como 0 fundamento indispensável da verdade revelada e, implicitamente, do plano redentor de Deus para a história. Diferentemente de 1 João (1.7; 2.2; 3.16; 4.10), esta breve epístola não desenvolve 0 propósito expiatório para 0 qual O Filho assumiu a natureza humana; mas a confissão de que Cristo veio “em carne” subentende 0 propósito pelo qual ele abraçou a fraqueza da humanidade. C R I S T O E M 2 J O Ã O A Segunda Epístola de João afirma tanto a deidade de Cristo como sua verdadeira humanidade. “Jesus Cristo, O Filho do Pai” é unido a Deus, O Pai, como as pessoas divinas que conferem as bênçãos (graça, misericórdia e paz) pronunciadas na abertura da carta (v. 3). A autoridade singular de Cristo para revelar a Deus, O Pai, está implícita na afirmação de que aqueles que abandonam “a doutrina de Cristo” não têm nenhum acesso a Deus. Entretanto, permanecer nessa doutrina traz comunhão salvadora tanto com O Pai como com O Filho (v. 9). Permanecer nessa doutrina envolve afirmar a realidade da encarnação e da humanidade do Filho: todo aquele que não confessa que Jesus é O Cristo que veio em carne, esse é um enganador e um anticristo (v. 7). H I S T Ó R I A D E I N T E R P R E T A Ç Ã O Devido à sua curta extensão, 2 João não teve, na história da Igreja, a mesma influência que muitos outros livros do Novo Testamento tiveram. No entanto, seu testemunho quanto à centralidade da encarnação tem lembrado geração após geração de cristãos que a cristologia ortodoxa é indispensável ao relacionamento salvador com Jesus Cristo."
+        "conteudo": "A carta combate o mesmo tipo de falsa doutrina enfrentado em 1 João, especialmente o docetismo. Provavelmente foi escrita nas duas últimas décadas do século I, talvez no final dos anos 90. A “senhora eleita” pode ser uma mulher cristã e sua família ou uma igreja e seus membros; a carta oferece critérios para conceder hospitalidade a mestres itinerantes."
       },
       {
-        "id": "esboco",
-        "titulo": "Esboço de 2 João",
-        "tipo": "outline",
+        "id": "genero",
+        "titulo": "Gênero e características literárias",
+        "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Prefácio e saudação (vs. 1-3) 1. Permanecei firmes na verdade (vs. 4-6) 2. Cuidado com os enganadores (vs. 7-11) Saudações (vs. 12-13)"
+        "conteudo": "2 João segue o padrão de uma carta greco-romana curta, com abertura, corpo e conclusão. A estrutura epistolar é simples e concentra grande conteúdo em poucos versículos. Sua brevidade e foco pastoral dão à carta caráter direto de encorajamento e advertência."
+      },
+      {
+        "id": "caracteristicas_temas_principais",
+        "titulo": "Características e temas principais",
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "A carta destaca a unidade entre verdade, amor e obediência. A comunidade deve andar na verdade e no mandamento de amar uns aos outros, mas não deve acolher como mestres aqueles que negam a encarnação de Cristo. A hospitalidade cristã é subordinada à fidelidade doutrinária."
+      },
+      {
+        "id": "teologia_dois_jo",
+        "titulo": "Teologia de 2 João",
+        "tipo": "texto",
+        "ordem": 6,
+        "conteudo": "A verdade é central: “andar na verdade” significa permanecer na doutrina de Cristo e nos mandamentos. A carta une verdade e amor, não permitindo que amor seja confundido com tolerância à falsa doutrina. A comunhão com o Pai depende de permanecer na doutrina de Cristo."
+      },
+      {
+        "id": "historia_ampla",
+        "titulo": "2 João na história mais ampla da Bíblia",
+        "tipo": "texto",
+        "ordem": 7,
+        "conteudo": "2 João participa da grande história bíblica ao preservar a confissão apostólica sobre a encarnação e ao orientar a comunidade a permanecer fiel à verdade recebida. Sua preocupação com mestres itinerantes mostra a necessidade contínua de preservar a Igreja contra ensino que deturpe o evangelho."
+      },
+      {
+        "id": "cristo_em",
+        "titulo": "Cristo em 2 João",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "A carta afirma a deidade e a verdadeira humanidade de Cristo. Jesus Cristo, o Filho do Pai, é associado ao Pai na bênção inicial. Negar que Jesus Cristo veio em carne identifica o enganador e o anticristo. Permanecer na doutrina de Cristo significa ter comunhão com o Pai e com o Filho."
+      },
+      {
+        "id": "historia_interpretacao",
+        "titulo": "História de interpretação",
+        "tipo": "texto",
+        "ordem": 9,
+        "conteudo": "Devido à sua brevidade, 2 João teve menor influência histórica que livros maiores. Ainda assim, sua defesa da encarnação serviu para lembrar continuamente à Igreja que uma cristologia ortodoxa é indispensável ao relacionamento salvador com Jesus."
+      },
+      {
+        "id": "esboco_2jo",
+        "titulo": "Esboço de 2 João",
+        "tipo": "auto",
+        "ordem": 10,
+        "conteudo": [
+          {
+            "titulo": "I. INTRODUÇÃO E SAUDAÇÃO (vv. 1-3)"
+          },
+          {
+            "titulo": "II. CORPO DA CARTA (vv. 4-11)",
+            "itens": [
+              "A. Amor e obediência (vv. 4-6)",
+              "B. O perigo da falsa doutrina e a resposta aos falsos mestres (vv. 7-11)"
+            ]
+          },
+          {
+            "titulo": "III. CONCLUSÃO E DESPEDIDA (vv. 12-13)"
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "63_2 Jo#U00e3o.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte": {
+    "arquivo": "63_2 João/63_2 João0.jpg até 63_2 João2.jpg",
+    "paginas": "imagens fornecidas no lote 09_Cartas_Gerais",
+    "criterio": "Reconstrução baseada nas imagens, com OCR por coluna, normalização de hifenização e correção de erros evidentes de OCR."
+  }
 }

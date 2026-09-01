@@ -2,95 +2,136 @@
   "schema": "apoio-livro-v1",
   "id": "Pv",
   "nome": "Provérbios",
-  "abreviacao": "Provérbios",
   "material": {
     "titulo": "Sobre Provérbios",
-    "introducao": "Provérbios é um livro de sabedoria prática. Ensina que a religião está ligada aos problemas comuns da vida. Começa lembrando que “o temor do S ENHOR é o princípio do saber”. Trata também de assuntos de moral, de bom senso e de boas maneiras. Os provérbios revelam a sabedoria dos antigos mestres israelitas sobre o que a pessoa sábia deve fazer em certas situações. Alguns provérbios são a respeito das relações familiares; outros, sobre o comportamento nos negócios. Alguns tratam de boa educação nas relações sociais; e outros, da necessidade de a pessoa saber se controlar. Entre outras coisas, eles ensinam a humildade, a paciência, o respeito pelos pobres e a lealdade para com os amigos.",
+    "introducao": "Provérbios reúne ensinamentos de sabedoria destinados a formar pessoas capazes de viver de modo prudente diante de Deus e da sociedade. O livro enfatiza o temor do Senhor, a busca pela sabedoria, a disciplina, o trabalho, a justiça, o domínio da fala e a qualidade das relações humanas.",
     "secoes": [
       {
-        "id": "cristo_em_proverbios",
-        "titulo": "Cristo em Provérbios",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "O Novo Testamento entende que Jesus Cristo e o apice da tradição de sabedoria do Antigo Testamento, de varias maneiras. Em primeiro lugar, Jesus e a pessoa totalmente sabia. Em Lucas 2.52, lemos que “crescia Jesus em sabedoria, estatura e graga, diante de Deus e dos homens”. Tratase de uma alusaoevidentea Proverbios 3.4, que promete que a pessoa sabia achara “graga e boa compreensaodiante de Deus e dos homens”. Em segundolugar,Jesus e o mestre completamente sabio. Marcos 1.22 nos diz que as pessoas “maravilhavamse da sua doutrina”, enquanto Marcos 6.2 assinala que “muitos, ouvindoo, se maravilhavam, dizendo: Donde vem a este estas coisas? Que sabedoria e esta que Ihe foi dada?” Em terceiro lugar, e muito mais radicalmente, de acordo com o Novo Testamento,JesusCristo e a encamagaoda sabedoria de Deus (ICo 1.24, 30; Cl 2.2, 3). O chamado de Proverbios 1 a 9 para abragar a sabedoria e, portanto, em ultima analise, um chamado para seguir Jesus Cristo. Enquanto isso, as instruções específicas a O D E P R O V E R B I O S I. PR0L0G0: O PRINCIPIO DA SABEDORIA (1.1-7) II. O CHAMADO A SABEDORIA (1.8-9.18) A. A escolha entre dois caminhos (1.8-19) B. A repreensao da sabedoria (1.20-33) C. A sabedoria mantem voce em segurança (2.1-22) D. A sabedoria e o relacionarse com Deus (3.1-12) E. A sabedoria e seus beneficios (3.13-20) F. A sabedoria e o relacionarse com o próximo (3.21-35) G. A sabedoria de um avo (4.1-9) H. A sabedoria e os dois caminhos (4.10-19) I. A sabedoria e o caminho correto (4.20-27) J. As benpaos da sabedoria (8.1-36) K. A escolha entre dois caminhos (9.1-18)"
-      },
-      {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "Poucos livros do Antigo Testamento tern seu ti'tulo inclui'do no texto canonico. Proverbios e um deles, visto que o primeiro versículo e o título do livro: “Proverbios de Salomao, filho de Davi, o rei de Israel”. O título Prove'rbios, em portugues, reflete apenas a primeira palavra do título em hebraico. (Quanto a mais detalhes, ver notas em Pv 1.1.)"
+        "conteudo": "O título Provérbios corresponde ao caráter predominante da coleção: sentenças breves e ensinamentos destinados a formar sabedoria prática. O livro, porém, não é apenas uma coleção aleatória, pois apresenta unidades literárias e coleções atribuídas a diferentes sábios."
       },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "Proverbios e uma coleqao de dizeres sabios que procedem de varios autores.0 nome de Salomao aparece em 1.1;10.1; 25.1. Proverbios 22.17-24.22 e 24.23-34sao atribufdos aos “sabios”.0 capítulo 30 e atribufdo a Agur. Proverbios 31.1-9 e atribufdo a Lemuel, enquanto Proverbios 31.10-31e anonimo. Ofato de Salomao tersido um personagem irnportante no movimento de sabedoria, bem como de ter escrito e reunido muitos proverbios, e evidente em 1 Reis 4.29-34. A influencia de Salomao no livro de Proverbios e consideravel, e sua autoria direta em relaqao a uma boa parte do material não precisa ser questionada. A afirmação em 1.1 (“Proverbios de Salomao”) não pode ser entendida como asseverandosua autoria de todo o conteudo, como os recemmencionados textos, não escritos por Salomao, deixam bem claro; igualmente, a de ao final de todo o livro prova isso, uma compila^ vez que os textos de 25.1-29.27 só foram reunidos durante o reinado de Ezequias, cerca de duzentos anos depois de Salomao. A afirmação em 1.1 não precisa ser interpretada como asseverando algo mais do que o papel tfpico desempenhado por Salomao na tradição de sabedoria. O título de Salomao pode referirse a marca do caratersalomonico na literatura de sabedoria do Antigo Testamento, bem como a autoria direta de parte do material. Embora seja obvio que Salomao não escreveu todo o livro, tal como o temos, o texto de 1.1-7 indica ao aleatoria, mas,sim, que o livro não e uma cole< ^ uma construqao proposital com objetivos claros."
+        "conteudo": "Salomão é a principal figura associada à composição de Provérbios, especialmente nas grandes coleções iniciais. O livro também menciona os homens de Ezequias, Agur e Lemuel, além de coleções anônimas. A tradição reconhece atividade de compilação e organização."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "Visto que Proverbios e uma coletanea de dizeres sabios de varios autores que atuaram em tempos diferentes, devemos distinguir a data dos dizeres específicos da data do livro todo. Os dizeres mais antigos procederiam do século X a.C. (Salomao), enquanto o livro como um todo não teria sido conclufdo antes dos dias de Ezequias (por volta de 715-686 a.C.) e poderia ter sido conclufdo pelos dias de Esdras (por volta de 400 a.C.), embora possam refletir muitos pensamentos antigos que foram preservados por meio de tradição oral. Essa conclusao geral e apoiada pelo fato de que existem antigas coleqoes de sabedoria do Oriente Próximo cuja data e anterior ao período de Salomao e pelo fato de que coleqoes de sabedoria conclui'das depois de Esdras, como Eclesiastico (século II a.C.) e a Sabedoria de Salomao (século I a.C.), mostram algumas diferenças significativas em relaqao a sabedoria em Proverbios."
+        "conteudo": "O material entende Provérbios como resultado de um processo de composição e compilação. Parte substancial é relacionada ao período de Salomão, enquanto coleções posteriores foram reunidas e editadas em períodos subsequentes. A referência aos homens de Ezequias mostra atividade de preservação e compilação posterior."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "A consideraqao mais ampla em relaqao ao genero e que Proverbios e poesia, e não prosa. Quanto a uma discussao adicional sobre o carater poetico de Prove'rbios, ver Introdução a Poesia Hebraica e Introdução a Literatura de Sabedoria. O livro de Proverbios exibe varias formas de escritos de sabedoria. Nos capítulos 1 a 9, ha varios poemas longos que se assemelham a forma de “instruqao” da literatura primitiva egipcia. Alguma relaqao em forma e conteudo entrea sabedoria israelita e a não israelita não deveria surpreender- -nos, por causa do interesse comum por sabedoria em todas as culturas. Se a forma de instruqao era usada em escolas para a elite (como no Egito), se era usada no lar (como talvez seja o caso de Israel), o conteudo e sabedoria para a vida, ensinada aos jovens por seus anciaos. Em geral, a instruqao comeqa com um vocativo (“filho meu”), acompanhado de uma motivaqaoinicial, seguida por uma liqao e, depois, uma conclusao que pode incluir as consequências de não se atentar a liqao. Outra forma importante de Proverbios e a afirmaqao breve, que se encontra principalmente em 10.1-22.16 e 25.1-29.27. Com frequencia, essas afirmaqoes sao feitas numa forma paralela, em que a segunda afirmação estabelece contraste direto com a primeira, ou a segunda linha leva adiante a ideia contida na primeira. O paralelismo contrastante e usado tipicamente para se comparer a sabedoria com a insensatez, e a retidao com a impiedade. Uma terceira forma e a afirmação numerica (6.16- 19; 30.15, 16, 18, 19), que parece promover a percepqao de ordem no mundo em face das questões e experiences complexas da vida. A sequencia numerica também parece prover uma estrutura geral para listar ensinosespecfficos e acrescentar poder retorico aos ensinos. Proverbios 2 e um bom exemplo de poema acrostico sofisticado. Os primeiros 11 versículos sao governados por aleph,a primeira letra da primeira metade do alfabeto hebraico, enquanto os versfculos 12 a 22 sao governados por lamed, a primeira letra da segunda metade do alfabeto hebraico (2.1- 22, nota)."
+        "conteudo": "Provérbios pertence à literatura de sabedoria. O livro reúne máximas, instruções, discursos de sabedoria, poemas e coleções temáticas. A forma proverbial condensa observações sobre a vida e pretende formar caráter, não apenas transmitir informação."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "A estrutura literária do livro de Proverbios revela sua funqao e mensagem geral. O prologo (Pv 1.1-7) deixa claro que o propósito geral do livro e a obtenqao de sabedoria. Proverbios 1.8-9.18 coloca diante do leitor duas jornadas, com dois destinos diferentes (ver também Salmos 1 e o contraste do caminho do justo com o caminho do impio). Essas duas maneiras de viver sao personificadas como Sabedoria e Loucura. O leitor abraqara a mulher Sabedoria ou a mulher Loucura? Visto que a mulher Sabedoria e uma metafora da propria sabedoria de Deus, a escolha e, em ultima analise, entre o Deus vivo e verdadeiro e os fdolos. Quando alguem faz a escolha pela mulher Sabedoria, pode avanqar para Proverbios 10.1-31.9, capítulos que oferecem instruqao especffica sobre como levar uma vida de fe com a mulher Sabedoria. O livro chega a conclusao ao apresentar um retrato da mulher Sabedoria em toda a sua beleza admiravel (Pv 31.10-31). E C A R A C T E R I S T I C A S T E M A S P R I N C I P A I S Os dois principals temas de Proverbios sao a sabedoria e o temor do Senhor. Em poucas palavras, sabedoria e a capacidade de sobreviver e florescer por viver de acordo com a ordem que Deus estabeleceu em seu mundo. O temor do Senhor e viver de acordocom os princípios que se manifestam na Palavra e no mundo de Deus, porque nos o tememos e confiamos nele como nosso Deus. Para mais discussao acerca desses temas, ver Introdução a Literatura de Sabedoria. Existem muitos outros temas no livro de Proverbios, incluindo como usar a fala de maneira que beneficie e não prejudique, como lidar com o impulso sexual, como ser laborioso e desfrutar os beneffcios do trabalho, como evitar a preguiqa e a pobreza, como se relacionar com Deus e com o próximo, como amar a mulher certa e como retido no livro de Proverbios (3.7; 14.2; 16.6; 21.3). Por ser um Deus santo, ele também e justo (11.1; 16.11; 29.26). O Criador soberano, justo e santo e conhecfvel (2.5; 9.10), pois escolheu revelarse (2.6; ver Jo 28); e aqueles que o conhecem consideramno totalmente digno de confiança (3.5; 16.20; 22.19; 28.5; 29.25). Em vez de ser um Deus distante, oSenhor esta bastante perto para ouvir as orações daqueles que confiam nele (15.8, 29). Acima de tudo, a teologia de Proverbios e teologia pratica. Deus estabeleceu aliança com seu povo, e o livro de Proverbios oferece instrugao sobre como viver neste mundo a luz da aliança. E nos ensina como devemos viver como o povo de Deus. P R O V E R B I O S H I S T O R I A N A M A I S A M P L A B I B L I A D A Na Bíblia hebraica, o livro de Proverbios e precedido pela Lei (Genesis-Deuteronomio) e pelos Profetas (os Profetas Anteriores: Josue, Juízes, Samuel, Reis; os Profetas Posteriores: Isafas, Jeremias, Ezequiel, os Doze Profetas Menores). A Lei apresenta os princípios fundamentais da aliança e a vida ideal a ser experimentada quando se seguem os princípios da aliança. Os Profetas Anteriores mostram o fracasso do povo da aliança em experimentar esse ideal na história. Os Profetas Posteriores nos dao a interpretagao divina desse fracasso na história. O livro de Proverbios esta na terceira e ultima segao da Bíblia hebraica, os Escritos. A fungao geral dessa segao e ensinar a comunidade da aliança como viver os ideais apresentados na Lei, mas não experimentados nos Profetas. Uma implicagao de ler o livro de Proverbios nesse contexto e compreender que, embora ele não contenha ensino explfcito sobre a história de redenção, sua posigao nessa história e pressuposta. Entre outras coisas, isso significa que os princípios ensinados no livro de Proverbios devem ser vivenciados não como regras legalistas, mas, sim, como uma resposta a obra redentora de Deus no passado em favor da comunidade. Para os crentes da nova aliança, isso significa que nos esforgamos para viver os princípios apresentados no livro de Proverbios como resposta a graga de Deus, que nos alcangou na obra redentora de Jesus Cristo. Algumas vezes, considerase Tiago a versao de Proverbios do Novo Testamento. A maneira como os crentes deveriam ler Tiago e um bios 10-31, sao as nossas instruções a respeito de como ter uma vida de fe em Jesus Cristo, Porque temos Cristo e estamos nele, possui'mos a mente de Cristo, e o Espi'rito Santo nos da poder para que sejamos crescentemente sabios (ICo 1.30; 2.16).0 livro de Proverbios deve ser lido não como uma serie de princi'pios legalistas, mas,sim, como uma revelação da graga de Deus em Cristo e nossa resposta a essa graga. H I S T O R I A D E I N T E R P R E T A g A O Embora não seja tradicionalmente enfatizado como uma fonte de doutrina reformada, o livro de Proverbios teve um lugar de importancia na tradição reformada, especialmente na tradição da Reforma Inglesa. Por exemplo, Matthew Poole (1624—1679),Matthew Henry (1662-1714) e Charles Bridges (1794-1869) exaltavam o livro de Proverbios como um guia pratico para o viver piedoso e fizeram comentarios sobre o livro que ainda estao em uso. Jonathan Edwards (1703-1758) não somente usou o livro de Proverbios em meditagao e autoanalise, como também o pregou extensivamente. III. A VIDA DE SABEDORIA (10.1-31.9) A. Proverbios de Salomao (10.1-22.16) B. Instrupoes dos sabios (22.17-24.22) C. Mais dizeres dos sabios (24.23-34) D. Mais proverbios de Salomao, copiados pelos homens de Ezequias (25.1-29.27) E. As palavras de Agur (30.1-33) F. As palavras do rei Lemuel (31.1-9) IV. EPIL0G0: A BELEZA DA SABEDORIA (31.10-31)"
+        "conteudo": "O livro apresenta diversas coleções. Os capítulos 1–9 contêm longas instruções de pai para filho e personificam a sabedoria e a insensatez. Os capítulos 10–29 reúnem principalmente provérbios curtos. Os capítulos finais apresentam coleções atribuídas a Agur e Lemuel e o poema sobre a mulher virtuosa."
       },
       {
-        "id": "temas_principais",
-        "titulo": "Temas principais",
+        "id": "caracteristicas_e_temas_principais",
+        "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "Os dois principals temas de Proverbios sao a sabedoria e o temor do Senhor. Em poucas palavras, sabedoria e a capacidade de sobreviver e florescer por viver de acordo com a ordem que Deus estabeleceu em seu mundo. O temor do Senhor e viver de acordocom os princípios que se manifestam na Palavra e no mundo de Deus, porque nos o tememos e confiamos nele como nosso Deus. Para mais discussao acerca desses temas, ver Introdução a Literatura de Sabedoria. Existem muitos outros temas no livro de Proverbios, incluindo como usar a fala de maneira que beneficie e não prejudique, como lidar com o impulso sexual, como ser laborioso e desfrutar os beneffcios do trabalho, como evitar a preguiqa e a pobreza, como se relacionar com Deus e com o próximo, como amar a mulher certa e como retemas sejam abordadosem poemas mais extensos, muitos sao discutidos nos proverbios breves, espa- Ihados por todo o livro. Portanto, ainda que haja beneffcios em ler sequencialmente os capi'tulos de Proverbios, ha também beneficio em coletar proverbios sobre determinado tema que estao espalhados em todo o livro, tornando possi'vel o estudo de tudo que o livro de Proverbios tem a dizer sobre um assunto específico. Isso e especialmente proveitoso em relação aos capi'tulos10-31. Como exemplo, faga um breve exame de um único tema: palavras beneficas.Inicialmente, as palavras beneficas abengoam os outros. “A boca do justo e manancial de vida, mas na boca dos perversos mora a violencia” (Pv 10.11); palavras oportunas e bem faladas não fazem mal aos outros; antes, melhoram a sua qualidade de vida. “A lingua serena e arvore de vida, mas a perversa quebranta o espírito” (Pv 15.4); palavras oportunas e bem faladas sustentam o espi'rito dos outros nos tempos de adversidade. Em segundo lugar, as palavras beneficas também abengoam o proprio falante. “Cada um se farta de bem pelo fruto de sua boca, e o que as maos do homem fizerem serlhea retribufdo” (Pv 12.14); as palavras que falamos podem nos trazer tanto beneficio quanto as obras que realizamos. Esses estudos topicos sao beneficos para se viver com prudencia e se revelam proveitosos quando realizados com as lentes do caminho da sabedoria nos capi'tulos1a 9."
+        "conteudo": "Os dois grandes princípios do livro são o temor do Senhor e a busca pela sabedoria. Provérbios trata de disciplina, trabalho, riqueza e pobreza, justiça, sexualidade, casamento, amizade, fala, ira, honestidade e liderança. A sabedoria bíblica é apresentada como modo de vida coerente com o caráter de Deus."
       },
       {
         "id": "teologia_de_proverbios",
         "titulo": "Teologia de Provérbios",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "Por ser considerado, em geral, um manual pratico de viver sabio, e comum o livro de Proverbios não vir de imediato a nossa mente quando pensamos em textos aos quais devemos nos voltar no Antigo Testamento para encontrar ensino sobre Deus. Embora o livro seja um manual pratico, sua praticidade esta arraigada em rica teologia bfblica. O fato de o nome pactual de Deus (do hebraico, YHWH) ocorrer 87 vezes no livro de Proverbios nos leva a perceber que achamos nele um rico deposito de ensino sobre Deus e nosso relacionamento com ele. No amago do livro de Proverbios, esta a doutrina sobre Deus como Criador (3.19-20; 8.22-31; 20.12; 22.2). Como Criador, Deus esta no controle de sua criação (16.4, 9, 33; 19.21). Embora a santidade de Deus não seja ensinada explicitamente, e pres- Proverbios e outros livros da literatura de sabedoria. Ver Introdução a Tiago."
+        "conteudo": "O temor do Senhor é fundamento do conhecimento e da sabedoria. O livro apresenta Deus como soberano e moralmente justo, e ensina que a vida sábia normalmente produz bons resultados. Ao mesmo tempo, a coleção reconhece que nem toda consequência é imediata ou absoluta e que a justiça final pertence a Deus."
       },
       {
         "id": "proverbios_na_historia_mais_ampla_da_biblia",
         "titulo": "Provérbios na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "Por ser considerado, em geral, um manual pratico de viver sabio, e comum o livro de Proverbios não vir de imediato a nossa mente quando pensamos em textos aos quais devemos nos voltar no Antigo Testamento para encontrar ensino sobre Deus. Embora o livro seja um manual pratico, sua praticidade esta arraigada em rica teologia bfblica. O fato de o nome pactual de Deus (do hebraico, YHWH) ocorrer 87 vezes no livro de Proverbios nos leva a perceber que achamos nele um rico deposito de ensino sobre Deus e nosso relacionamento com ele. No amago do livro de Proverbios, esta a doutrina sobre Deus como Criador (3.19-20; 8.22-31; 20.12; 22.2). Como Criador, Deus esta no controle de sua criação (16.4, 9, 33; 19.21). Embora a santidade de Deus não seja ensinada explicitamente, e prestido no livro de Proverbios (3.7; 14.2; 16.6; 21.3). Por ser um Deus santo, ele também e justo (11.1; 16.11; 29.26). O Criador soberano, justo e santo e conhecfvel (2.5; 9.10), pois escolheu revelarse (2.6; ver Jo 28); e aqueles que o conhecem consideramno totalmente digno de confiança (3.5; 16.20; 22.19; 28.5; 29.25). Em vez de ser um Deus distante, oSenhor esta bastante perto para ouvir as orações daqueles que confiam nele (15.8, 29). Acima de tudo, a teologia de Proverbios e teologia pratica. Deus estabeleceu aliança com seu povo, e o livro de Proverbios oferece instrugao sobre como viver neste mundo a luz da aliança. E nos ensina como devemos viver como o povo de Deus."
+        "conteudo": "A sabedoria de Provérbios dialoga com a tradição de sabedoria do Antigo Testamento e fornece princípios para a vida do povo de Deus. O material também relaciona o ensino da sabedoria à revelação posterior e observa que a sabedoria verdadeira encontra seu fundamento em Deus."
+      },
+      {
+        "id": "cristo_em_proverbios",
+        "titulo": "Cristo em Provérbios",
+        "tipo": "texto",
+        "ordem": 9,
+        "conteudo": "O material relaciona Cristo à sabedoria apresentada em Provérbios. O Novo Testamento descreve Cristo como sabedoria de Deus e como aquele em quem estão os tesouros da sabedoria. A formação moral defendida por Provérbios encontra em Cristo sua expressão plena."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 9,
-        "conteudo": "N A M A I S A M P L A B I B L I A D A Na Bíblia hebraica, o livro de Proverbios e precedido pela Lei (Genesis-Deuteronomio) e pelos Profetas (os Profetas Anteriores: Josue, Juízes, Samuel, Reis; os Profetas Posteriores: Isafas, Jeremias, Ezequiel, os Doze Profetas Menores). A Lei apresenta os princípios fundamentais da aliança e a vida ideal a ser experimentada quando se seguem os princípios da aliança. Os Profetas Anteriores mostram o fracasso do povo da aliança em experimentar esse ideal na história. Os Profetas Posteriores nos dao a interpretagao divina desse fracasso na história. O livro de Proverbios esta na terceira e ultima segao da Bíblia hebraica, os Escritos. A fungao geral dessa segao e ensinar a comunidade da aliança como viver os ideais apresentados na Lei, mas não experimentados nos Profetas. Uma implicagao de ler o livro de Proverbios nesse contexto e compreender que, embora ele não contenha ensino explfcito sobre a história de redenção, sua posigao nessa história e pressuposta. Entre outras coisas, isso significa que os princípios ensinados no livro de Proverbios devem ser vivenciados não como regras legalistas, mas, sim, como uma resposta a obra redentora de Deus no passado em favor da comunidade. Para os crentes da nova aliança, isso significa que nos esforgamos para viver os princípios apresentados no livro de Proverbios como resposta a graga de Deus, que nos alcangou na obra redentora de Jesus Cristo. Algumas vezes, considerase Tiago a versao de Proverbios do Novo Testamento. A maneira como os crentes deveriam ler Tiago e um Proverbios e outros livros da literatura de sabedoria. Ver Introdução a Tiago. C R I S T O E M P R O V E R B I O S O Novo Testamento entende que Jesus Cristo e o apice da tradição de sabedoria do Antigo Testamento, de varias maneiras. Em primeiro lugar, Jesus e a pessoa totalmente sabia. Em Lucas 2.52, lemos que “crescia Jesus em sabedoria, estatura e graga, diante de Deus e dos homens”. Tratase de uma alusaoevidentea Proverbios 3.4, que promete que a pessoa sabia achara “graga e boa compreensaodiante de Deus e dos homens”. Em segundolugar,Jesus e o mestre completamente sabio. Marcos 1.22 nos diz que as pessoas “maravilhavamse da sua doutrina”, enquanto Marcos 6.2 assinala que “muitos, ouvindoo, se maravilhavam, dizendo: Donde vem a este estas coisas? Que sabedoria e esta que Ihe foi dada?” Em terceiro lugar, e muito mais radicalmente, de acordo com o Novo Testamento,JesusCristo e a encamagaoda sabedoria de Deus (ICo 1.24, 30; Cl 2.2, 3). O chamado de Proverbios 1 a 9 para abragar a sabedoria e, portanto, em ultima analise, um chamado para seguir Jesus Cristo. Enquanto isso, as instruções específicas a bios 10-31, sao as nossas instruções a respeito de como ter uma vida de fe em Jesus Cristo, Porque temos Cristo e estamos nele, possui'mos a mente de Cristo, e o Espi'rito Santo nos da poder para que sejamos crescentemente sabios (ICo 1.30; 2.16).0 livro de Proverbios deve ser lido não como uma serie de princi'pios legalistas, mas,sim, como uma revelação da graga de Deus em Cristo e nossa resposta a essa graga. H I S T O R I A D E I N T E R P R E T A g A O Embora não seja tradicionalmente enfatizado como uma fonte de doutrina reformada, o livro de Proverbios teve um lugar de importancia na tradição reformada, especialmente na tradição da Reforma Inglesa. Por exemplo, Matthew Poole (1624—1679),Matthew Henry (1662-1714) e Charles Bridges (1794-1869) exaltavam o livro de Proverbios como um guia pratico para o viver piedoso e fizeram comentarios sobre o livro que ainda estao em uso. Jonathan Edwards (1703-1758) não somente usou o livro de Proverbios em meditagao e autoanalise, como também o pregou extensivamente. O D E P R O V E R B I O S I. PR0L0G0: O PRINCIPIO DA SABEDORIA (1.1-7) II. O CHAMADO A SABEDORIA (1.8-9.18) A. A escolha entre dois caminhos (1.8-19) B. A repreensao da sabedoria (1.20-33) C. A sabedoria mantem voce em segurança (2.1-22) D. A sabedoria e o relacionarse com Deus (3.1-12) E. A sabedoria e seus beneficios (3.13-20) F. A sabedoria e o relacionarse com o próximo (3.21-35) G. A sabedoria de um avo (4.1-9) H. A sabedoria e os dois caminhos (4.10-19) I. A sabedoria e o caminho correto (4.20-27) J. As benpaos da sabedoria (8.1-36) K. A escolha entre dois caminhos (9.1-18) III. A VIDA DE SABEDORIA (10.1-31.9) A. Proverbios de Salomao (10.1-22.16) B. Instrupoes dos sabios (22.17-24.22) C. Mais dizeres dos sabios (24.23-34) D. Mais proverbios de Salomao, copiados pelos homens de Ezequias (25.1-29.27) E. As palavras de Agur (30.1-33) F. As palavras do rei Lemuel (31.1-9) IV. EPIL0G0: A BELEZA DA SABEDORIA (31.10-31)"
+        "ordem": 10,
+        "conteudo": "Provérbios foi interpretado como manual de educação moral, coleção de máximas e obra de sabedoria teológica. O material chama atenção para a necessidade de considerar o contexto de cada provérbio e não transformá-lo em promessa absoluta aplicável mecanicamente a todas as situações."
+      },
+      {
+        "id": "assuntos_especiais",
+        "titulo": "Assuntos especiais",
+        "tipo": "texto",
+        "ordem": 11,
+        "conteudo": "Entre os assuntos especiais estão a personificação da Sabedoria, a relação entre sabedoria e criação, a estrutura das coleções, a atribuição a diferentes sábios e a interpretação dos provérbios como princípios gerais de vida."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Provérbios",
-        "tipo": "outline",
-        "ordem": 10,
-        "conteudo": "1. Elogio da sabedoria (1.1—4.27) 2. Conselhos contra o adultério e outros pecados (5.1—7.27) 3. A Sabedoria e a falta de juízo (8.1—9.18) 4. Primeira coleção de provérbios (10.1—22.16) 5. Trinta provérbios dos sábios (22.17—24.34) 6. Segunda coleção de provérbios (25.1—29.27) 7. Provérbios variados (30.1—31.9) 8. A mulher virtuosa (31.10-31)"
+        "tipo": "auto",
+        "ordem": 12,
+        "conteudo": [
+          {
+            "titulo": "I. Prólogo: o princípio da sabedoria (1.1–7)",
+            "itens": [
+              "A. Chamado à sabedoria (1.8-19)",
+              "B. A sabedoria entre os caminhos (1.8-19)",
+              "C. A sabedoria também é segurança (2.1-22)",
+              "D. A sabedoria é vida (3.1-12)",
+              "E. A sabedoria e a segurança (3.13-35)",
+              "F. A sabedoria e o relacionamento com Deus (3.21-35)",
+              "G. A sabedoria e o relacionamento com o próximo (3.21-35)",
+              "H. A sabedoria e os maus (4.1-19)",
+              "I. A sabedoria e os caminhos (4.20-27)"
+            ]
+          },
+          {
+            "titulo": "II. Chamado à sabedoria (8.1–9.18)",
+            "itens": [
+              "A. A escola entre dois caminhos (8.1-19)",
+              "B. A repreensão da sabedoria (8.20-32)",
+              "C. A sabedoria mantém seu segurança (8.20-39)",
+              "D. A sabedoria é o relacionamento com Deus (8.31-32)",
+              "E. A sabedoria é o relacionamento com o próximo (8.41-59)"
+            ]
+          },
+          {
+            "titulo": "III. A vida de sabedoria (10.1–31.9)",
+            "itens": [
+              "A. Provérbios de Salomão (10.1-22.16)",
+              "B. Instruções dos sábios (22.17-24.34)",
+              "C. Mais provérbios de Salomão, compilados pelos homens de Ezequias (25.1-29.27)",
+              "D. As palavras de Agur (30.1-33)",
+              "E. As palavras do rei Lemuel (31.1-9)"
+            ]
+          },
+          {
+            "titulo": "IV. Epílogo: a mulher da sabedoria (31.10-31)",
+            "itens": []
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "20_Prov#U00e9rbios.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte_base": "03_Poeticos.zip — imagens de introdução e esboço fornecidas pelo usuário"
 }

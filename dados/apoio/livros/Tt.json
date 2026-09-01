@@ -2,67 +2,133 @@
   "schema": "apoio-livro-v1",
   "id": "Tt",
   "nome": "Tito",
-  "abreviacao": "Tito",
+  "abreviacao": "Tt",
   "material": {
     "titulo": "Sobre Tito",
-    "introducao": "Tito, um gentio que havia se tornado cristão, foi um dos companheiros de trabalho e auxiliares do apóstolo Paulo no seu trabalho missionário ( Gl 2.1-3; 2Co 7.6-16). Paulo o havia deixado na ilha de Creta a fim de que ele organizasse e dirigisse as igrejas dali ( Tt 1.5). Na Epístola a Tito o apóstolo trata dos deveres e da maneira de agir dos dirigentes das igrejas; fala também das responsabilidades do próprio Tito no seu relacionamento com os vários grupos de pessoas das igrejas. O apóstolo recomenda que Tito use a sua autoridade para o bem do povo de Deus e que a sua maneira de agir seja tão correta, que sirva de exemplo para todos (2.7). Diz que a vida cristã se torna possível por causa da bondade e do amor de Deus, o qual nos salvou “não por obras de justiça praticadas por nós, mas segundo sua misericórdia” (3.5).",
+    "introducao": "Tito é uma carta pastoral curta e prática, dirigida a um cooperador encarregado de organizar as igrejas de Creta. Paulo orienta sobre presbíteros, falsos mestres, diferentes grupos da igreja e a relação entre a graça salvadora e uma vida zelosa de boas obras.",
     "secoes": [
       {
-        "id": "data_e_circunstancias",
+        "id": "titulo",
+        "titulo": "Título",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "A carta recebe o nome de Tito, cooperador e destinatário. Paulo se identifica como remetente e apóstolo na abertura."
+      },
+      {
+        "id": "autor",
+        "titulo": "Autor",
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "A própria carta e a tradição cristã antiga atribuem sua autoria a Paulo. Críticas à autoria paulina foram levantadas, mas a introdução da fonte considera esses argumentos insuficientes."
+      },
+      {
+        "id": "data_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "Tito, assim como 1 Timoteo, foi escrita enquanto Paulo estava no meio de sua quarta viagem missionaria, talvez entre 62 e 64 d.C. (ver Introduqao a 1 Timoteo: Data e Circunstancias e Assuntos Especiais). Tito era um cristão gentio que se converteu provavelmente sob o ministério de Paulo (1.4). O Novo Testamento oferece pouca informaqao sobre Tito, e ele não e mencionado em Atos. Paulo o levou a Jerusalém em seus labores missionaries, onde recusouse a circuncidalo (G1 2.1-3), e parece que Tito viajou com Paulo em suas segunda e terceira viagens missionarias, bem como durante parte de » A P O S T O L O, a sua quarta viagem missionaria. Ele era um colaborador próximo de Paulo, com quem era possfvel contar em circunstancias delicadas, como, por exemplo, a situaqao em Corinto (2Co 2.13; 7.6, 13, 14; 8.6, 16, 23; 12.18). Mais tarde, Tito atuou como representante de Paulo na ilha de Creta (1.5) e na provmcia de Dalmacia (2Tm 4.10). Paulo escreveu a Tito quando estava na Macedonia (3.12). Numa parte anterior da viagem, ele e Tito se haviam envolvidoem uma atividade missionaria na ilha de Creta. Quando Paulo foi embora,deixou Tito ali, para continuar a obra (1.5). Paulo escreveu sua carta a Tito para encorajalo a levar seu ministério na ilha a conclusao. Especificamente, Paulo queria que Tito completasse a organizaqao das igrejas por meio da formaqao de presbíteros maduros e piedosos (1.5-9),que pudessem Iidar com os falsos mestres que estavam presentes (1.10-14; 3.9-11), e que ministrassem instruqoes sobre a conduta apropriada para as igrejas e os varios grupos que as formavam (2.1-3.8). Era especialmente necessario haver uma liderança saudavel, naosomente porque enganadores, “especialmente osda circuncisao”, estavam perturbando a fe de individuos e os lares (1.10-11), mas também porque a atmosfera cultural eticamente doentia na ilha, diagnosticada até por um “profeta” nativo, tornava Creta vulneravel a exploraqao religiosa (1.12-16).Quando seu substituto chegou, Tito foi encontrarse com Pauloem Nicopolis (3.12)."
+        "ordem": 3,
+        "conteudo": "Tito é situado no contexto de uma quarta viagem missionária de Paulo, provavelmente entre 62 e 64 d.C. Tito era cristão gentio e cooperador de Paulo. Ele foi deixado em Creta para completar a organização das igrejas e estabelecer presbíteros."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
-        "ordem": 1,
-        "conteudo": "O livro de Tito e uma carta e segue, em geral, as convengoes epistolares ti'picas do século I (ver Introdução as Epi'stolas). Contem uma abertura (1.1-4), um corpo (1.5-3.11) e uma conclusao padrao (3.12-15). E uma carta pessoal, escrita por Paulo para uma única pessoa. Assim como 1 ’stola a Tito se parece Timoteo e 2 Timoteo, a epi com exemplos de cartas pessoais grecoromanas do século I. A semelhanga das outras Epi'stolas Pastorais, Tito e conclulda com o plural “vos” em sua bênção (3.15), indicando, por meio disso, que Paulo tencionava que essa carta também tivesse relevancia pública. Como1Timoteo e 2 Timoteo, existem também semelhangas entre a carta a Tito e outros documentos governamentais gregos da antiguidade. Ver Introdução a 1Timoteo: Genero. C A R A C T E R I S T I C A S L I T E R A R I A S Como 1 Timoteo e 2 Timoteo, Tito e uma carta particular de Paulo dirigida a um amigo e cooperador, mas tinha o propósito de ser lida por toda a Igreja (“A graga seja com todos vos” — 3.15). Embora Tito e Timoteo estivessem ministrando em lugares diferentes (Creta e Efeso, respectivamente), os princípios de ministério que Paulo oferece em cada epi'stola sao os mesmos. Por essa razao, existem certassimilaridades entre Tito e 1 Timoteo. Paulo expoe as qualificagoes para presbfteros (1.5-9). Mostra a Tito o evangelho que ele deve pregar e enfatiza que a graga de Deus, revelada nesse evangelho, produz vidas transformadas de autocontrole e pureza (2.11-14; 3.1-6; cf. 1.1-3). Além disso, o apóstolo lembra a Tito que sua obra e falar “o que convem a sa doutrina” (2.1), que envolve ministrar a Palavra de Deus para influenciar pessoas em diferentes circunstancias na vida (2.2-3.2) e admoestar falsos mestres (1.10-16; 2.15; 3.9, 10; cf. 1.9). Uma característica significativa dessa epi'stola (bem como de 1 e 2 Timoteo) e a ocorrencia da expressao “fiel e esta palavra” (3.8; cf. lTm 1.15; 3.1; 4.9; 2Tm 2.11). Essa expressao cumpre o mesmo propósito das outras Epi'stolas Pastorais, ou seja, prover uma apresentagao concisa das verdades essenciais do evangelho e de sua aplicação ao crente. Por meio dessa expressao, Paulo ajuda Tito na assimilagao das verdades centrais da mensagem que ele deve proclamar."
+        "ordem": 4,
+        "conteudo": "É uma carta pessoal de caráter pastoral. Segue convenções epistolares antigas, com abertura, corpo e conclusão, mas sua bênção final no plural mostra que a carta também tinha relevância pública para a igreja."
       },
       {
-        "id": "caracteristicas_e_temas_principais",
+        "id": "caracteristicas_literarias",
+        "titulo": "Características literárias",
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "A carta apresenta instruções paralelas às de 1 e 2 Timóteo, especialmente quanto a liderança, falsos mestres e piedade. O argumento passa repetidamente da verdade do evangelho para a necessidade de boas obras e vida disciplinada."
+      },
+      {
+        "id": "caracteristicas_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "E T E M A S P R I N C I P A I S A semelhanga de 1 Timoteo, Tito e importante por suas informagoes sobre a organizagao da Igreja. Oferece uma extensa descrigao das qualificagoes para o ofi'cio de bispo ou presbi'tero (1.6-9; cf. lTm 3.1-7) e evidencia relevante de que as palavras “bispo” (1.7) e “presbi'tero” (1.5) se referem a um único ofi'cio, e não a dois ofi'cios separados (cf. At 20.17, 28). Tito exibe forte preocupagao com a sa doutrina (1.9, 13; 2.1, 2) e contem duas meditagoes maravilhosas sobre a graga que Deus concedeu em Jesus Cristo (2.11-14; 3.4-7). Essas meditagoes incluem afirmações sobre a segunda vinda de Cristo (2.13), a expiação vicaria de Cristo (2.14), a regeneragao pelo Espi'rito Santo (3.5) e a justificação pela graga (3.5, 7). Tito também afirma a deidade de Cristo de maneira admiravel — o ti'tulo “Salvador” e aplicado livremente, nos mesmos contextos, tanto a Deus (1.3; 2.10; 3.4) como a Cristo (1.4; 2.13; 3.6). A preocupagao de Paulo com a sa doutrina, nessa carta, e equilibrada com a enfase na conduta crista apropriada. Para Paulo, ambas andam lado a lado, visto que a manifestagao da graga de Deus na obra salvadora de Cristo (3.4-7) se destina a produzir crentes agradecidos que sao “solfcitos na pratica de boas obras” (3.8). Especificamente, Paulo enfatiza a qualidade da sensatez (1.8; 2.2, 4-6, 12) e a importancia de fazer o que e bom, especialmente quanto a generosidade para com os necessitados (2.7, 14; 3.1, 8, 14). Instrugao especffica deve ser dada a varios subgrupos dentro da Igreja — homens idosos (2.2), mulheres idosas (2.3), mulheres jovens (2.4, 5), mogos (2.6-8) e escravos (2.9, 10). Carater e conduta que evidenciam sensatez e autocontrole sao essenciais, porque os incredulos estao observando os membros da comunidade crista, buscando oportunidades para difamar a Palavra de Deus (2.5) e falar mal da Igreja e de seus lfderes (2.8). Por outro lado, submissao e integridade até mesmo nas condições adversas de servidao adornam “a doutrina de Deus, nossoSalvador” (2.10). D E"
+        "ordem": 6,
+        "conteudo": "Organização da igreja, qualificações de presbíteros, falsos mestres, ensino a diferentes grupos, graça, salvação, boas obras, submissão, domínio próprio e esperança do retorno de Cristo são os temas centrais."
       },
       {
         "id": "teologia_de_tito",
         "titulo": "Teologia de Tito",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "Essa breve epístola nos ajuda a perceber a ultima e necessaria conexao entre o “conhecimento da verdade\" e a “piedade” (1.1) — “os que tem crido em Deus” devem ser “soh'citos na pratica de boas obras” (3.8). A razao pela qual “a graga de Deus se manifestou” e trazer salvação “a todos os homens” e educarnos “para que, renegadas a impiedade e as paixoes mundanas, vivamos, no presente século, sensata, justa e piedosamente”, enquanto aguardamos o retomo de Cristo no fim da era (2.11, 12; cf. 2.13). Afinal de contas, a propria razao pela qual Cristo morreu foi “remirnos de toda iniquidade e purificar, para si mesmo, um povo exclusivamente seu, zeloso de boas obras\" (2.14). Paulo insiste em que essa salvação e tao somente pela graga.Somos moralmente desagradaveis para Deus e não lhe damos nenhuma razao que o motive a nos salvar (3.3). Nossa salvação tem origem na “benignidade” e no “amor” de “Deus, nosso Salvador” (3.4). E, por isso, “ele nossalvou mediante o lavar regenerador e renovador do Esplrito Santo” (3.5). E por meio de [esus, nossoSalvador, que recebemos o Esplrito, somos justificados pela graga e somos herdeirossegundo a esperanga da vida eterna (3.5-7).0sinal seguro de que assimilamos essas verdades e uma vida de obediencia que procede da fe em [esus Cristo."
+        "ordem": 7,
+        "conteudo": "A carta destaca a conexão necessária entre conhecimento da verdade e piedade. A graça de Deus se manifestou para trazer salvação e educar os crentes a viverem de modo sensato, justo e piedoso enquanto aguardam Cristo. A salvação é inteiramente pela graça, realizada por Deus mediante a obra de Cristo e a renovação do Espírito Santo, e produz zelo por boas obras."
       },
       {
-        "id": "historia_de_interpretacao",
-        "titulo": "História de interpretação",
+        "id": "tito_na_historia_mais_ampla_da_biblia",
+        "titulo": "Tito na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "N A M A I S A M P L A B I B L I A D A Deus declara, por meio das Escrituras, que seu propósito em salvar seu povo e separalo do mundo para ele mesmo. Esse propósito envolve uma separagao moral do mundo e uma conformidade moral com Deus. Devemos ser santos porque Deus e santo, um tema que encontra expressao inicialmente nos primeiros livros de Moisés (Lv 11.44-45; 19.2; 20.26; cf. IPe 1.16). O Novo Testamento nos ajuda a ver esse mesmo princlpio com mais clareza ainda. Deus redimiu seu povo em Cristo. Parte dessa redenção e sermos libertos do domlnio do pecado e capacitados a levar uma vida santa que agrade a Deus. O padrao pelo qual, como crentes, somos conformados e a imagem de Deus em Cristo, o segundo Adao (Em 8.29; ICo 15.49; Ef 4.24; Cl 3.10). O interesse de Paulo na carta a Tito e mostrar que o conhecimento da verdade segundo a piedade (1.1) e parte de um interesse bíblico mais amplo que enfatiza que as doutrinas da graga, quando aceitas corretamente, sempre levam a um viver santo."
+        "ordem": 8,
+        "conteudo": "A epístola mostra a continuidade entre a graça salvadora de Deus e o chamado ético de seu povo. A comunidade da nova aliança deve demonstrar, em sua conduta, a transformação produzida pela salvação e aguardar a manifestação da esperança futura."
       },
       {
         "id": "cristo_em_tito",
         "titulo": "Cristo em Tito",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "Em 2.13, Paulo fala de [esus como “nosso grande Deus e Salvador”, um testemunho de sua deidade (ver notas). Cristo assumiu nossa natureza e “a si mesmo se deu por nos”, ou seja, morreu na cruz pelos pecadores (2.14). Havendo sido exaltado a gloria por sua ressurreição e ascensao, [esus Cristo e aquele por meio de quem Deus “derramou sobre nos ricamente\" o Esplrito Santo (3.6). Porque [esus morreu e ressuscitou por nos, podemos ser “ justificados pela graga” e nos tornar “seus herdeiros, segundo a esperanga da vida eterna” (3.7). E pelo Esplrito de [esus que recebemos o “lavar regenerador e renovador” (3.5). O que torna a salvação uma questão da “misericórdia” de Deus e que, em sua “benignidade” e em “seu amor”, ele enviou Jesus Cristo para garantir, pela sua morte e sua vida, todas as bênçãos e todos os beneflcios salvlficos que gozamos nele (3.4). [esus não tornou posslvel o ato de salvarmos a nos mesmos. Ele “nos salvou” por sua graga (3.5). H I S T O R I A 0 ensino de Paulo sobre a escravidao (2.9, 10) tem suscitado discussao e controversia, especialmente nos dois ultimos séculos. Quanto a eventual discussao adicional, ver Filemom: História de Interpretagao. A S S U N T O S E S P E C I A I S Paulo descreve a falsa doutrina em Creta como algo que viera de dentro da Igreja (1.10, 16). Era caracterizada pela preocupagao com as fabulas judaicas (1.14), genealogias e contendas sobre a lei (3.9) e mandamentos humanos (1.14). Os falsos mestres refletiam uma perspectiva estritamente judaicocrista (1.10) e procuravam posigoes de liderança por motivo de ganho financeiro (1.11). Eles haviam sidos eficazes em enganar pessoas e eram facciosos (1.10; 3.10). Quase tudo que Paulo diz em Tito sobre o falso ensino em Creta tem semelhanga com o que diz em 1 Timoteo e 2 Timoteo sobre o mesmo problema em Efeso (ver Introdução a 2 Timoteo: Assuntos Especiais). Não esta claro por quea situação era assim. Não ha nenhuma razao para acreditarmos na Colocar Tito na cronologia da vida de Paulo apresentada no livro de Atos e'diftcil, mas ha evidencia existencia de qualquer ligagao direta entre os dois falsos ensinos ou que tudo que era ensinado em um lugar também estava sendo ensinado no ouliberdade no fim da prisao registrada em Atos 28 e tro. Por outro lado, o falso ensino nos dois lugares que embarcou numa quarta viagem missionaria. pode ter envolvido manifestagoessemelhantes de Quanto a evidencia para essa quarta viagem misum movimento sincretico mais geral no Imperio sionaria, ver Introdução a 1 Timoteo: Assuntos Romano, naquele tempo (compare os problemas que Paulo aborda em Tito com os que aborda em Colossenses e Efesios). nas Epístolas Pastorais de que Paulo foi posto em Especiais. E S B O (JO D E T I T O I. SAUDACAO (1.1-4) II. ORGANIZANDO AS IGREJAS EM CRETA (1.5-16) A. Por que Paulo deixou Tito em Creta (1.5) B. Qualificagoes para presbiteros (1.6-9) C. Lidando com falsos mestres (1.10-16) III. INSTRUINDO VARIOS GRUPOS (CAP. 2) A. Instruções para Tito e os que estao sob seu cuidado (2.1-10) B. As bases teologicas para o viver cristão (2.11-14) C. Encargo condusivo para Tito (2.15) IV. INSTRUINDO SOBRE FAZER O QUE E BOM (3.1-11) A. Dever inicial (3.1, 2) B. Depravagao humana sem Cristo (3.3) C. A experience da grarja de Deus por parte do pecador (3.4-7) D. Dever final (3.8-11) V. CONCLUSAO (3.12-15)"
+        "ordem": 9,
+        "conteudo": "Cristo é apresentado como Salvador e aquele que se entregou para remir e purificar um povo exclusivamente seu, zeloso de boas obras (2.14). A graça que salva está inseparavelmente ligada à expectativa da manifestação gloriosa de Cristo."
       },
       {
-        "id": "esboco",
+        "id": "historia_de_interpretacao",
+        "titulo": "História de interpretação",
+        "tipo": "texto",
+        "ordem": 10,
+        "conteudo": "Tito foi interpretada em conjunto com as Pastorais, especialmente nos debates sobre ministério, liderança e relação entre doutrina e prática. A carta também participa das discussões críticas sobre a autoria e a cronologia da chamada quarta viagem de Paulo."
+      },
+      {
+        "id": "assuntos_especiais",
+        "titulo": "Assuntos especiais",
+        "tipo": "texto",
+        "ordem": 11,
+        "conteudo": "Entre os assuntos debatidos estão a cronologia da vida de Paulo depois de Atos 28, a natureza dos falsos ensinos em Creta e Éfeso e a relação entre a estrutura da igreja e a vida pública dos cristãos. A carta deve ser lida como orientação pastoral concreta e não como simples manual administrativo."
+      },
+      {
+        "id": "esboco_de_tito",
         "titulo": "Esboço de Tito",
-        "tipo": "outline",
-        "ordem": 6,
-        "conteudo": "Prefácio e saudação (1.1-4) 1. Qualificação dos líderes da Igreja (1.5-16) 2. Instrução a vários grupos (2.1-15) 3. Justificação por graça como fundamento da ética cristã (3.1-11) Saudações e bênção (3.12-15)"
+        "tipo": "auto",
+        "ordem": 12,
+        "conteudo": [
+          {
+            "titulo": "I. SAUDAÇÃO (Tt 1.1-4)"
+          },
+          {
+            "titulo": "II. ORGANIZANDO AS IGREJAS EM CRETA (Tt 1.5-16)",
+            "itens": [
+              "A. Por que Paulo deixou Tito em Creta (Tt 1.5)",
+              "B. Qualificações para presbíteros (Tt 1.6-9)",
+              "C. Lidando com falsos mestres (Tt 1.10-16)"
+            ]
+          },
+          {
+            "titulo": "III. INSTRUINDO VÁRIOS GRUPOS (Tt cap. 2)",
+            "itens": [
+              "A. Instruções para Tito e os que estão sob cuidado (Tt 2.1-10)",
+              "B. As bases teológicas para o viver cristão (Tt 2.11-14)",
+              "C. Encargo conclusivo para Tito (Tt 2.15)"
+            ]
+          },
+          {
+            "titulo": "IV. INSTRUINDO SOBRE FAZER O QUE É BOM (Tt 3.1-11)",
+            "itens": [
+              "A. Dever inicial (Tt 3.1, 2)",
+              "B. Depravação humana sem Cristo (Tt 3.3)",
+              "C. A experiência da graça de Deus por parte do pecador (Tt 3.4-7)",
+              "D. Dever final (Tt 3.8-11)"
+            ]
+          },
+          {
+            "titulo": "V. CONCLUSÃO (Tt 3.12-15)"
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "56_Tito.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte": {
+    "arquivo": "imagens do conjunto Tt",
+    "criterio": "Conteúdo reconstruído a partir das imagens fornecidas pelo usuário, com OCR em colunas independentes, normalização de hifenização e correção de erros evidentes de reconhecimento, preservando o sentido e a organização da fonte."
+  }
 }

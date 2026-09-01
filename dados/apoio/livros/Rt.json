@@ -2,67 +2,142 @@
   "schema": "apoio-livro-v1",
   "id": "Rt",
   "nome": "Rute",
-  "abreviacao": "Rute",
+  "abreviacao": "Rt",
   "material": {
     "titulo": "Sobre Rute",
-    "introducao": "A história de Rute passa-se no tempo em que o povo de Israel era governado por juízes. Rute, uma jovem do país de Moabe, casa com um israelita. Este morre, e então Rute se apega à sua sogra, demonstrando profunda devoção ao Deus de Israel. Noemi e Rute vão morar em Belém e, depois de algum tempo, Rute casa de novo, agora com um parente do seu primeiro marido. E foi por causa desse segundo casamento que Rute veio a ser bisavó de Davi, o maior rei de Israel. As histórias dos juízes mostram as desgraças que vieram quando o povo de Deus se afastou dele. Este livro conta as bênçãos que recebe uma estrangeira quando se volta para o Deus de Israel e assim passa a fazer parte do seu povo.",
+    "introducao": "Rute conta como Noemi e Rute chegam a Belém, como Rute passa a colher nos campos de Boaz e como Boaz atua como resgatador. A narrativa termina com o casamento de Rute e Boaz e a genealogia que conduz a Davi.",
     "secoes": [
       {
-        "id": "cristo_em_rute",
-        "titulo": "Cristo em Rute",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "A eventual chegada de Davi, contudo, não constitui 0 clímax último do livro. Na realidade, 0 livro tem seu cumprimento final na vinda do último e consumado Rei: Jesus Cristo, o filho de Davi. Na verdade, muitos dos principais personagens estão catalogados na genealogia de Jesus (Mt 1.1 ־ 17). Quando estiver estudando o livro, o leitor precisa ter em mente continuamente a genealogia de Cristo, pois a provisão de um filho para Noemi é 0 aspectochave da história de Israel e da salvação de Deus, 0 fim glorioso representado pela grande vinda do Messias, nosso redentor. As mulheres de Belém declaram a Rute que um filho, o redentor, lhe nasceu (4.17). Os anjos declaram aos pastores o nascimento do “Salvador, que é Cristo, o Senhor” (Lc 2.10). III. RUTE VISITA BOAZ NA EIRA (3.1-18) A. O plano de Noemi (3.1-5) B. Boaz descobre Rute (3.6-13) C. Rute volta a Noemi (3.14-18) IV. BOAZ REDIME RUTE (4.1-12) A. O parentesco íntimo o justifica (4.1-6) B. Rute e Boaz se casam diante de testemunhas (4.7-12) V. NOEMI É PREENCHIDA (4.13-22) A. O primeiro filho é bemvindo e abençoado (4.13-17) B. Genealogia de Perez a Davi (4.18-22)"
-      },
-      {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O escritor do livro de Rute é anônimo. Todavia, isso não impede a especulação em torno de sua autoria. Uma posição amplamente mantida é que Salomão teria escrito O livro após a morte de seu pai, Davi. O Talmude Babilônico considera o profeta Samuel seu autor: “Samuel escreveu seu livro, Juizes e Rute”. Alguns comentaristas argumentam que isso faz sentido, porque creem que, originalmente, Juizes e Rute eram um só livro. Outros argumentam que Rute foi composto durante 0 sécu- 10 V a.C. O título do livro não ajuda a identificar 0 autor. Simplesmente faz menção a um dos principais personagens da história, e não ao seu escritor. D A T A E C I R C U N S T Â N C I A S A data mais antiga em que O livro de Rute pode ter sido escrito seria a época de Davi, pois a genealogia no final do livro termina catalogando seu nome. A ascensão de Davi ao trono de Judá ocorreu em torno de 1010 a.C., e ele governou sobre Judá e, mais tarde, sobre todo O Israel até por volta de 970 a.C. Assim, 0 autor escreveu O livro durante 0 reinado de Davi ou depois disso. O escritor pode ter recorrido tanto a registros escritos como à história oral relacionada a Davi. O cenário da história é fornecido no v. 1 do capítulo inicial: “Nos dias em que julgavam os juizes”. de O período dos juizes é o pano de fundo para a história de Rute, e aquele período está embutido no último versículo de Juizes: “Naqueles dias, não havia rei em Israel; cada um fazia 0 que achava mais reto” (21.25). Essa afirmação reflete a anarquia política que havia na autoridade central em Israel. Demonstra ainda a falta de foco espiritual; a terra era dominada pelo relativismo. A Palavra de Deus já não era mais 0 padrão da vida. O povo vivia confiante em si mesmo e ignorante de suas obrigações pactuais para com Deus. A história transcorre em um período de fome na terra (1.1). A adversidade agrícola impactava 0 povo de Israel na Terra Prometida. No AT, costumavase entender a fome como um sinal do desprazer de Deus em relação a um Israel infiel (Lv 26.18-20). Isso reflete 0 período dos juizes, tempo de desobediência e infidelidade. Esse também foi um tempo de colapso moral, grande apostasia e dificuldade física. A questão alarmante logo no início do livro é: como 0 povo de Israel responderá a essa adversidade?"
+        "conteudo": "O livro recebeu o nome de Rute, sua personagem central, uma mulher moabita que se une ao povo de Deus e cuja história conduz à linhagem de Davi."
+      },
+      {
+        "id": "autor",
+        "titulo": "Autor",
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "O autor de Rute não é identificado no próprio livro. A narrativa apresenta conhecimento cuidadoso dos costumes, relações familiares e do contexto do período dos juízes."
+      },
+      {
+        "id": "data_e_circunstancias",
+        "titulo": "Data e circunstâncias",
+        "tipo": "texto",
+        "ordem": 3,
+        "conteudo": "A narrativa se passa no período dos juízes, mas a referência final a Davi indica que sua composição ocorreu posteriormente aos acontecimentos narrados.",
+        "paginas_fonte": [
+          1
+        ]
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "O gênero do livro de Rute consiste em uma narrativa histórica em forma de história resumida. O livro contém uma trama simples que se desenvolve em torno de três personagens principais: Noemi, Rute e Boaz. Seu estilo literário oscila entre um conto breve, como 0 relato sucinto de Eúde (Jz 3.1230,)־e uma longa novela, como o extenso registro da vida de José (Gn 37-50). O propósito das histórias curtas da Escritura é ensinar e encorajar 0 povo de Deus em uma forma de entretenimento."
+        "ordem": 4,
+        "conteudo": "Rute é uma narrativa histórica breve, com forte desenvolvimento literário e atenção às personagens, diálogos e providência divina.",
+        "paginas_fonte": [
+          1,
+          2
+        ]
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "O livro está escrito na forma de narrativa, em prosa altamente artística. O escritor emprega várias formas literárias a fim de apresentar sua mensagem de maneira dramática. Por exemplo, 0 autor usa palavras de comando que aparecem repetidas vezes por toda a passagem. Em 1.60,22 ־verbo “voltou” aparece 12 vezes. Embora esse verbo possa simplesmente indicar a volta física de alguém a um lugar específico, algumas vezes é usado na Escritura como uma referência à renovação espiritual (p. ex., Os 3.5; 6.1; 7.10). Assim, em Rute, a repetição do verbo provavelmente significa que os personagens estavam voltando não só à Terra Prometida, mas também ao Senhor. O significado dos nomes dos personagens também é importante para 0 desenvolvimento da história. Por exemplo, “Noemi” tem origem em uma palavra hebraica que significa “doce, agradável, delei־ toso” (1.2); mas, já no final do capítulo 1, Noemi quer ser chamada “Mara”, que significa “amargo”, e não “doce”. E, assim, esses nomes ecoam as circunstâncias de Noemi, radicalmente alteradas. Outro aspecto interessante quanto às mulheres de Belém: elas aparecem em 2.19 e outra vez em 4.17. Como personagens secundários, elas ser־ vem para mover a narrativa ao longo dessas duas conjunturas cruciais."
+        "ordem": 5,
+        "conteudo": "O livro apresenta uma narrativa cuidadosamente construída, com repetição de palavras e movimentos de esvaziamento e preenchimento. A história conduz da perda de Noemi à restauração de sua família.",
+        "paginas_fonte": [
+          2
+        ]
       },
       {
-        "id": "temas_principais",
-        "titulo": "Temas principais",
+        "id": "caracteristicas_e_temas_principais",
+        "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "1) Do vazio para a plenitude. Um tema fascinante é como Deus preenche o povo, que se encontra vazio. Embora o título do livro seja “Rute”, visto que Rute é a heroína, a história é largamente sobre Noemi sendo conduzida do vazio para a plenitude. Depois de perder todos os seus familiares homens, o que significa perder todas as formas de segurança e provisão material, Noemi começa a ser enri־ quecida quando Boaz, por intermédio de Rute, a mune de cereais (2.18; 3.17), e ela experimenta a completude poética quando Rute e Boaz a suprem com um filho (4.1317.)־ 2) O custo da desobediência. O povo de Deus precisa entender que há consequências para seu pecado. Embora os crentes já tenham sido libertados do pecado pela obra de Cristo, ainda há resultados tem־ porais da desobediência a Deus e à sua Palavra. Eli־ meleque e sua família são pessoas compromissadas com Deus, mas, quando a dificuldade os atinge, eles se mudam para Moabe. Eles se põem sob a autoridade moabita e, inclusive, os dois filhos da família se casam com mulheres estrangeiras. Essa atitude resulta em pobreza, morte e viuvez. 3) A soberania de Deus. A providência de Deus se manifesta até mesmo em meio ao pecado e à deso ־ bediência. Embora a família de Elimeleque tenha ido para Moabe, a terra dos incrédulos, esse livro lança luz sobre a soberania de Deus, a eleição incondicional de Rute, a moabita, como crente. Ela vem a ser herdeira da salvação. Portanto, essa história forma um quadro do enxerto dos gentios no povo de Deus. O fato de Rute ser incluída na genealogia de Jesus confirma essa verdade (Mt 1.5). A soberania de Deus ainda é revelada ao longo de todo o livro, de muitas maneiras. Providencial־ mente, ele preserva a linhagem do Messias; por trás das cenas, Deus está agindo, guiando e dirigindo os eventos da história. 4) O viver fiel. Boaz e Rute são personagens de fé e pessoas íntegras, ativas e honradas. Ambos exibem sua fé na maneira como vivem e agem. Sua conduta é um verdadeiro reflexo de sua fé como seguidores do Senhor. 5) A redenção. O conceito bíblico de redenção é o cerne da história. A redenção era uma prática da cultura hebraica segundo a qual algo alienado podia ser restaurado a uma família mediante um parente remidor ou um parente próximo. Assim, se alguém tivesse de vender a si ou à sua terra para quitar uma dívida, 0 parente remidor tinha 0 dever de se apresentar e resolver a situação. Ele tinha de remir e restaurar. Como se pode imaginar, havia circunstâncias variadas no que diz respeito a essas leis, e o livro de Rute apresenta costumes aplicáveis ao período dos juizes. E 0 que é mais importante: os costumes hebraicos de redenção constituem um quadro da relação e da atividade de Deus em favor de seu povo pactuai."
+        "ordem": 6,
+        "conteudo": "O cuidado providencial de Deus, a fidelidade, a lealdade familiar, o resgate e a inclusão de uma estrangeira entre o povo são temas centrais.",
+        "paginas_fonte": [
+          2,
+          3
+        ]
       },
       {
         "id": "rute_na_historia_mais_ampla_da_biblia",
         "titulo": "Rute na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "M A I S A M P L A D A B Í B L I A Embora as relações humanas na história visem en־ corajar 0 leitor (e, em alguns aspectos, os personagens são dignos de imitação, especialmente Rute e Boaz), dificilmente esse é o ponto principal do livro. Mais importante é que O livro de Rute antecipa a vinda de um rei ao trono de Israel. O livro registra a ancestral de Davi, o amantíssimo rei na história de Israel. E, assim, o livro encontra seu clímax na vinda de Davi, cujos ancestrais são Rute e Boaz. Além disso, ao descrever Boaz e Obede, respectivamente, como remidores (4.14,15), O livro de Rute pressupõe que Davi também será remidor. Portanto, 0 livro atende ao propósito mais elevado de apontar para a futura realidade de Davi e sua linhagem. C R I S T O NO L I V R O DE R U T E A eventual chegada de Davi, contudo, não constitui 0 clímax último do livro. Na realidade, O livro tem seu cumprimento final na vinda do último e consumado Rei: Jesus Cristo, o filho de Davi. Na verdade, muitos dos principais personagens estão catalogados na genealogia de Jesus (Mt 1.1 ־ 17). Quando estiver estudando o livro, o leitor precisa ter em mente continuamente a genealogia de Cristo, pois a provisão de um filho para Noemi é 0 aspectochave da história de Israel e da salvação de Deus, 0 fim glorioso representado pela grande vinda do Messias, nosso redentor. As mulheres de Belém declaram a Rute que um filho, o redentor, lhe nasceu (4.17). Os anjos declaram aos pastores o nascimento do “Salvador, que é Cristo, o Senhor” (Lc 2.10)."
+        "ordem": 7,
+        "conteudo": "Rute liga o período dos juízes à monarquia por meio da genealogia de Perez a Davi. A história também mostra a incorporação de uma moabita à linhagem davídica.",
+        "paginas_fonte": [
+          3
+        ]
       },
       {
-        "id": "esboco",
+        "id": "cristo_no_livro_de_rute",
+        "titulo": "Cristo no livro de Rute",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "A genealogia de Rute conduz a Davi e, na história bíblica posterior, à linhagem messiânica. O papel de Boaz como resgatador também participa da estrutura redentora da narrativa.",
+        "paginas_fonte": [
+          3
+        ]
+      },
+      {
+        "id": "esboco_de_rt",
         "titulo": "Esboço de Rute",
-        "tipo": "outline",
-        "ordem": 6,
-        "conteudo": "1. A família de Elimeleque em Moabe (1.1-5) 2. Noemi e Rute vão para Belém (1.6-22) 3. Rute no campo de Boaz (2.1-23) 4. Boaz comprometese com Rute (3.1-18) 5. Boaz recebe Rute como a sua esposa (4.1-17) 6. Os antepassados do rei Davi (4.18-22)"
+        "tipo": "auto",
+        "ordem": 9,
+        "conteudo": [
+          {
+            "titulo": "I. Noemi é esvaziada (1.6–22)",
+            "itens": [
+              "A. Noemi perde seu esposo e seus filhos (1.1–5)",
+              "B. Noemi e suas noras deixam Moabe (1.6–7)",
+              "C. Noemi insiste com Orfa para voltar ao lar (1.8–14)",
+              "D. A solene promessa de Rute (1.15–18)",
+              "E. As felizes boas-vindas a Noemi (1.19–22)"
+            ]
+          },
+          {
+            "titulo": "II. Rute faz colheita nos campos de Boaz (2.1–23)",
+            "itens": [
+              "A. Rute sai para colher (2.1–3)",
+              "B. Boaz encontra Rute (2.4–16)",
+              "C. Tributo de Boaz a Noemi (2.17–23)"
+            ]
+          },
+          {
+            "titulo": "III. Rute visita Boaz na eira (3.1–18)",
+            "itens": [
+              "A. O plano de Noemi (3.1–5)",
+              "B. Boaz descobre Rute (3.6–13)",
+              "C. Rute volta a Noemi (3.14–18)"
+            ]
+          },
+          {
+            "titulo": "IV. Boaz redime Rute (4.1–12)",
+            "itens": [
+              "A. O parentesco íntimo é justificado (4.1–6)",
+              "B. Rute e Boaz se casam diante de testemunhas (4.7–12)"
+            ]
+          },
+          {
+            "titulo": "V. Noemi é preenchida (4.13–22)",
+            "itens": [
+              "A. Noemi tem um filho e é abençoada (4.13–17)",
+              "B. Genealogia de Perez a Davi (4.18–22)"
+            ]
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "08_Rute.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte": {
+    "arquivo": "08_Rute.pdf",
+    "paginas": "Páginas impressas 389–392",
+    "criterio": "Conteúdo revisado a partir das páginas de introdução e do esboço da fonte fornecida, com correção de OCR, hifenização, pontuação e referências. A estrutura do esboço foi conferida contra a página de esboço da fonte e adaptada ao mesmo formato estrutural de Gênesis."
+  }
 }

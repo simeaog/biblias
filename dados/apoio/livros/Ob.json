@@ -2,60 +2,96 @@
   "schema": "apoio-livro-v1",
   "id": "Ob",
   "nome": "Obadias",
-  "abreviacao": "Obadias",
   "material": {
     "titulo": "Sobre Obadias",
-    "introducao": "Jerusalém foi conquistada pelos babilônios no ano 586 a.C. Os edomitas, povo que morava no país de Edom, ao sul de Judá, não somente se alegraram com a derrota dos israelitas, mas também ajudaram o inimigo e aproveitaram a oportunidade para roubar e levar consigo os bens dos moradores de Jerusalém. O profeta Obadias denunciou o pecado dos edomitas e anunciou que seriam castigados e derrotados, junto com os outros povos que eram inimigos do povo de Deus. E Israel voltaria a ser próspero e poderoso novamente.",
+    "introducao": "Obadias anuncia o julgamento de Edom por sua crueldade contra Judá e reafirma ao povo de Deus que a justiça soberana do Senhor triunfará. A obra termina com restauração de Israel e uma nova ordem moral.",
     "secoes": [
       {
-        "id": "cristo_em_obadias",
-        "titulo": "Cristo em Obadias",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "Em Obadias, não ha references específicas a vinda de um reino messianico futuro. E o proprio Senhor quem intervem para reordenar os afazeres de “todas as nações” (v. 15). O escopo universal do julgamento vindouro e um aspecto dolivramento messianico mais amplo predito por Obadias. Apesar da participagao de Edom na destruição de Jerusalém, o cuidado de Deus em relação a seu povo garantira quesejam restaurados ao gozo da bênção divina, enquanto seus inimigos sao subvertidos. Ha um tempo vindouro no qual a terra sera habitada harmoniosamente por grupos diversos (w. 1920), uma caracterfstica da bênção a ser desfrutada na era messianica (SI 72.7-8). D E I N T E R P R E T A q A O H I S T O R I A No decurso da história, quando a igreja sofreu nas maos dos inimigos de Deus, a mensagem da profecia de Obadias foi capaz de prover inspiragao e apoio. E nos lembra que Deus cuida de seu povo perseguido, agindo sempre em favor deles por tras das circunstancias presentes. ao de Judá"
+        "ordem": 1,
+        "conteudo": "A profecia recebe o nome de seu autor, Obadias. O nome significa “servo ou adorador do SENHOR”. O material observa que Obadias era um nome comum e foi usado para várias pessoas no Antigo Testamento."
       },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
-        "ordem": 1,
-        "conteudo": "E A semelhanqa de outros livros profeticos, essa profecia e intitulada com o nome de seu autor. Sabemos pouco a respeito desse profeta, além de seu nome, que significa “servo ou adorador do ÿ. Parece que o nome Obadias era muito SENHOR comum, sendo usado para designar 12 pessoas diferentes no Antigo Testamento. A importancia e a autoridade da mensagem residem no fato de que “o SENHOR falou” (v.18), e não na fama ou na preeminence do mensageiro. D A T A E C I R C U N S T A N C I A S Visto que o livro não contem nenhuma evidencia sobre a família do profeta e não apresenta nenhuma informaqao cronológica com base no governo de reis, os estudiosos dessa profecia tern debatido sobre a data de sua escrita. O profeta tem em vista um ataque militar contra Jerusalém do qual os edomitas tomaram parte com intenso deleite (vv. 11-14), mas não da informaqoes que datam com clareza tal catastrofe. Alguns conectam o livro com a invasao de Judá pelos filisteus e arabes durante o reinado de Jeorao (848-841 a.C.), da qual, presumese, os edomitas participaram (2Rs 8.20-22; 2Cr 21.8-10, 16, 17). Outros relacionam os eventos que motivaram essa profecia as invasoes babilonicas de Judá, de que, finalmente, resultaram na queda de Judá, em 586 a.C.Tanto a Escritura (SI 137; Ez 35.1-15) como a tradição judaica mencionam explicitamente oenvolvimento dos edomitas nessa catastrofe final; e o textode Obadias parece referirse mais naturalmente aos ataques dos babilonios.Além disso,algumas semelhanqas notaveis entre os w.1-9 e Jeremias 49.7- 9,14-16 sugerem que Obadiase feremiasestavam se dirigindo a Edom quase ao mesmo tempo. Embora não possamos datar Obadiascom precisao,sabemos que feremias profetizou desde aproximadamente 626a.C.até uma data posterior a 586a.C.Além disso, uma data anterior a campanha dos babilonioscontra Edom em 553 a.C.e sugerida por references a calamidadefutura que virasobre esse povo."
+        "ordem": 2,
+        "conteudo": "Pouco se sabe sobre Obadias além de seu nome. A importância e a autoridade de sua mensagem não dependem da fama do mensageiro, mas do fato de que “o SENHOR falou” (v. 18)."
       },
       {
-        "id": "genero",
-        "titulo": "Gênero",
+        "id": "data_e_circunstancias",
+        "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "O título do livro o descreve como uma “visao”, uma palavra algumas vezes usada a respeito das mensagens comunicadas por Deus aos profetas (p. ex., Na 1.1; He 2.3, 4). Além dessa breve introduqao em prosa, a visao e apresentada em linguagem poetica. C A R A C T E R I S T I C A S L I T E R A R I A S Obadias tinha uma habilidade literária extraordinaria, como e demonstrado em sua breve mas poderosa composição de 21 versículos. Ironia, figuras impressionantes, duplo sentido e uso deliberado de repetigao, todos esses recursos sao empregados com bom efeito. A mensagem divina do livro comega por se dirigir as nações, que sao chamadas para executar o julgamento de Deus sobre Edom (v.1). Isso e logo seguido pelas palavras dirigidas a Edom, que apresentam a acusagao de Deus contra essa nação e a natureza de seu castigo (vv. 2-18). Nos versículos finals do livro, Deus descreve a restauração do exilado Israel e o estabelecimento do reino de Deus (vv. 19-21). O anuncio da punição de Edom por se aproveitar de Judá e contrabalangado com a promessa de restabelecimento para o povo de Deus."
+        "ordem": 3,
+        "conteudo": "A data é debatida porque o livro não apresenta informações familiares ou cronológicas baseadas no governo de reis. Obadias descreve um ataque militar contra Jerusalém no qual os edomitas participaram com intenso deleite. Alguns relacionam o texto à invasão de Judá por filisteus e árabes durante o reinado de Jeorão (848–841 a.C.); outros o relacionam à catástrofe de 586 a.C., quando os babilônios destruíram Judá e os edomitas participaram da hostilidade contra Jerusalém. As semelhanças entre Obadias 1–9 e Jeremias 49.7–9,14–16 sugerem uma proximidade cronológica entre os dois profetas. Uma data anterior à campanha babilônica contra Edom em 553 a.C. é sugerida pelo modo como o desastre ainda é apresentado como futuro."
+      },
+      {
+        "id": "genero_e_caracteristicas_literarias",
+        "titulo": "Gênero e características literárias",
+        "tipo": "texto",
+        "ordem": 4,
+        "conteudo": "O título do livro o chama de “visão”, termo usado para mensagens comunicadas por Deus aos profetas. Depois de uma breve introdução em prosa, a visão é apresentada em linguagem poética. O livro emprega repetição e outros recursos literários para enfatizar sua mensagem. Começa com um chamado às nações para executarem o julgamento sobre Edom, passa à acusação e ao castigo de Edom e termina com a restauração de Israel e o estabelecimento do reino de Deus."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "E T E M A S P R I N C I P A I S A profecia e “a respeito de Edom” (v. 1) e se dirige repetidas vezes a essa nação, mas foi dada a comunidade da aliança como Escritura Sagrada.0 propósito, portanto, mais do que advertir Edom sobre o julgamento iminente, e reassegurar o povo de Deus acerca de sua justiça triunfante em agao a favor deles. Edom estava prospero, Judá permanecia derrotado e a ordem moral do mundo parecia ter sido subvertida pelasforgas fmpias.0 profeta Obadias, porém, foi levantado com uma mensagem da justiça soberana de Deus para fortalecer a fe enfraquecida de seu povo. Os propositos justos de Deus e que determinam a história, e não as vontades malignas dos homens (Lm 4.22). T E O L O G I A D E"
+        "ordem": 5,
+        "conteudo": "A profecia é dirigida a Edom, mas foi entregue à comunidade da aliança como Escritura. Seu objetivo é mais do que advertir Edom: é reafirmar ao povo de Deus que a justiça soberana triunfará. Edom parecia próspero enquanto Judá estava derrotado, criando a impressão de que a ordem moral havia sido subvertida. Obadias afirma que são os propósitos justos de Deus, e não as vontades malignas dos homens, que determinam a história."
+      },
+      {
+        "id": "teologia_de_obadias",
+        "titulo": "Teologia de Obadias",
+        "tipo": "texto",
+        "ordem": 6,
+        "conteudo": "Obadias ressalta a justiça de Deus e seu poder para chamar as nações a prestar contas do que fazem umas às outras. Edom não imaginava que responderia por sua crueldade contra Judá, mas Deus convoca as nações para punir Edom, mostrando que seu compromisso pactual com os descendentes de Abraão não é irrelevante."
       },
       {
         "id": "obadias_na_historia_mais_ampla_da_biblia",
         "titulo": "Obadias na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "O livro de Obadias ressalta, em especial, a justiça de Deus e seu poder para chamar as nações a prestarem contas desuas agoes contra os outros. Edom não acreditava que teria de responder por sua crueldade contra o povo de Judá. Mas Deus convoca as nações para punir Edom, garantindo que seu compromisso pactual com os descendentes de Abraão não e irrelevante."
+        "ordem": 7,
+        "conteudo": "O relacionamento entre Edom e Israel é marcado por ancestralidade compartilhada: Esaú/Edom e Jacó/Israel eram irmãos. Embora Esaú fosse o mais velho, as promessas feitas a Abraão foram confirmadas a Jacó. A relação entre os dois e entre seus descendentes permaneceu marcada por tensão, apesar da reconciliação de Jacó e Esaú. Malaquias 1.2–5 também trata dessa relação."
+      },
+      {
+        "id": "cristo_em_obadias",
+        "titulo": "Cristo em Obadias",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "Obadias não apresenta referência específica à vinda de um reino messiânico futuro. O próprio Senhor intervém para reorganizar os acontecimentos de todas as nações. O julgamento universal é apresentado como parte do livramento messiânico mais amplo. O cuidado de Deus assegura a restauração de seu povo, enquanto seus inimigos são subvertidos. A futura habitação harmoniosa da terra por diferentes grupos é associada à bênção da era messiânica."
+      },
+      {
+        "id": "historia_de_interpretacao",
+        "titulo": "História de interpretação",
+        "tipo": "texto",
+        "ordem": 9,
+        "conteudo": "Ao longo da história, especialmente quando a igreja sofreu nas mãos de inimigos de Deus, Obadias ofereceu inspiração e apoio. Sua mensagem lembra que Deus cuida de seu povo perseguido e age em favor dele mesmo quando as circunstâncias presentes parecem indicar o contrário."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Obadias",
-        "tipo": "outline",
-        "ordem": 5,
-        "conteudo": "1. Humilhação de Edom (vs. 1-14) 2. O Dia do Senhor e o juízo das nações (vs. 15-18) 3. A exaltação de Israel (vs. 19-21)"
+        "tipo": "auto",
+        "ordem": 10,
+        "conteudo": [
+          {
+            "titulo": "I. A DECLARAÇÃO DE DEUS SOBRE PUNIR EDOM (VV. 1–18)",
+            "itens": [
+              "A. Introdução: chamado às nações (v. 1)",
+              "B. A resolução de Deus no sentido de humilhar o orgulhoso Edom (vv. 2–4)",
+              "C. Edom saqueado (vv. 5, 6)",
+              "D. A vulnerabilidade de Edom ao julgamento de Deus (vv. 7–9)",
+              "E. A indiferença cruel de Edom para com a aflição de Judá (vv. 10–14)",
+              "F. Edom é punido, e Jacó, restaurado (vv. 15–18)"
+            ]
+          },
+          {
+            "titulo": "II. A PROMESSA DE DEUS DE UMA NOVA ORDEM MORAL (VV. 19–21)",
+            "itens": []
+          }
+        ]
       }
     ]
-  },
-  "referencias_inline": true,
-  "politica_traducao": "independente",
-  "fonte_base": "31_Obadias.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  }
 }

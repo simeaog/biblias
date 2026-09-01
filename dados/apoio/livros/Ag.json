@@ -2,67 +2,110 @@
   "schema": "apoio-livro-v1",
   "id": "Ag",
   "nome": "Ageu",
-  "abreviacao": "Ageu",
   "material": {
     "titulo": "Sobre Ageu",
-    "introducao": "Em 538 a.C. , os israelitas começaram a voltar da Babilônia, onde tinham vivido como prisioneiros. Eles construíram as suas casas em Jerusalém, porém não deram atenção ao templo, que estava destruído. Em 520 a.C. , o profeta Ageu anunciou algumas mensagens de Deus, ordenando ao povo que construísse de novo o templo. Os israelitas deviam voltar para Deus, e assim Deus os abençoaria, e eles viveriam em paz e prosperidade. Ageu foi companheiro do profeta Zacarias.",
+    "introducao": "Ageu chama o remanescente pós-exílico a reconstruir o templo. Suas quatro mensagens relacionam arrependimento, presença de Deus, bênção, aliança e esperança messiânica, culminando na vitória de Deus e na entronização do governante davídico.",
     "secoes": [
       {
-        "id": "cristo_em_ageu",
-        "titulo": "Cristo em Ageu",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "N O D E L I V R O A G E U A reconstruqao do templo era uma parte importante do piano de Deus para abenqoar seu povo,especialmente porque estava conectada com a vinda do Messias (2.9, 23 e notas). Como representante nante, quando, uma vez mais, o Senhor abalara ceus e terra, e levara todas as coisas a sua conclusao apropriada (Hb 12.26). N A H I S T O R I A A G E U D E I N T E R P R E T A t J A O A semelhanga de muitos outros livros do Antigo Testamento, o livro de Ageu permanece desconhecido para a maior parte dos cristãos em anos recentes. Parte da razao para a falta de interesse nesse livro pode ser o fato de que Ageu descreve eventos do período após o exílio, quando tudo que restara do povo de Deus era um pequeno remanescente que vivia em estado de pobreza em Judá. Mas a Escritura e clara em ensinar que Deus age de maneira poderosa por meiode um remanescentefiel que depende totalmente dele.Se, como o apóstolo Paulo, nos alegramos em ser vasos de barro,sem gloria em nos mesmos, para que a gloria de Cristo crucificado seja manifestada mais claramente (2Co 4), encontraremos muitas benqaos neste livro. I I I. A TERCEIRA MENSAGEM: A BEN(AO DE DEUS PARA U M POVO CONTAMINADO (2.10-19) A. A causa de sua contaminagao (2.10-14) B. Os resultados de sua contamina?ao: mala (2.15-17) diqoes da alian^ C. A determinagao de Deus para abengoalos (2.18, 19) IV. A QUARTA MENSAGEM: A VITORIA FINAL DE DEUS PARA SEU POVO (2.20-23) A. Deus vence as narjoes (2.20-22) B. A entronizagao do governante de Deus (2.23)"
-      },
-      {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "na (Ed 5). Mas Dario I (Histaspes), que governou Sabemos pouco a respeito do profeta Ageu. Lemos a Persia de 522 a 486 a.C., reeditou o decreto de Ciro, de modo que o templo foi reconstrui'do em sobre ele apenas nos livros de Esdras e Neemias, duas fontes que nos oferecem uma quantidade quatro anos (Ed 6.13-15). O segundo templo foi limitada de informagoes quanto ao ministério do dedicado em 12 de margo de 516 a.C. profeta. Seu nome pode nos dar algum informe biografico. Ageusignifica “festivo”, indicando tal- No que diz respeito as proprias mensagens de vez o nascimento do profeta durante uma festa. Ageu, aprendemos, em seu livro, que foram entre- Em qualquer caso,sabemos realmente que os progues entre agosto e dezembro de 520 a.C. fetas Ageu e Zacarias cooperaram para encorajar os judeus a reconstruirem o templo em Jerusalém, depois de retornarem do exílio na Babilônia, no"
+        "conteudo": "O livro recebe o nome do profeta Ageu. O nome significa “festivo”, talvez indicando que o profeta tenha nascido durante uma festa."
       },
       {
-        "id": "caracteristicas_literarias",
-        "titulo": "Características literárias",
+        "id": "autor",
+        "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "O tipo de texto que Ageu apresenta tem sido cha-"
+        "conteudo": "Sabemos pouco sobre Ageu. Ele aparece nos livros de Esdras e Neemias. Ageu e Zacarias cooperaram para encorajar os judeus a reconstruírem o templo depois do retorno do exílio."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "mado de cronica oficial, visto que as datas do livro tem base histórica e representam a pregação do Ageu e Zacarias compartilharam o mesmo conprofeta nas fases iniciais dos esforgos de reconstexto histórico; ambos comegaram seu ministetrugao do templo. rio no “segundo ano do rei Dario” (520 a.C.). A essa altura, os judeus haviam retornado a Palesti- Embora contenha poucos discursos, o livro aprena sob o edito de Ciro, rei da Persia, em 538 a.C., e senta um quadro unificado. Durante muitos anos comegado a reedificar o templo. A oposigao pronos tempos modernos, os eruditos acreditavam veniente de fora e o desencorajamento vindo de que 2.15-19 fora reposicionado de seu lugar oridentro fizeram com que abandonassem o projeto ginal depois de 1.15b. No entanto, o apoio a essa por quase 16 ou 17 anos (Ed 4.1-4). Quando Ageu teoria tem declinado significativamente nos anos e Zacarias comegaram sua obra, em 520 a.C., mais oposigao surgiu da parte de Tatenai, o governarecentes. de"
+        "conteudo": "Ageu e Zacarias começaram seu ministério no segundo ano do rei Dario, em 520 a.C. Os judeus haviam retornado à Palestina por decreto de Ciro, em 538 a.C., e iniciado a reconstrução do templo, mas oposição externa e desencorajamento interno interromperam o projeto por cerca de 16 ou 17 anos. Em 520 a.C., nova oposição surgiu, mas Dario I reafirmou o decreto de Ciro e o templo foi reconstruído em quatro anos. O segundo templo foi dedicado em 12 de março de 516 a.C. As próprias mensagens de Ageu foram entregues entre agosto e dezembro de 520 a.C."
+      },
+      {
+        "id": "genero_e_caracteristicas_literarias",
+        "titulo": "Gênero e características literárias",
+        "tipo": "texto",
+        "ordem": 4,
+        "conteudo": "O texto de Ageu tem sido chamado de crônica oficial porque as datas têm base histórica e correspondem às fases iniciais da reconstrução do templo. O livro apresenta quadro unificado e é formado por quatro mensagens, introduzidas por fórmulas como “veio a palavra do SENHOR, por intermédio do profeta Ageu” (1.1; 2.1, 10, 20). As mensagens alternam entre chamados ao arrependimento à luz das maldições da terra e promessas de bênçãos maiores no templo e no Messias da linhagem davídica. Ageu, Zacarias e Malaquias usam repetidamente o título “Senhor dos Exércitos”."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "E T E M A S P R I N C I P A I S O livro de Ageu e composto por quatro mensagens iniciadas pela frase “veio a palavra do SE- NHOR, por intermedio do profeta Ageu” ou por uma frase semelhante (1.1; 2.1, 10, 20). As quatro mensagens alternam entre chamados ao arrependimento a luz das maldiqoes de Deus sobre a terra (1.1-11; 2.10-19), das promessas de benqaos maiores no templo e do Messias por meio da linhagem davi'dica (2.1-9, 20-23). Ageu, Zacarias e Malaquias usam o ti'tulo “Senhor dos Exercitos” mais de noventa vezes (14 vezes em Ageu). Esse ti'tulo tern conotaqao militar (Deus como li'der dos exercitos de Israel; cf. ISm 17.45), mas também salienta a gloria (SI 24.10) e o reino soberano de Deus sobre toda a criação (Am 4.13). Como tal, lembra ao povo de Deus seus admiraveis poder e capacidade para libertalos. Embora Ageu seja o segundo livro mais curto do Antigo Testamento, e rico de ensino proveitoso para a igreja. Por meio de seu mensageiro Ageu (1.13), o Senhor chama o remanescente infiel de seu povo a se arrepender e reedificar seu templo. O interesse de Deus esta baseado em seu prazer soberano e em seu desejo de ser honrado (1.8). A falta de interesse do povo em construir o templo mostrava sua profunda falta de desejo pela presença de Deus. Eles estavam sob as maldiqoes da aliança (1.6, 9, 11e notas), mas não percebiam isso. Em resposta ao ministério de Ageu, oSenhor despertou o espi'rito do povo (1.14), e eles obedeceram (1.12). Ageu reafirma que o Senhor estava com seu povo, assim como esteve quando o tirou do Egito (1.13; 2.4, 5). O ministério de Ageu estava baseado na expectativa de que Deus renovaria as promessas pactuais feitas a Israel quando os trouxe de volta a sua terra do cativeiro na Babilônia. As palavras de Ageu empregam as palavras de profetas anteriores em varios pontos (2.7,8 e notas). A reconstruqao do templo era uma parte importante dessa renovação; e Ageu desenvolveu essa esperança ao associar o templo a era vindoura do Messias (2.9, 23 e notas). T E O L O G I A"
+        "ordem": 5,
+        "conteudo": "Ageu chama o remanescente a arrepender-se e reconstruir o templo. A falta de interesse pela construção revelava falta de desejo pela presença de Deus. O povo estava sob maldições da aliança, mas não reconhecia isso. Em resposta à pregação, Deus despertou o espírito do povo e eles obedeceram. Ageu reafirma que o Senhor está com seu povo e baseia sua mensagem na expectativa de renovação das promessas pactuais feitas a Israel. A reconstrução do templo é associada à era futura do Messias."
+      },
+      {
+        "id": "teologia_de_ageu",
+        "titulo": "Teologia de Ageu",
+        "tipo": "texto",
+        "ordem": 6,
+        "conteudo": "Ageu está imerso na linguagem da aliança mosaica. O nome do Senhor aparece muitas vezes no pequeno livro, enfatizando a presença e atividade de Deus. O livro expressa o consolo e a responsabilidade derivados da presença do Deus vivo, mesmo quando sua glória não está publicamente manifesta. Ageu prediz a manifestação da glória de Deus na terra na pessoa de Cristo e a realização da salvação prometida."
       },
       {
         "id": "ageu_na_historia_mais_ampla_da_biblia",
         "titulo": "Ageu na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "D E O ensino de Ageu esta imerso na linguagem da aliança mosaica, reconhecendo a importancia Ageu esta interessado especialmente na vinda do Messias e na edificaqao da casa de Deus davi'- dica. O nome divino (Jeova, traduzido como “o ÿ) ocorre 34 vezes nos 38 versículos dessa SENHOR pequena obra, o que afirma a presença e a atividade de Deus na vida de seu povo. Esse livro expressa o consolo e a responsabilidade que procedem da presença do Deus vivo, mesmo quando sua gloria não esta em manifestaqao pública (2.3). Ageu prediz o dia em que a gloria de Deus viria a terra na pessoa de Cristo, a fim de realizar a salvação de seu povo, prometida desde os tempos remotos (2.20-23)."
+        "ordem": 7,
+        "conteudo": "O ministério de Ageu está arraigado na revelação de Deus a Moisés. A infidelidade às obrigações da aliança havia produzido desastre e improdutividade agrícola. O profeta usa as estipulações da lei para mostrar que o povo estava contaminado. Apesar disso, o Senhor não esqueceu sua promessa de estar com o povo e agir para produzir paz e bênção por meio do templo e daquilo que o templo representava: a presença de Jesus Cristo. A mensagem continua sendo de encorajamento para o povo da nova aliança que vive entre a promessa e sua realização plena."
+      },
+      {
+        "id": "cristo_no_livro_de_ageu",
+        "titulo": "Cristo no livro de Ageu",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "A reconstrução do templo está ligada à vinda do Messias. No Novo Testamento, Jesus é apresentado como a incorporação pessoal do templo (Jo 2.19) e como aquele em quem Deus assume carne humana para habitar entre nós. Zorobabel, herdeiro davídico, prefigura o Messias por sua obra fiel de reconstrução. A promessa do “anel de selar” encontra cumprimento final em Jesus como governante real de Deus. O povo de Deus aguarda a entronização visível e final de Cristo."
+      },
+      {
+        "id": "historia_de_interpretacao",
+        "titulo": "História de interpretação",
+        "tipo": "texto",
+        "ordem": 9,
+        "conteudo": "Ageu permanece pouco conhecido entre cristãos recentes. Uma razão é seu contexto pós-exílico, quando o povo de Deus era um pequeno remanescente pobre. O material ressalta, porém, que Deus age poderosamente por meio de um remanescente fiel que depende dele. A mensagem pode ser aplicada à igreja como encorajamento para que a glória de Cristo, e não a glória humana, seja manifestada."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Ageu",
-        "tipo": "outline",
-        "ordem": 6,
-        "conteudo": "1. Exortação para a reedificação do templo (1.1-15) 2. A glória do novo templo (2.1-9) 3. Repreensão da infidelidade do povo (2.10-19) 4. Promessa do Senhor a Zorobabel (2.20-23)"
+        "tipo": "auto",
+        "ordem": 10,
+        "conteudo": [
+          {
+            "titulo": "I. A PRIMEIRA MENSAGEM: UM CHAMADO PARA A REEDIFICAÇÃO DO TEMPLO (CAP. 1)",
+            "itens": [
+              "A. A indiferença e a pobreza do povo (1.1–11)",
+              "B. A resposta do povo: arrependimento (1.12–15)"
+            ]
+          },
+          {
+            "titulo": "II. A SEGUNDA MENSAGEM: AS BÊNÇÃOS E O TEMPLO MAIORES DE DEUS (2.1–9)",
+            "itens": [
+              "A. Encorajamento da presença de Deus (2.1–5)",
+              "B. Encorajamento da promessa de Deus de bênção por meio do templo (2.6–9)"
+            ]
+          },
+          {
+            "titulo": "III. A TERCEIRA MENSAGEM: A BÊNÇÃO DE DEUS PARA UM POVO CONTAMINADO (2.10–19)",
+            "itens": [
+              "A. A causa de sua contaminação (2.10–14)",
+              "B. Os resultados de sua contaminação: maldições da aliança (2.15–17)",
+              "C. A determinação de Deus para abençoá-los (2.18, 19)"
+            ]
+          },
+          {
+            "titulo": "IV. A QUARTA MENSAGEM: A VITÓRIA FINAL DE DEUS PARA SEU POVO (2.20–23)",
+            "itens": [
+              "A. Deus vence as nações (2.20–22)",
+              "B. A entronização do governante de Deus (2.23)"
+            ]
+          }
+        ]
       }
     ]
-  },
-  "referencias_inline": true,
-  "politica_traducao": "independente",
-  "fonte_base": "37_Ageu.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  }
 }

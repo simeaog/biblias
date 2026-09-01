@@ -2,74 +2,121 @@
   "schema": "apoio-livro-v1",
   "id": "Sf",
   "nome": "Sofonias",
-  "abreviacao": "Sofonias",
   "material": {
     "titulo": "Sobre Sofonias",
-    "introducao": "Sofonias viveu na mesma época em que viveram os profetas Naum e Habacuque. A sua mensagem parece ter sido anunciada antes da reforma religiosa feita por Josias, rei de Judá, em 621 a.C. O profeta fala do Dia do Senhor, em que ele vai castigar o povo de Judá e os moradores de Jerusalém. Porém ele castigará também os outros povos, e as cidades dos filisteus serão destruídas. Mas a cidade de Jerusalém, depois de ser castigada, receberá de novo a graça e as bênçãos de Deus.",
+    "introducao": "Sofonias concentra sua mensagem no “dia do Senhor”, anunciando julgamento sobre Judá e as nações e, depois, purificação e restauração do remanescente. O livro une santidade, juízo, arrependimento e esperança.",
     "secoes": [
       {
-        "id": "cristo_em_sofonias",
-        "titulo": "Cristo em Sofonias",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "Não ha nenhuma profecia messianica direta em Sofonias, mas seu foco no dia do Senhor mostra claramente a necessidade de salvação que sera satisfeita apenas por meio da intervenção do Salvador que ama Siao e age em seu favor (3.15-20). Esse livramento não esta confinado ao Israel etnico.0 profeta vislumbra um tempo em que judeus e gentios serao unidos no gozo das bênçãos da aliança e na adoragao a Deus (3.9,10). Isso ocorreu por meio do ministério de Cristo. D E I N T E R P R E T A q A O H I S T O R I A"
-      },
-      {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O nono livro dos Profetas Menores recebe o nome de seu autor. A linhagem de Sofonias e tragada até quatro geragoes anteriores (1.1), uma apresentagao singular na literatura profética. Isso pode indicar que o Ezequias (715-686 a.C.) mencionado e o famoso rei de Judá, o que faz do profeta um membro da família real estendida e, por consequencia, um indivfduo de alguma posigao na comunidade de Jerusalém e conhecido quanto a seus assuntos. 0 nome Sofonias, que significa “Jeova escondeu” ou “Jeova entesourou”, talvez indique a fe de seus pais durante os anos de impiedade de Manasses. Também e usado como nome de um sacerdote contemporaneo de Jeremias (21.1; 29.25) e de outros indivfduos no Antigo Testamento (Zc 6.10, 14). Embora o profeta empregue vocabulario sacerdotal em varios pontos (1.4, 5, 7-9; 3.4, 18), não ha evidencia conclusiva a indicar que ele seria oficialmente associado ao templo. D A T A E C I R C U N S T A N C I A S Sofonias profetizou em Judá, o reino doSul, quando Josias (640-609 a.C.) era rei. Entretanto, ha algum questionamento a respeito deo profeta haver ministrado antes ou depois da grande reforma de de Josias na vida espiritual da nação, em 622 a.C. A denuncia de Sofonias quanto ao incessante culto sincretico (misturar a idolatria de povos vizinhos com a adoragao ao SENHOR) e ao culto de Baal pode indicar uma data anterior as reformas de Josias ou talvez o sucesso parcial dessas reformas. Visto que apenas um resto de Baal permanecera (1.4), Sofonias comegou provavelmente a ministrar depois das reformas iniciais de Josias, em 628 a.C. (2Cr 34.3, nota). Certamente, Nfnive ainda não havia sido destrufda (2.13-15); portanto, a mensagem do profeta foi comunicada antes da destruição de Nfnive, em 612 a.C.Sofonias teria sido contemporaneo de Jeremias, cujo chamado aconteceu no decimo terceiroano do reinadode Josias(627 a.C.). Se o ministério de Sofonias for datado como na parte inicial do reinado de Josias, entao ele pode ter sido o instrumento para dar causa as reformas de Josias, visto que os pecados atacados por Sofonias (1.4-6) sao os mesmos confrontados pelo rei (2Rs 23.4; 2Cr 34.1-7)."
+        "conteudo": "O livro recebe o nome de Sofonias, cuja linhagem é traçada até quatro gerações anteriores. O nome significa “Jeová escondeu” ou “Jeová entesourou”."
       },
       {
-        "id": "genero",
-        "titulo": "Gênero",
+        "id": "autor",
+        "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "Sofonias contem varias das características que encontramos nos Profetas Maiores: oraculos de julgamento (1.2-2.3), oraculos contra nações estrangeiras (2.4-15) e oraculosde esperanga (3.8-20)."
+        "conteudo": "A genealogia extensa de Sofonias pode indicar relação com Ezequias, o rei de Judá, o que faria do profeta um membro da família real estendida. O material também observa vocabulário sacerdotal no livro, mas sem evidência conclusiva de associação oficial com o templo."
       },
       {
-        "id": "caracteristicas_literarias",
-        "titulo": "Características literárias",
+        "id": "data_e_circunstancias",
+        "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "Sofonias apresenta seu material em forma poetica. Ele usa figuras vi'vidas para descrever a vinda do dia do Senhor, cujo julgamento abrangente envolvera Judá e a humanidade. O livro também e marcado pelo contraste entre as trevas do dia de julgamento iminente e o esplendor da gloria futura que aguarda o povo de Deus. Naquele tempo, os gentios também virao a fe no Deus vivo e verdadeiro, e invocarao o “nome do Senhor” (3.9; cf. J12.32).Sofonias não desenvolve extensivamente temas da história passada do povo ou de eventos contemporaneos. No entanto, ele lanqa mao de varios aspectos da lei (1.13, 15, 17; 2.2; cf. Dt 4.11; 28.15-62, 29, 30, 39). Além disso,sua terminologia e semelhante a de outros profetasescritores (cf. 1.7 e He 2.20; 1.14 e J11.15;1.7 e Is 34.6)."
+        "conteudo": "Sofonias profetizou em Judá durante o reinado de Josias (640–609 a.C.). Há debate sobre se seu ministério ocorreu antes ou depois da grande reforma de Josias, em 622 a.C. A denúncia do culto sincrético e de Baal pode indicar uma data anterior às reformas ou um sucesso apenas parcial delas. Como Nínive ainda não havia sido destruída, a mensagem deve ser anterior a 612 a.C. O material considera provável que Sofonias tenha começado a ministrar depois das reformas iniciais de Josias, em 628 a.C., e observa que seus pecados denunciados correspondem aos confrontados posteriormente pelo rei."
       },
       {
-        "id": "temas_principais",
-        "titulo": "Temas principais",
+        "id": "genero_e_caracteristicas_literarias",
+        "titulo": "Gênero e características literárias",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Como muitos dos outros profetas, Sofonias comeqa com a mensagem de julgamento universal (1.2, 3) e termina com um oraculo de salvação em que tanto as nações (3.9) como o remanescente revitalizado de Israel (3.12, 13) sao levados a um relacionamento salvffico com oSenhor (3.19, 20). O ponto central da mensagem do profeta e o dia doSenhor, referido pelo menos 18 vezes, das quais 13 se encontram no primeiro capítulo. Sofonias prediz que, naquele tempo, um inimigo estrangeiro, agindo como a espada de julgamento do Senhor (2.12; Is 10.5), causara destruição severa em Jerusalém (1.4, 10, 11; 2.1). Dependendo da dataqao do livro, esse inimigo e identificado de maneiras diferentes, como os citas, os assfrios ou os babilonios.Sofonias faz uma abordagem extensiva desse assunto. O dia esta próximo (1.7) e, nesse dia, a ira e a indignaqao do soberano Senhor de Israel serao dirigidas contra os ímpios (1.15, 18; 2.2, 3). E um dia de trevas e angustia (1.15). O Senhor esta tao determinado a erradicar o mal que realiza uma busca minuciosa para garantir que os ímpios serao encontrados e destrufdos (1.12). Naquele dia, a soberba sera aniquilada (3.11), e os humildes da terra (o remanescente) serao salvos (3.12, 17). Por tras do dia de intrusao divina no curso da história humana, que Sofonias prediz como iminente, ele também esta ciente da intervenção universal e culminante do dia final de julgamento divino. Um ponto menos obvio, mas aludido em todo o livro de Sofonias, e o reconhecimento do profeta quanto a importancia da aliança do Senhor com seu povo. Embora o profeta nunca empregue a palavra aliança, algumas passagens ecoam detalhes de encontros e regulaqoes anteriores concementes a aliança.Sem duvida, as queixas contra Judá refletem a indignaqao doSenhor por causa da negligencia dos judeus em relaqao as obrigaqoes da aliança. Ao mesmo tempo, porém, reconhecese que ha um remanescente fiel cujo povo e incentivado a perseverar em buscar o Senhor (2.3) e a esperar com mansidao e humildade por seu livramento (3.8, 12)."
+        "conteudo": "Sofonias contém oráculos de julgamento, oráculos contra nações estrangeiras e oráculos de esperança. A apresentação é poética, com figuras vívidas para descrever o dia do Senhor. O livro contrasta as trevas do julgamento iminente com o esplendor da glória futura. Também incorpora aspectos da lei e emprega terminologia semelhante à de outros profetas."
+      },
+      {
+        "id": "caracteristicas_e_temas_principais",
+        "titulo": "Características e temas principais",
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "Sofonias começa com julgamento universal e termina com salvação para as nações e para o remanescente de Israel. O centro da mensagem é o dia do Senhor, mencionado pelo menos 18 vezes. Esse dia traz destruição sobre Jerusalém e julgamento dos ímpios, mas também salvação para os humildes e para o remanescente. O livro reconhece a importância das obrigações da aliança mesmo sem usar explicitamente a palavra “aliança”."
       },
       {
         "id": "teologia_de_sofonias",
         "titulo": "Teologia de Sofonias",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "Sofonias rejeita uma teologia que considera Deus alguem distante e não envolvido nos assuntos humanos (1.12). Ele afirma o odio doSenhor por violencia e corrupqao (1.9; 3.1-5) e prediz o julgamento vindouro do Rei (3.15), que também e o Salvador (3.17). De fato, o profeta apresenta o julgamento divino como elemento transformador do mundo, ao colocar as obras de todas as pessoas, boas ou mas, sob escrutmio divino. A natureza restauradora da ira de Deuse indicada pela mudanqa de tom,das advertencias em 1.2-3 (“consumirei todas as coisas”), para a esperança afirmada em 3.14-20. Naquele tempo,oSenhor estara no meiodeseu povoe lidara com eles amorosamente, quando, entao, restaurara seu destino. A declaraqao “elese deleitara em ti com alegria”(3.17) revelaa extensaoda satisfaqao divina na consumaqao deseus propositos para seu povo."
+        "ordem": 6,
+        "conteudo": "Sofonias rejeita a ideia de um Deus distante dos assuntos humanos. O Senhor odeia violência e corrupção, julga como Rei e também salva. Seu julgamento tem natureza transformadora: o tom passa da advertência de destruição para a esperança de restauração. O Senhor estará no meio de seu povo, lidará com ele amorosamente e restaurará seu destino."
+      },
+      {
+        "id": "sofonias_na_historia_mais_ampla_da_biblia",
+        "titulo": "Sofonias na história mais ampla da Bíblia",
+        "tipo": "texto",
+        "ordem": 7,
+        "conteudo": "Judá recusou-se a aprender com o julgamento do reino do Norte, e Deus interveio novamente. Sofonias é apresentado como o último dos Profetas Menores escrito antes do exílio. Os livros seguintes foram escritos depois do retorno do povo à terra. O final de Sofonias prepara o caminho para a vida da comunidade restaurada e para a preservação de um remanescente."
+      },
+      {
+        "id": "cristo_em_sofonias",
+        "titulo": "Cristo em Sofonias",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "Não há profecia messiânica direta, mas o foco no dia do Senhor mostra a necessidade de salvação que será satisfeita pela intervenção do Salvador que ama Sião e age em seu favor. O livramento alcança além do Israel étnico: judeus e gentios serão unidos nas bênçãos da aliança e na adoração a Deus, realidade associada ao ministério de Cristo."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "Sofonias foi muito negligenciado na história de interpretação, talvez porque, aparentemente, não apresente algo significativamente novo. De fato, livro de Sofonias como uma coletanea de material de variasfontes,creditando ao profeta pouco mais do que o capítulo 1. Isso se baseava na suposigao infundada de que o mesmo indivfduo não poderia profetizar, ao mesmo tempo, julgamento e bengao. Nos dias de Sofonias, a necessidade não era a de uma nova verdade, mas, sim, da antiga verdade reconhecida e praticada como tal, especialmente em relação a manutengao da integridade na adoraqao e na interagao social.Características literarias unificadoras do livro também indicam que se trata de obra de um único autor. A mensagem do grande dia da ira do Senhor, em 1.14-18, inspirou o poema medieval Dies irae,que desempenhou papel importante na hinologia crista. E S B O t J O D E S O F O N I A S I. INTR0DUCA0 (1.1) II. PROFECIAS DE JULGAMENTO (1.2-6) A. Contra todas as nações (1.2, 3) B. Contra Judá (1.4-6) III. O DIA DO SENHOR: ACUSACAO E JULGAMENTO (1.7-18) IV. CHAMADO AO ARREPENDIMENTO (2.1-3) V. PROFECIAS CONTRA AS Nações (2.4-15) A. Fili'stia (2.4-7) B. Moabe e Amom (2.8-11) C. Etiopes (2.12) D. Assiria (2.13-15) VI. ACUSACAO CONTRA Jerusalém (3.1-5) VII. Jerusalém DEVE APRENDER COM O JULGAMENTO DE DEUS CONTRA AS Nações (3.6-8) VIII. PURIFICACAO E Restauração DO REMANESCENTE DEJUDA (3.9-20)"
+        "ordem": 9,
+        "conteudo": "Sofonias foi relativamente negligenciado, talvez por parecer não apresentar novidades significativas. Alguns críticos chegaram a atribuir ao profeta pouco mais que o capítulo 1, com base na suposição de que uma mesma pessoa não poderia anunciar julgamento e bênção. O material considera essa suposição infundada e aponta para características literárias unificadoras. A mensagem de 1.14–18 inspirou o poema medieval Dies irae, importante na hinologia cristã."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Sofonias",
-        "tipo": "outline",
-        "ordem": 7,
-        "conteudo": "1. O dia da ira de Deus (1.1-18) 2. Juízos contra as nações vizinhas (2.1-15) 3. O pecado e a redenção de Jerusalém (3.1-20)"
+        "tipo": "auto",
+        "ordem": 10,
+        "conteudo": [
+          {
+            "titulo": "I. INTRODUÇÃO (1.1)",
+            "itens": []
+          },
+          {
+            "titulo": "II. PROFECIAS DE JULGAMENTO (1.2–6)",
+            "itens": [
+              "A. Contra todas as nações (1.2, 3)",
+              "B. Contra Judá (1.4–6)"
+            ]
+          },
+          {
+            "titulo": "III. O DIA DO SENHOR: ACUSAÇÃO E JULGAMENTO (1.7–18)",
+            "itens": []
+          },
+          {
+            "titulo": "IV. CHAMADO AO ARREPENDIMENTO (2.1–3)",
+            "itens": []
+          },
+          {
+            "titulo": "V. PROFECIAS CONTRA AS NAÇÕES (2.4–15)",
+            "itens": [
+              "A. Filístia (2.4–7)",
+              "B. Moabe e Amom (2.8–11)",
+              "C. Etíopes (2.12)",
+              "D. Assíria (2.13–15)"
+            ]
+          },
+          {
+            "titulo": "VI. ACUSAÇÃO CONTRA JERUSALÉM (3.1–5)",
+            "itens": []
+          },
+          {
+            "titulo": "VII. JERUSALÉM DEVE APRENDER COM O JULGAMENTO DE DEUS CONTRA AS NAÇÕES (3.6–8)",
+            "itens": []
+          },
+          {
+            "titulo": "VIII. PURIFICAÇÃO E RESTAURAÇÃO DO REMANESCENTE DE JUDÁ (3.9–20)",
+            "itens": []
+          }
+        ]
       }
     ]
-  },
-  "referencias_inline": true,
-  "politica_traducao": "independente",
-  "fonte_base": "36_Sofonias.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  }
 }

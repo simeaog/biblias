@@ -2,67 +2,106 @@
   "schema": "apoio-livro-v1",
   "id": "3Jo",
   "nome": "3 João",
-  "abreviacao": "3 João",
+  "abreviacao": "3Jo",
   "material": {
     "titulo": "Sobre 3 João",
-    "introducao": "Esta epístola, escrita pelo mesmo “presbítero” que escreveu a Segunda Epístola de João , é enviada a Gaio, dirigente de uma igreja. O autor elogia Gaio, condena a oposição de Diótrefes e fala bem de Demétrio.",
+    "introducao": "A Terceira Epístola de João é uma carta breve sobre verdade, amor e hospitalidade cristã, escrita no contexto de conflito entre Diótrefes e os que recebiam missionários itinerantes fiéis.",
     "secoes": [
       {
-        "id": "data_e_circunstancias",
-        "titulo": "Data e circunstâncias",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "nquanto1 e 2 Joao celebram verdades que unem todos os cristãos, 3 Joao lamenta a rivalidade mesquinha que coloca os cristãos uns contra osoutros. Especificamente, a carta foi motivada por um forte conflito entre Diotrefes (aparentemente, presbftero numa congregação que estava sob os cuidados de Joao) e outros na congregação sobre a questão da hospitalidade mostrada a missionaries itinerantes. E provavel que Demetrio, recomendado a Gaio nesta carta, fosse ele mesmo um missionario itinerante que precisava de hospedagem temporaria.E Gaio, o receptor da carta, se distinguira claramente pela hospitalidade para com os mestres da “verdade” itinerantes (w. 3-8). de"
-      },
-      {
-        "id": "caracteristicas_literarias",
-        "titulo": "Características literárias",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "Assim como 2 Joao, esta terceira carta de Joao segue o padrao de uma classica carta grecoromana curta. Segue, em geral, as convengoes epistolares tipicas do século 1 (ver Introdução as Epístolas). Contem abertura (vv. 1, 2), corpo (vv. 3-12) e conclusao padrao (w.13-14). C A R A C T E R I S T I C A S E T E M A S P R I N C I P A I S Como uma carta, a Terceira Epistola de Joao e marcada por sua saudaqaoinicial,sua palavra de introduqao e sua saudação final. Mais especificamente, e uma carta de recomendagao que apresenta Demetrio ao receptor, Gaio."
+        "conteudo": "A Terceira Epístola de João é uma carta breve sobre verdade, amor e hospitalidade cristã, escrita no contexto de conflito entre Diótrefes e os que recebiam missionários itinerantes fiéis."
       },
       {
-        "id": "teologia_de_3_joao",
-        "titulo": "Teologia de 3 João",
+        "id": "autor",
+        "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "Como em1e 2 Joao, o presbitero enfatiza o amor e a verdade, bem como sua interconexao. Joao ama Gaio “na verdade” (v. 1). Os irmaos que haviam desfrutado da hospitalidade generosa de Gaio, embora fossem estranhos a ele, deram testemunho tanto do fato de que ele estava andando “na verdade” (vv. 3, 4) como do fato de que ele mostrara amor ao suprir a necessidade deles (vv. 6, 7). Em contraste, o arrogante Diotrefes expressou seu desafio a autoridade do apóstolo tanto por falar “palavras maliciosas” como por punir (em vez de amar, vv. 9, 10) os crentes que, como Gaio, recebiam bem seus irmaos. Embora Joao não acuse Diotrefes de negar a confissao de Jesus como Cristo vindo em came, como o fazem os enganadores (2Jo 7), recusar ou negar hospitalidadeaqueles que levam fielmente o “nome” e uma falha em andar “na verdade”. Independentemente do ofi'cio exercido na Igreja e das crenqas professadas por alguem, o princfpio anunciado por Jesus continua verdadeiro: “Pelos seus frutos os conhecereis” (Mt 7.15-20). Como Joao expressa: “Aquele que pratica o bem precede de Deus; aquele que pratica o mal jamais viu a Deus” (v.11)."
+        "conteudo": "A fonte identifica 3 João como obra do mesmo autor de 2 João. As semelhanças de estilo e estrutura com 1 João e o Evangelho de João sustentam a atribuição tradicional ao apóstolo João."
       },
       {
-        "id": "3_joao_na_historia_mais_ampla_da_biblia",
-        "titulo": "3 João na história mais ampla da Bíblia",
+        "id": "data_circunstancias",
+        "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "N A H I S T O R I A M A I S A M P L A B I B L I A D A Esta pequena carta ilustra um tema que percorre toda a história da redenqao; os crentes que receberam a graciosa aceitaqao da parte de Deus, por meio doevangelho,compartilham alegrementea promoqao das boasnovas,ao receberem seus mensageiros e suprirem as necessidades deles.O destinatario da carta, Gaio, pertencia a bendita companhia daqueles que se haviam tornado “cooperadores da verdade [de Deus]” (v. 8), por hospedarem, proverem alimento e dinheiro aos mensageiros da Palavra de Deus. Essa companhia inclui uma viuva gentia em Sarepta que alimentou o profeta Elias, correndo o risco de, conforme esperava, passarem feme ela e o filho (IRs 17.8-16), e a mulher de Sunem que convenceu seu marido a reformar a casa para acomodar as visitas do profeta Eliseu (2Rs 4.8-10). Obadiasarriscou sua vida e comprovou a veracidade de seu nome (“servo de Jeova”) ao esconder cem profetas numa cavemae levarlhes pao e agua (1 Rs 18.12-13).Quando Jesus enviouos Doze e os setenta, prometeu que, quando viajassem para propagar as boasnovas do Reino, teriam suas necessidades supridas por pessoas de paz (Lc 9.3 5; 10.4-9). Ao receberem os mensageiros de Jesus, essas pessoas estavam recebendo o proprio Jesus e, assim, compartilhariam a recompensa dos mensageiros (Mt 10.40-42). Em Filipos, o primeiro impulso de Lidia, aoabraqar a fe,foi abrirsua casa para receber a equipe missionaria de Paulo e Silas (At 16.15). Quando Paulo escreveu sua carta aos cristãos de Roma, esperava ser ajudado em sua viagem até a Espanha, com oapoiofinanceiro deles, depois de uma estada espiritualmente revigorante entre eles(Rm 15.24). Hebreusexortaseusouvintesa não negligenciarem a “hospitalidade”, recordandolhes que Abraão, ao receber hospedes desconhecidos, estava acolhendo anjos (Hb 13.2, aludindoaGn 18.1-15). Essa assistencia não somente mostra amor pelos irmaos crentes,como também sera recompensada pelo proprio Senhor. No julgamento final, o Filho do Homem elogiara e recompensara aqueles que alimentaram, receberam, vestiram e cuidaram dos menores dos irmaos de Jesus (Mt 25.34-40)."
+        "conteudo": "A carta é dirigida a Gaio e trata do conflito entre Diótrefes, que resistia à autoridade de João e recusava hospitalidade a irmãos, e os cristãos que acolhiam missionários. Demétrio é recomendado como alguém digno de confiança. A data é incerta; a fonte considera possíveis os anos 80 ou o final dos anos 90 do século I."
       },
       {
-        "id": "cristo_em_3_joao",
-        "titulo": "Cristo em 3 João",
+        "id": "genero",
+        "titulo": "Gênero e características literárias",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Não ha uma menqao explfcita aoSalvador divino- -humano em 3 Joao. Isso não e surpreendente, em vista da brevidade da carta e de sua enfase especffica na hospitalidade aos emissarios viajantes do evangelho. No entanto, 3 Joao parece conter duas alusoes a Cristo que teriam sido facilmente reconhecidas pelos cristãos daquele tempo. Primeiro, Joao diz que, “por causa do Nome”, mestres fiéis “safram, nada recebendo dos gentios” (v. 7). Esse “Nome” quase certamente pertence a Jesus. Os apóstolos se regozijaram em sofrer por causa do “Nome” (At 5.41; cf. 9.16), havendo declarado que, debaixo do ceu, existe apenas um nome no quai se encontra a salvação (At 4.10-12; Jo 3.18; ljo 5.13). Os cristãos sao batizados no “nome” de Jesus(At 2.38) e invocam esse nome (At 9.14).Esse e “o bom nome” pelo qual eles sao chamados (Tg 2.7). Os irmaos que Joao recomenda não aceitam sustento financeiro de não cristãos (“gentios”, enquanto levam o nome de Jesus e transmitem, sem custo, as boas notfcias do dom da graqa de Deus nele (ICo 9.18; 2Co 11.7-11). talvez o portador da carta e um irmao que necessitava de hospedagem e suprimento, como alguem cuja fidelidade era testemunhada por todos, pela “propria verdade” e por Joao (v.12). E possivel que o testemunho da “propria verdade” em favor de Demetrio signifique apenas sua fidelidade ao evangelho dos apóstolos. Mas e igualmente provavel que foao, o qual registrou a identificaqao de Jesus como “o caminho, a verdade e a vida” (Jo 14.6), tencione que os leitores pensem em Jesus, que e a verdade em pessoa (ver nota em 2Jo 2). D E I N T E R P R E T A q A O"
+        "conteudo": "3 João segue o padrão de uma carta greco-romana curta: abertura, corpo e conclusão. É particularmente uma carta de recomendação, apresentando Demétrio ao receptor Gaio. Sua estrutura simples permite contraste entre os exemplos de Gaio, Demétrio e Diótrefes."
       },
       {
-        "id": "historia_de_interpretacao",
-        "titulo": "História de interpretação",
+        "id": "caracteristicas_temas_principais",
+        "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "Como no caso de 2 Joao, a brevidade de 3 Joao explica por que, no decorrer da história da Igreja, os cristãos pouco se referiram a ela e não lhe deram a mesma especie de atenção dispensada a livros como o Evangelho de Joao ou a Epístola de Paulo aos Romanos. Apesar disso, sua exortação no sentido de provermos apoio aosque labutam pela verdade do evangelho e um chamado solene para que a Igreja supra as necessidades dos que trabalham em tempo integral no ministério do evangelho como pregadores e mestres da Palavra de Deus."
+        "conteudo": "A carta relaciona verdade e amor. Gaio anda na verdade e demonstra amor ao acolher irmãos. Diótrefes, ao contrário, demonstra arrogância, fala maliciosamente e rejeita os irmãos. O princípio de que os frutos revelam a realidade espiritual é aplicado à vida da Igreja."
       },
       {
-        "id": "esboco",
-        "titulo": "Esboço de 3 João",
-        "tipo": "outline",
+        "id": "teologia_tres_jo",
+        "titulo": "Teologia de 3 João",
+        "tipo": "texto",
         "ordem": 6,
-        "conteudo": "Prefácio e saudação (vs. 1-4) 1. Elogio à hospitalidade de Gaio (vs. 5-8) 2. A oposição de Diótrefes (vs. 9-10) 3. Bom testemunho acerca de Demétrio (vs. 11-12) Saudações (vs. 13-15)"
+        "conteudo": "Deus é a fonte da verdade e do bem. João afirma que quem pratica o bem procede de Deus, enquanto quem pratica o mal não viu a Deus. A hospitalidade aos mensageiros do evangelho é apresentada como participação na obra da verdade."
+      },
+      {
+        "id": "historia_ampla",
+        "titulo": "3 João na história mais ampla da Bíblia",
+        "tipo": "texto",
+        "ordem": 7,
+        "conteudo": "3 João ilustra um tema amplo da história da redenção: aqueles que recebem a graça de Deus por meio do evangelho tornam-se participantes da missão e do sustento daqueles que trabalham pela verdade. A carta transforma uma questão prática de hospedagem em questão de fidelidade ao evangelho."
+      },
+      {
+        "id": "cristo_em",
+        "titulo": "Cristo em 3 João",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "Não há uma apresentação explícita e extensa da pessoa de Cristo, mas há alusões importantes. Os missionários saem “por causa do Nome”, referência entendida pela fonte como Jesus, o nome em que há salvação e pelo qual os cristãos são chamados. A recomendação de Demétrio também relaciona a “verdade” ao testemunho fiel do evangelho."
+      },
+      {
+        "id": "historia_interpretacao",
+        "titulo": "História de interpretação",
+        "tipo": "texto",
+        "ordem": 9,
+        "conteudo": "A brevidade explica sua influência menor na história da Igreja. Ainda assim, a carta oferece um chamado contínuo para que a Igreja sustente pregadores e mestres que trabalham pela verdade do evangelho e rejeite atitudes de autoritarismo que impedem a comunhão."
+      },
+      {
+        "id": "esboco_3jo",
+        "titulo": "Esboço de 3 João",
+        "tipo": "auto",
+        "ordem": 10,
+        "conteudo": [
+          {
+            "titulo": "I. INTRODUÇÃO E SAUDAÇÃO (vv. 1-2)"
+          },
+          {
+            "titulo": "II. CORPO DA CARTA (vv. 3-12)",
+            "itens": [
+              "A. Fidelidade à verdade (vv. 3-4)",
+              "B. A importância da hospitalidade (vv. 5-11)",
+              "1. Encorajamento positivo (vv. 5-8)",
+              "2. Exemplo negativo (vv. 9-10)",
+              "3. Resumo: bem versus mal (v. 11)",
+              "C. Recomendação de Demétrio, alguém digno de hospitalidade (v. 12)"
+            ]
+          },
+          {
+            "titulo": "III. CONCLUSÃO E DESPEDIDA (vv. 13-14)"
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "64_3 Jo#U00e3o.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte": {
+    "arquivo": "64_3 João/64_3 João0.jpg até 64_3 João3.jpg",
+    "paginas": "imagens fornecidas no lote 09_Cartas_Gerais",
+    "criterio": "Reconstrução baseada nas imagens, com OCR por coluna, normalização de hifenização e correção de erros evidentes de OCR."
+  }
 }

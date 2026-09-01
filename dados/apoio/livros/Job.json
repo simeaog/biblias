@@ -2,84 +2,145 @@
   "schema": "apoio-livro-v1",
   "id": "Jó",
   "nome": "Jó",
-  "abreviacao": "Jó",
   "material": {
     "titulo": "Sobre Jó",
-    "introducao": "O Livro de Jó trata do sofrimento humano. Jó era um homem bom, rico e feliz, mas Deus permitiu que, da noite para o dia, perdesse os filhos e tudo o que tinha e que fosse atacado por uma doença terrível. Depois Jó e os seus amigos conversam, em diálogos poéticos, procurando achar explicação para tanta desgraça. No fim Deus aparece e dá a resposta. Pensava-se, naquele tempo, que o sofrimento é sempre resultado do pecado. Para os amigos de Jó, Deus sempre recompensa os bons e castiga os maus. Portanto, se Jó está sofrendo, é porque pecou, mesmo que tenha sido em segredo. Mas Jó reage contra essa explicação. Ele não entende como Deus deixou que tamanha desgraça caísse sobre ele, visto que sempre foi um homem bom e honesto. Nesse estado de angústia e de dúvida, Jó chega a desafiar a Deus. Ele exige uma explicação para que finalmente possa ser aceito por Deus e considerado pelos outros como um homem bom e correto. E Deus tem a última palavra. Ele não responde às perguntas de Jó, mas fala do seu próprio poder e sabedoria. Humildemente Jó reconhece que ele não é nada diante de um Deus tão poderoso e sábio e se arrepende de haver usado palavras duras e violentas. No final fica provado que Jó tinha razão e que os seus amigos estavam errados. Ele tinha toda a razão de rejeitar o modo de pensar dos seus amigos. E para Jó tudo vai melhor ainda do que no começo da história. Deus repreende os amigos de Jó por não haverem entendido a razão do seu sofrimento e por haverem defendido ideias erradas a respeito de Deus. Jó, ao contrário, mesmo com a sua impaciência, as suas reclamações e os seus protestos, conservou a fé num Deus que é justo. Ele reconheceu que os seres humanos não podem compreender tudo, nem explicar bem a razão por que às vezes também os inocentes sofrem.",
+    "introducao": "Jó trata da questão do sofrimento do justo e da soberania de Deus. O livro acompanha Jó, homem apresentado como íntegro, que perde bens, filhos e saúde e passa a discutir com seus amigos sobre as razões de seu sofrimento. O diálogo culmina na intervenção de Deus, que não oferece a Jó uma explicação simplista, mas revela sua soberania e conduz o personagem à humildade, confiança e restauração.",
     "secoes": [
       {
-        "id": "cristo_em_jo",
-        "titulo": "Cristo em Jó",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "No meio da luta de Jo para compreender a provi dencia de Deus em sua vida, ele se toma consciente de sua necessidade de uma figura mediadora, um redentor, que se ponha entre Deus e ele (ver 16.19-21; 19.25-27; 33.23). Mesmo assim, não parece que Jo tenha estado sempre ciente de como seu anelo profundamente sentido finalmente se concretizara. Naturalmente, essa concretizagao se encontra somente em Cristo. central dos dialogos.Tiago não salienta a passividade de Jo, mas,sim,sua perseverança e, com ela, a compaixao e a misericórdia de Deus na concretizagao de seus propositos.0 propósito de Deus no sofrimento de Jo e a chave para se compreender a aparente discrepancia entre o tranquilo Jo do prologo (caps.1 e 2) e a furia de Jo na segao central.O propósito de Deus e complexo, envolvendo mais que uma questão de fe. Ao longo dos séculos, tern havidofascinagaocontfnua pelos enigmas da vida e dosofrimento humano como retratados em Jo.Muitos comentaristas tem contribufdo,deformasignificativa,para nossacompreensao dessa obra complexa — nenhum mais que Joao Calvino, que pregou 159 sermoes extraidos do livro. Mas ninguem exauriu a analise de Jo, e o que, com frequencia,se diz reflete intimamente as pressuposigoes que a geragao representada pelo expositor tem extrafdo desse texto tao complexo. III. MONOLOGOS (29.1-42.6) A. Oração final de Jo (caps. 29-31) 1. Bênção, honra e benevolencia pessoais preteritas (cap. 29) 2. Desonra e sofrimento presentes, e não benevolencia (cap. 30) 3. Protesto de inocencia de Jo (cap. 31) B. Discursos de Eliu (caps. 32-37) 1. Introdução de Eliu (32.1-5) 2. Primeiro discurso de Eliu (caps. 32.6-33.33) 3. Segundo discurso de Eliu (cap. 34) 4. Terceiro discurso de Eliu (cap. 35) 5. Quarto discurso de Eliu (caps. 36 e 37) C. Respostas do Senhor e reagao de Jo (38.1-42.6) 1. Primeiro discurso do Senhor (38.1-40.2) 2. A humilde reagao de Jo (40.3-5) 3. Segundo discurso do Senhor (40.6-41.34) 4. Reagao penitente de Jo (42.1-6) IV. EPlLOGO (42.7-17) A. Jo confirmado (42.7-9) B. Jo restaurado (42.10-17)"
-      },
-      {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O ti'tulo do livro segue seu personagem principal. A etimologia lingufstica do nome de Jo (originalmente, uma palavra de duas sflabas, iyob,do grego Hiob) e incerta (ver 1.1), mas e uma forma bem atestada no segundo milenio a.C. Parece haver um jogo de palavras no nome de Jo; ele diz duas vezes que Deus o reputa como inimigo (oyeb), de modo que a etimologia popular seria algo como “inimigo” ou “hostil”."
+        "conteudo": "O título do livro corresponde ao nome de seu personagem principal, Jó. A discussão sobre a origem e o significado do nome aparece no material como questão secundária diante da função literária do personagem e da mensagem do livro."
       },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "A relação entre a narrativa inicial do livro (o prologo, caps.1e 2)e o conteudo das discussoes de Jo com seus amigos (o dialogo, caps. 3-27) deixa claro que Jo não foi o autor desse livro.Tivesse Jo conhecido o que se deu no concflio divino, não teria havido tese para discutir sobre se ele havia ou não causado seu sofrimento por intermedio de condu ta pecaminosa. Ao contrario, Deus usa um poeta habilidoso, da comunidade pactual, para escrever esse livro notavel. A linguagem apresenta muitos desafios ao tradutor em virtude de sua gramatica poetica e de seu rico vocabulario.Sabemos que o autor era israelita, visto que se refere a Deus pelo nome pactual Jave, enquanto Jo e seus companheiros (ver 1.1) usam termos como “Deus” e “Todo-Pode deroso” (12.9 e a única excegao). A probabilidade e que o poeta tenha usado fontes dos tempos patriarcais, inclusive algumas do proprio Jo, na composigao do livro."
+        "conteudo": "O livro de Jó não identifica explicitamente seu autor. O material observa que a tradição atribuiu sua composição a diferentes figuras, mas não apresenta evidência suficiente para estabelecer com segurança uma autoria individual."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "Ha duas consideragoes: quando os incidentes registrados ocorreram e quando o registro corrente foi feito. Não ha resposta precisa para am bas. Os incidentes datam do período patriarcal e ocorreram em um cenario não israelita. Não podemos especificar quando o autor de Jo viveu e escreveu, mas o hebraico classico do prologo o situa depois de 1500 a.C. A forma final do livro pode não ter surgido até a era salomonica ou um pouco mais tarde, quando a literatura sapiencial hebraica atingiu seu apice. As referencias a Jo em Ezequiel 14.14, 20 e a descoberta dos fragmentos de Jo entre os Rolos do Mar Morto não tern prejudicado as tentativas de datar Jo por volta do segundo século a.C."
+        "conteudo": "A época de Jó é discutida a partir de elementos internos do livro e das referências a costumes patriarcais. O cenário parece anterior à organização de Israel como nação e não depende diretamente da legislação mosaica. A data da composição literária permanece incerta."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Entre os escritos sapienciais do AT, o livro de Jo esta com Eclesiastes como uma demonstragao da complexidade tanto da sabedoria como do viver de forma habilidosa. O livro de Jo fornece outra perspectiva da sabedoria como complemento tradicional quando se digladia com o sofrimento de um indivi'duo justo em confronto com a afirmagao deque Deus e justo e bom.Algumas vezes chamada “teologia da retribuição”, a versao simplista dessa sabedoria tradicional ou popular sustenta que o bom comportamento e sempre galardoado, enquanto o comportamento mau ou imoral e sempre punido, que o bem tern exito e o mal, não. Por toda a literatura sapiencial, vemos os autores bíblicos se digladiando com a superagao da justiga de Deus e a questão do sofrimento. Jo, em particular, aborda o tema com uma franqueza que as vezes e desconcertante.O livro naosugere a existencia de uma deidade ma ou que o poder de Deus seja limitado. Em vez disso, ele louva a soberania, a sabedoria e a gloria do Criador. O fato de o Deus de Jo não ser mau nem limitado e visto em duas descrições da relação de Jo com Deus. A primeira representagao e extrafda do prologo e do epilogo do livro.O prologo descreve a submissao de Jo a vontade divina em meio ao sofrimento. Ali, Jo aparece como um homem bom, que confia na bondade de seu Deus. Finalmente, no epilogo (42.7-17), Deus honrasua confiança, restaurandoo. A segunda representagao no ceme poetico do livro (caps.3-^42.6)mostra a indignagaode Joem meioao seu sofrimento. Ele pensa que Deus se tomou seu inimigo e, injustamente, esta afligindoo. Jo chega a essa conclusao porque sabe que Deus e soberano. Se ele cresse em uma divindade limitada, não teria problema com a justiça ou a bondade de Deus, visto que, entao, não poderia ter Deus como responsavel por cada evento, inclusive por seu infortunio. Universalmente, reconhecese a esplendida maestria literária com que o material e apresentado no livro. Temse proposto tres classificagoes principals para o genero de Jo: litfgio, lamento e disputa. O litfgio e apresentado pelo uso de linguagem legal (p. ex., 5.8;13.3; 23.6) e procedimentos (p.ex., cap. 32; 40.7, 8). Essa analise foca em Jo como instituindo procedimentos contra Deus. De irn'cio, buscase uma resolugao informal (caps. 4-14) e, quando isso falha, adotase, crescentemente, uma agao formal (caps.15-31). Depois de os amigos de Jo, que agiram como advogadosautodesignados de Deus, cai'rem em silencio e, com isso, desistirem da causa,aparece Eliu contra a decisao deles (caps. 32-37). No entanto, ocorre a intervenção divina direta antes de Jo desistir de sua demanda (40.5). O lamentoanalisa o livro pela analogia dos salmos de lamento (ver Introdução aos Salmos: Genero). Os lamentos encontrados nos caps. 3 e 29-31 endossam essa abordagem. Em Jo, o lamento e apresentadoemsuaforma dramaticacoma intervenção dosamigosinterpretada comoestendendoconforto a alguem angustiado. A disputa usa os dialogos em forma de controversia, registrados na literatura do antigo Oriente Próximo para elucidar a estrutura de Jo, a qual, obviamente, consiste de uma serie de intercambios que envolvem controve'rsia entre os oradores da sabedoria. Seus discursos não sao primariamente dialogosemque os pontos de vista dos oponentes sao elaborados e respondidos. Pode ser que isso acontega, mas a disputa esta mais próxima da apresentagao deseries de papeis posicionais para debater um caso particular. Noentanto,embora cada uma dessas interpretagoes reflita aspectos do livro de Jo, nenhuma delasfornece uma analise exaustiva.O livro deJo e uma criagaoliteraria única e poderosa exatamente porque e uma combinagao habilidosa de varios generos. 0 impacto do livro transcende seuscomponentes."
+        "conteudo": "Jó combina narrativa e poesia. O prólogo e o epílogo são narrativos, enquanto a maior parte do livro consiste em longos discursos poéticos entre Jó, seus amigos e Deus. A forma poética permite explorar o sofrimento, a sabedoria e a justiça divina por meio de debates e imagens intensas."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "Composigoes semelhantesao livro de Jo aparecem em fontes mesopotamicas e egfpcias dos tempos do AT. Uma delas (“Um dialogosobre a miseria humana”) e sobre um conselheiro que critica um sofredor porsua impiedade enquantoosofredor luta com o carater dos deuses. Além disso, o formato literário de Jo não e linico entre os documentos do antigo Oriente Próximo, consistindo de um prologo em prosa, um dialogo poetico e, finalmente, um epilogo em prosa. Mas não ha outra obra que aborde o problema do sofrimento humano a luz da transcendencia e da bondade de Deus com a profundidade teológica, a sofisticagao literária e a aplicação pratica do livro de Jo. O autor de Jo era um artifice literário e empregou muitas tecnicas para comunicar sua mensagem. Dois aspectos tern significado especial: a ironia e a linguagem mitologica. A ironia ocorre de varias formas. A ironia verbal e uma figura de linguagem em que o significado pretendido e o oposto do sentido literal comunicado pelas palavras usadas (p. ex., 12.2). Também esta presente no questionamento de Jo (38.4, 5, 18, 21) por Deus,emque não ha duvida quantoa resposta a ser dada. A ironia se converteem sarcasmo quando e pronunciada com a intengao de magoar ou ferir aquele que e abordado. Mais significativo em Jo e o uso da ironia dramatica,que ocorre quando uma audiencia (ou um grupo de leitores)sabe, no processo, o resultadode um jogo (ou narrativa), enquanto os personagens envolvidos não o sabem. Entao, pode haver tensao entre a compreensao que um personagem tern de sua situação e a da audiencia/leitor. Isso e feito em Jo pela maneira como os dialogos poeticos sao embutidos numa estrutura de prosa, O prologo deixa claroque Jo e inocente de injustiga hedionda, mas essa informação não esta dispomvel aos seus chamados “consoladores”. Essa ironia dramatica realga a apresentagao em varios momentos (p.ex., 3.23; 7.12). Em varias passagens de todo o livro, encontrase a linguagem emprestada da mitologia do antigo Oriente Próximo (p. ex., 3.8), mas especialmente nos discursos de Jo e de Deus. No entanto, esse uso de imagens e expressoes idiomaticas do ambiente cultural do paganismo adjacente não endossa as convicqoes politefstas no que diz respeito as forgas naturais ou as entidadessobrehumanas, da mesma forma que as alusoes classicas de John Milton em Parai'só perdidonao indicam eventual aceitagao da mitologia grecoromana. As alusoes lingufsticas podem ser mais que figuras convencionais de linguagem. De fato, podem ser empregadas para combater uma cosmovisao mitologica e enfatizar a supremacia absoluta de Jave,oSenhor da aliança com Israel e o único Deus verdadeiro."
+        "conteudo": "A estrutura do livro contrasta o prólogo e o epílogo com o grande corpo poético. O diálogo progride por ciclos de discursos nos quais os amigos procuram explicar o sofrimento de Jó por meio de uma relação direta entre pecado e punição. Jó rejeita essas explicações e insiste em sua integridade. Os discursos de Deus deslocam a discussão da tentativa humana de explicar todos os atos divinos para o reconhecimento da soberania e sabedoria do Criador."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "T E M A S P R I N C I P A I S A exploraqao que o livro faz dos temas associados ao propósito de Deus no sofrimento humano se apresenta como segue. No prologo, vemos a relaqao Deus/Jo a partir da perspectiva divina. Deus escolhe Jo para ser um de seus servos sofredores, um instrumento atraves do qual se concretiza um triunfo espiritual: “Observaste o meu servo Jo?” (1.8; 2.3). Satanas acusa falsamente Jo de servir a Deus em funqao das benqaos materials (1.9-11). A Jo, e dada a elevada vocaqao de permanecer leal a Deus mesmo quando tudo lhe e tirado e um sofrimento implacavel tornase sua sorte cotidiana. Jo fara o que o Adversario prediz e amaldigoara a Deus, em seu rosto? Essa e a questão que conduz o movimentado drama do livro quando Jo perde sua confianqa inicial e se afunda em desespero. Se Jo permanecer fiel, Deus mostrara, atraves dele, que o Adversario e mentiroso. Enquanto o prologo nos da a perspectiva divina, a segao central de discursos apresenta a perspectiva humana. Como um ser humano, Jo e ignorante quanto ao que aconteceu no concflio divino. Ele se digladia com uma visao tradicional de que todo sofrimento e uma punição imediata dos pecados humanos, uma teologia simplista de retribuição que e uma perversao de Proverbios. Os conselheiros de Jo, como muitos outros, consideram o profundo sofrimento de Jo evidencia adequada de que seu pecado e grande (ver Jo 9.2). Quando Jo confronta os conselheiros insensiveis, usados por Satanas para acusalo falsamente, ele diz coisas pelas quais viria a se arrepender mais tarde (42.5, 6). Ele sabe que os conselheiros estao errados, mas não consegue entender como uma pessoa piedosa deve sofrer em tamanha medida enquanto os l'mpios desfrutam prosperidade e saude (12.6). Como os salmistas, com frequencia Jo se queixa a Deus na linguagem das disputas judiciais. Parte do que Jo diz choca seus amigos. Enquanto eles dizem tudo corretamente sobre Deus, nunca dizem alguma coisa a ele. Jo se digladia com Deus e lhe expressa muita duvida e temor. Sua relaqao com Deus e viva, enquanto a deles consiste de aforismos mortos. Não e tanto o que dizem, mas a forma como o aplicam a Jo, mostrando a arrogancia de insistir que eles não sabem por que Jo esta sofrendo. Eles se mostram insensiveis (13.4, 5; 16.2; 19.21), frfvolos e presunqosos no tocante as coisas divinas. Jo tern sido acusado falsamente; ele não esta sofrendo em razao de seus pecados, ainda que não possa evitar ponderar a esse respeito. Mas, mesmo quando ele imagina que Deus esta irado com ele, em seus melhores momentos, ainda ere que Deus e justo e provera um redentor (16.19-21; 19.23-27). Essa esperanga tornase realidade quando Jo, finalmente, tern com Deus aquela audiencia face a face que pediu (13.15-18; 31.35-37). Quando Deus aparece na tempestade (caps. 38-41), Jo não e repreendido como sofredor por seus pecados, mas e humilhado diante do Senhor como alguem cujo discurso mal orientado obscureceu o propósito de Deus (38.2; 42.2, 3). Deus revelase como nm amigo de [6, pondoo diante das espantosas obras da criação para Ihe mostrar que aquele a quem ele tem censurado e soberano em bondade e poder. Jo reconhece que Deus e e permanece sendo seu amigo. Quando seus olhos virem o Senhor, e tiver se arrependido no po e nas cinzas, entao Jo passara a compreender que Deus, em seu trono, e soberano e recompensa os que lhe pertencem, a despeito dos momentos de pressao e de dor.0 leitor aprende que Jo sofreu não por ser um dos piores homens, mas porque era um dos melhores, e que sua provagao glorificou a Deus."
+        "conteudo": "Os temas centrais incluem sofrimento, integridade, justiça, sabedoria, soberania divina e limites do conhecimento humano. O livro questiona a ideia de que todo sofrimento seja resultado direto de pecado pessoal e mostra que a fidelidade pode ser provada em circunstâncias que o ser humano não consegue compreender."
       },
       {
         "id": "teologia_de_jo",
         "titulo": "Teologia de Jó",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "Desde os tempos mais remotos, temse evidenciado que o Senhor e “o Juiz de toda a terra”, aquele que faz o que e justo (Gn 18.25). Deus não consegue suportar o pecado humano, e Jo e seus conselheiros concordam que os perversos receberao a punição que vem do alto. Em seu aspecto mais simples, o princfpio da retribuição afirma a verdade biblica de que Deus pune os perversos e recompensa os fiéis (ver Pv 11.21; G1 6.7, 9). Mas o princi'pio ortodoxo da retribuição não especifica quando ou quao rapidamente Deus agira. Além disso, iria além do ensino da Escritura empregar o princi'pio da retribuição ao contrario e chegar a conclusao simplista de que os que atualmente experimentam grande infortunio ou afligao provam, com isso, que sao grandes pecadores (ver Lc 13.1-5; Jo 9.1-3). No entanto, esta e a logica que os conselheiros de Jo empregam: eles testemunham sua intensa agonia, e sua teologia os leva a inferir que Jo pecou seriamente. Esses ensinossapienciais estendem amplamente a aplicabilidade do principio da retribuição, a ponto de haver uma teologia completa, sem pontas soltas. Para eles, o sofrimento e uma punição ou um castigo. Não veem lugar para sofrimento inocente, o qual atribuiria fidedignidade a Deus por permitir que acontega. Estao determinados a defender Deus e declaram, em alto e bom som, seus sentimentos no que diz respeito a ele. No entanto, o que dizem e depreciativo e condescendente no tocantea Jo. Não podem (ou não querem) apreender a natureza de sua condigao. Além disso, sua abordagem associa Deus a sua propria compreensao de mundo e não deixa lugar para a graga. Contra as conclusoes de seus amigos, Jo, solene e reiteradamente, protesta, mas ja não consegue explicar a propria situação mais que seus amigos, pois todos partilham os mesmos pressupostos basicos. Jo nunca nutre duvidas acerca da existencia de Deus, e permanece convicto de que Deus e justo. Mas não pode conciliar isso com o que esta acontecendo a ele. Mesmo assim, Jo difere de seus conselheiros no aspecto de que não poe em xeque sua integridade pessoal. Consequentemente, ele e levado a questionar a adequagao da administragao divina da justiça (ver 9.21-24; 12.4-6; 24.12; 40.8). Indagar por que ha sofrimento imerecido não e erroneo, mas exigir que Deus de uma explicação a tudo o que faz, sim. Os caminhos de Deus sao mais complexos do que a compreensao humana. Os seres humanos devem cuidar de não desafiar a soberania de Deus ou presumir que seu discernimento finito seja maior do que realmente e."
+        "conteudo": "Jó apresenta Deus como soberano, sábio e incomparável. O livro não reduz a justiça divina a uma fórmula de causa e efeito. A resposta de Deus enfatiza a grandeza da criação e a incapacidade humana de governar ou compreender todas as dimensões da realidade. A fé madura de Jó termina com reconhecimento humilde diante de Deus."
       },
       {
         "id": "jo_na_historia_mais_ampla_da_biblia",
         "titulo": "Jó na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "J O A M P L A D A B I B L I A O cenario de Jo no mundo patriarcal nos lembra que as tensoes e agonias da existencia humana recuam aos tempos mais remotos. Ainda que o mundo ainda seja divinamente controlado, ja não e mais o mundo que originalmente se destinava a ser. Anomaliase enigmas se proliferam atraves da presença do pecado e das atividades (divinamente limitadas) de Satanas.O livro não busca explicar como esses fatores interagem e contribuem para o avango do piano divinoda redenção. Em vez disso, foca a exploragao de como viver fielmente atraves das horas sombrias de sofrimento, fraqueza e provagao. O conselho e o encorajamento ministrados nesse aspecto permanecem como um legado sem prego até a consumação. C R I S T O E M J O No meio da luta de Jo para compreender a provi dencia de Deus em sua vida, ele se toma consciente de sua necessidade de uma figura mediadora, um redentor, que se ponha entre Deus e ele (ver 16.19-21; 19.25-27; 33.23). Mesmo assim, não parece que Jo tenha estado sempre ciente de como seu anelo profundamente sentido finalmente se concretizara. Naturalmente, essa concretizagao se encontra somente em Cristo. No entanto, em um aspecto de sua experiencia, Jo prefigura Cristo. Ele e um sofredor inocente apanhado na tensao e na inimizade da luta entre as forgas do bem e do mal. Ele clama a Deus em sua desolagao e esta exposto ao espantoso abandono de não receber resposta (ver SI 22.1, 2). Mas, atraves dessas trevas, ele passa a conhecer Deus de uma forma mais plena e mais mtirna. Em certa medida, não e possfvel dizer de Jo, como nosso Senhor disse de Abraão, que ele se regozijou ao ver o dia de Cristo? “viuo e regozijouse” (Jo 8.56). H I S T O R I A D E I N T E R P R E T A g A O Com frequencia,a igreja tem enfatizadosomente a mensagem do prologo e do epilogo, porque e mais facil de entender do que os dialogos. A referenda de Tiago 5.11 a “firmeza” de Jo não se baseia em uma interpretagao superficial que ignora a segao central dos dialogos.Tiago não salienta a passividade de Jo, mas,sim,sua perseverança e, com ela, a compaixao e a misericórdia de Deus na concretizagao de seus propositos.0 propósito de Deus no sofrimento de Jo e a chave para se compreender a aparente discrepancia entre o tranquilo Jo do prologo (caps.1 e 2) e a furia de Jo na segao central.O propósito de Deus e complexo, envolvendo mais que uma questão de fe. Ao longo dos séculos, tern havidofascinagaocontfnua pelos enigmas da vida e dosofrimento humano como retratados em Jo.Muitos comentaristas tem contribufdo,deformasignificativa,para nossacompreensao dessa obra complexa — nenhum mais que Joao Calvino, que pregou 159 sermoes extraidos do livro. Mas ninguem exauriu a analise de Jo, e o que, com frequencia,se diz reflete intimamente as pressuposigoes que a geragao representada pelo expositor tem extrafdo desse texto tao complexo. ESBOtJO D E J O I. PROLOGO (1.1-2.13) A. Jo e abengoado e (ntegro (1.1-5) B. Jo e testado (1.6-2.13) 1. Satanasacusa Jo (16-12) 2. A confiança de Jo a despeito da tragedia (1.13-22) 3. Satanas acusa Jo mais uma vez (2.1-6) 4. A fe de Jo a despeito do sofrimento pessoal (2.7-10) 5. Chegada dos conselheiros (2.11-13) II. DIALOGO (CAPS. 3-27) A. 0 lamento inicial de Jo (cap. 3) B. Primeiro ciclo de discursos (caps. 4-14) 1. Primeiro discurso de Elifaz (caps. 4 e 5) 2. Primeira resposta de Jo a Elifaz (caps. 6 e 7) 3. Primeiro discurso de Bildade (cap. 8) 4. Primeira resposta de Jo a Bildade (caps. 9 e 10) 5. Primeiro discurso de Zofar (cap. 11) 6. Primeira resposta de Jo a Zofar (caps. 12-14) C. Segundo ciclo de discursos (caps. 15-21) 1. Segundo discurso de Elifaz (cap. 15) 2. Segunda resposta de Jo a Elifaz (caps. 16 e 17) 3. Segundo discurso de Bildade (cap. 18) 4. Segunda resposta de Jo a Bildade (cap. 19) 5. Segundo discurso de Zofar (cap. 20) 6. Segunda resposta de Jo a Zofar (cap. 21) D. Terceiro ciclo de discursos (caps. 22-26) 1. Terceiro discurso de Elifaz (cap. 22) 2. Terceira resposta de Jo a Elifaz (caps. 23 e 24) 3. Terceiro discurso de Bildade (cap. 25) 4. Terceira resposta de Jo a Bildade (cap. 26) E. Discurso conclusivo de Jo (caps. 27 e 28) 1. Jo assevera sua integridade (cap. 27) 2. A verdadeira fonte de sabedoria (cap. 28) III. MONOLOGOS (29.1-42.6) A. Oração final de Jo (caps. 29-31) 1. Bênção, honra e benevolencia pessoais preteritas (cap. 29) 2. Desonra e sofrimento presentes, e não benevolencia (cap. 30) 3. Protesto de inocencia de Jo (cap. 31) B. Discursos de Eliu (caps. 32-37) 1. Introdução de Eliu (32.1-5) 2. Primeiro discurso de Eliu (caps. 32.6-33.33) 3. Segundo discurso de Eliu (cap. 34) 4. Terceiro discurso de Eliu (cap. 35) 5. Quarto discurso de Eliu (caps. 36 e 37) C. Respostas do Senhor e reagao de Jo (38.1-42.6) 1. Primeiro discurso do Senhor (38.1-40.2) 2. A humilde reagao de Jo (40.3-5) 3. Segundo discurso do Senhor (40.6-41.34) 4. Reagao penitente de Jo (42.1-6) IV. EPlLOGO (42.7-17) A. Jo confirmado (42.7-9) B. Jo restaurado (42.10-17)"
+        "conteudo": "O livro contribui para a reflexão bíblica sobre sofrimento e confiança em Deus. Sua mensagem prepara o leitor para compreender que a relação com Deus não pode ser reduzida à prosperidade ou à ausência de sofrimento. O testemunho de Jó também se torna referência para perseverança e paciência diante da aflição."
+      },
+      {
+        "id": "cristo_em_jo",
+        "titulo": "Cristo em Jó",
+        "tipo": "texto",
+        "ordem": 9,
+        "conteudo": "O material relaciona Jó a Cristo principalmente por meio do tema do sofrimento do justo, da necessidade de um mediador e da esperança de redenção. A experiência de Jó antecipa questões que encontram resposta mais plena em Cristo, que sofre injustamente, permanece fiel e oferece reconciliação entre Deus e a humanidade."
+      },
+      {
+        "id": "historia_de_interpretacao",
+        "titulo": "História de interpretação",
+        "tipo": "texto",
+        "ordem": 10,
+        "conteudo": "Jó recebeu interpretações judaicas e cristãs variadas, especialmente em torno da questão do sofrimento. O material destaca debates sobre a historicidade do personagem, a natureza dos discursos poéticos e o significado da resposta divina. Interpretações que transformam o livro em uma explicação simples para o sofrimento não fazem justiça à tensão literária apresentada."
+      },
+      {
+        "id": "assuntos_especiais",
+        "titulo": "Assuntos especiais",
+        "tipo": "texto",
+        "ordem": 11,
+        "conteudo": "Entre os assuntos especiais estão a historicidade de Jó, a relação entre o prólogo e os discursos poéticos, a figura do adversário e o significado das criaturas descritas nos discursos divinos. O material ressalta que esses elementos devem ser interpretados dentro da mensagem teológica e literária do livro."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Jó",
-        "tipo": "outline",
-        "ordem": 9,
-        "conteudo": "1. Cena inicial: Jó é posto à prova (1.1—2.13) a. Jó e a sua família (1.1-5) b. Deus, Satanás e Jó (1.6—2.10) c. Jó e os seus amigos (2.11-13) 2. Diálogos entre Jó e os seus amigos (3.1—37.24) a. Queixa de Jó (3.1-26) b. Primeiro diálogo (4.1—14.22) c. Segundo diálogo (15.1—21.34) d. Terceiro diálogo (22.1—27.23) e. Elogio da sabedoria (28.1-28) f. Defesa final de Jó (29.1—31.40) g. As falas de Eliú (32.1—37.24) 3. Intervenção do Senhor e respostas de Jó (38.1—42.6) a. Primeira resposta de Deus (38.1—40.2) b. Primeira resposta de Jó (40.3-5) c. Segunda resposta de Deus (40.6—41.34) d. Última resposta de Jó (42.1-6) 4. Cena final (42.7-17) a. Os três amigos de Jó (42.7-9) b. Jó e a sua nova família (42.10-17)"
+        "tipo": "auto",
+        "ordem": 12,
+        "conteudo": [
+          {
+            "titulo": "I. Prólogo (1.1–2.13)",
+            "itens": [
+              "A. Jó é apresentado como íntegro (1.1-5)",
+              "B. O desafio de Satanás (1.6-12)",
+              "C. Jó perde seus bens e filhos (1.13-22)",
+              "D. Jó é afligido fisicamente (2.1-8)",
+              "E. A esposa e os amigos de Jó (2.9-13)"
+            ]
+          },
+          {
+            "titulo": "II. Diálogo de Jó com seus amigos (3.1–31.40)",
+            "itens": [
+              "A. Lamento inicial de Jó (cap. 3)",
+              "B. Primeiro ciclo de discursos (caps. 4–14)",
+              "C. Segundo ciclo de discursos (caps. 15–21)",
+              "D. Terceiro ciclo de discursos (caps. 22–27)",
+              "E. O poema sobre a sabedoria (cap. 28)",
+              "F. Jó recorda sua antiga condição (cap. 29)",
+              "G. Jó descreve sua humilhação presente (cap. 30)",
+              "H. Jó reafirma sua integridade (cap. 31)"
+            ]
+          },
+          {
+            "titulo": "III. Discursos de Eliú (caps. 32–37)",
+            "itens": [
+              "A. Eliú apresenta sua posição (32–33)",
+              "B. Eliú defende a justiça de Deus (34)",
+              "C. Eliú fala sobre a soberania e a grandeza de Deus (35–37)"
+            ]
+          },
+          {
+            "titulo": "IV. O Senhor responde a Jó (38.1–42.6)",
+            "itens": [
+              "A. O primeiro discurso do Senhor (38–39)",
+              "B. A resposta de Jó (40.1-5)",
+              "C. O segundo discurso do Senhor (40.6–41.34)",
+              "D. A resposta final de Jó (42.1-6)"
+            ]
+          },
+          {
+            "titulo": "V. Epílogo (42.7-17)",
+            "itens": [
+              "A. O Senhor repreende os amigos de Jó (42.7-9)",
+              "B. Jó é restaurado (42.10-17)"
+            ]
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "18_J#U00f3.pdf (PDF fornecido pelo usuário)"
+  "fonte_base": "03_Poeticos.zip — imagens de introdução e esboço fornecidas pelo usuário"
 }

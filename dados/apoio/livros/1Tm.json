@@ -2,88 +2,154 @@
   "schema": "apoio-livro-v1",
   "id": "1Tm",
   "nome": "1 Timóteo",
-  "abreviacao": "1 Timóteo",
+  "abreviacao": "1Tm",
   "material": {
     "titulo": "Sobre 1 Timóteo",
-    "introducao": "Timóteo era o companheiro de trabalho e auxiliar mais querido do apóstolo Paulo. A mãe de Timóteo era uma judia que tinha aceitado a fé cristã, e o pai dele era grego ( At 16.1-3). As duas epístolas a Timóteo e a epístola a Tito são chamadas de “Epístolas Pastorais” por tratarem dos deveres dos pastores do povo de Deus, os dirigentes da Igreja. A Primeira Epístola a Timóteo previne o jovem pastor (4.12) contra as doutrinas falsas que estavam sendo espalhadas entre os cristãos. Os falsos mestres (1.3) andavam dizendo que era proibido comer certos alimentos e que casar era errado (4.3-5). Essas proibições se baseavam na ideia de que o mundo material é mau e de que a salvação se alcança por meio de certas verdades secretas que somente poucas pessoas podem aprender. Esta epístola também ensina aos dirigentes da Igreja a maneira de fazerem o seu trabalho. E ao próprio Timóteo o apóstolo dá um conselho que serve para todos os seguidores de Jesus Cristo: “segue a justiça, a piedade, a fé, o amor, a constância, a mansidão. Combate o bom combate da fé. Toma posse da vida eterna” (6.11-12).",
+    "introducao": "1 Timóteo é uma carta pastoral dirigida a um cooperador de Paulo que precisava organizar a vida da igreja, confrontar falsos mestres e exercer seu ministério com fidelidade. A carta une doutrina, culto, liderança, cuidado com grupos específicos, piedade e administração responsável da igreja.",
     "secoes": [
       {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "De acordo com as saudaqoes das cartas, o autor das tres Epístolas Pastorais (lTm, 2Tm e Tt) foi o apóstolo Paulo. A tradição da Igreja primitiva esta de acordo com isso. No entanto, alguns eruditos tern questionado a autoria paulina dessas cartas, citando supostas diferenças em vocabulario, estilo e teologia, bem como o que se acredita serem inconsistencies entre as viagens de Paulo na Epfstolas Pastorais e suas viagens registradas no livro de Atos. Esses argumentos sao implausfveis, e não ha razoes convincentes para negar que Paulo tenha escrito essas cartas."
-      },
-      {
-        "id": "data_e_circunstancias",
-        "titulo": "Data e circunstâncias",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "As aparentes inconsistencies entre as viagens de Paulo refletidas nas Epístolas Pastorais e suas tres viagens missionarias registradas em Atos tern levado a sugestao de que as Pastorais foram escritas durante o que poderfamos chamar “quarta viagem missionaria de Paulo”, ou numa única viagem ininterrupta, ou num grupo de viagens para varios destinos no Mediterraneo. Atos não termina com a morte de Paulo, e sim com sua prisao domiciliar em Roma (At 28.16, 30, 31). Ainda que o documento mais antigo « A P O S T O L O, de P A U L O, a do século I sugira que Paulo foi martirizado em Roma, não associa o marti'rio de Paulo ao seu aprisionamento em Roma. Eusebio, historiador eclesiastico do século IV, preserva a tradição de que Paulo foi libertado desse aprisionamento, continuou com seus labores missionaries e foi martirizado por Nero em sua segunda visita a Roma. Essa tradição e apoiada não somente pelas Epístolas Pastorais, mas também por Filipenses e Filemom, que, se foram escritas durante o aprisionamento em Roma registrado em Atos 28, forneciam evidencias de que Paulo esperava ser libertado (Fp 1.25, 26; Fm 22). Em contraste, 2 Timoteo, também escrita durante um aprisionamento (1.8, 16-17; 2.9), expressa o senso do apóstolo de que o tempo de sua “partida” havia chegado e de que ele completara sua “carreira” (4.6-8). Uma quarta viagem missionaria (lTm, Tt) e um segundo aprisionamento (2Tm) que aconteceram depois da prisao registrada em Atos 28 e o contexto mais provavel para as Pastorais. Se houve dois aprisionamentos, Paulo foi liberto do primeiro por volta de 62 d.C. De acordo com uma tradição posterior, ele foi martirizado por Nero, que morreu em 68 d.C. Paulo escreveu 1 Timoteo enquanto ainda estava no meio de sua quarta viagem missionaria, talvez durante a primeira parte desse período, entre 62 e 64 d.C. Timoteo era nascido em Listra, uma colonia ro mana na provfncia da Galacia. Era filho de um ca samento misto:seu pai era um gentio, e sua mae, uma judia (At 16.1). Sabese pouco a respeito de seu pai, que parece não ter se tornado cristão, mas sua maee sua avoeram crentes sinceras(2Tm 1.5). Desde a sua infancia,elaso instruiram nas Escritu ras judaicas (2Tm 3.14, 15)e foram,sem dtivida, influentes na conversaode Timoteoao cristianismo. Quando Paulo retornou a Listra, em sua segunda viagem missionaria, alguns dos cristãos chama ram sua atenção para esse jovem crente, e Paulo decidiu levalo consigo na viagem (At 16.2, 3). Duas agoes específicas parecem ter acontecido nessa primeira vez. Em primeiro lugar, como Paulo estaria evangelizando judeus, circuncidou Timoteo de acordo com o costume judaico, aparentemente para evidenciar e “regularizar” a identidade religiosa de Timoteo aos olhos dos judeus (At 16.3). Paulo não viu qualquer problema em circuncidar Timoteo, embora não tenha circuncidado Tito, porque Timoteo era de linhagem judaica, enquanto Tito era um gentio puro (G1 2.1-10). Em segundo lugar, Paulo e os presbíteros da igreja impuseram as maos em Timoteo, a fim de separalo e preparalo para o ministério (1.18; 4.14; 2Tm 1.6; 2.2). Timoteo viajou com Paulo durante a maior parte de suas segunda e terceira viagens missionarias (At 17.14, 15; 18.5; 19.22; 20.4) e durante a maior parte da quarta viagem missionaria, que e refletida nas Epístolas Pastorais. Parece que Timoteo se tornou o pupilo de Paulo, que fala figurativamen te de si mesmo como “pai” de Timoteo (Fp 2.22) e fala de Timoteo como seu “filho” (1.2, 18; ICo 4.17; 2Tm 1.2; 2.1). Como cooperador de Paulo, Timoteo atuou como seu representante nas igrejas de Tessalonica (lTs 3.2, 6), Corinto (ICo 4.17; 16.10), Filipos (Fp 2.19, 23) e Efeso (lTm 1.3). Parece que o proprio Paulo caracteriza Timoteo como alguem que tinha um “espírito de... amor” (2Tm 1.7). Paulo achou necessario pedir a igreja de Corinto que recebesse Timoteo de um modoque o fizessesentirse tranquilo (ICo 16.10-11). Nas Epístola tolas Pastorais, Paulo exortou Timoteo a não dei xar que ninguem o desprezasse por causa de sua juventude (lTm 4.12), a não negligenciar o dom espiritual que havia recebido (lTm 4.14) e a não seenvergonhar de anunciar oevangelho de forma ousada (2Tm 1.8). Além da afirmação em Hebreus 13.23 de que Timoteo fora “posto em liberdade\"(talvez da prisao), sabese pouco a respeito doque aconteceu com Timoteo depois daescrita de 2 Timoteo. Paulo escreveu 1 Timoteo quando esteve na Macedonia (1.3). Ele considerou necessario deixar Timoteo em Efeso (na Asia), por causa da presenga de falsos mestres nessa cidade (1.3). Paulo ha via estabelecido a igreja em Efeso no infcio desua terceira viagem missionaria, passando cerca de tres anos la (At 19; 20.31). No fim dessa viagem, ele advertiu os presbíteros de Efeso de que falsos mestres, alguns provenientes da propria lideranga, infestariam a igreja (At 20.29, 30); e essa carta indica que a predigao de Paulo se tornou verdadeira (1.6, 19, 4.1, 2; 6.3-5, 10, 21). Ha evidencia de que alguns dos falsos mestres vinham de ou chegaram a posigoes de liderança na Igreja (1.7, 20; 2.12; 3.6; 5.19, 20; 6.3-5, 10), e parece que os falsos mestres haviam feito investidas entre algumas das mulheres na Igreja (2.9-15; 3.11; 5.11-15)."
+        "conteudo": "A carta se identifica com Timóteo como destinatário e Paulo como remetente. Seu caráter pastoral e as instruções pessoais explicam o título tradicional de Primeira Epístola a Timóteo."
+      },
+      {
+        "id": "autor",
+        "titulo": "Autor",
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "Paulo é o autor tradicional e se identifica como apóstolo de Cristo Jesus. A carta apresenta Timóteo como cooperador e filho na fé, e a tradição antiga reconhece a autoria paulina."
+      },
+      {
+        "id": "data_circunstancias",
+        "titulo": "Data e circunstâncias",
+        "tipo": "texto",
+        "ordem": 3,
+        "conteudo": "A carta é situada no período posterior ao ministério de Paulo registrado em Atos, associado à chamada quarta viagem missionária. Timóteo estava em Éfeso e precisava lidar com falsos mestres, organizar o culto, estabelecer líderes e orientar a vida da comunidade."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "A Primeira Epístola de Timoteo e uma carta e segue, em geral, as convengoes epistolares tfpicas do século I (ver introdução as Epístolas). Contem uma abertura (1.1, 2), um corpo (1.3-6.19) e uma conclusao padrao (6.20-21). E uma carta pessoal, escrita por Paulo para uma única pessoa, embora existam indicagoes de que o apóstolo tencionava que o ensino e o conteudo dessas cartas fossem compartilhados com toda a igreja que estava sob o encargo de Timoteo. Por exemplo, embora todas as tres epístolas pastorais sejam dirigidas a indivfduos, deve se observar que cada uma das tres cartas, incluindo 1 Timoteo, também conclui com uma bênção plural, indicando que essas cartas tinham relevancia pública (observe o plural “convosco” em lTm 6.21). Alguns eruditos notaram que 1 Timoteo compartilha menos caracterfsticas das cartas pessoais antigas do que compartilham 2 Timoteo ou Tito. Apesar disso, compartilha realmente aquelas características que sao necessarias para distinguir as cartas pessoais das cartas não pessoais. As Epístolas Pastorais tern algumas semelhangas com certos tipos de documentos governamentais gregos da antiguidade, que consistiam de diretri zes de governantes para indivfduosincumbidosde cumprir as diretrizes ou ordens que os governantes inclufam no documento. Esse e outro exemplo de Paulo adaptando as convenqoes epistolares antigas para satisfazer suas necessidades especi'ficas."
+        "ordem": 4,
+        "conteudo": "É uma carta pessoal com finalidade pastoral e pública. Embora dirigida a Timóteo, suas instruções se destinam à vida da igreja e abrangem doutrina, culto, liderança, disciplina e relações sociais."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "Embora essa seja uma carta pessoal dirigida a Timoteo, e também uma carta escrita para a Igreja (note o plural “convosco”, em 6.21). Paulo escreveu a Timoteo: “para que, se eu tardar, fiques ciente de como se deve proceder na casa de Deus, que e a igreja do Deus vivo, coluna e baluarte da verdade” (3.14-15). Esta carta tern, portanto, muito a dizer sobre a doutrina, o governo e o culto da Igreja. No que diz respeito a doutrina, Paulo comeqou por advertir Timoteo contra a instruqao e a influencia de falsos mestres (1.3-11) e por lembrarlhe o glorioso evangelho da graqa (1.12-20). 0 fim da carta da instruqoes especi'ficas a grupos dentro da Igreja: senhores e servos (6.1, 2) e os ricos (6.16-19).Também retoma o assunto de falso ensino e de como Timoteo deve lidar com esse falso ensino na igreja emEfeso (6.3-16). No que concerne ao governo da igreja, Paulo delineou as qualificaqoes e os deveres dos oficios de presbftero (ou “bispo” — 3.1-7) e de diacono (3.8-13). Também aborda questões relacionadas a disciplina e ordenaqao de presbíteros (5.19-25), bem como ao cuidado diaconal de viuvas na igreja (5.1-16). Boa parte da carta e dedicada a definir as responsabilidadesdo presbftero que e encarregado do ministério da Palavra (4.6-16; cf. 5.17), responsabilidades que incluem combater o falso ensino dentro da Igreja. Quanto ao culto da igreja, Paulo aborda esses assuntos no capítulo 2.Depois de abordar o assunto de oração na igreja (2.1-7), Paulo da instruqoes aos homens (2.8) e as mulheres (2.9-15). Paulo quer que o culto da igreja seja ordeiro e, portanto, glorifique a Deus. Uma importante caracterfstica literária desta epístola (bem como de 2 Timoteo e Tito) e a recorrencia da expressao “fiel e a palavra” (1.15; 3.1; 4.9; cf. 2Tm 2.11; Tt 3.8). O propósito dessa expressao e chamar a atenção para a importancia da verdade a qual Paulo se refere. Com frequencia, essas expressoes servem como resumos do evangelho e de suas Pastorais e as demais Epi'stolas de Paulo sao ex plicadas com mais facilidade pelo fato de que as abordagens e as circunstancias das Epi'stolas Pas torais sao diferentes das abordagens e circunstancias das outras Epi'stolas de Paulo. Isso se aplica também as diferenças sintaticas entre as Epfstolas Pastorais e as outras cartas de Paulo. Além disso, Paulo talvez tenha usado urn amanuense (secretario) para ajuda-Io a escrever as Pastorais que não era o mesmo amanuense que o ajudou 'stolas. Isso também explia escrever as outras epi caria algumas das diferenças entre as Epi'stolas Pastorais e as demais cartas de Paulo."
+        "ordem": 5,
+        "conteudo": "A carta alterna ordens pessoais, instruções gerais à igreja, listas de qualificações e advertências contra falsos mestres. O padrão repetido de doutrina seguida por prática mostra que a organização da igreja deve estar subordinada à verdade do evangelho e à piedade."
       },
       {
-        "id": "temas_principais",
-        "titulo": "Temas principais",
+        "id": "caracteristicas_temas_principais",
+        "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "A carta e importante por seu interesse na organi zagao da Igreja. Oferece a mais longa descrigao, dada no Novo Testamento, sobre as qualificagoes de “bispo” ou presbi'tero (3.2-7; cf. Tt 1.5 9), bem como evidencia quanto a dois tipos de presbi'teros, governante e ensinador (5.17);comentarios sobre apoiar e censurar presbi'teros (5.17-20); e a única descrigao explfcita, dada no Novo Testamento,das qualificagoes de diacono (3.8-10, 12, 13). As instrugoes específicas de Paulo para Timoteo também contem muito conselho pratico sobre como uma liderança de igreja deve funcionar. Esta carta também e importante por sua enfase na sa doutrina (1.10; 3.9; 4.6; 6.3) e por suas duas meditagoes teologicas sobre a salvação que Deus ou torga em Jesus Cristo (1.13-16; 2.3-6). Essas meditagbes incluem afirmações da salvação pela graga (1.13-16), de Cristo como o Mediador entre Deus e a humanidade (2.5) e da expiação vicaria de Cristo (2.6). A Primeira Epístola de Timoteo também inclui a meditagao poetica antes mencionada sobre a obra de Cristo, que contem afirmações de sua encarnagao, ressurreição e ascensao (3.16); uma expectativa da segunda vinda de Cristo (6.14); uma doxologia maravilhosa (6.15, 16); e evidencia da expansao da “Escritura” além do Antigo Testamento, para incluir os livros do Novo Testamento (5.18, em que as palavras de Cristo registradas em Lucas 10.7 sao citadas como “Escritura”). Também sao peculiares em 1 Timoteo seus comentarios sobre o papel das mulheres na igreja (2.9-15) e o cuidado apropriado das viuvas na igreja (5.3-16)."
+        "ordem": 6,
+        "conteudo": "Falsas doutrinas, propósito da lei, oração, culto, liderança de bispos e diáconos, cuidado com viúvas, presbíteros, servos, ricos e o próprio Timóteo, além de piedade, contentamento e amor ao dinheiro são temas centrais."
       },
       {
         "id": "teologia_de_1_timoteo",
         "titulo": "Teologia de 1 Timóteo",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "Esta carta e cheia de conselhos praticos para a obra do ministério. Ela prove, com Tito e 2 Timoteo, um modelo bíblico para presbi'teros e diaconos. Não e, porém, simplesmente para o beneficio dos oficiais da igreja. Paulo queria que toda a igreja lesse esta carta. Ela mostra como apoiar melhor o ministério bíblico na igreja e orar em favor daqueles que sao chamados a servir como oficiais. Ofere ce criterios que ajudam a determinar que tipo de homem pode ser candidate aos ofi'cios da igreja. Acima de tudo, ajuda os crentes a ver o carater de Deus como um Deus de ordem e paz e de Jesus, o Salvador, como o rei e cabega de sua Igreja. Em relação a teologia de 1 Timoteo e as demais Epi'stolas Pastorais, devese notar que muitos eru ditos cn'ticos argumentam que essas cartas apresentam uma teologia distinta e não paulina que indica que Paulo não as escreveu. Por exemplo, argumentase,com frequencia, que a Igreja apresentada nas Epi'stolas Pastorais e mais organizada do que Paulo teria intencionado e que as prescrigoes estritas para os ofi'cios da igreja seriam estranhas para o apóstolo, como alguem que supostamente favorecia formas de governo da Igreja mais espontaneas e menos estruturadas. Esse contraste se baseia amplamente no entendimento do que Paulo queria dizer ao afirmar que os cristãos sao chamados a ser guiados “pelo Espi'rito” (Rm 8.14; GI 5.18) e em sua descrigao do que esses erudites acreditam ser um culto cristão relativamente não estruturado (lCo 14). Como no caso dos argumentos baseados em vocabulario e sintaxe contra a autoria paulina das Pastorais, o argumento de que as Epi'stolas Pastorais afirmam uma teologia diferente e fraco e não resistira a um escrutfnio cuidadoso. Atos 14.23 revela que a pratica de Paulo era estabelecer presbi'teros nas igrejas que ele plantava; por isso, não ha nada incoerente no fato de ele dar instruções sobre a escolha de presbi'teros nas Pastorais (lTm 3.17; Tt 1.5-9). Além disso, a crenga de que ser guiado pelo Espi'rito e, de algum modo, algo contrario a uma Igreja estruturada opoese ao que sabemos sobre os primeiros cristãos. Atos 15.1-3 mostra que os cristãos primitivos entendiam que o guiar do Espi'- rito na Igreja inclui'a decisoes tomadas pelos presbi'teros em submissao ao evangelho dos apóstolos. Em 1 Con'ntios 14.40, o apóstolo deposita grande enfase na ordem da Igreja. O ensino de Paulo nas mos da doutrina e da pratica apostolica. Finalmente, assim como os argumentos baseados em vocabulario e sintaxe contra a autoria paulina das pastorais sao circulares, também e o argumento baseado em teologia contra a autoria paulina dessas cartas."
+        "ordem": 7,
+        "conteudo": "A igreja é chamada a preservar a sã doutrina e viver de acordo com ela. Deus é Salvador e deseja que pessoas sejam salvas; Cristo é mediador entre Deus e os seres humanos. A vida da igreja deve refletir a piedade produzida pelo evangelho, e líderes devem demonstrar caráter irrepreensível."
       },
       {
-        "id": "historia_de_interpretacao",
-        "titulo": "História de interpretação",
+        "id": "1_timoteo_na_historia_mais_ampla_da_biblia",
+        "titulo": "1 Timóteo na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "N A M A I S A M P L A D A B I B L I A Deus sempre se preocupou com a ordem e o bem - -estar de seu povo. Essa e a razao pela qual ele designou a circuncisao para Abraão e sua descenden cia: distinguilos do mundo ao seu redor. Essa e a razao pela qual ele legislou tantos detalhes em relagao ao governo e ao culto de seu povo na antiga aliança e prescreveu que a maturidade espiritual fosse buscada nos Ifderes de Israel (Dt 1.13; cf. Nm 27.15-20). A nova aliança não se afasta desse princi'pio. Nos somosa Igreja de Deus (3.15), e, por isso, ele tem muito a dizer sobre como deve ser nossa vida juntos. Epístolas como 1 Timoteo refletem o cuidado de Deus em relação ao seu povo."
+        "ordem": 8,
+        "conteudo": "A carta apresenta a igreja como comunidade da nova aliança que deve conservar a verdade de Deus e viver em santidade. A linguagem sobre o Salvador, o mediador e a boa confissão liga a vida da igreja ao propósito redentor revelado nas Escrituras."
       },
       {
         "id": "cristo_em_1_timoteo",
         "titulo": "Cristo em 1 Timóteo",
         "tipo": "texto",
-        "ordem": 7,
-        "conteudo": "Cristo e apresentado poderosamente nessa epístolatola pelo menos de duas maneiras. Em primeiro lugar, Paulo lembra a Timoteo que foi a graqa de Cristo que redimiu Paulo e o separou para o serviqo na Igreja (1.12-17).Jesus e o Salvador não somente de Paulo, de Timoteo ou da igreja em Efeso, mas também de todos os tipos de pessoas em todo o mundo (4.10). As palavras de Paulo em 3.16 oferecem profunda meditaqao sobre a obra salvadora de Jesus Cristo, agora manifestada as nações (ver notas). Em segundo lugar, o govemo da Igreja e dado por Cristo, como sua Cabega e seu Rei (cf. Igreja, da testemunho do reino de Cristo como cabega sobre seu corpo."
+        "ordem": 9,
+        "conteudo": "Cristo é o único mediador entre Deus e os homens e entregou-se como resgate. Ele é o fundamento da confissão cristã, o Senhor cuja obra torna possível a salvação e a vida piedosa da igreja."
+      },
+      {
+        "id": "historia_de_interpretacao",
+        "titulo": "História de interpretação",
+        "tipo": "texto",
+        "ordem": 10,
+        "conteudo": "As Pastorais foram centrais para discussões sobre ministério, estrutura da igreja, qualificação de líderes, culto e relação entre doutrina e piedade. Também são frequentemente discutidas em relação à autoria paulina e ao contexto posterior da igreja."
       },
       {
         "id": "assuntos_especiais",
         "titulo": "Assuntos especiais",
         "tipo": "texto",
-        "ordem": 8,
-        "conteudo": "Os detalhes da quarta viagem missionaria de Paulo sao incompletos, visto que a viagem deve ser reconstrufda a partir das indicagoes encontradas nas Epístolas Pastorais. E possfvel que Paulo tenha cumprido seu desejo de ir a Espanha (Rm 15.24, 28). Ou em seu retorno da Espanha, ou, se a viagem para a Espanha nunca aconteceu, em sua partida de Roma, parece que Paulo retornou na direção leste, navegando para Creta (Tt 1.5) e visitando Efeso (lTm 1.3) e Macedonia (lTm 1.3; cf. Fp 1.25, 26). Desse ponto em diante, as coisas se tornam menos claras. Parece que Paulo planejou (talvez em duas ocasioes distintas) deixar a Macedonia e ir para Efeso (lTm 3.14-15; 4.13) e Nicopolis (Tt 3.12). A ultima coisa que ouvimos e que ele estava de volta a Roma, esperando a execugao (2Tm 1.8, 12; 2.9; 4.6, 7, 16), havendo visitado Troade (2Tm 4.13), Mileto e talvez Corinto (2Tm 4.20). Quanto ao falso ensino que estava sendo promovido em Efeso, no tempo em que Paulo escreveu as Epístolas Pastorais, ver Introdução a 2 Timoteo: Assuntos Especiais."
+        "ordem": 11,
+        "conteudo": "A carta suscita discussões sobre a organização das igrejas, a identificação dos falsos mestres, a situação histórica posterior a Atos, o papel de homens e mulheres no culto e as qualificações para liderança. Esses temas devem ser lidos no conjunto das instruções pastorais da epístola."
       },
       {
-        "id": "esboco",
+        "id": "esboco_de_1_timóteo",
         "titulo": "Esboço de 1 Timóteo",
-        "tipo": "outline",
-        "ordem": 9,
-        "conteudo": "Prefácio e saudação (1.1-2) 1. Advertência contra falsas doutrinas (1.3-11) 2. O ministério de Paulo (1.12-20) 3. A fé e a vida cristã (2.1—6.19) a. Instruções sobre a oração (2.1-8) b. A mulher cristã (2.9-15) c. Qualificações dos bispos (3.1-7) d. Qualificações dos diáconos (3.8-13) e. O mistério da piedade (3.14-16) f. Predição da apostasia (4.1-5) g. Um bom ministro de Jesus Cristo (4.6-16) h. Deveres para com os demais (5.1—6.2) i. Piedade e contentamento (6.3-10) j. O bom combate da fé (6.11-19) Conselho final e bênção (6.20-21)"
+        "tipo": "auto",
+        "ordem": 12,
+        "conteudo": [
+          {
+            "titulo": "I. SAUDAÇÃO (1Tm 1.1, 2)"
+          },
+          {
+            "titulo": "II. LIDANDO COM OS FALSOS MESTRES DA LEI (1Tm 1.3-11)",
+            "itens": [
+              "A. Os falsos mestres e suas doutrinas (1Tm 1.3-7)",
+              "B. O propósito da lei (1Tm 1.8-11)"
+            ]
+          },
+          {
+            "titulo": "III. O TESTEMUNHO E A EXORTAÇÃO DE PAULO (1Tm 1.12-20)",
+            "itens": [
+              "A. O chamado de Paulo ao ministério (1Tm 1.12-17)",
+              "B. Exortação à fidelidade (1Tm 1.18-20)"
+            ]
+          },
+          {
+            "titulo": "IV. INSTRUÇÕES PARA A VIDA DA IGREJA (1Tm 2.1-3.13)",
+            "itens": [
+              "A. Instruções para oração e culto (1Tm 2.1-15)",
+              "1. Sobre a oração para todos (1Tm 2.1-7)",
+              "2. Instruções para homens (1Tm 2.8)",
+              "3. Instruções para mulheres (1Tm 2.9-15)",
+              "B. Instruções sobre líderes da igreja (1Tm 3.1-13)",
+              "1. Bispos (1Tm 3.1-7)",
+              "2. Diáconos (1Tm 3.8-13)"
+            ]
+          },
+          {
+            "titulo": "V. O PROBLEMA DAS FALSAS DOUTRINAS (1Tm 3.14-4.5)",
+            "itens": [
+              "A. O propósito de Paulo em escrever a carta (1Tm 3.14-16)",
+              "B. Erros dos falsos mestres (1Tm 4.1-5)"
+            ]
+          },
+          {
+            "titulo": "VI. ORIENTAÇÕES A UM JOVEM PASTOR (1Tm 4.6-6.19)",
+            "itens": [
+              "A. Admoestações a Timóteo a respeito de seu ministério (1Tm 4.6-5.2)",
+              "B. Instruções a respeito de grupos específicos (1Tm 5.3-6.2)",
+              "1. Viúvas (1Tm 5.3-16)",
+              "2. Presbíteros (1Tm 5.17-25)",
+              "3. Servos (1Tm 6.1, 2)",
+              "C. Lidando com os falsos mestres (1Tm 6.3-10)",
+              "D. Admoestações a Timóteo a respeito de seu ministério (1Tm 6.11-16)",
+              "E. Exortações aos ricos (1Tm 6.17-19)"
+            ]
+          },
+          {
+            "titulo": "VII. CONCLUSÃO (1Tm 6.20, 21)"
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "54_1 Tim#U00f3teo.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte": {
+    "arquivo": "imagens do conjunto 1Tm",
+    "criterio": "Conteúdo reconstruído a partir das imagens fornecidas pelo usuário, com OCR em colunas independentes, normalização de hifenização e correção de erros evidentes de reconhecimento, preservando o sentido e a organização da fonte."
+  }
 }

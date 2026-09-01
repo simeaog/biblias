@@ -2,81 +2,108 @@
   "schema": "apoio-livro-v1",
   "id": "Na",
   "nome": "Naum",
-  "abreviacao": "Naum",
   "material": {
     "titulo": "Sobre Naum",
-    "introducao": "O profeta Naum viveu na mesma época em que viveram os profetas Habacuque e Sofonias. O Livro de Naum é uma poesia sobre a queda de Nínive, a capital da Assíria. Durante cento e cinquenta anos, a Assíria havia dominado os países do Oriente Médio, mas no ano 612 a.C. os babilônios conquistaram Nínive. O profeta Naum vê a queda de Nínive como o castigo que Deus manda sobre um povo perseguidor e cruel. A linguagem do profeta é brilhante, e por meio de várias figuras ele descreve a queda da grande e poderosa capital da Assíria.",
+    "introducao": "Naum anuncia a queda de Nínive e a libertação de Judá. O livro apresenta a soberania e a justiça de Deus contra a tirania e mostra que o julgamento dos poderes opressores também serve aos propósitos redentores do Senhor.",
     "secoes": [
-      {
-        "id": "cristo_em_naum",
-        "titulo": "Cristo em Naum",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "Não ha referencias messianicas diretas em Naum. Todavia, a exortação “Celebra as tuas festas” (1.15) encorajava os fiéis da terra de Judá a olhar para aquele que cumpriria tudo que era simbolizado nas festas. Aqueles que sao familiarizados com a mensagem no “livro da visao de Naum” entenderao melhor a necessidade da cruz de Jesus Cristo, o Filho do Deus zeloso e vingador. E serao capazes de proclamar, com base nesse livro, o Cristo glorificado, a quem foi dada toda a autoridade no ceu e na terra (Mt 28.18) e que agora conduz a história em direção aquele grande dia em que ele entregara o reino ao seu Pai, depois de haver destrufdo todos os poderes oponentes, “para que Deus seja tudo em todos” (ICo 15.24-28). H I S T O R I A D E I N T E R P R E T A q A O Entre os Rolos do Mar Morto que estavam na posse da comunidade de Qumran, ha um comentario que identifica analogias entre o fim da opressao predita por Naum e aquilo que a comunidade predisse em relaqao as suas circunstancias contemporaneas (século I a.C.). Os primeiros comentaristas cristãos seguiram, de maneira geral, a indicaqao da Septuaginta e interpretaram Naum a luz de Jonas. No tempo da Reforma, tanto Martinho Lutero como Joao Calvino discutiram a superficialidade do arrependimento anterior de Ni'nive e a justiça da penalidade de Deus imposta a cidade. Muitoscomentaristas modemos argumentam que Naum exihe um espírito intolerante e nacionalista, ignorando as deficiencias de sua propria naqaoe retratando Deuscomo alguem quesanciona e aprova inconvenientemente a violencia desenfreada.Isso, porém,e ignorar o triunfode Deus sobre a impiedade e a tirania desenfreadas, bem como as repetidas advertencias a Israel no AntigoTestamento quanto a disposiqao divina para julgar seu proprio povo. Naum transmite uma advertencia permanente a todos os regimes terrenos que ignoram sua responsabilidade para com o Juiz de toda a terra. IV. A DESTRUICAO IRREVERSIVEL DE NINIVE (CAP. 3) A. Julgamento da cidade impia profetizado (3.1-7) B. 0 destino de Ninive como o de Tebas (3.8-11) C. A finalidade do julgamento divino (3.12-19)"
-      },
       {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "E O livro recebe o nome de seu autor, Naum, que significa “conforto”, talvez refletindo o conforto de sua mensagem aqueles que sofriam sob o domfnio assi'rio. Seu nome e seguido por “elcosita”, provavelmente uma referenda ao seu lugar de nascimento ou ao local em que profetizou. As tentativas de identificar Elcos mostraramse infrutfferas. Algumas sugestoes inclufram lugares nas proximidades da antiga Nfnive (com Naum descenden do de israelitas que haviam sido deportados para la), na Galileia (o nome “Cafarnaum” talvez derive da palavra hebraica que significa “vila de Naum”) e em Judá.0 testemunho interno do livro apoia as cercanias de Judá como a area geral da atividade profética de Naum (1.15). No entanto, como acontece com a maioria dos livros profeticos, a mensagem da obra, embora arraigada na pessoa e nas circunstancias do profeta, transcende o autor e seu ministério."
+        "conteudo": "O livro recebe o nome de Naum, seu autor. A obra também é chamada de “sentença contra Nínive” e “livro da visão de Naum”."
+      },
+      {
+        "id": "autor",
+        "titulo": "Autor",
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "Naum é apresentado como profeta. O testemunho interno situa sua atividade profética nas cercanias de Judá (1.15). O livro concentra-se no julgamento de Nínive e na libertação de Judá da opressão assíria."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "A profecia pode ser datada entre a captura de Tebas pelo governante assi'rio Assurbam'pal, em 663 a.C., relatada por Naum como um evento preterito (3.8), e a queda de Nfnive em 612 a.C., predita profeticamente por Naum (3.5-7). de Nesse período do século VII a.C., duas grandes crises surgiram no Imperio Assi'rio. Uma delas veio da ameaga dos medos e do avango dos citas (642-638 a.C.). A outra, ainda maior, foi a revolta dos babilonios (652-648 a.C.), sob a lideranga do irmao mais velho de Assurbam'pal, Chamas-Chum-Uquim, contando com o apoio dos elamitas e dos povos das terras altas iranianas. Efeitos em cascata dessa revolta foram experimentados em lugares tao distantes quanto a Palestina e a Sfria. Por fim, a revolta foi suprimida por uma guerra amarga que abalou todo o imperio. Uma data para as atividades profeticas de Naum antes ou durante esse período de revolta e atraente. Visto que a destruição de Tebas ainda estava, aparentemente, viva na memoria da audiencia de Naum, uma data plausfvel para sua profecia e, portanto, entre 660 e 650 a.C., nos dias do rei Manasses, de Judá, que foi um vassalo leal da Assfria. Outra possibilidade e a parte inicial do reinado de Josias, antes da morte de Assurbam'pal, em 627 a.C."
-      },
-      {
-        "id": "genero",
-        "titulo": "Gênero",
-        "tipo": "texto",
         "ordem": 3,
-        "conteudo": "Naum tern sido considerado incorretamente um nacionalista austero que, inspirado por sentimentos de odio e vinganqa, proclamou uma mensagem de julgamento contra Nfnive e, ao mesmo cional a seu proprio povo, Judá. Esse ponto de vista não leva em conta o fato de que seu livro reflete a forma literária comum das profecias contra as nagdes estrangeiras, devendo ser comparado com proclamaqoessemelhantes em Isafas 13-23, Jeremias 46-51, Amos1-2 e Obadias. Varios generos literariossao evidentes em Naum, como, por exemplo, um hino (1.2-8) e o oraculo de salvação de 1.12-15, o qual oferece o vislumbre de um futuro brilhante para Judá. No entanto, o livro e dominado por oraculos de julgamento. Cangoes de motejo, dirigidas a Nfnive (2.11-13; 3.14-17), zombam dela como a “cidade sanguinaria” (3.1), que logo encontrara sua condenação nas maos de inimigos desconhecidos. Esses oraculos eram, de fato, destinados aos ouvidos de Judá, que sofria sob a opressao assfria."
+        "conteudo": "A profecia situa-se entre a captura de Tebas pelos assírios, em 663 a.C., tratada como acontecimento passado em 3.8, e a queda de Nínive, em 612 a.C., anunciada como futura. O século VII a.C. foi marcado por crises internas no Império Assírio, incluindo a ameaça dos medos, o avanço dos citas e a revolta babilônica de 652–648 a.C. Uma data plausível é entre 660 e 650 a.C., nos dias de Manassés, embora o início do reinado de Josias também seja considerado."
       },
       {
-        "id": "caracteristicas_literarias",
-        "titulo": "Características literárias",
+        "id": "genero_e_caracteristicas_literarias",
+        "titulo": "Gênero e características literárias",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "A profecia tern uma estrutura simples. No capftulo 1, ha uma preparagao para o conflito subsequente, o qual e descrito nos capítulos 2 e 3. Com um ritmo vfvido e acentuado que se equipara a uma narrativa de reporter de guerra, Naum descreve a destruição que Ihe foi revelada por Deus. Ele desenvolve seu tema da condenagao iminente de Nfnive com uma tenacidade persistente e imagens extraordinarias. Implicitamente, Naum expressa o alfvio e a alegria geral de todos aqueles que sofriam durante o governo do tirano impiedoso. E"
+        "conteudo": "Naum pertence ao gênero das profecias contra nações estrangeiras, não devendo ser reduzido a um nacionalismo movido por vingança. O livro contém um hino (1.2–8), um oráculo de salvação para Judá (1.12–15) e oráculos de julgamento, incluindo canções de motejo dirigidas a Nínive. A estrutura é simples: o capítulo 1 prepara o conflito descrito nos capítulos 2 e 3. O ritmo e as imagens produzem uma descrição vívida da destruição revelada por Deus."
       },
       {
-        "id": "temas_principais",
-        "titulo": "Temas principais",
+        "id": "caracteristicas_e_temas_principais",
+        "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "O livro de Naum tem um título duplo (1.1). E chamado uma “sentenga contra Nfnive” e “livro da visao de Naum”. Com frequencia, “sentenga” indica uma mensagem divina de julgamento contra uma nação estrangeira (Is 13.1; Ml 1.1, nota). “Visao”, por sua vez, referese a uma revelação sobrenatural dada a visao ou a audigao interior do profeta. As vezes, um profeta era instrufdo a escrever uma mensagem especffica (Is 8.1, 2; 30.8) ou até mesmo “todas as palavras” que o Senhor exigia que ele falasse (Jr 36). A forma escrita tornouse, portanto, um testemunho adicional quanto a certeza vinos. O ti'tulo duplo da profecia e uma confirmagao consistente da autenticidade desse oraculo de condenação contra Nfnive e da inevitabilidade do julgamento iminente de Deus sobre o reino assfrio. Como um verdadeiro profeta de Jeova, Naum era profundamente consciente de que o Senhor, o Deus incomparavel e todopoderoso, tinha domi'nio universal sobre os reinos deste mundo. 0 livro de Naum, frequentemente negligenciado e menosprezado, oferece uma chave importante para que possamos entender a história passada, presente e futura. Os eventos não ocorrem como meros acasos; antes, cada fato da história e determinado por Deus. No hino de abertura (1.2-8) e, em especial, em 1.2-3 (o “texto” do sermao de Naum), aprendemos que o governo do Senhor na história se realiza de acordo com seu carater como o Deus da aliança. Ele requer submissao completa em todos os lugares e de todas as pessoas. A rejeigao ao Senhor e a sua lei não somente leva as consequências necessarias de caos na sociedade e na natureza, como também, inevitavelmente, evoca seu desprazer pessoal, resultando em retribuição justa."
+        "conteudo": "O título duplo ressalta a natureza da mensagem: sentença contra Nínive e visão recebida pelo profeta. Naum enfatiza que a condenação da cidade é inevitável. Nínive é retratada como metrópole perversa, imperialista, enganosa e violenta, condenada por belicismo, comércio injusto e materialismo. A mensagem era também para Judá, que sofria sob o domínio assírio. O julgamento de Nínive seria acompanhado de libertação e restauração para o povo de Deus."
       },
       {
         "id": "teologia_de_naum",
         "titulo": "Teologia de Naum",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "A paciencia de Deus (1.3) nunca deve ser entendida erroneamente como fraqueza. 0 pecado — individual ou coletivo — não ficara impune. Em ultima analise, Deus ordena todos os eventos da história; ele e soberano sobre todas as nações. Naum proclamou a destruição iminente de Nfnive como o julgamento justo de Deus e convidou seu povo para a celebração jubilosa desse evento muito antes de acontecer. Nfnive era uma metropole perversa, imperialista e enganosa, detentora de uma arrogante e inescrupulosa avidez por poder e domfnio — avidez que se manifestava como belicismo impiedoso (3.1-4). Nfnive foi condenada tanto por suas investidas militares como por suas praticas de comercio injustas e seu materialismo insaciavel (3.16). Contra essa cidade perversa, Naum entregou a mensagem de que nenhum poder terreno que desafia a lei de Deus escapara de seu julgamento (1.14; 3.5-7). Para sua audiencia original e todos os leitores subsequentes, Naum retratou vividamente a ira de"
+        "conteudo": "A paciência de Deus não deve ser confundida com fraqueza. O pecado, individual ou coletivo, não ficará impune. Deus ordena os acontecimentos da história e é soberano sobre todas as nações. A destruição de Nínive é apresentada como julgamento justo. Ao mesmo tempo, o julgamento é redentor: Deus destrói forças do mal para criar liberdade, paz e conforto para seu povo. Ele conhece e protege aqueles que nele se refugiam."
       },
       {
         "id": "naum_na_historia_mais_ampla_da_biblia",
         "titulo": "Naum na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "A paciencia de Deus (1.3) nunca deve ser entendida erroneamente como fraqueza. 0 pecado — individual ou coletivo — não ficara impune. Em ultima analise, Deus ordena todos os eventos da história; ele e soberano sobre todas as nações. Naum proclamou a destruição iminente de Nfnive como o julgamento justo de Deus e convidou seu povo para a celebração jubilosa desse evento muito antes de acontecer. Nfnive era uma metropole perversa, imperialista e enganosa, detentora de uma arrogante e inescrupulosa avidez por poder e domfnio — avidez que se manifestava como belicismo impiedoso (3.1-4). Nfnive foi condenada tanto por suas investidas militares como por suas praticas de comercio injustas e seu materialismo insaciavel (3.16). Contra essa cidade perversa, Naum entregou a mensagem de que nenhum poder terreno que desafia a lei de Deus escapara de seu julgamento (1.14; 3.5-7). Para sua audiencia original e todos os leitores subsequentes, Naum retratou vividamente a ira de Deus, cujo caminho e “na tormenta e na tempestade” (1.3). Esse mesmo livro declara a bondade de Deus (1.7). No entanto, o julgamento não e a palavra final do Senhor por meio de Naum. O julgamento retributivo de Deus e também redentor; promove os propositosamorosos de Deus para com seu povo e suas promessas pactuais para eles(1.15; 2.2). Deus destroi as forqas do mal com o propósito de criar um novo mundo de liberdade (1.13), paz e conforto duradouro. Deus “conhece os que nele se refugiam” e cuida deles (1.7). N A H I S T O R I A"
+        "conteudo": "Naum funciona, em muitos aspectos, como sequência da profecia de Jonas. Nínive havia recebido misericórdia quando se arrependeu com a pregação de Jonas, mas a Assíria voltou à política de expansão e crueldade. Deus havia usado os assírios como instrumento de julgamento, mas a arrogância deles seria punida. A queda de Nínive abriu caminho para a preservação de um remanescente do povo de Deus até a vinda do Messias. O material observa que Naum não é explicitamente citado no Novo Testamento e que Romanos 10.15 é mais provavelmente uma referência a Isaías 52.7."
+      },
+      {
+        "id": "cristo_em_naum",
+        "titulo": "Cristo em Naum",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "Não há referências messiânicas diretas. A exortação de 1.15, porém, aponta para a celebração das festas e para aquele que cumpriria tudo o que elas simbolizavam. A mensagem sobre o julgamento do mal ajuda a compreender a necessidade da cruz e aponta para o Cristo glorificado, a quem foi dada toda autoridade e que conduzirá a história ao dia em que todos os poderes oponentes serão destruídos."
+      },
+      {
+        "id": "historia_de_interpretacao",
+        "titulo": "História de interpretação",
+        "tipo": "texto",
+        "ordem": 9,
+        "conteudo": "Entre os Rolos do Mar Morto há um comentário que relaciona o fim da opressão anunciada por Naum às circunstâncias da comunidade de Qumran. Os primeiros comentaristas cristãos seguiram a Septuaginta e leram Naum à luz de Jonas. Lutero e Calvino discutiram a superficialidade do arrependimento anterior de Nínive e a justiça de sua penalidade. Comentaristas modernos às vezes acusam Naum de intolerância e nacionalismo, mas o material argumenta que essa leitura ignora o triunfo de Deus sobre a tirania e as advertências bíblicas de que o próprio Israel também seria julgado."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Naum",
-        "tipo": "outline",
-        "ordem": 8,
-        "conteudo": "1. O julgamento de Deus contra Nínive (1.1-15) 2. A queda de Nínive (2.1—3.19) a. Cerco e tomada (2.1-13) b. Ruína completa (3.1-19)"
+        "tipo": "auto",
+        "ordem": 10,
+        "conteudo": [
+          {
+            "titulo": "I. INTRODUÇÃO (1.1)",
+            "itens": []
+          },
+          {
+            "titulo": "II. O JUSTO E MISERICORDIOSO JUIZ DE NÍNIVE (1.2–14)",
+            "itens": [
+              "A. O zelo e o poder do Senhor (1.2–8)",
+              "B. Angústia para os ímpios (1.9–14)"
+            ]
+          },
+          {
+            "titulo": "III. NÍNIVE SE VÊ IMPOTENTE DIANTE DO EXÉRCITO DO SENHOR (1.15–2.13)",
+            "itens": [
+              "A. Boas-novas para Judá (1.15–2.2)",
+              "B. Nínive capturada e saqueada (2.3–10)",
+              "C. O poder de Nínive é quebrado pelo Senhor (2.11–13)"
+            ]
+          },
+          {
+            "titulo": "IV. A DESTRUIÇÃO IRREVERSÍVEL DE NÍNIVE (CAP. 3)",
+            "itens": [
+              "A. Julgamento da cidade ímpia profetizado (3.1–7)",
+              "B. O destino de Nínive como o de Tebas (3.8–11)",
+              "C. A finalidade do julgamento divino (3.12–19)"
+            ]
+          }
+        ]
       }
     ]
-  },
-  "referencias_inline": true,
-  "politica_traducao": "independente",
-  "fonte_base": "34_Naum.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  }
 }

@@ -2,81 +2,135 @@
   "schema": "apoio-livro-v1",
   "id": "Ec",
   "nome": "Eclesiastes",
-  "abreviacao": "Eclesiastes",
   "material": {
     "titulo": "Sobre Eclesiastes",
-    "introducao": "No Livro de Eclesiastes estão registrados os pensamentos do “Pregador”, um homem que meditou profundamente sobre a vida humana, com as suas injustiças e decepções, e concluiu que “tudo é vaidade”. O Eclesiastes é o livro do homem sem Deus. Esse homem fala das suas vitórias e derrotas, do seu pessimismo e otimismo, da sua esperança e desespero. Mas esse homem não se esquece de Deus e descobre verdades consoladoras. O “Pregador” aconselha os jovens a lembrarem do seu Criador nos dias da sua mocidade, antes que o corpo volte para o pó da terra, e o espírito volte para Deus, que o deu (12.7). E no final do livro o “Pregador” afirma: “De tudo o que se tem ouvido, a suma é: Teme a Deus e guarda os seus mandamentos; porque isto é o dever de todo homem. Porque Deus há de trazer a juízo todas as obras, até as que estão escondidas, quer sejam boas, quer sejam más” (12.13-14).",
+    "introducao": "Eclesiastes examina a vida “debaixo do sol” e questiona a capacidade das atividades humanas de produzir sentido definitivo. O livro considera prazer, trabalho, riqueza, sabedoria, juventude e morte e conduz o leitor a reconhecer os limites da existência humana e a necessidade de temer a Deus e guardar seus mandamentos.",
     "secoes": [
       {
-        "id": "cristo_em_eclesiastes",
-        "titulo": "Cristo em Eclesiastes",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "O Novo Testamento não cita diretamente o livro de Eclesiastes, masfaz alusao ao livro em duas passagens importantes. A primeira e Romanos 8.18- O D E E C L E S I A S T E S E S B C X ^ I. INTR 0DUCA0 (1.1) II. MOTE (1.2) III. LIMITACOES DE TRABALHO E DE SABEDORIA (1.3-3.8) A. Cidos na criação (1.3-11) B. Futilidade de trabalho e de sabedoria (1.12-18) C. Recompensas efemeras de trabalho e de sabedoria (2.1-17) D. Enigmas de trabalho e de sabedoria (2.18-3.8) IV. TRABALHO EM TEMOR A DEUS, CUJA OBRA PERMANECE 13.9-6.7) A. Deus como Criador e Juiz (3.9-21) B. Contentamento ou inveja (3.22-4.16) C. Compromisso sincero com Deus (5.1-7) D. Insatisfagao no trabalho (5.8-67)"
-      },
-      {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "Na tradição hebraica, o título de Eclesiastes e Qohelet,uma transliteraqao da segunda palavra no texto hebraico. A palavra hebraica qohelet signifi ca “ajuntador” e pode referirse ao ato de reunir proverbios (12.9) ou de ajuntar pessoas para lhes ensinar (Ex 35.1). Qohelete traduzida muitas vezes como “Pregador” ou “Professor”. Essa tradição remonta a Martinho Lutero, cujo título para o livro em alemao e Prediger(“Pregador”).0 uso do título “Eclesiastes” tem origem na Vulgata Latina, que se baseia em Ecclesiastes (“um membro da assembleia”), na Septuaginta em grego. A maioria das ocorrencias de qohelet no livro de Eclesiastes usa a palavra como um nome, mas a introdução e as notas de estudo usarao “o Pregador” ou “o Professor”."
+        "conteudo": "Na tradição hebraica, o título deriva de Qohelet, termo associado a alguém que reúne ou convoca uma assembleia. A tradução grega Eclesiastes está relacionada à ideia de assembleia. O título latino segue essa tradição."
       },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "Para muitos interpretes de Eclesiastes, a linhagem (1.1), o reinado sobre Israel em Jerusalém (1.12), a sabedoria incomparavel (1.16) e a riqueza inigualavel (2.4-9) do autor indicam que Salomao, que chama a si mesmo de “o Pregador” (1.12), e o autor de Eclesiastes. Ha também um ie tributo conclusivo no livro (12.9-14), que louva a sabedoria do Pregador de um modo que lembra ao leitor a sabedoria de Salomao. Outros interpretesacreditam que oestilo do hebraico usado no livro, bemcomo o que eles veem como uma opiniao negativa dos governantes manifestada algumas vezes (4.13; 7.19;8.2-4;10.4-7),indicam que a obra foi escrita depois do tempo de Salomao, como uma voz legitima da sabedoria tradicional, que temSalomao comoseu expoente maisfamoso, tendosido, portanto, associada ao seu nome. Visto que Salomao nunca e designado explicitamente como o autor, e diffcil ser dogmatico sobre esse assunto. Bons eruditos tem divergido a esse respeito. Afinal de contas, nosso entendimento acerca da mensagem do livro não depende de sabermos com exatidao quem o escreveu."
+        "conteudo": "O livro apresenta Qohelet como personagem e mestre. A associação tradicional com Salomão é discutida a partir das descrições de riqueza, sabedoria e posição real, mas o material reconhece que a identificação direta do autor histórico é debatida."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "Aqueles que veem o livro como de um autor que viveu depois de Salomao datam geralmente Eclesiastes em uma época posterior ao exílio na Babilônia, que aconteceu no século VI a.C.Se Salomao foi o autor, o livro deve ser datado no século X a.C. Eclesiastes tem sido entendido como uma obra apologetica, uma tentativa de recomendar aos incredulos a fe em Deus, respondendo a argumentos negativos. Embora o ensino do livro possa ser usado para evangelizar, a maioria dos interpretes judeus e cristãos tem entendido Eclesiastes como uma mensagem dirigida ao povo de Deus, e não aquelesque não conhecem Deus ou estao em rebeliao contra ele.O livro e o sabio conselho de Deus para aqueles que conhecem seus caminhos, mas, as vezes, os consideram frustrantes e complexos."
+        "conteudo": "A data de Eclesiastes é discutida a partir de sua linguagem, contexto e relação com a literatura sapiencial. O material considera possível uma composição posterior à época salomônica, ainda que a voz do livro utilize uma figura real associada à sabedoria."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "A maior parte do livro, o monologo central (1.12- 12.7), e uma autobiografia do Pregador. Nessa seqao, ele se refere a si mesmo, repetidas vezes, na primeira pessoa (p. ex., 1.12; 10.5). Esse monologo central esta delimitado por um prologo (1.1-11) e um epflogo (12.8-14), nos quais o Pregador referese a si mesmo na terceira pessoa (p. ex., 1.1, 2; 12.8). 0 narrador, o autor do prologo e do epflogo, introduz o pensamento do Pregador no prologo, ilustra o pensamento do Pregador com as palavras do proprio Pregador no monologo central e, por fim, complementa o pensamento do Pregador no epflogo. Portanto, poderfamos fazer referenda a Eclesiastes como uma autobiografia narrada."
+        "conteudo": "Eclesiastes é literatura sapiencial com forte caráter reflexivo e argumentativo. O livro combina observações, provérbios, poemas, perguntas e conclusões. O estilo deliberadamente explora aparentes contradições e limitações da experiência humana."
+      },
+      {
+        "id": "caracteristicas_literarias",
+        "titulo": "Características literárias",
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "O termo “vaidade” ou “vapor” é recorrente e expressa a natureza transitória e difícil de apreender da vida. A expressão “debaixo do sol” delimita repetidamente a perspectiva da experiência humana. O livro alterna observações sobre a realidade e conclusões práticas."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "L I T E R A R I A S O livro de Eclesiastes e uma combinaqao de poesia e prosa, mas nem sempre e facil determinar onde a poesia termina e onde a prosa comeqa, e viceversa. Alguns textos sao claramente poesia. Algumas versoesconcordam em traduzir 8.1 no estilo poetico. Ao mesmo tempo, alguns textos sao claramente em prosa. Muitas versoes traduzem 2.1 em estilo de prosa.Outros textos aparecem como prosa em algumas traduqoes e como poesia em outras (p. ex., 1.2; 2.10-16). Em ultima analise, as opinioes divergentes de tradutores mostram que a poesia e a prosa hebraicas sao pontos diferentes em um continuum literário, e grande parte de Eclesiastes esta no limite entre prosa e poesia. Para saber mais sobre a interpretação da poesia de Eclesiastes, ver Introdução a Poesia Hebraica. C A R A C T E R I S T I C A S E T E M A S P R I N C I P A I S Eclesiastes contem tres temas predominantes: (1) encarar o lado frustrante ou inexplicavel da vida; (2)encontrar alegria e satisfaqao na vida; (3) temer a Deus durante toda a vida. Mas, antes de abordar esses temas, e importante entender dois conceitos fundamentals: (1) “vaidade” e (2) “debaixo do sol”. A palavra hebraica traduzida como “vaidade” (hebel) ocorre 38 vezes no livro de Eclesiastes, sendo, portanto, uma palavrachave para o entendimento do livro. Não ha uma palavra que expresse o significado do vocabulo hebraico hebel Por outro lado, hebel referese aquilo que e frustrante. A frustraqao da vida e articulada no poema de abertura do livro (1.3-11).0 poema comeqa com a seguinte pergunta: “Que proveito tem o homem de todo o seu trabalho, com que se afadiga debaixo do sol?” As ilustraqoes seguintes respondent a pergunta com um ressonante “nada”. Uma pessoa não labuta para realizar ou ganhar nada; portanto, ganhar nada como resultado de seu labor e frustrante. O lado frustrante da vida também e expresso na figura de correr atras do vento, uma imagem usada com frequencia no livro (1.14, 17; 2.11, 17, 26; 4.4, 6, 16; 6.9; cf. 5.16). Por outro lado, hebelse refere também aquilo que nos deixa perplexos. O lado inexplicavel da vida e expresso em textos como 3.11; 7.14 e 8.17. Ha experiences na vida que os seres humanos simplesmente não podem entender. Finalmente, a palavra hebel também tem a conotaqao de “passageiro”. Um texto como 11.10 nos lembra que a juventude e passageira — aqui hoje, la amanha. A expressao hebraica traduzida como “debaixo do sol” ocorre 28 vezes no livro de Eclesiastes,sendo também uma expressaochave para o entendimento do livro. “Debaixo do sol” referese a vida neste mundo, como fica evidente no fato de que a expressao abrange o tempo em que alguem esta vivo (6.12) e antes de morrer (9.3-16). No entanto, ha mais do que isso. “Debaixo do sol” não se refere apenas a vida neste mundo, mas também a vida num mundo que foi afetado pela Queda. Nesse contexto, o livro de Eclesiastes pode ser visto como um comentario bíblico sobre Genesis 3.16- 19. Além das alusoes específicas a Genesis 3.16-19 que se encontram em Eclesiastes 3.20 e 12.7 no que se refere ao retorno da humanidade ao po, ha também a convergence da palavra “vaidade” e da expressao “debaixo do sol” (1.14; 2.11, 17, 19; 4.7). “Debaixo do sol” e a esfera em que a “vaidade” e experimentada. “Debaixo do sol” e o lugar no qual osseres humanosexperimentam o lado frustrante ou inexplicavel da vida. Isso nos leva ao nosso primeiro tema, que e encarar o lado frustrante ou complexo da vida. O livro de Eclesiastes não permite uma visao simplista ou irracionalmente otimista da vida. Conhecer Deus e crer nele não eliminam automaticamente o lado frustrante ou intrigante da vida. As vezes, conhecer o Senhor pode realmente tornar a vida ainda mais intrigante (p. ex., 6.1, 2). Como acontece nos outros livros de literatura de sabedoria, Eclesiastes rejeita uma abordagem ingenua da vida. Embora a linguagem do lema em 1.2 e 12.8 seja absoluta — “tudo e vaidade” ha um segundo tema que traz equilfbrio ao primeiro: desfrutar a vida e encontrar satisfação nela. O Pregador recomenda costumeiramente que se experimentem alegria e satisfação na vida. Ele faz isso tanto em linguagem prosaica (p.ex., 3.12, 22; 7.14)como em imagens poeticas. Em particular, ele adota a figura de comer e beber, uma imagem que combina tanto alegria como satisfação (2.14; 3.13; 5.18). Visto que ha dias alegres e satisfatorios de prosperidade, bem como dias frustrantes e inexplicaveis de adversidade (7.14), podemos concluir que o narrador, ao resumir o ensino do Pregador dizendo “Tudo e vaidade” (1.2;12.8), esta usando a figura da hiperbole para colocar em destaque a necessidade de encararmos o lado frustrante ou intrigante da vida ao mesmo tempo que encontramos alegria e satisfação nela. Isso nos leva ao terceiro tema do autor: temer a Deus durante toda a vida. Quando o narrador conclui dizendo que devemos temer a Deus (12.13), esta simplesmente extraindo a conclusao logica da mensagem do Pregador em todo o livro. Antes da conclusao, Eclesiastes 5.1-7 atrai nossa atenção para o templo, a casa de Deus,enfatizando o temor de Deus para a vida de sabedoria (cf. 7.15-18). Essa segao e uma indicagao clara de que o Pregador esta bem ciente de que a vida debaixo do sol não e' desprovida de significado, pois Deus a ve totalmente. Além disso, temer a Deus nos impede de fazer promessas ou juramentos que não vamos cumprir e que podem contribuir para nosso sentimento de que a vida e vazia, pois o cumprimento de tais promessas e vazio (5.4-7). Em resumo, essa porgao crucial do livro e uma parte importante de sua apologetica. A única solugao para o aparente vazio e a transitoriedade da vida no mundo caido e o temor aoSenhor. ensina que o propósito de tudo que Deus faz e levar seu povo a temelo (3.14). Isso incluias coisas que experimentamos comofrustrantes ou inexplicaveis, bem como aquelas que desfrutamos como prazerosas e satisfatorias. Temer a Deus e conhecelo, permanecer no temor dele com a fe inabalavel e demonstrar essa fe ao guardar seus mandamentos (Introdução a Literatura de Sabedoria). Eclesiastes nos ensina que todas as experiences da vida, incluidos os bons tempos e os maus tempos, sao designadas por Deus como um palco no qual temos a oportunidade de crescer em nosso conhecimento e reverencia, e expressar fe madura e obediente nele."
+        "ordem": 6,
+        "conteudo": "Os temas predominantes incluem o caráter frustrante da vida, a morte, a transitoriedade, o trabalho, o prazer, a sabedoria e a incapacidade humana de controlar o futuro. Eclesiastes não conclui que a vida seja sem valor, mas que as tentativas humanas de encontrar significado absoluto dentro da própria criação são insuficientes."
       },
       {
         "id": "teologia_de_eclesiastes",
         "titulo": "Teologia de Eclesiastes",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "Embora o livro de Eclesiastes não seja uma teologia sistematica,comunica realmente uma teologia profunda, que e a chave para entendermos a vida e nosso relacionamento com Deus. Uma dimensao dessa teologia exige comentario especial: a soberania divina e a responsabilidade humana. Como outros livros do Antigo Testamento, Eclesiastes não aborda simplesmente a conexao entre soberania divina e responsabilidade humana como uma questão teológica/filosofica que tern de ser perscrutada. Em vez disso, Eclesiastes apresenta o ensino de que, com relação a nossa experiencia de vida, Deus e absolutamentesoberano,e osseres humanossao totalmente responsaveis. Um textochave que focaliza a soberania divina e 5.18-6.3. Na primeira parte desse texto (5.18-20), o Pregador ve o que e “bela e boa coisa” (v. 18) naquilo que Deus da a alguem:a dadiva de riquezas e possessoes acompanhada da capacidade de desfrutalas (v. 19). A capacidade de desfrutar a vida e dom de um Deus soberano (2.24, 25). Na segunda parte do texto (6.1-3), o Pregador ve o que e “um mal” (6.1), ou seja, Deus da riquezas e posses a alguem, mas não lhe da capacidade para desfruta- -las. Isso e “vaidade” (v. 2). Ter posses e desfrutalas sao duas coisas diferentes. E, se uma pessoa tem ou não a capacidade de encontrar satisfação em suas posses, isso e determinado por Deus. Mas o Pregador não e fatalista. Ele também ensina que Deus da alegria e satisfação “ao homem que lhe agrada” (2.26) e aqueles que fazem o “bem” (3.12, 13). Portanto, a experiencia de alegria e satisfação na vida e dom de um Deus soberano para aqueles que cuidam de suas responsabilidades humanas. Embora haja um misterio aqui, e um misterio que nos aponta para Cristo, que, por sua obediencia, sofrimento e morte, mereceu por nos a alegria (Hb 12.2) e a satisfação (Is 53.11) que experimentamos em parte nesta vida, enquanto aguardamos a plenitude da alegria e da satisfação na vida por vir. De fato, até mesmo nossos sofrimentos presentes sao “leve e momentanea tribulagao” quando comparados com a gloria que esta guardada para nos em Cristo (2Co 4.17)."
+        "ordem": 7,
+        "conteudo": "Deus permanece soberano enquanto os seres humanos vivem em um mundo que não conseguem controlar nem compreender plenamente. O livro recomenda desfrutar com gratidão os dons de Deus e, sobretudo, temê-lo. A conclusão aponta para a responsabilidade diante do julgamento divino."
       },
       {
         "id": "eclesiastes_na_historia_mais_ampla_da_biblia",
         "titulo": "Eclesiastes na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 7,
-        "conteudo": "M A I S A M P L A D A B I B L I A A linha histórica da Bíblia comega com uma criagao que e muito boa. No princfpio, “debaixo do sol” era a esfera da alegria e da satisfação perfeitas para a humanidade; nada era frustrante e nada causava perplexidade. Tudo isso mudou quando Adao e Eva pecaram contra Deus. “Debaixo do sol”, entao, tornouse a esfera de frustragao e perplexidade, embora alegria e satisfação ainda possam ser encontradas. O livro de Eclesiastes e um comentario sobre a vida “debaixo do sol” depois da Queda e antes da redengaofinal. Eclesiastes nos ensina a encarar os aspectos frustrantes e inexplicaveisda vida,a encontrar alegria e satisfação com gratidao quando possfvel e a temer a Deus apesar de tudo isso. Mas como isso pode ser feito? Com quais recursos podemoscontar para encarar,achar e temer? A resposta não e dada no livro de Eclesiastes, mas no Novo Testamento, que nos revela a redenção final de Deus em Cristo. C R I S T O E M E C L E S I A S T E S O Novo Testamento não cita diretamente o livro de Eclesiastes, masfaz alusao ao livro em duas passagens importantes. A primeira e Romanos 8.18- 25, passagem em que o apóstolo Paulo descreve a vida conforme foi afetada adversamente pela Queda. No versículo 20, Paulo diz que “a criação esta sujeita a vaidade”. A palavra grega que Paulo usa para expressar “vaidade” (mataiotes) e a mesma palavra grega que os primeiros tradutores da Bíblia hebraica usaram para traduzir a palavrachave no livro de Eclesiastes, hebel (“vaidade”). Paulo esta, na verdade, descrevendo a vida “debaixo do sol”. Quando Paulo descreve a vida debaixo do sol, faz isso sem desespero, mostrandonos “a gloria a ser revelada em nos” (v. 18) e a “esperanga” (v. 21) de que seremos redimidos da vaidade da vida (v. 21). Sobre essa redenção, Paulo diz que nos a “aguardamos” com paciencia (v. 25). Nessa passagem, Paulo não nos diz exatamente o que e aquilo pelo qual esperamos, mas ele faz isso no segundo texto que alude ao livro de Eclesiastes. Esse segundo texto e 2 Corfntios 5.1-11. Nos versfculos1-9, Paulo descreve a vida de um modo bem semelhante a descrigao no livro de Eclesiastes. Gememos e sentimos enfado (vv. 2, 3; Ec 1.13). Devemos viver pela fe,e não pela visao(v.7; Ec 8.11,12), e nosso alvo e agradar a Deus (v. 9; Ec 2.26). Nossa vida e muito semelhante a vida do Pregador, mas ha uma diferenga:nos temos “o penhor do Espfrito” (v. 5; ver Rm 8.23) como garantia de nossa libertagao, por meio da ressurreição dos mortos(w. 2-5), um ensino não encontrado em Eclesiastes. Paulo conclui essa passagem de uma forma que nos lembra, marcantemente, a conclusao do livro de Eclesiastes, afirmando que seremos julgados pelo que temos feito, “o bem ou o mal” (v. 10; Ec 12.13). Com base em nosso “temor do Senhor” (v. 11), persuadimos outros da esperanga que temos em Cristo. Por causa da ressurreição de Cristo dentre os mortos, que garante nossa ressurreição, sabemos que até mesmoaquelas experiencias frustrantes e inexplicaveis não sao, em ultima analise, inuteis (lCo 15.58)."
+        "ordem": 8,
+        "conteudo": "Eclesiastes contribui para a literatura sapiencial ao expor os limites da busca humana por satisfação. Sua visão da morte e da responsabilidade diante de Deus prepara o terreno para uma compreensão mais completa da esperança e da vida oferecidas na revelação bíblica posterior."
+      },
+      {
+        "id": "cristo_em_eclesiastes",
+        "titulo": "Cristo em Eclesiastes",
+        "tipo": "texto",
+        "ordem": 9,
+        "conteudo": "O material relaciona Eclesiastes a Cristo por contraste: aquilo que a sabedoria humana não consegue resolver é respondido pela revelação de Deus em Cristo. A ressurreição e o julgamento final oferecem uma perspectiva que ultrapassa as limitações observadas “debaixo do sol”."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Eclesiastes",
-        "tipo": "outline",
-        "ordem": 8,
-        "conteudo": "1. Tudo é vaidade (1.1—2.26) 2. Tempo para tudo (3.1-15) 3. Lições da experiência (3.16—6.12) 4. Pensamentos a respeito desta vida (7.1—12.8) 5. Conclusão (12.9-14)"
+        "tipo": "auto",
+        "ordem": 10,
+        "conteudo": [
+          {
+            "titulo": "I. Introdução (1.1)",
+            "itens": []
+          },
+          {
+            "titulo": "II. Morte (1.2–12.14)",
+            "itens": []
+          },
+          {
+            "titulo": "III. Limitações do trabalho e da sabedoria (1.3–8.20)",
+            "itens": [
+              "A. Ciclos na criação (1.3-11)",
+              "B. Futilidade do trabalho e da sabedoria (1.12-18)",
+              "C. Recompensas efêmeras de trabalho e de prazer (2.1-11)",
+              "D. A sabedoria é melhor do que a insensatez (2.12-17)",
+              "E. Trabalho e incerteza (2.18-26)",
+              "F. Tempo e propósito (3.1-15)",
+              "G. Injustiça e morte (3.16-22)",
+              "H. Opressão e isolamento (4.1-16)",
+              "I. Abordagem sábia de Deus e dos votos (5.1-7)",
+              "J. Riqueza, pobreza e contentamento (5.8-6.12)",
+              "K. A sabedoria ajuda a enfrentar a morte (7.1-14)",
+              "L. A sabedoria e o temor de Deus (7.15-29)",
+              "M. Sabedoria e governo (8.1-17)"
+            ]
+          },
+          {
+            "titulo": "IV. Trabalho em Deus e sua obra que permanece (8.20–12.14)",
+            "itens": [
+              "A. Deus como Criador e Juiz (9.1-12)",
+              "B. Contentamento e o juízo (9.1-22)",
+              "C. Compromisso sincero com Deus (5.1-7)",
+              "D. Insatisfação no trabalho (5.8-6.7)"
+            ]
+          },
+          {
+            "titulo": "V. Sabedoria em humildade diante de um Deus que julga, cuja sabedoria é insondável (6.8–12.14)",
+            "itens": [
+              "A. A atitude de contentamento com Deus (6.8-12)",
+              "B. O poder da sabedoria (7.9-18)",
+              "C. O julgamento não cometido (8.9-20)",
+              "D. O poder da sabedoria (9.1-17)",
+              "E. Conselho para o viver sábio (10.8-17)",
+              "F. O valor do trabalho (10.8-12.8)",
+              "G. O apelo do professor (12.9-14)"
+            ]
+          },
+          {
+            "titulo": "VI. Epílogo (12.9-14)",
+            "itens": []
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "21_Eclesiastes.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte_base": "03_Poeticos.zip — imagens de introdução e esboço fornecidas pelo usuário"
 }

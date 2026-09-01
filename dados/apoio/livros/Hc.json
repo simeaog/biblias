@@ -2,74 +2,112 @@
   "schema": "apoio-livro-v1",
   "id": "Hc",
   "nome": "Habacuque",
-  "abreviacao": "Habacuque",
   "material": {
     "titulo": "Sobre Habacuque",
-    "introducao": "O profeta Habacuque viveu na mesma época em que viveram os profetas Naum e Sofonias. Foi nesse tempo, em 612 a.C. , que os babilônios derrotaram os assírios e se tornaram o império mais poderoso do mundo. O profeta vê o perigo que o seu povo corre e não entende como é que Deus pode tolerar os babilônios, um povo mau e cruel. Deus responde que virá o tempo em que ele castigará os inimigos do povo de Israel e que o profeta espere com paciência, confiando na justiça divina. Os maus serão castigados, e aqueles que são fiéis a Deus viverão. O livro termina com uma oração, em forma de Salmo, em que Habacuque louva a grandeza de Deus e ao mesmo tempo mostra a sua fé nele.",
+    "introducao": "Habacuque registra o diálogo de um profeta perplexo com Deus diante da injustiça. A resposta divina conduz da queixa à fé perseverante: Deus governa a história, julgará o mal e sustentará os que confiam nele.",
     "secoes": [
       {
-        "id": "cristo_em_habacuque",
-        "titulo": "Cristo em Habacuque",
-        "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "Não ha profecias messianicas diretas em Habacuque, mas as expectativas incorporadas em 2.14 e no capítulo 3 exigem a vinda de Cristo para seu cumprimento. O povo de Deus precisa ter uma fe que olhe para fora de si mesmo, fixandose no Senhor. H I S T O R I A D E I N T E R P R E T A Q A O Habacuque pode ser chamado o “precursor da Reforma”. Os conceitos essenciais da pregaqao de Habacuque, conforme adotados por Paulo, influenciaram profundamente Lutero e Calvino e, por fim, tornaramse lemas da Reforma. Somente a perspectiva de fe, ou a confiança perseverante e obediente em Deus, proporciona uma existencia significativa no mundo na época presente, entre o “ja” do cumprimento inicial das promessas de Deus e o “ainda não” de sua realizagao final. V. SEGUNDA RESPOSTA: VIDA PARA OS Fiéis, MAS DESVENTURA PARA OS IMPIOS (CAP. 2) A. A distingao crucial revelada (2.1-5) B. De imprecagoes para adoragao (2.6-20) VI. A Oração DO PROFETA (CAP. 3) A. Introdução; invocagao (3.1, 2) B. Autorrevelagao divina (3.3-15) C. Expectativa e jubilo da fe (3.16-19)"
-      },
-      {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "sse livro profético recebe o nome de seu autor, Habacuque. Nossa única informagaoconfiavel a respeito de Habacuque e desua atividade profética vemdo proprio livro.0significado de seu nome e incerto. A referenda a Habacuque em 1.1 como “o profeta” pode significar que ele era bem conhecido.Seu uso das tradições cultuais e sapienciais de Israel, em sua pregação, deu origem a nogao duvidosa de que ele seria um profeta ligado ao templo em Jerusalém,embora a sugestao de que Habacuque trabalhou em Jerusalém seja mais atraente. No entanto, podemos ter certeza de que, nesse livro, encontramos um profeta com intenso zelo pela gloria do Senhor. Sua “sentenga” (l.l e nota) e admiravel não porque, prioritariamente, seja uma palavra dirigida ao povo, mas porque e uma resposta as angustiantes perguntas do profeta. E"
+        "conteudo": "O livro recebe o nome de seu autor, Habacuque. O significado do nome é incerto. A referência a ele como “o profeta” pode indicar que era bem conhecido."
+      },
+      {
+        "id": "autor",
+        "titulo": "Autor",
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "As únicas informações confiáveis sobre Habacuque e sua atividade vêm do próprio livro. Seu uso das tradições cultuais e sapienciais de Israel levou alguns a sugerirem uma ligação com o templo, mas isso não é certo. O material considera atraente a possibilidade de que tenha trabalhado em Jerusalém. Ele aparece como profeta profundamente zeloso pela glória do Senhor."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "As datas propostas para Habacuque derivam de duas consideragoes: o período da história de Judá descrito em 1.2-4 e o estagio no levantamento dos caldeus referido em 1.6. Esse versículo sugere fortemente que, embora os caldeus, ou neobabilonios, ainda não fossem o poder dominante no de Oriente Próximo quando Habacuque escreveu, ja haviam comegado a marcar presença ali. Isso indica um tempo depois de 626 a.C., quando os caldeus,sob a autoridade de Nabopolassar, tomaram dos assi'rios o controle da Babilônia, o que exclui as references em 1.2-4 como a Judá durante o reinado de Manasses. Visto que 1.2-4 não e coerente com a natureza reformadora do reinado de Josias, uma data após a sua morte, em 609 a. C. — um período em que o reinado perverso de Jeoaquim formou um lastimavel contraste com o reinado de seu pai, o bondoso rei fosias (Jr 22.13-19; 26.20- tornase provavel. A deterioragao moral e 23) espiritual em Judá intensificouse quando o rei e o povo desprezaram, de forma insolente, as leis da aliança. Enquanto isso, oscaldeus haviam combinado com os medos a conquista de Nfnive em 612 a.C., mas o dominio dos babilonios só foi estabelecido claramente na batalha de Carquemis, em 605 a.C., quando Faraó-Neco II e seu exercito egfpcio, que tinham ido socorrer os assi'rios contra a Babilônia, foram completamente derrotados por Nabucodonosor II. A maior parte do ministério de Habacuque aconteceu provavelmente durante o reinado de Jeoaquim (609-598a.C.), procedendo o capítulo 1de data anterior a 605 a.C., enquanto oscapftulos 2 e 3 tiveram origem depois disso."
+        "ordem": 3,
+        "conteudo": "A data é determinada a partir das condições de Judá em 1.2–4 e do estágio de ascensão dos caldeus em 1.6. Os caldeus já haviam começado a se tornar uma potência depois de 626 a.C. e, em 612 a.C., participaram da conquista de Nínive; o domínio babilônico ficou claro na batalha de Carquemis, em 605 a.C. A deterioração moral e espiritual de Judá é incompatível com o período reformador de Josias, tornando provável uma data após sua morte, durante o reinado de Jeoaquim (609–598 a.C.). O capítulo 1 provavelmente antecede 605 a.C."
       },
       {
-        "id": "temas_principais",
-        "titulo": "Temas principais",
+        "id": "genero_e_caracteristicas_literarias",
+        "titulo": "Gênero e características literárias",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "Os profetas não apenas eram pregadores inspirados de mensagens divinas para o povo de Deus, como também compartilhavam a preocupaqao do Senhor com seu mundo cafdo e seu profundo interesse por seu povo desobediente.Aesse respeito, Habacuque se parece muito com Jeremias. No entanto, ainda mais do que ocorre com Jeremias, o dialogo de Habacuque com Deus e suas oraqoes persistentes (2.1, 2; 3.2, 16) assumem o lugar da pregaqao profética, tornandose o amago da mensagem do livro. Como Naum, Habacuque lida com o controle soberano de Deus sobre os afazeres humanos, não quando ele intervem em julgamento, mas nos tempos em que não deixa seu controle evidente. Habacuque experimentou uma profunda crise espiritual por causa da aparente indiferenqa do Senhor para com as horrfveis condições espirituais entre seu povo (1.2-4). Especificamente, Habacuque se inquieta com a aparente inatividade de Deus quando a sociedade em Judá esta dominada pelos perversos a custa dos justos (1.4). A ausencia de vida e obediencia pactual era perigosa para o povo de Deus e, pior ainda, era uma rejeiqao ao Senhor da aliança e urn insulto a ele. Visto que somente uma intervenção divina poderia mudar essa situaqao letal, Habacuque mostrouse persistente em seu apelo ao Juiz celestial, mesmo quando isso parecia ser inutil (1.2). Em resposta, o Senhor revelou que estava prestes a fazer algo que ninguem esperava (1.5):ele levantaria os caldeus como seus instrumentos de juízo (1.6). No entanto, para Habacuque, essa cura pareceu ainda pior do que a doenqa, só aumentando a angustia do profeta (1.12-17).Como o Deus santo, que não pode tolerar o mal (1.13), seria capaz de usar esse povofmpio para cumprirseus propositos? Em sua soberania sobre a história, Deusfaz realmente distinqao entre o bem e o mal? Convencido de que os eventos da história não eram determinados por uma sorte cega, mas pelo Deus justo e santo de Israel, Habacuque esperou vigilantemente no Senhor até que recebeu uma resposta as suas perguntas inquietantes (2.1). A resposta doSenhor lhefoi dada na visaointroduzida em 2.2-3, que prove uma perspectiva verdadeira da história e apresenta a promessa divina sobre seu resultado. Essa resposta não resolve todas as perguntas inquietantes, mas ensina realmente ao povo de Deus o caminho da vida pactual no aqui e agora (2.3, 4). Esse caminho consiste em perseverar em esperança, aguardando com confianqa o cumprimento da infalfvel promessa do Senhor. Embora os caminhos de Deus sejam inescrutaveis, seus propositos sao consistentes. Eles se consumam em vida real para os fiéis, mas em infortunio e morte para os autossuficientes e arrogantes (2.4). A presença doSenhor em seu templo afirma seu govemo sobre a história e nosassegura de que, no final, seu direito legftimo a todo o mundo sera universalmente reconhecido (2.14, 20; Is 45.21-25; ICo 15.24-28). A revelação da soberania doSenhor no govemo da história transforma a queixa de Habacuque num hino de alegria (3.2-20). Em vez de esperar de forma passiva a intervenção do Senhor, agora Habacuque ora positivamente para que o Senhor aja de acordo com as obras e as qualidades manifestadas no exodo e no Sinai. Prevendo o futuro, Habacuque celebra,em sua oração,a vinda doSenhor (3.3- 7), seu julgamento contra as nações (3.8-12) e seu triunfo sobre toda oposiqao (3.13-15). Com base nessa perspectiva de fe, nem mesmo a ameaqa de calamidade severa pode inibir a intensa alegria de Habacuque na expectativa da salvação vindoura, uma salvação garantida pela fidelidade do Senhor a si mesmo e a sua revelação (3.17-19)."
+        "ordem": 4,
+        "conteudo": "Habacuque é singular porque não apresenta discurso público dirigido ao povo; registra principalmente as lutas do profeta com questões de fé. Os capítulos 1–2 são um diálogo em forma de perguntas e respostas entre Habacuque e Deus. As queixas têm estrutura semelhante à dos salmos de lamentação. O capítulo 3 é um salmo com dedicação e orientações para canto, provocado por uma visão teofânica e culminando na confiança pessoal do profeta."
+      },
+      {
+        "id": "caracteristicas_e_temas_principais",
+        "titulo": "Características e temas principais",
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "Habacuque trata do controle soberano de Deus sobre os acontecimentos humanos quando esse controle parece oculto. O profeta sofre com a aparente indiferença de Deus diante da injustiça em Judá. Deus responde anunciando que levantará os caldeus como instrumentos de juízo, mas isso cria uma segunda crise: como o Deus santo pode usar um povo ainda mais ímpio? A resposta divina ensina a perseverar em esperança enquanto se aguarda o cumprimento da promessa. O caminho da vida pactual é a fé perseverante, em contraste com o orgulho e a autossuficiência."
       },
       {
         "id": "teologia_de_habacuque",
         "titulo": "Teologia de Habacuque",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "D E Habacuque se debruga sobre questões e duvidas concernentes a justiça de Deus e a sua direção sobre o mundo. Apesar de sua dificuldade em entendelas, Habacuque não abandona seu apego a Deus como refugio (“Rocha” — 1.12) nos tempos de perplexidade e afligao,como santo e como aquele que esta no controle (1.14). E o veredicto divino que anula o orgulho e o poder humanos, e somente Deus pode resolver os enigmas da história. Habacuque também contribui para nossa teologia de oração. As queixas nos capítulos 1 e 2 e a oração no capítulo 3 refletem, todas, a terceira petigao na oração do Pai-Nosso: “Fagase a tua vontade, assim na terra como no ceu” (Mt 6.10). Por meio dessas orações, o profeta se submete e se regozija na vontade de Deus e na realizagao temporal de seus decretos e pianos eternos. N A H I S T O R I A H A B A C U Q U E M A I S A M P L A D A B I B L I A Paulo usa Habacuque 2.4 como texto fundamental para sua proclamação do evangelho (Rm 1.17; G1 3.11; cf. Hb 10.35-39). A semelhanga de Habacuque (cap.1), Paulo sabia que o pecado e incompatfvel com a santidade de Deus e que a tensao fatal entre esses opostos só poderia ser resolvida pela intervenção divina. A palavra profética E S B O g O D E H A B A C U Q U E I. INTRODUCAO (1.1) II. PRIMEIRA QUEIXA: OS IMPIOS PROSPERAM SOBRE OS JUSTOS (1.2-4) III. PRIMEIRA RESPOSTA: O SENHOR ENVIARA OS BABILONIOS (1.5-11) IV. SEGUNDA QUEIXA: POR QUE OS PERVERSOS BABILONIOS? (1.12-17)"
+        "ordem": 6,
+        "conteudo": "Habacuque aborda a justiça de Deus e sua direção sobre o mundo. Mesmo sem compreender os caminhos divinos, o profeta não abandona Deus como sua Rocha, Santo e governante. O veredicto divino derrota o orgulho e o poder humanos. O livro também contribui para a teologia da oração: as queixas e a oração final expressam submissão à vontade de Deus e confiança na realização de seus decretos."
       },
       {
         "id": "habacuque_na_historia_mais_ampla_da_biblia",
         "titulo": "Habacuque na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "D E Habacuque se debruga sobre questões e duvidas concernentes a justiça de Deus e a sua direção sobre o mundo. Apesar de sua dificuldade em entendelas, Habacuque não abandona seu apego a Deus como refugio (“Rocha” — 1.12) nos tempos de perplexidade e afligao,como santo e como aquele que esta no controle (1.14). E o veredicto divino que anula o orgulho e o poder humanos, e somente Deus pode resolver os enigmas da história. Habacuque também contribui para nossa teologia de oração. As queixas nos capítulos 1 e 2 e a oração no capítulo 3 refletem, todas, a terceira petigao na oração do Pai-Nosso: “Fagase a tua vontade, assim na terra como no ceu” (Mt 6.10). Por meio dessas orações, o profeta se submete e se regozija na vontade de Deus e na realizagao temporal de seus decretos e pianos eternos. N A H I S T O R I A"
+        "ordem": 7,
+        "conteudo": "Paulo usa Habacuque 2.4 como texto fundamental para sua proclamação do evangelho em Romanos 1.17 e Gálatas 3.11, além da relação com Hebreus 10.35–39. Assim como Habacuque reconhecia a incompatibilidade entre pecado e santidade, Paulo vê a intervenção divina como necessária. A cruz de Cristo e o julgamento final são apresentados como cumprimentos dessa revelação. A vida verdadeira depende totalmente do Senhor e produz alegria pela certeza de sua fidelidade."
+      },
+      {
+        "id": "cristo_em_habacuque",
+        "titulo": "Cristo em Habacuque",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "Não há profecias messiânicas diretas. Entretanto, as expectativas de 2.14 e do capítulo 3 são apresentadas como exigindo a vinda de Cristo para seu cumprimento. O povo de Deus precisa de uma fé que olhe para fora de si mesmo e se fixe no Senhor."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "D E I N T E R P R E T A Q A O Habacuque pode ser chamado o “precursor da Reforma”. Os conceitos essenciais da pregaqao de Habacuque, conforme adotados por Paulo, influenciaram profundamente Lutero e Calvino e, por fim, tornaramse lemas da Reforma. Somente a perspectiva de fe, ou a confiança perseverante e obediente em Deus, proporciona uma existencia significativa no mundo na época presente, entre o “ja” do cumprimento inicial das promessas de Deus e o “ainda não” de sua realizagao final. E S B O g O D E H A B A C U Q U E I. INTRODUCAO (1.1) II. PRIMEIRA QUEIXA: OS IMPIOS PROSPERAM SOBRE OS JUSTOS (1.2-4) III. PRIMEIRA RESPOSTA: O SENHOR ENVIARA OS BABILONIOS (1.5-11) IV. SEGUNDA QUEIXA: POR QUE OS PERVERSOS BABILONIOS? (1.12-17) V. SEGUNDA RESPOSTA: VIDA PARA OS Fiéis, MAS DESVENTURA PARA OS IMPIOS (CAP. 2) A. A distingao crucial revelada (2.1-5) B. De imprecagoes para adoragao (2.6-20) VI. A Oração DO PROFETA (CAP. 3) A. Introdução; invocagao (3.1, 2) B. Autorrevelagao divina (3.3-15) C. Expectativa e jubilo da fe (3.16-19)"
+        "ordem": 9,
+        "conteudo": "Habacuque pode ser chamado de “precursor da Reforma”. Seus conceitos, especialmente a fé apresentada em 2.4 e adotada por Paulo, influenciaram profundamente Lutero e Calvino e se tornaram lemas da Reforma. A perspectiva de fé é entendida como confiança perseverante e obediente em Deus entre o “já” do cumprimento inicial das promessas e o “ainda não” de sua realização final."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Habacuque",
-        "tipo": "outline",
-        "ordem": 7,
-        "conteudo": "1. Diálogo entre Habacuque e Deus (1.1—2.5) a. Habacuque queixase da injustiça (1.1-4) b. Resposta de Deus: Judá será castigado (1.5-11) c. Intercessão de Habacuque (1.12-17) d. Resposta de Deus: o castigo virá, mas o justo viverá pela fé (2.1-5) 2. Cinco ais sobre os caldeus (2.6-20) 3. Oração de Habacuque (3.1-19)"
+        "tipo": "auto",
+        "ordem": 10,
+        "conteudo": [
+          {
+            "titulo": "I. INTRODUÇÃO (1.1)",
+            "itens": []
+          },
+          {
+            "titulo": "II. PRIMEIRA QUEIXA: OS ÍMPIOS PROSPERAM SOBRE OS JUSTOS (1.2–4)",
+            "itens": []
+          },
+          {
+            "titulo": "III. PRIMEIRA RESPOSTA: O SENHOR ENVIARÁ OS BABILÔNIOS (1.5–11)",
+            "itens": []
+          },
+          {
+            "titulo": "IV. SEGUNDA QUEIXA: POR QUE OS PERVERSOS BABILÔNIOS? (1.12–17)",
+            "itens": []
+          },
+          {
+            "titulo": "V. SEGUNDA RESPOSTA: VIDA PARA OS FIÉIS, MAS DESVENTURA PARA OS ÍMPIOS (CAP. 2)",
+            "itens": [
+              "A. A distinção crucial revelada (2.1–5)",
+              "B. De imprecações para adoração (2.6–20)"
+            ]
+          },
+          {
+            "titulo": "VI. A ORAÇÃO DO PROFETA (CAP. 3)",
+            "itens": [
+              "A. Introdução; invocação (3.1, 2)",
+              "B. Autorrevelação divina (3.3–15)",
+              "C. Expectativa e júbilo da fé (3.16–19)"
+            ]
+          }
+        ]
       }
     ]
-  },
-  "referencias_inline": true,
-  "politica_traducao": "independente",
-  "fonte_base": "35_Habacuque.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  }
 }

@@ -2,74 +2,110 @@
   "schema": "apoio-livro-v1",
   "id": "Fm",
   "nome": "Filemom",
-  "abreviacao": "Filemom",
+  "abreviacao": "Fm",
   "material": {
     "titulo": "Sobre Filemom",
-    "introducao": "Filemom era um cristão que, provavelmente, fizesse parte da igreja de Colossos. Onésimo, que era escravo de Filemom, tinha fugido do seu dono. Não se sabe como ele chegou a conhecer o apóstolo Paulo, mas o certo é que se converteu ouvindo a mensagem do evangelho anunciada pelo apóstolo, que estava na cadeia. Paulo resolveu que Onésimo deveria voltar para o seu dono e por isso escreveu a Epístola a Filemom , a fim de lhe fazer um apelo para que recebesse Onésimo de volta, não somente como escravo, mas também como um querido irmão em Cristo. Parece que a Epístola aos Colossenses e a Epístola a Filemom foram escritas na mesma época e que as duas foram entregues pelo próprio Onésimo. Esta pequena epístola é um belo exemplo de carinho e boa educação. Paulo não discute os direitos que as leis daquele tempo davam ao dono de um escravo. Para resolver essa questão de um escravo fugido, Paulo aplica a mais alta lei que existe, a lei do amor cristão.",
+    "introducao": "Filemom é a menor das epístolas paulinas e uma carta pessoal que também se dirige à igreja reunida na casa de Filemom. Paulo intercede em favor de Onésimo, aplicando ao relacionamento entre senhor e escravo os princípios de comunhão, reconciliação, misericórdia e nova identidade em Cristo.",
     "secoes": [
+      {
+        "id": "titulo",
+        "titulo": "Título",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "A carta recebe o nome de Filemom, seu principal destinatário. Paulo se identifica como autor e escreve a partir de sua condição de prisioneiro."
+      },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "O apóstolo Paulo escreveu a carta a Filemom. A autenticidade como epi'stola paulina nunca foi contestada de forma relevante. E"
+        "ordem": 2,
+        "conteudo": "Paulo escreveu a carta. Sua autenticidade como epístola paulina nunca foi contestada de maneira relevante, segundo a fonte."
       },
       {
-        "id": "data_e_circunstancias",
+        "id": "data_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 1,
-        "conteudo": "A carta foi escrita enquanto Paulo estava na prisao em Roma (por volta de 60 d.C.) e foi enviada a Filemom provavelmente junto com a Epi'stola aos Colossenses. Filemom era um irmao em Cristo e dono de servos em Colossos. Seu escravo Onesimo havia fugido e, de alguma maneira, encontrou Paulo em Roma. Por meio doensino de Paulo, Onesimo tomouse cristão. O propósito de Paulo em escrever era pedir a Filemom que poupasse a vida de Onesimo e o recebesse de volta, não meramente como servo, mas também como irmao em Cristo. Paulo até sugere que ficaria satisfeito se Filemom mandasse espontaneamente Onesimo de volta para lhe prestar um auxflio valioso (vv.12, 13, 20, 21). Em busca desse alvo, Paulo não se restringe a exigir o favor. Ele redige um apelo tao vigoroso quanto pode, oferecendose até mesmo para pagar as dfvidasde Onesimo, se houvesse, ao senhor que ele havia prejudicado."
+        "ordem": 3,
+        "conteudo": "A carta foi escrita enquanto Paulo estava preso em Roma, por volta de 60 d.C., provavelmente enviada juntamente com Colossenses. Filemom era cristão e proprietário de escravos em Colossos; Onésimo, seu escravo, havia fugido e encontrado Paulo em Roma."
+      },
+      {
+        "id": "genero",
+        "titulo": "Gênero",
+        "tipo": "texto",
+        "ordem": 4,
+        "conteudo": "É uma carta pessoal, a mais curta das epístolas de Paulo. Possui abertura, corpo e conclusão e é dirigida não apenas a Filemom, mas também à igreja que se reunia em sua casa, conferindo-lhe dimensão comunitária."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "Essa carta e um modelo de persuasaoatenuada, um apelo brando a quese aplique a graga do evangelho a um relacionamento interpessoal em que erros serios foram cometidos por Onesimo. Paulo esta buscando de Filemom dementia para Onesimo, que ele esta mandando de volta a Filemom (ver Data e Circunstancias).Paulo não ordena expressamente a Filemom que faga qualquer coisa (v.8), mas apela a ele “em nome do amor” (v.9).Grande parte da carta consiste desse apelo. Paulo lembra a Filemom o beneffcio espiritual que ele e a Igreja haviam recebido da fe e do amor de Filemom (w. 4-7), a propria idade avangada e oaprisionamento de Paulo (v. 9), sua afeigao por Onesimo e sua confiança nele (vv. 10- 16), sua propria disposigao para corrigir qualquer erro passado cometido por Onesimo (w. 17-19) e seu papel na salvação de Filemom (v. 19) — uma divida que Filemom poderia reconhecer por “reanimar” o “coragao” de Paulo (ou seja, Onesimo — v. 12) em Cristo (v. 20). Paulo conclui com uma nota de confiança de que Filemomagira de acordo com o conselho de Paulo (w. 21, 22). Paulo seleciona cuidadosamente suas palavras para ajudar a favorecer ou ressaltar seu argumento na carta. As palavras gregas traduzidas como “comunhao” (v. 6) e “companheiro” (v. 17) vem da mesma raiz grega. Essa forma de repetigao ressalta uma preocupagao importante de Paulo nesta carta: a comunhao ou o companheirismo que os crentes tern unscom os outros. Paulo também se aproveita do significado do nome Onesimo (“util”). No v. 11, Paulo informa a Filemom que “ele [Onesimo],antes, te foi inutil; atualmente, porém,e util, a ti e a mim”."
+        "ordem": 5,
+        "conteudo": "Paulo utiliza cuidadosamente as palavras para construir um pedido persuasivo. Ele recorre à linguagem de comunhão e companheirismo, ao significado do nome Onésimo e ao relacionamento pessoal com Filemom. A estrutura combina ação de graças, pedido, confiança e saudação."
       },
       {
-        "id": "caracteristicas_e_temas_principais",
+        "id": "caracteristicas_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "E T E M A S P R I N C I P A I S Filemom mostra o apóstolo usando toda a sua forga pessoal a fim de produzir uma resposta crista a um problema serio. Parece que o julgamento de Paulo e no sentido de que Filemom deveria mostrar misericórdia para com o servo ofensor, por causa do amor cristão por um irmao em Cristo. A carta de Paulo e cheia de paixao, mas cuidadosamente escrita para alcangar o objetivo desejado. O documento foi escrito com a propria mao de Paulo (v. 19); e muito mais do que um exemplo de retorica. A carta nos oferece uma visao afetiva do ministério do apóstolo, para que sintamos, de modo pratico, seu profundo desejo de fazer do amor cristão a primeira regra de agao humana. T E O L O G I A D E"
+        "ordem": 6,
+        "conteudo": "Reconciliação, comunhão, perdão, misericórdia, fraternidade cristã, identidade em Cristo e responsabilidade pessoal são os temas principais. Paulo não apenas ordena uma decisão, mas apela ao amor cristão de Filemom para que receba Onésimo como irmão."
+      },
+      {
+        "id": "teologia_de_filemom",
+        "titulo": "Teologia de Filemom",
+        "tipo": "texto",
+        "ordem": 7,
+        "conteudo": "A carta mostra como a graça de Cristo transforma relações concretas. Paulo baseia seu apelo nas misericórdias salvadoras compartilhadas por ele e Filemom. Onésimo, antes inútil, torna-se útil por causa da intervenção da graça. A comunhão em Cristo relativiza a antiga relação social e exige reconciliação e acolhimento fraterno."
       },
       {
         "id": "filemom_na_historia_mais_ampla_da_biblia",
         "titulo": "Filemom na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "Filemom afirma dois pontos teologicos importan tes. Primeiro, Paulo faz uma oferta graciosa no v. 18: “Se algum dano te fez ou se te deve alguma coisa, langa tudo em minha conta”. Ele esta disposto a assumir as consequências pelas agoes de Onesimo e fazer reparagao a Filemom. Essa oferta e um panorama da maneira pela qual Deus reconciliou os pecadores com ele mesmo em Cristo. Embora tenhamos ofendido a Deus, com nossos pecados contra ele e sua lei, em sua misericórdia Deus enviou seu Filho amado para sofrer a penalidade por nossos pecados, a fim de sermos restaurados a comunhao com ele. Nossos relacionamentos uns com os outros devem refletir a misericórdia de Deus para conosco, em Cristo. Segundo, no v. 16, Paulo insta Filemom a receber Onesimo “não como escravo; antes, muitoacima de escravo, como irmao carfssimo, especialmente de mim e, com maior razao, de ti, quer na came, quer no Senhor”. Paulo não esta sugerindo que, ao retornar, Onesimo não seja mais um escravo, mas que ele sera para Filemom “muito acima de escravo”, ou seja, um “irmao carfssimo...noSenhor”. Quando nos tomamos cristãos, não deixamos de ser pais, conjuges, empregados etc. Porém, o evangelho transforma radicalmente nossos relacionamentos com as pessoas de nossas vidas. Paulo ressalta esse mesmo ponto quando lembra aos donos de escravos que eles eseusescravos crentes respondem igualmente ao mesmo Senhor (Ef 6.9; Cl 4.1). Mas, nos w. 15- 16, Paulo diz que a identidade crista de Onesimo e maior do quesua identidadecomoescravo,e isso parece sugerir uma nogao de emancipagao (cf. a nota nosw. 15-16 e “História de Interpretagao”,a seguir). N A H I S T O R I A"
+        "ordem": 8,
+        "conteudo": "A carta aplica à vida cotidiana a nova humanidade criada em Cristo. A fraternidade entre os crentes não elimina automaticamente todas as estruturas sociais existentes, mas introduz nelas uma exigência radical de tratar o outro como irmão e membro do mesmo corpo."
       },
       {
         "id": "cristo_em_filemom",
         "titulo": "Cristo em Filemom",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "M A I S A M P L A B I B L I A D A Quando o homem caiu em pecado, essa queda teve consequências profundas nos relacionamentos humanos (Gn 3.16-19). Mas agragade Deus age e transforma os relacionamentos entre os irmaos crentes, um fato que tanto o Antigo como o Novo Testamento ensinam. A vida de Filemom havia reanimado “o coragao dos santos”, e esse fato levou “grande alegria e conforto” ao coragao de Paulo (v. 7). Nesta carta, Paulo convida Filemom a procurar restauração com um irmao que o ofendera. Paulo diz que, ao fazer isso, Filemom reanimaria seu “coragao em Cristo” (v. 20) e, sem duvida, o coragao dos membros da igreja que se reuniam na casa de Filemom (v. 2). E M"
+        "ordem": 9,
+        "conteudo": "Cristo é o fundamento da comunhão e da reconciliação pedidas por Paulo. A salvação compartilhada em Cristo transforma Onésimo e dá a Filemom razões para recebê-lo de modo diferente. A carta aplica a realidade da nova vida em Cristo a uma relação concreta."
       },
       {
-        "id": "assuntos_especiais",
-        "titulo": "Assuntos especiais",
+        "id": "historia_de_interpretacao",
+        "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "O fato de Paulo não ordenar diretamente que Filemom liberte Onesimo tem inquietado muitas pessoas; e muitos tern criticado a Bíblia por permitir a escravidao. Entretanto, como notamos na segao História de Interpretagao, e claro que a escravidao não era parte da ordem original criada por Deus. Por isso, seria impossfvel argumentar que a escravidao sempre foi algo inerentemente bom. Além disso, também e importante ter em mente o fato de que a escravidao praticada nos tempos bíblicos era muito diferente daquela praticada no mundo ocidental até o século XIX. Como exemplo, tanto no antigo Israel, na época do Antigo Testamento, como no Imperio Romano, na época do Novo Testamento, a escravidao não se baseava na raga da pessoa, e os escravos em ambos os sistemas tinham a oportunidade de comprar sua liberdade. Embora seja um erro exaltar a escravidao antiga, também e necessario lembrar que a escravidao no mundo antigo era quase a única maneira de lidar com o empobrecimento. Quando alguem não podia cuidar de si mesmo e de sua familia, venderse a servidao poderia significar a diferenga entre a vida e a morte. Em outras palavras, a escravidao do mundo antigo capacitava as pessoas a escapar da fome extrema na ausencia de uma assistencia beneficente ou govemamental. Deus revelouse a pessoas envolvidas em pecado pessoal, bem como em estruturas pecaminosas que existem num mundo cafdo. A escravidao era importante para o sistema economico antigo e impedia muitas pessoas de passar fome. Se os apóstolos e os profetas exigissem sua aboligao imediata, as coisas ficariam muito piores não somente para os servos, mas também para toda a sociedade. Pessoas teriam morrido de fome e se instalariam o caos e o colapso economicos. A providencia mais amorosa na ocasiao era regular a escravidao e revelar princípios que, com o passar do tempo, levariam a aboligao da escravidao, sem tornar a vida muito pior para aqueles que não tinham nenhuma outra opgao para sobreviver, exceto a escravidao. Isso e exatamente o que encontramos na Escritura: uma transformagao do relacionamento senhorescravo que leva inevitavelmente ao fim da escravidao quando o evangelho e verdadeira mente abragado e suas implicagoes para a socieda de sao vivenciadas. E S B O g O D E F I L E M O M I. SAUDAgOES INTRODUTORIAS (VV.1-3) II. ACAO DE GRAMAS (VV. 4-7) III. O PEDIDO DE PAULO EM FAVOR DE ONESIMO (VV. 8-21) IV. VISITA PRETENDIDA (VV. 21, 22) AO (VV. 23-25) V. SAUDACOES FINAIS E BEN^"
+        "ordem": 10,
+        "conteudo": "Filemom foi especialmente debatida na história cristã em relação à escravidão. A fonte adverte contra a conclusão simplista de que a carta, isoladamente, ordena uma abolição imediata; ao mesmo tempo, destaca que a Escritura não apresenta a escravidão como instituição da criação e aponta para sua superação no horizonte da redenção. O princípio central da carta é a fraternidade em Cristo."
       },
       {
-        "id": "esboco",
+        "id": "esboco_de_filemom",
         "titulo": "Esboço de Filemom",
-        "tipo": "outline",
-        "ordem": 7,
-        "conteudo": "Prefácio e saudação (vs. 1-3) 1. A fé e o amor de Filemom (vs. 4-7) 2. Um apelo em favor de Onésimo (vs. 8-22) Saudações e bênção (vs. 23-25)"
+        "tipo": "auto",
+        "ordem": 11,
+        "conteudo": [
+          {
+            "titulo": "I. SAUDAÇÕES INTRODUTÓRIAS (Fm vv. 1-3)"
+          },
+          {
+            "titulo": "II. AÇÃO DE GRAÇAS (Fm vv. 4-7)"
+          },
+          {
+            "titulo": "III. O PEDIDO DE PAULO EM FAVOR DE ONÉSIMO (Fm vv. 8-20)"
+          },
+          {
+            "titulo": "IV. VISITA PRETENDIDA (Fm vv. 21, 22)"
+          },
+          {
+            "titulo": "V. SAUDAÇÕES FINAIS E BÊNÇÃO (Fm vv. 23-25)"
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "57_Filemom.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte": {
+    "arquivo": "imagens do conjunto Fm",
+    "criterio": "Conteúdo reconstruído a partir das imagens fornecidas pelo usuário, com OCR em colunas independentes, normalização de hifenização e correção de erros evidentes de reconhecimento, preservando o sentido e a organização da fonte."
+  }
 }

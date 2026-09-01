@@ -2,88 +2,111 @@
   "schema": "apoio-livro-v1",
   "id": "Ct",
   "nome": "Cântico dos Cânticos",
-  "abreviacao": "Cântico dos Cânticos",
   "material": {
     "titulo": "Sobre Cântico dos Cânticos",
-    "introducao": "Cantares é uma coleção de poemas de amor, a maior parte em forma de canções próprias para festas de casamento ( Jr 33.11). Em algumas traduções, o livro é chamado de “Cântico dos Cânticos de Salomão”. Essas canções de amor têm sido muitas vezes interpretadas pelos judeus como um retrato de Deus como esposo do seu povo ( Os 2.16-20). Alguns cristãos entendem que se trata de uma figura do relacionamento entre Cristo e a Igreja ( Ap 21.2,9). Na opinião de outros, este livro ensina a dignidade e a beleza do amor humano. Cantares foi incluído entre os livros sagrados da Bíblia porque trata da pureza e da santidade do casamento, que foi instituído por Deus. O povo tende a considerar a infidelidade como coisa sem importância, mas o verdadeiro amor permanece fiel, apesar de todas as dificuldades e tentações.",
+    "introducao": "Cântico dos Cânticos é uma coleção poética que celebra o amor entre homem e mulher. O livro utiliza linguagem de desejo, admiração, beleza, casamento e fidelidade, apresentando o amor conjugal como realidade boa e intensa. Sua forma poética e a identificação das vozes dos amantes produzem diferentes leituras sobre sua estrutura e interpretação.",
     "secoes": [
       {
-        "id": "titulo_e_autor",
-        "titulo": "Título e autor",
+        "id": "titulo",
+        "titulo": "Título",
         "tipo": "texto",
-        "ordem": 0,
-        "conteudo": "O título do livro em hebraico, “Cantico dos Canticos”, e uma construqao que expressa o superlativo (cf. “Senhor dos senhores”). Em outras palavras, “O Cantico Excelente”. Na tradição inglesa, o livro recebe nomes diferentes. Um deles e “Canticles” (Canticos), uma forma abreviada e anglicizada do título em latim, Canticum Canticorum, que e uma tradugao exata do tftuloem hebraico.Outro tftuloe “OCantico de Salomao”,com base na declaragaode Canticos1.1."
+        "ordem": 1,
+        "conteudo": "O título deriva da expressão hebraica “Cântico dos Cânticos”, um superlativo que pode ser entendido como “o cântico por excelência”. A tradução grega e a tradição latina preservaram a ideia de um cântico especialmente destacado."
       },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
-        "ordem": 1,
-        "conteudo": "De acordo com 1.1, Cantico dos Canticos e “de Salomao”. A expressao pode ser traduzida como “por Salomao” (como seu autor), “para Salomao” (como a pessoa a quem o livro e dedicado) ou “associado a Salomao” (como um dos famosos compositores de Israel; ver IRs 4.32). O ponto de vista tradicional, tanto de judeus como de cristãos, e o de que Salomao e o autor desse livro. D A T A E C I R C U N S T A N C I A S Se Cantico dos Canticos foi escrito “por Salomao”, sua composição ocorreu em meados do século X a.C.Se foi “dedicadoa Salomao”,isso favorece uma dataanterior.Algunsentendem a referendaaTirza em 6.4 como indicaqao de uma data anterior, ou quando Tirza era a capital das dez tribos do Norte (por volta de 900 a.C.), ou mesmo no ini'cio do reino deSalomao e antes de surgir a hostilidade entre Israel e Judá (por volta de 950 a.C.). Não e possi'vel ter certezaem relaqaoa esse assunto,vistoqueTirza provavelmente signifka algo como “agradavel” ou “belo”, o que explica, assim, a referenda a essa cidade especifica. Se Cantico dos Canticos e “associado a Salomao”, não temos nenhuma referenda quanto a dataqao do livro. Embora toda a Escritura tenha sido escrita para todos os tempos e todos os lugares, algunslivros tern um sentimento mais atemporal do que outros. E Cantico dos Canticose um desses livros. Diferentemente dos livrosde Reis,que, originalmente,foram escritos para a comunidade do exílio na Babilônia, ou dos livros das Cronicas, que, originalmente, foram escritos para a comunidade posexflica na Judeia, o Cantico dos Canticos não oferece evidencia de uma ocasiaoespecifica para sua composição. Nenhuma audiencia especifica parece estar em vista."
+        "ordem": 2,
+        "conteudo": "O livro é tradicionalmente associado a Salomão, com base na referência a ele no texto. O material reconhece, porém, debates sobre a extensão da participação de Salomão na composição e sobre a formação da coleção."
+      },
+      {
+        "id": "data_e_circunstancias",
+        "titulo": "Data e circunstâncias",
+        "tipo": "texto",
+        "ordem": 3,
+        "conteudo": "A data e a formação do livro são discutidas a partir da linguagem, referências geográficas e associação tradicional com Salomão. O material apresenta propostas diferentes, sem depender de uma única reconstrução para compreender sua mensagem."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "A excegao do versículo de abertura, Cantico dos Canticos e uma poesia. De certo modo, o livro inteiro e um poema; por isso, o título “O Cantico [singular] dos Canticos [plural]”. Mas o livro também e uma coleqao de pequenos poemas. Os limites desses poemas individuais nem sempre sao claros, como ficaevidente quandoconsultamos diferentes tradugoes ou comentarios contemporaneos. Existem varias perguntasque demandam respostas em relagaoao genero de CanticodosCanticos.A primeira pergunta e:Canticodos Canticose uma alegoria ou uma poesia deamor? Aabordagem alegorica paraainterpretaqaodolivrotern predominadotanto na história judaica como na história crista. A maioria dos comentaristascontemporaneos,tanto judeus como cristãos,da preferencia a uma leitura literal do livrocomo poesia deamor,eessaea posigaoqueadotamosaqui.Ver História de Interpretagao. A segunda pergunta e: Cantico dos Canticos deve ser lido como um drama ou simplesmente como uma antologia de poemas de amor? Alguns leem o Cantico como um drama que contem dois personagens:a mulher sulamita e o rei/pastor. Outros o leem como um drama que contem, pelo menos, tres personagens:a sulamita, o pastor e o rei— um enredo centralizado na questão de a sulamita ter minar ou não com seu verdadeiro amor, o pastor, ou com um homem poderoso, o rei.(Segundo esse ponto de vista,oCanticotern um enredosemelhante a outras historias tanto antigas como modemas.) Embora a leitura como um drama seja possi'vel,comentaristas que adotam essa posigao não tern sido capazes de alcangar unanimidade em relação ao número de personagens ou ao fluxo de pensamento doenredo. Portanto, parece que estamos em solo mais segurose lermos o livrocomo uma antologia. A terceira pergunta e: a antologia e uma conexao de poemas livres ou uma antologia altamente estruturada? Num extremo do espectro de opinioes,o Canticoe vistocomo uma conexao de poemas livres reunidoscom baseem temase imagenscomuns. No outro extremo, o Cantico e visto como uma estrutura concentrica de 28 partes. A evidencia no texto parece levarnos para longe de ambos os extremos e a conclusaode que o livroe uma antologia deamor moderadamente estruturada, em que ha movimento do comeqo ao fim, mas que fica aquem do desenvolvimento de um enredo completo."
-      },
-      {
-        "id": "caracteristicas_literarias",
-        "titulo": "Características literárias",
-        "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "Ha uma repetiqao crucial que parece desempenhar papel relevante na macroestrutura do livro. “Conjurovos, 6 filhas de Jerusalém” (2.7; 3.5; 5.8; 8.4). Essa repetiqao e semelhante a repetigao de “Sao estasas geragoes de” no livrode Genesis, uma repetigao que desempenha importante papel na estrutura de Genesis. E interessante observar que, em ambos os livros, as repetigoes sao exatas, exceto em um texto modificado em cada livro (Gn 5.1; Ct 5.8). Em vista dessa repetigao quadrupla em Cantico dos Canticos, parece que o livro pode ser dividido em seis segoes: Introdução (1.1); Grupo Um (1.2-2.7); Grupo Dois (2.8-3.5); Grupo Tres (3.6—5.8);Grupo Quatro (5.9-8.4) e Conclusao (8.5- 14). Evidencias adicionais para essa macroestrutura se encontram na repetigao da linha “A sua mao esquerda esteja debaixo de minha cabega, e a direita me abrace”. Essa linha ocorre duas vezes,em 2.6 e 8.3, imediatamente antes da primeira e da quarta ocorrencias do refrao. Embora ofluxo de pensamentofique aquem de um enredo de desenvolvimentocompleto, parece realmente haver movimento nos grupos dos poemas. Depois do tl'tulo (1.1), ha uma enfase, no primeiro grupo, no desejo da mulher por seu amado (1.2— 2.7). Isso e seguido pelosegundo grupo, com enfase para a aproximagao doamado (2.8-3.5).Os poemas do terceiro grupo estaofocados na perda do amado por parte da mulher (3.6—5.8), enquanto o quarto grupo nos conduz ao retomo do amado (5.9-8.4). Esse quase enredo chega a consumação em 8.5-14. E"
+        "ordem": 4,
+        "conteudo": "Cântico dos Cânticos é poesia amorosa. Sua linguagem utiliza imagens da natureza, repetições, diálogos e descrições do amado e da amada. A alternância de vozes torna possível acompanhar diferentes momentos de desejo, encontro, separação e reencontro."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "T E M A S P R I N C I P A I S 0 tema predominante de Cantico dos Canticos e amor e sexo humano. Ha, porém, tressubtemas.0 primeiro e deleite,salientado em 1.2-2.7 e 3.6—5.8. Tanto o homem como a mulher expressam deleite sem pudor um no outro. “Eis que es formosa, d querida minha” (1.15); “Como esformoso, amado meu” (1.16). O Cantico contem muitas imagens que expressam esse deleite. Portanto, qualquer estudo sobre o livro deve incluir uma exposigao dessas imagens. O segundo subtema e desapontamento, e esse e o foco de 3.6-5.8. A mulher compreende que ha riscos no amor, mas esta disposta a assumi- -los. Infelizmente, algumas vezes, assumir riscos resulta em desapontamento. Esse desapontamento e expresso mais acentuadamente em 5.6: “Abri ao meu amado, mas ja ele se retirara e tinha ido embora”. Apesar dos desapontamentos experimentados no amor, ha um terceiro subtema: o desejo, que encontra expressao especial no ultimo grupo de poemas (8.5-14). “O amor e forte como a morte” (8.6); “As muitas aguas não poderiam apagar o amor” (8.7). Por isso, o Cantico termina com uma expressao de desejo profundo que vence os desapontamentos: “Vem depressa, amado meu, fazete semelhante ao gamoou aofilho da gazela,que saltam sobre os montes aromaticos” (8.14)."
-      },
-      {
-        "id": "teologia_de_cantico_dos_canticos",
-        "titulo": "Teologia de Cântico dos Cânticos",
-        "tipo": "texto",
         "ordem": 5,
-        "conteudo": "O livro e mais do que sobre amor e sexo; e sobre amor e sexo redimidos. As imagens paradisfacas nos lembram o princfpio, antes da Queda, quando o amor humano era tudo que Deus tencionou que fosse e nada do que Deus não tencionou que fosse. Os temas do deleite e desejo, neste livro, mostramnos que amor e sexo humano não sao inerentemente maus; eles ainda content uma grande medida da beleza tencionada por Deus no princfpio. Isso contribui para uma etica sexual bfblica bem equilibrada que envolve a bondade do relacionamento sexual entre homem e mulher, quando expresso no contexto apropriado— a aliança bfblica do casamento, em que marido e mulher tomamse uma só carne (Gn 2.18-25). Historicamente, muitos interpretes se deixaram confundir pelas imagens sensuais do livro, em grande parte por causa das pressuposigoes remanescentes dos filosofos gregos, que viam o corpo e o prazer ffsico como males, coisas que deveriam ser rejeitadas ou evitadas, para o bem da alma. Mas as Escrituras não ensinam que o espírito e bom e o corpo e mau; pelo contrario, tanto o ffsico como o espiritual fazem parte da boa criação do Senhor. Deus fez um mundo que, originalmente, era “muito bom”, ordenando aos seres humanos que procriassem e enchessem o mundo (Gn 1.26-31). Portanto, o sexo no contexto do casamento e bom e santo, um dom de Deus para o gozo dos conjuges e a promogao de intimidade ffsica,espiritual e emocional entre marido e mulher. Originalmente, Cantico dos Canticos foi escrito para comunicar esses temas. E, embora aponte, em ultima analise, para Cristo, não devemos ter receio de ler o livro como uma expressao e uma afirmação da benignidade de amor e sexo dentro do casamento. ocasioesde desapontamento,como o Cantico reconhece (3.6—5.8). Dessa maneira, o Cantico nos lembra que Cristo e o único Esposo perfeito.Somente ele pode satisfazer todas as nossas necessidades. Apesar de a interpretagao alegorica de Cantico dos Canticos não ser correta, o fato e que o livro e uma ilustragao do amor de Cristo por sua Igreja. Em vista do uso consistente, tanto no Novo como no Antigo Testamento, do casamento como uma figura do relacionamento de Deus com seu povo (cf. Ez 16; Os 1-3; Ef 5.21-33), pareceria estranho o Cantico não nos oferecer um vislumbre desse vinculo. Deus planejou o casamento para refletir seu relacionamento conosco. Portanto, parece natural que Deus tenha inspirado Cantico dos Canticos para refletir esse relacionamento. E, embora o leitor deva evitar o excesso da abordagem alegorica, e convidado a meditar nos temas do Cantico como janelas para nosso relacionamento com Deus. H I S T O R I A D E I N T E R P R E T A G A O Temos evidencias de que, ja no ano 100 d.C., alguns interpretes judeus sentiam desconforto ao ler Cantico dos Canticos de forma literal. Nessa época, Rabi Akiva afirmou que todo aquele que usa o livro de maneira literal não tem parte na vida por vir. Tra- O D E C A N T I C O D O S C A N T I C O S E S B O^ Título (1.1) I. O DESEJO DA MULHER POR SEU AMADO (1.2-2.7) II. A APROXIMACAO DO AMADO (2.8-3.5) III. A PERDA DO SEU AMADO (3.6-5.8) IV. A REUNIAO DOS AMANTES (5.9-8.4) CONSUMACAO (8.5-14)"
+        "conteudo": "O tema predominante é o amor entre homem e mulher. O livro celebra atração, exclusividade, desejo, beleza, alegria e fidelidade. Também enfatiza que o amor não deve ser despertado ou tratado de modo irresponsável. A poesia valoriza tanto a dimensão física quanto a emocional do relacionamento."
       },
       {
-        "id": "cantico_dos_canticos_na_historia_mais_ampla_da_biblia",
-        "titulo": "Cântico dos Cânticos na história mais ampla da Bíblia",
+        "id": "caracteristicas_literarias",
+        "titulo": "Características literárias",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "O livro e mais do que sobre amor e sexo; e sobre amor e sexo redimidos. As imagens paradisfacas nos lembram o princfpio, antes da Queda, quando o amor humano era tudo que Deus tencionou que fosse e nada do que Deus não tencionou que fosse. Os temas do deleite e desejo, neste livro, mostramnos que amor e sexo humano não sao inerentemente maus; eles ainda content uma grande medida da beleza tencionada por Deus no princfpio. Isso contribui para uma etica sexual bfblica bem equilibrada que envolve a bondade do relacionamento sexual entre homem e mulher, quando expresso no contexto apropriado— a aliança bfblica do casamento, em que marido e mulher tomamse uma só carne (Gn 2.18-25). Historicamente, muitos interpretes se deixaram confundir pelas imagens sensuais do livro, em grande parte por causa das pressuposigoes remanescentes dos filosofos gregos, que viam o corpo e o prazer ffsico como males, coisas que deveriam ser rejeitadas ou evitadas, para o bem da alma. Mas as Escrituras não ensinam que o espírito e bom e o corpo e mau; pelo contrario, tanto o ffsico como o espiritual fazem parte da boa criação do Senhor. Deus fez um mundo que, originalmente, era “muito bom”, ordenando aos seres humanos que procriassem e enchessem o mundo (Gn 1.26-31). Portanto, o sexo no contexto do casamento e bom e santo, um dom de Deus para o gozo dos conjuges e a promogao de intimidade ffsica,espiritual e emocional entre marido e mulher. Originalmente, Cantico dos Canticos foi escrito para comunicar esses temas. E, embora aponte, em ultima analise, para Cristo, não devemos ter receio de ler o livro como uma expressao e uma afirmação da benignidade de amor e sexo dentro do casamento."
+        "conteudo": "O livro contém repetições e refrões, imagens florais e animais, descrições do corpo e mudanças de cenário. A identificação dos personagens e a sequência exata dos poemas são discutidas entre intérpretes. O material reconhece diferentes propostas estruturais, mas ressalta a unidade temática da celebração do amor."
       },
       {
-        "id": "cristo_em_cantico_dos_canticos",
-        "titulo": "Cristo em Cântico dos Cânticos",
+        "id": "cantico_na_historia_mais_ampla_da_biblia",
+        "titulo": "Cântico dos Cânticos na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "N A"
+        "conteudo": "O livro apresenta uma visão positiva do amor conjugal dentro da criação. O material também discute a tradição alegórica, na qual o relacionamento entre os amantes foi aplicado à relação entre Deus e seu povo, e posteriormente entre Cristo e a Igreja. Essas leituras devem ser distinguidas do sentido poético imediato do livro."
+      },
+      {
+        "id": "teologia_de_cantico",
+        "titulo": "Teologia de Cântico dos Cânticos",
+        "tipo": "texto",
+        "ordem": 8,
+        "conteudo": "O livro afirma a bondade do amor conjugal e da sexualidade dentro de uma relação de compromisso. O amor é apresentado como poderoso, exclusivo e precioso. A linguagem do jardim, da criação e da beleza contribui para uma visão positiva dos dons de Deus."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 8,
-        "conteudo": "M A I S A M P L A D A B I B L I A As imagens de jardim no Cantico dosCanticos (ver references explfcitas em 4.12, 15, 16; 5.1; 6.2; 8.3) tencionam lembrarnos o jardim do Eden, onde o primeiro homem e a primeira mulher “estavam nus e não se envergonhavam” (Gn 2.25). Dessa maneira, o Cantico nos leva de volta ao princfpio, quando os seres humanos estavam em relacionamento perfeito com Deus e um com o outro. Lembranos que amor, sexo e casamento eram dons originalmente bons e, de muitas maneiras, continuant a ser bons; portanto, podem ser redimidos da negatividade que, com muita frequencia, os rodeia, quando vivemos em harmonia com o desfgnio do Senhor para eles. A redenção e a restauração desses relacionamentos podem ser concretizadas crescentemente nesta vida, enquanto esperamos a consumagao de todas as coisas, em que tudo sera plenamente restaurado. A consumagaofoi garantida pelo Esposo perfeito, aquele que redimiu sua esposa ao amala ese entregar por ela (Ef 5.22-33). O tema de desapontamento em Cantico dos Canticos nosconfronta com o fato de que o amor humano, como todas as outras dimensoes da vida, foi adversamente afetado pela Queda (cf.Gn 3.16-19). Em um mundo cafdo, oamor humano não e mais tudo que Deus tencionavaque fosse. Isso direciona nossa atenção para a esperanga de redenção, produzindo em nos anseio pela restauração de todos os nossos relacionamentos e pela renovação da criação que os profetas revelaram como a consumação do piano doSenhor para o cosmo (Is 65.17-25; Dn 12.1, 2; cf. Rm 8.18-25). Essa restauração e essa consumagao,explicam os profetas,acontecerao somente por meioda obra do Messias (Is 53; Am 9.11, 12). N O C A N T I C O C R I S T O D O S C A N T I C O S Como ja dissemos, o Cantico produz no leitor a esperanga da plenitude de relacionamento que Deus planejou para homens e mulheres no jardim. Por isso, no decorrer da história, os interpretes cristãos não estavam totalmente equivocados em entender o livro como uma revelação de Cristo. Somente Cristo pode satisfazer totalmente os anseios dos seres humanos por intimidade, porque ele e aquele que prove os rios de agua viva, os quais nos saciam de tal modo que nunca mais sentiremos sede (Jo 4.13,14; 7.37, 38). Até os melhores casamentos tern ocasioesde desapontamento,como o Cantico reconhece (3.6—5.8). Dessa maneira, o Cantico nos lembra que Cristo e o único Esposo perfeito.Somente ele pode satisfazer todas as nossas necessidades. Apesar de a interpretagao alegorica de Cantico dos Canticos não ser correta, o fato e que o livro e uma ilustragao do amor de Cristo por sua Igreja. Em vista do uso consistente, tanto no Novo como no Antigo Testamento, do casamento como uma figura do relacionamento de Deus com seu povo (cf. Ez 16; Os 1-3; Ef 5.21-33), pareceria estranho o Cantico não nos oferecer um vislumbre desse vinculo. Deus planejou o casamento para refletir seu relacionamento conosco. Portanto, parece natural que Deus tenha inspirado Cantico dos Canticos para refletir esse relacionamento. E, embora o leitor deva evitar o excesso da abordagem alegorica, e convidado a meditar nos temas do Cantico como janelas para nosso relacionamento com Deus. H I S T O R I A D E I N T E R P R E T A G A O Temos evidencias de que, ja no ano 100 d.C., alguns interpretes judeus sentiam desconforto ao ler Cantico dos Canticos de forma literal. Nessa época, Rabi Akiva afirmou que todo aquele que usa o livro de maneira literal não tem parte na vida por vir. Tradicionalmente, o judaismo tem entendido o livro como uma alegoria da história de redenção, de Adao ao Messias, ou como uma alegoria de Deus e o crente individual. Historicamente, os interpretes cristaosseguiiam essa posigao,como exemplificado nos escritos de Hipolito (por volta de 200 d.C.), Origenes (por volta de 250 d.C.),Jeronimo (por volta de 400 d.C.)e Bemardo de Claraval (por volta de 1135). Muitos dos reformadores protestantes e dos puritanos também entenderam o livro dessa maneira. Uma mudança nessa interpretagao comegou a ter lugar no século XIX, e interpretes judeus e cristãos tem concordado, quase unanimemente, desde o século XX, que Cantico dos Canticos deve ser entendido não como uma alegoria, mas, sim, como uma poesia de amor.Sem duvida, ha muitas razoes para essa mudança na interpretagao do livro, mas duas sao especialmente claras. Uma esta arraigada no retomo da Reforma Protestante ao estudo da Bíblia nas linguas originais e com uma hermeneutica essencialmente historicogramatical. Não ha nada no proprio texto que leve alguem a entendelo de maneira alegorica. Nesse aspecto,a diferenga entre Cantico dos Canticose O peregrino,por exemplo,eobvia. A outra razao para essa mudança na interpretagao esta calcada nosurgimento da arqueologia modema nosseculos XIX e XX, bem como nas descobertas de poesias de amor semelhantes a Cantico dos Canticos procedentesdoantigo Oriente Próximo. O D E C A N T I C O D O S C A N T I C O S E S B O^ Título (1.1) I. O DESEJO DA MULHER POR SEU AMADO (1.2-2.7) II. A APROXIMACAO DO AMADO (2.8-3.5) III. A PERDA DO SEU AMADO (3.6-5.8) IV. A REUNIAO DOS AMANTES (5.9-8.4) Consumação (8.5-14)"
+        "ordem": 9,
+        "conteudo": "Cântico dos Cânticos recebeu interpretações literais e alegóricas. A interpretação alegórica teve grande influência na tradição judaica e cristã. Leituras modernas frequentemente enfatizam o sentido amoroso e conjugal, enquanto o material reconhece que a tradição teológica encontrou no livro aplicações legítimas sem necessariamente negar seu sentido original."
+      },
+      {
+        "id": "cristo_no_cantico",
+        "titulo": "Cristo no Cântico dos Cânticos",
+        "tipo": "texto",
+        "ordem": 10,
+        "conteudo": "O material relaciona Cântico dos Cânticos a Cristo principalmente por meio da tradição que aplica a linguagem do amor ao relacionamento entre Cristo e seu povo. Essa leitura encontra paralelos no uso neotestamentário da linguagem nupcial para falar da Igreja, mas o sentido original do poema continua sendo a celebração do amor conjugal."
       },
       {
         "id": "esboco",
         "titulo": "Esboço de Cântico dos Cânticos",
-        "tipo": "outline",
-        "ordem": 9,
-        "conteudo": "1. Título (1.1) 2. Cânticos (1.2—8.14) a. Primeiro (1.2—2.7) b. Segundo (2.8—3.5) c. Terceiro (3.6—5.1) d. Quarto (5.2—6.3) e. Quinto (6.4—8.4) f. Sexto (8.5-14)"
+        "tipo": "auto",
+        "ordem": 11,
+        "conteudo": [
+          {
+            "titulo": "I. O desejo da mulher por seu amado (1.2–2.7)",
+            "itens": []
+          },
+          {
+            "titulo": "II. A preparação do amado (2.8–3.5)",
+            "itens": []
+          },
+          {
+            "titulo": "III. A apreensão do amado (3.8–5.3)",
+            "itens": []
+          },
+          {
+            "titulo": "IV. A reunião dos amantes (5.9–8.4)",
+            "itens": []
+          },
+          {
+            "titulo": "V. Conclusão (8.5-14)",
+            "itens": []
+          }
+        ]
       }
     ]
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "22_C#U00e2ntico dos C#U00e2nticos.pdf (PDF fornecido pelo usuário)",
-  "fontes_editoriais": [
-    "ARC-2009",
-    "NTLH-2000"
-  ]
+  "fonte_base": "03_Poeticos.zip — imagens de introdução e esboço fornecidas pelo usuário"
 }
