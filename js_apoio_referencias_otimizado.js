@@ -137,53 +137,97 @@
         return data;
     }
 
-    // Renderiza o Esboço diretamente da árvore armazenada no JSON.
-    // Não tenta reconstruir níveis a partir de texto corrido.
-    function renderOutline(value) {
-        let items = [];
+    function parseOutline(text) {
+        const raw = String(text || '').replace(/\s+/g, ' ').trim();
+        if (!raw) return [];
 
-        if (Array.isArray(value)) {
-            items = value;
-        } else if (value && typeof value === 'object') {
-            items = Array.isArray(value.itens) ? value.itens : [];
-        } else if (typeof value === 'string' && value.trim()) {
-            // Compatibilidade com versões antigas: somente neste caso
-            // usamos o parser legado de texto.
-            const raw = value.replace(/\s+/g, ' ').trim();
-            const mains = raw.split(/\s+(?=\d+\.\s)/).filter(Boolean);
-            items = mains.map(main => {
-                const m = main.match(/^(\d+)\.\s*(.*)$/);
-                if (!m) return { nivel: 1, titulo: main, subniveis: [] };
-                return { nivel: 1, titulo: `${m[1]}. ${m[2]}`, subniveis: [] };
+        const mains = raw.split(/\s+(?=\d+\.\s)/).filter(Boolean);
+        const result = [];
+
+        mains.forEach(main => {
+            const m = main.match(/^(\d+)\.\s*(.*)$/);
+            if (!m) {
+                result.push({ level: 1, text: main });
+                return;
+            }
+
+            const body = m[2].trim();
+            const subparts = body.split(/\s+(?=[a-z]\.(?:\s|$))/i).filter(Boolean);
+
+            result.push({
+                level: 1,
+                text: `${m[1]}. ${subparts.shift() || ''}`
             });
+
+            subparts.forEach(part => result.push({
+                level: 2,
+                text: part
+            }));
+        });
+
+        return result;
+    }
+
+    /*
+       Renderização hierárquica do esboço.
+       Aceita tanto o formato antigo (texto) quanto o formato JSON
+       hierárquico usado nos novos materiais:
+
+       [
+         { titulo: 'I. ...', itens: [...] },
+         { titulo: 'II. ...', itens: [
+             'A. ...',
+             { titulo: 'B. ...', itens: ['1. ...'] }
+         ] }
+       ]
+
+       A profundidade real é preservada até quantos níveis o JSON possuir.
+    */
+    function renderOutline(value) {
+        if (Array.isArray(value)) {
+            if (!value.length) {
+                return '<p class="apoio-opt-muted">Esquema de estudo não disponível.</p>';
+            }
+
+            const renderItems = (items, level) => items.map(item => {
+                if (item === null || item === undefined) return '';
+
+                if (typeof item !== 'object') {
+                    return `<div class="apoio-opt-outline-item level-${level}" style="--apoio-outline-level:${level}">${esc(item)}</div>`;
+                }
+
+                const titulo = item.titulo ?? item.nome ?? item.heading ?? '';
+                const texto = item.texto ?? item.conteudo ?? item.descricao ?? '';
+                const children = Array.isArray(item.itens) ? item.itens : null;
+
+                let html = '';
+
+                if (titulo) {
+                    html += `<div class="apoio-opt-outline-item level-${level}" style="--apoio-outline-level:${level}">${esc(titulo)}</div>`;
+                } else if (texto) {
+                    html += `<div class="apoio-opt-outline-item level-${level}" style="--apoio-outline-level:${level}">${esc(texto)}</div>`;
+                }
+
+                if (children && children.length) {
+                    html += renderItems(children, level + 1).join('');
+                }
+
+                return html;
+            });
+
+            return `<div class="apoio-opt-outline">${renderItems(value, 1).join('')}</div>`;
         }
+
+        // Compatibilidade com materiais antigos que armazenam o esboço como texto.
+        const items = parseOutline(value);
 
         if (!items.length) {
-            return '<p class="apoio-opt-muted">Esboço não disponível.</p>';
+            return '<p class="apoio-opt-muted">Esquema de estudo não disponível.</p>';
         }
 
-        const renderItems = (list, depth = 1) => list.map(item => {
-            if (!item || typeof item !== 'object') return '';
-
-            const titulo = item.titulo ?? item.text ?? item.nome ?? '';
-            const referencia = item.referencia
-                ? `<span class="apoio-opt-outline-ref">${esc(item.referencia)}</span>`
-                : '';
-            const children = Array.isArray(item.subniveis) ? item.subniveis : [];
-
-            return `
-                <div class="apoio-opt-outline-item level-${depth}">
-                    <div class="apoio-opt-outline-title">
-                        ${esc(titulo)}${referencia}
-                    </div>
-                    ${children.length
-                        ? `<div class="apoio-opt-outline-children">${renderItems(children, depth + 1)}</div>`
-                        : ''}
-                </div>
-            `;
-        }).join('');
-
-        return `<div class="apoio-opt-outline">${renderItems(items)}</div>`;
+        return `<div class="apoio-opt-outline">${items.map(item =>
+            `<div class="apoio-opt-outline-item level-${item.level}" style="--apoio-outline-level:${item.level}">${esc(item.text)}</div>`
+        ).join('')}</div>`;
     }
 
     function ensureCrossRefDrawer() {
@@ -725,11 +769,28 @@
     function renderMaterialValue(value, tipo = 'texto') {
         if (
             tipo === 'outline' ||
-            tipo === 'esboco' ||
             tipo === 'esquema' ||
             tipo === 'esquema_conteudo'
         ) {
             return renderOutline(value);
+        }
+
+        if (tipo === 'auto') {
+            const isHierarchicalOutline = Array.isArray(value)
+                ? value.some(item =>
+                    item && typeof item === 'object' &&
+                    typeof item.titulo === 'string' &&
+                    Array.isArray(item.itens)
+                )
+                : !!(
+                    value && typeof value === 'object' &&
+                    typeof value.titulo === 'string' &&
+                    Array.isArray(value.itens)
+                );
+
+            if (isHierarchicalOutline) {
+                return renderOutline(value);
+            }
         }
 
         if (tipo === 'lista') {

@@ -82,20 +82,65 @@
     color: #b33;
 }
 
+/* ============================================================
+   ESBOÇOS HIERÁRQUICOS
+   Suporta qualquer profundidade produzida pelo JSON.
+   Todos os níveis mantêm 14px; a hierarquia é dada por
+   recuo, peso e espaçamento.
+   ============================================================ */
+
 .apoio-opt-outline {
+    --apoio-outline-indent: 18px;
     display: flex;
     flex-direction: column;
     gap: 7px;
+    width: 100%;
 }
 
 .apoio-opt-outline-item {
-    line-height: 1.45;
+    --apoio-outline-level: 1;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: calc((var(--apoio-outline-level) - 1) * var(--apoio-outline-indent));
+    font-size: 14px;
+    line-height: 1.5;
     color: var(--text, #222);
+    overflow-wrap: anywhere;
 }
 
+/* Nível principal: I., II., III... */
+.apoio-opt-outline-item.level-1 {
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+/* Segundo nível: A., B., C... */
 .apoio-opt-outline-item.level-2 {
-    padding-left: 18px;
-    color: #65727a;
+    font-weight: 600;
+    opacity: .94;
+}
+
+/* Terceiro nível: 1., 2., 3... */
+.apoio-opt-outline-item.level-3 {
+    font-weight: 400;
+    opacity: .92;
+}
+
+/* Quarto nível e níveis seguintes */
+.apoio-opt-outline-item.level-4,
+.apoio-opt-outline-item.level-5,
+.apoio-opt-outline-item.level-6,
+.apoio-opt-outline-item.level-7,
+.apoio-opt-outline-item.level-8,
+.apoio-opt-outline-item.level-9,
+.apoio-opt-outline-item.level-10 {
+    font-weight: 400;
+    opacity: .90;
+}
+
+/* Compatibilidade com qualquer nível adicional */
+.apoio-opt-outline-item[class*="level-"] {
+    font-size: 14px;
 }
 
 .apoio-opt-books {
@@ -445,23 +490,4 @@
 
 .apoio-opt-table th {
     font-weight: 700;
-}
-
-
-/* ============================================================
-   AJUSTE DO ESBOÇO
-   Mesmo tamanho tipográfico das demais seções do Material de Apoio.
-   ============================================================ */
-
-.apoio-opt-outline {
-    font-size: 14px;
-}
-
-.apoio-opt-outline-item {
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-.apoio-opt-outline-item.level-2 {
-    font-size: 14px;
 }
