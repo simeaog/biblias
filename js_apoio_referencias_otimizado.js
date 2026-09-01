@@ -137,49 +137,53 @@
         return data;
     }
 
-    function parseOutline(text) {
-        const raw = String(text || '').replace(/\s+/g, ' ').trim();
-        if (!raw) return [];
+    // Renderiza o Esboço diretamente da árvore armazenada no JSON.
+    // Não tenta reconstruir níveis a partir de texto corrido.
+    function renderOutline(value) {
+        let items = [];
 
-        const mains = raw.split(/\s+(?=\d+\.\s)/).filter(Boolean);
-        const result = [];
-
-        mains.forEach(main => {
-            const m = main.match(/^(\d+)\.\s*(.*)$/);
-            if (!m) {
-                result.push({ level: 1, text: main });
-                return;
-            }
-
-            const body = m[2].trim();
-            const subparts = body.split(/\s+(?=[a-z]\.(?:\s|$))/i).filter(Boolean);
-
-            result.push({
-                level: 1,
-                text: `${m[1]}. ${subparts.shift() || ''}`
+        if (Array.isArray(value)) {
+            items = value;
+        } else if (value && typeof value === 'object') {
+            items = Array.isArray(value.itens) ? value.itens : [];
+        } else if (typeof value === 'string' && value.trim()) {
+            // Compatibilidade com versões antigas: somente neste caso
+            // usamos o parser legado de texto.
+            const raw = value.replace(/\s+/g, ' ').trim();
+            const mains = raw.split(/\s+(?=\d+\.\s)/).filter(Boolean);
+            items = mains.map(main => {
+                const m = main.match(/^(\d+)\.\s*(.*)$/);
+                if (!m) return { nivel: 1, titulo: main, subniveis: [] };
+                return { nivel: 1, titulo: `${m[1]}. ${m[2]}`, subniveis: [] };
             });
-
-            subparts.forEach(part => result.push({
-                level: 2,
-                text: part
-            }));
-        });
-
-        return result;
-    }
-
-    function renderOutline(text) {
-        const items = parseOutline(text);
-
-        if (!items.length) {
-            return '<p class="apoio-opt-muted">Esquema de estudo não disponível.</p>';
         }
 
-        return `<div class="apoio-opt-outline">${
-            items.map(item =>
-                `<div class="apoio-opt-outline-item level-${item.level}">${esc(item.text)}</div>`
-            ).join('')
-        }</div>`;
+        if (!items.length) {
+            return '<p class="apoio-opt-muted">Esboço não disponível.</p>';
+        }
+
+        const renderItems = (list, depth = 1) => list.map(item => {
+            if (!item || typeof item !== 'object') return '';
+
+            const titulo = item.titulo ?? item.text ?? item.nome ?? '';
+            const referencia = item.referencia
+                ? `<span class="apoio-opt-outline-ref">${esc(item.referencia)}</span>`
+                : '';
+            const children = Array.isArray(item.subniveis) ? item.subniveis : [];
+
+            return `
+                <div class="apoio-opt-outline-item level-${depth}">
+                    <div class="apoio-opt-outline-title">
+                        ${esc(titulo)}${referencia}
+                    </div>
+                    ${children.length
+                        ? `<div class="apoio-opt-outline-children">${renderItems(children, depth + 1)}</div>`
+                        : ''}
+                </div>
+            `;
+        }).join('');
+
+        return `<div class="apoio-opt-outline">${renderItems(items)}</div>`;
     }
 
     function ensureCrossRefDrawer() {
@@ -721,10 +725,11 @@
     function renderMaterialValue(value, tipo = 'texto') {
         if (
             tipo === 'outline' ||
+            tipo === 'esboco' ||
             tipo === 'esquema' ||
             tipo === 'esquema_conteudo'
         ) {
-            return renderOutline(String(value ?? ''));
+            return renderOutline(value);
         }
 
         if (tipo === 'lista') {
