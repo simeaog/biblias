@@ -1,4 +1,4 @@
-const CACHE_NAME = 'biblia-app-v8-icones';
+const CACHE_NAME = 'biblia-app-v9-icones';
 
 const APP_SHELL = [
     './',
