@@ -503,9 +503,9 @@
         }
       ]
     },
-	    {
+    {
       "id": "encontrar-ajuda",
-      "ordem": 1,
+      "ordem": 8,
       "icone": "📖",
       "titulo": "Como encontrar ajuda na Bíblia",
       "descricao": "Temas e referências bíblicas para diferentes circunstâncias da vida.",
@@ -1015,7 +1015,7 @@
     },
     {
       "id": "leituras-dias-especiais",
-      "ordem": 2,
+      "ordem": 9,
       "icone": "📅",
       "titulo": "Leituras para dias especiais",
       "descricao": "Datas e ocasiões especiais com referências bíblicas.",
@@ -1197,7 +1197,7 @@
     },
     {
       "id": "perdao-de-deus",
-      "ordem": 3,
+      "ordem": 10,
       "icone": "❤️",
       "titulo": "O que a Bíblia diz sobre o perdão de Deus",
       "descricao": "Temas apresentados na seção sobre o perdão de Deus.",
@@ -1264,7 +1264,7 @@
     },
     {
       "id": "sentimentos-que-perturbam",
-      "ordem": 4,
+      "ordem": 11,
       "icone": "🧭",
       "titulo": "Confrontando sentimentos que perturbam",
       "descricao": "Referências bíblicas para sentimentos e situações emocionais apresentados nas fotografias.",
@@ -1428,7 +1428,7 @@
       "id": "tanak-antigo-testamento",
       "titulo": "TaNaK / Antigo Testamento",
       "icone": "📜",
-      "ordem": 8,
+      "ordem": 12,
       "descricao": "Estrutura original da Bíblia Hebraica e panorama dos seus livros segundo o BibleProject.",
       "conteudo": [
         {
@@ -1511,6 +1511,5 @@
         }
       ]
     }
- 
   ]
 }
