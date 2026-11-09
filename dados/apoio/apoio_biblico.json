@@ -1423,6 +1423,93 @@
           ]
         }
       ]
+    },
+    {
+      "id": "tanak-antigo-testamento",
+      "titulo": "TaNaK / Antigo Testamento",
+      "icone": "📜",
+      "ordem": 8,
+      "descricao": "Estrutura original da Bíblia Hebraica e panorama dos seus livros segundo o BibleProject.",
+      "conteudo": [
+        {
+          "tipo": "observacao",
+          "titulo": "Estrutura Original",
+          "texto": "A organização do Antigo Testamento nas Bíblias cristãs modernas difere da estrutura hebraica original. Nos tempos de Jesus, as Escrituras eram organizadas em três grandes coleções sob o acrônimo TaNaK: Torá (T), Nevi'im (N) e Ketuvim (K)."
+        },
+        {
+          "tipo": "lista_detalhada",
+          "itens": [
+            {
+              "nome": "Torá (A Lei)",
+              "texto": "Composta por 5 livros (Gênesis a Deuteronômio). Relata a criação do bom mundo de Deus, a queda e a rebelião da humanidade, a escolha da família de Abraão para abençoar as nações, a Aliança do Sinai, as leis e a esperança de um coração transformado.",
+              "referencias": [
+                "Gênesis 1-11",
+                "Gênesis 12-50",
+                "Êxodo 1–18",
+                "Êxodo 19-40",
+                "Levítico",
+                "Números",
+                "Deuteronômio"
+              ]
+            },
+            {
+              "nome": "Nevi'im (Os Profetas - Anteriores)",
+              "texto": "Livros históricos que narram a fidelidade de Deus conduzindo o povo à Terra Prometida, a ascensão da monarquia, a espiral de decadência espiritual e a tragédia do exílio na Babilônia.",
+              "referencias": [
+                "Josué",
+                "Juízes",
+                "1Samuel",
+                "2Samuel",
+                "1 e 2Reis"
+              ]
+            },
+            {
+              "nome": "Nevi'im (Os Profetas - Posteriores)",
+              "texto": "Livros proféticos que denunciam a idolatria e a injustiça social, alertam sobre o julgamento iminente e anunciam a esperança de restauração por meio do Messias.",
+              "referencias": [
+                "Isaías 1-39",
+                "Isaías 40-66",
+                "Jeremias",
+                "Ezequiel 1-33",
+                "Ezequiel 34-48",
+                "Oseias",
+                "Joel",
+                "Amós",
+                "Obadias",
+                "Jonas",
+                "Miqueias",
+                "Naum",
+                "Habacuque",
+                "Sofonias",
+                "Ageu",
+                "Zacarias",
+                "Malaquias"
+              ]
+            },
+            {
+              "nome": "Ketuvim (Os Escritos)",
+              "texto": "Coletânea de poesia, sabedoria, lamentos e narrativa histórica. Explora como viver com sabedoria, expressar a dor e adorar a Deus. Na Bíblia Hebraica, encerra-se com Crônicas, deixando o leitor na expectativa da chegada do Rei Messias.",
+              "referencias": [
+                "Salmos",
+                "Provérbios",
+                "Jó",
+                "Cântico dos Cânticos",
+                "Rute",
+                "Lamentações",
+                "Eclesiastes",
+                "Ester",
+                "Daniel",
+                "Esdras e Neemias",
+                "1 e 2Crônicas"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "nota",
+          "texto": "O TaNaK funciona como uma única narrativa unificada que aponta para a incapacidade humana de manter a aliança por forças próprias, gerando a expectativa de um futuro Rei Messias que renovará os corações e restaurará a bênção de Deus para todas as nações."
+        }
+      ]
     }
  
   ]
