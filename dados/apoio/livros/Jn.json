@@ -2,108 +2,116 @@
   "schema": "apoio-livro-v1",
   "id": "Jn",
   "nome": "Jonas",
+  "abreviacao": "Jn",
   "material": {
     "titulo": "Sobre Jonas",
-    "introducao": "Jonas narra a fuga do profeta, seu resgate, sua segunda comissão e o arrependimento de Nínive. O livro confronta o particularismo humano e destaca a soberania, a justiça e a misericórdia universal de Deus.",
+    "introducao": "O Livro de Jonas narra a relutante jornada do profeta enviado a pregar em Nínive, destacando de maneira viva a soberania de Deus sobre a criação, a universalidade de sua compaixão e graça para com todos os povos, e prefigurando a ressurreição de Cristo.",
     "secoes": [
       {
-        "id": "titulo",
-        "titulo": "Título",
+        "id": "titulo_e_autor",
+        "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O livro recebe o nome do profeta Jonas, personagem central da narrativa."
-      },
-      {
-        "id": "autor",
-        "titulo": "Autor",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "O material apresenta Jonas como profeta e concentra-se em sua experiência de comissão, fuga, resgate, obediência e repreensão. As informações sobre sua atuação são apresentadas dentro da própria narrativa."
+        "conteudo": "Esse quinto livro dos doze Profetas Menores recebe o nome de seu principal personagem, \"Jonas, filho de Amitai\" (1.1) [cite: 120]. Nada sabemos a respeito de Amitai [cite: 120]. Fora desse livro, Jonas é mencionado somente em 2 Reis 14.25, como \"Jonas, filho de Amitai, o profeta, o qual era de Gate-Hefer\", o proclamador das bênçãos de Deus ao reino do Norte, Israel, durante o reinado de Jeroboão II (793-753 a.C.) [cite: 120]. De acordo com essa profecia, Jeroboão estendeu os limites de seu reino para além da fronteira da Síria [cite: 120]. A mensagem de Deus dirigida a Nínive nesse livro foi anunciada por meio do mesmo Jonas [cite: 120]. Provavelmente, ele, ou algum outro redator, escreveu essa narrativa depois dos eventos aqui relatados [cite: 120]."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "A discussão de data é ligada ao entendimento da narrativa e à relação de Jonas com Nínive e a Assíria. O livro descreve a missão de Jonas a Nínive, seu esforço para fugir, a tempestade, seu confinamento no ventre do grande peixe, a pregação em Nínive e o arrependimento da cidade. A discussão histórica considera questões como o tamanho de Nínive, a referência ao rei de Nínive e práticas descritas no relato."
+        "ordem": 2,
+        "conteudo": "Com base em 2 Reis 14.25, os eventos registrados no livro de Jonas deveriam ser datados de meados do século VIII a.C. [cite: 120] Mas determinar a data da composição do livro é uma tarefa difícil, e o livro tem sido datado entre o século VIII e o final do século III a.C. [cite: 120] Nenhuma evidência convincente impede uma data do século VIII para a escrita do livro (3.3, nota); e parece provável que o livro foi escrito antes da destruição de Nínive, em 612 a.C. [cite: 120]\n\nO reinado de Jeroboão provê o contexto para a história de Jonas [cite: 120]. Esse monarca foi um dos poderosos líderes militares da história de Israel, o reino do Norte [cite: 120]. De acordo com 2 Reis 14.25-28, ele impôs sua autoridade sobre os territórios de Damasco e Hamate, restaurando, assim, a fronteira norte de Israel para onde havia sido nos dias de Salomão (1Rs 8.65) [cite: 120]. É claro que o reino de Jeroboão, bem como o reino de seu contemporâneo Azarias (também chamado Uzias, 792-740 a.C.), de Judá, deu início a um período de paz e prosperidade notáveis [cite: 120]. Como Eliseu e Jonas profetizaram (2Rs 13.19-25; 14.25), o reino do Norte desfrutou de expansão territorial à custa da Síria [cite: 120]. Pelas aparências exteriores de crescimento populacional, de expansão territorial e de atividade comercial, Israel era realmente abençoado por Deus [cite: 120].\n\nNo entanto, esse não foi o quadro pintado por Amós e Oseias, contemporâneos de Jonas, quando o reino caiu em estado de decadência social, moral e religiosa [cite: 120]. Sua mensagem consistiu, em parte, de acusação e julgamento da nação, por misturar o culto prescrito do Senhor com a idolatria das nações vizinhas (sincretismo religioso) e por cometer injustiça social (Os 2.1-13; 4.1-5.14; Am 2.6-16; 3.9-15) [cite: 120]. Posteriormente, por causa do pecado do povo de Israel, Deus os puniu enviando os assírios, os quais, sob o comando de Sargão II, o rei de então, capturaram Samaria, a capital de Israel, em 722 a.C. [cite: 120] De acordo com os registros assírios, Sargão levou em cativeiro mais de 27 mil pessoas [cite: 120, 121]. Como Oseias profetizara essa punição pelos assírios (ver Os 9.3; 10.6; 11.5), Jonas provavelmente imaginou que suas ações em chamar o povo de Nínive ao arrependimento resultariam, em última instância, na destruição de sua própria nação [cite: 121]."
       },
       {
-        "id": "genero_e_caracteristicas_literarias",
-        "titulo": "Gênero e características literárias",
+        "id": "genero",
+        "titulo": "Gênero",
+        "tipo": "texto",
+        "ordem": 3,
+        "conteudo": "O livro de Jonas é uma história breve, complexa e altamente artística contada de maneira cativante [cite: 121]. No que diz respeito à interpretação da história de Jonas, quatro abordagens distintas têm sido sugeridas: alegoria, midrash, parábola e narrativa histórica [cite: 121].\n\nAlegoria é um método de ensinar verdades ou princípios por meio de uma narrativa fictícia e simbólica [cite: 121]. Um bom exemplo é O peregrino, de John Bunyan, uma empolgante história fictícia que comunica a verdade de que a vida cristã é uma peregrinação espiritual [cite: 121]. No entanto, o texto de Jonas não tem qualquer indício convincente que demande um entendimento alegórico [cite: 121].\n\nMidrash é um tipo de comentário sobre a Escritura realizado classicamente por eruditos judeus durante os primeiros quatrocentos anos da era cristã [cite: 121]. Alguns consideram Jonas um tipo de midrash, ou comentário, antigo sobre passagens como Êxodo 34.6, 7 (cf. Jn 4.2), um comentário em que os eventos descritos não são necessariamente históricos [cite: 121]. Essa abordagem não leva em conta defesas confiáveis da historicidade do livro e parece conflitar com o testemunho de Cristo a respeito das experiências de Jonas (Mt 12.39-42; Lc 11.29-32) [cite: 121].\n\nA interpretação do livro de Jonas como uma parábola talvez seja a mais comum [cite: 121]. Uma parábola é uma história breve e, em geral, fictícia que comunica verdades morais, religiosas ou espirituais [cite: 121]. As parábolas são muito bem ilustradas pelos ensinos de Jesus (p. ex., Mt 13.45, 46; Lc 10.29-37; 15.11-32) [cite: 121]. A parábola de Natã em 2 Samuel 12.1-4 é um bom exemplo do Antigo Testamento [cite: 121]. Esse ponto de vista entende a narrativa de Jonas como uma história moral que contém um ensino-alvo [cite: 121]. Há várias objeções, porém, à nossa compreensão do livro de Jonas como uma parábola, como, por exemplo, a complexidade e a extensão incomuns da história [cite: 121, 122]. Além disso, é significativo o fato de que essa interpretação também destituiria o livro de sua fundamentação histórica [cite: 122].\n\nApesar de suas surpresas impressionantes e de seus elementos sensacionais, Jonas deve ser entendido como uma narrativa histórica e profética [cite: 122]. A história se concentra num personagem específico e foi escrita como uma composição histórica [cite: 122]. A tradição judaica considera a narrativa como história, e as referências de Cristo à história (Mt 12.38-41; Lc 11.29-32) dão ainda mais suporte à historicidade da obra [cite: 122]. Jesus não entendia a história de Jonas como uma parábola, mas, sim, como uma narrativa firmemente alicerçada na realidade histórica [cite: 122].\n\nNo entanto, alguns eruditos desafiam a interpretação histórica por várias razões, inclusive a impossibilidade de sobrevivência do profeta no ventre do peixe, a improbabilidade do arrependimento dramático de Nínive, o tamanho de Nínive na época e a rápida taxa de crescimento da planta no capítulo 4 [cite: 122]. Embora algumas dessas objeções suscitem perguntas que exigem consideração e abordagem, muitas dessas críticas procedem de pressuposições que negam a soberania de Deus na criação e na história, incluindo sua capacidade de intervir sobrenaturalmente na ordem criada [cite: 122]."
+      },
+      {
+        "id": "caracteristicas_literarias",
+        "titulo": "Características literárias",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "O material discute a possibilidade de Jonas ser uma parábola, mas aponta dificuldades para essa classificação, incluindo a complexidade e extensão incomuns da narrativa. A tradição judaica considera a história como histórica, e as referências de Jesus em Mateus 12.38–41 e Lucas 11.29–32 reforçam essa leitura. A narrativa é cuidadosamente estruturada em duas partes, ambas começando com a ordem de Deus para Jonas ir a Nínive. O salmo de 2.2–9 cria contraste com a falta de gratidão de Jonas no capítulo 4. O clímax ocorre apenas no final do capítulo 4, e o livro termina com uma pergunta."
+        "conteudo": "Embora alguns eruditos tenham desafiado a unidade literária do livro, sugerindo teorias de autoria conjunta ou de mudanças substanciais por um editor de um tempo posterior, a atual estrutura do livro sugere que ele foi cuidadosamente escrito [cite: 122]. O livro se divide em duas partes, ambas iniciadas pela ordem de Deus a Jonas para que vá a Nínive [cite: 122]. Alguns eruditos têm questionado a autenticidade do salmo de ação de graças de Jonas, em 2.2-9, por seu livramento da morte, mas essa passagem estabelece um contraste impressionante com a falta de gratidão de Jonas, no capítulo 4, pelo livramento divino dos ninivitas [cite: 122]. Ao contrário de algumas histórias cuja estrutura do enredo demonstra uma espécie de clímax seguido por um período de resolução, o enredo de Jonas não atinge o clímax até o fim do capítulo 4, que também conclui o livro [cite: 122]. Esse é um dos dois únicos livros em toda a Bíblia hebraica que terminam com uma pergunta (o outro é Naum) [cite: 122]."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "Quatro temas principais são destacados. Primeiro, arrependimento: o livro mostra marinheiros pagãos e ninivitas respondendo positivamente à pregação. Segundo, profecia não cumprida: o não cumprimento da proclamação contra Nínive chama atenção para a natureza condicional das profecias divinas. Terceiro, atitudes de judeus para com gentios: a salvação de Deus não se restringe aos judeus. Quarto, teodiceia: a história examina a relação entre misericórdia e justiça divinas. Jonas quer misericórdia para si e justiça para seus inimigos, enquanto Deus demonstra compaixão soberana e imparcial."
+        "conteudo": "Vários temas são propostos como resumo da mensagem do livro de Jonas:\n1. Arrependimento. Com boa razão, os judeus têm lido tradicionalmente o livro de Jonas no Dia da Expiação, como parte de sua expressão de arrependimento [cite: 122]. Os judeus devem seguir o exemplo dos marinheiros pagãos e dos ímpios ninivitas, os quais responderam com arrependimento à pregação profética [cite: 122].\n2. Profecia não cumprida. O não cumprimento da proclamação de Jonas contra a cidade de Nínive chama a atenção para a natureza condicional das profecias divinas [cite: 122, 123].\n3. Atitudes de judeus para com gentios. A história de Jonas revela que a salvação de Deus não se restringe aos judeus; ela é dada gratuitamente aos gentios [cite: 123].\n4. Teodiceia. A história examina a relação entre a misericórdia e a justiça divina [cite: 123]. Dessas alternativas, a última tem muito a recomendá-la, especialmente à luz do capítulo 4, que traça um contraste entre a compaixão de Deus por Nínive e sua destruição da planta [cite: 123]. Jonas, porém, se compadece da planta, mas exige a destruição de Nínive [cite: 123]. Considerado em relação a Deus, Jonas representa aqueles que veem a justiça e a misericórdia de Deus como servas de seus próprios interesses: misericórdia para si mesmos, mas justiça para seus inimigos [cite: 123]. Entretanto, como o livro de Jonas revela, Deus é soberano, sua justiça é imparcial e seu perdão pode estender-se a qualquer pessoa [cite: 123].\n\nEmbora a narrativa tenha como foco o profeta, o livro de Jonas é uma história sobre a misericórdia e o amor de Deus [cite: 123]. O Senhor era o Deus de Israel, e essa nação era o recipiente especial da misericórdia e da salvação pactual de Deus [cite: 123]. Mas Jonas, alinhado com muitos de seus patrícios, reagiu com orgulho nacional e particularismo étnico, o que os cegou para o grande escopo da graça de Deus [cite: 123]. Jonas precisava aprender, com sua nação, que Israel não tinha o monopólio do amor redentor de Deus (At 10.34, 35; Rm 3.29) [cite: 123]. A história afirma as palavras de Salmos 145.8: \"Benigno e misericordioso é O SENHOR, tardio em irar-se e de grande clemência\" [cite: 123].\n\nAlém disso, o livro enfatiza a disposição de Deus em perdoar os ninivitas, mesmo sabendo que, logo depois, eles dizimariam Israel, o reino do Norte [cite: 123]. Jonas não conseguia conciliar o perdão de Deus estendido aos ímpios habitantes de Nínive com sua disposição de punir Israel, seu próprio povo [cite: 123]."
       },
       {
         "id": "teologia_de_jonas",
         "titulo": "Teologia de Jonas",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "A soberania universal de Deus sobre a humanidade e a criação atravessa todo o livro. Deus é apresentado como Criador da terra e do mar, e a criação responde obedientemente às suas ordens. A narrativa também mostra que Deus estende sua misericórdia além de Israel. Jonas representa o orgulho nacional e o particularismo étnico que impedem a compreensão do grande alcance da graça divina."
+        "conteudo": "O tema da soberania universal de Deus sobre a humanidade e a criação é afirmado em todo o livro [cite: 123]. Deus é apresentado como o Criador, aquele que fez a terra e o mar (1.9) [cite: 123]. A criação responde de forma obediente a cada ordem de Deus (1.4, 15, 17; 2.10; 4.6-8) [cite: 123, 124]. Assim como os assírios dos dias de Isaías fizeram a vontade do Senhor (ainda que inconscientemente; Is 10.5-6), a criação serve à vontade do Criador [cite: 124]."
       },
       {
         "id": "jonas_na_historia_mais_ampla_da_biblia",
         "titulo": "Jonas na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "Jesus usa a misericórdia de Deus para as nações apresentada em Jonas como repreensão ao Israel impenitente. Se os ninivitas se arrependeram com a pregação de Jonas, Israel deveria arrepender-se ainda mais diante da pregação do Filho do Homem, que ressuscitaria dos mortos. A misericórdia de Deus para os gentios também serve ao propósito de levar Israel ao ciúme e ao arrependimento."
+        "conteudo": "No Novo Testamento, Jesus usa o tema da misericórdia de Deus sobre as nações, abordado em Jonas, como uma repreensão para o impenitente Israel (Mt 12.38-41; Lc 11.29-32) [cite: 124]. Se os ninivitas se arrependeram com a pregação do profeta Jonas, que foi resgatado do confinamento no ventre do grande peixe, quanto mais deveria Israel se arrepender com a pregação de Jesus, o Filho do Homem, que ressuscitaria dos mortos? [cite: 124] Em um sentido, portanto, Jesus magnifica a misericórdia de Deus para com os gentios, a fim de levar Israel ao ciúme e ao arrependimento (Rm 11.11-14) [cite: 124]."
       },
       {
         "id": "cristo_em_jonas",
         "titulo": "Cristo em Jonas",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "Jesus chama sua morte e ressurreição de “o sinal do profeta Jonas”. Há várias correspondências apresentadas: ambos pregam arrependimento; ambos reaparecem vivos depois de três dias; ambos estão ligados a uma missão que resulta em livramento para gentios arrependidos e destruição para israelitas/judeus ímpios; e ambos oferecem a própria vida em contexto de livramento. O sinal de Jonas aponta para a pessoa e a obra de Cristo."
+        "conteudo": "Quando alguns fariseus e mestres da lei exigiram um sinal miraculoso de Jesus, ele lhes disse que o único sinal que receberiam seria \"o do profeta Jonas\" (Mt 12.39-42; cf. 16.4; Lc 11.29-32) [cite: 124]. Existem várias comparações entre Jesus e Jonas [cite: 124]. Ambos pregaram uma mensagem de arrependimento (Jn 3.4, 5; Mc 1.14, 15) [cite: 124]. Ambos reapareceram vivos depois de três dias [cite: 124]. Ambos se engajaram numa missão que resulta em livramento para os gentios arrependidos, mas em destruição para os israelitas/judeus ímpios (Jn 3; Mt 12.41, 42) [cite: 124]. Ambos ofereceram sua vida como um sacrifício vicário para salvar outros (Jn 1.11-16; Mc 10.45) [cite: 124]. Alguns ou todos esses fatores podem constituir o \"sinal de Jonas\" [cite: 124, 125]. Em resumo, a mensagem de Jonas encontra o ápice na pessoa e na obra de Jesus Cristo [cite: 125]. O reino de Deus, que veio no advento de Jesus, inclui judeus e gentios e se estenderá até os confins da terra [cite: 125]."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "Jonas recebeu grande atenção dos pais da igreja por sua conexão com Cristo. Teodoro de Mopsuéstia destacou as semelhanças entre o profeta e judeus incrédulos. Agostinho viu o livro como apontando para Cristo e representando a imaturidade de Israel. Calvino o interpretou dentro da disciplina de Deus para com santos errantes. O Iluminismo destacou o universalismo da misericórdia divina. A época moderna trouxe maior ceticismo quanto à historicidade dos eventos extraordinários."
+        "conteudo": "No decorrer dos séculos, Jonas foi interpretado de muitas maneiras diferentes [cite: 125]. Por causa de sua conexão com Cristo no Novo Testamento, Jonas recebeu considerável atenção dos pais da igreja [cite: 125]. Teodoro de Mopsuéstia, por exemplo, enfatizou as situações semelhantes dos judeus incrédulos e do profeta Jonas [cite: 125]. Agostinho viu o livro como apontando para Cristo, mas também representando a imaturidade da nação de Israel [cite: 125]. Calvino entendeu o livro principalmente dentro da estrutura de uma obra dedicada à disciplina: Jonas é um exemplo de como Deus lida com os santos errantes e desviados [cite: 125]. O Iluminismo ressaltou o tema do universalismo: Deus estende sua misericórdia a outros povos além de Israel [cite: 125]. No período moderno, muitos eruditos têm especulado sobre a natureza e a dimensão do peixe ou da baleia, expressando ceticismo quanto ao fato de os eventos admiráveis desse livro realmente terem acontecido [cite: 125]."
       },
       {
         "id": "assuntos_especiais",
         "titulo": "Assuntos especiais",
         "tipo": "texto",
         "ordem": 10,
-        "conteudo": "Alguns estudiosos argumentam que Jonas contém imprecisões históricas e seria uma narrativa fictícia escrita depois da destruição de Nínive, em 612 a.C. Entre as questões levantadas estão o tamanho da cidade e de sua população, a referência ao “rei de Nínive” em vez do “rei da Assíria” e algumas práticas descritas no relato. O material rejeita a ideia de que essas questões constituam razão convincente para negar a veracidade da narrativa e observa que várias delas são discutidas nas notas de estudo."
+        "conteudo": "Alguns eruditos têm argumentado que a história de Jonas contém imprecisões históricas que sugerem que o livro foi escrito como um relato fictício, muito depois da destruição de Nínive, em 612 a.C. [cite: 125] As questões levantadas concernentes ao enorme tamanho da cidade e de sua população, a referência ao rei de Nínive, e não ao rei da Assíria, e práticas que são conhecidas do período posterior dos persas, mas não dos assírios do século VIII (p. ex., a publicação de um decreto tanto pelo rei como por seus nobres [3.7], e os animais usando panos de saco em sinal de lamento [3.8]) [cite: 125]. No entanto, nenhuma dessas supostas imprecisões apresenta uma razão convincente para duvidarmos da veracidade do que é relatado, e muitas são consideradas nas notas de estudo sobre o livro, em seguida [cite: 125]."
       },
       {
-        "id": "esboco",
+        "id": "esboco_de_jonas",
         "titulo": "Esboço de Jonas",
         "tipo": "auto",
         "ordem": 11,
         "conteudo": [
           {
-            "titulo": "I. JONAS DESOBEDIENTE E RESGATADO (CAPS. 1, 2)",
+            "titulo": "I. JONAS DESOBEDIENTE E RESGATADO (CAPS. 1, 2) [cite: 125]",
             "itens": [
-              "A. O Senhor comissiona Jonas (1.1, 2)",
-              "B. O profeta foge do Senhor (1.3)",
-              "C. O Senhor persegue Jonas: a grande tempestade (1.4–16)",
-              "D. O Senhor preserva Jonas (1.17)",
-              "E. Ação de graças e livramento de Jonas (cap. 2)"
+              "A. O Senhor comissiona Jonas (1.1, 2) [cite: 125]",
+              "B. O profeta foge do Senhor (1.3) [cite: 125]",
+              "C. O Senhor persegue Jonas: a grande tempestade (1.4-16) [cite: 125]",
+              "D. O Senhor preserva Jonas (1.17) [cite: 125]",
+              "E. Ação de graças e livramento de Jonas (cap. 2) [cite: 125]"
             ]
           },
           {
-            "titulo": "II. JONAS OBEDIENTE E REPREENDIDO (CAPS. 3, 4)",
+            "titulo": "II. JONAS OBEDIENTE E REPREENDIDO (CAPS. 3, 4) [cite: 125]",
             "itens": [
-              "A. O Senhor comissiona Jonas pela segunda vez (3.1, 2)",
-              "B. O profeta responde com obediência (3.3)",
-              "C. Jonas prega: Nínive se arrepende e recebe livramento (3.4–10)",
-              "D. A raiva de Jonas ante a compaixão de Deus (4.1–4)",
-              "E. Uma lição sobre o amor divino (4.5–11)"
+              "A. O Senhor comissiona Jonas pela segunda vez (3.1, 2) [cite: 125]",
+              "B. O profeta responde com obediência (3.3) [cite: 125]",
+              "C. Jonas prega: Nínive se arrepende e recebe livramento (3.4-10) [cite: 125]",
+              "D. A raiva de Jonas ante a compaixão de Deus (4.1-4) [cite: 125]",
+              "E. Uma lição sobre o amor divino (4.5-11) [cite: 125]"
             ]
           }
         ]
       }
     ]
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fonte": {
+    "arquivo": "32_Jonas.pdf",
+    "paginas": "Páginas impressas 1560 a 1564",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de Jonas, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

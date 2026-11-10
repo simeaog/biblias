@@ -2,138 +2,184 @@
   "schema": "apoio-livro-v1",
   "id": "Jó",
   "nome": "Jó",
+  "abreviacao": "Jó",
   "material": {
     "titulo": "Sobre Jó",
-    "introducao": "Jó trata da questão do sofrimento do justo e da soberania de Deus. O livro acompanha Jó, homem apresentado como íntegro, que perde bens, filhos e saúde e passa a discutir com seus amigos sobre as razões de seu sofrimento. O diálogo culmina na intervenção de Deus, que não oferece a Jó uma explicação simplista, mas revela sua soberania e conduz o personagem à humildade, confiança e restauração.",
+    "introducao": "O livro de Jó examina o profundo enigma do sofrimento humano inocente e a soberania divina por meio de um drama literário único, que combina um prólogo em prosa, um intenso diálogo poético entre Jó e seus amigos sobre a teologia da retribuição, os discursos de Eliú, as respostas divinas a partir da tempestade e um epílogo de restauração.",
     "secoes": [
       {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O título do livro corresponde ao nome de seu personagem principal, Jó. A discussão sobre a origem e o significado do nome aparece no material como questão secundária diante da função literária do personagem e da mensagem do livro."
+        "conteudo": "O título do livro segue seu personagem principal [cite: 121]. A etimologia linguística do nome de Jó (originalmente, uma palavra de duas sílabas, i-yob; do grego Hiob) é incerta (ver 1.1), mas é uma forma bem atestada no segundo milênio a.C. [cite: 121] Parece haver um jogo de palavras no nome de Jó; ele diz duas vezes que Deus o reputa como inimigo (oyeb), de modo que a etimologia popular seria algo como \"inimigo\" ou \"hostil\" [cite: 121]."
       },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "O livro de Jó não identifica explicitamente seu autor. O material observa que a tradição atribuiu sua composição a diferentes figuras, mas não apresenta evidência suficiente para estabelecer com segurança uma autoria individual."
+        "conteudo": "A relação entre a narrativa inicial do livro (o prólogo, caps. 1 e 2) e o conteúdo das discussões de Jó com seus amigos (o diálogo, caps. 3-27) deixa claro que Jó não foi o autor desse livro [cite: 121]. Tivesse Jó conhecido o que se deu no concílio divino, não teria havido tese para discutir sobre se ele havia ou não causado seu sofrimento por intermédio de conduta pecaminosa [cite: 121]. Ao contrário, Deus usa um poeta habilidoso, da comunidade pactual, para escrever esse livro notável [cite: 121]. A linguagem apresenta muitos desafios ao tradutor em virtude de sua gramática poética e de seu rico vocabulário [cite: 121]. Sabemos que o autor era israelita, visto que se refere a Deus pelo nome pactual Javé, enquanto Jó e seus companheiros (ver 1.1) usam termos como \"Deus\" e \"Todo-Poderoso\" (12.9 é a única exceção) [cite: 121]. A probabilidade é que o poeta tenha usado fontes dos tempos patriarcais, inclusive algumas do próprio Jó, na composição do livro [cite: 121]."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "A época de Jó é discutida a partir de elementos internos do livro e das referências a costumes patriarcais. O cenário parece anterior à organização de Israel como nação e não depende diretamente da legislação mosaica. A data da composição literária permanece incerta."
+        "conteudo": "Há duas considerações: quando os incidentes registrados ocorreram e quando o registro corrente foi feito [cite: 121]. Não há resposta precisa para ambas [cite: 121]. Os incidentes datam do período patriarcal e ocorreram em um cenário não israelita [cite: 121]. Não podemos especificar quando o autor de Jó viveu e escreveu, mas o hebraico clássico do prólogo o situa depois de 1500 a.C. [cite: 121] A forma final do livro pode não ter surgido até a era salomônica ou um pouco mais tarde, quando a literatura sapiencial hebraica atingiu seu ápice [cite: 121]. As referências a Jó em Ezequiel 14.14, 20 e a descoberta dos fragmentos de Jó entre os Rolos do Mar Morto não têm prejudicado as tentativas de datar Jó por volta do segundo século a.C. [cite: 121]"
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Jó combina narrativa e poesia. O prólogo e o epílogo são narrativos, enquanto a maior parte do livro consiste em longos discursos poéticos entre Jó, seus amigos e Deus. A forma poética permite explorar o sofrimento, a sabedoria e a justiça divina por meio de debates e imagens intensas."
+        "conteudo": "Entre os escritos sapienciais do AT, o livro de Jó está com Eclesiastes como uma demonstração da complexidade tanto da sabedoria como do viver de forma habilidosa [cite: 121, 122]. O livro de Jó fornece outra perspectiva da sabedoria como complemento tradicional quando se digladia com o sofrimento de um indivíduo justo em confronto com a afirmação de que Deus é justo e bom [cite: 122]. Algumas vezes chamada \"teologia da retribuição\", a versão simplista dessa sabedoria tradicional ou popular sustenta que o bom comportamento é sempre galardoado, enquanto o comportamento mau ou imoral é sempre punido, que o bem tem êxito e o mal, não [cite: 122]. Por toda a literatura sapiencial, vemos os autores bíblicos se digladiando com a superação da justiça de Deus e a questão do sofrimento [cite: 122]. Jó, em particular, aborda o tema com uma franqueza que às vezes é desconcertante [cite: 122]. O livro não sugere a existência de uma deidade má ou que o poder de Deus seja limitado [cite: 122]. Em vez disso, ele louva a soberania, a sabedoria e a glória do Criador [cite: 122]. O fato de o Deus de Jó não ser mau nem limitado é visto em duas descrições da relação de Jó com Deus [cite: 122].\n\nA primeira representação é extraída do prólogo e do epílogo do livro [cite: 122]. O prólogo descreve a submissão de Jó à vontade divina em meio ao sofrimento [cite: 122]. Ali, Jó aparece como um homem bom, que confia na bondade de seu Deus [cite: 122]. Finalmente, no epílogo (42.7-17), Deus honra sua confiança, restaurando-o [cite: 122]. A segunda representação no cerne poético do livro (caps. 3-42.6) mostra a indignação de Jó em meio ao seu sofrimento [cite: 122]. Ele pensa que Deus se tornou seu inimigo e, injustamente, está afligindo-o [cite: 122]. Jó chega a essa conclusão porque sabe que Deus é soberano [cite: 122]. Se ele cresse em uma divindade limitada, não teria problema com a justiça ou a bondade de Deus, visto que, então, não poderia ter Deus como responsável por cada evento, inclusive por seu infortúnio [cite: 122].\n\nUniversalmente, reconhece-se a esplêndida maestria literária com que o material é apresentado no livro [cite: 122]. Têm-se proposto três classificações principais para o gênero de Jó: litígio, lamento e disputa [cite: 122]. O litígio é apresentado pelo uso de linguagem legal (p. ex., 5.8; 13.3; 23.6) e procedimentos (p. ex., cap. 32; 40.7, 8) [cite: 122]. Esta análise foca em Jó como instituindo procedimentos contra Deus [cite: 122]. De início, busca-se uma resolução informal (caps. 4-14) e, quando isso falha, adota-se, crescentemente, uma ação formal (caps. 15-31) [cite: 122]. Depois de os amigos de Jó, que agiram como advogados autodesignados de Deus, caírem em silêncio e, com isso, desistirem da causa, aparece Eliú contra a decisão deles (caps. 32-37) [cite: 122]. No entanto, ocorre a intervenção divina direta antes de Jó desistir de sua demanda (40.5) [cite: 122]. O lamento analisa o livro pela analogia dos salmos de lamento (ver Introdução aos Salmos: Gênero) [cite: 122, 123]. Os lamentos encontrados nos caps. 3 e 29-31 endossam essa abordagem [cite: 123]. Em Jó, o lamento é apresentado em sua forma dramática com a intervenção dos amigos interpretada como estendendo conforto a alguém angustiado [cite: 123]. A disputa usa os diálogos em forma de controvérsia, registrados na literatura do antigo Oriente Próximo para elucidar a estrutura de Jó, a qual, obviamente, consiste de uma série de intercâmbios que envolvem controvérsia entre os oradores da sabedoria [cite: 123]. Seus discursos não são primariamente diálogos em que os pontos de vista dos oponentes são elaborados e respondidos [cite: 123]. Pode ser que isso aconteça, mas a disputa está mais próxima da apresentação de séries de papéis posicionais para debater um caso particular [cite: 123]. No entanto, embora cada uma dessas interpretações reflita aspectos do livro de Jó, nenhuma delas fornece uma análise exaustiva [cite: 123]. O livro de Jó é uma criação literária única e poderosa exatamente porque é uma combinação habilidosa de vários gêneros [cite: 123]. O impacto do livro transcende seus componentes [cite: 123]."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "A estrutura do livro contrasta o prólogo e o epílogo com o grande corpo poético. O diálogo progride por ciclos de discursos nos quais os amigos procuram explicar o sofrimento de Jó por meio de uma relação direta entre pecado e punição. Jó rejeita essas explicações e insiste em sua integridade. Os discursos de Deus deslocam a discussão da tentativa humana de explicar todos os atos divinos para o reconhecimento da soberania e sabedoria do Criador."
+        "conteudo": "Composições semelhantes ao livro de Jó aparecem em fontes mesopotâmicas e egípcias dos tempos do AT [cite: 123]. Uma delas (\"Um diálogo sobre a miséria humana\") é sobre um conselheiro que critica um sofredor por sua impiedade enquanto o sofredor luta com o caráter dos deuses [cite: 123]. Além disso, o formato literário de Jó não é único entre os documentos do antigo Oriente Próximo, consistindo de um prólogo em prosa, um diálogo poético e, finalmente, um epílogo em prosa [cite: 123]. Mas não há outra obra que aborde o problema do sofrimento humano à luz da transcendência e da bondade de Deus com a profundidade teológica, a sofisticação literária e a aplicação prática do livro de Jó [cite: 123].\n\nO autor de Jó era um artífice literário e empregou muitas técnicas para comunicar sua mensagem [cite: 123]. Dois aspectos têm significado especial: a ironia e a linguagem mitológica [cite: 123].\n\nA ironia ocorre de várias formas [cite: 123]. A ironia verbal é uma figura de linguagem em que o significado pretendido é o oposto do sentido literal comunicado pelas palavras usadas (p. ex., 12.2) [cite: 123]. Também está presente no questionamento de Jó (38.4, 5, 18, 21) por Deus, em que não há dúvida quanto à resposta a ser dada [cite: 123, 124]. A ironia se converte em sarcasmo quando é pronunciada com a intenção de magoar ou ferir aquele que é abordado [cite: 124]. Mais significativo em Jó é o uso da ironia dramática, que ocorre quando uma audiência (ou um grupo de leitores) sabe, no processo, o resultado de um jogo (ou narrativa), enquanto os personagens envolvidos não o sabem [cite: 124]. Então, pode haver tensão entre a compreensão que um personagem tem de sua situação e a da audiência/leitor [cite: 124]. Isso é feito em Jó pela maneira como os diálogos poéticos são embutidos numa estrutura de prosa [cite: 124]. O prólogo deixa claro que Jó é inocente de injustiça hedionda, mas essa informação não está disponível aos seus chamados \"consoladores\" [cite: 124]. Essa ironia dramática realça a apresentação em vários momentos (p. ex., 3.23; 7.12) [cite: 124].\n\nEm várias passagens de todo o livro, encontra-se a linguagem emprestada da mitologia do antigo Oriente Próximo (p. ex., 3.8), mas especialmente nos discursos de Jó e de Deus [cite: 124]. No entanto, esse uso de imagens e expressões idiomáticas do ambiente cultural do paganismo adjacente não endossa as convicções politeístas no que diz respeito às forças naturais ou às entidades sobre-humanas, da mesma forma que as alusões clássicas de John Milton em Paraíso perdido não indicam eventual aceitação da mitologia greco-romana [cite: 124]. As alusões linguísticas podem ser mais que figuras convencionais de linguagem [cite: 124]. De fato, podem ser empregadas para combater uma cosmovisão mitológica e enfatizar a supremacia absoluta de Javé, o Senhor da aliança com Israel e o único Deus verdadeiro [cite: 124]."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "Os temas centrais incluem sofrimento, integridade, justiça, sabedoria, soberania divina e limites do conhecimento humano. O livro questiona a ideia de que todo sofrimento seja resultado direto de pecado pessoal e mostra que a fidelidade pode ser provada em circunstâncias que o ser humano não consegue compreender."
+        "conteudo": "A exploração que o livro faz dos temas associados ao propósito de Deus no sofrimento humano se apresenta como segue [cite: 124]. No prólogo, vemos a relação Deus/Jó a partir da perspectiva divina [cite: 124]. Deus escolhe Jó para ser um de seus servos sofredores, um instrumento através do qual se concretiza um triunfo espiritual: \"Observaste o meu servo Jó?\" (1.8; 2.3) [cite: 124]. Satanás acusa falsamente Jó de servir a Deus em função das bênçãos materiais (1.9-11) [cite: 124]. A Jó, é dada a elevada vocação de permanecer leal a Deus mesmo quando tudo lhe é tirado e um sofrimento implacável torna-se sua sorte cotidiana [cite: 124]. Jó fará o que o Adversário prediz e amaldiçoará a Deus, em seu rosto? [cite: 124] Essa é a questão que conduz o movimentado drama do livro quando Jó perde sua confiança inicial e se afunda em desespero [cite: 124]. Se Jó permanecer fiel, Deus mostrará, através dele, que o Adversário é mentiroso [cite: 124].\n\nEnquanto o prólogo nos dá a perspectiva divina, a seção central de discursos apresenta a perspectiva humana [cite: 124]. Como um ser humano, Jó é ignorante quanto ao que aconteceu no concílio divino [cite: 124]. Ele se digladia com uma visão tradicional de que todo sofrimento é uma punição imediata dos pecados humanos, uma teologia simplista de retribuição que é uma perversão de Provérbios [cite: 124]. Os conselheiros de Jó, como muitos outros, consideram o profundo sofrimento de Jó evidência adequada de que seu pecado é grande (ver Jo 9.2) [cite: 124].\n\nQuando Jó confronta os conselheiros insensíveis, usados por Satanás para acusá-lo falsamente, ele diz coisas pelas quais viria a se arrepender mais tarde (42.5, 6) [cite: 124]. Ele sabe que os conselheiros estão errados, mas não consegue entender como uma pessoa piedosa deve sofrer em tamanha medida enquanto os ímpios desfrutam prosperidade e saúde (12.6) [cite: 124].\n\nComo os salmistas, com frequência Jó se queixa a Deus na linguagem das disputas judiciais [cite: 124]. Parte do que Jó diz choca seus amigos [cite: 124]. Enquanto eles dizem tudo corretamente sobre Deus, nunca dizem alguma coisa a ele [cite: 124]. Jó se digladia com Deus e lhe expressa muita dúvida e temor [cite: 124, 125]. Sua relação com Deus é viva, enquanto a deles consiste de aforismos mortos [cite: 125]. Não é tanto o que dizem, mas a forma como o aplicam a Jó, mostrando a arrogância de insistir que eles não sabem por que Jó está sofrendo [cite: 125]. Se mostram insensíveis (13.4, 5; 16.2; 19.21), frívolos e presunçosos no tocante às coisas divinas [cite: 125]. Jó tem sido acusado falsamente; ele não está sofrendo em razão de seus pecados, ainda que não possa evitar ponderar a esse respeito [cite: 125]. Mas, mesmo quando ele imagina que Deus está irado com ele, em seus melhores momentos, ainda crê que Deus é justo e proverá um redentor (16.19-21; 19.23-27) [cite: 125].\n\nEssa esperança torna-se realidade quando Jó, finalmente, tem com Deus aquela audiência face a face que pediu (13.15-18; 31.35-37) [cite: 125]. Quando Deus aparece na tempestade (caps. 38-41), Jó não é repreendido como sofredor por seus pecados, mas é humilhado diante do Senhor como alguém cujo discurso mal orientado obscureceu o propósito de Deus (38.2; 42.2, 3) [cite: 125]. Deus revela-se como um amigo de Jó, pondo-o diante das espantosas obras da criação para lhe mostrar que aquele a quem ele tem censurado é soberano em bondade e poder [cite: 125]. Jó reconhece que Deus é e permanece sendo seu amigo [cite: 125].\n\nQuando seus olhos virem o Senhor, e tiver se arrependido no pó e nas cinzas, então Jó passará a compreender que Deus, em seu trono, é soberano e recompensa os que lhe pertencem, a despeito dos momentos de pressão e de dor [cite: 125]. O leitor aprende que Jó sofreu não por ser um dos piores homens, mas porque era um dos melhores, e que sua provação glorificou a Deus [cite: 125]."
       },
       {
         "id": "teologia_de_jo",
         "titulo": "Teologia de Jó",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "Jó apresenta Deus como soberano, sábio e incomparável. O livro não reduz a justiça divina a uma fórmula de causa e efeito. A resposta de Deus enfatiza a grandeza da criação e a incapacidade humana de governar ou compreender todas as dimensões da realidade. A fé madura de Jó termina com reconhecimento humilde diante de Deus."
+        "conteudo": "Desde os tempos mais remotos, tem-se evidenciado que o Senhor é \"o Juiz de toda a terra\", aquele que faz o que é justo (Gn 18.25) [cite: 125]. Deus não consegue suportar o pecado humano, e Jó e seus conselheiros concordam que os perversos receberão a punição que vem do alto [cite: 125]. Em seu aspecto mais simples, o princípio da retribuição afirma a verdade bíblica de que Deus pune os perversos e recompensa os fiéis (ver Pv 11.21; Gl 6.7, 9) [cite: 125]. Mas o princípio ortodoxo da retribuição não especifica quando ou quão rapidamente Deus agirá [cite: 125]. Além disso, iria além do ensino da Escritura empregar o princípio da retribuição ao contrário e chegar à conclusão simplista de que os que atualmente experimentam grande infortúnio ou aflição provam, com isso, que são grandes pecadores (ver Lc 13.1-5; Jo 9.1-3) [cite: 125]. No entanto, esta é a lógica que os conselheiros de Jó empregam: eles testemunham sua intensa agonia, e sua teologia os leva a inferir que Jó pecou seriamente [cite: 125]. Esses ensinos sapienciais estendem amplamente a aplicabilidade do princípio da retribuição, a ponto de haver uma teologia completa, sem pontas soltas [cite: 125]. Para eles, o sofrimento é uma punição ou um castigo [cite: 125]. Não veem lugar para sofrimento inocente, o qual atribuiria fidedignidade a Deus por permitir que aconteça [cite: 125]. Estão determinados a defender Deus e declaram, em alto e bom som, seus sentimentos no que diz respeito a ele [cite: 125]. No entanto, o que dizem é depreciativo e condescendente no tocante a Jó [cite: 125]. Não podem (ou não querem) apreender a natureza de sua condição [cite: 125]. Além disso, sua abordagem associa Deus à sua própria compreensão de mundo e não deixa lugar para a graça [cite: 125].\n\nContra as conclusões de seus amigos, Jó, solene e reiteradamente, protesta, mas já não consegue explicar a própria situação mais que seus amigos, pois todos partilham os mesmos pressupostos básicos [cite: 125]. Jó nunca nutre dúvidas acerca da existência de Deus, e permanece convicto de que Deus é justo [cite: 125]. Mas não pode conciliar isso com o que está acontecendo a ele [cite: 125]. Mesmo assim, Jó difere de seus conselheiros no aspecto de que não põe em xeque sua integridade pessoal [cite: 125]. Consequentemente, ele é levado a questionar a adequação da administração divina da justiça (ver 9.21-24; 12.4-6; 24.12; 40.8) [cite: 125]. Indagar por que há sofrimento imerecido não é errôneo, mas exigir que Deus dê uma explicação a tudo o que faz, sim [cite: 125]. Os caminhos de Deus são mais complexos do que a compreensão humana [cite: 125]. Os seres humanos devem cuidar de não desafiar a soberania de Deus ou presumir que seu discernimento finito seja maior do que realmente é [cite: 125]."
       },
       {
         "id": "jo_na_historia_mais_ampla_da_biblia",
         "titulo": "Jó na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "O livro contribui para a reflexão bíblica sobre sofrimento e confiança em Deus. Sua mensagem prepara o leitor para compreender que a relação com Deus não pode ser reduzida à prosperidade ou à ausência de sofrimento. O testemunho de Jó também se torna referência para perseverança e paciência diante da aflição."
+        "conteudo": "O cenário de Jó no mundo patriarcal nos lembra que as tensões e agonias da existência humana recuam aos tempos mais remotos [cite: 125]. Ainda que o mundo ainda seja divinamente controlado, já não é mais o mundo que originalmente se destinava a ser [cite: 125]. Anomalias e enigmas se proliferam através da presença do pecado e das atividades (divinamente limitadas) de Satanás [cite: 125]. O livro não busca explicar como esses fatores interagem e contribuem para o avanço do plano divino da redenção [cite: 125]. Em vez disso, foca a exploração de como viver fielmente através das horas sombrias de sofrimento, fraqueza e provação [cite: 125]. O conselho e o encorajamento ministrados nesse aspecto permanecem como um legado sem preço até a consumação [cite: 125]."
       },
       {
         "id": "cristo_em_jo",
         "titulo": "Cristo em Jó",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "O material relaciona Jó a Cristo principalmente por meio do tema do sofrimento do justo, da necessidade de um mediador e da esperança de redenção. A experiência de Jó antecipa questões que encontram resposta mais plena em Cristo, que sofre injustamente, permanece fiel e oferece reconciliação entre Deus e a humanidade."
+        "conteudo": "No meio da luta de Jó para compreender a providência de Deus em sua vida, ele se torna consciente de sua necessidade de uma figura mediadora, um redentor, que se ponha entre Deus e ele (ver 16.19-21; 19.25-27; 33.23) [cite: 125, 126]. Mesmo assim, não parece que Jó tenha estado sempre ciente de como seu anelo profundamente sentido finalmente se concretizará [cite: 126]. Naturalmente, essa concretização se encontra somente em Cristo [cite: 126].\n\nNo entanto, em um aspecto de sua experiência, Jó prefigura Cristo [cite: 126]. Ele é um sofredor inocente apanhado na tensão e na inimizade da luta entre as forças do bem e do mal [cite: 126]. Ele clama a Deus em sua desolação e está exposto ao espantoso abandono de não receber resposta (ver Sl 22.1, 2) [cite: 126]. Mas, através dessas trevas, ele passa a conhecer Deus de uma forma mais plena e mais íntima [cite: 126]. Em certa medida, não é possível dizer de Jó, como nosso Senhor disse de Abraão, que ele se regozijou ao ver o dia de Cristo? \"viu-o e regozijou-se\" (Jo 8.56) [cite: 126]."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 10,
-        "conteudo": "Jó recebeu interpretações judaicas e cristãs variadas, especialmente em torno da questão do sofrimento. O material destaca debates sobre a historicidade do personagem, a natureza dos discursos poéticos e o significado da resposta divina. Interpretações que transformam o livro em uma explicação simples para o sofrimento não fazem justiça à tensão literária apresentada."
+        "conteudo": "Com frequência, a igreja tem enfatizado somente a mensagem do prólogo e do epílogo, porque é mais fácil de entender do que os diálogos [cite: 126]. A referência de Tiago 5.11 à \"firmeza de Jó\" não se baseia em uma interpretação superficial que ignora a seção central dos diálogos [cite: 126]. Tiago não salienta a passividade de Jó, mas, sim, sua perseverança e, com ela, a compaixão e a misericórdia de Deus na concretização de seus propósitos [cite: 126]. O propósito de Deus no sofrimento de Jó é a chave para se compreender a aparente discrepância entre o tranquilo Jó do prólogo (caps. 1 e 2) e a fúria de Jó na seção central [cite: 126]. O propósito de Deus é complexo, envolvendo mais que uma questão de fé [cite: 126].\n\nAo longo dos séculos, tem havido fascinação contínua pelos enigmas da vida e do sofrimento humano como retratados em Jó [cite: 126]. Muitos comentaristas têm contribuído, de forma significativa, para nossa compreensão dessa obra complexa — nenhum mais que João Calvino, que pregou 159 sermões extraídos do livro [cite: 126]. Mas ninguém exauriu a análise de Jó, e o que, com frequência, se diz reflete intimamente as pressuposições que a geração representada pelo expositor tem extraído desse texto tão complexo [cite: 126]."
       },
       {
-        "id": "assuntos_especiais",
-        "titulo": "Assuntos especiais",
-        "tipo": "texto",
-        "ordem": 11,
-        "conteudo": "Entre os assuntos especiais estão a historicidade de Jó, a relação entre o prólogo e os discursos poéticos, a figura do adversário e o significado das criaturas descritas nos discursos divinos. O material ressalta que esses elementos devem ser interpretados dentro da mensagem teológica e literária do livro."
-      },
-      {
-        "id": "esboco",
+        "id": "esboco_de_jo",
         "titulo": "Esboço de Jó",
         "tipo": "auto",
-        "ordem": 12,
+        "ordem": 11,
         "conteudo": [
           {
-            "titulo": "I. Prólogo (1.1–2.13)",
+            "titulo": "I. PRÓLOGO (1.1-2.13)",
             "itens": [
-              "A. Jó é apresentado como íntegro (1.1-5)",
-              "B. O desafio de Satanás (1.6-12)",
-              "C. Jó perde seus bens e filhos (1.13-22)",
-              "D. Jó é afligido fisicamente (2.1-8)",
-              "E. A esposa e os amigos de Jó (2.9-13)"
+              "A. Jó é abençoado e íntegro (1.1-5)",
+              {
+                "titulo": "B. Jó é testado (1.6-2.13)",
+                "itens": [
+                  "1. Satanás acusa Jó (1.6-12)",
+                  "2. A confiança de Jó a despeito da tragédia (1.13-22)",
+                  "3. Satanás acusa Jó mais uma vez (2.1-6)",
+                  "4. A fé de Jó a despeito do sofrimento pessoal (2.7-10)",
+                  "5. Chegada dos conselheiros (2.11-13)"
+                ]
+              }
             ]
           },
           {
-            "titulo": "II. Diálogo de Jó com seus amigos (3.1–31.40)",
+            "titulo": "II. DIÁLOGO (CAPS. 3-27)",
             "itens": [
-              "A. Lamento inicial de Jó (cap. 3)",
-              "B. Primeiro ciclo de discursos (caps. 4–14)",
-              "C. Segundo ciclo de discursos (caps. 15–21)",
-              "D. Terceiro ciclo de discursos (caps. 22–27)",
-              "E. O poema sobre a sabedoria (cap. 28)",
-              "F. Jó recorda sua antiga condição (cap. 29)",
-              "G. Jó descreve sua humilhação presente (cap. 30)",
-              "H. Jó reafirma sua integridade (cap. 31)"
+              "A. O lamento inicial de Jó (cap. 3)",
+              {
+                "titulo": "B. Primeiro ciclo de discursos (caps. 4-14)",
+                "itens": [
+                  "1. Primeiro discurso de Elifaz (caps. 4 e 5)",
+                  "2. Primeira resposta de Jó a Elifaz (caps. 6 e 7)",
+                  "3. Primeiro discurso de Bildade (cap. 8)",
+                  "4. Primeira resposta de Jó a Bildade (caps. 9 e 10)",
+                  "5. Primeiro discurso de Zofar (cap. 11)",
+                  "6. Primeira resposta de Jó a Zofar (caps. 12-14)"
+                ]
+              },
+              {
+                "titulo": "C. Segundo ciclo de discursos (caps. 15-21)",
+                "itens": [
+                  "1. Segundo discurso de Elifaz (cap. 15)",
+                  "2. Segunda resposta de Jó a Elifaz (caps. 16 e 17)",
+                  "3. Segundo discurso de Bildade (cap. 18)",
+                  "4. Segunda resposta de Jó a Bildade (cap. 19)",
+                  "5. Segundo discurso de Zofar (cap. 20)",
+                  "6. Segunda resposta de Jó a Zofar (cap. 21)"
+                ]
+              },
+              {
+                "titulo": "D. Terceiro ciclo de discursos (caps. 22-26)",
+                "itens": [
+                  "1. Terceiro discurso de Elifaz (cap. 22)",
+                  "2. Terceira resposta de Jó a Elifaz (caps. 23 e 24)",
+                  "3. Terceiro discurso de Bildade (cap. 25)",
+                  "4. Terceira resposta de Jó a Bildade (cap. 26)"
+                ]
+              },
+              {
+                "titulo": "E. Discurso conclusivo de Jó (caps. 27 e 28)",
+                "itens": [
+                  "1. Jó assevera sua integridade (cap. 27)",
+                  "2. A verdadeira fonte de sabedoria (cap. 28)"
+                ]
+              }
             ]
           },
           {
-            "titulo": "III. Discursos de Eliú (caps. 32–37)",
+            "titulo": "III. MONÓLOGOS (29.1-42.6)",
             "itens": [
-              "A. Eliú apresenta sua posição (32–33)",
-              "B. Eliú defende a justiça de Deus (34)",
-              "C. Eliú fala sobre a soberania e a grandeza de Deus (35–37)"
+              {
+                "titulo": "A. Oração final de Jó (caps. 29-31)",
+                "itens": [
+                  "1. Bênção, honra e benevolência pessoais pretéritas (cap. 29)",
+                  "2. Desonra e sofrimento presentes, e não benevolência (cap. 30)",
+                  "3. Protesto de inocência de Jó (cap. 31)"
+                ]
+              },
+              {
+                "titulo": "B. Discursos de Eliú (caps. 32-37)",
+                "itens": [
+                  "1. Introdução de Eliú (32.1-5)",
+                  "2. Primeiro discurso de Eliú (32.6-33.33)",
+                  "3. Segundo discurso de Eliú (cap. 34)",
+                  "4. Terceiro discurso de Eliú (cap. 35)",
+                  "5. Quarto discurso de Eliú (caps. 36 e 37)"
+                ]
+              },
+              {
+                "titulo": "C. Respostas do Senhor e reação de Jó (38.1-42.6)",
+                "itens": [
+                  "1. Primeiro discurso do Senhor (38.1-40.2)",
+                  "2. A humilde reação de Jó (40.3-5)",
+                  "3. Segundo discurso do Senhor (40.6-41.34)",
+                  "4. Reação penitente de Jó (42.1-6)"
+                ]
+              }
             ]
           },
           {
-            "titulo": "IV. O Senhor responde a Jó (38.1–42.6)",
+            "titulo": "IV. EPÍLOGO (42.7-17)",
             "itens": [
-              "A. O primeiro discurso do Senhor (38–39)",
-              "B. A resposta de Jó (40.1-5)",
-              "C. O segundo discurso do Senhor (40.6–41.34)",
-              "D. A resposta final de Jó (42.1-6)"
-            ]
-          },
-          {
-            "titulo": "V. Epílogo (42.7-17)",
-            "itens": [
-              "A. O Senhor repreende os amigos de Jó (42.7-9)",
-              "B. Jó é restaurado (42.10-17)"
+              "A. Jó confirmado (42.7-9)",
+              "B. Jó restaurado (42.10-17)"
             ]
           }
         ]
@@ -142,5 +188,9 @@
   },
   "referencias_inline": true,
   "politica_traducao": "independente",
-  "fonte_base": "03_Poeticos.zip — imagens de introdução e esboço fornecidas pelo usuário"
+  "fonte": {
+    "arquivo": "18_Jó.pdf",
+    "paginas": "Páginas impressas 754 a 759",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de Jó, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
+  }
 }

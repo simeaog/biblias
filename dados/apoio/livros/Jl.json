@@ -2,106 +2,110 @@
   "schema": "apoio-livro-v1",
   "id": "Jl",
   "nome": "Joel",
+  "abreviacao": "Jl",
   "material": {
     "titulo": "Sobre Joel",
-    "introducao": "Joel interpreta uma devastadora praga de gafanhotos como advertência do “dia do Senhor”. O livro chama todo o povo ao arrependimento, anuncia julgamento e restauração e culmina na promessa do derramamento do Espírito de Deus.",
+    "introducao": "O Livro de Joel usa uma praga devastadora de gafanhotos como um sinal e prenúncio do terrível e glorioso \"dia do Senhor\", chamando o povo ao sincero arrependimento e prometendo o derramamento universal do Espírito de Deus e a restauração final.",
     "secoes": [
       {
-        "id": "titulo",
-        "titulo": "Título",
+        "id": "titulo_e_autor",
+        "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O livro recebe o nome de Joel, enunciador profético identificado em 1.1. Seu nome em hebraico significa literalmente “Jeová é Deus”."
+        "conteudo": "Joel é o enunciador profético das palavras do texto (1.1) [cite: 110]. Seu nome em hebraico é uma combinação que significa literalmente \"Jeová é Deus\" [cite: 110]. Visto que Joel é desconhecido de quaisquer outros textos no Antigo Testamento, o que sabemos sobre ele tem origem unicamente no próprio livro [cite: 110]. O ardente interesse de Joel por Jerusalém, especialmente pelo templo e por seus funcionários (p. ex., 1.9, 13, 14; 2.14-17, 32; 3.1, 6, 16, 17), sugere que ele vivia em Jerusalém e talvez ministrasse frequentemente nas proximidades do templo [cite: 110]."
       },
       {
-        "id": "autor",
-        "titulo": "Autor",
+        "id": "data",
+        "titulo": "Data",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "Joel é desconhecido de outros textos do Antigo Testamento; portanto, o que se sabe sobre ele vem do próprio livro. Seu forte interesse por Jerusalém, pelo templo e por seus funcionários sugere que vivia em Jerusalém e talvez ministrasse com frequência nas proximidades do templo."
+        "conteudo": "No livro, não há indicações cronológicas específicas que nos ajudem a determinar a data de sua composição [cite: 110]. Muitos eruditos contemporâneos datam sua escrita do tempo do exílio, após a destruição de Jerusalém pelos babilônios (586 a.C.) [cite: 110]. Aqueles que sustentam esse esquema de datação costumam apoiar-se no argumento de silêncio, como, por exemplo, o fato de nenhum rei ser mencionado e de não haver referências a Israel, o reino do Norte [cite: 110]. Entretanto, o ambiente da profecia é a terra de Judá, e o culto no templo é aludido em todo o livro [cite: 110]. Essa evidência aponta para o fato de que o livro de Joel não é exílico, mas foi escrito antes de Judá cair para a Babilônia [cite: 110]. Com tudo isso em mente, talvez seja melhor concluir, acompanhando Calvino, que a data do livro não pode ser definida com exatidão [cite: 110]."
       },
       {
-        "id": "data_e_circunstancias",
-        "titulo": "Data e circunstâncias",
+        "id": "circunstancias",
+        "titulo": "Circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "O livro não fornece indicações cronológicas específicas. Muitos estudiosos o datam no período do exílio, depois da destruição de Jerusalém em 586 a.C., com base principalmente no silêncio sobre reis e sobre o reino do Norte. Entretanto, o ambiente é a terra de Judá e o culto do templo aparece repetidamente. O material conclui que a data não pode ser definida com exatidão, acompanhando a posição de Calvino. A circunstância imediata é uma praga excepcional de gafanhotos que devastou Judá, prejudicou a economia e interrompeu as ofertas do templo. Joel interpreta a praga como julgamento de Deus e como advertência ou prenúncio do escatológico “dia do Senhor”."
+        "conteudo": "As circunstâncias do livro de Joel dizem respeito a uma praga de gafanhotos que acometeu Judá, uma praga ímpar na história do país (1.2) [cite: 110]. A economia básica foi prejudicada (1.11, 12) [cite: 110]. Até mesmo as ofertas sacrificiais foram descontinuadas no templo, por causa da grande devastação agrícola (1.13) [cite: 110]. Joel acreditava que essa praga era um julgamento de Deus sobre Judá, pois eles não se arrependiam (2.12, 13) [cite: 110]. Tratava-se de um julgamento apenas temporário, mas que serviu como advertência ou prenúncio de um julgamento maior que Deus traria sobre as pessoas impenitentes na forma do escatológico \"dia do Senhor\" [cite: 110]."
       },
       {
         "id": "genero_e_caracteristicas_literarias",
         "titulo": "Gênero e características literárias",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Joel é principalmente uma profecia em estilo poético. O paralelismo hebraico e o uso de figuras de linguagem são marcantes, assim como os símbolos associados à praga dos gafanhotos. A profecia é organizada em torno de julgamento, libertação e “dia do Senhor”. A partir de 2.28, o eixo do livro é a descrição do derramamento do Espírito de Deus sobre seu povo. O final apresenta esperança de restauração de Judá, Jerusalém e do culto apropriado no templo."
+        "conteudo": "O livro de Joel é uma obra de profecia elaborada principalmente em estilo poético [cite: 110]. O uso de linhas de paralelismo, um indicador da poesia hebraica, é proeminente na profecia [cite: 110]. Por exemplo, Joel 1.11 diz:\n\nEnvergonhai-vos, lavradores,\nuivai, vinhateiros,\nsobre o trigo e sobre a cevada,\nporque pereceu a messe do campo [cite: 110, 111].\n\nO profeta também emprega várias figuras de linguagem — outro indicador da poesia hebraica — para oferecer vívidas descrições de sua mensagem [cite: 111]. Seu uso de símbolos, especialmente na praga dos gafanhotos, é uma das principais características do livro [cite: 111].\n\nA profecia de Joel é altamente estruturada ao redor dos temas de julgamento, libertação e \"dia do Senhor\" [cite: 111]. O escritor usa essa repetição para ressaltar e enfatizar a certeza de julgamento [cite: 111]. Começando em 2.28, o eixo do livro é a magnífica descrição do derramamento do Espírito de Deus sobre seu povo [cite: 111]. No final do livro, é oferecida uma grande esperança quanto à restauração de Judá, de Jerusalém e do culto apropriado no templo [cite: 111]."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "O tema principal é o “dia do Senhor”, entendido como tempo de intervenção divina na história humana. O tema se associa ao julgamento de Judá e Jerusalém, à derrota de seus inimigos e, finalmente, ao julgamento de todas as nações. O mesmo dia também traz esperança de restauração para um Israel arrependido. O arrependimento deve envolver todo o povo — jovens e velhos, homens e mulheres, líderes e seguidores — e precisa ser sincero, vindo do coração, não apenas de manifestações rituais externas. A motivação para o arrependimento está no próprio caráter de Deus, misericordioso, compassivo, tardio em irar-se e grande em benignidade."
+        "conteudo": "O principal tema do livro de Joel é \"o dia do Senhor\", um tempo de intervenção divina imediata na história humana para reorganizar as coisas na terra [cite: 111]. Esse tema é associado ao julgamento sobre Israel e Judá e à derrota de seus inimigos [cite: 111]. Essas intervenções no curso da história do mundo prenunciavam a transformação divina final do dia de julgamento [cite: 111]. Em Joel, o dia do Senhor foca, especificamente, num julgamento futuro contra Judá e Jerusalém (2.32) e, por fim, contra todas as nações do mundo (3.1, 2) [cite: 111]. O dia do Senhor oferece a esperança de restauração depois do julgamento, quando, então, haverá livramento futuro para um Israel arrependido (2.32) [cite: 111].\n\nArrependimento é outro tema importante na mensagem profética de Joel [cite: 111]. O chamado ao arrependimento é dirigido não somente a um grupo seleto da comunidade da aliança, mas a todo o povo do Senhor, que é chamado a se voltar para ele: jovens e velhos, homens e mulheres, líderes e seguidores e até mesmo aqueles que poderiam, de alguma forma, estar isentos de responsabilidade na comunidade (mães que amamentavam e pessoas recém-casadas — 1.13, 14; 2.15-17) [cite: 111]. O retorno para Deus exigido por Joel envolve a todos [cite: 111]. Esse arrependimento deve manifestar-se externamente por meio de ações como chorar, lamentar, clamar ao Senhor e jejuar (1.13, 14; 2.15, 17) [cite: 111]. Uma vez que as manifestações meramente exteriores e rituais não são adequadas, o Senhor chama o povo para mostrar a sinceridade do arrependimento ao se converter ao Senhor \"de todo\" o seu coração (2.12, 13) [cite: 111]. Joel também lembra ao povo de Deus que a motivação para o arrependimento se baseia firmemente na natureza de Deus: \"Ele é misericordioso, e compassivo, e tardio em irar-se, e grande em benignidade\" (2.13) [cite: 111]. Joel enfatiza que, em última análise, a esperança de restauração está em Deus, que exerce sua liberdade e graça soberanas em dar o arrependimento e o perdão às pessoas [cite: 111]."
       },
       {
         "id": "teologia_de_joel",
         "titulo": "Teologia de Joel",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "Joel segue o padrão profético de oráculos de julgamento seguidos por oráculos de salvação, fundamentado na soberania de Deus. A praga de gafanhotos é atribuída ao Senhor e também serve de símbolo para um exército invasor. O arrependimento e a salvação posteriores ocorrem sob a providência de Deus. O controle soberano do Senhor alcança a criação e os acontecimentos humanos. O livro também contribui para a escatologia ao lembrar que haverá um dia de julgamento no qual todos prestarão contas a Deus."
+        "conteudo": "O livro de Joel segue um padrão encontrado na maioria dos livros proféticos do Antigo Testamento: oráculos de julgamento seguidos por oráculos de salvação [cite: 111]. Fundamentando esse refrão profético comum, está a crença na soberania de Deus [cite: 111]. Quando, por exemplo, Joel descreve a praga de gafanhotos que atingiu Judá (e simboliza um exército invasor), acredita que foi o Senhor quem a trouxe (1.15; 2.11, 25) [cite: 111]. O arrependimento e a salvação subsequentes do povo se desdobram também de acordo com a providência de Deus (2.28, 29) [cite: 111]. A própria criação está às ordens e à disposição do Senhor [cite: 111]. Assim, Joel demonstra que o controle soberano do Senhor se estende a todas as coisas, incluindo a criação e os eventos humanos [cite: 111]. Essa visão complexa de julgamento e salvação de Deus conduz à seguinte declaração: \"Sabereis, assim, que eu sou O SENHOR, vosso Deus, que habito em Sião, meu santo monte\" (3.17) [cite: 111].\n\nA ênfase no dia do Senhor, em Joel, é também uma contribuição significativa à escatologia (doutrina das últimas coisas) bíblica [cite: 111]. Joel lembra aos leitores que eles não podem considerar a paz e a prosperidade presentes algo natural e que há um dia de julgamento para todos, no qual terão de prestar contas a Deus (3.1, 2) [cite: 111, 112]. Nesse dia, todos que não se tiverem convertido ao único e verdadeiro Senhor por meio de seu Filho, Jesus Cristo, se verão sob a ira de Deus [cite: 112]."
       },
       {
         "id": "joel_na_historia_mais_ampla_da_biblia",
         "titulo": "Joel na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "O Novo Testamento utiliza imagens de Joel ao falar dos tempos finais, incluindo imagens do dia do Senhor e dos gafanhotos. Joel 2.28–32 é especialmente importante: Pedro o cita em Atos 2.16–21, aplicando a promessa do derramamento do Espírito ao Pentecostes. Paulo usa Joel 2.32 em Romanos 10.13 para afirmar a universalidade da salvação: todo aquele que invocar o nome do Senhor será salvo. A igreja continua a usar Joel tanto como fonte de esperança quanto como advertência e chamado ao arrependimento."
+        "conteudo": "O livro de Joel tem ocupado um lugar importante na vida da igreja [cite: 111, 112]. O Novo Testamento sugere que Jesus e seus seguidores eram familiarizados com os escritos de Joel [cite: 112]. A influência do livro é mais evidente nas passagens do Novo Testamento que falam dos tempos finais [cite: 112]. Elas usam imagens vívidas de Joel para descrever o dia do Senhor e a praga de gafanhotos (p. ex., Mc 13.24; Lc 21.25; Ap 6.12, 13; 9.2, 3) [cite: 112]. São também importantes as promessas feitas em Joel 2.28-32, que Pedro cita no dia de Pentecostes, afirmando que atingiram seu cumprimento no derramamento do Espírito Santo sobre os discípulos em Jerusalém (At 2.16-21) [cite: 112]. Em Romanos 10.13, Paulo também se refere à profecia e usa Joel 2.32 para mostrar que \"não há distinção entre judeu e grego\" [cite: 112]. A salvação é oferecida a todas as pessoas [cite: 112]. Como Joel afirma: \"Todo aquele que invocar o nome do SENHOR será salvo\" (Jl 2.32) [cite: 112].\n\nA igreja continua a achar que o ensino sobre o dia do Senhor no livro de Joel é, por um lado, importante fonte de esperança e conforto e, por outro, uma mensagem de advertência [cite: 112]. Em tempos de aflição e dificuldade, os cristãos têm considerado consoladoras e inspiradoras as promessas sobre a bênção final, a proteção e a vindicação da comunidade pactual do Senhor [cite: 112]. Ao mesmo tempo, a descrição vívida de Joel sobre os terríveis aspectos do dia do Senhor tem servido como lembrete do julgamento e da santidade de Deus, e como um chamado permanente ao arrependimento genuíno e à santidade de vida [cite: 112]."
       },
       {
         "id": "cristo_em_joel",
         "titulo": "Cristo em Joel",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "Com possível exceção de 2.23, Joel não menciona diretamente um messias pessoal ou libertador real. Entretanto, Cristo aparece no cumprimento da promessa do derramamento do Espírito em 2.28–32, realizada no Pentecostes. Todos os que se arrependem e invocam o nome do Senhor recebem a promessa de salvação. O livro delineia o programa de intervenção e livramento messiânicos em termos gerais, sem fornecer detalhes cronológicos."
+        "conteudo": "Com a possível exceção de 2.23 (ver nota), Joel não menciona diretamente um messias pessoal ou um libertador real [cite: 112]. No entanto, a profecia de Joel descreve as condições gerais de bênção associadas aos tempos messiânicos [cite: 112]. Cristo é evidente no texto de Joel que faz a descrição do derramamento do Espírito Santo, em 2.28-32, que se cumpriu no dia de Pentecostes (At 2.16-21) [cite: 112]. Todos que se arrependerem e invocarem o nome do Senhor serão salvos (At 2.38-41; Rm 10.13) [cite: 112]. Joel delineia todo o programa de intervenção e livramento messiânicos, embora faça isso em termos gerais, sem detalhes cronológicos [cite: 112]."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "As principais questões históricas envolveram a data do livro e a interpretação da praga de gafanhotos como literal ou figurada. Muitos intérpretes antigos consideravam literal a praga do capítulo 1 e simbólicas as referências do capítulo 2, associando-as a invasões militares posteriores. Gregório, o Grande, interpretou os gafanhotos como uma hierarquia de vícios. Teodoro de Mopsuéstia os relacionou às invasões assírias e babilônicas. Jerônimo, embora adotasse interpretação figurada, viu os diferentes tipos de gafanhotos de 1.4 como uma série de invasões culminando no ataque romano."
+        "conteudo": "Ao longo dos séculos, os intérpretes se debruçaram em muitas questões relacionadas ao livro de Joel, especialmente na data e nas circunstâncias, bem como se a praga de gafanhotos deve ser entendida de maneira literal ou figurada [cite: 112]. A maioria dos intérpretes antigos da Escritura entendeu que a invasão de gafanhotos no capítulo 1 se refere a um evento literal causado pela infidelidade do povo [cite: 112]. No entanto, muitos desses mesmos intérpretes sugerem, no capítulo 2, as referências aos gafanhotos como significando, simbolicamente, as posteriores invasões militares da terra [cite: 112]. Alguns dos antigos intérpretes, como Gregório, o Grande, entenderam os gafanhotos como uma hierarquia de vícios [cite: 112]. Teodoro de Mopsuéstia concluiu que a praga de gafanhotos não se referia a nenhum fenômeno natural, mas, sim, às invasões assírias e babilônias, mas não às de tempos posteriores [cite: 112]. Embora Jerônimo também tenha adotado uma interpretação figurada, argumentou que os vários tipos de gafanhotos em 1.4 prediziam uma série de invasões que culminaria no ataque dos romanos [cite: 112]."
       },
       {
-        "id": "esboco",
+        "id": "esboco_de_joel",
         "titulo": "Esboço de Joel",
         "tipo": "auto",
         "ordem": 10,
         "conteudo": [
           {
-            "titulo": "I. INTRODUÇÃO (1.1)",
+            "titulo": "I. INTRODUÇÃO (1.1) [cite: 113]",
             "itens": []
           },
           {
-            "titulo": "II. CRISES QUE EXIGEM ARREPENDIMENTO (1.2–2.17)",
+            "titulo": "II. CRISES QUE EXIGEM ARREPENDIMENTO (1.2-2.17) [cite: 113]",
             "itens": [
-              "A. Devastação recente por gafanhotos e seca (1.2–20)",
-              "B. Ataque futuro pelo exército do Senhor (2.1–17)"
+              "A. Devastação recente por gafanhotos e seca (1.2-20) [cite: 113]",
+              "B. Ataque futuro pelo exército do Senhor (2.1-17) [cite: 113]"
             ]
           },
           {
-            "titulo": "III. RESPOSTAS DO DEUS DA ALIANÇA (2.18–3.21)",
+            "titulo": "III. RESPOSTAS DO DEUS DA ALIANÇA (2.18-3.21) [cite: 113]",
             "itens": [
-              "A. Renovação física da terra (2.18–27)",
-              "B. Renovação espiritual do povo do Senhor (2.28–32)",
-              {
-                "titulo": "C. Julgamento final (cap. 3)",
-                "itens": [
-                  "1. Julgamento das nações (3.1–15)",
-                  "2. Bênçãos sobre o povo de Deus (3.16–21)"
-                ]
-              }
+              "A. Renovação física da terra (2.18-27) [cite: 113]",
+              "B. Renovação espiritual do povo do Senhor (2.28-32) [cite: 113]",
+              "C. Julgamento final (cap. 3) [cite: 113]",
+              "1. Julgamento das nações (3.1-15) [cite: 113]",
+              "2. Bênçãos sobre o povo de Deus (3.16-21) [cite: 113]"
             ]
           }
         ]
       }
     ]
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fonte": {
+    "arquivo": "29_Joel.pdf",
+    "paginas": "Páginas impressas 1518 a 1521",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de Joel, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

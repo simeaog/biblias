@@ -5,116 +5,112 @@
   "abreviacao": "2Sm",
   "material": {
     "titulo": "Sobre 2 Samuel",
-    "introducao": "2 Samuel concentra-se no reinado de Davi, desde sua entronização sobre Judá e Israel até seus conflitos familiares e políticos. A promessa de uma dinastia eterna contrasta com o pecado de Davi e suas consequências.",
+    "introducao": "O Segundo Livro de Samuel narra a história da corte e o reinado de Davi, abrangendo desde sua ascendência ao trono sobre Judá e todo o Israel e seu reinado glorioso, passando pela falência de seu reinado desencadeada pelo pecado com Bate-Seba e pelas rebeliões familiares, até reflexões finais sobre sua trajetória e aliança divina.",
     "secoes": [
       {
-        "id": "titulo",
-        "titulo": "Título",
+        "id": "titulo_e_autor",
+        "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "2 Samuel é a segunda parte da obra formada por 1 e 2 Samuel, dedicada à história de Samuel, Saul e, especialmente, ao reinado de Davi."
-      },
-      {
-        "id": "autor",
-        "titulo": "Autor",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "O autor de 1 e 2 Samuel é anônimo. A obra reúne materiais históricos e tradições sobre Samuel, Saul e Davi."
+        "conteudo": "Originalmente, 1 e 2 Samuel formavam um livro único. Para discussões acerca da maioria dos tópicos relacionados a 1 e 2 Samuel, ver Introdução a 1 Samuel."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "O livro concentra-se no reinado de Davi, mostrando sua consolidação como rei sobre Judá e Israel, a conquista de Jerusalém, a aliança davídica e, posteriormente, o pecado de Davi e suas consequências. A narrativa não idealiza o rei: apresenta tanto sua fidelidade quanto seus graves fracassos e os efeitos deles sobre sua família e seu reino.",
-        "paginas_fonte": [
-          1
-        ]
+        "ordem": 2,
+        "conteudo": "Todo o relato de 2 Samuel está centrado no reinado de Davi; em certo sentido, é sua história na corte. O livro pode ser dividido em quatro seções relativas ao seu reinado: a ascendência de Davi ao trono, primeiro sobre Judá e, em seguida, sobre todo o Israel (1.1-5.5); o reinado glorioso de Davi (5.6-10.19); a falência de seu reinado (11.1-20.26); e, então, algumas reflexões finais sobre seu reinado (21.1-24.25).\n\nAlém dos temas cobertos na Introdução a 1 Samuel, alguns aspectos adicionais de 2 Samuel demandam ênfase mais atenta. É muito importante observar que 2 Samuel 7 descreve a aliança que Deus estabeleceu com Davi. Embora Deus tenha negado o pedido de Davi para construir um templo para ele (vv. 4-7), prometeu, por intermédio do profeta Natã, que um da \"estirpe\" de Davi seria estabelecido no trono de Israel (v. 12). Um dia, esse descendente construiria uma casa, ou um templo, para o Senhor (v. 13a). Adicionalmente, a natureza eterna do reinado do descendente é sublinhada quando Deus jura que ele duraria para \"sempre\" (vv. 13b, 16). Deus disciplinaria a prole de Davi por sua iniquidade, porém não a abandonaria (vv. 15-16). Essa profecia encontrou cumprimento inicial em Salomão, filho de Davi: Salomão era o descendente direto de Davi, foi estabelecido como rei sobre Israel e construiu o templo para o Senhor. Não obstante, a profecia da aliança davídica tem maiores expectativas do que aquela que ocorreu nos dias de Salomão, especialmente no que diz respeito à eternidade do reinado. Aliás, ali apareceu um cumprimento maior da profecia na vinda de Jesus Cristo: ele é o filho de Davi; ele é o verdadeiro rei de Israel; ele está construindo um templo maior (Hb 3.1-4) e seu trono é eterno.\n\nO pivô do livro de 2 Samuel é o pecado de Davi com Bate-Seba e contra Urias nos capítulos 11-12. Quando confrontado por Natã, o arrependimento de Davi foi genuíno, e o perdão de Deus, imediato. Contudo, o pecado ainda teve suas consequências para Davi e seu reinado. Em seus últimos anos, Davi testemunhou os próprios pecados em forma de réplica na vida de seus filhos. Deus prometeu ainda que \"a espada jamais se apartaria\" da casa de Davi (12.10). O rei viveu para ver quatro de seus filhos mortos, três deles — Absalão, Amnom e Adonias — pela espada. Davi sobreviveria para ver duas rebeliões, a primeira por seu filho Absalão e, após, por Seba, filho de Bicri (cap. 20), e então seu reinado reconquistaria certa medida de equilíbrio.\n\nA conclusão temática é provida para os livros de 1 e 2 Samuel por uma espécie de epílogo em 2 Samuel 21-24. Esses capítulos, em linhas gerais, são simétricos, e no centro ficam dois poemas que celebram as duas razões fundamentais para a bem-aventurança de Davi. Primeiro, o Senhor foi seu libertador (22.2-51); e, segundo, o Senhor fez uma aliança \"eterna\" com ele (23.1-7). Esse final demonstra o fervor do coração de Davi e a maneira como ele valorizava sua relação com Deus acima de tudo."
       },
       {
-        "id": "data_e_circunstancias",
-        "titulo": "Data e circunstâncias",
-        "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "O centro teológico do livro é a promessa de uma dinastia permanente a Davi e a maneira como Deus conduz a história apesar do pecado humano. O reinado de Davi deve ser entendido à luz da aliança e da soberania de Deus.",
-        "paginas_fonte": [
-          1,
-          2
-        ]
-      },
-      {
-        "id": "cristo_em_2_samuel",
-        "titulo": "Cristo em 2 Samuel",
-        "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "A promessa de uma dinastia eterna a Davi constitui uma base importante para a expectativa messiânica. O desenvolvimento posterior dessa promessa aponta para o rei davídico definitivo.",
-        "paginas_fonte": [
-          2
-        ]
-      },
-      {
-        "id": "esboco_de_2sm",
+        "id": "esboco_de_2_samuel",
         "titulo": "Esboço de 2 Samuel",
         "tipo": "auto",
-        "ordem": 6,
+        "ordem": 3,
         "conteudo": [
           {
-            "titulo": "I. Deus entroniza Davi sobre Judá e Israel (1.1–5.5)",
+            "titulo": "I. DEUS ENTRONIZA DAVI SOBRE JUDÁ E ISRAEL (1.1-5.5)",
             "itens": [
               {
-                "texto": "A. Davi se torna rei sobre Judá (1.1–2.7)",
+                "titulo": "A. Davi se torna rei sobre Judá (1.1-2.7)",
                 "itens": [
                   "1. Davi se vinga e lamenta as mortes de Saul e de Jônatas (cap. 1)",
-                  "2. Davi é ungido rei sobre Judá (2.1–7)"
+                  "2. Davi é ungido rei sobre Judá (2.1-7)"
                 ]
               },
               {
-                "texto": "B. Davi se torna rei sobre Israel (2.8–5.5)",
+                "titulo": "B. Davi se torna rei sobre Israel (2.8-5.5)",
                 "itens": [
-                  "1. Abner faz Isbosete rei sobre Israel, e há guerra entre as casas de Saul e de Davi (2.8–32)",
+                  "1. Abner faz Isbosete rei sobre Israel, e há guerra entre as casas de Saul e de Davi (2.8-32)",
                   "2. Abner sai contra Davi e é morto por Joabe (cap. 3)",
-                  "3. Isbosete é assassinado, e Davi se torna rei sobre todo o Israel (4.1–5.5)"
+                  "3. Isbosete é assassinado, e Davi se torna rei sobre todo o Israel (4.1-5.5)"
                 ]
               }
             ]
           },
           {
-            "titulo": "II. Davi conquista a cidade e a promessa de uma dinastia eterna (5.6–10.19)",
+            "titulo": "II. DAVI CONQUISTA A CIDADE E A PROMESSA DE UMA DINASTIA ETERNA (5.6-10.19)",
             "itens": [
               {
-                "texto": "A. Davi estabelece sua capital em Jerusalém (5.6–6.23)",
+                "titulo": "A. Davi estabelece sua capital em Jerusalém (5.6-6.23)",
                 "itens": [
-                  "1. Davi conquista Jerusalém e derrota os filisteus (5.6–25)",
+                  "1. Davi conquista Jerusalém e derrota os filisteus (5.6-25)",
                   "2. Davi traz a arca de Deus para Jerusalém (cap. 6)"
                 ]
               },
-              "B. Deus dá a Davi uma dinastia eterna (cap. 7)",
-              "C. Os empreendimentos de Davi como rei (caps. 8–10)"
+              "B. Deus promete a Davi uma dinastia eterna (cap. 7)",
+              {
+                "titulo": "C. Os empreendimentos de Davi como rei (caps. 8-10)",
+                "itens": [
+                  "1. As vitórias e os oficiais de Davi (cap. 8)",
+                  "2. A bondade de Davi para com Mefibosete (cap. 9)",
+                  "3. A bondade de Davi para com Hanum é desprezada e resulta em guerra contra Amom (cap. 10)"
+                ]
+              }
             ]
           },
           {
-            "titulo": "III. Davi peca e sofre as consequências (caps. 11–20)",
+            "titulo": "III. DAVI PECA E SOFRE AS CONSEQUÊNCIAS (CAPS. 11-20)",
             "itens": [
               {
-                "texto": "A. Davi peca e encontra reconciliação (caps. 11 e 12)",
+                "titulo": "A. Davi peca e encontra reconciliação (caps. 11 e 12)",
                 "itens": [
                   "1. Bate-Seba e Urias (cap. 11)",
                   "2. Davi se arrepende, mas seu pecado tem consequências (cap. 12)"
                 ]
               },
-              "B. Os filhos de Davi pecam, e a reconciliação é incompleta (caps. 13 e 14)",
-              "C. Absalão se rebela e morre (caps. 15–18)",
-              "D. Deus restaura o reinado de Davi (caps. 19 e 20)"
+              {
+                "titulo": "B. Os filhos de Davi pecam, e a reconciliação é incompleta (caps. 13 e 14)",
+                "itens": [
+                  "1. Amnom comete pecado sexual e Absalão comete homicídio (cap. 13)",
+                  "2. Absalão retorna a Jerusalém, mas não é plenamente reconciliado com Davi (cap. 14)"
+                ]
+              },
+              {
+                "titulo": "C. Absalão se rebela e morre (caps. 15-18)",
+                "itens": [
+                  "1. Absalão se revolta contra Davi, o qual, então, foge de Jerusalém (cap. 15)",
+                  "2. Simei amaldiçoa Davi (cap. 16)",
+                  "3. Husai recusa o conselho de guerra de Absalão (cap. 17)",
+                  "4. Absalão é morto por Joabe e pranteado por Davi (cap. 18)"
+                ]
+              },
+              {
+                "titulo": "D. Deus restaura o reinado de Davi (caps. 19 e 20)",
+                "itens": [
+                  "1. Davi retorna a Jerusalém (cap. 19)",
+                  "2. Tentativas de Seba de causar cisão (cap. 20)"
+                ]
+              }
             ]
           },
           {
-            "titulo": "IV. Epílogo: palavras finais sobre o reinado de Davi (caps. 21–24)",
+            "titulo": "IV. EPÍLOGO: PALAVRAS FINAIS SOBRE O REINADO DE DAVI (CAPS. 21-24)",
             "itens": [
-              "A. A fome resultante do pecado de Saul é estancada (21.1–14)",
-              "B. Agentes humanos do sucesso de Davi (21.15–22)",
+              "A. A fome resultante do pecado de Saul é estancada (21.1-14)",
+              "B. Agentes humanos do sucesso de Davi (21.15-22)",
               "C. Davi entoa os louvores de Deus (cap. 22)",
-              "D. As últimas palavras de Davi (23.1–7)",
-              "E. Mais agentes humanos no sucesso de Davi (23.8–39)",
+              "D. As últimas palavras de Davi (23.1-7)",
+              "E. Mais agentes humanos no sucesso de Davi (23.8-39)",
               "F. A praga resultante do pecado de Davi é estancada (cap. 24)"
             ]
           }
@@ -126,7 +122,7 @@
   "politica_traducao": "independente",
   "fonte": {
     "arquivo": "10_2 Samuel.pdf",
-    "paginas": "Páginas impressas 450–452",
-    "criterio": "Conteúdo revisado a partir das páginas de introdução e do esboço da fonte fornecida, com correção de OCR, hifenização, pontuação e referências. A estrutura do esboço foi conferida contra a página de esboço da fonte e adaptada ao mesmo formato estrutural de Gênesis."
+    "paginas": "Páginas impressas 450 a 452",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de 2 Samuel, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

@@ -5,136 +5,129 @@
   "abreviacao": "Hb",
   "material": {
     "titulo": "Sobre Hebreus",
-    "introducao": "Hebreus é uma obra do Novo Testamento que apresenta Jesus Cristo como o Filho por meio de quem Deus falou nos últimos dias e como o Sumo Sacerdote perfeito. O título tradicional identifica a obra como dirigida a cristãos ligados ao contexto judaico e profundamente familiarizados com o Antigo Testamento, seu santuário, sacerdócio e sistema sacrificial.",
+    "introducao": "A Epístola aos Hebreus é uma obra-prima teológica e pastoral do Novo Testamento que demonstra a supremacia absoluta, a suficiência e a excelência de Jesus Cristo — nosso perfeito Sumo Sacerdote e Mediador da Nova Aliança.",
     "secoes": [
       {
-        "id": "titulo",
-        "titulo": "Título",
+        "id": "titulo_e_autor",
+        "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "Hebreus é uma obra do Novo Testamento que apresenta Jesus Cristo como o Filho por meio de quem Deus falou nos últimos dias e como o Sumo Sacerdote perfeito. O título tradicional identifica a obra como dirigida a cristãos ligados ao contexto judaico e profundamente familiarizados com o Antigo Testamento, seu santuário, sacerdócio e sistema sacrificial."
+        "conteudo": "O autor de Hebreus era proficiente em grego e no estilo literário helenista, versado no Antigo Testamento (especificamente, na Septuaginta), sensível à história de redenção que culminava em Jesus e pastoralmente preocupado com os leitores originais, que o conheciam pessoalmente (13.22, 23) e cujo contexto histórico ele também conhecia (10.32-34) [cite: 271]. Como seus leitores, o autor chegara à fé não por meio de contato direto com Jesus, mas por intermédio da pregação dos apóstolos (2.3, 4) [cite: 271]. Além disso, ele era familiarizado com Timóteo (13.23) [cite: 271].\n\nNo entanto, a epístola não nos diz o nome do autor, deixando no ar um mistério tentador [cite: 271]. Na Igreja oriental, no tempo de Clemente de Alexandria e Orígenes, a epístola era atribuída a Paulo, embora ambas as igrejas primitivas reconhecessem as diferenças de estilo entre Hebreus e as epístolas paulinas [cite: 271]. No Ocidente, Tertuliano propôs Barnabé, um levita da dispersão judaica que era notável em animar os outros (At 4.36) [cite: 271]. Outras sugestões antigas eram Lucas e Clemente de Roma [cite: 271]. Desde os séculos V e VI, a autoria de Paulo tem sido aceita no Ocidente e no Oriente [cite: 271]. Durante a Reforma, Lutero propôs Apolo, um judeu cristão, de Alexandria, que era habilidoso em discurso e poderoso nas Escrituras (At 18.24) [cite: 271]. No período moderno, algumas sugestões incluem Priscila (mas, cf. 11.32, o autor refere-se a si mesmo com um particípio masculino), Epafras (Cl 1.7) e Silas (At 15.22, 32, 40; 1Pe 5.12) [cite: 271]. Alguns poucos têm sugerido que Hebreus é um discurso ou um sermão paulino redigido por Lucas (ver os discursos de Paulo em At 13.16-41; 14.15-17; 17.22-31; 20.18-35; 22.1-21; 24.10-21; 26.2-23; 25-27; 27.21-26; 28.17-20) [cite: 271]. Embora seja difícil excluir muitos desses candidatos, é igualmente difícil formar um argumento convincente em favor de qualquer um deles [cite: 271]. Do ponto de vista da tradição antiga, Paulo tem mais reivindicações, mas, como observou Calvino, Hebreus difere de Paulo em estilo e método de ensinamento bem como na inclusão de si mesmo entre os discípulos dos apóstolos (2.3): uma afirmação oposta à declaração característica de Paulo, no sentido de haver recebido sua designação e revelação do evangelho diretamente de Cristo (Gl 1.1, 11-12) [cite: 271].\n\nSe o autor não é Paulo (ou alguém como Lucas, cujo outros escritos nós temos), saber seu nome acrescentaria pouco ao nosso entendimento acerca da epístola [cite: 271]. A epístola tem realmente afinidades teológicas com Paulo [cite: 271]. Por outro lado, a elevada doutrina de João sobre Cristo como o \"Verbo\" é detectável [cite: 271]. Mas essas características, bem como o retrato do sofrimento de Jesus descrito nos três primeiros (sinóticos) evangelhos, devem ser esperadas em vista da autoria unificadora do Espírito Santo em toda a Escritura [cite: 271]. Embora o autor humano desse livro permaneça desconhecido, o fato importante é que esse livro, como o Antigo Testamento antes dele, é o que \"o Espírito Santo\" diz (3.7) [cite: 271]."
       },
       {
-        "id": "autor",
-        "titulo": "Autor",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "O autor humano não é identificado no próprio texto. A obra registra que, na tradição antiga, houve atribuições a Paulo, Barnabé, Lucas, Clemente de Roma e, na Reforma, Apolo, entre outras propostas posteriores. Embora a tradição paulina tenha sido forte, o estudo destaca diferenças de estilo e método entre Hebreus e as cartas de Paulo e considera impossível estabelecer com segurança a identidade do autor. O escritor conhecia profundamente a Septuaginta, a história da redenção, seus leitores e Timóteo, e se apresenta como alguém que recebeu o evangelho por meio da pregação apostólica (2.3, 4)."
-      },
-      {
-        "id": "data_circunstancias",
+        "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "Hebreus fornece informações sobre seus leitores, mas não permite determinar com certeza data e local. Eles falavam grego, usavam a Septuaginta, compreendiam argumentos do Antigo Testamento e estavam familiarizados com o santuário, sacrifícios e sacerdócio. Já haviam sofrido perseguição e estavam novamente sob pressão, correndo perigo de apostasia. A referência a pessoas “da Itália” (13.24) favorece, segundo a fonte, um contexto italiano, possivelmente Roma, embora a proposta permaneça especulativa. A situação pode estar relacionada à perseguição sob Nero e ao período em que o templo ainda estava de pé."
+        "ordem": 2,
+        "conteudo": "Hebreus oferece uma quantidade razoável de informações sobre os receptores originais e sua situação, mas deixa as questões de data e localização sem resposta certa [cite: 272]. Os leitores originais falavam grego e usavam a Septuaginta [cite: 272]. Podiam seguir argumentos extraídos do Antigo Testamento e eram interessados no santuário, no sistema de sacrifícios e no sacerdócio do Antigo Testamento [cite: 272]. Não tinham ouvido o evangelho diretamente de Jesus, mas dos apóstolos (2.3), haviam enfrentado perseguição antes (10.32-34) e estavam enfrentando perseguição no tempo da escrita da carta, inclusive com a expulsão das instituições judaicas (13.12-13) [cite: 272]. Estavam em perigo de apostatar, talvez por temerem a morte (2.14-18), embora sua fé ainda não os tivesse levado ao martírio (12.4) [cite: 272]. Além disso, podiam estar passando por uma transição na liderança da igreja (13.7, 17) e, portanto, viam-se preocupados com a segurança e a permanência (6.19; 11.10; 13.8, 14) [cite: 272]. Por fim, eles receberam, por meio do autor, saudação de pessoas \"da Itália\" (13.24) [cite: 272].\n\nJuntando essas características, podemos concluir que os destinatários eram cristãos judeus da Dispersão (a difusão de judeus fora da Palestina), residentes talvez na Itália [cite: 272]. Embora alguns proponham que os destinatários estivessem na Espanha ou em Jerusalém, Roma permanece como a melhor escolha, embora qualquer proposta seja especulativa [cite: 272]. Isso nos levaria a entender 13.24 como uma saudação enviada ao \"lar\" por expatriados, ainda que 13.24 também possa ser uma saudação enviada da parte de cristãos italianos sem qualquer relação com os leitores da carta [cite: 272]. Evidência adicional de um contexto italiano da audiência original está no fato de que a mais antiga evidência de familiaridade com a epístola procede de Roma, em 1 Clemente, uma obra que data de cerca de 96 d.C. [cite: 272] Aparentemente, o templo ainda estava de pé e seus rituais de sacrifício eram realizados quando Hebreus foi escrita (10.2, 3, 11) [cite: 272]. Talvez a situação seja a de perseguição sob o governo de Nero (por volta de 64 d.C.) [cite: 272]. Nesse caso, o sofrimento mencionado em 10.32-34 poderia ter sido causado pelo édito de Cláudio, que expulsou os judeus de Roma em 49 d.C. (At 18.2) [cite: 272]. O efeito dessa expulsão teria sido sentido nos anos 50 e no início dos anos 60 d.C [cite: 272].\n\nSujeitos a sofrimento e vergonha por sua confissão de Jesus, privados das instituições familiares e visíveis da religião judaica organizada e confusos em virtude do caráter oculto da glória de Jesus (velada em sofrimento quando esteve na terra e agora oculta no céu), os leitores originais se viam tentados a retroceder da fé (10.38, 39), cair em incredulidade e, assim, desistir da peregrinação rumo ao descanso e à cidade de Deus (4.1, 2, 11; 11.10, 14-16; 13.14) [cite: 272]. Portanto, uma data de composição entre 50 e 90 d.C. é viável, mas a falta de menção à destruição do templo, que era uma confirmação da mensagem do autor e, por isso, certamente teria sido citada se tivesse acontecido antes de ele ter escrito a carta, bem como as referências à perseguição (como notamos antes), apontam fortemente para uma data anterior a 70 d.C [cite: 272]. Talvez a melhor data seja entre 60 e 70 d.C [cite: 272]."
       },
       {
-        "id": "genero",
+        "id": "genero_e_caracteristicas_literarias",
         "titulo": "Gênero e características literárias",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "Hebreus começa com características de tratado teológico, desenvolve-se como uma “palavra de exortação” semelhante a um sermão e termina em forma epistolar. O argumento é construído de maneira expositiva, usando extensivamente o Antigo Testamento para demonstrar a superioridade de Cristo. As exortações não são interrupções do argumento: fazem parte do propósito pastoral de chamar os ouvintes a perseverar na fé."
+        "ordem": 3,
+        "conteudo": "Tem-se observado que Hebreus começa como um tratado teológico (indicado, em especial, pelo capítulo 1), continua no corpo principal como um sermão oral (cf. 13.22) e é concluído como uma epístola (13.22-25) [cite: 272]. Portanto, como alguns comentadores têm observado, o livro deve ser entendido como um documento teológico, ouvido como um sermão e lido como uma epístola [cite: 272]. Por outro lado, o autor se refere à sua obra como uma \"palavra de exortação\" (13.22) [cite: 272]. Visto que a mesma expressão em Atos 13.15 se refere a um discurso na sinagoga, é possível identificar essa \"epístola\" como um sermão expositivo em forma escrita [cite: 272]. Ver essa epístola primariamente como um sermão guarda coerência com sua ênfase no falar de Deus e no ouvir da Palavra por parte dos receptores (1.1, 2; 2.1-3; 3.1, 15; 12.25 etc.) [cite: 272]. A ênfase em exortação, em 13.22, mostra que as seções de aplicação direta e admoestação aos ouvintes (2.1-4; 3.7-4.13 etc.) não são interrupções da discussão teológica, mas, em vez disso, mostram o propósito do autor para seu rico argumento em favor da superioridade de Cristo como mediador [cite: 272]."
       },
       {
-        "id": "caracteristicas_temas_principais",
+        "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "O eixo da carta é a superioridade de Cristo e da nova aliança sobre as instituições da antiga ordem. Jesus é superior aos anjos e a Moisés, e seu sacerdócio é superior ao sacerdócio levítico. Seu sacrifício é perfeito e oferecido uma vez por todas, purificando a consciência e proporcionando acesso a Deus. A carta combina doutrina elevada com advertências contra negligenciar a salvação e com um forte chamado à perseverança. A fé é apresentada como confiança perseverante nas promessas de Deus, exemplificada pelos santos do Antigo Testamento."
+        "ordem": 4,
+        "conteudo": "O elevado estilo literário de Hebreus e seu foco especial no sumo sacerdócio de Cristo distinguem esse livro de todos os outros do Novo Testamento [cite: 272, 273]. Foi apropriadamente descrito como uma \"palavra de exortação\", pois exortação e encorajamento constituem o âmago do propósito do livro (3.13; 6.18; 10.25; 12.5) [cite: 272, 273]. O autor chama seus leitores, repetidas vezes, a uma resposta ativa e corajosa (4.11, 14, 16; 6.1; 10.19-25) [cite: 273].\n\nA exortação para perseverarem na peregrinação da fé está alicerçada na prova do autor de que o próprio Antigo Testamento dá testemunho da imperfeição da aliança do Sinai, do templo (ou tabernáculo) e de seu sistema de sacrifícios, apontando, assim, para a frente, para um novo Sumo Sacerdote: Jesus Cristo [cite: 273]. Jesus é melhor do que os mediadores, o santuário e os sacrifícios da velha ordem [cite: 273]. Ele é digno de \"maior glória\" (3.3) [cite: 273]. Os argumentos do menor para o maior de 2.2, 3; 9.13, 14; 10.28, 29; e 12.25 (\"se... muito menos\") ressaltam a graça maior, bem como a responsabilidade maior, às quais chegamos agora na nova aliança mediada por Jesus [cite: 273]. Diferentemente dos aspectos terrenos e exteriores do santuário do Antigo Testamento, Jesus nos santifica para a verdadeira adoração a Deus, a fim de nos aproximar do próprio céu com a consciência limpa [cite: 273]. Ele é a garantia dessa melhor aliança, porque nos liga inseparavelmente ao Deus de graça [cite: 273]."
       },
       {
-        "id": "teologia_hb",
+        "id": "teologia_de_hebreus",
         "titulo": "Teologia de Hebreus",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "Jesus Cristo ocupa o centro da teologia de Hebreus como Filho, Profeta, Rei e grande Sumo Sacerdote. A carta apresenta uma “escatologia inaugurada”: a obra de Cristo já realizou a expiação, mas sua aparição futura consumará a salvação. Cristo é o sacerdote segundo a ordem de Melquisedeque, mediador da nova aliança e aquele cujo sacrifício supera os sacrifícios repetidos da antiga ordem. A perseverança dos crentes está ligada à suficiência de sua obra e à certeza de seu sacerdócio permanente."
+        "ordem": 5,
+        "conteudo": "Jesus Cristo é central na teologia de Hebreus [cite: 273]. O livro começa com uma afirmação de que Cristo é o melhor profeta, que revela Deus e seu caminho de salvação: \"Havendo Deus, outrora, falado, muitas vezes e de muitas maneiras, aos pais, pelos profetas, nestes últimos dias nos falou pelo Filho, a quem constituiu herdeiro de todas as coisas, pelo qual também fez o universo\" (Hb 1.1-2) [cite: 273]. A razão pela qual Cristo é o melhor profeta é que ele é o Filho de Deus, que o \"constituiu herdeiro de todas as coisas\", uma referência a Salmos 2.7-8, em que Deus promete que seu \"Filho\" teria uma \"herança\" que se estenderia até \"as extremidades da terra\" [cite: 273]. Essa profecia do fim dos tempos começou a ser cumprida em Cristo [cite: 273].\n\nEssa \"escatologia inaugurada\" é uma chave teológica importante para o livro [cite: 273]. Por exemplo, Hebreus 9.26 afirma que Cristo, \"ao se cumprirem os tempos [ou seja, em sua primeira vinda], se manifestou uma vez por todas, para aniquilar, pelo sacrifício de si mesmo, o pecado\" [cite: 273]. Mas, dois versículos depois, há uma referência a Cristo concluindo a história: \"Assim também Cristo, tendo-se oferecido uma vez para sempre para tirar os pecados de muitos, aparecerá segunda vez, sem pecado, aos que o aguardam para a salvação\" (9.28) [cite: 273].\n\nJesus Cristo é capaz de remover o pecado pelo sacrifício de si mesmo porque ele é nosso grande Sumo Sacerdote [cite: 273]. Jesus, o cumprimento tipológico do sacerdote Melquisedeque, do Antigo Testamento, é um sacerdote para sempre em contraste com todos os sacerdotes humanos, incluindo Melquisedeque (7.3, nota) [cite: 273]. Todos os sacerdotes, Melquisedeque ou os sacerdotes levitas, apontam para Jesus, que completou, de modo escatológico (final e totalmente nos últimos dias), os incompletos e imperfeitos ministros sacerdotais anteriores que apontavam para ele (cf. 5.9) [cite: 273].\n\nA \"nova aliança\" profetizada em Jeremias 31.31-34 é outra chave teológica importante na epístola [cite: 273]. É considerada detalhadamente em 8.8-13 e 10.16, 17 [cite: 273]. Hebreus 8.10-12 recita o conteúdo essencial da nova aliança, que está contida em Jeremias 31.33, 34: \"Na sua mente imprimirei as minhas leis, também sobre o seu coração as inscreverei; e eu serei o seu Deus, e eles serão o meu povo. E não ensinará jamais cada um ao seu próximo, nem cada um ao seu irmão, dizendo: Conhece ao Senhor; porque todos me conhecerão, desde o menor deles até ao maior. Pois, para com as suas iniquidades, usarei de misericórdia e dos seus pecados jamais me lembrarei\" [cite: 273]. O ponto principal do cumprimento da nova aliança em Jesus é que ele entrou no verdadeiro Santo dos Santos celestial, na presença de Deus, e capacita outros a atingirem essa posição na própria presença de Deus, à qual somente os sacerdotes do Antigo Testamento tinham acesso (8.11, nota) [cite: 273]. Isso começou a se cumprir na primeira vinda de Jesus e será consumado em sua última vinda [cite: 273]."
       },
       {
-        "id": "historia_ampla",
+        "id": "hebreus_na_historia_mais_ampla_da_biblia",
         "titulo": "Hebreus na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 7,
-        "conteudo": "Hebreus interpreta a história bíblica como uma trajetória que conduz à realidade definitiva em Cristo. O tabernáculo, o sacerdócio, os sacrifícios, Moisés e as promessas do Antigo Testamento funcionam como elementos que apontam para uma realidade superior. A antiga aliança tinha caráter provisório e tipológico; a nova aliança, mediada por Cristo, traz acesso ao santuário celestial e a realidade para a qual os símbolos antigos apontavam."
+        "ordem": 6,
+        "conteudo": "Dentro do livro de Hebreus, o Antigo Testamento se relaciona com o Novo Testamento de várias maneiras [cite: 273, 274]. A contribuição singular dessa epístola para a revelação de Jesus Cristo no Novo Testamento é sua exibição do cumprimento da velha aliança por Jesus: o santuário, os sacrifícios e o sacerdócio estabelecidos na lei de Moisés [cite: 274]. Além disso, os cristãos são vistos como recapitulando a peregrinação de Israel no deserto e a chegada ao descanso na Terra Prometida [cite: 274]. A fim de estabelecer Cristo como sumo sacerdote, o escritor de Hebreus foca em como Cristo cumpre os tipos e as profecias do Antigo Testamento [cite: 274]. O que o Antigo Testamento previu que aconteceria nos fins dos tempos foi inaugurado na primeira vinda de Cristo e será consumado em sua vinda final [cite: 274]."
       },
       {
-        "id": "cristo_em",
+        "id": "cristo_em_hebreus",
         "titulo": "Cristo em Hebreus",
         "tipo": "texto",
-        "ordem": 8,
-        "conteudo": "Hebreus apresenta tanto a plena divindade como a verdadeira humanidade de Cristo. Ele é o Filho, agente da criação, resplendor da glória de Deus e expressão exata de seu ser. Ao mesmo tempo, tornou-se semelhante aos irmãos, participou de carne e sangue e enfrentou a morte. Como mediador, exerce os ofícios de profeta, sacerdote e rei. Seu sacrifício é único e definitivo, e sua segunda vinda completará a salvação daqueles que o aguardam."
+        "ordem": 7,
+        "conteudo": "Hebreus dá uma contribuição singular à revelação do Novo Testamento tanto da pessoa como da obra redentora em Cristo [cite: 274]. Essa epístola afirma, em termos vigorosos, a plena deidade de Cristo e sua completa humanidade [cite: 274]. O prólogo introduz Jesus como Filho de Deus, o agente da Criação, o resplendor da glória de Deus e a \"expressão exata do seu Ser, sustentando todas as coisas pela palavra do seu poder\" (1.2, 3) [cite: 274]. As citações do Antigo Testamento são aplicadas ao Filho, dirigindo-se a ele como \"Deus\" (1.8, citando Sl 45.6) e \"Senhor\", descrevendo-o como o Criador imutável da terra e dos céus (1.10-12, citando Sl 102.25-27) [cite: 274]. Mas esse Filho divino, exaltado acima dos anjos, tornou-se, \"por um pouco, menor que os anjos\" (2.6-8, citando Sl 8.4-6), por participar da carne e do sangue da humanidade e, portanto, de nossa vulnerabilidade à morte, feito \"em todas as coisas... semelhante aos irmãos\" (2.14-17) [cite: 274].\n\nEm relação à obra redentora de Cristo, Hebreus mostra Jesus cumprindo os três ofícios mediadores conhecidos em Israel: profeta, sacerdote e rei [cite: 274]. Em cumprimento da missão profética de comunicar revelação da parte de Deus à humanidade, Jesus é o Filho em quem Deus falou \"nestes últimos dias\" (1.2), que anunciou a chegada de \"tão grande salvação\" (2.3) e cuja voz agora nos adverte do céu (12.25-27) [cite: 274]. Em extensão e profundeza maiores, o autor de Hebreus explora o ministério sacerdotal de Jesus em seu sacrifício expiatório, que purifica a consciência dos crentes para se aproximarem de Deus em adoração, e em sua intercessão constante a favor dos crentes, à direita de Deus, no céu (2.17, 18; 4.14-5.10; 7.1-10.25) [cite: 274]. Porque Cristo é da ordem de Melquisedeque, ele é tanto um sacerdote como um rei (7.1), referido por Deus não somente como o \"Filho\" real e messiânico (5.5), mas também como um sacerdote para sempre (5.6) [cite: 274]. Como rei, Cristo possui um cetro de justiça (1.8-9), vence o arqui-inimigo de seu povo, o Diabo (2.14-15), e lhes dá um reino inabalável (12.28) [cite: 274]."
       },
       {
-        "id": "historia_interpretacao",
+        "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 9,
-        "conteudo": "A interpretação histórica de Hebreus foi marcada especialmente por debates sobre o sacerdócio de Cristo, Melquisedeque, a Ceia do Senhor e as passagens de advertência. A associação entre Melquisedeque e pão e vinho influenciou interpretações antigas da Ceia, enquanto a ênfase de Hebreus no sacrifício “uma vez por todas” foi usada para questionar a ideia de repetição sacrificial. As advertências sobre perseverança também estiveram no centro dos debates entre tradições reformadas e arminianas sobre a segurança da salvação."
+        "ordem": 8,
+        "conteudo": "A afirmação, em Hebreus 7, de que Cristo é um sacerdote segundo a ordem de Melquisedeque afetou a maneira como alguns pais da Igreja entenderam a ordenança da Ceia do Senhor [cite: 274]. Por exemplo, Ambrósio, o bispo de Milão no século IV, observou em Gênesis 14.18 que Melquisedeque ofereceu sacrifício de pão e vinho [cite: 274]. Como Jesus usou pão e vinho e como Jesus é um sacerdote segundo a ordem de Melquisedeque, Ambrósio e outros começaram a falar da Ceia do Senhor como um sacrifício [cite: 274]. Com o passar dos séculos, essa ideia se desenvolveu na doutrina católica romana da Missa, em que a ordenança é vista como uma obra meritória, um sacrifício propiciatório que repete ou representa o sacrifício de Cristo sempre que é oferecido [cite: 274]. Essa doutrina, porém, é claramente oposta à ênfase de Hebreus sobre a natureza \"uma vez por todas\" da expiação de Cristo (10.11-14) [cite: 274].\n\nAs passagens de advertência de Hebreus (2.1-4; 3.7-4.13; 5.11-6.12; 10.19-39; 12.14-29) também têm sido fonte de muito debate na história da Igreja [cite: 274]. No final do século XVI e no início do século XVII, elas se tornaram um dos pontos centrais de debate entre teólogos tradicionalmente reformados e seus oponentes arminianos [cite: 274]. Os arminianos argumentavam que várias dessas passagens provam que os verdadeiros cristãos podem separar-se de Cristo [cite: 274]. As igrejas reformadas rejeitaram essa interpretação no Sínodo de Dort, realizado em 1618-1619 [cite: 274]."
       },
       {
         "id": "assuntos_especiais",
         "titulo": "Assuntos especiais",
         "tipo": "texto",
-        "ordem": 10,
-        "conteudo": "As passagens de advertência de Hebreus levantam a questão de como conciliar o chamado urgente à perseverança com a segurança da salvação. A fonte enfatiza que a apresentação da suficiência do sacrifício de Cristo (9.1–10.18) fundamenta a segurança do crente e deve ser considerada juntamente com as advertências. O livro chama os crentes a perseverarem, sem diminuir a eficácia da obra consumada de Cristo."
+        "ordem": 9,
+        "conteudo": "Apesar da rejeição da teologia arminiana pela tradição reformada, as passagens de advertência em Hebreus continuam a inquietar muitos crentes e, com frequência, são citadas como prova de que os verdadeiros crentes podem perder sua salvação [cite: 274, 275]. As questões levantadas nessas passagens de advertência precisam ser abordadas, e as notas de estudos nesses textos lidam com muitas dessas questões em grandes detalhes [cite: 275]. A princípio, vale a pena notar que muitos têm falhado em apreciar a maneira como o livro de Hebreus afirma a segurança da salvação do crente [cite: 275]. Por exemplo, a extensa apresentação da plena suficiência do sacrifício de Cristo em 9.1-10.18 torna inconcebível que Jesus possa perder qualquer daqueles em favor dos quais ele morreu [cite: 275]. Essa é uma parte importante da doutrina da expiação definida ou limitada, a qual afirma: Deus planejou que a morte de Cristo pagasse apenas os pecados dos eleitos [cite: 275]. Portanto, aqueles em favor dos quais ele morreu certamente serão salvos (cf. Jo 10.14-16, 22-30; ver nota teológica \"Expiação Definida\", na p. 1875) [cite: 275].\n\nEm outras passagens, o autor de Hebreus afirma que aqueles que têm fé verdadeira perseverarão até o fim [cite: 275]. Hebreus 3.14 é um texto-chave: \"Porque nos temos tornado participantes de Cristo, se, de fato, guardarmos firme, até ao fim, a confiança que, desde o princípio, tivemos\" [cite: 275]. Esse versículo revela evidente conexão entre a realidade de alguém se tornar participante de Cristo e a perseverança na fé [cite: 275]. Aqueles que professam crer participam de Cristo somente se perseverarem na fé até o fim; e o fracasso em perseverar — guardar até o fim a confiança que tiveram desde o princípio — prova que nunca participaram de Cristo [cite: 275]. Todos aqueles que têm fé verdadeira perseverarão, e somente aqueles que perseveram têm fé verdadeira [cite: 275]. Isso está em harmonia com outros textos bíblicos sobre perseverança, incluindo a ênfase de Paulo, em Filipenses 2.12, 13, de que os crentes desenvolvem sua salvação, com temor e tremor, enquanto Deus age neles, e em harmonia com o ensino de João, no sentido de que aqueles que abandonam a fé e jamais retornam nunca foram realmente parte da família de Deus (1Jo 2.19) [cite: 275]. Ver nota teológica \"Perseverança dos Santos\", na p. 1994 [cite: 275].\n\nPor fim, a ênfase de Hebreus na obra de intercessão de Cristo também dá aos leitores a confiança de que aqueles que creem nele perseverarão na fé [cite: 275]. Cristo pode salvar totalmente aqueles que se achegam a ele pela fé, porque vive sempre a interceder por eles (Hb 7.25) [cite: 275]. Na antiga aliança, nem todos aqueles pelos quais o sumo sacerdote orava perseveravam realmente na fé [cite: 275]. Se tivessem perseverado, não teria havido o exílio, porque toda a nação seria constituída de homens e mulheres de fé [cite: 275]. Se, como o livro de Hebreus argumenta, o Sumo Sacerdote da nova aliança é maior do que os sumos sacerdotes da velha aliança, então é impossível que ele perca qualquer um daqueles por quem intercede [cite: 275]. Há um grande exemplo disso no caso de Pedro e Judas [cite: 275]. Tanto Pedro como Judas negaram Cristo, mas somente Pedro foi restaurado [cite: 275]. Qual foi a diferença entre os dois homens? Jesus orou em favor de Pedro, mas não de Judas (Lc 22.31, 32, 54-62; Jo 21.15-19; cf. Mt 27.3-10) [cite: 275]. Se Jesus vive sempre para interceder por aqueles que, com fé, se achegam a ele, então Jesus não cessará de orar por todo aquele que é verdadeiramente convertido [cite: 275]. Uma vez que uma pessoa confie nele, Cristo não cessará de orar por essa pessoa, e o Pai não rejeitará seu Filho, porque isso os colocaria em oposição em sua obra conjunta de salvar as pessoas que Deus escolheu [cite: 275].\n\nPor que, então, essas passagens de advertência, se o verdadeiro crente não pode apostatar da fé? [cite: 275] A resposta aqui é entendermos o papel do crente na perseverança, bem como as limitações dos escritores bíblicos [cite: 275]. Em primeiro lugar, os crentes têm um papel a desempenhar em sua perseverança [cite: 275]. Enquanto a obra monergística de Deus sustenta todo o empreendimento de salvação, do começo ao fim, garantindo a redenção dos eleitos, aqueles que foram regenerados prosseguem realmente na fé, prestando atenção ao ensino da Escritura e examinando a si mesmos, a fim de se assegurar de que estão na fé [cite: 275]. Advertências como as que encontramos no livro de Hebreus são usadas pelo Espírito para encorajar os crentes a perseverar [cite: 275]. Em segundo lugar, é importante lembrar que, embora os escritores bíblicos fossem inspirados por Deus, para que nos dessem a própria Palavra de Deus, esse ato de inspiração não os tornava oniscientes [cite: 275]. O dom de inspiração não levava consigo a concessão da habilidade de ver os corações dos outros [cite: 275]. Paulo, Pedro, o autor de Hebreus e os demais autores bíblicos não tinham o tipo de conhecimento que o Senhor tem sobre o estado da alma dos outros [cite: 275]. No entanto, eles sabiam que suas audiências incluíam aqueles que tinham fé e aqueles que apenas professavam ter fé, e entenderam que Deus usaria as palavras deles para salvar seus eleitos; por isso, eles proferiram advertências para toda a Igreja, confiando que o Senhor as usaria para fazer seu povo perseverar [cite: 275].\n\nDeus não pode falhar em salvar seu povo [cite: 275, 276]. Todos os que foram justificados também serão glorificados (Rm 8.28-30), e a obra do Senhor em seu povo, assim como em Paulo que, antes de sua conversão, fez o possível para se opor ao reino de Deus, prova que, se Deus realmente quer salvar uma pessoa, não falhará nessa empreitada [cite: 276]. Mas Deus não nos salva e, depois, nos remove imediatamente do planeta; em vez disso, Deus quer que seu povo desenvolva sua salvação com temor e tremor, atentando para suas advertências, à medida que vai crescendo na fé e se apegando diariamente a Cristo [cite: 276]."
       },
       {
-        "id": "esboco_hb",
+        "id": "esboco_de_hebreus",
         "titulo": "Esboço de Hebreus",
         "tipo": "auto",
-        "ordem": 11,
+        "ordem": 10,
         "conteudo": [
           {
-            "titulo": "I. CRISTO É SUPERIOR AOS ANJOS (CAPS. 1, 2)",
+            "titulo": "I. CRISTO É SUPERIOR AOS ANJOS (CAPS. 1, 2) [cite: 276]",
             "itens": [
-              "A. Prólogo: a última e melhor Palavra é falada em seu Filho (1.1-4)",
-              "B. A Escritura dá testemunho da honra maior do Filho (1.5-14)",
-              "C. Exortação a não negligenciar a salvação revelada pelo Filho (2.1-4)",
-              "D. O Filho se tornou semelhante a seus irmãos como nosso Sumo Sacerdote (2.5-18)"
+              "A. Prólogo: a última e melhor Palavra é falada em seu Filho (1.1-4) [cite: 276]",
+              "B. A Escritura dá testemunho da honra maior do Filho (1.5-14) [cite: 276]",
+              "C. Exortação a não negligenciar a salvação revelada pelo Filho (2.1-4) [cite: 276]",
+              "D. O Filho se tornou semelhante a seus irmãos como nosso Sumo Sacerdote (2.5-18) [cite: 276]"
             ]
           },
           {
-            "titulo": "II. CRISTO É SUPERIOR A MOISÉS (3.1-4.13)",
+            "titulo": "II. CRISTO É SUPERIOR A MOISÉS (3.1-4.13) [cite: 276]",
             "itens": [
-              "A. O Filho tem maior honra do que Moisés, o servo (3.1-6)",
-              "B. Exortação a não imitar os que não creram e morreram no deserto (3.7-19)",
-              "C. Exortação a perseverar e receber a promessa do descanso sabático final (4.1-13)"
+              "A. O Filho tem maior honra do que Moisés, o servo (3.1-6) [cite: 276]",
+              "B. Exortação a não imitar os que não creram e morreram no deserto (3.7-19) [cite: 276]",
+              "C. Exortação a perseverar e receber a promessa do descanso sabático final (4.1-13) [cite: 276]"
             ]
           },
           {
-            "titulo": "III. CRISTO É UM SACERDOTE SUPERIOR A TODOS OS OUTROS SACERDOTES (4.14-7.28)",
+            "titulo": "III. CRISTO É UM SACERDOTE SUPERIOR A TODOS OS OUTROS SACERDOTES (4.14-7.28) [cite: 276]",
             "itens": [
-              "A. Cristo, o Sumo Sacerdote incomparável, que inspira confiança para achegar-se ao trono de Deus (4.14-16)",
-              "B. Cristo, o Sumo Sacerdote superior segundo a ordem de Melquisedeque (5.1-10)",
-              "C. Exortação à perseverança e maturidade espiritual, com advertência sobre apostasia (5.11-6.12)",
-              "D. Um Sumo Sacerdote melquisedequiano para sempre por juramento divino (6.13-20)",
-              "E. Um Sacerdote para sempre segundo a ordem de Melquisedeque (cap. 7)"
+              "A. Cristo, o Sumo Sacerdote incomparável que inspira confiança nos crentes para se achegarem ao trono de Deus e obterem ajuda, com vistas à perseverança em sua fé (4.14-16) [cite: 276]",
+              "B. Cristo, o Sumo Sacerdote superior segundo a ordem de Melquisedeque (5.1-10) [cite: 276]",
+              "C. Exortação à perseverança e à maturidade espiritual, bem como uma advertência sobre apostasia (5.11-6.12) [cite: 276]",
+              "D. Um Sumo Sacerdote Melquisedequiano para sempre por juramento divino (6.13-20) [cite: 276]",
+              "E. Um Sacerdote para sempre segundo a ordem de Melquisedeque (cap. 7) [cite: 276]"
             ]
           },
           {
-            "titulo": "IV. O SUPERIOR MINISTÉRIO SACERDOTAL DE CRISTO (8.1-10.18)",
+            "titulo": "IV. O SUPERIOR MINISTÉRIO SACERDOTAL DE CRISTO (8.1-10.18) [cite: 276]",
             "itens": [
-              "A. Um ministério sacerdotal superior em um templo celestial superior (8.1-5)",
-              "B. Uma nova aliança superior (8.6-13)",
-              "C. Um tabernáculo superior (9.1-10)",
-              "D. Um sacrifício superior que purifica a consciência (9.11-28)",
-              "E. O sacrifício de Cristo de uma vez por todas (10.1-18)"
+              "A. Um ministério sacerdotal superior em um templo celestial superior (8.1-5) [cite: 276]",
+              "B. Uma nova aliança superior (8.6-13) [cite: 276]",
+              "C. Um tabernáculo superior (9.1-10) [cite: 276]",
+              "D. Um sacrifício superior que purifica a consciência (9.11-28) [cite: 276]",
+              "E. O sacrifício de Cristo de uma vez por todas (10.1-18) [cite: 276]"
             ]
           },
           {
-            "titulo": "V. UM CHAMADO À PERSEVERANÇA NA FÉ (10.19-12.29)",
+            "titulo": "V. UM CHAMADO À PERSEVERANÇA NA FÉ (10.19-12.29) [cite: 276]",
             "itens": [
-              "A. Uma aliança superior implica maior responsabilidade (10.19-39)",
-              "B. Exemplos da vida de fé (cap. 11)",
-              "C. Perseverando ao focar na fé em Jesus (12.1, 2)",
-              "D. Os verdadeiros filhos de Deus perseveram na fé e aceitam a disciplina (12.3-17)",
-              "E. Chegando à Jerusalém celestial e aceitando a voz de Deus (12.18-29)"
+              "A. Uma aliança superior implica maior responsabilidade (10.19-39) [cite: 276]",
+              "B. Exemplos da vida de fé (cap. 11) [cite: 276]",
+              "C. Perseverando ao focar na fé em Jesus (12.1, 2) [cite: 276]",
+              "D. Os verdadeiros filhos de Deus perseveram na fé e aceitam a disciplina (12.3-17) [cite: 276]",
+              "E. Chegando à Jerusalém celestial e aceitando a voz de Deus, que fala ali (12.18-29) [cite: 276]"
             ]
           },
           {
-            "titulo": "VI. CONCLUSÃO (CAP. 13)",
+            "titulo": "VI. CONCLUSÃO (CAP. 13) [cite: 276]",
             "itens": [
-              "A. Exortações finais aos leitores (13.1-19)",
-              "B. Bênção e saudações (13.20-25)"
+              "A. Exortações finais aos leitores (13.1-19) [cite: 276]",
+              "B. Bênção e saudações (13.20-25) [cite: 276]"
             ]
           }
         ]
@@ -144,8 +137,8 @@
   "referencias_inline": true,
   "politica_traducao": "independente",
   "fonte": {
-    "arquivo": "58_Hebreus/58_Hebreus0.jpg até 58_Hebreus5.jpg",
-    "paginas": "imagens fornecidas no lote 09_Cartas_Gerais",
-    "criterio": "Reconstrução baseada nas imagens, com OCR por coluna, normalização de hifenização e correção de erros evidentes de OCR."
+    "arquivo": "58_Hebreus.pdf",
+    "paginas": "Páginas impressas 2191 a 2196",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de Hebreus, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

@@ -5,116 +5,103 @@
   "abreviacao": "1Jo",
   "material": {
     "titulo": "Sobre 1 João",
-    "introducao": "A Primeira Epístola de João procura dar segurança aos cristãos e ajudá-los a distinguir a fé genuína da falsa profissão, especialmente por meio dos testes de justiça, amor e crença correta em Cristo.",
+    "introducao": "A Primeira Epístola de João é uma profunda carta pastoral escrita para combater falsas doutrinas (como o docetismo), assegurar os crentes em sua fé por meio de testes de justiça, amor e verdade, e destacar a comunhão eterna com Deus, que é luz e amor.",
     "secoes": [
       {
-        "id": "titulo",
-        "titulo": "Título",
+        "id": "titulo_e_autor",
+        "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "A Primeira Epístola de João procura dar segurança aos cristãos e ajudá-los a distinguir a fé genuína da falsa profissão, especialmente por meio dos testes de justiça, amor e crença correta em Cristo."
+        "conteudo": "Em estilo, fraseologia e conteúdo, a Primeira Epístola de João segue de perto o quarto evangelho, sendo quase certamente escrita pelo mesmo autor [cite: 311]. Embora 1 João não identifique explicitamente seu autor e muitos eruditos creiam que o Evangelho de João também não identifique seu autor, a atribuição tradicional desses livros a João, o filho de Zebedeu, não pode ser refutada [cite: 311]. Repousa em evidência mais consistente do que propostas especulativas de outros autores, como João, o presbítero, ou João Marcos [cite: 311]. A ênfase em 1.1 na proclamação com autoridade e no testemunho ocular é vista mais naturalmente como um reflexo da chamada apostólica de João (cf. Jo 19.35; 20.3-8; 21.24) [cite: 311]."
       },
       {
-        "id": "autor",
-        "titulo": "Autor",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "Em estilo, fraseologia e conteúdo, 1 João segue de perto o Evangelho de João e é quase certamente obra do mesmo autor. Embora não identifique explicitamente o escritor, a tradição que atribui os livros a João, filho de Zebedeu, é apresentada como mais consistente que alternativas como João, o presbítero, ou João Marcos. A ênfase apostólica no testemunho ocular em 1.1-3 favorece essa identificação."
-      },
-      {
-        "id": "data_circunstancias",
+        "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "A carta combate uma falsa doutrina que negava que Jesus Cristo tivesse vindo realmente em carne, associada ao docetismo. A fonte considera provável que 1 João tenha sido escrita depois do Evangelho de João e antes das cartas de Inácio e Policarpo, talvez nos anos 90 d.C. A comunidade cristã já possuía uma identidade estabelecida e enfrentava falsos mestres que se haviam separado dela."
+        "ordem": 2,
+        "conteudo": "A Primeira Epístola de João foi escrita para advertir e instruir os leitores sobre a falsa doutrina (2.26; 3.7) que negava que Jesus Cristo viera na carne (4.2, 3) [cite: 311]. Essa doutrina afirmava que Cristo apenas parecia ser homem e, por isso, não teria havido encarnação real, nem um Salvador divino que fosse capaz de morrer como expiação pelos pecadores [cite: 311]. Cristo apenas pareceu morrer [cite: 311]. Há muita especulação sobre quem eram exatamente esses falsos mestres, mas a carta não oferece muita informação a respeito deles [cite: 311]. A falsa doutrina referida em 1 João é conhecida desde os tempos antigos da história cristã, sendo chamada \"docetismo\" (da palavra grega dokein, \"parecer\" ou \"aparecer\") [cite: 311].\n\nAlguns eruditos acreditam que a falsa doutrina era uma variação de gnosticismo, um movimento religioso que conectava a salvação a uma experiência de revelação esotérica individual (do grego gnosis, \"conhecimento\") [cite: 311]. Um exemplo disso seria o ensino de Cerinto, mestre do final do século I [cite: 311]. Escritores posteriores consideraram Cerinto tanto gnóstico como docético, mas há pouco em 1 João que conecte a falsa doutrina confrontada na carta com as ideias específicas atribuídas a Cerinto ou mesmo com o gnosticismo de maneira mais geral [cite: 311].\n\nVárias considerações indicam que 1 João foi escrita depois do evangelho de João [cite: 311]. Em primeiro lugar, a carta se refere, de modo breve, às ideias que o evangelho expõe de maneira mais clara e plena [cite: 311]. Aparentemente, presume-se, a audiência original tinha conhecimento do evangelho [cite: 311]. Em segundo lugar, o conflito com o docetismo está ausente no evangelho e parece ser um desenvolvimento posterior [cite: 311, 312]. Em terceiro, não há nenhuma indicação, em 1 João, do conflito ideológico com os \"judeus\" que permeia a primeira metade do evangelho [cite: 312]. O evangelho mostra a comunidade cristã se distinguindo notoriamente do povo judeu, enquanto 1 João reflete um tempo posterior, no qual a identificação cristã já estava bem estabelecida e podia ser pressuposta [cite: 312].\n\nOutra indicação para a data de 1 João vem da comparação com as cartas de Inácio e Policarpo, que devem ser datadas de não menos do que cerca de 110 d.C [cite: 312]. Esses escritos criticam falsos ensinamentos semelhantes aos abordados em 1 João, porém com mais desenvolvimento [cite: 312]. A fim de se acomodar a esses desenvolvimentos, 1 João deveria ser datada provavelmente em algum momento antes de 110 d.C. e talvez em algum ponto nos anos 90 d.C [cite: 312]."
       },
       {
-        "id": "genero",
+        "id": "genero_e_caracteristicas_literarias",
         "titulo": "Gênero e características literárias",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "1 João tem caráter epistolar, mas não possui abertura e despedida típicas. Pode ter sido uma epístola circular destinada a várias igrejas. Sua estrutura não é linear como a de Paulo; temas retornam de maneira repetida, formando movimento circular ou cônico. O Evangelho de João parece funcionar como chave para compreender sua linguagem de luz e trevas, verdade e mentira, amor e ódio."
+        "ordem": 3,
+        "conteudo": "Embora, tradicionalmente, 1 João tenha sido considerada uma carta, não apresenta os traços distintivos de uma carta (abertura, saudação introdutória, saudação final) [cite: 312]. Por outro lado, João dirige-se a seus leitores como \"Filhinhos meus\" (2.1) [cite: 312]. Parece que João escrevia para um grupo específico de pessoas com quem ele tinha um relacionamento íntimo [cite: 312]. Em seus propósitos básicos de admoestação e instrução, 1 João é semelhante à maioria das cartas do Novo Testamento, ainda que não seja uma carta típica [cite: 312]. Visto que não há uma destinação inicial a uma igreja específica, nem uma despedida final a pessoas específicas numa igreja, alguns eruditos acreditam que 1 João pode ter sido uma epístola circular escrita para alcançar várias igrejas [cite: 312].\n\nA carta é notoriamente difícil de esboçar, porque, diferentemente da estrutura das cartas de Paulo, parece não haver um argumento linear [cite: 312]. Há uma repetição das discussões ou dos argumentos, aos quais o autor retorna [cite: 312]. A única semelhança de estrutura parece ser um tipo de movimento circular ou cônico em toda a carta [cite: 312]. Pode ser um tipo de retórica conhecido no mundo antigo que amplifica, repetidas vezes, um tema apresentado no início do escrito [cite: 312].\n\nOutra característica interessante de 1 João é seu uso do Evangelho de João, que talvez tenha sido escrito antes, nos anos 80 d.C., no início dos anos 90 d.C. ou até em data anterior [cite: 312]. De fato, o Evangelho de João pode ser uma chave para o entendimento de alguns dos assuntos em 1 João [cite: 312]. Por exemplo, existe algum debate sobre se João estabelece, na carta, uma distinção entre os verdadeiros crentes espirituais (próximos de Deus) e os verdadeiros crentes que são mal orientados (não muito próximos de Deus) ou entre verdadeiros crentes e falsos crentes [cite: 312]. A Primeira Epístola de João usa palavras como luz e trevas, verdade e mentira, amor e ódio para fazer a distinção; essas são palavras que o Evangelho de João usa para distinguir os verdadeiros crentes no Deus de Israel (seguidores de Jesus) dos falsos crentes no Deus de Israel (os líderes judeus incrédulos) [cite: 312].\n\nHá também um relacionamento entre 1 João e as outras duas epístolas de João [cite: 312]. Existem alguns temas comuns, embora cada epístola tenha suas próprias características [cite: 312]. Se, como é muito provável, o mesmo autor for o responsável por todas as três cartas, parece plausível que 1 João tenha sido escrita primeiro, seguida de 2 João e, depois, de 3 João [cite: 312]."
       },
       {
-        "id": "caracteristicas_temas_principais",
+        "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "A segurança da salvação é tema recorrente. João usa contrastes para distinguir a vida na luz da vida nas trevas, confissão do pecado da negação do pecado, justiça da prática do pecado, amor do ódio e confissão correta de Cristo da falsa cristologia. A carta também enfatiza a vida eterna, o novo nascimento, o amor aos irmãos, a obediência e a necessidade de discernir o espírito do anticristo."
+        "ordem": 4,
+        "conteudo": "Um dos temas recorrentes de 1 João é a segurança [cite: 312]. João procura assegurar seus leitores de que eles são cristãos, oferecendo-lhes várias maneiras pelas quais podem saber que são crentes [cite: 312]. O método de segurança de João envolve seguir uma variedade de contrastes [cite: 312]. Ele contrasta aqueles que andam na luz com aqueles que andam nas trevas (1.6, 7); aqueles que dizem não ter pecado com aqueles que confessam seu pecado (1.8-10) [cite: 312, 313]. João contrasta aqueles que guardam os mandamentos de Deus com aqueles que não os guardam (2.3-6) e aqueles que amam seu irmão com aqueles que odeiam seu irmão (2.9-11; 3.11-15) [cite: 313]. Ele contrasta aqueles que amam o mundo com aqueles que não o amam (2.15-17) [cite: 313]. Contrasta aqueles que praticam a justiça com aqueles que praticam o pecado (3.1-10) [cite: 313]. João contrasta aqueles que amam com aqueles que não amam (4.7-12) [cite: 313]. Por fim, contrasta aqueles que creem em Deus e aqueles que não creem, aqueles que têm o Filho e aqueles que não o têm (5.10-12) [cite: 313].\n\nPor meio de contraste, João também explica como os crentes serão capazes de discernir os falsos mestres, ou \"anticristos\" [cite: 313]. Os anticristos são aqueles que \"saíram de nosso meio\", em contraste com aqueles que não saíram (2.18-19) [cite: 313]. Eles saíram \"para que ficasse manifesto que nenhum deles é dos nossos\" (v. 19) [cite: 313]. Os \"anticristos\" são aqueles que negam \"que Jesus é o Cristo\" (v. 22), em contraste com aqueles que confessam o Filho (v. 23) [cite: 313]. Os anticristos também são identificados como aqueles que não confessam que Jesus Cristo \"veio em carne\", em contraste com aqueles que o confessam (4.2, 3) [cite: 313]. Intercalada em toda essa série de contrastes por meio da qual João tanto assegura seus leitores como os capacita a exercer discernimento, está a repetida frase \"nisto conhecemos\" (2.3; 3.16; 3.24; 4.6; 5.2) [cite: 313]. O propósito de João é dar aos seus leitores o conhecimento doutrinário de que precisam, a fim de julgarem corretamente em relação à sua própria fé e à fé de outros [cite: 313]. O tema comum é um eco das palavras de Jesus no Sermão do Monte: \"Pelos seus frutos os conhecereis\" (Mt 7.16) [cite: 313]. O alvo de João é encorajá-los a fugir do pecado (2.1) [cite: 313].\n\nOutro tema importante em 1 João é o amor [cite: 314]. Trata-se de uma ênfase específica nos capítulos 3 e 4, mas ocorre em toda a epístola [cite: 314]. Naqueles que guardam a Palavra de Deus, João diz, o amor de Deus é aperfeiçoado (2.5) [cite: 314]. Aqueles que permanecem na luz amam seu irmão (2.10) [cite: 314]. João insiste em que o amor a Deus é incoerente com o amor ao mundo (2.15) [cite: 314]. Além disso, somos filhos de Deus como resultado de seu amor por nós (3.1) [cite: 314]. O amor mútuo caracteriza os cristãos e evidencia o amor de Deus que está em nós (3.11-24) [cite: 314]. João diz aos seus leitores que o amor deles está fundamentado no amor de Deus [cite: 314]. Ele demonstrou seu amor por nós ao enviar seu Filho para ser propiciação para nossos pecados (4.8-10) [cite: 314]. Visto que Deus nos amou tanto, devemos amar uns aos outros (4.11-12) [cite: 314]. Permanecer no amor de Deus é permanecer em Deus, porque \"Deus é amor\" (4.16) [cite: 314]. Por fim, João explica, o amor de Deus é inconsistente com o ódio ao próximo [cite: 314]. Quem ama a Deus deve amar seu irmão (4.20, 21) [cite: 314]."
       },
       {
-        "id": "teologia_um_jo",
+        "id": "teologia_de_1_joao",
         "titulo": "Teologia de 1 João",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "Entre as ênfases teológicas estão a escatologia inaugurada, Deus como luz, verdade e amor, a vida eterna recebida em união com Cristo, a obra do Espírito Santo como testemunha e unção dos crentes e o conflito com o espírito do anticristo. O crente possui segurança não por perfeccionismo, mas por uma vida caracterizada por fé verdadeira, arrependimento, justiça e amor."
+        "ordem": 5,
+        "conteudo": "Várias ênfases teológicas devem ser encontradas em 1 João. Entre as mais significativas, estão:\n\n1. **Escatologia.** A exemplo de outros livros do Novo Testamento, 1 João expõe robustamente a ideia de que os últimos dias profetizados pelo Antigo Testamento começaram a se cumprir na vinda de Cristo e serão consumados na segunda vinda de Cristo [cite: 314]. Esses aspectos de escatologia, bem como outros temas teológicos de João, são desenvolvidos nas notas de estudo [cite: 314].\n\n2. **Deus.** Deus é luz (1.5, 7), verdade (implícito em 4.6), amor (4.8, 9, 16) e o Pai de Jesus Cristo (1.3; 4.15) e de seu povo (2.13; cf. 3.10) [cite: 314]. Deus manifestou seu amor ao seu povo ao enviar seu Filho (4.9-11, 19), e seu amor é a fonte do amor recíproco dos cristãos [cite: 314]. Cada uma dessas características é assunto de alguma meditação, mas sempre em conexão com o desenvolvimento de virtudes correspondentes no crente [cite: 314]. Os ideais de pureza e amor apresentados ao leitor são dons de Deus, comunicados por sua autorrevelação [cite: 314]. Ao mesmo tempo, tornam-se reais na experiência do crente quando este os pratica [cite: 314]. Essa realidade é possível por serem nascidos de novo e pelo perdão dos pecados [cite: 314].\n\n3. **Vida eterna para o povo de Deus.** Cristo é chamado a \"vida eterna\" (1.2) [cite: 314]. Muito provavelmente, a razão para isso é que Cristo possui a vida eterna não somente por causa de sua deidade, mas também por causa de sua ressurreição [cite: 314]. Pessoas que creem em Jesus chegam à união com ele como o Cristo ressurreto, para que tenham a \"vida eterna\" (5.11-13, 20), a vida de ressurreição eterna, que começa espiritualmente neste tempo e se completa posteriormente, na ressurreição física [cite: 314]. Portanto, os crentes passaram \"da morte para a vida\" (3.14), que é a \"vida eterna\" (5.13), uma alusão clara a João 5.24, em que a mesma linguagem é usada em conjunção com \"vida eterna\" [cite: 314]. João 5.25 diz que isso é uma ressurreição espiritual que acontece agora, no tempo presente, e que será completada na ressurreição física (5.28, 29) [cite: 314].\n\n4. **O Espírito Santo.** Os crentes receberam o Espírito, e isso lhes assegura que Deus \"permanece\" neles (3.24; 4.13) [cite: 314]. O Espírito capacita os crentes a aceitarem o testemunho dos apóstolos a respeito de Jesus (4.6) e a sustentarem a verdade da encarnação de Cristo (4.2) [cite: 314]. O \"Espírito é a verdade\" (5.6b) [cite: 314]. Portanto, o testemunho do Espírito pode ser crido (5.6a), por exemplo, em referência à sua comprovação de que o Cristo divino veio em carne (5.6, 8) [cite: 314, 315]. João se refere à obra do Espírito ao falar da \"unção\" dos crentes pelo Espírito, que os capacita a conhecerem as verdades cruciais do evangelho (\"e todos tendes conhecimento\" — 2.20), em contraste com a falsa doutrina antagônica (2.19-21; 2.26, 27) [cite: 315].\n\n5. **A tribulação dos últimos dias e a vinda de anticristos e falsos mestres.** O espírito do anticristo (4.3), um inimigo do evangelho nos últimos dias, ataca em cada ponto [cite: 315]. Ele impugna a autorrevelação de Deus ao tentar negar que o Filho de Deus veio realmente em carne, ou seja, que encarnou [cite: 315]. Dessa maneira, o anticristo ameaça solapar a confiança do crente diante de Deus [cite: 315]. Além disso, o adversário tenta argumentar que alguém pode crer em Deus e não ter parte no amor e na bondade que é a natureza de Deus [cite: 315]. Isso também faria da salvação mera aparência [cite: 315]. O espírito do anticristo, que pode aparecer em vários indivíduos eventualmente chamados, de forma correta, de anticristos, opõe-se à luz e à verdade do evangelho por meio de trevas, mentiras, regra de ódio e confusão mental [cite: 315]. A única defesa contra esse inimigo dos últimos dias é apegar-se à verdade da Palavra de Deus (cf. 2.14), especialmente à revelação de que o Filho divino veio na carne e, como homem, morreu por seu povo, que pode confiar em seus mandamentos e segui-los pelo poder de seu Espírito [cite: 315]."
       },
       {
-        "id": "historia_ampla",
+        "id": "1_joao_na_historia_mais_ampla_da_biblia",
         "titulo": "1 João na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 7,
-        "conteudo": "1 João retoma temas fundamentais do Evangelho de João e os aplica à vida da comunidade. A vida eterna anunciada pelos apóstolos está presente em Cristo e será consumada na ressurreição. A comunidade deve permanecer no ensino apostólico e distinguir os verdadeiros filhos de Deus daqueles que rejeitam a encarnação e abandonam a comunhão."
+        "ordem": 6,
+        "conteudo": "João escreveu como alguém que foi testemunha ocular do momento crucial da história de redenção [cite: 315]. Todas as promessas e profecias do Antigo Testamento começaram a se cumprir na encarnação do Filho de Deus [cite: 315]. E João foi uma testemunha dessa encarnação (1.1-3) [cite: 315]. O contraste de João entre luz e trevas recorda a narrativa da Criação em Gênesis 1 [cite: 315]. Sua referência aos filhos de Deus (3.1) e aos filhos do diabo (3.10) lembra a distinção que Deus faz entre o descendente da mulher e o descendente da serpente (Gn 3.15) [cite: 315]. João apresenta toda a vida cristã como uma continuação da batalha espiritual cósmica que começou na Queda e prossegue até o julgamento final [cite: 315]. Nossos inimigos nessa batalha são apresentados como \"anticristos\", que negam a encarnação do Filho na carne (2.18, 22; 4.3) [cite: 315]. Embora a batalha cósmica continue, não há dúvida acerca de quem vencerá: \"As trevas se vão dissipando, e a verdadeira luz já brilha\" (2.8, 17) [cite: 315]. De fato, a vitória decisiva na batalha cósmica já foi vencida, porque o Filho de Deus veio \"para destruir as obras do diabo\" (3.8; cf. Hb 2.14) [cite: 315]. Os cristãos vivem, portanto, entre a vitória decisiva conquistada na cruz e a consumação dessa vitória, quando o pecado, a morte e o diabo serão lançados fora (cf. Ap 20.10, 14) [cite: 315]. A consumação ainda não chegou, mas, quando chegar, não somente nossos inimigos externos serão banidos, como também nossos inimigos internos pertencerão ao passado [cite: 315]. João nos diz que naquele dia \"seremos semelhantes a ele, porque haveremos de vê-lo como ele é\" (3.2) [cite: 315]."
       },
       {
-        "id": "cristo_em",
+        "id": "cristo_em_1_joao",
         "titulo": "Cristo em 1 João",
         "tipo": "texto",
-        "ordem": 8,
-        "conteudo": "Cristo é apresentado como o Verbo da vida e a vida eterna. A carta insiste que os apóstolos ouviram, viram e tocaram o Cristo encarnado. Jesus é o Filho enviado pelo Pai, morreu como propiciação pelos pecados, purifica do pecado por seu sangue e veio destruir as obras do diabo. A realidade de sua humanidade é indispensável à eficácia de sua morte redentora."
-      },
-      {
-        "id": "historia_interpretacao",
-        "titulo": "História de interpretação",
-        "tipo": "texto",
-        "ordem": 9,
-        "conteudo": "A interpretação histórica de 1 João foi influenciada pela necessidade de defender a encarnação contra correntes docéticas e outras cristologias inadequadas. A linguagem sobre segurança da salvação, pecado, amor e vida eterna continuou a ser importante para a interpretação cristã."
+        "ordem": 7,
+        "conteudo": "João declara que Deus se revelou em Cristo a fim de comunicar vida eterna àqueles que creem nele [cite: 315, 316]. A carta tem início com um foco no Cristo encarnado como o \"Verbo\", que os apóstolos ouviram, viram, apalparam e proclamaram (1.1-3) [cite: 316]. Essa ênfase aqui e em outras passagens da carta (4.2; 5.1, 5-7; cf. 4.15) é uma tentativa de contestar a afirmação dos falsos mestres de que o Cristo divino não havia assumido verdadeiramente a forma humana (2.22, 23; 4.3) [cite: 316]. Há também ênfase na morte de Cristo por seu povo como um substituto penal (e.g., 2.2; 3.16; 4.10), purificando-o do pecado por meio de seu sangue (1.7) e vindo para \"destruir as obras do diabo\" (3.8) [cite: 316]. A atitude de Cristo em entregar a si mesmo é a essência do amor (3.16) [cite: 316]. A morte vicária de Cristo também está relacionada ao falso ensinamento de que o Cristo divino não tomou verdadeiramente a forma humana, mas talvez apenas tenha parecido fazer isso [cite: 316]. Se esse falso ensino fosse verdadeiro, então a morte de Cristo em favor de pecadores não seria eficaz, pois ele não teria sido um representante verdadeiramente humano, que teria carregado o pecado em favor de outros seres humanos [cite: 316]. Cristo é também chamado o \"Verbo da vida\" e \"a vida eterna\" (1.1, 2) [cite: 316]."
       },
       {
         "id": "assuntos_especiais",
         "titulo": "Assuntos especiais",
         "tipo": "texto",
-        "ordem": 10,
-        "conteudo": "A fonte trata especialmente de duas expressões difíceis. “Não vive pecando” (3.6, 9; 5.18) não significa perfeccionismo, pois 1.8-10 afirma que os cristãos ainda pecam e devem confessar seus pecados. A ideia é que o curso geral da vida do crente não é caracterizado pela prática deliberada do pecado. “Pecado para morte” (5.16) é discutido como referência provável à morte espiritual, e não simplesmente à morte física, embora diferentes interpretações sejam reconhecidas."
+        "ordem": 8,
+        "conteudo": "Embora 1 João seja simples de ler tanto no grego como em nossa tradução, seus conceitos são profundos e, às vezes, difíceis de entender [cite: 316]. Alguns dos conceitos mais difíceis de entender, pelo menos à primeira vista, são:\n\n1. **\"Não vive pecando\" (3.6, 9; 5.18).** Em 1 João 3.6, lemos que os verdadeiros crentes não vivem \"pecando\" [cite: 316]. O versículo 9 afirma: \"Todo aquele que é nascido de Deus não vive na prática de pecado... não pode viver pecando, porque é nascido de Deus\" (cf. 5.18) [cite: 316]. À primeira vista, esses versículos parecem dizer que os verdadeiros cristãos não devem pecar de maneira alguma [cite: 316].\n\nO fato de João não estar fazendo afirmações de perfeccionismo em 3.6, 9 é evidente de 1.8-10 [cite: 316]. Em primeiro lugar, em 1.8 ele diz que, se as pessoas afirmam não estar em condição de pecado, são mentirosas; em 1.10, João diz que, se as pessoas afirmam não ter atos de pecado reais, tornam Deus mentiroso [cite: 316]. Deus falou que todos são pecadores, incluindo os cristãos, que não serão completamente sem pecado até a sua glorificação derradeira, no fim da história [cite: 316, 317]. Portanto, os cristãos devem confessar seus pecados durante todo o curso de sua vida (1.9) [cite: 317].\n\nAo afirmar que os crentes não vivem \"pecando\" e que não vivem \"na prática de pecado\" (3.6, 9), João está falando do curso geral da vida de um crente [cite: 317]. Os crentes pecarão enquanto não forem glorificados, mas a propensão de sua vida não é para o pecado [cite: 317]. Em vez disso, a orientação primária deles é para longe do pecado e na direção de Deus [cite: 317]. Isso é evidente em sua confissão da fé verdadeira, sua vida contínua de arrependimento, seu amor pelos outros crentes e seu progresso em santidade pessoal, à medida que vão mortificando o pecado em sua vida (1.8-10; 4.7, 8; 5.1-12) [cite: 317].\n\n2. **\"Pecado para morte\" (5.16).** Em 1 João 5.16, lemos: \"Há pecado para morte\" [cite: 317]. Alguns acham que isso se refere a um pecado específico que os verdadeiros crentes podem cometer e que levará à sua morte física, mas não à morte espiritual [cite: 317]. Mas os comentadores não concordam acerca de que tipo de pecado seria esse [cite: 317]. Além disso, a primeira parte de 5.16 fala de orar para que Deus dê \"vida\" aos verdadeiros crentes, o que se refere ou a continuar mantendo a vida de ressurreição espiritual que se iniciou neles ou a lhes dar a vida de ressurreição física final, na consumação da história [cite: 317]. O oposto de \"vida eterna\" é \"morte\" eterna, que provavelmente é o que se tem em mente quando João fala de \"pecado para morte\" [cite: 317]. Portanto, o pecado que leva à morte não é um pecado que produz morte física, mas um pecado que produz morte espiritual que separa a pessoa da bendita presença de Deus [cite: 317].\n\nAqueles que creem que o \"pecado para morte\" se refere ao pecado de apostasia (incredulidade em relação ao evangelho) sustentam a opinião de que esse é um pecado que produz morte espiritual, com base no qual o verdadeiro crente perderia sua salvação, ou seja, sofreria a morte espiritual [cite: 317]. Igualmente, poderia referir-se a um pecado de apostasia que revela que um cristão professo nunca foi realmente um cristão (2.19) [cite: 317]. A segunda opção — apostasia cometida somente por aqueles que sustentam uma falsa profissão de fé — harmoniza-se melhor com o ensino da epístola, visto que 3.6, 9 afirma que os cristãos genuínos não podem viver \"na prática de pecado\" [cite: 317]. Aqueles que são verdadeiramente nascidos de novo não podem levar uma vida orientada para longe do Senhor; em vez disso, continuarão a buscá-lo com fé e arrependimento [cite: 317]. Não serão perfeitos, mas continuarão se achegando ao Senhor, que os ressuscitará no último dia (cf. Jo 6.39, 40, 44) [cite: 317]. Eles não cometerão o pecado de apostasia final [cite: 317].\n\nJoão não ensina que os verdadeiros crentes podem perder sua salvação e afirma claramente que os falsos mestres apóstatas, que professam crer, nunca tiveram a verdadeira fé desde o começo (cf. 2.19) [cite: 317]. Em 5.16, João fala desse pecado de apostasia dos últimos dias, que não será cometido pelos eleitos, mas apenas por aqueles que professam falsamente a fé [cite: 317]."
       },
       {
-        "id": "esboco_1jo",
+        "id": "esboco_de_1_joao",
         "titulo": "Esboço de 1 João",
         "tipo": "auto",
-        "ordem": 11,
+        "ordem": 9,
         "conteudo": [
           {
-            "titulo": "I. PRÓLOGO: A MENSAGEM APOSTÓLICA ORIGINAL CONCERNENTE À VIDA ETERNA (1.1-4)"
+            "titulo": "I. PRÓLOGO: A MENSAGEM APOSTÓLICA ORIGINAL CONCERNENTE À VIDA ETERNA (1.1-4) [cite: 317]",
+            "itens": []
           },
           {
-            "titulo": "II. A PRIMEIRA EXPOSIÇÃO DA VERDADEIRA COMUNHÃO SALVÍFICA COM DEUS (1.5-2.27)",
+            "titulo": "II. A PRIMEIRA EXPOSIÇÃO DA VERDADEIRA COMUNHÃO SALVÍFICA COM DEUS (1.5-2.27) [cite: 317]",
             "itens": [
-              "A. A comunhão com Deus é demonstrada por reconhecer o pecado e a Cristo como provisão pelo pecado (1.5-2.2)",
-              "B. A fé genuína é discernida pelos testes de justiça e amor (2.3-11)",
-              "C. A fé genuína é discernida pelo teste da crença correta em Cristo, em contraste com o mundo e com a opinião dos anticristos (2.12-17)"
+              "A. A comunhão com Deus é demonstrada por reconhecer o pecado e a Cristo como a provisão pelo pecado (1.5-2.2) [cite: 317]",
+              "B. A fé genuína é discernida pelos testes de justiça e amor (2.3-11) [cite: 317]",
+              "C. A fé genuína é discernida pelo teste da crença correta em Cristo, em contraste com o mundo e com a opinião dos anticristos sobre a pessoa de Cristo (2.12-17) [cite: 317]"
             ]
           },
           {
-            "titulo": "III. A SEGUNDA EXPOSIÇÃO DA VERDADEIRA COMUNHÃO SALVÍFICA COM DEUS (2.28-4.6)",
+            "titulo": "III. A SEGUNDA EXPOSIÇÃO DA VERDADEIRA COMUNHÃO SALVÍFICA COM DEUS (2.28-4.6) [cite: 317]",
             "itens": [
-              "A. A filiação divina dos crentes é discernida pelo teste de justiça (2.28-3.10a)",
-              "B. A filiação divina dos crentes é discernida pelo teste de amor (3.10b-23)",
-              "C. A filiação divina dos crentes é discernida pelo teste de crença correta (3.23-4.6)"
+              "A. A filiação divina dos crentes é discernida pelo teste de justiça (2.28-3.10a) [cite: 317]",
+              "B. A filiação divina dos crentes é discernida pelo teste de amor (3.10b-23) [cite: 317]",
+              "C. A filiação divina dos crentes é discernida pelo teste de crença correta (3.23-4.6) [cite: 317]"
             ]
           },
           {
-            "titulo": "IV. A TERCEIRA EXPOSIÇÃO DA VERDADEIRA COMUNHÃO SALVÍFICA COM DEUS (4.7-5.12)",
+            "titulo": "IV. A TERCEIRA EXPOSIÇÃO DA VERDADEIRA COMUNHÃO SALVÍFICA COM DEUS (4.7-5.12) [cite: 317]",
             "itens": [
-              "A. A fé genuína é discernida por um amor que vem de Deus e está arraigado na fé (4.7-21)",
-              "B. A fé genuína é discernida pelo teste de crença correta, que é a base do amor (5.1-12)"
+              "A. A fé genuína é discernida por um amor que vem de Deus e está arraigado na fé (4.7-21) [cite: 317]",
+              "B. A fé genuína é discernida pelo teste de crença correta, que é a base do amor (5.1-12) [cite: 317]"
             ]
           },
           {
-            "titulo": "V. EPÍLOGO: DAR AOS CRISTÃOS A SEGURANÇA SOBRE SUA SALVAÇÃO (5.13-21)",
+            "titulo": "V. EPÍLOGO. DAR AOS CRISTÃOS A SEGURANÇA SOBRE SUA SALVAÇÃO (5.13-21) [cite: 317]",
             "itens": [
-              "A. Dar aos verdadeiros cristãos a segurança de que a vida eterna é por meio de Cristo (5.13)",
-              "B. Dar a segurança de que eles têm acesso ao Pai pela oração, especialmente ao orar pelos outros na comunidade cristã (5.14-17)",
-              "C. Dar a segurança de que os crentes genuínos caracterizam-se pela justiça e têm relacionamento com Deus e com Jesus (5.18-21)"
+              "A. Dar aos verdadeiros cristãos a segurança de que a vida eterna é por meio de Cristo (5.13) [cite: 317]",
+              "B. Dar a segurança de que eles têm acesso ao Pai pela oração, especialmente no que diz respeito a orar pelos outros na comunidade cristã (5.14-17) [cite: 317]",
+              "C. Dar a segurança de que os crentes genuínos caracterizam-se pela justiça e de que têm realmente um relacionamento com Deus e com Jesus (5.17-21) [cite: 317]"
             ]
           }
         ]
@@ -124,8 +111,8 @@
   "referencias_inline": true,
   "politica_traducao": "independente",
   "fonte": {
-    "arquivo": "62_1 João/62_1 João0.jpg até 62_1 João5.jpg",
-    "paginas": "imagens fornecidas no lote 09_Cartas_Gerais",
-    "criterio": "Reconstrução baseada nas imagens, com OCR por coluna, normalização de hifenização e correção de erros evidentes de OCR."
+    "arquivo": "62_1 João.pdf",
+    "paginas": "Páginas impressas 2262 a 2267",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de 1 João, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

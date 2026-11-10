@@ -5,112 +5,107 @@
   "abreviacao": "1Ts",
   "material": {
     "titulo": "Sobre 1 Tessalonicenses",
-    "introducao": "1 Tessalonicenses combina memória pastoral, encorajamento e instrução. Paulo agradece pela fé, amor e esperança dos tessalonicenses, defende o caráter de seu ministério e ensina sobre santidade, amor fraternal, trabalho, ressurreição dos mortos, o Dia do Senhor e a vida congregacional.",
+    "introducao": "A Primeira Epístola aos Tessalonicenses é uma carta calorosa, pessoal e pastoral de Paulo, celebrando a firmeza na fé de uma jovem congregação e instruindo-os sobre a santidade prática e a esperança luminosa da volta de Cristo.",
     "secoes": [
       {
-        "id": "titulo",
-        "titulo": "Título",
+        "id": "titulo_e_autor",
+        "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "A carta recebe o nome da igreja de Tessalônica. Paulo, Silvano e Timóteo são apresentados na saudação, mas a tradição e o conteúdo reconhecem Paulo como principal autor e autoridade da carta."
+        "conteudo": "O autor desta epístola se identifica como o apóstolo Paulo (1.1; 2.18) [cite: 211]. A autenticidade de 1 Tessalonicenses tem sido desafiada vez ou outra, mas com pouco sucesso [cite: 211].\n\nAs contribuições de Silas (Silvano) e Timóteo, citados por Paulo como coautores (1Ts 1.1; 2Ts 1.1), não podem ser constatadas com exatidão [cite: 211]. É possível que certas peculiaridades dessas cartas, em comparação com os demais escritos de Paulo, devam-se à influência desses cooperadores próximos de Paulo [cite: 211]."
       },
       {
-        "id": "autor",
-        "titulo": "Autor",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "Paulo escreve em associação com Silvano e Timóteo. A carta recorda diretamente o ministério de Paulo entre os tessalonicenses e sua relação com eles após sua partida."
-      },
-      {
-        "id": "data_circunstancias",
+        "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "A carta foi escrita depois da chegada de notícias sobre a perseverança dos tessalonicenses. Paulo explica sua ausência, relembra o ministério fiel dos missionários e responde a questões sobre santidade, os mortos em Cristo, o Dia do Senhor e a vida comunitária."
+        "ordem": 2,
+        "conteudo": "A cidade de Tessalônica recebeu o nome em homenagem a Tessalônica, meia-irmã de Alexandre, o Grande [cite: 211]. Foi fundada por volta de 315 a.C. pelo rei Cassandro, da Macedônia, marido de Tessalônica [cite: 211]. Nos tempos romanos, Tessalônica era uma capital de província com mais de duzentos mil habitantes [cite: 211].\n\nEm sua segunda viagem missionária, Paulo e seus companheiros Silas e Timóteo chegaram a Tessalônica pela estrada de Filipos, onde haviam sido \"maltratados e ultrajados\" (2.2) [cite: 211]. Atos 17.2 relata que Paulo pregou e debateu na sinagoga de Tessalônica por três sábados consecutivos [cite: 211]. Por fim, membros da comunidade judaica reuniram alguns homens inescrupulosos para suscitar animosidade contra os cristãos [cite: 211]. Formou-se um tumulto, e alguns cristãos, incluindo um judeu convertido chamado Jasom, foram levados perante as autoridades [cite: 211]. Jasom e outros foram obrigados a pagar fiança para garantir que a igreja não criaria problemas [cite: 212]. Paulo, Silas e Timóteo foram enviados pelos irmãos, durante a noite, e logo se acharam em Bereia, a oeste, onde o evangelho teve uma audiência mais aberta por parte da comunidade judaica (At 17.5-12) [cite: 212].\n\nEmbora a existência de sinagoga mostre uma presença de judeus em Tessalônica maior do que em Filipos, a igreja cristã era predominantemente gentílica [cite: 212]. Isso indica que um ministério bem-sucedido entre os gentios teve continuidade depois de o acesso de Paulo à sinagoga ter sido interrompido [cite: 212]. Durante sua permanência em Tessalônica, que não deve ter durado mais do que poucos meses, parece que os missionários receberam da congregação em Filipos (Fp 4.15, 16) mais do que uma contribuição para seu sustento [cite: 212]. Isso, combinado com os rendimentos de seus próprios labores (2.9; 2Ts 3.6-12, 8), resultou no fato de eles poderem sustentar a si próprios sem depender dos crentes de Tessalônica, que eram novos na fé [cite: 212]. O exemplo de comportamento humilde e laborioso dos missionários foi uma repreensão para a minoria na igreja que desejava esquivar-se de trabalhar para ganhar a vida (5.14; 2Ts 3.11) [cite: 212].\n\nPaulo escreveu 1 Tessalonicenses depois de receber uma notícia de Timóteo sobre o estado da igreja de Tessalônica (3.6-7) [cite: 212]. A carta expressa a alegria do apóstolo e seu alívio em saber que os tessalonicenses continuavam firmes na fé, apesar da partida prematura de Paulo e de seus cooperadores, bem como a preocupação com o fato de eles ainda sofrerem diante de facções hostis [cite: 212]. A discussão das questões relacionadas à segunda vinda de Cristo e à ressurreição do corpo em ambas as epístolas aos tessalonicenses pode oferecer uma indicação quanto ao momento em que Paulo escreveu: aparentemente, a brevidade de seu ministério inicial de plantação dessa igreja não permitiu instrução suficiente sobre o plano de Deus para a consumação da história e suas implicações para os cristãos, enquanto esperam o fim [cite: 212]. Além disso, a breve permanência de Paulo não permitiu muito tempo para ensinar o que acontece aos cristãos que morrem antes da volta de Jesus para consumar seu reino [cite: 212]. Como resultado, alguma confusão sobre esses assuntos estava presente na igreja de Tessalônica quando o apóstolo escreveu [cite: 212].\n\nÉ quase certo que Paulo escreveu a primeira carta aos tessalonicenses quando esteve em Corinto, onde Silas e Timóteo se reuniram com ele durante sua segunda viagem missionária, que atingiu a Macedônia e a Acaia (At 18.5; 2Co 1.19) [cite: 212]. Muito provavelmente, a carta foi escrita em 50 ou 51 d.C.; e 2 Tessalonicenses, logo depois [cite: 212]. Portanto, 1 e 2 Tessalonicenses estão entre as primeiras cartas que temos das mãos de Paulo; e somente Gálatas tem bases razoáveis para ser mais antiga [cite: 212]."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "É uma carta pastoral de encorajamento e instrução, seguindo convenções epistolares antigas. Grande parte do corpo é construída como memória do ministério de Paulo seguida de instruções práticas e escatológicas."
+        "ordem": 3,
+        "conteudo": "O livro de 1 Tessalonicenses é uma carta e segue, em geral, as convenções epistolares típicas do século I (ver Introdução às Epístolas) [cite: 212]. Contém uma abertura (1.1), um corpo (1.2-5.22) e uma conclusão padrão (5.23-28) [cite: 212]. A carta, porém, não se enquadra precisamente em qualquer dos vários tipos literários das epístolas do século I que já foram identificados [cite: 212]. Apresenta características de vários tipos de cartas [cite: 212]. Embora Paulo se identifique como o autor em 1.1 e 2.18, sua primeira epístola aos tessalonicenses difere de suas outras cartas no aspecto de que a primeira pessoa do plural é usada em toda a carta (\"nós\", \"nos\", \"nosso\") [cite: 212]. Isso reflete a abertura da carta, em que os remetentes são identificados como \"Paulo, Silvano e Timóteo\" [cite: 212]. Entretanto, esse fato não significa que Paulo não tenha sido o autor principal, visto que, em certos momentos, ele muda para a primeira pessoa do singular (2.18; 3.5; 5.27) [cite: 212]. A Segunda Epístola aos Tessalonicenses compartilha com 1 Tessalonicenses muitas dessas características que as distinguem do restante das epístolas de Paulo [cite: 212]."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "A carta é marcada por ações de graças, lembranças pessoais, orações e exortações. A seção histórica apresenta a eleição, a fé e o amor dos leitores, a conduta dos missionários e a recepção da Palavra; a segunda parte aplica essas verdades à ética, à escatologia e à vida congregacional."
+        "ordem": 4,
+        "conteudo": "Primeira Tessalonicenses nos proporciona um olhar atento ao relacionamento entre um pastor e uma jovem congregação [cite: 212]. Paulo fala em termos acentuados e íntimos de seu ministério pastoral entre eles (2.1-12; 2.17-3.5) [cite: 212]. Ele ajuda esses novos crentes a entenderem as circunstâncias e a natureza de sua conversão (1.3-10) e o que significa permanecerem firmes na fé e perseverarem na vida que o evangelho chama os crentes a viver (3.6-13) [cite: 212].\n\nPrimeira Tessalonicenses, assim como 1 Coríntios, aborda uma série de questões pastorais que surgiram na jovem igreja de Tessalônica [cite: 212]. Paulo ajuda os tessalonicenses a perseverarem em meio à perseguição (2.13-16) [cite: 212]. Ele precisa incutir nesses cristãos a importância de seguir a pureza sexual (4.1-8), bem como de oferecer a própria vida de uma maneira que recomende o evangelho a todas as pessoas (4.9-12) [cite: 212]. Boa parte dessa carta de Paulo é dedicada a abordar entendimentos equivocados acerca da volta de Cristo e suas implicações para os crentes que já morreram (4.13-18), bem como a ajudar os tessalonicenses a entenderem o que o retorno de Cristo significa para a vida cristã no presente (5.1-11) [cite: 212].\n\nPrimeira Tessalonicenses é uma carta especialmente pessoal [cite: 212]. Não somente Paulo se dirige aos tessalonicenses como \"irmãos\" em pontos importantes de seu argumento (2.1, 17; 3.7; 4.1, 9, 13; 5.1, 12), como também fala de si mesmo como \"pai\" e \"mãe\" deles (2.7, 11) [cite: 212, 213]. Essa ocorrência de linguagem familiar serve para expressar a profunda afeição que Paulo nutria por essa jovem igreja [cite: 213]. Como o faz em sua carta a outra cidade da Macedônia, Filipos, Paulo chama os crentes tessalonicenses de sua \"alegria\" e sua \"coroa\" (2.19; cf. Fp 4.1) [cite: 213]."
       },
       {
-        "id": "caracteristicas_temas_principais",
+        "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "Fé, amor, esperança, eleição, sofrimento, santidade sexual, trabalho, amor fraternal, retorno de Cristo, ressurreição, Dia do Senhor, oração e vida congregacional formam o conjunto temático. A esperança futura não é fuga da responsabilidade presente, mas motivo para viver em santidade e vigilância."
+        "ordem": 5,
+        "conteudo": "Um rico filão de ensino sobre os últimos dias flui em 1 e 2 Tessalonicenses [cite: 213]. A pregação de Paulo em Atenas, registrada em Atos 17, confirma que sua estratégia entre os ouvintes não judeus no tempo em que ele escreveu essas cartas consistia em enfatizar o julgamento vindouro (4.6), que Deus colocou nas mãos do Cristo ressurreto [cite: 213].\n\nO retorno de Cristo acontecerá no que Paulo chama \"o Dia do Senhor\" (5.2; 2Ts 2.1, nota) [cite: 213]. Nesse dia, haverá ressurreição dos justos, para herdar a salvação na presença do Senhor (4.16; 5.10), e dos injustos (pressuposto por Paulo, embora nunca explicitamente afirmado), para que sejam separados eternamente de Cristo (2Ts 1.9) [cite: 213]. O fim será precedido por uma ampla apostasia e pelo aparecimento de um diabólico \"homem da iniquidade\" (2Ts 2.3) [cite: 213]. Visto que essa pessoa ainda não havia aparecido, aqueles na congregação que diziam que \"o Dia do Senhor\" já tinha chegado estavam errados e deveriam ficar calados [cite: 213].\n\nOutra característica notável das cartas é a afirmação de Paulo de que Cristo é divino, o que é impressionante, por causa da data antiga das cartas e da natureza espontânea das referências [cite: 213]. Várias vezes, Cristo e o Pai são ligados como a fonte comum de bênçãos divinas e como o destinatário divino da oração (1.1; 3.11; 2Ts 1.1, 2, 12; 2.16; 3.5) [cite: 213]. No uso que Paulo faz da expressão \"Dia do Senhor\", do Antigo Testamento, segundo a qual se revela que o Senhor é o Senhor Jesus Cristo (5.2; 2Ts 2.2), há uma atribuição singular das prerrogativas de deidade a Jesus Cristo (5.2, nota) [cite: 213]. A obra conjunta das três pessoas da Trindade é mencionada em 2 Tessalonicenses 2.13, 14 [cite: 213]."
       },
       {
         "id": "teologia_de_1_tessalonicenses",
         "titulo": "Teologia de 1 Tessalonicenses",
         "tipo": "texto",
-        "ordem": 7,
-        "conteudo": "Deus chama e sustenta seu povo em meio à perseguição. Cristo morreu e ressuscitou e voltará para reunir consigo os que lhe pertencem. O Espírito atua na santificação, e a igreja deve viver em amor, pureza, paz e diligência enquanto aguarda a consumação."
+        "ordem": 6,
+        "conteudo": "Primeira Tessalonicenses se interessa em ajudar os crentes a entenderem o evangelho e suas implicações para o viver diário [cite: 213]. Paulo lhes recorda que, antes de Cristo, eles eram idólatras (1.9) [cite: 213]. Pela graça de Cristo, que foi proposta antes do tempo (5.9), converteram-se \"a Deus, para servirdes o Deus vivo e verdadeiro\" (1.9) [cite: 213]. Jesus, seu Salvador, tanto morrera pelos pecados deles (5.9, 10) como ressuscitara por eles [cite: 213]. Por essa razão, os cristãos tessalonicenses não receberão \"ira\", e sim \"salvação\" de Deus (5.9) [cite: 213]. Eles compartilham da morte e da ressurreição de Jesus, e nem mesmo a morte pode desfazer sua união com Cristo [cite: 213]. Portanto, eles têm a esperança segura de que, quando Cristo retornar, estarão com ele para sempre (4.17), totalmente santificados e irrepreensíveis (5.23) [cite: 213].\n\nPaulo também está interessado em lembrar aos tessalonicenses o ministério do Espírito [cite: 213]. Foi o Espírito que fez o \"evangelho\", a \"palavra\", chegar até eles com \"poder\" e \"plena convicção\" (1.5) [cite: 213]. Como pessoas resgatadas por Deus e possuidoras da salvação em Cristo, os crentes devem \"viver e agradar a Deus... cada vez mais\" (4.1) [cite: 213]. Ele os chamou não para \"a impureza, e sim para a santificação\" (4.7) [cite: 213]. Esse chamado envolve guardar os mandamentos de Deus [cite: 213]. Esses mandamentos vêm aos crentes \"da parte do Senhor Jesus\" (4.2, 3); e Paulo os adverte contra apagarem \"o Espírito\" (5.19) [cite: 213]. Portanto, a obediência cristã tem uma forma distintivamente trinitária [cite: 213]. O cristão deve viver a inteireza de sua vida confiando em e olhando para o retorno de Cristo no fim do tempo (5.1-11) [cite: 213]. Tanto a obra consumada de Cristo como seu retorno futuro dão forma e direção à vida do cristão no presente [cite: 213]."
       },
       {
         "id": "1_tessalonicenses_na_historia_mais_ampla_da_biblia",
         "titulo": "1 Tessalonicenses na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 8,
-        "conteudo": "A carta apresenta a igreja como povo escatológico que aguarda a vinda do Senhor. A ressurreição dos mortos e o Dia do Senhor são tratados à luz da esperança bíblica da consumação do reino de Deus."
+        "ordem": 7,
+        "conteudo": "Deus sempre chamou seu povo à santidade [cite: 213]. Depois de haver redimido seu povo pactual, os israelitas, da escravidão no Egito, o Senhor lhes disse que deveriam ser santos, como ele é santo, e que era ele quem os santificava (Lv 11.44; 20.8, 26) [cite: 213]. O mesmo padrão está presente nesta carta [cite: 213]. Deus redimiu seu povo por meio da morte e da ressurreição de seu Filho; e os redimiu precisamente para que sigam vidas santas (4.1, 2) [cite: 213]. Eles seguem esse padrão bíblico de santidade sabendo que Deus mesmo completará e aperfeiçoará essa obra no dia do retorno de Cristo (5.23, 24) [cite: 214]."
       },
       {
         "id": "cristo_em_1_tessalonicenses",
         "titulo": "Cristo em 1 Tessalonicenses",
         "tipo": "texto",
-        "ordem": 9,
-        "conteudo": "Jesus é o Filho de Deus que morreu e ressuscitou e voltará do céu. Sua vinda determina a esperança da igreja e a reunião dos mortos e vivos que pertencem a ele. A vida presente é orientada pela expectativa de sua presença e julgamento."
+        "ordem": 8,
+        "conteudo": "Paulo deixa o leitor sem qualquer dúvida sobre a divindade de Jesus Cristo (ver Características e Temas Principais) [cite: 214]. Além disso, ele é claro em afirmar que Jesus Cristo veio para salvar os pecadores e que a salvação foi realizada por meio da morte e da ressurreição de Cristo (4.14), e está sendo aplicada a seu povo pelo Espírito Santo (1.5) [cite: 214]. A esperança final do crente é o evento que levará a história à consumação — o glorioso retorno do Senhor Jesus Cristo \"dos céus\", com a \"palavra de ordem\", \"a voz do arcanjo\" e o som da \"trombeta de Deus\" (4.16) [cite: 214]."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 10,
-        "conteudo": "As passagens sobre a ressurreição dos mortos e o Dia do Senhor tiveram papel importante na reflexão cristã sobre escatologia. As exortações sobre santidade, trabalho e vida comunitária também serviram como referência para a ética cristã."
+        "ordem": 9,
+        "conteudo": "Uma passagem que tem conquistado atenção considerável dentro da igreja evangélica é 4.13-18 [cite: 214]. Alguns cristãos têm argumentado que Paulo ensina nessa passagem um arrebatamento secreto de crentes antes do retorno de Cristo no fim do tempo (ver notas) [cite: 214]. Imagina-se que esse arrebatamento venha a inaugurar uma série de eventos globais catastróficos que encontrarão seu foco na cidade de Jerusalém e entre o povo dos judeus [cite: 214]. Entretanto, o que Paulo descreve nesses versículos não é secreto nem privado, mas público [cite: 214]. Além disso, Paulo está interessado em descrever o que acontecerá quando Cristo voltar no fim do tempo (cf. 4.15 com 3.13) [cite: 214]. Paulo e os outros escritores bíblicos veem somente um acontecimento importante e final na história de redenção: a volta de Cristo em glória no fim do tempo, quando, então, ocorrerá a ressurreição final (1Co 15.23-26; Tt 2.13) [cite: 214]."
       },
       {
         "id": "esboco_de_1_tessalonicenses",
         "titulo": "Esboço de 1 Tessalonicenses",
         "tipo": "auto",
-        "ordem": 11,
+        "ordem": 10,
         "conteudo": [
           {
-            "titulo": "I. SAUDAÇÃO (1Ts 1.1)"
+            "titulo": "I. SAUDAÇÃO (1.1) [cite: 214]",
+            "itens": []
           },
           {
-            "titulo": "II. HISTÓRIA (1Ts 1.2-3.13)",
+            "titulo": "II. HISTÓRIA (1.2-3.13) [cite: 214]",
             "itens": [
-              "A. Os motivos de Paulo para ações de graça (1Ts 1.2-2.16)",
-              "1. A eleição, a fé e o amor dos tessalonicenses (1Ts 1.2-10)",
-              "2. O ministério fiel dos missionários entre eles (1Ts 2.1-12)",
-              "3. Sua recepção do evangelho como a Palavra de Deus (1Ts 2.13-16)",
-              "B. A ausência de Paulo explicada (1Ts 2.17-3.10)",
-              "C. A oração de Paulo (1Ts 3.11-13)"
+              "A. Os motivos de Paulo para ações de graça (1.2-2.16) [cite: 214]",
+              "1. A eleição, a fé e o amor dos tessalonicenses (1.2-10) [cite: 214]",
+              "2. O ministério fiel dos missionários entre eles (2.1-12) [cite: 214]",
+              "3. Sua recepção do evangelho como a Palavra de Deus (2.13-16) [cite: 214]",
+              "B. A ausência de Paulo explicada (2.17-3.10) [cite: 214]",
+              "C. A oração de Paulo (3.11-13) [cite: 214]"
             ]
           },
           {
-            "titulo": "III. INSTRUÇÃO (1Ts 4.1-5.22)",
+            "titulo": "III. INSTRUÇÃO (4.1-5.22) [cite: 214]",
             "itens": [
-              "A. Ética (1Ts 4.1-12)",
-              "1. Moralidade sexual (1Ts 4.1-8)",
-              "2. Amor fraternal e testemunho (1Ts 4.9-12)",
-              "B. Escatologia (1Ts 4.13-5.11)",
-              "1. Os mortos (1Ts 4.13-18)",
-              "2. O Dia do Senhor (1Ts 5.1-11)",
-              "C. Vida congregacional (1Ts 5.12-22)"
+              "A. Ética (4.1-12) [cite: 214]",
+              "1. Moralidade sexual (4.1-8) [cite: 214]",
+              "2. Amor fraternal e testemunho (4.9-12) [cite: 214]",
+              "B. Escatologia (4.13-5.11) [cite: 214]",
+              "1. Os mortos (4.13-18) [cite: 214]",
+              "2. O Dia do Senhor (5.1-11) [cite: 214]",
+              "C. Vida congregacional (5.12-22) [cite: 214]"
             ]
           },
           {
-            "titulo": "IV. ORAÇÃO, ORDENS E BÊNÇÃOS FINAIS (1Ts 5.23-28)"
+            "titulo": "IV. ORAÇÃO, ORDENS E BENÇÃOS FINAIS (5.23-28) [cite: 214]",
+            "itens": []
           }
         ]
       }
@@ -119,7 +114,8 @@
   "referencias_inline": true,
   "politica_traducao": "independente",
   "fonte": {
-    "arquivo": "imagens do conjunto 1Ts",
-    "criterio": "Conteúdo reconstruído a partir das imagens fornecidas pelo usuário, com OCR em colunas independentes, normalização de hifenização e correção de erros evidentes de reconhecimento, preservando o sentido e a organização da fonte."
+    "arquivo": "52_1 Tessalonicenses.pdf",
+    "paginas": "Páginas impressas 2129 a 2133",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de 1 Tessalonicenses, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

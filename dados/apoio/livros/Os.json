@@ -2,131 +2,127 @@
   "schema": "apoio-livro-v1",
   "id": "Os",
   "nome": "Oseias",
+  "abreviacao": "Os",
   "material": {
     "titulo": "Sobre Oseias",
-    "introducao": "Oseias denuncia a quebra da aliança por Israel por meio das imagens de adultério, casamento e vida familiar. Em meio ao anúncio de julgamento e exílio, o livro enfatiza a fidelidade de Deus, seu amor pactual e a esperança de arrependimento, renovação e restauração.",
+    "introducao": "O Livro de Oseias usa a dolorosa experiência familiar do profeta com sua esposa infiel para ilustrar o chocante pecado da apostasia e da idolatria de Israel, proclamando com profunda emoção o amor inabalável (hesed) e a fidelidade redentora de Deus.",
     "secoes": [
       {
-        "id": "titulo",
-        "titulo": "Título",
+        "id": "titulo_e_autor",
+        "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O livro recebe o nome do profeta Oseias, filho de Beeri. O material identifica o ambiente do livro com o reino do Norte e observa que o profeta demonstra conhecimento detalhado da geografia, topografia e história de Israel, levando à conclusão de que provavelmente era natural do reino do Norte."
+        "conteudo": "Esse livro oferece pouquíssima informação biográfica sobre seu autor, o profeta Oseias, filho de Beeri (1.1) [cite: 109]. O ambiente do livro é o reino do Norte, e Oseias demonstra muita familiaridade com a geografia (4.15; 5.1, 8; 6.8, 9; 9.15; 10.5; 12.11), a topografia (2.22; 10.8) e a história (5.13; 7.7, 11; 8.4, 8-14) dessa terra [cite: 109]. Por causa de seu conhecimento detalhado de Israel, presume-se que ele era natural do reino do Norte [cite: 109]."
       },
       {
-        "id": "autor",
-        "titulo": "Autor",
+        "id": "data",
+        "titulo": "Data",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "Oseias é o profeta identificado em 1.1, filho de Beeri. Poucas informações biográficas são fornecidas. Seu conhecimento detalhado do reino do Norte sugere origem naquela região. Sua experiência familiar, especialmente seu relacionamento com Gômer e os filhos, torna-se parte integrante da mensagem profética."
+        "conteudo": "Alguns dos profetas datam seus ministérios de acordo com os reinados de reis específicos [cite: 109]. Por exemplo, Isaías (1.1), Jeremias (1.1-3), Daniel (1.1), Miqueias (1.1) e Sofonias (1.1), todos datam suas profecias em conjunção com o reinado de reis judaicos [cite: 109]. Ageu (1.1) e Zacarias (1.1) datam seus ministérios de acordo com a cronologia dos reis da Pérsia [cite: 109]. Oseias (1.1) e Amós (1.1) são os únicos profetas escritores que incluem referências cronológicas aos reis de Judá e de Israel [cite: 109]. Oseias profetizou durante os reinados de quatro reis de Judá: Uzias (767-740 a.C.), Jotão (750-735 a.C.), Acaz (735-715 a.C.) e Ezequias (cerca de 727-cerca de 696 a.C. ou 715-686 a.C.; cf. 2Rs 20.1; Is 36.1; 38.5, notas) [cite: 109]. O texto também indica que Oseias pregou as palavras de Deus durante o reinado de Jeroboão II (793-753 a.C.), rei de Israel [cite: 109]. Não sabemos por que os reis israelitas que sucederam Jeroboão II até a destruição do reino do Norte não são listados, embora talvez tenham sido excluídos por causa de sua impiedade singular [cite: 109]. Oseias ministrou durante a segunda metade do século VIII a.C., um período turbulento que testemunhou seu ponto mais baixo, com a destruição do reino do Norte pelos assírios, em 722 a.C. [cite: 109]"
       },
       {
-        "id": "data_e_circunstancias",
-        "titulo": "Data e circunstâncias",
+        "id": "circunstancias",
+        "titulo": "Circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "Oseias profetizou durante os reinados de Uzias, Jotão, Acaz e Ezequias, de Judá, e de Jeroboão II, de Israel. Seu ministério ocorreu na segunda metade do século VIII a.C., em um período turbulento que culminou na destruição do reino do Norte pelos assírios em 722 a.C. O período começou com prosperidade sob Jeroboão II e terminou com caos político e social. Quatro dos seis reis seguintes foram assassinados, um foi levado como prisioneiro político e somente um foi sucedido por seu filho. A guerra siro-efraimita de 735–732 a.C. e a indecisão política entre Egito e Assíria aparecem no pano de fundo da mensagem. A queda de Samaria em 722 a.C. era esperada por Oseias, embora o evento não tenha ocorrido durante a formulação de sua profecia. A crise também era profundamente espiritual: a antiga fé de Israel havia sido misturada com elementos da religião cananeia de fertilidade, especialmente o culto a Baal, incluindo práticas sexuais e prostituição ritual. A corrupção alcançava também líderes religiosos."
+        "conteudo": "Durante seus anos finais, o reino do Norte de Israel estava em condição de declínio social e político [cite: 109]. A prosperidade econômica e a segurança política que a nação experimentara durante o reinado de Jeroboão II (c. 793-753) foram sucedidas por um período de caos político e social, bem como de declínio religioso, durante o governo dos seis reis seguintes, que reinaram por um período de 25 anos (2Rs 15.8-17.41) [cite: 109]. Quatro desses reis foram assassinados por aqueles que usurparam seus tronos (Zacarias, Salum, Pecaías e Peca; cf. 2Rs 15.10, 14, 25, 30); um deles se tornou prisioneiro político (Oseias; cf. 2Rs 17.3, 4); e somente um foi sucedido por seu filho (Menaém; cf. 2Rs 15.23) [cite: 109].\n\nA pregação de Oseias reflete tanto a relativa calmaria que o reino experimentou sob o governo de Jeroboão (2.5, 8, 13) como a inquietação posterior nas relações domésticas (7.3-7; 13.10, 11) e estrangeiras (7.8-12.1) [cite: 110]. A guerra siro-efraimita (735-732 a.C.; 2Rs 15.27-30; 16.5-9; Is 7.1-9), em particular, parece estar por trás da mensagem de Oseias em 5.8-10 [cite: 110]. Peca, de Israel, fez uma aliança com Rezim, da Síria, para que resistissem à expansão do Império Assírio governado por Tiglate-Pileser III [cite: 110]. Depois, Peca atacou Judá diante de sua recusa a se unir à aliança com a Síria [cite: 110]. A Assíria respondeu ao pedido de ajuda de Judá atacando Damasco, a capital da Síria, e subjugando, sistematicamente, um extenso território no reino do Norte, Israel [cite: 110].\n\nA indecisão política do reino do Norte entre o Egito e a Assíria também se reflete no texto (5.13; 7.11; 8.9, 10; 9.3; 11.5; 12.1) [cite: 110]. Essa indecisão deu causa a mais um ataque da parte dos assírios, à prisão do rei Oseias, ao cerco de Samaria e ao fim do reino do Norte [cite: 110]. Embora esse fim tenha sido esperado por Oseias, a queda de Samaria, em 722 a.C., não aconteceu no tempo de sua profecia (13.16) [cite: 110].\n\nAlém do declínio social e político, o reino do Norte também estava em condição de declínio espiritual na fase final de sua história [cite: 110]. A antiga fé de Israel, que Oseias descreve com grande beleza usando analogias de casamento e amor paternal (2.14-23; 11.1-4), tornara-se corrompida por elementos da religião de fertilidade de Canaã [cite: 110]. Esses cultos de fertilidade se concentravam especialmente no culto de Baal, um deus reverenciado como doador de chuva e fertilidade [cite: 110]. Os israelitas associaram à fé ortodoxa elementos da religião de fertilidade dos cananeus, especialmente ritos sexuais que incluíam prostituição ritual e orgias vergonhosas (4.10-13) [cite: 110]. O culto ao Senhor e o culto a Baal (cujo nome significa, literalmente, \"amo\" ou \"senhor\") se mesclaram, sendo vistos como um só (2.5-13) [cite: 110]. A corrupção religiosa se evidenciou não somente nessa forma de religião popular e sincrética — algumas vezes, chamada como uma forma \"baalizada\" de culto a Jeová —, mas também na vida dos líderes religiosos [cite: 110]. Por corrupção, avareza e dureza de coração, eles não somente deixavam de instruir o povo na fé verdadeira, como também toleravam e, em alguns casos, até mesmo patrocinavam a religião sincrética (4.4-13; 5.1; 6.9) [cite: 110]."
       },
       {
         "id": "genero_e_caracteristicas_literarias",
         "titulo": "Gênero e características literárias",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "O estilo de Oseias é difícil de classificar. Os capítulos 1–3 não empregam de modo consistente o paralelismo característico da poesia hebraica, mas também não correspondem à prosa hebraica normal. Algumas partes usam marcadores narrativos e outras alternam a pessoa verbal. A expressão “prosa exaltada” é apresentada como uma descrição possível. Os capítulos 4–14 são mais frequentemente poéticos. Oseias utiliza imagens fortes e extensas, sobretudo as imagens do casamento humano (caps. 1–3) e da vida familiar (11.1–4, 10), além de metáforas que comparam Deus a traça, podridão, chuvas, leão, leopardo, urso e cipreste."
+        "conteudo": "Determinar o estilo literário do livro de Oseias é uma tarefa complicada [cite: 110]. Por causa da maneira como o texto aparece no Antigo Testamento hebraico e em diversas versões modernas, alguém poderia supor que o livro é totalmente poético [cite: 110]. A realidade, porém, é que o estilo literário de poesia não é uniforme em todo o livro [cite: 110]. Em particular, os capítulos 1 a 3 não empregam, de forma consistente, linhas de paralelismo, o que é uma marca comum da poesia hebraica [cite: 110]. Por outro lado, esse material também não é prosa hebraica normal [cite: 110]. Embora empregue certos marcadores de narrativa, como o sinal do objeto direto, o pronome relativo e o artigo hebraico, o livro não é consistente em usar essas características [cite: 110]. Além disso, algumas partes desses capítulos são escritas na primeira pessoa, e outras, não [cite: 110]. O estilo literário parece encaixar-se em algum ponto entre os dois gêneros de poesia e prosa; talvez uma designação como \"prosa exaltada\" seja um nome apropriado [cite: 110]. Em contraste, os capítulos 4 a 14 do livro são mais frequentemente poéticos por natureza [cite: 110].\n\nA mensagem de Oseias é enfatizada por meio de seu uso eficiente de imagens [cite: 110]. As metáforas mais fortes e mais estendidas derivam da experiência humana de intimidade [cite: 110]. Usando as imagens do casamento humano (caps. 1-3) e da vida familiar (11.1-4, 10), Oseias retrata Deus e seu relacionamento com seu povo [cite: 110]. Em outras imagens figurativas, Deus é comparado a traça e podridão (5.12), chuvas de inverno e de primavera (6.3), um leão (5.14; 11.10; 13.7, 8), um leopardo (13.7), um urso (13.8) e um cipreste (14.8) [cite: 110]."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "O tema central é a quebra da aliança por Israel. O Senhor redimiu Israel do Egito, tomou-o como seu povo e o amou, mas Israel se afastou repetidamente. O relacionamento de Oseias com Gômer ilustra dolorosamente essa infidelidade: a esposa é infiel, e a situação corresponde à infidelidade de Israel para com o Senhor. Oseias anuncia julgamento iminente, envolvendo desolação da terra e exílio dos habitantes, mas afirma que o julgamento não será o fim. Depois dele haverá restauração. A mensagem final é um chamado ao arrependimento e à renovação da aliança."
+        "conteudo": "O tema central do livro de Oseias é a quebra da aliança por parte de Israel, a aliança que Deus fez com o povo quando o redimiu do Egito [cite: 110, 111]. Essa aliança foi estabelecida no monte Sinai, no deserto, no tempo em que o Senhor achou Israel \"como uvas no deserto\" e \"como as primícias da figueira nova\" (9.10) [cite: 111]. Ali, Deus tomou Israel sob suas asas [cite: 111]. Ali, Deus amou Israel e chamou o povo pelo familiar \"meu filho\" (11.1) [cite: 111]. Mas Israel se afastou de Deus [cite: 111]. E, quanto mais ele os chamava de volta, mais se distanciavam dele (11.2) [cite: 111]. O povo caiu em grande pecado e quebrou a aliança que Deus fizera tão graciosamente com eles [cite: 111]. Oseias descreve o pecado de Israel em grandes detalhes [cite: 111]. O povo quebrava continuamente os mandamentos do Decálogo (4.1, 2) e praticava a idolatria (4.11-14) [cite: 111].\n\nUma ilustração dolorosa da quebra do relacionamento de aliança foi o infeliz relacionamento conjugal entre Oseias e sua esposa, Gômer (1.3) [cite: 111]. Ela se mostrou infiel a seu marido, e a profecia ensina que esse desvio era análogo à infidelidade de Israel a seu marido, o Senhor [cite: 111]. Oseias acabou tomando-a de volta, e esse ato também foi análogo à frequente atividade de Deus em restaurar Israel depois de numerosas excursões de infidelidade [cite: 111].\n\nA profecia de Oseias não somente define os pecados de Israel, como também adverte sobre o julgamento iminente por causa desses pecados (5.9-14) [cite: 111]. A natureza do julgamento é dupla: a terra de Israel seria desolada e seus habitantes seriam levados ao exílio (5.13; 8.8, 9) [cite: 111]. Embora fosse certo que o julgamento viria sobre Israel, Oseias inclui uma nota de alegria e esperança para o povo de Deus no futuro, depois do julgamento [cite: 111]. A vinda da punição de Israel, contudo, não seria o fim; um dia, Deus produziria um tempo de restauração esplêndido [cite: 111]."
       },
       {
         "id": "teologia_de_oseias",
         "titulo": "Teologia de Oseias",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "A teologia de Oseias está arraigada nos atos passados do Senhor: ele chamou Israel do Egito, cuidou dele no deserto, estabeleceu-o em Canaã e assumiu a figura de marido divino. A fidelidade de Deus e o cumprimento de sua aliança estão no centro de seu relacionamento com Israel. Em contraste, Israel segue seus “amantes”, buscando outros deuses; a idolatria é apresentada como adultério. O Senhor, porém, permanece paciente e longânimo e chama o povo de volta à aliança. A infidelidade de Israel é eclipsada pela fidelidade de Deus."
+        "conteudo": "A teologia de Oseias está arraigada nos atos passados do Senhor em benefício de seu povo [cite: 111]. Ele chamou Israel do Egito (11.1) e cuidou da nação no deserto (11.3, 4) [cite: 111]. Em seguida, o Senhor estabeleceu Israel e o protegeu na terra de Canaã [cite: 111]. Serviu como marido divino para sua esposa, Israel (2.16) [cite: 111]. Portanto, a fidelidade de Deus e seu cumprimento da aliança estavam no próprio âmago de seu relacionamento com Israel [cite: 111]. O Senhor nunca hesitou em sua lealdade pactual para com Israel [cite: 111].\n\nPor outro lado, Israel tinha uma história de infidelidade à aliança [cite: 111]. A nação seguiu \"seus amantes\" (2.7) ao buscar frequentemente outros deuses [cite: 111]. Chegou ao ponto de mercar \"amores\" (8.9), um ato que compara a idolatria de Israel a um ato de prostituição [cite: 111]. Israel violou repetidas vezes os termos da aliança (4.2; 8.1) [cite: 111]. Esse conceito de idolatria como adultério é simbolizado vividamente nas principais imagens do livro, que dizem respeito à infidelidade da esposa de Oseias [cite: 111].\n\nA mensagem final de Oseias é um chamado ao arrependimento e à renovação da aliança (14.1-9) [cite: 111]. Mais uma vez, Deus toma a iniciativa, ao cortejar sua esposa errante a fim de que volte para ele [cite: 111]. O caráter paciente e longânimo de Deus em relação às suas promessas da aliança é ressaltado por seus convites finais [cite: 111]. A infidelidade de Israel é eclipsada pela fidelidade de Deus [cite: 111]."
       },
       {
         "id": "oseias_na_historia_mais_ampla_da_biblia",
         "titulo": "Oseias na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "O Novo Testamento destaca Oseias como profeta da hesed, isto é, do amor inabalável ou lealdade pactual. Jesus cita Oseias 6.6, “Misericórdia quero e não sacrifício”, em Mateus 9.13 e 12.7, ensinando que a verdadeira adoração não consiste em mera prática externa. Paulo cita Oseias 1.10 e 2.23 em Romanos 9.25–26 para falar da restauração do povo de Deus. As promessas de restauração encontram seu cumprimento no Novo Testamento por meio de Jesus Cristo."
+        "conteudo": "No Novo Testamento, Oseias é lembrado de forma proeminente como o profeta de hesed, uma palavra hebraica que significa \"amor inabalável\" ou \"lealdade pactual\" [cite: 111]. Esse conceito se torna fundamental porque Jesus cita Oseias 6.6 (\"Misericórdia quero e não sacrifício\") duas vezes no evangelho de Mateus (9.13; 12.7) [cite: 111]. Nessas duas passagens, Jesus ensina contra a ideia de mera prática externa como realização da verdadeira adoração a Deus [cite: 111]. Jesus cita Oseias para demonstrar que a verdadeira adoração vem somente de um coração que ama a misericórdia [cite: 111].\n\nO livro de Oseias é fundamental ao ensino do Novo Testamento sobre a restauração do povo de Deus [cite: 111]. O apóstolo Paulo cita dois textos de restauração do livro de Oseias em seu ensino crucial em Romanos 9.25, 26 [cite: 111]. Paulo entende que o julgamento sobre Israel aconteceu em sua destruição e exílio [cite: 111]. Promessas de restauração, que se encontram em Oseias 1.10 e 2.23, cumprem-se no Novo Testamento por meio de Jesus Cristo [cite: 111]."
       },
       {
         "id": "cristo_em_oseias",
         "titulo": "Cristo em Oseias",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "Cristo é destacado especialmente em Oseias 11.1: “Do Egito chamei o meu filho”. Onde Israel fracassou em sua fidelidade, Cristo aparece como o verdadeiro Filho de Israel. Ele paga a penalidade pela infidelidade espiritual do povo, cumpre perfeitamente a lei e oferece a justiça exigida pela santa lei de Deus. Sua obra messiânica realiza a restauração final do povo de Deus."
+        "conteudo": "No livro de Oseias, Cristo talvez seja mais evidente na passagem debatida \"Do Egito chamei o meu filho\" (11.1) [cite: 111]. Onde Israel fracassou em sua fidelidade a Deus, Cristo prevalece como o verdadeiro filho de Israel [cite: 111]. Cristo não somente pagou a penalidade por nossa constante prostituição espiritual, como também foi o perfeito cumpridor da lei e, por isso, oferece a justiça positiva exigida pela santa lei de Deus [cite: 111]. Sua obra como Messias realiza a restauração final do povo de Deus [cite: 111]."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "Oseias foi muito comentado na igreja antiga, com destaque para Jerônimo e Teodoro de Mopsuéstia. Alguns intérpretes se aproximaram mais do sentido literal e histórico, enquanto outros, como Cirilo de Alexandria, empregaram métodos alegóricos. Na erudição moderna, os capítulos 1–3 receberam atenção especial por causa das imagens do casamento. Entre 1900 e 1980 houve forte interesse em reconstruir uma biografia de Oseias e Gômer; posteriormente surgiram também abordagens feministas. Estudos mais recentes procuram corrigir a concentração exclusiva nos capítulos iniciais e considerar novamente o livro como um todo."
+        "conteudo": "Oseias foi muito comentado na igreja antiga, sendo Jerônimo e Teodoro de Mopsuestia seus intérpretes mais significativos [cite: 111, 112]. Alguns se aproximavam do texto em busca do sentido literal e claro, enquanto outros, como Cirilo de Alexandria, empregavam um método mais alegórico [cite: 112].\n\nNos tempos modernos, diferentes abordagens a esse livro já foram propostas [cite: 112]. A erudição da alta crítica está focada principalmente nas imagens de casamento nos capítulos 1 a 3 [cite: 112]. De 1900 a 1980, a erudição tentou especialmente elaborar uma biografia sobre Oseias e seu relacionamento com Gômer [cite: 112]. Desde então, surgiu também uma interpretação feminista nos estudos dos capítulos 1-3 [cite: 112]. A erudição recente tem oferecido um corretivo para o foco exclusivo nos três primeiros capítulos e está, em vez disso, concentrando-se novamente em todo o livro [cite: 112]. Alguns desenvolvimentos literários em estudos bíblicos começaram a se estabelecer e, sem dúvida, continuarão a desempenhar importante papel na interpretação do livro em um futuro próximo [cite: 112]."
       },
       {
         "id": "assuntos_especiais",
         "titulo": "Assuntos especiais",
         "tipo": "texto",
         "ordem": 10,
-        "conteudo": "O principal problema interpretativo destacado é ético: como compreender a ordem de Deus para que Oseias tomasse uma “mulher de prostituições” e gerasse “filhos de prostituição” (1.2)? São apresentadas diversas propostas: Gômer poderia ter se tornado prostituta somente depois do casamento; poderia estar envolvida em prostituição cultual; o relato poderia ser entendido metaforicamente; ou poderia envolver outra mulher. A leitura considerada mais óbvia pelo material é que Oseias se casou realmente com Gômer sabendo que ela se tornaria infiel, tornando o casamento uma analogia do relacionamento do Senhor com Israel. Os nomes dos filhos — Jezreel, Lo-Ruama e Lo-Ami — também possuem significado simbólico, comunicando julgamento e, posteriormente, esperança, renovação, amor e restauração."
+        "conteudo": "O principal problema na interpretação do livro de Oseias é de natureza ética [cite: 112]. Como Deus poderia ter ordenado que Oseias tomasse uma \"mulher de prostituições\" e gerasse \"filhos de prostituição\" (1.2)? [cite: 112] À primeira vista, parece que o Senhor mandou Oseias se casar com uma prostituta conhecida [cite: 112]. Esse dilema moral tem sido abordado de diversas maneiras [cite: 112]. Alguns argumentam que esse texto se refere, na verdade, a um período posterior, em que Gômer se tornou prostituta somente depois de se casar com Oseias e dar-lhe um filho [cite: 112]. Outros acreditam que Gômer não era uma prostituta comum, mas, sim, uma mulher envolvida em prostituição cultual relacionada à religião de fertilidade de Baal [cite: 112]. Alguns têm argumentado que Oseias provavelmente nunca se casou com Gômer ou que talvez toda a história seja uma mera alegoria [cite: 112]. A leitura mais óbvia do texto é que o profeta se casou realmente com Gômer sabendo que ela se tornaria infiel, e essa circunstância era análoga ao relacionamento do Senhor com Israel, porque ele a desposou mesmo sabendo que ela seria infiel (Dt 31.16) [cite: 112]. Esse casamento humano confere, portanto, clareza e ênfase à quebra da aliança entre Israel e Deus [cite: 112].\n\nA questão moral se aprofunda quando consideramos 3.1-2 [cite: 112]. Se a mulher em questão não é Gômer, então Oseias compra uma prostituta que não é sua esposa [cite: 112]. De novo, alguns argumentam que isso é apenas uma metáfora ou talvez seja uma segunda esposa de Oseias [cite: 112]. Mas a opinião predominante é que Gômer é a mulher do capítulo 3 [cite: 112].\n\nDe modo semelhante, algumas questões têm sido levantadas sobre os filhos de Oseias [cite: 112]. Seus nomes, como o do menino nascido de Isaías e da profetisa (Is 8.1-4), foram dados com o propósito de um significado simbólico (cf. Is 7.3; Ez 23) [cite: 112]. Os nomes dados aos filhos de Oseias (Jezreel, Lo-Ruama e Lo-Ami; 1.4, 6, 9 e notas) tanto ilustram a mensagem do profeta sobre o desprazer crescente de Deus com a errante Israel como comunicam uma mensagem de esperança, renovação, amor e restauração (2.21-23, notas) [cite: 112]. O fato de nomes de filhos terem significado no Antigo Testamento não implica que tenham sido criados num tempo posterior ou que simplesmente fossem metafóricos [cite: 112]. Pelo contrário, com frequência, davam-se aos filhos nomes que refletiam seu caráter, uma circunstância no tempo de seu nascimento ou uma profecia concernente ao seu futuro [cite: 112]."
       },
       {
-        "id": "esboco",
+        "id": "esboco_de_oseias",
         "titulo": "Esboço de Oseias",
         "tipo": "auto",
         "ordem": 11,
         "conteudo": [
           {
-            "titulo": "I. INTRODUÇÃO (1.1)",
+            "titulo": "I. INTRODUÇÃO (1.1) [cite: 112]",
             "itens": []
           },
           {
-            "titulo": "II. A LIÇÃO DA VIDA FAMILIAR DE OSEIAS (1.2–3.5)",
+            "titulo": "II. A LIÇÃO DA VIDA FAMILIAR DE OSEIAS (1.2-3.5) [cite: 112]",
             "itens": [
-              "A. A esposa e os filhos de Oseias: uma parábola de julgamento (1.2–2.1)",
-              "B. Infidelidade e punição (2.2–13)",
-              "C. Reconciliação e restauração (2.14–23)",
-              "D. Esposa e nação redimidas (cap. 3)"
+              "A. A esposa e os filhos de Oseias: uma parábola de julgamento (1.2-2.1) [cite: 112]",
+              "B. Infidelidade e punição (2.2-13) [cite: 112]",
+              "C. Reconciliação e restauração (2.14-23) [cite: 112]",
+              "D. Esposa e nação redimidas (cap. 3) [cite: 112]"
             ]
           },
           {
-            "titulo": "III. A MENSAGEM PROFÉTICA DE OSEIAS (CAPS. 4–14)",
+            "titulo": "III. A MENSAGEM PROFÉTICA DE OSEIAS (CAPS. 4-14) [cite: 112]",
             "itens": [
-              {
-                "titulo": "A. A acusação de fracasso em reconhecer a Deus (4.1–6.3)",
-                "itens": [
-                  "1. O argumento do Senhor contra Israel (cap. 4)",
-                  "2. Acusações contra os sacerdotes e o povo (cap. 5)",
-                  "3. Chamado ao arrependimento (6.1–3)"
-                ]
-              },
-              {
-                "titulo": "B. A acusação de quebrarem a aliança de Deus (6.4–11)",
-                "itens": [
-                  "1. Infidelidade e decadência (6.4–7.16)",
-                  "2. Anúncio de julgamento (cap. 8)",
-                  "3. Culpa e punição (caps. 9–10)",
-                  "4. O infalível amor de Deus (cap. 11)"
-                ]
-              },
-              {
-                "titulo": "C. A acusação de infidelidade para com o Senhor (11.12–14.9)",
-                "itens": [
-                  "1. Israel, o enganador (11.12–12.14)",
-                  "2. O fim da compaixão (cap. 13)",
-                  "3. A volta e a promessa de renovação (cap. 14)"
-                ]
-              }
+              "A. A acusação de fracasso em reconhecer a Deus (4.1-6.3) [cite: 112]",
+              "1. O argumento do Senhor contra Israel (cap. 4) [cite: 112]",
+              "2. Acusações contra os sacerdotes e o povo (cap. 5) [cite: 112]",
+              "3. Chamado ao arrependimento (6.1-3) [cite: 112]",
+              "B. A acusação de quebrarem a aliança de Deus (6.4-11.11) [cite: 112]",
+              "1. Infidelidade e decadência (6.4-7.16) [cite: 112]",
+              "2. Anúncio de julgamento (cap. 8) [cite: 112]",
+              "3. Culpa e punição (caps. 9, 10) [cite: 112]",
+              "4. O infalível amor de Deus (cap. 11) [cite: 112]",
+              "C. A acusação de infidelidade para com o Senhor (11.12-14.9) [cite: 112]",
+              "1. Israel, o enganador (11.12-12.14) [cite: 112]",
+              "2. O fim da compaixão (cap. 13) [cite: 112]",
+              "3. A volta e a promessa de renovação (cap. 14) [cite: 112]"
             ]
           }
         ]
       }
     ]
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fonte": {
+    "arquivo": "28_Oseias.pdf",
+    "paginas": "Páginas impressas 1491 a 1495",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de Oseias, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

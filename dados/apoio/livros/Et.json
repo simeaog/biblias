@@ -1,159 +1,118 @@
 {
   "schema": "apoio-livro-v1",
-  "id": "Et",
+  "id": "Est",
   "nome": "Ester",
-  "abreviacao": "Et",
+  "abreviacao": "Est",
   "material": {
     "titulo": "Sobre Ester",
-    "introducao": "Ester narra como a rainha Ester e Mordecai são usados para impedir a destruição dos judeus no império persa. A narrativa conduz da queda de Vasti à promoção de Ester, ao plano de Hamã e ao livramento dos judeus.",
+    "introducao": "O livro de Ester narra a história da providencial intervenção de Deus para salvar a comunidade judaica da diáspora persa do plano de aniquilação arquitetado por Hamã, tendo como pano de fundo a corte de Susã, a ascensão de Ester ao trono e o estabelecimento da Festa de Purim.",
     "secoes": [
       {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O livro recebeu o nome de Ester, sua personagem central, rainha que participa decisivamente do livramento dos judeus.",
-        "paginas_fonte": [
-          1
-        ]
+        "conteudo": "Intitulado de acordo com seu personagem principal, o livro sempre foi conhecido como \"Ester\" [cite: 115]. Membro da comunidade da diáspora judaica na capital persa de Susã, em torno de 480 a.C., Ester se viu envolvida nos eventos que estavam além de seu controle para vir a ser a esposa do imperador [cite: 115]. Sua condição real a capacitava, sob o controle de Deus, a intervir e a reverter a ameaça de aniquilamento de seu povo [cite: 115]. O livro não é mencionado ou citado explicitamente no NT, mas, na tradição rabínica, era, surpreendentemente, lido na festa de Purim (ver Data e Circunstâncias) [cite: 115]."
       },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "O autor do livro não é identificado. A narrativa apresenta conhecimento detalhado dos costumes e da geografia persas.",
-        "paginas_fonte": [
-          1
-        ]
+        "conteudo": "Embora o autor do livro de Ester seja desconhecido, seu interesse pela origem e a observância da festa de Purim, seu intenso nacionalismo e seu conhecimento estreito da corte, dos costumes e da geografia persas pressupõem que ele era um judeu persa em Susã [cite: 115]. Tem-se sugerido que Mordecai é seu autor, mas isso não pode ser estabelecido [cite: 115]. As sugestões modernas da autoria feminina se chocam com as práticas normais da cultura na qual o livro tem origem [cite: 115]."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "A narrativa se passa no império persa, depois do exílio. O contexto é a ameaça de destruição dos judeus e sua preservação.",
-        "paginas_fonte": [
-          1,
-          2
-        ]
+        "conteudo": "A data mais antiga possível para o livro vem logo depois dos incidentes ali descritos, ou seja, meados do século V a.C [cite: 115]. Em geral, agora os estudiosos preferem datá-lo no final do quinto ou do quarto século, apontando para as evidências linguísticas, bem como para a atitude favorável do autor em relação ao rei persa e aos gentios em geral, como evidência para uma data anterior [cite: 115].\n\nO autor de Ester escreveu seu livro para explicar a origem da celebração de Purim, a fim de estabelecer Purim como uma festa celebrada a cada nova geração dos judeus, e para regular sua observância (9.20-32) [cite: 115]. Ele comunicou ainda a mensagem de que era possível para os judeus trabalharem dentro da estrutura governamental de um império pagão, de tal maneira que o antagonismo de seus inimigos pudesse, com a assistência divina, ser frustrado [cite: 115]. Além disso, ele comunicou que Deus está apto a livrar e proteger seu povo através da providencial ordenação das circunstâncias, não apenas por meio de milagres impressionantes [cite: 115]."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "O livro é uma narrativa histórica, construída com forte desenvolvimento literário, ironia e reversões de situação.",
-        "paginas_fonte": [
-          2
-        ]
+        "conteudo": "Acaso essa é uma narrativa histórica, habilidosamente escrita para salientar certas verdades? Ou se trata de ficção, com a intenção de comunicar as mesmas verdades? [cite: 115, 116] A maior parte dos estudiosos modernos defende a última opção, ainda que o livro não contenha intervenção obviamente sobrenatural, como, por exemplo, milagres, o que é usado com tanta frequência para designar a obra como fantasiosa [cite: 116].\n\nHá, no entanto, aspectos significativos que apontam para a exatidão histórica da narrativa [cite: 116]. Por exemplo, o banquete no terceiro ano de Assuero (Xerxes, 1.3) corresponde ao grande concílio em 483 a.C., com o plano para a invasão grega, tal como relatado pelo historiador grego Heródoto [cite: 116]. A lacuna de quatro anos entre o banquete de 1.3 e o sétimo ano do reinado de Assuero, quando Ester foi trazida à presença real (2.16), corresponde ao período no qual Assuero teve de enfrentar os gregos (ver 2.1 e nota) [cite: 116]. O autor revela ainda um conhecimento impressionante do traçado de Susã, especialmente do palácio [cite: 116]. Muitos termos persas para objetos e nomes persas se encontram no livro, e quase todos também são atestados pelos antigos textos persas [cite: 116].\n\nDificuldades sobre questões como o número de províncias no Império Persa (1.1) e a falta de atestação externa para a existência de Vasti (1.9), Ester e Mordecai (2.5) não são tão significativas ou insuperáveis quanto parecem a alguns estudiosos [cite: 116]."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "A história utiliza contrastes, inversões e reviravoltas. O nome de Deus não aparece explicitamente no texto hebraico, enquanto sua providência pode ser percebida na sequência dos acontecimentos.",
-        "paginas_fonte": [
-          2
-        ]
+        "conteudo": "O livro de Ester é famoso pela elevada qualidade de sua arte literária, a qual funciona como o principal veículo para seu significado religioso [cite: 116]. O autor usa habilidosamente a narrativa de tensões criadas pelas reversões ou os contrastes agudos de aventuras e expectativas, bem como pelos papéis, que, com frequência, são elevada e naturalmente irônicos [cite: 116]. Notem-se as duas descrições de banquetes oferecidos por Assuero e sua esposa — aquele descrito com muitos detalhes e este apresentado sobriamente (1.1-9); o notável contraste entre o perfil inicial do rei, como poderoso e luxuoso (1.1-8), e a revelação subsequente de sua incompetência e fraqueza; o contraste efetivo entre a resposta do rei quando Vasti deixa de comparecer diante dele e quando Ester surge sem ser anunciada (1.11-21; 5.1-3); a irônica reversão da carreira de Hamã (6.4-12); a cena patética na qual Hamã suplica a misericórdia de Ester, simplesmente para ser acusado de tentativa de violação (7.7-9); e a justiça poética de pendurar Hamã em seu próprio patíbulo [cite: 116].\n\nO último é um exemplo das irônicas reversões nos destinos e na posição de Hamã e Mordecai (7.9, 10; 8.1, 2; 9.25) [cite: 116]. Tais reversões, quando comparadas às do êxodo, ao exílio babilônico e até mesmo à crucificação e à ressurreição, revelam sutilmente a mão de Deus na história da salvação de seu povo [cite: 116]. O escritor usa ainda repetição e duplicação para combinar as várias partes da história [cite: 116]. Por exemplo, note as três referências aos registros oficiais (\"crônicas\") posicionadas em pontos convergentes e significativos da narrativa (2.23; 6.1; 10.2) [cite: 116]. Há três conjuntos de banquetes que marcam o começo, o meio e o fim do livro: os banquetes de Assuero (1.3, 4, 5-8), de Ester (5.4-8; 7.1-10) e as duas celebrações de Purim (9.18-32) [cite: 116]. Veja ainda o tema do banquete em 1.9; 2.18; 3.15; 8.17; 9.17; a tríplice menção à extensão do império de Assuero (1.1; 8.9; 9.30); a promessa repetitiva feita a Ester \"ainda que seja a metade do meu reino\" (5.3, 6; 7.2; ver 9.12); a reiterada insistência de que os hebreus não despojaram seus inimigos (9.10, 15, 16); os dois relatos da identidade oculta de Ester (2.10, 20); o duplo ajuntamento de virgens (2.8, 19); os dois intercâmbios de Hamã com sua esposa e seus amigos (5.10-14; 6.13, 14); as duas coberturas da cabeça de Hamã (6.12; 7.8); as duas referências ao transbordamento da ira de Assuero (2.1; 7.10); e os lembretes de que as leis dos medos e dos persas não podem ser alteradas (1.19; 8.8) [cite: 116]. O uso do número sete é digno de nota (1.5, 10, 14), como se repete no pedido de Ester e no recebimento do favor (2.9, 15, 17; 5.2, 8; 8.9) [cite: 116].\n\nNo livro, também se emprega a técnica literária da antecipação [cite: 116]. Mais notável é a predição da esposa de Hamã de que \"já começaste a cair\", porque Mordecai era judeu (6.13) [cite: 116, 117]. O autor é um mestre do suspense e também dá passos rápidos no avanço da narrativa [cite: 117]. As constantes referências ao tempo não só apresentam os eventos como história (1.1, 2), sublinhando o tema da ação providencial de Deus na história, como também mantêm a história em movimento (p. ex., 2.1, 15, 19, 21; 3.1) [cite: 117].\n\nO escritor de Ester constrói criativamente sobre os aspectos simbólicos ou típicos dos nomes dos dois principais personagens para mostrar como o antagonismo pessoal entre Hamã, o arqui-inimigo dos judeus, e Mordecai, o judeu fiel, era parte do conflito histórico entre Israel e os amalequitas [cite: 117]. Esse conflito fornece o fundamento para a trama contra todos os judeus (2.5 e nota; 3.1 e nota) [cite: 117]. Semelhanças na fraseologia, no cenário, na linha da história e na ênfase também pressupõem que a história de José foi um importante modelo para o escritor de Ester (observe as semelhanças entre 2.2-4 e Gn 41.34-37; 3.10; Gn 41.42; 8.6; e Gn 44.34) [cite: 117]."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "A sobrevivência dos judeus, a providência, a reversão das ameaças e a instituição da Festa de Purim são temas principais.",
-        "paginas_fonte": [
-          3
-        ]
+        "conteudo": "Uma série de temas importantes entretece todo o livro [cite: 117]. O tema do jejum ou dos banquetes estabelece o cenário da ação principal da narrativa, culminando na celebração do Purim e contrastando com o tema do jejum (4.3, 16; 9.31) [cite: 117]. O contraste entre obediência e desobediência também percorre o livro [cite: 117]. A desobediência inicial de Vasti, no capítulo 1, arma o palco para os desafios que Ester enfrenta sobre obedecer a Mordecai (2.10, 20; 4.8-16) e se posicionar contra a lei do rei (4.11, 16; 5.1, 2) [cite: 117]. Também se arma o palco para a recusa de Mordecai em obedecer à ordem de Hamã e sua disposição contrária de passar as instruções a Ester (4.17), e de servir, respectivamente, ao rei persa e aos melhores interesses dos judeus (10.3) [cite: 117].\n\nO tema da proteção providencial dos judeus, como indicado em 4.14, é básico para a narrativa e é a razão para a importância contínua do livro no seio da comunidade da fé [cite: 117]. Relacionado a esse tema está o do descanso e do alívio dos inimigos, tema que a festa de Purim comemora (9.16, 22; ver Dt 25.19) [cite: 117]."
       },
       {
         "id": "teologia_de_ester",
         "titulo": "Teologia de Ester",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "A teologia do livro é construída sobretudo por meio da narrativa e da providência. A preservação do povo ocorre em meio a circunstâncias que se revertem de maneira decisiva.",
-        "paginas_fonte": [
-          3
-        ]
+        "conteudo": "A teologia de um livro que não menciona Deus explicitamente parece um conceito evasivo [cite: 117]. Credita-se ao escritor o fato de que, de forma sutil, ele comunica, através da narrativa, que Deus está sempre presente com seu povo, mesmo quando sua presença não é claramente sentida ou reconhecida [cite: 117]. O padrão de incidentes que ele descreve só pode ser explicado pela mão invisível de Deus em ação [cite: 117]. Boa parte das análises da estrutura literária do livro identifica o capítulo 6 como o fulcro da história, e esse capítulo não focaliza Ester ou Mordecai, mas, sim, o rei, que, por alguma razão, não consegue dormir [cite: 117]. Se o sono é um dom dado por Deus (Sl 127.2), acaso a insônia não é um sinal de que ele está em ação? [cite: 117] Além disso, em 4.14 Mordecai demonstra sua convicção de que não existem coincidências na vida [cite: 117]. \"De outra parte\", Deus é visto indiretamente como a fonte de socorro e como aquele que conduziu Ester à posição régia que ela ocupa [cite: 117]. Os atos de prantear, jejuar e usar cilício em 4.3 e 16 não são meramente expressões convencionais de tristeza; incorporam a confiança em Deus e devem ser acompanhados de oração [cite: 117]. De modo semelhante, o passivo indireto \"se lhes mudou\" (9.22) acena para a questão quanto à agência instrumental que efetua essa mudança [cite: 117]. Nessa e noutras formas, o autor insinua reiteradamente a presença de Deus por trás dos incidentes descritos [cite: 117].\n\nA narrativa suscita ainda a questão de como Deus pode estar providencialmente no controle dos eventos sobre a terra enquanto indivíduos como Hamã, que planejam genocídio, são capazes de atingir uma poderosa posição de influência [cite: 117, 118]. A resposta reside no fato de que nosso mundo permanece em rebelião contra Deus enquanto este executa seus propósitos de bênção e juízo nele [cite: 118]. \"O Senhor fez todas as coisas para determinados fins e até o perverso, para o dia da calamidade\" (Pv 16.4) [cite: 118]. Deus pode subtrair sua mão restritiva, seja para trazer a público a maligna hostilidade dos homens maus, seja para induzir uma dependência mais profunda em relação a ele, entre aqueles cuja confiança é posta nele [cite: 118].\n\nA necessidade de se cultivarem uma crescente confiança e uma fé mais forte torna-se evidente na postura comprometida de Mordecai e Ester logo no início da narrativa [cite: 118]. Diferente de Daniel, que aderiu às práticas dietéticas judaicas (Dn 1.8) e não manteve em segredo seu compromisso (Dn 2.28; 6.16), Mordecai e Ester, inicialmente, ocultaram sua nacionalidade e suas convicções em decorrência da pressão de levá-los a assimilar a cultura adjacente [cite: 118]. Somente os incidentes nos quais foram surpreendidos os levaram a revelar seus antecedentes [cite: 118].\n\nFinalmente, o livro é uma habilidosa ilustração das ambiguidades da providência divina numa época em que o Senhor não está falando por meio de seus profetas [cite: 118]. Israel, no exílio, viveu uma época de ambiguidade [cite: 118]. Mordecai e Ester, membros da comunidade exílica, não desfrutaram uma revelação explícita, tal como acontecera outrora [cite: 118]. Eles e seus companheiros judeus tinham de confiar em Deus, o qual os satisfez de maneiras surpreendentes, como a narrativa nos revela [cite: 118]. Hoje, com frequência, o povo de Deus se vê lidando com a ambiguidade [cite: 118]. Enquanto aguardamos o retorno de Cristo, nem sempre sabemos claramente o caminho a seguir quando temos de tomar decisões e lidar com o inesperado em nossas vidas [cite: 118]. Precisamos confiar no Senhor e seguir sua vontade revelada ao operar nos eventos de nossas vidas de uma maneira que não conseguimos prever [cite: 118]."
       },
       {
         "id": "ester_na_historia_mais_ampla_da_biblia",
         "titulo": "Ester na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "O livro mostra a preservação da comunidade judaica durante a diáspora persa e explica a origem da Festa de Purim.",
-        "paginas_fonte": [
-          3
-        ]
+        "conteudo": "A aparente ausência de Deus em Ester não empobrece sua contribuição para o desenvolvimento da mensagem contínua da Escritura [cite: 118]. A narrativa exemplifica a estrutura divinamente ordenada da história humana, anunciando no protoevangelho o inimigo entre as duas sementes (Gn 3.15) [cite: 118]. A história foca a sobrevivência do povo de Deus em uma época em que o poder político desse império mundano exerce ascendência, e eles mesmos estão fracos e desamparados [cite: 118]. Além disso, muito embora Deus não se manifeste claramente, de modo algum está ausente [cite: 118]. Ainda que seu povo não deva esperar exibições visíveis, esmagadoras e miraculosas do poder divino a transformar a situação, Deus permanece firmemente no controle por sua intervenção providencial [cite: 118]. Na verdade, ele governa \"todas as suas criaturas e todas as suas ações\" [cite: 118]. E, em sua graça, ele protege até mesmo o testemunho vacilante de suas criaturas [cite: 118]."
       },
       {
         "id": "cristo_em_ester",
         "titulo": "Cristo em Ester",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "O livro não apresenta profecias diretas de Cristo. Sua contribuição para a história bíblica está na preservação do povo judeu e, consequentemente, da linhagem da promessa.",
-        "paginas_fonte": [
-          4
-        ]
+        "conteudo": "Não há profecias diretas de Cristo em Ester [cite: 118]. Entretanto, o relato da intervenção que protege a comunidade nos dias de Ester serve para despertar o desejo da maior de todas as intervenções: a vinda do Messias [cite: 118]."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 10,
-        "conteudo": "A interpretação envolve a ausência explícita do nome de Deus, a historicidade dos acontecimentos e a relação do livro com costumes e registros persas.",
-        "paginas_fonte": [
-          4
-        ]
+        "conteudo": "A questão de o livro de Ester pertencer ou não ao cânon da Escritura foi suscitada inicialmente tanto pelos judeus como pelos cristãos, ainda que a recomendação do livro pela festa popular de Purim tenha argumentado favoravelmente à sua inclusão no cânon judaico [cite: 118]. Objeções verbalizadas da parte de alguns cristãos à canonicidade de Ester incluem sua ausência em algumas listas mais antigas dos livros canônicos, a ausência de citação no NT, a carência de referências patentes a Deus e às práticas religiosas, seu excessivo nacionalismo judaico e seu espírito de vingança [cite: 118]. Algumas dessas objeções foram suavizadas pela versão ampliada do livro de Ester encontrada na Septuaginta (tradução grega do AT) [cite: 118]. Esse texto da Septuaginta contém mais de cem versículos não encontrados no texto hebraico, o que tornou o livro religiosamente mais aceitável por alguns [cite: 118]. Tais acréscimos incluem um sonho de Mordecai com a futura destruição dos judeus e as orações de Mordecai e Ester por livramento [cite: 118]. No entanto, quando as igrejas protestantes julgaram a versão hebraica mais breve de Ester como a versão autoritativa, ressurgiram as objeções à canonicidade do livro [cite: 118].\n\nA violência no livro é uma espécie de guerra civil, a qual Cícero denominou como a pior de todas as calamidades [cite: 118]. O autor de Ester mostra o alívio do povo quando a justiça triunfa e não critica os meios empregados, como, por exemplo, o enforcamento dos filhos de Hamã [cite: 118]. Mas seria um equívoco considerar esses incidentes modelos de comportamento, pois a situação e a ameaça extremas sob as quais aconteceram limitam o que se pode concluir deles [cite: 118]. O autor não se envolve em reflexão moral sobre a matança maciça e os motivos dos vingadores [cite: 118]. O leitor, por outro lado, lutando com algumas dessas questões, precisa recorrer a outros lugares, tais como os profetas, Jó ou Apocalipse, livros em que a discussão inclui essas questões e as respostas podem ser encontradas [cite: 118]. Definitivamente, o livro de Ester dá um testemunho claro da mão invisível da providência, que não permitirá que o povo da aliança seja totalmente destruído [cite: 118, 119]."
       },
       {
-        "id": "assuntos_especiais",
-        "titulo": "Assuntos especiais",
-        "tipo": "texto",
-        "ordem": 11,
-        "conteudo": "São discutidos o contexto persa, a Festa de Purim, a historicidade do livro e a maneira como a providência divina é percebida na narrativa.",
-        "paginas_fonte": [
-          4
-        ]
-      },
-      {
-        "id": "esboco_de_et",
+        "id": "esboco_de_ester",
         "titulo": "Esboço de Ester",
         "tipo": "auto",
-        "ordem": 12,
+        "ordem": 11,
         "conteudo": [
           {
-            "titulo": "I. Introdução (caps. 1 e 2)",
+            "titulo": "I. INTRODUÇÃO (CAPS. 1 E 2)",
             "itens": [
-              "A. Queda da rainha Vasti (cap. 1)",
-              "B. Aparecimento da rainha Ester (2.1–18)",
-              "C. Conspiração descoberta por Mordecai (2.19–23)"
+              "A. Queda da Rainha Vasti (cap. 1)",
+              "B. Aparecimento da Rainha Ester (2.1-18)",
+              "C. Conspiração descoberta por Mordecai (2.19-23)"
             ]
           },
           {
-            "titulo": "II. Hamã planeja destruir os judeus (3.1–5.14)",
+            "titulo": "II. HAMÃ PLANEJA DESTRUIR OS JUDEUS (3.1-5.14)",
             "itens": [
               "A. Promoção e plano de Hamã contra os judeus (cap. 3)",
               "B. Contraprojeto de Mordecai (cap. 4)",
-              "C. Audiência de Ester com o rei sem convite (5.1–8)",
-              "D. Plano de Hamã de enforcar Mordecai (5.9–14)"
+              "C. Audiência de Ester com o rei sem convite (5.1-8)",
+              "D. Plano de Hamã de enforcar Mordecai (5.9-14)"
             ]
           },
           {
-            "titulo": "III. O Senhor salva os judeus (6.1–9.16)",
+            "titulo": "III. O SENHOR SALVA OS JUDEUS (6.1-9.16)",
             "itens": [
-              "A. Humilhação de Hamã e recompensa de Mordecai (6.1–13)",
-              "B. Execução de Hamã (6.14–7.10)",
+              "A. Humilhação de Hamã e recompensa de Mordecai (6.1-13)",
+              "B. Execução de Hamã (6.14-7.10)",
               "C. Plano para o livramento dos judeus (cap. 8)",
-              "D. Vitória para os judeus (cap. 9)"
+              "D. Vitória para os judeus (9.1-16)"
             ]
           },
           {
-            "titulo": "IV. Conclusão (caps. 9 e 10)",
+            "titulo": "IV. CONCLUSÃO (CAPS. 9 E 10)",
             "itens": [
-              "A. Estabelecimento da Festa de Purim (9.17–32)",
+              "A. Estabelecimento da Festa de Purim (9.17-32)",
               "B. Epílogo (cap. 10)"
             ]
           }
@@ -165,7 +124,7 @@
   "politica_traducao": "independente",
   "fonte": {
     "arquivo": "17_Ester.pdf",
-    "paginas": "Páginas impressas 733–737",
-    "criterio": "Conteúdo revisado a partir das páginas de introdução e do esboço da fonte fornecida, com correção de OCR, hifenização, pontuação e referências. A estrutura do esboço foi conferida contra a página de esboço da fonte e adaptada ao mesmo formato estrutural de Gênesis."
+    "paginas": "Páginas impressas 733 a 737",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de Ester, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

@@ -2,121 +2,122 @@
   "schema": "apoio-livro-v1",
   "id": "Ml",
   "nome": "Malaquias",
+  "abreviacao": "Ml",
   "material": {
     "titulo": "Sobre Malaquias",
-    "introducao": "Malaquias confronta um povo pós-exílico desiludido com Deus e denuncia corrupção sacerdotal, infidelidade matrimonial e negligência da aliança. O livro aponta para a purificação futura, a vinda do mensageiro e a esperança messiânica.",
+    "introducao": "O Livro de Malaquias confronta um povo pós-exílico cético e desencorajado por meio de diálogos argumentativos, exortando-os ao arrependimento, à fidelidade na adoração, nos dízimos e nas alianças, e anunciando a vinda do mensageiro e do próprio Sol da Justiça.",
     "secoes": [
       {
-        "id": "titulo",
-        "titulo": "Título",
+        "id": "titulo_e_autor",
+        "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O livro recebe o nome de Malaquias. O material discute se o termo é nome pessoal ou título, mas conclui que não há razões suficientes para rejeitar Malaquias como nome pessoal de um profeta."
-      },
-      {
-        "id": "autor",
-        "titulo": "Autor",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "A autoria é controversa. Targuns aramaicos identificaram Malaquias com Esdras, e a Septuaginta traduziu a expressão como “pela mão de seu anjo/mensageiro”. Argumentos contra um nome pessoal incluem a ausência de informações sobre pai e local de nascimento. O material, porém, ressalta que os demais livros proféticos apresentam nomes pessoais e considera plausível que Malaquias seja realmente o nome do profeta."
+        "conteudo": "A autoria de Malaquias é assunto controverso [cite: 151]. Os estudiosos estão divididos quanto à hipótese de o nome Malaquias ser um nome pessoal ou um título [cite: 151]. Tanto os targuns aramaicos como a Septuaginta sugerem algo diferente de um nome pessoal [cite: 151]. Os targuns identificam Malaquias com Esdras [cite: 151]. A Septuaginta traduz a expressão \"por intermédio de Malaquias\" como \"pela mão de seu anjo [ou 'mensageiro']\" [cite: 151]. Os principais argumentos contrários à compreensão de Malaquias ser o nome pessoal do profeta são a ausência de informação específica sobre seu pai e a falta de menção ao seu lugar de nascimento [cite: 151]. Além disso, alega-se que a expressão \"sentença pronunciada\", em 1.1, é um acréscimo anônimo ao texto [cite: 151]. No entanto, essas não são razões suficientes para rejeitarmos Malaquias como o nome pessoal de um profeta [cite: 151]. Em todos os outros livros proféticos do Antigo Testamento, é dado um nome pessoal [cite: 151]. Sabemos pouco a respeito das circunstâncias pessoais de Malaquias [cite: 151]. Sabemos, porém, que ele era, de fato, um \"mensageiro de Deus\", e que a mensagem por ele comunicada era da parte de Deus (cf. Am 3.7, 8) [cite: 151]."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "O livro pertence ao período persa. A ênfase na lei pode indicar relação com o ministério de Esdras, que buscou restaurar a autoridade da lei. Algumas propostas o situam entre a chegada de Esdras, em 458 a.C., e a chegada de Neemias, em 445 a.C.; outras o colocam entre as duas vindas de Neemias, por volta de 433 a.C. As condições de Malaquias se aproximam das enfrentadas por Esdras e Neemias: casamento com mulheres estrangeiras, negligência do dízimo, sacerdócio degenerado e pecados sociais."
+        "ordem": 2,
+        "conteudo": "O livro de Malaquias deve ser datado do tempo de Esdras e Neemias [cite: 151]. A referência ao \"governador\" (1.8) situa o livro no período persa, e a ênfase de Malaquias na lei (4.4) possivelmente indica o tempo do ministério de Esdras para restaurar a proeminência e a autoridade da lei (Ed 7.14, 25, 26; Ne 8.18) [cite: 151]. Alguns o datam em uma época entre a vinda de Esdras (458 a.C.) e a vinda de Neemias (445 a.C.) [cite: 151]. Outros o situam no período entre as duas vindas de Neemias a Jerusalém, por volta de 433 a.C [cite: 151].\n\nIgualmente importante é o reconhecimento de que as condições e os problemas que Esdras e Neemias enfrentaram se encontram também na profecia de Malaquias [cite: 151]. Os três falaram contra o casamento com mulheres estrangeiras (p. ex., 2.11-15; Ne 13.23-27) [cite: 151]. Condenaram a negligência do dízimo (p. ex., 3.8-10; Ne 13.10-14) [cite: 151]. Reprovaram os males de um sacerdócio degenerado (p. ex., 1.6-2.9; Ne 13.7-8) e criticaram os pecados sociais (p. ex., 3.5; Ne 5.1-13) [cite: 151]."
       },
       {
         "id": "genero_e_caracteristicas_literarias",
         "titulo": "Gênero e características literárias",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "Malaquias apresenta uma série de falas argumentativas. O profeta cita uma afirmação ou atitude do povo e em seguida a refuta. O padrão lembra debates ou disputas proféticas. O uso frequente da primeira pessoa pelo Senhor acrescenta urgência e intimidade à mensagem."
+        "ordem": 3,
+        "conteudo": "O livro de Malaquias contém uma série de falas argumentativas em que o profeta cita uma afirmação de seu tempo que, em seguida, ele passa a refutar (cf. Ez 11.3-12; 18.2-32) [cite: 151, 152]. Em Malaquias, o padrão tem início, em geral, com o Senhor fazendo uma declaração que o povo contesta e, depois, o Senhor vindica [cite: 152]. A contestação do povo não é necessariamente uma citação literal de suas palavras, mas representa a cosmovisão dos ouvintes do profeta, quer seus pensamentos sejam expressos em voz alta, quer não [cite: 152]. O uso frequente da primeira pessoa (\"eu\") pelo Senhor, ao se dirigir ao povo, acrescenta um senso de urgência e intimidade à mensagem do livro (1.2, 6, 14; 2.2; 3.5, 6, 10, 17; 4.5) [cite: 152]."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "O tema da aliança é proeminente. O livro fala da aliança de Levi, da aliança dos pais, da aliança do casamento e do mensageiro da aliança. A incompetência e infidelidade sacerdotal deterioraram a fidelidade pactual do povo, que se mostrou desleal no casamento e nas relações econômicas e sociais. O povo pós-exílico estava desiludido, pobre e enfrentava adversidade, e sua experiência não correspondia às gloriosas promessas dos profetas anteriores. Malaquias confronta o ceticismo e chama o povo a viver e adorar de acordo com as promessas e obrigações da aliança."
+        "ordem": 4,
+        "conteudo": "O tema da aliança é proeminente em Malaquias [cite: 152]. Referências explícitas incluem a aliança de Levi (2.5-9), a aliança dos pais (2.10), a aliança do casamento (2.14) e o mensageiro da aliança (3.1) [cite: 152]. Além dessas referências diretas, o livro começa com uma recitação do amor pactual de Deus (1.2-5) [cite: 152]. A gravidade da incompetência e da infidelidade sacerdotal é vista na consequente deterioração da fidelidade pactual entre o povo comum, que se mostrou desleal em seu casamento (2.10-16) e em suas relações econômicas e sociais (3.5), \"profanando a aliança\" (2.10) [cite: 152]. Se eles não se arrependessem (3.7), permaneceriam sob a maldição de Deus (3.9; cf. Lv 26.14-46; Dt 28.15-68) [cite: 152].\n\nMalaquias falou para um povo desiludido, desanimado e incrédulo, cuja experiência não se harmonizava com seu entendimento das gloriosas promessas que se encontravam nos profetas anteriores [cite: 152]. Sua visão da era messiânica vindoura ainda não se materializara [cite: 152]. Em vez disso, eles experimentavam pobreza, seca e adversidade econômica, e ficaram desiludidos com Deus e com sua fé [cite: 152]. As palavras de Malaquias confrontam um povo cético quanto às promessas de Deus e, portanto, indiferente em seu compromisso de viver à luz dessas promessas e de adorar e servir ao Senhor, de todo o coração [cite: 152]. Seu amor se tornou frio, e seu coração, amargo para com Deus [cite: 152]. O livro pode, portanto, servir como um catecismo para os tempos de dúvida e desapontamento, quando o professo povo de Deus é tentado a ser desleal em relação ao seu Deus pactual [cite: 152]. O ministério do profeta visa acender a lâmpada da fé num povo desencorajado, lembrando-o do amor eletivo de Deus (1.2) e mostrando-lhe as permanentes obrigações da aliança para os que conhecem verdadeiramente a Deus (3.16-18) [cite: 152]."
       },
       {
         "id": "teologia_de_malaquias",
         "titulo": "Teologia de Malaquias",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "Malaquias corrige a compreensão errada do povo sobre seu relacionamento pactual com Deus. O povo estava tentado a acomodar-se ao mundo e a praticar a religião mecanicamente. O profeta lembra o amor eletivo de Deus e as obrigações permanentes da aliança. Deus ama, redime e protege seu povo, mas também odeia e julga seus inimigos. O mensageiro da aliança purificará o povo e, no entendimento apresentado pelo material, esse mensageiro aponta para o próprio Senhor Jesus Cristo."
+        "ordem": 5,
+        "conteudo": "Malaquias procurou corrigir o pensamento errado do povo a respeito do relacionamento pactual com seu Deus [cite: 152]. O povo se tornara desanimado no período pós-exílico e se via tentado a se acomodar ao mundo ao seu redor [cite: 152]. Esse livro advertiu o povo de Deus, após o exílio, a não pensar e agir como os pagãos que o cercavam, mas, em vez disso, a lembrar que eram o povo eleito de Deus [cite: 152]. Ele prometeu enviar o \"Anjo da Aliança\", que purificaria o povo, ninguém menos do que o Senhor Jesus Cristo (3.1-3) [cite: 152]. Desde os primeiros versículos do livro, Malaquias proclama uma visão complexa de Deus, que tanto ama como redime e protege seu povo, ao mesmo tempo que odeia e julga seus inimigos (1.2-4), o que conduz à conclusão da grandeza de Deus (1.5) [cite: 152]. Este entendimento de Deus é necessário para que tenhamos uma submissão apropriada e nos regozijemos nas obras de Deus manifestadas à medida que o livro avança [cite: 152]."
       },
       {
         "id": "malaquias_na_historia_mais_ampla_da_biblia",
         "titulo": "Malaquias na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 7,
-        "conteudo": "Como último dos Profetas Menores e último livro do Antigo Testamento na ordem apresentada, Malaquias ressalta a incompletude da obra de Deus naquele ponto da história da redenção. Israel havia retornado do exílio, mas ainda era pobre, fraco e sujeito aos persas. Muitos haviam esfriado no amor ao Senhor, embora um remanescente permanecesse fiel. A história, contudo, não terminaria assim: o Senhor retornaria a seu templo e enviaria um mensageiro que prepararia o caminho para uma obra redentora maior. Essa expectativa encontra cumprimento na vinda de João Batista e de Cristo."
+        "ordem": 6,
+        "conteudo": "Por ser o último dos profetas e o último livro na ordem do Antigo Testamento em português, Malaquias ressalta a incompletude da obra de Deus a essa altura da história de redenção [cite: 152]. Deus fez grandes promessas ao seu povo e demonstrou, de modo inquestionável, seu amor por ele, tanto ao retirá-lo do Egito como em trazê-lo de volta depois do exílio babilônico [cite: 152, 153]. Mas o povo ainda era pobre, fraco e oprimido, em estado de servidão aos persas, embora vivesse em parte da terra prometida a Abraão, Isaque e Jacó [cite: 153]. A resposta deles não foi uma resposta de fé e confiança por parte de todos [cite: 153]. Muitos haviam esfriado em seu amor ao Senhor, abandonando-o em seu coração, embora, aparentemente, seguissem mecanicamente a religião [cite: 153]. Existia apenas um remanescente que temia verdadeiramente ao Senhor e mantinha a fé viva [cite: 153]. Então, a história de Israel terminaria assim, com uma nota de lamento? [cite: 153]\n\nNão, não seria assim [cite: 153]. No tempo certo, o Senhor retornaria a seu templo para completar sua obra salvadora em favor de seu povo [cite: 153]. O Senhor seria precedido por seu mensageiro, que traria uma mensagem de julgamento e esperança, como o profeta Elias [cite: 153]. Isso deixou o povo de Deus em expectativa durante os longos anos entre os testamentos, aguardando a vinda de alguém vestido de peles de camelo e usando um cinto de couro, trazendo uma mensagem solene de arrependimento; essa expectativa cumpriu-se na vinda de João Batista (Mc 1.1-8; cf. 2Rs 1.8) [cite: 153]. Ele prepararia o caminho para a maior obra redentora de Deus, convertendo os corações dos filhos rebeldes do Senhor ao seu Pai celestial [cite: 153]."
       },
       {
         "id": "cristo_no_livro_de_malaquias",
         "titulo": "Cristo no livro de Malaquias",
         "tipo": "texto",
-        "ordem": 8,
-        "conteudo": "O povo aguardava que Deus aparecesse em Jerusalém para trazer livramento e justiça. Deus cumpre essa promessa na pessoa de Jesus Cristo. Jesus é o Filho que honra verdadeiramente o Pai e aparece inicialmente no templo em humildade. Mais tarde retorna ao templo e expulsa aqueles que o transformaram em mercado. Em sua primeira vinda, busca e salva os perdidos; em sua segunda vinda, retorna em glória para julgar os que recusam crer. Malaquias 4.5 anuncia a vinda de Elias; Jesus identifica João Batista, seu precursor, com Elias em Mateus 11.14."
+        "ordem": 7,
+        "conteudo": "Nos dias de Malaquias, o povo se cansara de esperar que Deus aparecesse em Jerusalém para trazer livramento e justiça à sua terra (2.17-3.5) [cite: 153]. Eles pensavam ingenuamente que o aparecimento de Deus os vindicaria, não importando a condição de seu coração diante dele [cite: 153]. Deus cumpriu sua promessa de aparecer no meio deles na pessoa de seu próprio Filho, Jesus Cristo [cite: 153]. Ele era o Filho que honrava verdadeiramente seu Pai, ao contrário de muitos em Israel (cf. 1.6) [cite: 153]. O Filho apareceu inicialmente no templo em grande humildade, como um bebê nos braços de sua mãe, embora, nessa ocasião, tenha sido evidente para Simeão que ele viera para revelar o coração dos homens e das mulheres, para bênção ou para maldição (Lc 2.22-35) [cite: 153]. Mais tarde, ele retornou à casa de seu Pai e expulsou aqueles que a haviam transformado em mercado (Mt 21.13) [cite: 153]. Em sua primeira vinda, Jesus veio buscar e salvar aqueles que estavam perdidos, não somente da casa de Israel, mas também de todas as nações (Mt 28.19, 20; Lc 19.10; cf. Ml 1.5) [cite: 153]. Em sua segunda vinda, ele retornará em grande glória, a fim de trazer julgamento sobre todos os que se recusam a crer nele (Ap 19.11-15) [cite: 153].\n\nMalaquias 4.5 profetiza a vinda de Elias, o profeta [cite: 153]. Em Mateus 11.14 e 7.10-13, Jesus se referiu a João Batista, seu precursor, como Elias [cite: 153]. Portanto, Jesus se apresentou como aquele que viria não somente para cumprir as promessas feitas em Malaquias, o décimo segundo e último dos Profetas Menores, mas também como aquele que viria para cumprir todas as promessas de redenção que se encontram desde Gênesis até Malaquias [cite: 153]."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 9,
-        "conteudo": "Os pais da Igreja reconheceram em Malaquias o anúncio da vinda do Messias. Utilizaram o livro para discutir as alianças de Deus e demonstrar a universalidade da oferta do evangelho. O livro é apresentado como mensagem de esperança e promessa para pessoas que vivem em meio a dificuldades, chamando-as a viver pela fé à luz do amor de Deus já demonstrado e enquanto aguardam a consumação de suas promessas."
+        "ordem": 8,
+        "conteudo": "Os pais da igreja reconheceram o anúncio da vinda do Messias nesse último profeta [cite: 153]. Usaram amplamente o livro de Malaquias para discutir a natureza das alianças de Deus e demonstrar a universalidade da oferta do evangelho [cite: 153]. Esse é um livro de esperança e promessa, algo de grande importância em meio à realidade difícil e severa da vida neste mundo caído [cite: 153]. À semelhança dos ouvintes de Malaquias, precisamos viver pela fé à luz das profundas demonstrações do amor de Deus por nós no passado, enquanto aguardamos a consumação de suas promessas para seu povo [cite: 153]."
       },
       {
-        "id": "esboco",
+        "id": "esboco_de_malaquias",
         "titulo": "Esboço de Malaquias",
         "tipo": "auto",
-        "ordem": 10,
+        "ordem": 9,
         "conteudo": [
           {
-            "titulo": "I. ISRAEL DUVIDA DO AMOR DE DEUS POR ELES (1.1–5)",
+            "titulo": "I. ISRAEL DUVIDA DO AMOR DE DEUS POR ELES (1.1-5) [cite: 153]",
             "itens": []
           },
           {
-            "titulo": "II. A IMPORTÂNCIA DA VERDADEIRA ADORAÇÃO (1.6–2.9)",
+            "titulo": "II. A IMPORTÂNCIA DA VERDADEIRA ADORAÇÃO (1.6-2.9) [cite: 153]",
             "itens": [
-              "A. As ofertas corrompidas do povo (1.6–14)",
-              "B. Os sacerdotes corrompidos (2.1–9)"
+              "A. As ofertas corrompidas do povo (1.6-14) [cite: 153]",
+              "B. Os sacerdotes corrompidos (2.1-9) [cite: 153]"
             ]
           },
           {
-            "titulo": "III. O FRACASSO DE ISRAEL NAS PRÁTICAS DE CASAMENTO (2.10–16)",
+            "titulo": "III. O FRACASSO DE ISRAEL NAS PRÁTICAS DE CASAMENTO (2.10-16) [cite: 153]",
             "itens": [
-              "A. Casamento com esposas idólatras (2.10–12)",
-              "B. Divórcio de esposas israelitas (2.13–16)"
+              "A. Casamento com esposas idólatras (2.10-12) [cite: 153]",
+              "B. Divórcio de esposas israelitas (2.13-16) [cite: 153]"
             ]
           },
           {
-            "titulo": "IV. A RESPOSTA DE DEUS AO PECADO (2.17–3.5)",
+            "titulo": "IV. A RESPOSTA DE DEUS AO PECADO (2.17-3.5) [cite: 153]",
             "itens": [
-              "A. Os culpados cansam Deus com desculpas (2.17)",
-              "B. A obra purificadora do mensageiro (3.1–5)"
+              "A. Os culpados cansam Deus com desculpas (2.17) [cite: 153]",
+              "B. A obra purificadora do mensageiro (3.1-5) [cite: 153]"
             ]
           },
           {
-            "titulo": "V. O DESEJO DE DEUS PARA ABENÇOAR (3.6–12)",
+            "titulo": "V. O DESEJO DE DEUS PARA ABENÇOAR (3.6-12) [cite: 153]",
             "itens": [
-              "A. Sua promessa imutável de perdoar os que se arrependem (3.6, 7)",
-              "B. Israel rouba a Deus (3.8–12)"
+              "A. Sua promessa imutável de perdoar os que se arrependem (3.6, 7) [cite: 153]",
+              "B. Israel rouba a Deus (3.8-12) [cite: 153]"
             ]
           },
           {
-            "titulo": "VI. DISTINÇÃO ENTRE OS JUSTOS E OS ÍMPIOS (3.13–4.6)",
+            "titulo": "VI. DISTINÇÃO ENTRE OS JUSTOS E OS ÍMPIOS (3.13-4.6) [cite: 153]",
             "itens": [
-              "A. As palavras e atitudes grosseiras dos cínicos (3.13–15)",
-              "B. A conduta piedosa dos fiéis (3.16–18)",
-              "C. O Dia do Senhor (4.1–6)"
+              "A. As palavras e atitudes grosseiras dos cínicos (3.13-15) [cite: 153]",
+              "B. A conduta piedosa dos fiéis (3.16-18) [cite: 153]",
+              "C. O Dia do Senhor (4.1-6) [cite: 153]"
             ]
           }
         ]
       }
     ]
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fonte": {
+    "arquivo": "39_Malaquias.pdf",
+    "paginas": "Páginas impressas 1646 a 1649",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de Malaquias, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

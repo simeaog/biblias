@@ -5,157 +5,162 @@
   "abreviacao": "Ne",
   "material": {
     "titulo": "Sobre Neemias",
-    "introducao": "Neemias narra o retorno de Neemias a Jerusalém, a reconstrução dos muros e a reorganização da comunidade. O livro destaca oração, liderança, oposição, leitura da Lei, renovação da aliança e reformas.",
+    "introducao": "O livro de Neemias relata a missão de Neemias como governador enviado a Jerusalém para reconstruir os muros da cidade, o enfrentamento de conflitos externos e internos, a repopulação de Jerusalém, a renovação formal da aliança e as reformas religiosas e sociais da comunidade pós-exílica.",
     "secoes": [
       {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O livro recebeu o nome de Neemias, líder associado à reconstrução dos muros de Jerusalém e à reorganização da comunidade.",
-        "paginas_fonte": [
-          1
-        ]
-      },
-      {
-        "id": "autor",
-        "titulo": "Autor",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "A evidência sugere que Neemias compartilha com Esdras uma coleção de memórias e documentos. Algumas seções utilizam a primeira pessoa.",
-        "paginas_fonte": [
-          1
-        ]
+        "conteudo": "O livro tem esse nome em razão de sua figura central, Neemias [cite: 110]. Nada se sabe sobre o contexto além do que se encontra no próprio livro [cite: 110]. Tudo indica que sua família fez parte da diáspora judaica, e ele mesmo se ergueu a uma posição de proeminência na corte persa [cite: 110]. Ele foi enviado a Jerusalém na condição de governador, com um mandado para reedificar os muros da cidade [cite: 110]. O livro é um registro de seu empreendimento nessa esfera e também dos problemas encontrados em um segundo período de governo (cap. 13) [cite: 110]."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "Partindo-se da premissa de que Esdras (ou um contemporâneo mais jovem) compilou Esdras/Neemias em seu formato final, chega-se à conclusão de que essas narrativas foram escritas no período de 430-400 a.C., a fim de encorajar os judeus que haviam voltado do exílio babilônico e estavam restabelecendo sua comunidade em Jerusalém e em suas cercanias (ver Introdução a Esdras: Data e Circunstâncias) [cite: 110]."
+      },
+      {
+        "id": "autor",
+        "titulo": "Autor",
+        "tipo": "texto",
         "ordem": 3,
-        "conteudo": "A narrativa se passa no período persa e acompanha o retorno de Neemias, a reconstrução dos muros e as reformas da comunidade.",
-        "paginas_fonte": [
-          1
-        ]
+        "conteudo": "A evidência vigente, bem antiga, apresenta Esdras e Neemias como, originalmente, um único livro composto de uma variedade de fontes históricas, incluindo as memórias pessoais de Esdras e Neemias [cite: 110]. Entretanto, Neemias partilha com Esdras uma lista dos que retornam (compare Esdras 2 com Neemias 7) [cite: 110]. Como parece improvável que um autor tenha incorporado a mesma lista em sua obra duas vezes, alguns comentaristas supõem que Neemias foi composto separadamente e, de início, permaneceu isolado [cite: 110]. Segundo a tradição judaica, Esdras foi o responsável individual por compilar essas fontes na forma corrente (ver Introdução a Esdras: Autor) [cite: 110]."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Neemias combina narrativa histórica, memórias pessoais, listas, registros e materiais relacionados à Lei e à comunidade.",
-        "paginas_fonte": [
-          2
-        ]
+        "conteudo": "Ver Introdução a Esdras: Gênero [cite: 110]."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "O livro alterna narrativa de reconstrução, conflitos, listas e cerimônias. A reconstrução física do muro acompanha a reconstrução espiritual e social da comunidade.",
-        "paginas_fonte": [
-          2,
-          3
-        ]
+        "conteudo": "O livro de Neemias apresenta muitos aspectos semelhantes aos encontrados em Esdras [cite: 110]. Trata-se de um misto de narrativa e material oriundo de algumas fontes (listas e genealogias) [cite: 110, 111]. Contudo, a linha histórica em Neemias é mais forte, em parte por causa da extensão mais breve de tempo coberto (cerca de 13 anos) e, em parte, porque a maior parcela do livro é um relato em primeira pessoa das atividades de Neemias como líder civil em Jerusalém (caps. 1-7; 12.27-13.31) [cite: 111]. No livro, há uma série de episódios memoráveis, especialmente as narrativas sobre a reconstrução do muro (caps. 2-7) e a cerimônia de renovação da aliança (caps. 8-10) [cite: 111]. Por toda parte, há um foco contínuo sobre Neemias, que é apresentado como a figura dominante e heroica, mas cujos motivos e ações são determinados por seu zelo ao Senhor e pela causa do Senhor [cite: 111]. Particularmente notáveis são seus vários apartes e orações, rogando a Deus que se lembre de seus feitos e permitindo que o leitor conheça seus pensamentos [cite: 111]. Esses apartes e orações servem para atrair os leitores para a narrativa, capacitando-os a se identificar com ele (1.5-11; 2.4; 2.11-12; 4.6-7; 4.19 etc.) [cite: 111]."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "Oração, liderança, perseverança, reconstrução, renovação da aliança e reforma da comunidade são os principais temas.",
-        "paginas_fonte": [
-          3
-        ]
+        "conteudo": "O tema principal de Esdras e Neemias é a operação soberana de Deus através da responsabilidade de agentes humanos para concretizar seus propósitos redentores [cite: 111]. O autor desenvolve esse tema em Neemias com particular atenção para a reedificação e a dedicação dos muros de defesa de Jerusalém (1.1-7.3; 12.27-43), bem como para a reconstituição de todo o povo chamado \"Israel\" em sua relação pactual com Deus (7.4-13.31) [cite: 111]. Ver Introdução a Esdras: Características e Temas Principais, para a discussão adicional dos temas de Esdras e Neemias como um todo [cite: 111].\n\nAs atividades de Esdras e Neemias foram ambas autorizadas pelo rei persa [cite: 111]. Diferente de Esdras, cujo foco estava na reedificação da espiritualidade da comunidade, recomendando adesão à lei escrita de Deus, a preocupação de Neemias tinha uma natureza mais prática e administrativa: reconstruir os muros da cidade, corrigir as anomalias e injustiças na vida da comunidade, bem como assegurar que houvesse população suficiente para Jerusalém tornar-se uma cidade viável [cite: 111]. Esses passos capacitaram a comunidade a sobreviver e, assim, cumprir sua função no propósito de Deus, no sentido de ser o povo através de quem o Messias viria [cite: 111]. No entanto, todas as reformas iniciais de Neemias foram postas em dúvida e, em grande medida, tiveram de ser repetidas (cap. 13) [cite: 111]. Nem Esdras nem Neemias, por si mesmos, mostraram-se aptos a efetuar mudanças duradouras e necessárias no coração do povo de Deus, com o propósito de aguardar a vinda do Messias [cite: 111, 112]."
       },
       {
         "id": "teologia_de_neemias",
         "titulo": "Teologia de Neemias",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "Neemias apresenta Deus como aquele que dirige e sustenta a reconstrução. A comunidade é chamada a reconhecer a fidelidade divina e obedecer à Lei.",
-        "paginas_fonte": [
-          3
-        ]
+        "conteudo": "Neemias viveu com a consciência da transcendência do Deus dos céus (1.4, 5; 2.4, 20) [cite: 112]. Ele reconhecia que o Senhor é o Criador e, ao mesmo tempo, o Deus da fidelidade pactual, \"grande e temível\" (1.5) [cite: 112]. A extensão em que esses atributos eram, em geral, reconhecidos pode ser vista na oração do capítulo 9 [cite: 112]. Ambos, líder e povo, tinham uma fé que se baseava na aceitação da revelação do Pentateuco (1.7, 8; 9.14) [cite: 112].\n\nPessoalmente, Neemias é um exemplo extraordinário de uma vida em que a oração é a plataforma para a ação efetiva [cite: 112]. Ele jejuava e orava durante dias a fio antes de tornar suas preocupações conhecidas do rei persa (1.4-11); mas, com base nesse hábito de oração extensa, ele estava igualmente pronto a se engajar em uma oração momentânea na conjuntura crítica de sua missão (2.4; 4.4, 5; 6.9) [cite: 112].\n\nO livro de Neemias também ressalta a importância da renovação formal do compromisso pactual como um meio de fortalecer a comunidade [cite: 112]. Não é o povo quem dita os termos da aliança [cite: 112]. Ao contrário, com gratidão eles voltam a se dedicar ao Senhor e a se comprometer com a obediência a seus mandamentos [cite: 112]. À luz desse fato, surge na Judá dos dias de Neemias o desejo genuíno de erradicar todo falso culto da comunidade [cite: 112]. Encorajando e liderando o povo no processo de voltar a se dedicar a Deus, a si mesmo e à sua nação, Neemias ilustra a importância da teologia para quem está na liderança [cite: 112]."
       },
       {
         "id": "neemias_na_historia_mais_ampla_da_biblia",
         "titulo": "Neemias na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "A obra registra uma etapa decisiva da restauração pós-exílica, incluindo o repovoamento e a reorganização de Jerusalém.",
-        "paginas_fonte": [
-          3
-        ]
+        "conteudo": "Os eventos registrados em Neemias seguem de perto os encontrados em Esdras — aliás, o próprio Esdras aparece em 8.1 [cite: 112]. Ainda que o templo tivesse sido reconstruído anteriormente, Jerusalém permanecia em ruínas, o que estava em dissonância com o compromisso pactual com Deus [cite: 112]. Mas não era apenas uma questão de restaurar os muros da cidade; isso era apenas parte da restauração do povo pactual por meio de quem Deus cumpriria seus propósitos [cite: 112]. Também era necessário haver renovação de seu culto (caps. 8-10), repovoamento de Jerusalém (caps. 11 e 12) e reformas reiteradas quando sua conduta se deteriorasse (cap. 13) [cite: 112].\n\nNeemias, ainda que tivesse um caráter diferente de Esdras, foi levantado, de forma semelhante, por Deus para prover uma liderança fiel à comunidade, com o propósito de guiar e motivar os esforços necessários para fomentar sua continuidade [cite: 112, 113]. Neemias é retratado como um líder decisivo e efetivo [cite: 113]. Os capítulos 8-10 mostram o povo respondendo à renovação da aliança, confessando seu fracasso pretérito e reconhecendo sua dependência contínua de Deus, de modo que pudesse compreender as promessas que ele lhe fizera [cite: 113]. Entretanto, a nota final de Neemias é a falta de completude [cite: 113]. Não importa o que já foi realizado, ainda há necessidade de fazer mais [cite: 113]. A narrativa do passado é recontada para estimular a fidelidade contínua [cite: 113]."
       },
       {
         "id": "cristo_em_neemias",
         "titulo": "Cristo em Neemias",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "A restauração de Jerusalém, a leitura da Lei e a reconstrução da comunidade fazem parte da história de restauração que antecede a consumação da presença de Deus com seu povo.",
-        "paginas_fonte": [
-          4
-        ]
+        "conteudo": "Além dos temas já mencionados na Introdução a Esdras: Cristo em Esdras, é importante considerar que Neemias termina com uma nota de antecipação [cite: 113]. Quando o livro termina, o templo, o sacerdócio e os sacrifícios são todos restaurados, aguardando pelo Sumo Sacerdote que há de vir e oferecer a expiação final e eficaz pelo pecado [cite: 113]. Esse final inspira o leitor a olhar para o Messias que cumpre perfeitamente o plano de Deus para Israel [cite: 113]."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 10,
-        "conteudo": "A interpretação considera a relação de Neemias com Esdras, as memórias em primeira pessoa e a reconstrução histórica do período persa.",
-        "paginas_fonte": [
-          4
-        ]
+        "conteudo": "Ver Introdução a Esdras: História de Interpretação [cite: 113]."
       },
       {
-        "id": "esboco_de_ne",
+        "id": "esboco_de_neemias",
         "titulo": "Esboço de Neemias",
         "tipo": "auto",
         "ordem": 11,
         "conteudo": [
           {
-            "titulo": "I. Retorno de Neemias e reconstrução do muro (1.1–7.3)",
+            "titulo": "I. RETORNO DE NEEMIAS E RECONSTRUÇÃO DO MURO (1.1-7.3)",
             "itens": [
               {
-                "texto": "A. Retorno de Neemias (1.1–2.10)",
+                "titulo": "A. Retorno de Neemias (1.1-2.10)",
                 "itens": [
-                  "1. Preparativos para o retorno (1.1–2.3)",
-                  "2. Pedido diante do rei (2.1–8)",
-                  "3. A viagem e o início do conflito (2.9–10)"
+                  {
+                    "titulo": "1. Preparativos para o retorno (1.1-2.8)",
+                    "itens": [
+                      "a. Notícia de Judá (1.1-3)",
+                      "b. Resposta de Neemias (1.4-11)",
+                      "c. Pedido diante do rei (2.1-8)"
+                    ]
+                  },
+                  "2. A viagem e o início do conflito (2.9, 10)"
                 ]
               },
               {
-                "texto": "B. Reconstrução do muro (2.11–7.3)",
+                "titulo": "B. Reconstrução do muro (2.11-7.3)",
                 "itens": [
-                  "1. Inspeção e proposta (2.11–18)",
-                  "2. Primeira escalada do conflito (2.19–20)",
-                  "3. Reconstrução iniciada (4.1–23)",
-                  "4. Segunda escalada do conflito (4.1–6)",
-                  "5. Reconstrução continuada (4.7–23)",
-                  "6. Condições internas de Judá (cap. 5)",
-                  "7. Clímax do conflito (6.1–14)",
-                  "8. Fim do conflito (6.15–7.3)"
+                  "1. Inspeção e proposta (2.11-18)",
+                  "2. Primeira escalada do conflito (2.19, 20)",
+                  "3. Reconstrução iniciada (4.7-23)",
+                  "4. Segunda escalada do conflito (4.1-6)",
+                  "5. Reconstrução continuada (4.7-23)",
+                  {
+                    "titulo": "6. Condições internas de Judá (cap. 5)",
+                    "itens": [
+                      "a. Opressão social (5.1-13)",
+                      "b. O governo de Neemias (5.14-19)"
+                    ]
+                  },
+                  "7. Clímax do conflito (6.1-14)",
+                  "8. Fim do conflito (6.15-7.3)"
                 ]
               }
             ]
           },
           {
-            "titulo": "II. Retorno dos exilados e reestruturação da comunidade (7.4–13.31)",
+            "titulo": "II. RETORNO DOS EXILADOS E REESTRUTURAÇÃO DA COMUNIDADE (7.4-13.31)",
             "itens": [
               {
-                "texto": "A. Retorno dos exilados (7.4–73)",
+                "titulo": "A. Retorno dos exilados (7.4-73)",
                 "itens": [
-                  "1. Necessidade de repovoar Jerusalém (7.4–5)",
-                  "2. Registro dos que regressam (7.6–73)"
+                  "1. Necessidade de repovoar Jerusalém (7.4, 5)",
+                  "2. Registro dos que regressam (7.6-73)"
                 ]
               },
               {
-                "texto": "B. Reestruturação da comunidade (7.73–13.31)",
+                "titulo": "B. Reestruturação da comunidade (7.73-13.31)",
                 "itens": [
-                  "1. Renovação da aliança (7.73–10.39)",
-                  "2. Dedicação do muro (caps. 11 e 12)",
-                  "3. A reforma do povo (cap. 13)"
+                  {
+                    "titulo": "1. Renovação da aliança (7.73-10.39)",
+                    "itens": [
+                      "a. Leitura da lei (7.73-8.18)",
+                      "b. Confissão de pecado (9.1-37)",
+                      "c. Ratificação do juramento (9.38-10.39)"
+                    ]
+                  },
+                  {
+                    "titulo": "2. Dedicação do muro (caps. 11 e 12)",
+                    "itens": [
+                      "a. Catalogando os residentes (cap. 11)",
+                      "b. Catalogando os sacerdotes e levitas (12.1-26)",
+                      "c. A dedicação propriamente dita (12.27-43)",
+                      "d. Os arranjos do templo (12.44-47)"
+                    ]
+                  },
+                  {
+                    "titulo": "3. A reforma do povo (cap. 13)",
+                    "itens": [
+                      "a. Exclusão de estrangeiros (13.1-3)",
+                      "b. Lidando com Tobias (13.4-9)",
+                      "c. A porção dos levitas (13.10-14)",
+                      "d. Observância do sábado (13.15-22)",
+                      "e. O problema do casamento misto (13.23-31)"
+                    ]
+                  }
                 ]
               }
             ]
@@ -168,7 +173,7 @@
   "politica_traducao": "independente",
   "fonte": {
     "arquivo": "16_Neemias.pdf",
-    "paginas": "Páginas impressas 707–710",
-    "criterio": "Conteúdo revisado a partir das páginas de introdução e do esboço da fonte fornecida, com correção de OCR, hifenização, pontuação e referências. A estrutura do esboço foi conferida contra a página de esboço da fonte e adaptada ao mesmo formato estrutural de Gênesis."
+    "paginas": "Páginas impressas 707 a 710",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de Neemias, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

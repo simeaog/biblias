@@ -2,155 +2,139 @@
   "schema": "apoio-livro-v1",
   "id": "Am",
   "nome": "Amós",
+  "abreviacao": "Am",
   "material": {
     "titulo": "Sobre Amós",
-    "introducao": "Amós denuncia a idolatria e a injustiça social em um período de prosperidade aparente. Seu livro anuncia julgamento contra as nações e Israel, mas termina com a promessa de restauração da dinastia de Davi e abundância futura.",
+    "introducao": "O Livro de Amós registra a mensagem do boieiro e pastor de Tecoa chamado por Deus para denunciar severamente a falsa religião, a idolatria e a opressão impiedosa dos pobres no reino do Norte, proclamando com firmeza a justiça inegociável de Deus, mas também a promessa escatológica de restauração por meio da dinastia davídica.",
     "secoes": [
       {
-        "id": "titulo",
-        "titulo": "Título",
+        "id": "titulo_e_autor",
+        "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O livro identifica o porta-voz como Amós, que era entre os pastores de Tecoa (1.1). Tecoa ficava em Judá, ao sul de Belém e de Jerusalém. Em 7.14, Amós afirma ser boieiro e colhedor de sicômoros."
+        "conteudo": "O versículo inicial do livro identifica o porta-voz da profecia como \"Amós, que era entre os pastores de Tecoa\" (1.1) [cite: 114]. Tecoa era uma cidade em Judá situada a aproximadamente oito quilômetros ao sul de Belém e 14 quilômetros ao sul de Jerusalém [cite: 114]. Além de sua própria afirmação, em 7.14, de que era \"boieiro e colhedor de sicômoros\", pouco sabemos a respeito do profeta [cite: 114]. Ele não era, portanto, um profeta profissional, mas Deus o chamou dos campos para levar a mensagem divina especialmente ao povo do reino do Norte, Israel [cite: 114]. Embora pertencesse a um contexto rural e aparentemente afastado dos centros de aprendizado, Amós conhecia as nações vizinhas e era familiarizado com a história internacional (1.3-2.3) [cite: 114]. Também era familiarizado com a história do povo pactual de Deus e com a própria aliança, como suas referências às obrigações da aliança deixam bem claro [cite: 114]."
       },
       {
-        "id": "autor",
-        "titulo": "Autor",
+        "id": "data",
+        "titulo": "Data",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "Amós não era profeta profissional. Deus o chamou dos campos para levar uma mensagem especialmente ao reino do Norte. Apesar de seu contexto rural, conhecia as nações vizinhas, a história internacional e as obrigações da aliança de Deus."
+        "conteudo": "De acordo com Amós 1.1, o ministério do profeta aconteceu durante os reinados de Jeroboão II (793-753 a.C.), de Israel, e Uzias (792-740 a.C.), de Judá [cite: 114]. Esses dois reinados foram longos; portanto, o período da profecia de Amós é bem amplo [cite: 114]. O primeiro versículo do livro também fixa o início do ministério de Amós em \"dois anos antes do terremoto\" [cite: 114]. Não temos certeza sobre a data exata desse terremoto [cite: 114]. Mas deve ter sido muito devastador, pois o profeta Zacarias também o menciona (Zc 14.5) [cite: 114]. A referência ao terremoto, além de nos ajudar a datar o ministério de Amós, também pode ser um precursor simbólico do julgamento divino vindouro; e, nesse aspecto, pode assemelhar-se ao uso da praga de gafanhotos por Joel (Jl 1.1-3) [cite: 114]."
       },
       {
-        "id": "data_e_circunstancias",
-        "titulo": "Data e circunstâncias",
+        "id": "circunstancias",
+        "titulo": "Circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "Amós ministrou durante os reinados de Jeroboão II, de Israel, e Uzias, de Judá. O livro situa seu ministério dois anos antes de um terremoto cuja data exata é incerta, mas que também é lembrado por Zacarias. O período era de estabilidade, prosperidade, expansão territorial e relativa paz entre Israel e Judá. A prosperidade, porém, era acompanhada por severa opressão dos pobres. Amós apareceu nesse ambiente denunciando a injustiça e a opressão dos necessitados."
+        "conteudo": "Durante os reinados de Uzias e Jeroboão II, houve um renascimento militar, econômico e cultural nos países de Judá e de Israel [cite: 114]. Foi um período de estabilidade e prosperidade [cite: 114]. Houve paz entre Israel e Judá, e as ameaças estrangeiras eram mínimas [cite: 114]. Em especial, Jeroboão II revitalizou Israel ao restaurar as antigas fronteiras do reino, que se estendiam desde Hamate, na Síria Central, até o norte do mar Morto, ao sul [cite: 114]. Essa expansão territorial fora predita pelo profeta Jonas, filho de Amitai (2Rs 14.25; Jn 1.1) [cite: 114]. O reinado de Jeroboão II foi de imensa prosperidade no norte, mas essa grande riqueza se fez acompanhar de severa opressão dos pobres [cite: 114]. O profeta Amós apareceu nesse contexto e profetizou, principalmente, para o reino do Norte, trovejando contra a opressão de Israel sobre os necessitados e desvalidos [cite: 114].\n\nDurante o reinado de Tiglate-Pileser III (745-727 a.C.), a Assíria ganhou força e se expandiu para o norte e o oeste [cite: 115]. Judá logo se tornou vassalo da Assíria, e o estado de Damasco, que antes se posicionava entre Israel e Assíria, tornou-se parte do Império Assírio (2Rs 16.7-9) [cite: 115].\n\nTiglate-Pileser III foi sucedido por seu filho, Salmaneser V (727-722 a.C.), que deu continuidade à política de seu pai, no sentido de expandir na direção oeste, e forçou Oseias, rei de Israel, a se tornar seu vassalo [cite: 115]. Oseias, porém, se rebelou e confiou erroneamente no Egito para ter a ajuda que nunca recebeu [cite: 115]. Então, Salmaneser cercou Samaria e, depois de três anos, a capital de Israel caiu (722 a.C.); e o reino do Norte, Israel, chegou ao fim (2Rs 17.3-6) [cite: 115]."
       },
       {
         "id": "genero_e_caracteristicas_literarias",
         "titulo": "Gênero e características literárias",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Amós é quase totalmente composto em poesia hebraica. O livro reúne oráculos, hinos e sermões em forma poética. O profeta emprega imagens impressionantes, especialmente nas cinco visões de 7.1–9.10. A mensagem pode ser dividida em quatro grandes seções: julgamentos contra as nações; profecias contra Israel; cinco visões de retribuição; e a promessa final de restauração da dinastia davídica e abundância."
+        "conteudo": "O livro de Amós é uma profecia narrada quase totalmente em poesia hebraica [cite: 115]. Como ocorre em quase toda a literatura poética da Bíblia, o material escrito assume várias formas [cite: 115]. Por isso, em Amós, vemos oráculos narrados poeticamente (1.3-2.16), hinos descritos poeticamente (4.13; 5.8, 9; 9.5, 6) e sermões apresentados poeticamente (3.1-6.14) [cite: 115]. O profeta é um mestre de imagens impressionantes [cite: 115]. Considere apenas 7.1-9.10, passagem em que Amós apresenta cinco imagens que demonstram graficamente o julgamento de Deus vindouro [cite: 115]. Esses símbolos acrescentam um nível de vivacidade à mensagem do profeta que a prosa narrativa não pode acrescentar [cite: 115].\n\nA mensagem de Amós pode ser dividida em quatro seções principais [cite: 115]. Os dois primeiros capítulos são compostos de proclamações do julgamento de Deus contra Israel e sete de seus vizinhos: Damasco, Filístia, Tiro, Edom, Amom, Moabe e Judá (1.3-2.16) [cite: 115]. Todas as nações vizinhas são acusadas de crimes contra a humanidade, como violência física e opressão contra outras pessoas [cite: 115]. O profeta traz contra Israel a mais longa acusação (2.6-16) [cite: 115].\n\nA segunda seção aborda, mais especificamente, os pecados de Israel, o reino do Norte, e o julgamento divino que virá sobre essa nação é expandido e elucidado (3.1-6.14) [cite: 115]. Amós confronta os governantes de Israel por sua impiedade e seus caminhos injustos, chamando-os ao arrependimento [cite: 115]. O julgamento vindouro que Amós proclama inclui a destruição de palácios e lugares santos, a destruição do reino e exílio para o povo (5.27) [cite: 115].\n\nA terceira seção consiste de cinco visões do profeta (7.1-9.10) [cite: 115]. As duas primeiras visões (gafanhotos e fogo — 7.1-6) ameaçam o julgamento divino sobre Israel [cite: 115]. As duas visões seguintes, de um prumo (7.7-9) e um cesto de frutos maduros (8.1-14), destacam a realidade de que Israel não pode evitar a sentença de Deus [cite: 115]. A visão final de Deus no templo (9.1-10) mostra o Senhor preparado para exercer julgamento [cite: 115].\n\nA última seção da profecia promete a restauração do povo caído de Israel (9.11-15) [cite: 115]. Em um tempo futuro, Deus levantará a dinastia davídica, e Israel será restaurada e se tornará uma terra fértil [cite: 115]. Muitos estudiosos concordam que essa seção se refere ao Messias, o rei vindouro e filho de Davi que estabelecerá um reino eterno e final [cite: 115]. Essa seção conclusiva é como um ribombar [cite: 115]. Até esse ponto, o profeta se concentrou na certeza do julgamento vindouro, mas agora ele termina com a grande esperança de restauração da casa de Davi após o julgamento [cite: 115]. Essa promessa de restauração é o grande crescendo do livro [cite: 115]."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "Amós ataca principalmente idolatria e injustiça social. Israel mantinha formalidades religiosas, mas sua religião estava corrompida. O profeta denuncia a opressão dos necessitados e a falsa confiança no culto externo. Deus havia enviado advertências por meio de fome, seca, gafanhotos, ferrugem, pragas e derrotas militares, mas o povo não reconheceu sua mão. O julgamento culminaria em destruição e exílio. Entretanto, o Senhor promete restaurar o “tabernáculo caído de Davi” e retrata o futuro do povo com fertilidade e bênção semelhantes às imagens do Éden."
+        "conteudo": "Amós pode ter entregue as profecias deste livro em diferentes lugares no reino do Norte, como Samaria e Betel [cite: 115]. É certo apenas que ele cumpriu parte de seu ministério profético em Betel (7.12, 13) [cite: 115, 116]. Diferentemente da mensagem de profetas anteriores (com a possível exceção de Joel), as palavras de Amós foram preservadas em escrita, da mesma forma que as de seus contemporâneos Isaías e Oseias [cite: 116]. Era essencial que essas importantes mensagens de pleito pactual fossem preservadas como lembranças da história de Israel e por causa das promessas de restauração e redenção que continham [cite: 116].\n\nAmós atacou duas principais áreas de pecado denunciadas comumente pelos profetas: idolatria e injustiça social [cite: 116]. O problema fundamental de Israel era sua falsa religião — \"tendo forma de piedade, negando-lhe, entretanto, o poder\" (2Tm 3.5) [cite: 116]. Embora Israel mantivesse as formalidades rituais da lei e fosse além do estabelecido (4.4, 5), a idolatria era corriqueira (2Rs 17.9-17; Am 5.26), como o eram a injustiça e a violência (2.6-8; 4.1) [cite: 116]. A ousadia de Amós é admirável [cite: 116, 117]. Seus discursos contra os inimigos de Israel teriam sido bem recebidos pelos habitantes das tribos do Norte de Israel (1.3-2.3) [cite: 117]. Essas tribos do Norte que formavam Israel também teriam recebido com alegria o julgamento que Amós pronunciou sobre Judá (2.4, 5) [cite: 117]. Depois, Amós entregou sua mensagem de julgamento a Israel, fazendo isso sem temor para uma audiência que provavelmente se teria voltado contra ele a essa altura (2.6, ss.) [cite: 117].\n\nO Senhor enviou advertências para Israel na forma de sede, fome, gafanhotos, ferrugem, pragas e derrotas militares, mas o povo se recusou a ver a mão de Deus nessas coisas (4.6-11) [cite: 117]. O julgamento tem de vir (4.12-5.20) [cite: 117]. E essa punição é retratada numa série de profecias verbais e visionárias que predizem destruição indiscriminada e exílio [cite: 117]. Mas o Senhor disciplina aqueles a quem ama, e seu julgamento é, na verdade, um sinal de fidelidade ao seu povo pactual [cite: 117]. Ele promete restaurar \"o tabernáculo caído de Davi\" (9.11); e o futuro definitivo de seu povo é retratado numa descrição conclusiva que lembra o Éden em sua fertilidade e bênção (9.13-15) [cite: 117]."
       },
       {
         "id": "teologia_de_amos",
         "titulo": "Teologia de Amós",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "O Deus de Amós é o Criador, o único Deus, que não tolera a idolatria. Ele é soberano sobre as nações e pode levantar uma nação para julgar outra. Também é Juiz e pode levantar outra nação para punir seu próprio povo. Apesar disso, é um Deus amoroso que deseja a vida, e não a morte, de seu povo, chamando-o a buscá-lo e viver."
+        "conteudo": "O Deus que encontramos em Amós é o Criador que fez os seres humanos à sua imagem [cite: 117]. Ele é Deus, e não há nenhum outro [cite: 117]. Ele não tolera a idolatria, que é, na realidade, adoração de demônios (Dt 32.16, 17; 1Co 10.20) [cite: 117]. O Senhor é soberano e capaz de levantar, em julgamento, uma nação contra outra (1.3-2.3), um processo que continuará até que Cristo volte [cite: 117]. Deus é também Juiz e está disposto a levantar outra nação para punir seu povo, Israel (6.14) [cite: 117]. Mas, ainda assim, ele é um Deus amoroso que deseja a vida, e não a morte, de seu povo [cite: 117]. Acima de tudo, Deus deseja que eles o busquem e vivam (5.4; 1Tm 2.3, 4) [cite: 117]."
       },
       {
         "id": "amos_na_historia_mais_ampla_da_biblia",
         "titulo": "Amós na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "Amós 9.11–12 é citado diretamente em Atos 15.16–17 no contexto do concílio de Jerusalém e da inclusão dos gentios. A restauração do reino e o levantamento do tabernáculo caído de Davi são entendidos como tendo começado com o aparecimento de Jesus Cristo, o Filho messiânico de Davi. A posse das nações para o nome do Senhor começa a se cumprir pela inclusão dos gentios no reino de Deus inaugurado pelo Messias."
+        "conteudo": "A grande profecia de restauração em Amós 9.11-12 é citada diretamente no livro de Atos (15.16-17), com base na Septuaginta [cite: 117]. O contexto do Novo Testamento é o concílio em Jerusalém no qual a Igreja primitiva considerou se os gentios precisavam ou não ser circuncidados para obter a salvação (15.1) [cite: 117]. Tiago, argumentando contra os judaizantes, citou a passagem de Amós em confirmação de que a restauração do reino já havia começado [cite: 117]. O levantamento do tabernáculo caído de Davi (Am 9.11) já tivera início com o aparecimento do filho messiânico de Davi, Jesus Cristo [cite: 117]. A possessão de todas as nações para as quais o Senhor revela seu nome (Am 9.12) já havia começado a se cumprir pela inclusão dos gentios no reino de Deus inaugurado pela vinda do Messias [cite: 117]."
       },
       {
         "id": "cristo_em_amos",
         "titulo": "Cristo em Amós",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "As profecias de restauração de Amós encontram cumprimento na obra de Jesus Cristo. Atos 15.16–17 aplica Amós 9.11–12 à inclusão dos gentios pela obra missionária dos apóstolos. Assim como Amós predisse que Edom seria colocado sob o reinado de Davi, os gentios são colocados sob o reinado do Filho supremo de Davi."
+        "conteudo": "As profecias de restauração em Amós encontram cumprimento final na obra de Jesus Cristo [cite: 117]. Como já notamos, a mensagem de Amós 9.11-12 é adotada por Lucas no livro de Atos e aplicada à inclusão dos gentios pela obra missionária dos apóstolos [cite: 117]. Assim como Amós predisse que Edom seria colocado sob o reinado de Davi (9.12), também os gentios são colocados sob o reinado do Filho supremo de Davi (At 15.16-17) [cite: 117]."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "Na tradição judaica, a interpretação concentrou-se em questões como a morte de Amós, sua data e o confronto com Amazias. A erudição moderna costuma datá-lo como o mais antigo dos profetas escritores, enquanto a exegese rabínica o coloca depois de Oseias e antes de Isaías. Na tradição cristã, antigos escritores associaram a destruição do templo em 70 d.C. ao fim da antiga aliança e início da nova. Os pais também encontraram analogias entre o terremoto de Amós, a crucificação e os acontecimentos ligados ao templo. Teodoro de Mopsuéstia entendeu que grande parte da profecia dizia respeito à destruição futura de Israel."
+        "conteudo": "Na tradição judaica, a interpretação tem seu foco em três questões distintas: a morte de Amós, a datação de Amós e as consequências da confrontação do profeta com Amazias [cite: 117]. Embora a erudição moderna incline-se a datar Amós como o mais velho dos profetas escritores, a exegese rabínica coloca a data de Amós depois de Oseias, mas antes de Isaías [cite: 117].\n\nNa tradição cristã, muitos escritores antigos fizeram comentários sobre a destruição do templo, em 70 d.C., como um sinal do fim da antiga aliança e o começo da nova aliança [cite: 117]. Em suas conexões com a referência ao terremoto no começo de Amós, os pais da Igreja encontraram muitas analogias à crucificação de Cristo, ao rasgar do véu no templo e ao terremoto subsequente [cite: 117]. Vários patriarcas antigos tentaram encontrar referências históricas ao que percebiam ser o horizonte original do profeta [cite: 117]. Por exemplo, Teodoreto de Cirro fez referência aos babilônios e assírios, observando como Oseias, Joel e Amós eram contemporâneos [cite: 117]. Teodoro de Mopsuéstia reconheceu que Amós falou, em quase toda a sua profecia, sobre a destruição futura de Israel [cite: 117]."
       },
       {
-        "id": "esboco",
+        "id": "esboco_de_amos",
         "titulo": "Esboço de Amós",
         "tipo": "auto",
         "ordem": 10,
         "conteudo": [
           {
-            "titulo": "I. TÍTULO E INTRODUÇÃO (1.1, 2)",
+            "titulo": "I. TÍTULO E INTRODUÇÃO (1.1, 2) [cite: 117]",
             "itens": []
           },
           {
-            "titulo": "II. JULGAMENTOS PRONUNCIADOS SOBRE AS NAÇÕES (1.3–2.16)",
+            "titulo": "II. JULGAMENTOS PRONUNCIADOS SOBRE AS NAÇÕES (1.3-2.16) [cite: 117]",
             "itens": [
-              "A. Oráculos contra os inimigos de Israel (1.3–2.3)",
-              "B. Oráculos contra Judá e Israel (2.4–16)"
+              "A. Oráculos contra os inimigos de Israel (1.3-2.3) [cite: 117]",
+              "B. Oráculos contra Judá e Israel (2.4-16) [cite: 117]"
             ]
           },
           {
-            "titulo": "III. PROFECIAS CONTRA ISRAEL (CAPS. 3–6)",
+            "titulo": "III. PROFECIAS CONTRA ISRAEL (CAPS. 3-6) [cite: 117]",
             "itens": [
-              {
-                "titulo": "A. O julgamento divino é iminente (cap. 3)",
-                "itens": [
-                  "1. Pano de fundo histórico e afirmação da profecia (3.1–8)",
-                  "2. Convocações de testemunhas pagãs (3.9, 10)",
-                  "3. Julgamento anunciado (3.11–15)"
-                ]
-              },
-              {
-                "titulo": "B. Israel é impenitente (cap. 4)",
-                "itens": [
-                  "1. Acusação de pecado social e religioso (4.1–5)",
-                  "2. Revisão histórica de julgamentos passados (4.6–11)",
-                  "3. Novos julgamentos são anunciados (4.12, 13)"
-                ]
-              },
-              {
-                "titulo": "C. Lamento e chamado ao arrependimento (5.1–17)",
-                "itens": [
-                  "1. Lamento por Israel caído (5.1–3)",
-                  "2. Advertências e acusações (5.4–17)"
-                ]
-              },
-              {
-                "titulo": "D. Não há como escapar do julgamento de Deus (5.18–6.14)",
-                "itens": [
-                  "1. Oráculos contra o sincretismo e a complacência de Israel (5.18–6.7)",
-                  "2. Julgamento contra orgulho e injustiça (6.8–14)"
-                ]
-              }
+              "A. O julgamento divino é iminente (cap. 3) [cite: 117]",
+              "1. Pano de fundo histórico e afirmação da profecia (3.1-8) [cite: 117]",
+              "2. Convocações de testemunhas pagās (3.9, 10) [cite: 117]",
+              "3. Julgamento anunciado (3.11-15) [cite: 117]",
+              "B. Israel é impenitente (cap. 4) [cite: 117]",
+              "1. Acusação de pecado social e religioso (4.1-5) [cite: 117]",
+              "2. Revisão histórica de julgamentos passados (4.6-11) [cite: 117]",
+              "3. Novos julgamentos são anunciados (4.12, 13) [cite: 117]",
+              "C. Lamento e chamado ao arrependimento (5.1-17) [cite: 117]",
+              "1. Lamento por Israel caído (5.1-3) [cite: 117]",
+              "2. Advertências e acusações (5.4-17) [cite: 117]",
+              "D. Não há como escapar do julgamento de Deus (5.18-6.14) [cite: 117]",
+              "1. Oráculos contra o sincretismo e a complacência de Israel (5.18-6.7) [cite: 117]",
+              "2. Julgamento contra orgulho e injustiça (6.8-14) [cite: 117]"
             ]
           },
           {
-            "titulo": "IV. VISÕES DE RETRIBUIÇÃO DIVINA (7.1–9.10)",
+            "titulo": "IV. VISÕES DE RETRIBUIÇÃO DIVINA (7.1-9.10) [cite: 117]",
             "itens": [
-              {
-                "titulo": "A. Julgamento evitado por intercessão (7.1–6)",
-                "itens": [
-                  "1. Visão de gafanhotos (7.1–3)",
-                  "2. Visão de fogo (7.4–6)"
-                ]
-              },
-              {
-                "titulo": "B. O julgamento não é mais evitado (7.7–9.10)",
-                "itens": [
-                  "1. Visão de um muro e de um prumo (7.7–9)",
-                  "2. Confronto com Amazias, o sacerdote (7.10–17)",
-                  "3. Visão de frutos de verão (cap. 8)",
-                  "4. Visão do Senhor junto ao altar (9.1–10)"
-                ]
-              }
+              "A. Julgamento evitado por intercessão (7.1-6) [cite: 117]",
+              "1. Visão de gafanhotos (7.1-3) [cite: 117]",
+              "2. Visão de fogo (7.4-6) [cite: 117]",
+              "B. O julgamento não é mais evitado (7.7-9.10) [cite: 117]",
+              "1. Visão de um muro e de um prumo (7.7-9) [cite: 117]",
+              "2. Confronto com Amazias, o sacerdote (7.10-17) [cite: 117]",
+              "3. Visão de frutos de verão (cap. 8) [cite: 117]",
+              "4. Visão do Senhor junto ao altar (9.1-10) [cite: 117]"
             ]
           },
           {
-            "titulo": "V. RESTAURAÇÃO E BÊNÇÃO (9.11–15)",
+            "titulo": "V. RESTAURAÇÃO E BÊNÇÃO (9.11-15) [cite: 117]",
             "itens": [
-              "A. Restauração da dinastia de Davi (9.11, 12)",
-              "B. Bênção de abundância (9.13–15)"
+              "A. Restauração da dinastia de Davi (9.11, 12) [cite: 117]",
+              "B. Bênção de abundância (9.13-15) [cite: 117]"
             ]
           }
         ]
       }
     ]
+  },
+  "referencias_inline": true,
+  "politica_traducao": "independente",
+  "fonte": {
+    "arquivo": "30_Amós.pdf",
+    "paginas": "Páginas impressas 1531 a 1534",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de Amós, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

@@ -5,128 +5,116 @@
   "abreviacao": "2Cr",
   "material": {
     "titulo": "Sobre 2 Crônicas",
-    "introducao": "2 Crônicas continua a narrativa de Crônicas com Salomão, a divisão do reino, os reis de Judá e a restauração sob Ezequias e Josias, terminando com o exílio e o decreto de Ciro.",
+    "introducao": "O Segundo Livro de Crônicas prossegue com a história da monarquia desde o reinado de Salomão e a construção do templo, passando pelo reino dividido com foco em Judá e nas avaliações pactuais dos reis, até a reunificação e as reformas sob Ezequias e Josias, o subsequente exílio babilônico e o decreto de libertação.",
     "secoes": [
+      {
+        "id": "titulo_e_autor",
+        "titulo": "Título e autor",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "Embora a ruptura entre 1 e 2 Crônicas seja sutil na narrativa, trata-se simplesmente de uma conveniência tardia dos escribas para facilitar o manuseio dos rolos gregos, que, como continham, respectivamente, vogais e consoantes, eram mais longos que os manuscritos hebraicos correspondentes. O trabalho original foi concebido como uma unidade. Ver Introdução a 1 Crônicas: Título."
+      },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
-        "ordem": 1,
-        "conteudo": "A narrativa continua de Davi e Salomão até o exílio e o retorno. O foco é especialmente o reino de Judá, o templo e a fidelidade ao culto.",
-        "paginas_fonte": [
-          1
-        ]
+        "ordem": 2,
+        "conteudo": "Ver Introdução a 1 Crônicas: Data e Circunstâncias."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "A obra combina narrativa histórica, genealogias, registros de culto e relatos de reformas religiosas.",
-        "paginas_fonte": [
-          1,
-          2
-        ]
+        "ordem": 3,
+        "conteudo": "O Cronista prossegue com a abordagem que empregou para o reinado de Davi, e estrutura sua narrativa como uma história da corte em que o destino da nação é determinado pelas ações de seus reis [cite: 98]. Não obstante, o relato não enfatiza, primariamente, as atividades militares ou econômicas, mas, sim, o bem-estar religioso do povo [cite: 98]. Essa é uma apresentação da história pactual com o fim de motivar a comunidade restaurada em Judá a uma fidelidade mais profunda na condução de sua vida individual e nacional [cite: 98]."
+      },
+      {
+        "id": "caracteristicas_literarias",
+        "titulo": "Características literárias",
+        "tipo": "texto",
+        "ordem": 4,
+        "conteudo": "A aliança davídica (1Cr 17) e a oração de Salomão (2Cr 6) são usadas pelo Cronista para ajudar seus leitores a integrar bem a compreensão dos fatos em sua história nacional como fatos posteriores, conforme as estruturas inicialmente descritas [cite: 98]. Quando o rei pactual e seu povo enfrentavam o perigo, a oração ao Senhor, como proposta por Salomão (p. ex., 6.21, 25), dava acesso ao perdão e à assistência divinos (12.6; 13.14; 14.11; 18.31), mesmo em prol de um caráter malfeitor como o de Manassés (33.12, 13) [cite: 98].\n\nO Cronista presume que seu público está tão familiarizado com os relatos em Reis que o que ele diz não seria adequadamente compreendido sem esse conhecimento (p. ex., 32.24-33) [cite: 98]. Entretanto, o Cronista extrai sua fonte material de Reis para salientar sua mensagem primária de que a obediência pactual traz a bênção divina, enquanto a infidelidade pactual acarreta castigo divino [cite: 98]. Esse último resultado ficou tragicamente evidente na vida de alguns reis; e, para Jeorão (21.4-20), Acazias (22.1-9), Acaz (28.1-27), Amom (33.21-25), Jeoacaz (36.2-4), Jeoaquim (36.5-8), Joaquim (36.9-10) e Zedequias (36.5-8), o Cronista se contenta em manter a caracterização negativa de Reis [cite: 98]. Enquanto retém a avaliação mista feita anteriormente em relação a Asa (14.2-16.14) e Josafá (17.1-21.3) [cite: 98, 99], ele apresenta outros monarcas mais positivamente do que em Reis: Roboão (10.1-12.16), Joás (22.10-24.27), Amazias (25.1-28), Uzias (26.1-33), Josias (34.1-36.1) e Manassés (33.1-20) [cite: 99]. Ignorando seus fracassos e fornecendo outros exemplos bem-sucedidos não mencionados em Reis, ele descreve Abias (13.1-14.1), Jotão (27.1-9) e Ezequias (29.1-32.33) de uma forma favorável, em parte para criar no auditório uma esperança da vinda do Rei que preenche o ideal apresentado em seu perfil positivo desses reis [cite: 99]."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "A centralidade do templo, a adoração, o reino davídico e as reformas dos reis fiéis são temas principais.",
-        "paginas_fonte": [
-          2,
-          3
-        ]
+        "ordem": 5,
+        "conteudo": "O Cronista relembra a história de Israel e Judá a fim de prover respostas teológicas a três questões fundamentais que surgiram depois de os judeus voltarem do exílio babilônico [cite: 99]. Primeiro, como é possível que os herdeiros das promessas pactuais de Deus sejam conhecidos após o deslocamento do exílio e o retorno? [cite: 99] Segundo, o que seria de sua política central e das instituições religiosas, do trono davídico e do templo de Jerusalém, e como deveriam estar relacionados entre si na comunidade restaurada? [cite: 99] Terceiro, como o povo iria compreender a experiência do exílio e da restauração à luz da lei e da graça de Deus, de seu juízo e perdão? [cite: 99] A discussão desses temas, iniciada na Introdução a 1 Crônicas, continua aqui, em 2 Crônicas [cite: 99].\n\nO Cronista está preocupado em enfatizar o privilégio estendido à nação por meio da aliança que o Senhor instituiu e mantinha com eles [cite: 99]. Sua responsabilidade consiste em perpetrar uma relação genuína com ele por meio do culto no templo, o qual está sob o cuidado de seu sacerdócio e dos guardiães levíticos [cite: 99]. O que era sadio e provado desde o passado fornece a chave para seguir em frente em harmonia com Deus e para ser aceito por ele [cite: 99].\n\n1. A Monarquia Unida sob Salomão (1.1-9.31) [cite: 99]. A seção de abertura de 2 Crônicas descreve Salomão como o sucessor divinamente abençoado de Davi [cite: 99]. O Cronista ignora a luta de Salomão pelo poder (1Cr 23.1 e nota) e sua final derrocada em razão de seus casamentos mistos (1Rs 11.1-40) [cite: 99]. Ele mostra Salomão como o rei de \"todo o Israel\" (1Cr 11.1 e nota) e como o primeiro instrumento na construção do templo em Jerusalém (2Cr 2.1-8.16) [cite: 99]. Há uma breve nota de sua morte (9.29-31) [cite: 99]. O reinado de Salomão é narrado de forma relevante e simétrica, abrindo e fechando com passagens que descrevem a sabedoria e a riqueza do rei (cap. 1; 9.13-28) [cite: 99]. Justamente dentro dessas passagens, encontram-se seções sobre suas relações internacionais (cap. 2; 8.17-9.12) [cite: 99]. Inseridas entre essas passagens, estão seções sobre a construção do templo e outros projetos de Salomão que abrangem todo o Israel (3.1-5; 8.1-16); e, no centro, estão descritas a dedicação do templo (5.2-7.10) e a resposta divina a ela (7.12-22) [cite: 99]. Um esboço concêntrico desse tipo salienta os tópicos no meio — nesse caso, a dedicação do templo [cite: 99].\n\n2. O Reino Dividido (10.1-28.26) [cite: 99]. O registro da história de Roboão a Acaz focaliza os eventos no reino sulino de Judá [cite: 99]. Embora Reis seja a fonte de boa parte da informação, Crônicas omite grandes blocos de material que tratam do reino do norte de Israel [cite: 99]. O foco de Crônicas é Judá e sua capital, Jerusalém, o lugar do rei davídico e do templo de Deus [cite: 99]. Os reis do período são avaliados pelo ideal da monarquia unida [cite: 99]. O rei deve ser fiel à lei de Moisés; deve sustentar a ordem no templo estabelecida por Davi e Salomão; e deve atender à instrução profética e sacerdotal [cite: 99]. Alguns reis são avaliados negativamente (Jeorão, 21.4-20; Acazias, 22.1-9; Acaz, 28.1-27); outros, positivamente (Abias, 13.1-14.1; Jotão, 27.1-9) [cite: 99]. Para a maioria, os registros são mistos (Roboão, 10.1-12.16; Asa, 14.2-16.14; Josafá, 17.1-21.3; Joás, 22.10-24.27; Amazias, 25.1-28; Uzias, 26.1-23) [cite: 99]. Em sua história inspirada de Israel e Judá, o Cronista mostra que Deus abençoa seu povo quando este é fiel, castigando-o quando se desvia dele [cite: 99]. Vitória, segurança e prosperidade vêm aos que buscam o Senhor [cite: 99]. Derrota, tribulação e enfermidade acometem os que o abandonam [cite: 99].\n\n3. O Reino Reunido (29.1-36.23) [cite: 99]. Começando com Ezequias, Israel entra numa nova fase de sua história [cite: 99]. Como Davi e Salomão, Ezequias está apto a unir os fiéis de Israel e Judá em torno do trono davídico, por meio do culto e da celebração no templo (29.1, nota; e 29.24, nota) [cite: 99, 100]. Esse povo reunido experimenta períodos de fracasso: a apostasia de Manassés (33.1-10); o reinado de Amom (33.21-25); e os reis de Judá pouco antes do exílio babilônico (36.2-14) [cite: 100]. Mas cada fracasso é seguido da graciosa renovação do povo efetuada por Deus: a restauração de Manassés (33.11-17); as reformas de Josias (34.3-35.19); e o retorno dos exilados babilônicos (36.22-23) [cite: 100]. Apesar dos fracassos do reino reunido, Deus continua a conceder bênçãos ao seu povo quebrantado [cite: 100]. Ele lhe estende sua misericórdia, oferecendo-lhe sua bênção [cite: 100]. Ao mesmo tempo, os eventos do período demonstram as exigências impostas aos que aspiram pela restauração completa do reino [cite: 100]. A nação deve volver-se para o Senhor com humildade e viver fielmente diante dele [cite: 100]."
       },
       {
         "id": "teologia_de_2_cronicas",
         "titulo": "Teologia de 2 Crônicas",
         "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "O Cronista enfatiza a relação entre busca de Deus, fidelidade, reforma do culto, bênção e juízo.",
-        "paginas_fonte": [
-          3
-        ]
+        "ordem": 6,
+        "conteudo": "Aos temas do povo pactual de Deus, o rei e o templo, e a bênção e o juízo divinos (ver Introdução a 1 Crônicas: Características e Temas Principais), 2 Crônicas adiciona reiteradas referências à desobediência dos representantes da dinastia e suas trágicas consequências para o povo como um todo [cite: 100]. Ainda assim, a casa real é preservada, e isso é possível mediante o arrependimento, a fim de reverter o avanço em seu declínio (ver Manassés, 33.11-17) [cite: 100]. O templo continua como um importante exemplo do princípio de Deus conosco, tipificando a encarnação do Messias [cite: 100].\n\nCom frequência, a descrição da providência divina feita pelo Cronista é apresentada como uma teologia de retribuição imediata [cite: 100]. Em Samuel e Reis, a retribuição divina vem ao reino do norte (2Rs 17.7-20) e a Judá (2Rs 23.26, 27) como o ápice de um processo sobre muitas gerações [cite: 100]. Por outro lado, muitos estudiosos argumentam que, em Crônicas, os sucessos ou fracassos de um rei são recompensados ou punidos dentro de sua própria vida terrena [cite: 100]. Entretanto, a abordagem do Cronista é muito mais sutil [cite: 100]. Ele não perde de vista o impacto, no longo prazo, causado pela conduta da nação (2Cr 7.19-22; 36.15, 16) [cite: 100]. Ainda assim, sua preocupação primordial é recomendar aos seus contemporâneos a obediência pactual e, para isso, ele escolhe exemplos históricos que tornam seu ponto de vista tão poderoso quanto possível [cite: 100]. \"Aquilo que o homem semear, isso também ceifará\" (Gl 6.7) [cite: 100]. Mas o Cronista não equipara simplesmente as adversidades experimentadas na vida à desobediência prévia [cite: 100]. A agressão que Asa sofre de Baasa, no capítulo 16, vem após um capítulo de enaltecimento das reformas religiosas de Asa [cite: 100]. De forma ainda mais significativa, a extensa atividade reformista de Ezequias, nos capítulos 29-31, é seguida pela invasão de Senaqueribe, como o próprio Cronista observa em 32.1 [cite: 101]. Sua abordagem dos eventos não é ingênua, mas um chamado urgente ao arrependimento [cite: 101]. Por causa do perene compromisso do Senhor, o povo pactual nunca está totalmente desprovido de uma via de volta à bênção, bastando apenas arrepender-se (7.13, 14) [cite: 101].\n\nArgumenta-se também que o Cronista focaliza indevidamente aspectos externos da religião [cite: 101]. Começando com a oração de Jabez em 1 Crônicas 4.10, os termos terra/território são usados como um indício de favor espiritual, como nas grandes famílias [cite: 101]. Alguns comentaristas consideram também o templo e seu adorno material como de suprema proeminência na apresentação da verdadeira piedade feita pelo Cronista [cite: 101]. Também aqui, requer-se qualificação significativa [cite: 101]. O templo era o foco da presença divina na terra, nos dias do Cronista, e o devido respeito por ele era sinal de um coração comprometido com o Senhor [cite: 101]. Além disso, o Cronista não se cansa de mencionar que o que se requer não é a realização mecânica de rituais religiosos, mas, sim, um compromisso sincero com o Senhor (2Cr 6.14, 38; 15.12, 15; 19.9; 22.9; 25.2; 31.21; 34.31; e expressões semelhantes em 16.9; 29.31) [cite: 101]."
       },
       {
         "id": "2_cronicas_na_historia_mais_ampla_da_biblia",
         "titulo": "2 Crônicas na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "O livro interpreta a história de Judá à luz do templo e da aliança e termina com a possibilidade de retorno e reconstrução.",
-        "paginas_fonte": [
-          3
-        ]
+        "ordem": 7,
+        "conteudo": "Enquanto 1 Crônicas apresenta toda a imponência da história humana desde Adão até os dias do Cronista, 2 Crônicas cobre um período mais abreviado [cite: 101]. Seu foco está na necessidade de uma fidelidade contínua, vivenciando as demandas da aliança a fim de desfrutar o favor e a bênção do Senhor [cite: 101]. O templo, com seus rituais sacrificiais, continua a desempenhar papel vital no progresso da história da salvação [cite: 101]. O foco complementar na dinastia davídica promove a esperança quanto à concretização da promessa messiânica [cite: 101]."
       },
       {
         "id": "cristo_em_2_cronicas",
         "titulo": "Cristo em 2 Crônicas",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "A continuidade da linhagem davídica, a centralidade do templo e a expectativa de restauração mantêm elementos da esperança que será desenvolvida posteriormente.",
-        "paginas_fonte": [
-          4
-        ]
+        "ordem": 8,
+        "conteudo": "Quando aqueles que mantêm o ofício designado por Deus em Israel vivem as demandas desse ofício, tornam-se tipos de Cristo, prefigurando os aspectos correspondentes de sua obra [cite: 101, 102]. O perfil positivo que o Cronista traça dos reis, como, por exemplo, Davi, Salomão e Ezequias, realça sua semelhança com Cristo e, assim, serve para fomentar as expectativas do rei perfeito, aquele que cumpre completamente a tarefa de estabelecer o reino de Deus e fazer provisão para seu povo [cite: 102]."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 7,
-        "conteudo": "A interpretação compara Crônicas com Samuel e Reis e considera as escolhas e ênfases próprias do Cronista.",
-        "paginas_fonte": [
-          4
-        ]
+        "ordem": 9,
+        "conteudo": "Ver Introdução a 1 Crônicas: História de Interpretação [cite: 102]."
       },
       {
         "id": "assuntos_especiais",
         "titulo": "Assuntos especiais",
         "tipo": "texto",
-        "ordem": 8,
-        "conteudo": "O material aborda as diferenças entre os relatos paralelos e a maneira como Crônicas enfatiza culto, sacerdócio e reformas.",
-        "paginas_fonte": [
-          4
-        ]
+        "ordem": 10,
+        "conteudo": "Ver Introdução a 1 Crônicas: Assuntos Especiais [cite: 102]."
       },
       {
-        "id": "esboco_de_2cr",
+        "id": "esboco_de_2_cronicas",
         "titulo": "Esboço de 2 Crônicas",
         "tipo": "auto",
-        "ordem": 9,
+        "ordem": 11,
         "conteudo": [
           {
-            "titulo": "I. A monarquia unida (1Cr 9.35–2Cr 9.31)",
+            "titulo": "II. A MONARQUIA UNIDA (1CR 9.35-2CR 9.31) (Continuação)",
             "itens": [
-              "A. Saul (1Cr 9.35–10.14)",
-              "B. Davi (1Cr 11–29)",
+              "A. Saul (1Cr 9.35-10.14)",
+              "B. Davi (1Cr 11-29)",
               {
-                "texto": "C. Salomão (2Cr 1–9)",
+                "titulo": "C. Salomão (2Cr 1-9)",
                 "itens": [
                   "1. Culto, sabedoria e riqueza (cap. 1)",
                   "2. Preparativos para a construção do templo (cap. 2)",
-                  "3. Construção do templo e mobílias (3.1–5.1)",
-                  "4. Dedicação do templo (5.2–7.10)",
-                  "5. Resposta divina à dedicação (7.1–22)",
-                  "6. Conclusão da construção do templo (8.1–16)",
-                  "7. Reconhecimento internacional (8.17–9.12)",
-                  "8. Riqueza e sabedoria (9.13–28)",
-                  "9. Fim do reinado e morte (9.29–31)"
+                  "3. Construção do templo e mobílias (3.1-5.1)",
+                  "4. Dedicação do templo (5.2-7.10)",
+                  "5. Resposta divina à dedicação (7.11-22)",
+                  "6. Conclusão da construção do templo (8.1-16)",
+                  "7. Reconhecimento internacional (8.17-9.12)",
+                  "8. Riqueza e sabedoria (9.13-28)",
+                  "9. Fim de reinado e morte (9.29-31)"
                 ]
               }
             ]
           },
           {
-            "titulo": "II. O reino dividido (2Cr 10–28)",
+            "titulo": "III. O REINO DIVIDIDO (2CR 10-28)",
             "itens": [
-              "A. Roboão (caps. 10–12)",
-              "B. Abias (13.1–21)",
-              "C. Asa (14.1–16.14)",
-              "D. Josafá (17.1–20.37)",
-              "E. Jeorão (21.1–20)",
-              "F. Acazias (22.1–9)",
-              "G. Atalia, Jeosabeate e Joiada (22.10–23.21)",
-              "H. Joás (24.1–27)",
+              "A. Roboão (caps. 10-12)",
+              "B. Abias (13.1-21)",
+              "C. Asa (14.1-16.14)",
+              "D. Josafá (17.1-20.37)",
+              "E. Jeorão (21.1-20)",
+              "F. Acazias (22.1-9)",
+              "G. Atalia, Jeosabeate e Joiada (22.10-23.21)",
+              "H. Joás (24.1-27)",
               "I. Amazias (cap. 25)",
               "J. Uzias (cap. 26)",
               "K. Jotão (cap. 27)",
@@ -134,14 +122,14 @@
             ]
           },
           {
-            "titulo": "III. O reino reunido (2Cr 29–36)",
+            "titulo": "IV. O REINO REUNIDO (2CR 29-36)",
             "itens": [
-              "A. Ezequias (caps. 29–32)",
-              "B. Manassés (33.1–20)",
-              "C. Amom (33.21–25)",
+              "A. Ezequias (caps. 29-32)",
+              "B. Manassés (33.1-20)",
+              "C. Amom (33.21-25)",
               "D. Josias (caps. 34 e 35)",
-              "E. Sucessores de Josias (36.1–16)",
-              "F. Exílio e livramento (36.17–23)"
+              "E. Sucessores de Josias (36.1-16)",
+              "F. Exílio e livramento (36.17-23)"
             ]
           }
         ]
@@ -152,7 +140,7 @@
   "politica_traducao": "independente",
   "fonte": {
     "arquivo": "14_2 Crônicas.pdf",
-    "paginas": "Páginas impressas 633–637",
-    "criterio": "Conteúdo revisado a partir das páginas de introdução e do esboço da fonte fornecida, com correção de OCR, hifenização, pontuação e referências. A estrutura do esboço foi conferida contra a página de esboço da fonte e adaptada ao mesmo formato estrutural de Gênesis."
+    "paginas": "Páginas impressas 633 a 637",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de 2 Crônicas, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }

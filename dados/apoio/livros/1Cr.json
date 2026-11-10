@@ -5,167 +5,142 @@
   "abreviacao": "1Cr",
   "material": {
     "titulo": "Sobre 1 Crônicas",
-    "introducao": "1 Crônicas reconta a história de Israel com atenção especial à linhagem davídica, ao templo e à organização do culto. O livro começa com genealogias e chega ao estabelecimento de Salomão como sucessor de Davi.",
+    "introducao": "O Primeiro Livro de Crônicas traça a história humana e sagrada desde Adão através de extensas genealogias, estabelecendo a identidade do povo de Deus pós-exílico, e foca na monarquia unida sob Davi, enfatizando a centralidade do trono davídico, a preparação e organização do templo, e a fidelidade pactual.",
     "secoes": [
       {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O livro de Crônicas formava originalmente uma única obra com 2 Crônicas. Seu título grego está relacionado aos acontecimentos omitidos ou organizados em relação aos livros de Samuel e Reis.",
-        "paginas_fonte": [
-          1
-        ]
+        "conteudo": "O livro de Crônicas, ora em duas partes, como 1 e 2 Crônicas, originalmente era uma única obra, conhecida, na tradição hebraica, como \"palavras [ou eventos] dos dias\", uma expressão que às vezes aparece nos livros de Reis como parte de frases mais longas (p. ex., 1Rs 14.29) e em outros lugares por si mesma (Ne 12.23; Et 2.23; 6.1). A Septuaginta deu ao livro o título \"Paralipômenos\" (\"das coisas omitidas\"), mas Jerônimo, no quarto século d.C., e Lutero, no décimo sexto século d.C., deram ao livro o título as \"Crônicas de toda a História Sagrada\". O título moderno deriva do título de Lutero."
       },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "A tradição judaica atribui a obra a Esdras. O autor é frequentemente chamado de Cronista e utiliza materiais anteriores para compor sua narrativa.",
-        "paginas_fonte": [
-          1
-        ]
+        "conteudo": "A tradição judaica tem Esdras como o autor primário dos livros de Crônicas, Esdras e Neemias. Ao menos duas razões tornam essa identificação plausível: o livro foi escrito seguindo o exílio babilônico dos judeus, próximo ao tempo do ministério de Esdras (ver, a seguir, Data e Circunstâncias), e muitas passagens em Crônicas simpatizam com as preocupações sacerdotais de Esdras.\n\nOutras considerações lançam dúvida sobre o ponto de vista tradicional de autoria. A data de composição de Crônicas não pode limitar-se ao tempo de Esdras (ver Data e Circunstâncias); o foco sobre a característica de realeza em Crônicas não está presente no ensino de Esdras; e o desconforto de Esdras sobre a apostasia associada ao casamento misto não é um tema proeminente em Crônicas. Em outras palavras, a evidência histórica e bíblica não aponta decisivamente para Esdras e, hoje, a maioria dos estudiosos não defende que os três livros tenham vindo de um único autor, embora partilhem interesses semelhantes. Pelo consenso geral, o autor anônimo é conhecido como \"o Cronista\". Costuma-se argumentar que seu interesse no templo e em seus funcionários indica que ele mesmo vinha de uma família sacerdotal e levítica."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "O livro reflete o período posterior ao exílio e reorganiza a história de Israel a partir de sua perspectiva sobre Davi, o templo e a comunidade restaurada.",
-        "paginas_fonte": [
-          1,
-          2
-        ]
+        "conteudo": "Os versículos finais de 2 Crônicas indicam que o livro foi escrito após a soltura dos exilados da Babilônia, em 538 a.C. A ausência de influências helenistas pressupõe que a história foi composta antes do período alexandrino (ou seja, antes de 331 a.C.). Não obstante, as opiniões variam sobre a data precisa de composição.\n\nAlguns intérpretes têm proposto que o cronista escreveu antes da reconstrução do templo sob Zorobabel (por volta de 520-515 a.C.). Ao menos três evidências corroboram esse ponto de vista. Em primeiro lugar, o cronista apresenta, de forma consistente, o templo e seus funcionários, em estreita parceria com a linhagem real de Davi. Essa ênfase sugere uma data próxima ao tempo de Zorobabel, quando as expectativas de parceria real e sacerdotal eram elevadas (Zc 4). Segundo, há detida atenção voltada aos detalhes dos deveres sacerdotais e levíticos (1Cr 6.1-81 e nota). Isso pressupõe uma conexão com o tempo em que a nova ordem do templo estava sendo estabelecida. Terceiro, a omissão do escritor acerca da ruína de Salomão, decorrente de casamentos mistos com mulheres pagãs (1Rs 11.1-40; Ne 13.26), pressupõe que o Livro de Crônicas pode ter sido escrito antes de o casamento misto se tornar uma questão proeminente na comunidade que se seguiu ao exílio na Babilônia.\n\nA maioria dos intérpretes tem datado Crônicas durante ou pouco tempo depois dos ministérios de Esdras e Neemias, na última metade do quinto século ou nas primeiras décadas do quarto século a.C. É razoável situar o livro no período mais ou menos de Zorobabel até logo após os ministérios de Esdras e Neemias. Os temas mais importantes do livro se encaixam nessas fronteiras (entre 515 e 400 a.C.). Como 1 Crônicas 3.17-24 cataloga pelo menos duas gerações além de Zorobabel, é mais razoável uma data pouco depois de 460 a.C.\n\nO cronista escreveu para encorajar os que haviam voltado do exílio, visto que estavam encarando sérias dificuldades. A restauração não havia efetuado as mudanças drásticas pelas quais muitos esperavam. Em vez disso, eles tinham de suportar uma desanimadora dificuldade econômica, a oposição estrangeira e os conflitos internos. Esses problemas suscitaram muitas dúvidas. Quem são os herdeiros legítimos das promessas que Deus deu ao seu povo? Quais instituições políticas e religiosas devem ser abraçadas? Há esperança de um novo rei davídico? O historiador que escreveu Crônicas elaborou essas e outras questões semelhantes."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Crônicas combina narrativa histórica com genealogias, listas, registros sacerdotais e materiais de culto.",
-        "paginas_fonte": [
-          2
-        ]
+        "conteudo": "O gênero primário de Crônicas é a narrativa histórica, com uso generoso de genealogia. Como história, o Livro de Crônicas foi composto tanto por razões históricas como por razões teológicas, respectivamente. O uso extenso que o cronista faz de documentos históricos e sua devoção a detalhes numéricos e cronológicos (p. ex., 1Cr 5.18; 2Cr 14.1, 9; 16.1, 12, 13) indicam que sua intenção era proporcionar aos leitores um acurado registro histórico. No entanto, ele não oferece meramente informação sobre o passado; também escreve para comunicar uma relevante mensagem teológica. Comparar Crônicas com Samuel e Reis revela que esse relato do passado de Israel é formatado para falar às necessidades da comunidade que regressara recentemente do exílio babilônico."
+      },
+      {
+        "id": "caracteristicas_literarias",
+        "titulo": "Características literárias",
+        "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "O cronista combina informações de mais de uma fonte. Ele depende de uma série de textos bíblicos, especialmente Samuel e Reis (ou, possivelmente, as fontes das quais foram compilados), mas também do Pentateuco, de Juízes, Rute, Salmos, Isaías, Jeremias e Zacarias. Há citações específicas de diversas fontes régias de outro modo desconhecidas, como, por exemplo, \"as crônicas do rei Davi\" (1Cr 27.24), \"o Livro dos Reis\" (2Cr 24.27), \"o Livro da História dos Reis de Israel\" (1Cr 9.1; 2Cr 20.34), \"o Livro dos Reis de Judá e de Israel\" (2Cr 16.11; 25.26; 28.26; 32.32) e \"o Livro dos Reis de Israel e de Judá\" (2Cr 27.7; 35.27; 36.8). O cronista usa fontes proféticas, inclusive os escritos de Samuel (1Cr 29.29), Natã (29.29; 2Cr 9.29) e Gade (1Cr 29.29), entre outros (2Cr 9.29; 12.15; 13.22; 26.22; 32.32). Variações de estilo e conteúdo na obra pressupõem que talvez ainda houvesse outras fontes não especificadas que o cronista, habilidosamente, compreendeu e amalgamou em um relato coerente.\n\nComo um tema proeminente na obra é a importância da dinastia davídica, ele omite extensa documentação no que diz respeito aos reis do reino do norte de Israel. A descrição do reinado do primeiro rei, Saul, é confinada a um relato de sua morte, armando, assim, o cenário para Davi sucedê-lo. Mesmo ao descrever os reis davídicos, o cronista condensa seu relato para focar os temas específicos que deseja examinar."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "O templo, a adoração, a linhagem davídica e a identidade do povo de Deus são temas centrais. A narrativa enfatiza Davi e a preparação para o templo.",
-        "paginas_fonte": [
-          2,
-          3
-        ]
+        "ordem": 6,
+        "conteudo": "Os temas principais de Crônicas podem ser resumidos de muitas maneiras, porém três preocupações se fazem proeminentes: o povo de Deus; o rei e o templo; e a bênção e o juízo divinos.\n\n1. O povo de Deus. O escritor identifica o povo que seria contado como herdeiro das promessas pactuais de Deus. A proeminência desse tema aparece no uso frequente da expressão \"todo o Israel\" (1Cr 11.1; 2Cr 10.1; 29.24). Por outro lado, o autor considera os retornados do exílio babilônico o povo de Deus. Representantes de Judá, Benjamim, Efraim e Manassés que voltaram à terra são os escolhidos do povo (1Cr 9.3 e nota). O autor também considera a restauração de Israel incompleta enquanto algumas das tribos permanecerem fora da terra, separadas do rei davídico e do templo de Jerusalém. Como resultado, o cronista é cuidadoso em incluir as tribos do sul e do norte, respectivamente, em suas genealogias (1Cr 2.3-9.1), a fim de apresentar o quadro da monarquia unida sob Davi e Salomão se estendendo a todo o povo (1Cr 11.1 e nota), bem como para descrever a reunificação dos reinos do norte e do sul nos dias de Ezequias. Assim, o cronista ensina que os exilados que regressaram constituem o remanescente do povo de Deus, mas estão olhando para a restauração de todo o povo de Deus. Como Ezequias expressa, \"se vós vos converterdes ao SENHOR, vossos irmãos e vossos filhos acharão misericórdia perante os que os levaram cativos e tornarão a esta terra; porque O SENHOR, vosso Deus, é misericordioso e compassivo\" (2Cr 30.9).\n\n2. O rei e o templo. O Livro de Crônicas apresenta o povo de Deus organizado em torno de duas instituições centrais: o trono davídico e o templo de Jerusalém. As genealogias dão especial atenção à linhagem de Davi (1Cr 2.10-17; cap. 3) e à organização dos sacerdotes e levitas (1Cr 6). A linhagem de Davi foi escolhida por Deus como a dinastia permanente sobre a nação (1Cr 17; 2Cr 13.5; 21.7; 23.3), e o estabelecimento do trono de Davi demonstra o amor e a bênção divinos em relação a Israel (1Cr 14.2; 2Cr 2.11). O historiador também focaliza o templo como o lugar no qual reside o nome de Deus (2Cr 7.12, 16; 33.7). Revelam-se a jovialidade e o esplendor da música no culto do templo (1Cr 6.31-47; 9.33; 13.8; 15.16-24, 28; 23.5; cap. 25; 2Cr 5.1-13; 7.6; 23.13; 29.25-30; 34.12 e notas). Segundo o cronista, a restauração completa do reino não pode concretizar-se à parte do rei davídico e do templo de Jerusalém. Como o Senhor disse a Davi: \"Há de ser que, quando teus dias se cumprirem, e tiveres de ir para junto de teus pais, então farei levantar depois de ti o teu descendente, que será dos teus filhos, e estabelecerei o seu reino. Esse me edificará casa; e eu estabelecerei o seu trono para sempre\" (1Cr 17.11, 12).\n\n3. Bênção e juízo divinos. O autor mostra a seus leitores como receber as bênçãos de Deus em seus dias. Ele ressalta a estreita conexão entre fidelidade e bênção, infidelidade e juízo (1Cr 28.9; 2Cr 6.14; 7.22; 15.2; 16.7-9; 21.12-15; 24.20; 28.9; 34.24-28). O rei e o templo não podem, por si sós, garantir a Israel a bênção de Deus; deve haver obediência à Lei Mosaica e à instrução profética e sacerdotal. O Senhor abençoa os que mantêm a pureza do culto no templo e confiam exclusivamente nele (1Cr 5.20; 2Cr 13.18; 14.7; 32.20, 21). Quando o povo ou os reis tornam a pecar, frequentemente vem a derrota como retribuição imediata, na forma de doença ou derrota militar (1Cr 10; 2Cr 13.1-16; 16.12; 28.1-5; 33.1-11). Mesmo assim, o povo pode ser restaurado à bênção e buscar a Deus com arrependimento e oração (1Cr 21.1-22.1; 2Cr 7.13-15; 12.1-12; 33.10-13). O cronista mostra que a restauração completa do povo de Deus só virá quando ele viver em fidelidade ao Senhor. Azarias disse bem: \"se o buscardes, ele se deixará achar; porém, se o deixardes, vos deixará\" (2Cr 15.2)."
       },
       {
         "id": "teologia_de_1_cronicas",
         "titulo": "Teologia de 1 Crônicas",
         "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "O Cronista enfatiza a soberania de Deus, a centralidade do culto e a importância da fidelidade da comunidade ao Senhor.",
-        "paginas_fonte": [
-          3
-        ]
+        "ordem": 7,
+        "conteudo": "Primariamente, Crônicas é um exercício de teologia pactual aplicada. Ao começar, como faz, por Adão, o autor enfatiza a insuperável soberania do Deus cujo propósito percorre toda a história humana, e isso significa que esse propósito, seguramente, será concretizado. As genealogias dos capítulos 1 a 9 lembram à comunidade pós-exílica que ela estava perdendo sua identidade e seu propósito enquanto vivia na periferia do vasto Império Persa, e que eles eram o centro do propósito de Deus — propósito que atravessa as eras.\n\nMais particularmente, o cronista vê a comunidade como aqueles para quem Deus era o Senhor (Javé), aquele que, graciosamente, fez uma aliança com eles e lhes outorgou imensos privilégios espirituais. O cronista focaliza a aliança davídica (cap. 17) e suas implicações, especialmente o privilégio concedido pelo templo e pela presença de Deus ali no seu meio."
       },
       {
         "id": "1_cronicas_na_historia_mais_ampla_da_biblia",
         "titulo": "1 Crônicas na história mais ampla da Bíblia",
         "tipo": "texto",
-        "ordem": 7,
-        "conteudo": "O livro reconta a história de Israel a partir de Adão até Davi e prepara a narrativa de Salomão e do templo em 2 Crônicas.",
-        "paginas_fonte": [
-          3
-        ]
+        "ordem": 8,
+        "conteudo": "Um livro que se estende de Adão (1.1) ao retorno do exílio, em 538 a.C. e, na verdade, mais além, como se vê em algumas genealogias (p. ex., 3.21) —, inevitavelmente cobre boa parte da história maior da Bíblia. Entretanto, a importância da linha histórica não é tanto o fato de essas coisas terem acontecido, mas, sim, que fazem parte da estruturação que Deus deu à história humana para cumprir seu propósito redentor. Há um momento em todos os livros de Crônicas que guia o leitor atento a percorrer o horizonte em busca de coisas maiores ainda futuras. Em 1 Crônicas, a ênfase é primariamente sobre como a base para o futuro é posta na aliança davídica, com a provisão de uma dinastia e de um lugar de culto para o povo de Deus."
       },
       {
         "id": "cristo_em_1_cronicas",
         "titulo": "Cristo em 1 Crônicas",
         "tipo": "texto",
-        "ordem": 8,
-        "conteudo": "A linhagem davídica e a preparação do templo preservam a expectativa de um rei e de uma presença divina que encontram desenvolvimento na narrativa bíblica posterior.",
-        "paginas_fonte": [
-          4
-        ]
+        "ordem": 9,
+        "conteudo": "Ao selecionar e estruturar seu material, o cronista adota a estrutura encontrada em Samuel e Reis, a qual se baseia nos reinados e ações dos reis. Ainda que pareça adotar uma perspectiva mais sacerdotal, a aliança e a dinastia davídicas são, contudo, uma influência formativa em sua percepção. Em consequência, nos livros de Crônicas há um fundamento messiânico subjacente que culmina em Cristo, o prometido Filho de Davi.\n\nO conceito que o livro tem do povo de Deus torna-se realidade em Cristo. Como a comunidade da restauração, os que seguem Cristo são os herdeiros das promessas de Israel (Gl 3.14, 29; 4.28; Ef 2.11-22; 3.6). Entretanto, a Igreja também se estende para além de Israel, a fim de incluir os gentios (Lc 2.32; At 9.15; 11.1, 18); e, no fim de tudo, todos os eleitos de Deus, \"o Israel de Deus\" (Gl 6.16), vão se unir sob o senhorio de Cristo.\n\nA esperança de o trono de Davi ser restaurado é cumprida em Cristo. Ele nasceu Filho de Davi, o herdeiro da aliança davídica (Lc 1.32; Rm 1.3; Ap 22.16). Cristo satisfez todas as condições de obediência postas na linhagem de Davi (Rm 5.19; Fp 2.8; Hb 5.7-10). Na Ressurreição, Cristo assumiu seu trono celestial (At 2.33-35; Ef 1.20-23; Fp 2.9; Ap 3.21), de onde ele lidera seu povo rumo à bênção e à vitória (Rm 8.37; Ef 4.7-13). Ele reinará até que todos os seus inimigos sejam derrotados (1Co 15.24-26).\n\nOs propósitos do templo se cumpriram em Cristo. O próprio Cristo foi o perfeito sacrifício pelo pecado (Hb 9.11-28; 1Pe 3.18; 1Jo 2.2). Ele é o Mediador de nossas orações e intercede em nosso favor nos céus (Hb 3.1; 4.14-16; 6.20; 7.26; 8.1). Como nosso sumo sacerdote e capitão, ele conduzirá todo o seu povo à presença de Deus (Jo 14.1-4; 1Ts 4.16, 17).\n\nFinalmente, a revelação que o livro faz da bênção e do juízo divinos se concretiza em Cristo. Jesus suportou o juízo de Deus contra o pecado e libertou seu povo para seguir a vereda da obediência (Rm 3.21-26). Ele deu ao seu povo nova vida e os fez cidadãos do reino de Deus (Jo 3.16; Fp 3.20)."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 9,
-        "conteudo": "A interpretação envolve a relação de Crônicas com Samuel e Reis, suas fontes e as diferenças de seleção e ênfase entre essas obras.",
-        "paginas_fonte": [
-          4
-        ]
+        "ordem": 10,
+        "conteudo": "Tratar Crônicas como suplemento de Samuel e Reis, e não como uma obra com sua própria individualidade, tem provocado, durante muitos séculos, uma visão equivocada e subvalorizada. O extenso tratamento do templo e dos ofícios sacerdotais tem diminuído, em grande medida, o interesse reformado pela obra até bem recentemente. Muitas discussões críticas de Crônicas têm caracterizado o material não encontrado em Samuel ou Reis como distorcido ou fantasioso. Entretanto, os trabalhos arqueológicos recentes têm consubstanciado as informações do Cronista e, hoje, sua obra é apreciada de forma mais positiva."
       },
       {
         "id": "assuntos_especiais",
         "titulo": "Assuntos especiais",
         "tipo": "texto",
-        "ordem": 10,
-        "conteudo": "O material discute especialmente a relação entre os relatos paralelos e a maneira como o Cronista seleciona e reorganiza acontecimentos para sua comunidade.",
-        "paginas_fonte": [
-          4,
-          5
-        ]
+        "ordem": 11,
+        "conteudo": "Como se notou anteriormente, é óbvio que o Cronista usou Samuel e Reis (ou fontes que Samuel e Reis também usaram) na composição de seu relato da história de Israel e Judá. Ao comparar Crônicas, Samuel e Reis, os leitores encontrarão algumas poucas discrepâncias entre os diferentes relatos, especialmente quando dizem respeito ao uso de números. Com frequência, porém nem sempre, os números que o Cronista registra em sua narrativa dos eventos são mais elevados do que aqueles usados em Samuel e Reis. Por exemplo, 2 Samuel 8.3, 4 e 1 Crônicas 18.3, 4, ambos reportam-se à derrota que Davi impôs ao rei Hadadezer de Zoba. Entretanto, enquanto o relato de 2 Samuel afirma que Davi capturou 1.700 dos cavaleiros de Hadadezer, 1 Crônicas assevera que Davi capturou sete mil cavaleiros.\n\nOs estudiosos continuam a investigar as razões para tais diferenças, e ainda não se encontrou uma solução universalmente satisfatória. A evidência dos Rolos do Mar Morto pressupõe que o texto hebraico pode diferir, de forma leve, do Texto Massorético, no qual se baseia a maior parte das traduções modernas de Samuel e Reis (ver artigo teológico \"Crítica Textual ao Antigo Testamento\"). Também é possível que alguns equívocos acidentais de copistas tenham sido cometidos ao copiarem os números citados nesses textos, visto que muitos se assemelham bastante entre si no original hebraico, tornando relativa-mente simples, aos olhos do copista, confundir um número com outro. Outros estudiosos sugerem que não sabemos suficientemente como os antigos hebreus usavam números para dizer, de modo definitivo, que há diferenças entre Crônicas e os livros de Samuel e Reis.\n\nEsperamos mais evidências textuais e arqueológicas para chegar a uma conclusão sobre a questão. Neste ponto, notamos que o aparecimento de tais discrepâncias menores (que não afetam nenhuma doutrina da fé) realmente fornece ainda mais evidências de que a Bíblia é o melhor texto preservado desde a antiguidade. Outros textos antigos existem em um estado tão precário de preservação que seções grandes e vitalmente importantes estão em questão. Se existem questões textuais no que diz respeito à Bíblia, ocupam-se somente de questões periféricas que não afetam o significado atual do texto de forma significativa. Podemos, portanto, nutrir confiança de que Deus tem preservado sua Palavra para seu povo."
       },
       {
-        "id": "esboco_de_1cr",
+        "id": "esboco_de_1_cronicas",
         "titulo": "Esboço de 1 Crônicas",
         "tipo": "auto",
-        "ordem": 11,
+        "ordem": 12,
         "conteudo": [
           {
-            "titulo": "I. As genealogias do povo de Deus (1Cr 1.1–9.34)",
+            "titulo": "I. AS GENEALOGIAS DO POVO DE DEUS (1CR 1.1-9.34)",
             "itens": [
-              "A. De Adão a Israel (1.1–2.2)",
+              "A. De Adão a Israel (1.1-2.2)",
               {
-                "texto": "B. As tribos de Israel (2.3–9.1)",
+                "titulo": "B. As tribos de Israel (2.3-9.1)",
                 "itens": [
-                  "1. Judá (2.3–4.23)",
-                  "2. Simeão, Rúben e a meia-tribo de Manassés (4.24–5.26)",
+                  "1. Judá (2.3-4.23)",
+                  "2. Simeão, Rúben e a meia-tribo de Manassés (4.24-5.26)",
                   "3. Levi (cap. 6)",
                   "4. Issacar, Benjamim, Naftali, Manassés, Efraim e Aser (cap. 7)",
                   "5. Benjamim (cap. 8)",
                   "6. Sumário (9.1a)"
                 ]
               },
-              "C. Regresso dos exilados (9.1b–34)"
+              "C. Regresso dos exilados (9.1b-34)"
             ]
           },
           {
-            "titulo": "II. A monarquia unida (1Cr 9.35–2Cr 9.31)",
+            "titulo": "II. A MONARQUIA UNIDA (1CR 9.35-2CR 9.31)",
             "itens": [
               {
-                "texto": "A. Saul (9.35–10.14)",
+                "titulo": "A. Saul (9.35-10.14)",
                 "itens": [
-                  "1. Genealogia de Saul (9.35–44)",
+                  "1. Genealogia de Saul (9.35-44)",
                   "2. Morte de Saul (cap. 10)"
                 ]
               },
               {
-                "texto": "B. Davi (caps. 11–29)",
+                "titulo": "B. Davi (caps. 11 a 29)",
                 "itens": [
                   "1. Difundido o apoio por Davi (caps. 11 e 12)",
                   {
-                    "texto": "2. Reconduzindo a arca para Jerusalém (13.1–16.43)",
+                    "titulo": "2. Reconduzindo a arca para Jerusalém (13.1-16.43)",
                     "itens": [
-                      "a. Fracasso inicial (13.1–14)",
-                      "b. Sucesso na recuperação da arca (15.1–16.43)"
+                      "a. Fracasso inicial (13.1-14)",
+                      "b. Bênçãos de Davi (14.1-17)",
+                      "c. Sucesso na recuperação da arca (15.1-16.43)"
                     ]
                   },
                   {
-                    "texto": "3. Preparativos para o templo (17.1–29.30)",
+                    "titulo": "3. Preparativos para o templo (17.1-29.30)",
                     "itens": [
                       "a. Comissão para o preparo (cap. 17)",
-                      "b. Preparativos militares (caps. 18–20)",
-                      "c. Descoberta do local do templo (21.1–22.1)",
-                      "d. Comissão de construtores (22.2–19)",
-                      "e. Organização dos funcionários (caps. 23–27)"
+                      "b. Preparativos militares (caps. 18-20)",
+                      "c. Descoberta do local do templo (21.1-22.1)",
+                      "d. Comissão de construtores (22.2-19)",
+                      "e. Organização dos funcionários (caps. 23-27)",
+                      "f. Celebração nacional e comissão de Salomão (caps. 28 e 29)"
                     ]
-                  },
-                  "4. Celebração nacional e comissão de Salomão (caps. 28 e 29)"
+                  }
                 ]
               }
             ]
@@ -178,7 +153,7 @@
   "politica_traducao": "independente",
   "fonte": {
     "arquivo": "13_1 Crônicas.pdf",
-    "paginas": "Páginas impressas 590–595",
-    "criterio": "Conteúdo revisado a partir das páginas de introdução e do esboço da fonte fornecida, com correção de OCR, hifenização, pontuação e referências. A estrutura do esboço foi conferida contra a página de esboço da fonte e adaptada ao mesmo formato estrutural de Gênesis."
+    "paginas": "Páginas impressas 590 a 596",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF original de 1 Crônicas, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }
