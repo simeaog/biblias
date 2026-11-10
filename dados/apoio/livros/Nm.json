@@ -5,206 +5,140 @@
   "abreviacao": "Nm",
   "material": {
     "titulo": "Sobre Números",
-    "introducao": "Números acompanha Israel desde os preparativos para a marcha pelo deserto até os preparativos para entrar em Canaã. O livro combina censos, leis, relatos de rebelião, disciplina e preservação divina. A primeira geração fracassa em confiar em Deus e morre no deserto, mas Deus permanece fiel às suas promessas e prepara uma nova geração para a entrada na Terra Prometida.",
+    "introducao": "O livro de Números descreve os quarenta anos de peregrinação de Israel pelo deserto, narrando o censo do povo, a preparação para a conquista de Canaã e o trágico fracasso da primeira geração em confiar em Deus. Acima da rebelião humana, o livro destaca a fidelidade inabalável e o poder soberano do Deus da aliança.",
     "secoes": [
       {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "Na Bíblia hebraica, o título de Números deriva da quinta palavra inicial, bemidbar, “no deserto”, descrevendo a experiência de Israel durante quarenta anos. A tradução grega adotou arithmoi, “números”, título que descreve apenas parte do conteúdo do livro."
-      },
-      {
-        "id": "data_e_circunstancias",
-        "titulo": "Data e circunstâncias",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "Considerando Moisés como autor primário, a composição é situada depois da peregrinação pelo deserto e antes de sua morte. O livro começa com os preparativos para a marcha, descreve as experiências da jornada, o fracasso da geração do Êxodo em conquistar Canaã, os quarenta anos de espera e a preparação final para entrar na terra. O material considera provável que o livro tenha funcionado como advertência à geração nascida no deserto para perseverar na fé e na obediência."
+        "conteudo": "Na Bíblia hebraica, era costume designar cada um dos cinco livros de Moisés pela palavra inicial. Para Números, essa prática foi modificada pelo uso da quinta palavra hebraica como título. Essa palavra, traduzida como “no deserto” (do hebraico, Bemidbar), constitui uma descrição oportuna do conteúdo do livro, visto que descreve a experiência da nação durante quarenta anos no deserto. Quando a Bíblia foi traduzida para o grego, aos seus livros foram dados nomes gregos. No caso de Números, a tradução grega abandonou o excelente nome hebraico e usou uma palavra grega que significa “números” (arithmoi), que, na verdade, só descreve um pouco de seus capítulos. Esse título grego, um tanto inapropriado, estendeu-se para a edição da Bíblia inglesa [ocorrendo o mesmo com a versão em português]."
       },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "Juntamente com o restante do Pentateuco, o livro de Números tem sido tradicionalmente atribuído a Moisés. Essa conclusão tem por base o caráter unitário do Pentateuco e o testemunho claro de ambos os Testamentos, Antigo e Novo, associando esses livros a Moisés e observando seu papel nas seções compostas dentro deles (Introdução ao Pentateuco: Autor e Data). Essa autoria também é apoiada pela óbvia antiguidade do material contido no Pentateuco. O próprio Livro de Números refere-se à atividade de Moisés de registrar os eventos descritos no livro (33.2). O fato de boa parte do livro vir da pena de Moisés não descarta a possibilidade de uma atividade editorial posterior, nem a probabilidade de algumas porções terem sido acrescidas após a morte de Moisés (como, p. ex., 12.3)."
+      },
+      {
+        "id": "data_circunstancias",
+        "titulo": "Data e circunstâncias",
+        "tipo": "texto",
         "ordem": 3,
-        "conteudo": "Números é tradicionalmente atribuído a Moisés, em continuidade com o Pentateuco e com o testemunho do Antigo e do Novo Testamento. O próprio livro se refere à atividade de Moisés de registrar os acontecimentos. A possibilidade de atividade editorial posterior não é excluída, nem a possibilidade de algumas porções terem sido acrescentadas depois da morte de Moisés."
+        "conteudo": "Visto que Moisés foi o autor primário de Números, podemos datar razoavelmente a composição do livro no período após a peregrinação pelo deserto (que seguiu o êxodo) e antes da morte de Moisés, por volta de 1406 a.C. ou 1230 a.C. (Ver Introdução a Êxodo: Assuntos Especiais). O livro começa com os preparativos para a marcha pelo deserto, fala das experiências ao longo da jornada, descreve o fracasso da fé que levou a geração do êxodo de israelitas a recusar empreender a conquista da Terra Prometida, fala dos quarenta anos de espera, até que toda uma geração adulta morresse, e termina com a preparação para entrar em Canaã. Em face de seu conteúdo, é provável que Números tenha sido escrito como uma advertência à geração de israelitas nascida no deserto para que perseverasse na fé e na obediência nos aspectos que seus pais não haviam conseguido. Para as gerações futuras do povo de Deus, o livro expressaria uma mensagem semelhante."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Números integra o Pentateuco e a narrativa teológico-histórica de Gênesis a Reis. A narrativa incorpora diferentes tipos de material, incluindo listas de censo e regulamentações sobre áreas da vida religiosa, como deveres dos levitas, voto nazireu, ofertas e festas especiais. O livro pressupõe acontecimentos anteriores e antecipa acontecimentos posteriores."
-      },
-      {
-        "id": "caracteristicas_e_temas_principais",
-        "titulo": "Características e temas principais",
-        "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "Os incidentes de Números retratam a fidelidade do Deus da aliança em contraste com os fracassos da humanidade errante. Deus conduz o povo, conforta-o, lida com seus temores e fracassos e o repreende ou pune quando necessário. A infidelidade humana é reiteradamente apresentada, e até Moisés peca e não entra na Terra Prometida. O livro destaca que a salvação depende da graça de Deus e não da capacidade humana."
+        "conteudo": "Números integra os “cinco livros de Moisés”, o Pentateuco, bem como a narrativa teológico-histórica que vai de Gênesis a Reis. Esse livro pressupõe o que já foi dito e antecipa eventos que serão descritos nos livros posteriores. Como nos demais livros do Pentateuco, a narrativa global incorpora tipos distintos de material que enriquecem a descrição do que ocorre. Em Números, estão incluídas as listas do censo (caps. 1 e 26) e várias passagens que esboçam regulamentações concernentes a diferentes áreas da vida religiosa (p. ex., deveres dos levitas; voto nazireu; ofertas e festas especiais)."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
+        "ordem": 5,
+        "conteudo": "O livro de Números pode ser visto como alinhando quatro seções principais (ver, abaixo, Esboço de Números), a primeira e a última ressaltando os preparativos para entrar na terra de Canaã. Ambas as seções são introduzidas por um recenseamento dos homens que estão habilitados a lutar no exército. O segundo censo, contudo, confirma que, de todos os que foram contados na primeira ocasião, somente dois restam vivos para entrar na terra de Canaã (Josué e Calebe; ver 26.64, 65). A explicação para a morte da primeira geração vem no meio das duas seções de Números. A primeira, que é mais longa (caps. 10–21), descreve como os israelitas se rebelaram contra Deus quando confrontados pelo desafio de tomar a terra de Canaã, e como fracassaram em confiar em Deus plenamente para lhes fazer provisão no deserto. Por causa desses fracassos, a geração adulta é condenada por Deus a morrer no deserto, e toda a nação passaria quarenta anos nesse local. A segunda seção intermediária (caps. 22–25), a qual prepara uma nova geração de israelitas adultos para entrar na Terra Prometida, foca uma série de bênçãos pronunciadas por um profeta estrangeiro, Balaão. Essas bênçãos ecoam as promessas divinas dadas aos patriarcas em Gênesis, indicando que, a despeito da punição dos israelitas no deserto, Deus não abandonou seus planos para a nação.\n\nDiversos episódios em Números formam um paralelo notável com os episódios em Êxodo, recontando como os israelitas se queixaram a Deus acerca da falta de alimento ou de água no deserto. De forma interessante, enquanto em Êxodo o povo segue impune por seu fracasso em confiar em Deus, em Números Deus os pune de diferentes maneiras (compare, p. ex., Êx 16 e Nm 11). Por se haverem comprometido em ser a nação santa de Deus no Monte Sinai, os israelitas são julgados e punidos segundo os termos da aliança."
+      },
+      {
+        "id": "caracteristicas_temas_principais",
+        "titulo": "Características e temas principais",
+        "tipo": "texto",
         "ordem": 6,
-        "conteudo": "Números pode ser organizado em quatro grandes seções. A primeira e a última enfatizam os preparativos para entrar em Canaã e são introduzidas por recenseamentos de homens aptos ao serviço militar. O segundo censo mostra que, entre os contados no primeiro, somente Josué e Calebe permanecem vivos para entrar na terra. A grande seção intermediária descreve rebeliões, falta de confiança e a sentença de quarenta anos no deserto. A seção seguinte, centrada em Balaão, prepara a nova geração e mostra que Deus não abandonou seus planos para a nação. Episódios de Números também fazem paralelos com Êxodo, mas agora as falhas de confiança são acompanhadas de juízo."
+        "conteudo": "Os incidentes de Números retratam vividamente a fidelidade do Deus da aliança, a despeito dos fracassos de uma humanidade errante. Deus dirige seu povo nos preparativos para a jornada pelo deserto, conforta-o nas dificuldades, lida com seus temores e fracassos, e o repreende ou pune quando necessário. Esse perfil da fidelidade de Deus está em contraste marcante com a reiterada descrição que o livro faz da infidelidade humana e o total fracasso da humanidade em atender aos padrões de Deus por sua própria força. Os fracassos humanos são claramente retratados e contrastados com as sábias medidas do Deus sempre fiel. Até mesmo Moisés, seu grande líder, pecou e não lhe foi permitido entrar na Terra Prometida, embora a tenha visto de longe (20.6-13 e notas; 27.12-14). Isso mostra que até mesmo a melhor das pessoas ainda é pecadora e é salva unicamente pelos méritos de Cristo — a salvação só vem pela graça de Deus, por meio da fé em Cristo."
       },
       {
         "id": "teologia_de_numeros",
         "titulo": "Teologia de Números",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "Números sublinha o poder soberano de Deus na história. Apesar dos obstáculos, perigos e fracassos do povo, Deus o conduz pelo deserto. Seu poder soberano é apresentado como suficiente para qualquer eventualidade."
+        "conteudo": "Em termos gerais, o livro de Números retrata Deus de forma consistente com a maneira como os livros precedentes o têm apresentado. Números sublinha o poder soberano de Deus na história. A despeito dos obstáculos impostos, dos grandes perigos e dos fracassos de seu povo, Deus o conduz a salvo pelo deserto. Seu poder soberano é suficiente para toda e qualquer eventualidade."
       },
       {
         "id": "numeros_na_historia_mais_ampla_da_biblia",
         "titulo": "Números na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "Números contribui para a grande narrativa iniciada em Gênesis ao descrever os quarenta anos de Israel no deserto entre a aliança sinaítica e a entrada em Canaã. Esse período é apresentado como tempo de provação, no qual Deus expõe a falta de compromisso verdadeiro do povo. Paulo usa esses acontecimentos em 1 Coríntios 10.1-13 como advertência. A experiência de Israel mostra que mesmo aqueles que testemunharam grandes atos de salvação podem cair em idolatria, imoralidade, tentação de Deus e murmuração."
-      },
-      {
-        "id": "assuntos_especiais",
-        "titulo": "Assuntos especiais",
-        "tipo": "texto",
-        "ordem": 9,
-        "conteudo": "O material discute a confiabilidade e a exequibilidade dos grandes números dos censos dos capítulos 1, 2 e 26. São apresentadas críticas baseadas no tamanho aparente da população e na dificuldade de sustentar milhões de pessoas no deserto. Também são apresentadas propostas alternativas: incluir mulheres e crianças nos números, entender “mil” como unidade ou grupo militar, ou considerar os números como projeção posterior. O material rejeita essas soluções como insuficientes e sustenta que Moisés está reportando números verdadeiros, observando que a expansão da nação representa o cumprimento das promessas feitas a Abraão e aos patriarcas."
+        "conteudo": "Números contribui para a grande narrativa que começa em Gênesis, descrevendo os quarenta anos que Israel passa no deserto. Esse período entre a ratificação da aliança sinaítica e a entrada na terra de Canaã é apresentado como um tempo de provação, quando Deus expõe a falta do povo em relação a um comprometimento verdadeiro com ele. Mais tarde, o apóstolo Paulo lembra em 1 Coríntios 10.1-13 como essas coisas foram escritas a fim de vir a ser uma advertência para outros. Embora a geração adulta dos israelitas que Moisés tirou do Egito tenha testemunhado o poder de Deus para salvá-los e tenha entrado com ele, espontaneamente, numa relação pactual, ainda era excepcionalmente propensa a pecar. Nem toda a sua experiência espiritual os impediu de ser idólatras, cedendo à imoralidade sexual, testando Deus e murmurando contra ele. Como os antigos israelitas no deserto, os cristãos também podem ser tentados a pecar, a despeito da fidelidade inabalável de Deus."
       },
       {
         "id": "cristo_em_numeros",
         "titulo": "Cristo em Números",
         "tipo": "texto",
-        "ordem": 10,
-        "conteudo": "O material afirma que Números não oferece um elo único com Cristo comparável ao de Gênesis ou Êxodo, mas identifica várias conexões. Jesus é contrastado com os israelitas porque permanece fiel quando é tentado no deserto. A obra de Cristo é prefigurada pela novilha vermelha, pela rocha que fornece água e pela serpente levantada que traz vida da morte. A profecia de Balaão sobre as conquistas de Davi e aquele que derrotaria os inimigos de Israel também é relacionada ao futuro reconhecimento universal de Cristo como o maior dos reis."
+        "ordem": 9,
+        "conteudo": "Enquanto Gênesis antecipa a vinda de um futuro rei por meio do qual as nações seriam abençoadas, e Êxodo apresenta a Páscoa como um paradigma para a salvação divina, antecipando a morte de Cristo como o supremo sacrifício pascal, Números não provê nenhum elo comparável com Cristo. Não obstante, o NT conecta Jesus com o livro de Números de outras formas. Em particular, enquanto os israelitas falham quando são provados no deserto, Jesus demonstra sua fé completa em Deus quando é tentado e provado pelo Diabo (Mt 4.1-11; Lc 4.1-13). A obra de Cristo é prefigurada pela tipologia da novilha vermelha (19.2-10; Hb 9.13), a rocha que forneceu água (20.11; 1Co 10.4) e a serpente levantada que trouxe vida da morte (21.4-9; Jo 3.14, 15). A profecia específica das conquistas de Davi e a vinda daquele que derrotaria os inimigos de Israel (24.15-19) prefiguram o tempo em que Cristo — que é o consumado cumprimento da aliança davídica — será universalmente reconhecido como o maior de todos os reis."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
-        "ordem": 11,
-        "conteudo": "A interpretação de Números foi influenciada por ideias críticas sobre a composição do Pentateuco. A Hipótese Documental atribuiu boa parte do material a períodos exílicos ou pós-exílicos e o considerou reflexo de uma forma inferior de religião. O material registra que esse pensamento foi desafiado, embora ainda permaneça amplamente presente entre estudiosos críticos."
+        "ordem": 10,
+        "conteudo": "Como os outros livros do Pentateuco, a interpretação de Números, nos últimos dois séculos passados, foi pesadamente influenciada por ideias críticas no que diz respeito ao processo pelo qual o Pentateuco foi composto. Sob a “Hipótese Documental” do final do século XIX, boa parte do material em Números foi atribuída ao período exílico ou início do pós-exílico, vista como a refletir uma forma inferior de religião àquela encontrada em outras fontes do Pentateuco. Com razão, tal pensamento tem sido desafiado, porém ainda é mantido amplamente por estudiosos críticos."
       },
       {
-        "id": "esboco_de_nm",
+        "id": "assuntos_especiais",
+        "titulo": "Assuntos especiais",
+        "tipo": "texto",
+        "ordem": 11,
+        "conteudo": "Alguns comentaristas questionam a confiabilidade e a exequibilidade dos números do censo que aparecem nos capítulos 1, 2 e 26, porque são inesperadamente elevados para o mundo antigo. Por exemplo, se o número 603.550 representa apenas os do sexo masculino que estavam habilitados ao serviço militar (1.3), o número total de israelitas no deserto era superior a dois milhões, uma vez que temos de somar as mulheres e as crianças. Uma vez que teria sido muito difícil sustentar as necessidades de um grupo tão grande de pessoas, ao longo de quarenta anos, período que Israel ficou peregrinando pelo deserto, e como outros reinos antigos raramente registram exércitos desse porte, alguns estudiosos não acreditam que o censo total registrado no livro de Números seja exato.\n\nEm consequência, tem-se apresentado certa variedade de sugestões para resolver a questão desses números aparentemente exagerados. Tem-se argumentado que talvez a quantidade não seja meramente um censo militar, mas que também inclui mulheres e crianças. Assim, o número 603.550 abrangeria toda a nação. Outros têm sugerido que, na verdade, a palavra para “mil” se refere, nesses capítulos, a uma unidade ou um grupo militar. Assim, por exemplo, os números para a tribo de Rúben (1.21) seriam “quarenta e seis unidades, (totalizando) quinhentos soldados”. Então, todo o alistamento de Israel seria composto por 598 unidades, totalizando 5.550 soldados. Outros sugerem que os números do censo derivariam de um período posterior na história de Israel e que, então, teriam sido projetados retroativamente para esse episódio mais antigo; mas isso pode ser seguramente rejeitado, em face da realidade comprovada do relato bíblico.\n\nNenhuma das soluções mencionadas resolve inteiramente a dificuldade apresentada. Hoje, a única solução raramente ouvida dos críticos acerca dos números do censo é que seriam confiáveis e que o autor estaria se reportando a eles com exatidão. Não devemos ignorar a ironia aqui, pois o propósito primário de um censo é a exatidão numérica. Além disso, se o Deus onipotente estava com os israelitas no deserto, não há uma boa razão para negar que ele teria suprido as necessidades de milhões de pessoas, mesmo em condições muito difíceis. Em qualquer caso, podemos estar certos de que Moisés está se reportando a números verdadeiros. Mesmo que não tenhamos certeza se representam todos os israelitas no deserto, todos os soldados de Israel alistados ou o número total de unidades militares, a expansão dramática da nação israelita representa um claro cumprimento das promessas de Deus feitas a Abraão (Gn 15.5; 22.17; 26.4) e aos outros patriarcas (Gn 28.14; 32.12)."
+      },
+      {
+        "id": "esboco_de_numeros",
         "titulo": "Esboço de Números",
         "tipo": "auto",
         "ordem": 12,
         "conteudo": [
           {
-            "titulo": "Preparação para a jornada pelo deserto (1.1-10.10)",
+            "titulo": "I. PREPARAÇÃO PARA A JORNADA PELO DESERTO (Nm 1.1-10.10)",
             "itens": [
-              {
-                "texto": "A. Enumerados os homens em idade militar (cap. 1)"
-              },
-              {
-                "texto": "B. Posições para o arraial e a marcha designada (cap. 2)"
-              },
-              {
-                "texto": "C. Enumerados os levitas, sendo descritos seus deveres (caps. 3 e 4)"
-              },
-              {
-                "texto": "D. Remoção da contaminação do arraial (cap. 5)"
-              },
-              {
-                "texto": "E. Tipo especial de separação: o voto nazireu (6.1-21)"
-              },
-              {
-                "texto": "F. Arranjos para a vida religiosa do arraial (6.22-9.14)"
-              },
-              {
-                "texto": "G. Provisão divina para a direção e a orientação (9.15-10.10)"
-              }
+              "A. Enumerados os Homens em Idade Militar (cap. 1)",
+              "B. Posições para o Arraial e a Marcha Designada (cap. 2)",
+              "C. Enumerados os Levitas, sendo Descritos Seus Deveres (caps. 3 e 4)",
+              "D. Remoção da Contaminação do Arraial (cap. 5)",
+              "E. Tipo Especial de Separação: o Voto Nazireu (Nm 6.1-21)",
+              "F. Arranjos para a Vida Religiosa do Arraial (Nm 6.22-9.14)",
+              "G. Provisão Divina para a Direção e a Orientação (Nm 9.15-10.10)"
             ]
           },
           {
-            "titulo": "Do Sinai às planícies de Moabe (10.11-22.1)",
+            "titulo": "II. DO SINAI ÀS PLANÍCIES DE MOABE (Nm 10.11-22.1)",
             "itens": [
-              {
-                "texto": "A. O primeiro estágio da jornada (10.11-36)"
-              },
-              {
-                "texto": "B. Rebelião e indisposição (caps. 11 e 12)"
-              },
-              {
-                "texto": "C. Crise em Cades-Barneia (caps. 13 e 14)"
-              },
-              {
-                "texto": "D. Instruções rituais concernentes a ofertas (cap. 15)"
-              },
-              {
-                "texto": "E. A grande rebelião de Coré, Datã e Abirão (cap. 16)"
-              },
-              {
-                "texto": "F. A vara de Arão floresce (cap. 17)"
-              },
-              {
-                "texto": "G. Deveres e privilégios dos sacerdotes e levitas (cap. 18)"
-              },
-              {
-                "texto": "H. Arranjos para a purificação (cap. 19)"
-              }
+              "A. O Primeiro Estágio da Jornada (Nm 10.11-36)",
+              "B. Rebelião e Indisposição (caps. 11 e 12)",
+              "C. Crise em Cades-Barneia (caps. 13 e 14)",
+              "D. Instruções Rituais Concernentes a Ofertas (cap. 15)",
+              "E. A Grande Rebelião de Coré, Datã e Abirão (cap. 16)",
+              "F. A Vara de Arão Floresce (cap. 17)",
+              "G. Deveres e Privilégios dos Sacerdotes e Levitas (cap. 18)",
+              "H. Arranjos para a Purificação (cap. 19)",
+              "I. O Pecado de Moisés em Meribá (Nm 20.1-13)",
+              "J. Incidentes no Caminho para as Planícies de Moabe (Nm 20.14-22.1)"
             ]
           },
           {
-            "titulo": "O pecado de Moisés em Meribá (20.1-13)",
+            "titulo": "III. O INCIDENTE COM BALAÃO (Nm 22.2-25.18)",
             "itens": [
-              {
-                "texto": "J. Incidentes no caminho para as planícies de Moabe (20.14-22.1)"
-              }
+              "A. Citação de Balaão (Nm 22.2-40)",
+              "B. As Profecias de Balaão (Nm 22.41-24.24)",
+              "C. A Culminância do Incidente com Balaão (Nm 24.25-25.18)"
             ]
           },
           {
-            "titulo": "O incidente com Balaão (22.2-25.18)",
+            "titulo": "IV. PREPARATIVOS PARA ENTRAR EM CANAÃ (CAPS. 26-36)",
             "itens": [
-              {
-                "texto": "A. Citação de Balaão (22.2-40)"
-              },
-              {
-                "texto": "B. As profecias de Balaão (22.41-24.24)"
-              },
-              {
-                "texto": "C. A culminância do incidente com Balaão (24.25-25.18)"
-              }
-            ]
-          },
-          {
-            "titulo": "Preparativos para entrar em Canaã (caps. 26-36)",
-            "itens": [
-              {
-                "texto": "A. Enumerados os homens em idade militar (cap. 26)"
-              },
-              {
-                "texto": "B. O problema das filhas de Zelofeade (27.1-11)"
-              },
-              {
-                "texto": "C. Designação de um sucessor para Moisés (27.12-23)"
-              },
-              {
-                "texto": "D. Regulamentações para ofertas e festas especiais (caps. 28-29)"
-              },
-              {
-                "texto": "E. Regulamentações sobre votos (cap. 30)"
-              },
-              {
-                "texto": "F. Vingança contra os midianitas (cap. 31)"
-              },
-              {
-                "texto": "G. Partilha da Transjordânia (cap. 32)"
-              },
-              {
-                "texto": "H. Sumário das jornadas do Egito às planícies de Moabe (33.1-49)"
-              }
-            ]
-          },
-          {
-            "titulo": "Planos para a divisão de Canaã (33.50-34.29)",
-            "itens": [
-              {
-                "texto": "J. Cidades levitas e cidades de refúgio (cap. 35)"
-              },
-              {
-                "texto": "K. O segundo problema das filhas de Zelofeade (cap. 36)"
-              }
+              "A. Enumerados os Homens em Idade Militar (cap. 26)",
+              "B. O Problema das Filhas de Zelofeade (Nm 27.1-11)",
+              "C. Designação de um Sucessor para Moisés (Nm 27.12-23)",
+              "D. Regulamentações para Ofertas e Festas Especiais (caps. 28-29)",
+              "E. Regulamentações sobre Votos (cap. 30)",
+              "F. Vingança contra os Midianitas (cap. 31)",
+              "G. Partilha da Transjordânia (cap. 32)",
+              "H. Sumário das Jornadas do Egito às Planícies de Moabe (Nm 33.1-49)",
+              "I. Planos para a Divisão de Canaã (Nm 33.50-34.29)",
+              "J. Cidades Levitas e Cidades de Refúgio (cap. 35)",
+              "K. O Segundo Problema das Filhas de Zelofeade (cap. 36)"
             ]
           }
         ]
@@ -215,7 +149,7 @@
   "politica_traducao": "independente",
   "fonte": {
     "arquivo": "04_Números.pdf",
-    "paginas": "páginas de introdução e esboço (PDF de 5 páginas)",
-    "criterio": "Conteúdo baseado no material já consolidado do PDF de introdução do livro. A estrutura foi normalizada para coincidir com o padrão de Gênesis: o Esboço é uma seção dentro de material.secoes, com hierarquia expansível. Não foi acrescentado conteúdo externo ao material fornecido."
+    "paginas": "Páginas impressas 196 a 200",
+    "criterio": "Conteúdo extraído do arquivo PDF com leitura inteligente por colunas (primeiro a coluna esquerda, depois a coluna direita de cada página), reconstrução de parágrafos contínuos e normalização de quebras de linha com hifenização."
   }
 }

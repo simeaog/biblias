@@ -1,251 +1,155 @@
 {
-  "schema": "apoio-livro-v1",
-  "id": "Êx",
-  "nome": "Êxodo",
-  "abreviacao": "Êx",
-  "material": {
-    "titulo": "Sobre Êxodo",
-    "introducao": "O livro de Êxodo é apresentado como o segundo livro de Moisés. Seu título deriva da palavra grega exodos, que significa “saída” ou “partida”, em referência ao evento central da partida de Israel do Egito, registrada nos primeiros quinze capítulos. A narrativa começa lembrando a descida da família de Jacó para o Egito e termina com Israel junto ao Sinai, com o tabernáculo completado. O livro apresenta o cumprimento da promessa de Deus a Abraão e destaca as ações e palavras de Deus na libertação, na aliança e na habitação de Deus no meio de seu povo.",
-    "secoes": [
-      {
-        "id": "titulo",
-        "titulo": "Título",
-        "tipo": "texto",
-        "ordem": 1,
-        "conteudo": "“Êxodo” deriva da palavra grega exodos (Lc 9.31), que significa “saída” ou “partida”. O nome se relaciona ao evento central da partida de Israel do Egito, registrada nos primeiros quinze capítulos do livro."
-      },
-      {
-        "id": "autor",
-        "titulo": "Autor",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "A autoria de Êxodo é apresentada em relação à autoria do Pentateuco como um todo. As tradições judaica e cristã atribuem o livro a Moisés. O próprio livro contém referências a Moisés compondo e escrevendo materiais (Êx 17.14; 24.4; 34.28), e Jesus se refere a Êxodo como “o livro de Moisés” (Mc 7.10; 12.26). Embora o livro seja anônimo e possa conter referência a acontecimento posterior ao tempo de Moisés, o texto não apresenta razões convincentes para negar a autoria mosaica essencial."
-      },
-      {
-        "id": "data_circunstancias",
-        "titulo": "Data e circunstâncias",
-        "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "Êxodo narra o cumprimento da promessa de Deus a Abraão de fazer dele uma grande nação (Gn 12.2). A história começa com a descida da família de Jacó para o Egito (Êx 1.1-7), remetendo especialmente a Gênesis 46.8-27, e termina com Israel junto ao Sinai, onde o tabernáculo é completado. O texto relaciona os acontecimentos a um contexto histórico no qual a ascensão de José ao poder teria precedido o domínio dos hicsos no Baixo Egito. Na hipótese de uma data mais antiga para o êxodo, por volta de 1447 a.C., o faraó da opressão inicial é associado a Amósis I e o faraó do êxodo a Tutmés III; o nascimento de Moisés teria ocorrido no reinado de Amósis I. Considerando a autoria mosaica, o livro teria sido composto depois do êxodo e antes da morte de Moisés."
-      },
-      {
-        "id": "genero",
-        "titulo": "Gênero",
-        "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "Êxodo integra a narrativa contínua que vai de Gênesis a Reis, rememorando acontecimentos desde a criação do mundo até a queda de Jerusalém em 586 a.C. A narrativa se concentra nas ações e palavras de Deus e reúne diferentes formas literárias dentro de uma narrativa histórico-teológica. O cântico poético de vitória do capítulo 15 funciona como clímax do livramento de Israel em relação ao exército do faraó. O chamado Livro da Aliança (20.22–23.33) reúne casos relativos à lei, imperativos morais e instruções cultuais. As instruções para o tabernáculo e para o sacerdócio também recebem amplo espaço."
-      },
-      {
-        "id": "caracteristicas_literarias",
-        "titulo": "Características literárias",
-        "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "A narrativa de Êxodo pode ser visualizada em duas grandes metades, tendo o capítulo 18 como elo entre elas. A visita de Jetro a Moisés permite rever o que aconteceu nos capítulos anteriores e antecipa o estabelecimento de orientações legais para o povo. A preservação escrita das palavras pactuais de Deus ocupa lugar central: os Dez Mandamentos são proclamados ao povo e registrados em tábuas de pedra. O Livro da Aliança apresenta diferentes tipos de legislação, enquanto as instruções e o cumprimento da construção do tabernáculo recebem descrição detalhada."
-      },
-      {
-        "id": "caracteristicas_temas_principais",
-        "titulo": "Características e temas principais",
-        "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "Três grandes temas se destacam. Primeiro, o Senhor liberta Israel do Egito, iniciando o cumprimento da aliança feita com os pais. Segundo, Deus e Israel entram em aliança no Sinai, estabelecendo os termos da relação entre o Deus santo e seu povo. Terceiro, a aliança culmina na habitação de Deus no meio do povo por meio do tabernáculo. Esses temas manifestam a graça divina: Deus resgata seu povo da servidão, revela sua natureza no Sinai e condescende em habitar entre o povo. A narrativa também destaca a santidade e a graça de Deus e sua disposição de perdoar seus servos desobedientes."
-      },
-      {
-        "id": "moises_mediador",
-        "titulo": "Moisés como mediador",
-        "tipo": "texto",
-        "ordem": 7,
-        "conteudo": "Moisés exerce função crucial na narrativa como mediador entre Deus e o povo. Como servo escolhido por Deus, ele atua no juízo contra o Egito e na libertação de Israel, recebe a revelação no Sinai, conduz e pastoreia o povo no deserto, pleiteia em favor dele e é instrumento por meio do qual Deus fornece alimento e água. Sua função na história da redenção é apresentada como preparação para Cristo, o Mediador da nova aliança."
-      },
-      {
-        "id": "exodo_historia_ampla_biblia",
-        "titulo": "Êxodo na história mais ampla da Bíblia",
-        "tipo": "texto",
-        "ordem": 8,
-        "conteudo": "Além de registrar a libertação histórica de Israel da escravidão, Êxodo é apresentado como uma importante ilustração da obra salvadora de Deus. O Deus Salvador redime seu povo dos poderes do mal, julga esses poderes e reivindica Israel como seu filho primogênito, uma nação santa de sacerdotes e reis entre os quais ele habita. A Páscoa ocupa lugar central nesse processo, pois os primogênitos israelitas são resgatados da morte e separados para pertencer a Deus. O padrão de vitória divina sobre os inimigos seguido pelo estabelecimento da habitação divina é relacionado, no texto, ao primeiro e ao segundo adventos de Cristo."
-      },
-      {
-        "id": "teologia_exodo",
-        "titulo": "Teologia de Êxodo",
-        "tipo": "texto",
-        "ordem": 9,
-        "conteudo": "O livramento dos israelitas da escravidão no Egito é apresentado como motivo para Deus se fazer conhecido. Êxodo descreve a revelação de Deus por meio de acontecimentos sobrenaturais e de palavras faladas, mostrando a passagem de uma percepção de Deus como divindade remota para a realidade de Deus habitando no meio do seu povo. A narrativa contrasta essa revelação com a recusa do faraó em conhecer o Senhor. A rebelião do povo, inclusive o bezerro de ouro, ressalta a tensão entre a infidelidade humana e a graça divina. A revelação do caráter de Deus como compassivo, clemente, longânimo e grande em misericórdia e fidelidade é apresentada como declaração central de sua natureza. A santidade de Deus também é refletida nas obrigações pactuais e no tabernáculo, cuja construção destaca a importância de Deus habitar entre os israelitas."
-      },
-      {
-        "id": "cristo_em_exodo",
-        "titulo": "Cristo em Êxodo",
-        "tipo": "texto",
-        "ordem": 10,
-        "conteudo": "A morte sacrificial de Jesus no período da Páscoa é apresentada como chave para compreender como Êxodo prepara para a vinda de Cristo. O livramento de Israel da servidão no Egito antecipa o livramento maior da servidão ao pecado realizado por meio da morte de Cristo, o Cordeiro de Deus e sacrifício pascal. O maná é relacionado a Cristo como o pão da vida, e a aspersão do sangue da aliança encontra correspondência no sangue de Cristo. O “êxodo” de Jesus em Jerusalém (Lc 9.31) é apresentado como realização da salvação do verdadeiro povo de Deus. A nova aliança reúne em Cristo os gentios e o povo de Deus."
-      },
-      {
-        "id": "historia_interpretacao",
-        "titulo": "História de interpretação",
-        "tipo": "texto",
-        "ordem": 11,
-        "conteudo": "A interpretação de Êxodo nos dois últimos séculos foi significativamente influenciada por metodologias que procuram reconstruir fontes literárias hipotéticas usadas na composição do texto. O texto observa que Moisés pode ter utilizado escritos e fontes orais, como o Livro da Aliança, mas critica tentativas de desconstrução baseadas em pressuposições sobre o desenvolvimento da religião israelita e em critérios considerados insuficientes para distinguir fontes. Segundo essa abordagem, a mensagem de Êxodo como obra unificada pode ser perdida quando essas hipóteses substituem a forma recebida do livro. O debate sobre a historicidade do êxodo também influencia a interpretação, assim como a importância do êxodo e de Moisés no cristianismo africano e afro-americano."
-      },
-      {
-        "id": "assuntos_especiais",
-        "titulo": "Assuntos especiais",
-        "tipo": "texto",
-        "ordem": 12,
-        "conteudo": "A data e a rota do êxodo são apresentadas como temas de considerável controvérsia. A cronologia bíblica situa o êxodo aproximadamente 480 anos antes do reinado de Salomão, o que aponta para cerca de 1447 a.C.; essa data é relacionada também a Juízes 11.26 e Êxodo 12.40-41. Uma proposta mais tardia utiliza o nome “Ramsés” e associa o êxodo a Ramsés II, em torno de 1270 a.C., mas o texto observa que descobertas posteriores e uma nova avaliação da destruição de Jericó enfraqueceram essa tese.\n\nQuanto à rota, o texto apresenta Ramsés como ponto inicial provável, com Qantir (Tell el-Dab’a) como localização favorecida. A rota passa por Sucote e pela região de Baal-Zefom, Migdol e Pi-Hairote, havendo diferentes propostas para o local da travessia. São discutidos o caminho da terra dos filisteus, o caminho de Sur e a possibilidade de o livramento pelo mar ter ocorrido em uma das regiões de lagos ao norte do golfo de Suez. Na península do Sinai, o texto menciona possíveis identificações de Mara, Elim e outros locais, e considera a localização tradicional do monte Sinai como Jebel Musa. Refidim é apresentado como local de confronto com os amalequitas e como último acampamento no deserto antes do monte Sinai."
-      },
-      {
-        "id": "esboco_de_êx",
-        "titulo": "Esboço de Êxodo",
-        "tipo": "auto",
-        "ordem": 13,
-        "conteudo": [
-          {
-            "titulo": "Deus liberta seu povo: o êxodo (1.1–15.21)",
-            "itens": [
-              {
-                "texto": "A. Deus, em sua fidelidade, se lembra de Israel (caps. 1 e 2)"
-              },
-              {
-                "texto": "B. Deus chama Moisés para libertar Israel (3.1–4.26)"
-              },
-              {
-                "texto": "C. Faraó rejeita a ordem de Deus (4.27–7.13)"
-              },
-              {
-                "texto": "D. Os sinais e prodígios de Deus contra o Egito (7.14–10.29)"
-              },
-              {
-                "texto": "E. Deus liberta Israel do Egito durante a Páscoa (11.1–13.16)"
-              },
-              {
-                "texto": "F. Deus salva Israel no mar Vermelho (13.17–15.21)"
-              }
-            ]
-          },
-          {
-            "titulo": "Deus conduz seu povo: provação no deserto (15.22–18.27)",
-            "itens": [
-              {
-                "texto": "A. De Mara a Elim: Deus traz cura (15.22–27)"
-              },
-              {
-                "texto": "B. Deserto de Sim: Deus provê maná (cap. 16)"
-              },
-              {
-                "texto": "C. Refidim: Deus provê água (17.1–7)"
-              },
-              {
-                "texto": "D. Refidim: Deus provê proteção (17.8–16)"
-              },
-              {
-                "texto": "E. Monte de Deus: Deus provê organização (cap. 18)"
-              }
-            ]
-          },
-          {
-            "titulo": "Deus e Israel entram em aliança (caps. 19–24)",
-            "itens": [
-              {
-                "texto": "A. Preparações para a aliança (cap. 19)"
-              },
-              {
-                "texto": "B. Deus proclama as principais obrigações pactuais (cap. 20)"
-              },
-              {
-                "texto": "C. Através de Moisés, Deus dá obrigações pactuais adicionais (caps. 21–23)"
-              },
-              {
-                "texto": "D. Israel ratifica a aliança (cap. 24)"
-              }
-            ]
-          },
-          {
-            "titulo": "Deus revela o modelo do tabernáculo e seu ministério (caps. 25–31)",
-            "itens": [
-              {
-                "texto": "A. O tabernáculo, átrios e utensílios (caps. 25–27)"
-              },
-              {
-                "texto": "B. Instruções para o ministério sacerdotal (caps. 28–30)"
-              },
-              {
-                "texto": "C. Artesãos para a construção do tabernáculo (31.1–11)"
-              },
-              {
-                "texto": "D. Sinal da aliança e as tábuas (31.12–18)"
-              }
-            ]
-          },
-          {
-            "titulo": "Rebelião, juízo e restauração de Israel (caps. 32–34)",
-            "itens": [
-              {
-                "texto": "A. Culto idólatra de Israel (32.1–6)"
-              },
-              {
-                "texto": "B. Israel julgado por idolatria (32.7–29)"
-              },
-              {
-                "texto": "C. Deus ameaça subtrair sua presença de Israel (32.30–34.9)"
-              },
-              {
-                "texto": "D. Deus renova sua aliança (34.10–35)"
-              }
-            ]
-          },
-          {
-            "titulo": "Artesãos de Israel preparam o tabernáculo (caps. 35–39)",
-            "itens": [
-              {
-                "texto": "A. Israel admoestado a se lembrar do sábado (35.1–3)"
-              },
-              {
-                "texto": "B. Ofertas espontâneas para o tabernáculo (35.4–29)"
-              },
-              {
-                "texto": "C. Artífices chamados a começar a obra (35.30–36.17)"
-              },
-              {
-                "texto": "D. Feitas as cortinas, as tábuas e os véus (36.8–38)"
-              },
-              {
-                "texto": "E. Os utensílios são elaborados (37.1–38.8)"
-              },
-              {
-                "texto": "F. Feito o pátio (38.9–20)"
-              },
-              {
-                "texto": "G. Sumário: registro do tesouro (38.21–31)"
-              },
-              {
-                "texto": "H. As vestes sacerdotais são tecidas (39.1–31)"
-              }
-            ]
-          },
-          {
-            "titulo": "A obra completada (39.32–43)"
-          },
-          {
-            "titulo": "Artesãos de Israel edificam o tabernáculo (cap. 40)",
-            "itens": [
-              {
-                "texto": "A. Instruções para a construção do tabernáculo (40.1–16)"
-              },
-              {
-                "texto": "B. Moisés supervisiona a construção do tabernáculo (40.17–33)"
-              },
-              {
-                "texto": "C. A glória de Deus enche o tabernáculo (40.34–38)"
-              }
-            ]
-          }
+    "schema": "apoio-livro-v1",
+    "id": "Êx",
+    "nome": "Êxodo",
+    "abreviacao": "Êx",
+    "material": {
+        "titulo": "Sobre Êxodo",
+        "introducao": "Êxodo é o segundo livro de Moisés e relata o evento central da libertação do povo de Israel do Egito, a ratificação da aliança no Sinai com a entrega da Lei e a construção do tabernáculo, onde Deus condescende em habitar entre o seu povo.",
+        "secoes": [{
+                "id": "titulo",
+                "titulo": "Título",
+                "tipo": "texto",
+                "ordem": 1,
+                "conteudo": "O título do livro, “Êxodo”, deriva da palavra grega exodos (Lc 9.31), que significa “saída” ou “partida”. O livro recebe esse nome do evento central da partida de Israel do Egito, registrada nos primeiros quinze capítulos do livro."
+            }, {
+                "id": "autor",
+                "titulo": "Autor",
+                "tipo": "texto",
+                "ordem": 2,
+                "conteudo": "Não é possível separar a autoria de Êxodo da autoria do Pentateuco como um todo (ver Introdução ao Pentateuco). Ambas as tradições, judaica e cristã, atribuem a Moisés essa autoria. Ao longo do livro, existem referências explícitas a Moisés compondo os materiais (Êx 24.4; 34.28) ou ao fato de Moisés tê-los escrito (Êx 17.14). Além disso, Jesus, ao se referir a Êxodo, chama-o “o livro de Moisés” (Mc 12.26; Mc 7.10). Embora o livro em si seja anônimo, e embora pareça haver referência a um evento logo após o tempo de Moisés (Êx 16.35-36), não há razões convincentes para se negar a autoria mosaica essencial desse livro."
+            }, {
+                "id": "data_circunstancias",
+                "titulo": "Data e circunstâncias",
+                "tipo": "texto",
+                "ordem": 3,
+                "conteudo": "Êxodo traz a história do cumprimento por Deus da promessa feita a Abraão, no sentido de abençoá-lo e fazer dele uma grande nação (Gn 12.2). A história começa aludindo à descida da família de Jacó para o Egito (1.1-7), remetendo a Gênesis, especialmente Gênesis 46.8-27. O livro conclui com Israel junto ao Sinai, onde o tabernáculo é completado. Embora já tenham sido propostos diversos pontos de vista acerca da data do êxodo (ver Assuntos Especiais, mais adiante), os eventos cobertos no livro podem ser plausivelmente colocados contra o pano de fundo histórico que se segue.\n\nÉ provável que a ascensão de José ao poder (1.5) preceda o domínio dos hicsos semitas do Baixo Egito (por volta de 1700-1550 a.C.). A referência em 1.8 a um novo rei “que não conhecera a José” provavelmente diz respeito à expulsão dos hicsos pela décima oitava dinastia, fundada por Amósis I (1550-1525 a.C.). Se o êxodo for datado por volta de 1447 a.C. (ver Assuntos Especiais), é provável que o faraó da opressão inicial tenha sido Amósis I (1550-1525 a.C.), enquanto o faraó do êxodo foi Tutmés III (1479-1425 a.C.). O nascimento de Moisés teria ocorrido no reinado de Amósis I (1550-1525 a.C.). Comprovada a autoria de Êxodo por Moisés, devemos datar o livro após o evento do êxodo (por volta de 1447 a.C.) e antes de sua morte, por volta de 1406 a.C."
+            }, {
+                "id": "genero",
+                "titulo": "Gênero",
+                "tipo": "texto",
+                "ordem": 4,
+                "conteudo": "Êxodo integra a narrativa contínua que vai de Gênesis a Reis, rememorando eventos desde a criação do mundo até a queda da cidade de Jerusalém, em 586 a.C. Diferente das histórias modernas, que focalizam somente as atividades do povo, essa narrativa destaca as ações e palavras de Deus. Êxodo tem, em seu interior, uma variedade de formas literárias que têm sido cuidadosamente integradas na narrativa histórico-teológica. O cântico poético de vitória do capítulo 15 forma o clímax para o livramento dos israelitas em relação ao exército de faraó. O Livro da Aliança (20.22-23.33) contém uma variedade de temas: casos relativos à lei (21.1-22.20); imperativos morais (22.21-23.9); instruções cúlticas (23.10-19). As instruções para a construção do tabernáculo e a designação de sacerdotes são ressaltadas com detalhes consideráveis (caps. 25-31), assim como o é também o relato da construção da tenda (caps. 35-40). A inclusão de tipos tão distintos de temas no livro de Êxodo enriquece grandemente a percepção do leitor acerca dos eventos."
+            }, {
+                "id": "caracteristicas_literarias",
+                "titulo": "Características literárias",
+                "tipo": "texto",
+                "ordem": 5,
+                "conteudo": "A narrativa registrada no livro de Êxodo pode ser visualizada como se encaixando nas duas metades com o capítulo 18, formando um elo que liga uma à outra. A visita de Jetro a Moisés junto ao monte Sinai provê a oportunidade de inspecionar o que acontecera a Moisés e aos israelitas nos capítulos precedentes a Êxodo. A resposta de Jetro provê um sumário apropriado para tudo o que havia ocorrido: “Bendito seja O SENHOR, que vos livrou da mão dos egípcios e da mão de Faraó; agora, sei que o SENHOR é maior que todos os deuses, porque livrou este povo de debaixo da mão dos egípcios, quando agiram arrogantemente contra o povo” (Êx 18.10, 11). Após uma retrospectiva, o restante do capítulo 18 fica na expectativa, antecipando como Deus proverá, no Livro da Aliança, juízos legais que orientem os envolvidos na resolução de disputas (Êx 21.1-22.20). Ao estabelecer níveis diferentes de juízes dentro de Israel, o povo será ajudado a cumprir sua vocação, no sentido de ser uma nação santa.\n\nA preservação escrita das palavras pactuais de Deus tem importância central para a teologia do livro de Êxodo. Deus não só declara os Dez Mandamentos ao seu povo reunido ao pé do Sinai, como também os grava em tábuas de pedra: “escritas pelo dedo de Deus” (31.18; cf. 32.15, 16; 34.1, 28). Os termos da aliança eram mais específicos pelo assim chamado “Livro da Aliança” (20.22-23.33), as palavras de Deus escritas por Moisés, o mediador da aliança de Deus (24.4, 7; cf. 34.27).\n\nOs elementos da aliança sinaítica assemelham-se, tanto na forma como no conteúdo, ao formato de um tratado político do segundo milênio a.C., particularmente os tratados políticos hititas. Esses tratados incluíam um preâmbulo (20.2), obrigações gerais (20.3-17), obrigações específicas (21.1-23.33) e ratificação (24.1-11). Uma cópia do tratado às vezes era preservada nos santuários das partes (p. ex., as duas tábuas de 31.18). Além disso, com frequência observa-se a semelhança de conteúdo entre os processos legais dos capítulos 21.1-22.20 e os códigos do antigo Oriente Próximo (em especial o Código de Hamurabi, da Babilônia, por volta de 1750 a.C.). No entanto, os casos relativos à lei do livro de Êxodo atribuem maior relevo ao valor da vida humana do que à propriedade."
+            }, {
+                "id": "caracteristicas_temas_principais",
+                "titulo": "Características e temas principais",
+                "tipo": "texto",
+                "ordem": 6,
+                "conteudo": "Diversos temas maiores têm destaque no livro de Êxodo. Primeiro, ele nos conta como o Senhor libertou o povo de Israel do Egito para iniciar o cumprimento da aliança feita com seus pais. O segundo elemento maior do livro é a ratificação da aliança no Sinai, a qual especificou os termos da relação entre o santo Deus e seu povo. O terceiro tema resulta dos dois primeiros e é sua consumação: o restabelecimento da habitação de Deus com o povo. Cada um desses temas envolve um triunfo da graça divina: Deus resgata poderosamente seu povo da servidão no Egito, sua estrondosa autorrevelação junto ao Sinai e sua graciosa condescendência em habitar entre o povo errante no tabernáculo. O desenrolar desses temas também revela a santidade e a graça do Senhor em suas obrigações pactuais e em sua disposição de perdoar seus servos desobedientes.\n\nCrucial à narrativa é a função de Moisés como mediador entre Deus e o povo. Como servo escolhido de Deus, Moisés é o mediador do juízo contra o Egito e é aquele por intermédio de quem Deus liberta Israel. Através de Moisés, Deus concede sua revelação no Sinai. Moisés também pastoreia o povo ao longo do deserto até a Terra Prometida. Ele pleiteia pelo povo e é aquele através de quem o Senhor fornece alimento e água. A função de Moisés na história da redenção prepara sobremaneira para Cristo, o Mediador da nova aliança (Dt 18.15). A revelação que Moisés recebe do nome de Deus, “compassivo, clemente e longânimo e grande em misericórdia e fidelidade” (34.6), justifica a construção do tabernáculo, mas essa descrição do Senhor será revelada mais plenamente no Cristo encarnado, o servo maior do Senhor, que habitará entre seu povo (Jo 1.14, 17; Hb 3.1-6).\n\nAs obrigações pactuais de Deus (os Dez Mandamentos como princípios gerais e o Livro da Aliança contendo casos relativos à lei, imperativos morais e instruções litúrgicas) revelam sua natureza santa e demandam santidade do povo entre o qual Deus habitará. As instruções para a edificação do tabernáculo (caps. 25-31) e o registro do respectivo cumprimento (caps. 35-40) sublinham a importância da vinda de Deus para habitar entre os israelitas. A presença de Deus em seu meio os distinguia de todas as demais nações."
+            }, {
+                "id": "teologia_de_exodo",
+                "titulo": "Teologia de Êxodo",
+                "tipo": "texto",
+                "ordem": 7,
+                "conteudo": "O triunfante livramento dos israelitas da escravidão no Egito é o motivo de Deus se fazer conhecido. Ele não vem meramente para resgatar seu povo, mas principalmente para lhe revelar algo de sua natureza gloriosa. Do início ao fim, Êxodo descreve como Deus revela a si mesmo através, respectivamente, de seus poderosos eventos sobrenaturais e de suas palavras faladas. Em Êxodo, Deus deixa de ser percebido como uma divindade remota para se tornar um Deus que habita no meio de seu povo. A experiência dos israelitas é contrastada com a de Faraó, que se recusa a conhecer o Senhor: “Quem é O SENHOR para que lhe ouça eu a voz e deixe ir a Israel? Não conheço o SENHOR, nem deixarei ir a Israel” (5.2).\n\nNão obstante, embora os israelitas tivessem todos os motivos para crer em Deus, por tudo o que haviam testemunhado no Egito e no deserto, ainda assim foram rebeldes. Tendo pactuado adorar a Deus de forma exclusiva, logo apostataram, fabricando um bezerro de ouro. Embora merecessem a punição recebida, Deus exibiu sua graça, revelando a Moisés algo de sua extraordinária natureza: “SENHOR, SENHOR Deus compassivo, clemente e longânimo e grande em misericórdia e fidelidade; que guarda a misericórdia em mil gerações, que perdoa a iniquidade, a transgressão e o pecado, ainda que não inocente o culpado, e visita a iniquidade dos pais nos filhos e nos filhos dos filhos, até à terceira e quarta geração” (34.6, 7). A própria descrição de Deus formaria uma das declarações centrais de sua natureza no AT.\n\nDepois de exibir o poder extraordinário do Senhor ao resgatar os israelitas do rei do Egito e, mais tarde, destruir seu exército, o livro de Êxodo sublinha a majestade de Deus na descrição do tabernáculo, que é construído para o uso dele. Construído a partir dos mais excelentes materiais, inclusive com considerável quantidade de ouro, o tabernáculo se destinava a honrar o Rei dos reis."
+            }, {
+                "id": "exodo_na_historia_mais_ampla_da_biblia",
+                "titulo": "Êxodo na história mais ampla da Bíblia",
+                "tipo": "texto",
+                "ordem": 8,
+                "conteudo": "Além da descrição dos eventos históricos pelos quais Israel é libertado da escravidão para se tornar o povo de Deus, Êxodo também fornece uma importante ilustração da obra salvífica de Deus. O Deus salvador redime seu povo escolhido dos poderes do mal, julga esses poderes e reivindica esse povo como seu filho primogênito, uma nação santa de sacerdotes e reis, entre os quais ele habita. No cerne desse processo, encontra-se a Páscoa, um evento por meio do qual os primogênitos masculinos dos israelitas são resgatados da morte e separados como santos para pertencer a Deus. Deus é não só o Salvador de seu povo, como também o convida a aceitá-lo como seu Rei por intermédio da aliança no monte Sinai. O padrão da vitória divina sobre os inimigos, seguido pelo estabelecimento do lugar de habitação divina, é reiterado no primeiro e no segundo adventos de Cristo (p. ex., Ef 2.14-22; Ap 20.11-22.5)."
+            }, {
+                "id": "cristo_em_exodo",
+                "titulo": "Cristo em Êxodo",
+                "tipo": "texto",
+                "ordem": 9,
+                "conteudo": "A morte sacrificial de Jesus na época da Páscoa fornece a chave para a compreensão de como o livro de Êxodo prepara para a vinda de Jesus Cristo. O livramento dos israelitas, proporcionado por Deus, em relação à servidão opressiva no Egito antecipa o livramento maior da servidão ao pecado, que é concretizado por meio da morte de Cristo, o Cordeiro de Deus, nosso sacrifício pascal (Jo 1.29; 1Co 5.7). Como “o pão da vida” (Jo 6.35, 48), Jesus é o novo maná que desce do céu. Agora, a aspersão do sangue proveniente do sacrifício de animais é substituída pelo sangue de Cristo (24.8; Mt 26.27, 28; Hb 12.24; 1Pe 1.2). Seu “êxodo” em Jerusalém (Lc 9.31) concretiza a salvação do verdadeiro povo de Deus. O povo de Deus da nova aliança se une a Jesus Cristo, em quem os gentios se tornam o povo de Deus, membros da comunidade de Israel e concidadãos dos santos do AT (19.5, 6; Ef 2.11-19). Portanto, o significado pleno da descrição de Israel em Êxodo pode agora aplicar-se às igrejas dos gentios (1Pe 2.9, 10)."
+            }, {
+                "id": "historia_de_interpretacao",
+                "titulo": "História de interpretação",
+                "tipo": "texto",
+                "ordem": 10,
+                "conteudo": "Nos dois últimos séculos, a interpretação de Êxodo foi significativamente influenciada por metodologias que focaram a atenção nas fontes literárias hipotéticas usadas para compor o texto atual. Embora Moisés talvez tenha usado vários escritos e fontes orais na composição de Êxodo (p. ex., “o Livro da Aliança”, em Êx 21-24), alguns estudiosos tentam desconstruir essas fontes, confiando, em geral, em pressuposições infundadas sobre como a religião israelita se desenvolveu e dependendo de critérios insatisfatórios para distinguir uma fonte de outra. Como resultado, a mensagem de Êxodo, como uma obra unificada, tem sido grandemente ignorada ou substituída por ideias que falham em fazer justiça àquilo que Êxodo diz em sua forma recebida. Além disso, o debate acerca da historicidade do evento do êxodo tem impactado significativamente a maneira como muitos estudiosos abordam o texto (ver a seguir, Assuntos Especiais). Igualmente significativo é o papel proeminente do evento do êxodo e de Moisés como o libertador no cristianismo africano e afro-americano."
+            }, {
+                "id": "assuntos_especiais",
+                "titulo": "Assuntos especiais",
+                "tipo": "texto",
+                "ordem": 11,
+                "conteudo": "A data e a rota do êxodo têm sido temas de considerável controvérsia. A cronologia bíblica data o evento do êxodo em 480 anos antes do reinado de Salomão (1Rs 6.1). Isso situaria o evento mais ou menos em 1447 a.C. Essa data primitiva é consistente com Juízes 11.26, o qual declara que se haviam passado trezentos anos desde que Israel entrara em Canaã. A data por volta de 1447 a.C. também é endossada por 12.40, 41, em que 430 anos é o tempo de permanência de Israel no Egito (uma referência a Gn 15.13). Assim, o Faraó do êxodo seria Tutmés III (1479-1425). A morte de Moisés teria ocorrido algum tempo depois, em 1406 a.C.\n\nOs defensores de uma data mais tardia apelam para o nome “Ramsés” (ou “Ramessés”, Gn 47.11) como uma das cidades-celeiros edificadas pelo trabalho israelita (1.11). Ramsés II (1279-1213 a.C.) é tido como o Faraó do êxodo, e a data aproximada é 1270 a.C., com a morte de Moisés ocorrendo em torno de 1230 a.C. Isso foi mantido como mais consistente com a arqueologia das cidades destruídas na Palestina e com a ausência de uma colonização mais antiga na Transjordânia (a região ao oriente do rio Jordão e do mar Morto). No entanto, descobertas mais recentes na Transjordânia e uma nova avaliação da destruição de Jericó têm enfraquecido a tese de datação tardia.\n\nA rota do êxodo começou em Ramsés (ou Ramessés). A localização exata é tema de considerável debate, ainda que a Qantir moderna seja o local mais favorecido (Tell el-Dab'a). Dali, os hebreus viajaram pelo sul para Sucote (13.20). Aqui, aparentemente impossibilitados de se mover, os hebreus voltaram rumo ao norte (14.2). Três lugares são mencionados: Baal-Zefom, Migdol e Pi-Hairote, aparentemente situados ao ocidente do lago Ballah. Havia três rotas possíveis de escape israelita. O “caminho da terra dos filisteus” (13.17) conectava Egito e Canaã pela rota costeira, intensamente fortificada. Uma segunda rota, o caminho de Sur, começava nas proximidades do uádi Tumilat, na área do Delta, atravessando Cades-Barneia e bifurcando para Canaã. A fronteira egípcia pelo muro de Sur pode ter sido o principal obstáculo para essa rota. Ao guiar o povo do sul para o sudeste do Sinai, o Senhor não só os conduziu até o monte que designara a Moisés, como também os distanciou de um contato posterior com os egípcios. O livramento pelo mar pode ter sido por um dos lagos amargos ao norte do golfo de Suez.\n\nA península do Sinai forma um triângulo de terra medindo aproximadamente 241 quilômetros pelo topo e 420 quilômetros em longitude. Dois braços do mar Vermelho, o golfo de Suez e o golfo de Aqaba, o costeiam. Os hebreus seguiram do sul até a costa do Sinai. É bem possível identificar as águas amargas de Mara (15.22-25) com Bir el-Mura ou 'Ayun Musa (“nascentes de Moisés”). Tem-se tentado identificar Elim, com suas muitas nascentes e árvores, com o uádi Gharandel, o acampamento nas imediações do mar Vermelho (Nm 33.10). O deserto de Sim percorre a margem ocidental do platô do Sinai, nas imediações do golfo de Suez. Se for correta a localização tradicional do monte Sinai como Jebel Musa, Israel teria, então, se voltado para o interior por uma série de vales, rumo a Jebel Musa, viajando pelo deserto de Refidim, onde, então, lutaram contra os amalequitas (17.8-16). Refidim foi o último acampamento no deserto do Sinai diante do Monte Santo. Em seguida, prosseguiram rumo ao monte Sinai (cap. 19), onde foram convidados por Deus para entrar numa relação pactual especial com ele, resultando em que ele, graciosamente, condescendeu em habitar em seu meio, no tabernáculo recém-construído e riquissimamente ornamentado."
+            }, {
+                "id": "esboco_de_exodo",
+                "titulo": "Esboço de Êxodo",
+                "tipo": "auto",
+                "ordem": 12,
+                "conteudo": [{
+                        "titulo": "I. DEUS LIBERTA SEU POVO: O ÊXODO (Êx 1.1-15.21)",
+                        "itens": [
+                            "A. Deus, em sua fidelidade, se lembra de Israel (caps. 1 e 2)",
+                            "B. Deus chama Moisés para libertar Israel (Êx 3.1-4.26)",
+                            "C. Faraó rejeita a ordem de Deus (Êx 4.27-7.13)",
+                            "D. Os sinais e prodígios de Deus contra o Egito (Êx 7.14-10.29)",
+                            "E. Deus liberta Israel do Egito durante a Páscoa (Êx 11.1-13.16)",
+                            "F. Deus salva Israel no mar Vermelho (Êx 13.17-15.21)"
+                        ]
+                    }, {
+                        "titulo": "II. DEUS CONDUZ SEU POVO: PROVAÇÃO NO DESERTO (Êx 15.22-18.27)",
+                        "itens": [
+                            "A. De Mara a Elim: Deus traz cura (Êx 15.22-27)",
+                            "B. Deserto de Sim: Deus provê maná (cap. 16)",
+                            "C. Refidim: Deus provê água (Êx 17.1-7)",
+                            "D. Refidim: Deus provê proteção (Êx 17.8-16)",
+                            "E. Monte de Deus: Deus provê organização (cap. 18)"
+                        ]
+                    }, {
+                        "titulo": "III. DEUS E ISRAEL ENTRAM EM ALIANÇA (Êx CAPS. 19-24)",
+                        "itens": [
+                            "A. Preparações para a aliança (cap. 19)",
+                            "B. Deus proclama as principais obrigações pactuais (cap. 20)",
+                            "C. Através de Moisés, Deus dá obrigações pactuais adicionais (caps. 21-23)",
+                            "D. Israel ratifica a aliança (cap. 24)"
+                        ]
+                    }, {
+                        "titulo": "IV. DEUS REVELA O MODELO DO TABERNÁCULO E SEU MINISTÉRIO (Êx CAPS. 25-31)",
+                        "itens": [
+                            "A. O tabernáculo, átrios e utensílios (caps. 25-27)",
+                            "B. Instruções para o ministério sacerdotal (caps. 28-30)",
+                            "C. Artesãos para a construção do tabernáculo (Êx 31.1-11)",
+                            "D. Sinal da aliança e as tábuas (Êx 31.12-18)"
+                        ]
+                    }, {
+                        "titulo": "V. REBELIÃO, JUÍZO E RESTAURAÇÃO DE ISRAEL (Êx CAPS. 32-34)",
+                        "itens": [
+                            "A. Culto idólatra de Israel (Êx 32.1-6)",
+                            "B. Israel julgado por idolatria (Êx 32.7-29)",
+                            "C. Deus ameaça subtrair sua presença de Israel (Êx 32.30-34.9)",
+                            "D. Deus renova sua aliança (Êx 34.10-35)"
+                        ]
+                    }, {
+                        "titulo": "VI. ARTESÃOS DE ISRAEL PREPARAM O TABERNÁCULO (Êx CAPS. 35-39)",
+                        "itens": [
+                            "A. Israel admoestado a se lembrar do sábado (Êx 35.1-3)",
+                            "B. Ofertas espontâneas para o tabernáculo (Êx 35.4-29)",
+                            "C. Artífices chamados a começar a obra (Êx 35.30-36.17)",
+                            "D. Feitos as cortinas, as tábuas e os véus (Êx 36.8-38)",
+                            "E. Os utensílios são elaborados (Êx 37.1-38.8)",
+                            "F. Feito o pátio (Êx 38.9-20)",
+                            "G. Sumário: registro do tesouro (Êx 38.21-31)",
+                            "H. As vestes sacerdotais são tecidas (Êx 39.1-31)",
+                            "I. A obra completada (Êx 39.32-43)"
+                        ]
+                    }, {
+                        "titulo": "VII. ARTESÃOS DE ISRAEL EDIFICAM O TABERNÁCULO (Êx CAP. 40)",
+                        "itens": [
+                            "A. Instruções para a construção do tabernáculo (Êx 40.1-16)",
+                            "B. Moisés supervisiona a construção do tabernáculo (Êx 40.17-33)",
+                            "C. A glória de Deus enche o tabernáculo (Êx 40.34-38)"
+                        ]
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  },
-  "referencias_inline": true,
-  "politica_traducao": "independente",
-  "fonte": {
-    "arquivo": "02_Êxodo.pdf",
-    "paginas": "93–98",
-    "criterio": "Conteúdo baseado no material já consolidado do PDF de introdução do livro. A estrutura foi normalizada para coincidir com o padrão de Gênesis: o Esboço é uma seção dentro de material.secoes, com hierarquia expansível. Não foi acrescentado conteúdo externo ao material fornecido."
-  }
+    },
+    "referencias_inline": true,
+    "politica_traducao": "independente",
+    "fonte": {
+        "arquivo": "02_Êxodo.pdf",
+        "paginas": "Páginas impressas 93 a 98",
+        "criterio": "Conteúdo extraído do arquivo PDF com leitura inteligente por colunas (primeiro a coluna esquerda, depois a coluna direita de cada página), reconstrução de parágrafos contínuos e normalização de quebras de linha com hifenização."
+    }
 }

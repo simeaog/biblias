@@ -5,186 +5,159 @@
   "abreviacao": "Js",
   "material": {
     "titulo": "Sobre Josué",
-    "introducao": "Josué narra a entrada de Israel na Terra Prometida, a conquista e a distribuição da terra e a renovação da aliança em Siquém. O livro apresenta o cumprimento das promessas do Senhor sob a liderança de Josué e termina com sua morte e a de Eleazar.",
+    "introducao": "O livro de Josué narra a vitoriosa entrada e conquista da Terra Prometida sob a liderança do sucessor de Moisés, testemunhando a fidelidade de Deus em cumprir Suas promessas feitas aos patriarcas e enfatizando a importância da fé e da obediência para tomar e manter a posse da terra.",
     "secoes": [
       {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O livro recebeu seu título do nome de seu personagem central, Josué, sucessor de Moisés e membro da tribo de Efraim.",
-        "paginas_fonte": [
-          1
-        ]
+        "conteudo": "O livro deriva seu título do nome de seu personagem central, Josué. Como o sucessor de Moisés, Josué era da tribo de Efraim, que, desde o tempo de José até o profeta Samuel, era a tribo associada à liderança global da nação de Israel."
       },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "O autor do livro é desconhecido. A tradição judaica chegou a atribuí-lo ao próprio Josué, enquanto outras propostas consideram uma composição posterior. A forma final apresenta forte relação com a perspectiva teológica de Deuteronômio.",
-        "paginas_fonte": [
-          1
-        ]
+        "conteudo": "O autor do livro de Josué é desconhecido, e nosso conhecimento de quando esse livro foi escrito depende da interpretação de certas pistas dentro dele. As teorias se alinham desde o ponto de vista de que, em grande parte, o livro foi composto pelo próprio Josué (a tradição do Talmude judaico) até a hipótese crítica moderna de que foi escrito por alguém muito tempo depois de os judeus terem voltado do exílio babilônico. Do ponto de vista da forma final do livro, é provável que um homem ou um grupo ao qual se confiou o esboço teológico de Deuteronômio tenha dado a Josué sua forma canônica. Ver, a seguir, Data e Circunstâncias, bem como a Introdução aos Livros Históricos."
       },
       {
-        "id": "data_e_circunstancias",
+        "id": "data_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "O livro não informa claramente sua data. Referências a acontecimentos conhecidos até determinado momento sugerem composição depois da morte de Josué. A análise do texto também considera referências geográficas e políticas para situar sua composição entre a época de Josué e o período anterior à monarquia.",
-        "paginas_fonte": [
-          1,
-          2
-        ]
+        "conteudo": "Não fica claro quando o livro de Josué foi composto. Os comentários dentro do próprio livro, tais como notícias de que algo é verdadeiro \"até este dia\", sugerem que muitas de suas fontes vieram de uma época entre a morte de Josué (24.29-31) e a época de Samuel e Saul (em torno de 1050 a.C.). Visto que Sidom ainda é considerada uma cidade primordial da Fenícia (11.8; 19.28), há quem date o livro não muito depois de 1200 a.C.; após esse tempo, Tiro conquistou supremacia. Até então, Jerusalém permanece não conquistada (15.63), uma proeza que acompanha Davi (2Sm 5.6-10), e Gezer ainda não está sob o domínio de Salomão (16.10; 1Rs 9.16).\n\nFeitas as contas, parece que o livro foi escrito após a morte de Josué, porém antes de Saul (em torno de 1050 a.C.) e de seus sucessores. Não há dúvida de que o autor escreveu para narrar o espantoso cumprimento das promessas do Senhor sob Josué. Reconhecendo, ao mesmo tempo a necessidade de consolidar a conquista israelita da terra, o autor escreveu na esperança de surgir outro servo fiel que, como Josué, pudesse guiar os israelitas à vitória sobre cada inimigo ainda na terra."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Josué pertence aos livros históricos e tem como gênero primário a narrativa histórica. Como história de conquista, apresenta também características de relatos militares.",
-        "paginas_fonte": [
-          2
-        ]
+        "conteudo": "Na Bíblia em português, Josué é agrupado aos livros históricos, reflexo de seu gênero primário, a narrativa histórica. Como uma história de conquista, o livro também reflete aspectos de história militar ou de relatos militares, tais como os trazidos no capítulo 13."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "O tema da terra atravessa o livro, desde a promessa até sua conquista e distribuição. A narrativa é organizada em grandes movimentos: entrada na terra, conquista, alocação da terra e epílogo. A distinção entre terra prometida e terra efetivamente ocupada ajuda a estruturar o relato.",
-        "paginas_fonte": [
-          2,
-          3
-        ]
+        "conteudo": "O tema da terra - ou, talvez com mais exatidão, tomar posse da terra domina o livro. Os relatos vívidos da travessia dos israelitas do rio Jordão sob a liderança de Josué e da captura da cidade murada de Jericó dominam os capítulos iniciais e lançam uma extensa sombra sobre tudo que é registrado. Essa ênfase na posse da terra é ainda mais destacada quando olhamos para a estrutura global do livro, envolvendo amplamente duas partes. Os capítulos 1 a 12 descrevem o processo pelo qual se supera a oposição à conquista israelita da terra. Isso culmina, no capítulo 12, com uma lista dos 31 reis derrotados por Josué. Doravante, nos capítulos 13 a 21, apresentam-se detalhes sobre como a terra deve ser alocada entre as nove tribos e meia que cruzaram o Jordão. As tribos de Rúben, Gade e metade de Manassés já estavam assentadas no lado oriental do Jordão antes da conquista."
       },
       {
-        "id": "caracteristicas_e_temas_principais",
+        "id": "caracteristicas_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "A principal ideia teológica é o cumprimento da promessa da terra aos descendentes de Abraão. O povo deve permanecer fiel à aliança para desfrutar da terra. O livro também ressalta a santidade de Deus, a necessidade de obediência e o perigo da apostasia.",
-        "paginas_fonte": [
-          3
-        ]
+        "conteudo": "A principal ideia teológica em Josué é a promessa de Deus, no sentido de dar aos descendentes de Abraão, o povo de Israel, a terra de Canaã (Gn 12.7). Esse aspecto das várias promessas divinas feitas a Abraão, Isaque e Jacó (Gn 12.1-3) domina de Gênesis a Deuteronômio. Josué testifica a fidelidade de Deus a essa promessa, relembrando a entrada vitoriosa dos israelitas na terra (2.1-5.12), a expropriação de alguns dos habitantes da terra (5.13-12.24; cf. Gn 15.13-16 e notas) e a alocação do território às doze tribos, com um pouco dele já tomado durante a vida de Josué e outras porções ainda a ser possuídas (caps. 13-21). A sentença final do corpo principal do livro (21.45) resume o tema global: \"Nenhuma promessa falhou de todas as boas palavras que o SENHOR falara à casa de Israel; tudo se cumpriu\" (21.45; ver 23.14). Essa ousada afirmação da plena fidelidade de Deus é acompanhada do reconhecimento de que muito do que foi prometido ainda não se realizara (p. ex., 13.1; 23.5) e que o completo desfrute da promessa cumprida permanece condicionado à obediência do povo (p. ex., 23.12, 13, 15, 16). A Terra Prometida não seria ocupada até os reinados de Davi e Salomão, pois, no tempo de Moisés, Deus reconheceu que os israelitas não tomariam posse de toda a terra em curto período de tempo (cf. Dt 7.22).\n\nDe particular importância é a distinção extraída entre aquelas tribos que já haviam ocupado o território em Canaã e aquelas cuja terra alocada ainda restava ser tomada. Dá se atenção, em primeiro lugar, à tribo de Judá (caps. 14-15), a qual é retratada como a mais ativa e bem-sucedida em possuir território em Canaã. Vale observar, em particular, a lista bem detalhada de locações mencionadas em conexão com Judá. Isso antecipa o principal papel que, mais tarde, Judá desempenharia na história de Israel como a tribo da qual advém a monarquia davídica. As tribos de Efraim e Manassés são catalogadas a seguir (caps. 16-17), sugerindo que assumem o segundo lugar na ocupação da Terra Prometida. De uma forma significativa, embora Josué pertença à tribo de Efraim e a liderança esteja claramente associada a essa tribo, os efraimitas se sentem bem mais temerosos quanto à tentativa de expulsar os poderosos cananeus, que se encontram equipados com carros (17.15-18). Quanto às demais tribos, são distribuídas por lotes de terra (caps. 18-19). Esse é o território que ainda resta ser tomado, o que significa que essas tribos foram menos ativas em se estabelecer dentro da terra de Canaã. Um aspecto interessante é que o território alocado pela tribo de Simeão inscreve-se nas fronteiras da terra já tomada pela tribo de Judá. Enquanto algumas tribos são rápidas em tomar a terra, Deus assegura que a cada tribo seja dada uma alocação proporcional de terra."
       },
       {
         "id": "teologia_de_josue",
         "titulo": "Teologia de Josué",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "A fidelidade de Deus sustenta o cumprimento de suas promessas, enquanto a infidelidade humana traz consequências. A posse da terra está ligada à obediência pactual e à confiança no Senhor.",
-        "paginas_fonte": [
-          3
-        ]
+        "conteudo": "Além da ênfase na fidelidade de Deus às suas promessas e em seu poder de vencer os inimigos de Israel, o livro também focaliza a importância da fé em Deus e a necessidade de viver segundo os padrões morais que ele ordena (Dt 28). Por meio da obediência a Deus, Josué tem sucesso como líder de Israel. Enquanto os habitantes de Jericó que resistem ao desafio de Deus são punidos, a família cananeia de Raabe sobrevive em razão de sua fé; sua disposição em ajudar os espias israelitas a escapar da cidade é testemunho de sua convicção de que o Deus de Israel é o único Deus verdadeiro. Enquanto Raabe sobrevive, no tocante ao povo de Gibeom (cap. 9), Acã, o judaíta, cai sob o severo juízo de Deus por haver escondido do despojo de Jericó aquilo que fora devotado a Deus. Essas experiências contrastantes sublinham a importância de confiar no Senhor e obedecer a ele a fé, e não a etnia, finalmente determina o lugar que alguém ocupa no seio do povo de Deus."
       },
       {
         "id": "josue_na_historia_mais_ampla_da_biblia",
         "titulo": "Josué na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "Josué conecta as promessas patriarcais e o Êxodo à posse de Canaã. Os acontecimentos do livro também são usados posteriormente como testemunho da fidelidade de Deus e como advertência contra a desobediência.",
-        "paginas_fonte": [
-          3
-        ]
+        "conteudo": "Josué deve ser entendido em relação com o Pentateuco, cujo conteúdo se encontra resumido em 24.2-10. Esses versículos narram a história dos descendentes de Abraão, Isaque e Jacó desde o tempo em que a promessa foi dada a Abraão pela primeira vez (Gn 12.1-3) até a morte de Moisés (Dt 34), o qual guiou os israelitas desde o Egito até a terra que Deus lhes prometera. Mas o Pentateuco termina com o povo ainda fora da Terra Prometida. Além disso, a geração dos israelitas que saiu do Egito só conseguiu chegar à margem de Canaã, e caiu sob o juízo de Deus por causa de sua rebelião no deserto (Nm 13; 14; Dt 1.26-36) a morte de Moisés, inclusive, é compreendida nesses termos (Dt 1.37; 32.48-52). Nesse contexto, Josué fala da fidelidade do Senhor às suas promessas feitas aos patriarcas, a despeito da rebelião da primeira geração de israelitas e do juízo subsequente de Deus.\n\nJosué deve ser entendido ainda em relação à história de Israel na terra, registrada nos livros de Josué a 2 Reis. A história é trágica no que diz respeito a Israel. A nação deixou totalmente de seguir o Senhor, e todos foram destruídos pelo juízo de Deus na forma de ataques sucessivos feitos pelos assírios no século VIII a.C. (2Rs 17) e pelos babilônios no século VI a.C. (2Rs 25). O livro de Josué confirma, desde o início, que a extinção de Israel não pode ser atribuída a um fracasso do poder ou da fidelidade de Deus, pois, sob Josué, os israelitas foram bem-sucedidos na primeira fase da conquista da Terra Prometida.\n\nO NT fornece uma terceira perspectiva sob a qual o livro deve ser entendido. A promessa de Deus, para a qual o livro de Josué aponta, é o evangelho pregado antecipadamente a Abraão (Gl 3.8; Gn 12.1-3). Essa promessa foi mantida por Deus durante o tempo de Josué e, por fim, se cumpre em Jesus Cristo (At 13.32, 33; Hb 4.8-11). A fidelidade de Deus proclamada em Josué é sua fidelidade ao evangelho de Cristo. A entrada na terra e sua ocupação prefiguram a vida dos cristãos em Cristo, a ser consumada com a entrada e a vida do povo de Deus no novo céu e na nova terra (Ap 21)."
       },
       {
         "id": "cristo_em_josue",
         "titulo": "Cristo em Josué",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "O material relaciona Josué e Jesus pelo papel de conduzir o povo de Deus à herança prometida. A entrada na Terra Prometida e o descanso oferecido ao povo são apresentados como elementos que encontram desenvolvimento posterior na obra de Cristo.",
-        "paginas_fonte": [
-          3
-        ]
+        "conteudo": "Josué é um dos poucos líderes do AT retratados positivamente. Como aquele que guiou Israel na Terra Prometida, obedecendo fielmente a Deus, no AT Josué fornece um modelo do que se pode esperar do Messias. Com boa razão, o nome grego \"Jesus\" é equivalente ao nome hebraico \"Josué\", que significa \"o Senhor é a salvação\". Como Josué, Jesus luta contra as forças opostas a Deus (p. ex., Mt 12.24-29), e os que o seguem continuam nessa luta contra os poderes do mal (p. ex., Ef 6.10-18). Como guerreiro de Israel, Josué é um tipo de Cristo como o guerreiro do Senhor. Além disso, o capítulo 5 registra uma aparição pré-encarnada de Cristo como \"o príncipe do exército do Senhor\" (v. 14)."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 10,
-        "conteudo": "A interpretação do livro envolve questões sobre sua relação com Deuteronômio, sua historicidade, a natureza da conquista e a leitura teológica dos relatos de guerra.",
-        "paginas_fonte": [
-          3
-        ]
+        "conteudo": "Com o advento da erudição crítica, duas questões têm dominado o estudo de Josué. Em primeiro lugar, têm-se expressado dúvidas sobre a historicidade do relato da conquista de Canaã por Israel (ver Assuntos Especiais, a seguir). Em segundo lugar, têm surgido dúvidas sobre a moralidade do que ocorreu quando os israelitas desapossaram aqueles que já viviam na terra de Canaã.\n\nDe grande importância, a dádiva da terra de Canaã aos descendentes de Abraão está associada à punição divina de seus atuais habitantes. Como Gênesis 15.16 revela, os israelitas tiveram apenas de tomar posse da terra quando o pecado dos amorreus atingiu sua medida máxima. De forma semelhante, Levítico 18.25 afirma que a expulsão dos descendentes de Canaã se deve ao fato de haverem contaminado a terra. De forma muito interessante, Levítico usa a imagem da terra vomitando seus habitantes, um tema que associa a possessão da terra ao comportamento justo, e a perda da terra ao comportamento imoral. A luz disso, o ato de Israel tomar Canaã é um lembrete vívido da realidade do juízo divino sobre aqueles que, por suas ações injustas, perdem o direito à sua terra."
       },
       {
         "id": "assuntos_especiais",
         "titulo": "Assuntos especiais",
         "tipo": "texto",
         "ordem": 11,
-        "conteudo": "Entre os assuntos discutidos estão a historicidade da conquista, a destruição das cidades cananeias, a arqueologia e a questão de como os relatos de conquista devem ser relacionados à justiça e à santidade de Deus.",
-        "paginas_fonte": [
-          3,
-          4
-        ]
+        "conteudo": "Qualquer tentativa de relacionar os relatos do livro de Josué aos dados advindos das investigações arqueológicas tem de se ajustar, respectivamente, à natureza do registro bíblico e à evidência arqueológica. Todo escrito histórico é seletivo no que registra e interpretativo na maneira como apresenta seu material. A história bíblica tem interesse particular nos propósitos de Deus. A evidência arqueológica costuma ser ambígua e mais ilustrativa do que específica na informação que produz.\n\nA tarefa de correlacionar os dados arqueológicos e o registro bíblico é bem ilustrada pelo debate sobre Josué. Entre os que aceitam a representação bíblica dos israelitas entrando na terra de Canaã, vindos de fora, e se estabelecendo nela, há basicamente duas correntes de pensamento. Uma crê que há evidência arqueológica convincente (tal como a destruição das cidades cananeias e os padrões de ocupação) para uma bem-sucedida conquista israelita de Canaã mais ou menos em 1250 a.C. A outra argumenta que as evidências arqueológicas (como, por exemplo, a de Jericó), juntamente com textos como 1 Reis 6.1, Juízes 11.26 e Êxodo 12.40, indicam que a conquista deve ser datada mais cedo (em torno de 1400 a.C.). As dificuldades surgem das incertezas sobre a identificação de locais modernos com locais bíblicos, das disputas sobre a datação de materiais, da cronologia bíblica e de como determinado dado deve ser interpretado. A pesquisa sequencial continua a trazer à luz novas evidências. Como a defesa de uma tardia conquista de Canaã no décimo terceiro século se tornou mais fraca, novas descobertas em Tell el-Dab'a (a Ramessés bíblica) no Egito endossam uma data no décimo quinto século.\n\nA conquista israelita de Canaã e a destruição associada daqueles que já ocupavam a terra levantam sérias dúvidas no que diz respeito à moralidade do que ocorreu. Esse processo de purificação étnica foi sancionado por Deus? Enquanto essa crítica costuma ser suscitada pelos que desejam minar a autoridade da Bíblia, os relatos bíblicos acerca do grande número de pessoas sendo entregues à morte não podem ser simplesmente ignorados. Em atenção à relevância desses eventos, vários fatores têm de ser levados em conta. Primeiro, tais eventos estão inevitavelmente associados à pecaminosidade humana e apresentados como atos de juízo sancionados por Deus. Como o \"Juiz de toda a terra\" (Gn 18.25), somente Deus tem a autoridade de determinar o destino de uma pessoa. Quando vem a punição, devemos crer que se deve à seriedade do pecado humano. Embora Deus possa exibir considerável tolerância em relação aos malfeitos das pessoas, tal comportamento será finalmente punido. Em Gênesis 15.16, Deus faz alusão a isso no que diz respeito aos habitantes de Canaã. Segundo, a punição que Deus inflige aos cananeus e a outros grupos não é motivada por conceitos raciais ou étnicos, mas, sim, por considerações morais universais. As ações de Deus não são unilaterais. Números 25.9 registra como 24 mil israelitas morreram na praga que Deus enviou em decorrência do culto que prestaram a Baal de Peor. Anteriormente, 23 mil israelitas haviam sido mortos no monte Sinai por cometerem imoralidade sexual enquanto cultuavam o bezerro de ouro (1Co 10.8; cf. Ex 32.6, 35). Aliás, de toda a geração adulta que Deus libertou da servidão egípcia, somente Josué e Calebe sobreviveram para entrar na terra de Canaã (Nm 26.65). Ao longo da história da nação israelita, Deus levantou nações para trazer destruição ao seu próprio povo, quando promoviam injustiça e imoralidade. Embora os leitores modernos se sintam frustrados diante da severidade das punições divinas refletidas nos primeiros livros da Bíblia, essas são inteiramente consistentes com as advertências de Deus dirigidas ao povo de Israel (ver Lv 18.24-29)."
       },
       {
-        "id": "esboco_de_js",
+        "id": "esboco_de_josue",
         "titulo": "Esboço de Josué",
         "tipo": "auto",
         "ordem": 12,
         "conteudo": [
           {
-            "titulo": "I. Prólogo: a promessa e suas consequências (cap. 1)"
+            "titulo": "I. PRÓLOGO: A PROMESSA E SUAS CONSEQUÊNCIAS (CAP. 1)",
+            "itens": []
           },
           {
-            "titulo": "II. Entrada na terra (2.1–5.12)",
+            "titulo": "II. ENTRADA NA TERRA (2.1-5.12)",
             "itens": [
               "A. A promessa e uma prostituta cananeia (cap. 2)",
               "B. A promessa e a travessia do Jordão (caps. 3 e 4)",
-              "C. A promessa evocada na terra (5.1–12)"
+              "C. A promessa evocada na terra (5.1-12)"
             ]
           },
           {
-            "titulo": "III. Conquistando a terra (5.13–12.24)",
+            "titulo": "III. CONQUISTANDO A TERRA (5.13-12.24)",
             "itens": [
-              "A. O comandante do exército do Senhor (5.13–15)",
+              "A. O comandante do Exército do Senhor (5.13-15)",
               "B. Perecendo e sobrevivendo sob a promessa: Jericó e Raabe (cap. 6)",
               "C. Abusando da promessa: Acã (cap. 7)",
-              "D. Vitória prometida: Ai (8.1–29)",
-              "E. Temor cananeu e fracasso israelita: tratado e maldição de Gibeom (cap. 9)",
-              "F. Conquista do Sul (cap. 10)",
-              "G. Conquista do Norte (cap. 11)",
-              "H. Lista dos reis derrotados e território conquistado (cap. 12)"
+              "D. Vitória prometida: Ai (8.1-29)",
+              "E. O povo da promessa (8.30-35)",
+              "F. Temor cananeu e fracasso israelita: tratado e maldição de Gibeom (cap. 9)",
+              "G. Conquista do Sul (cap. 10)",
+              "H. Conquista do Norte (cap. 11)",
+              "I. Lista dos reis derrotados e território conquistado (cap. 12)"
             ]
           },
           {
-            "titulo": "IV. Alocando a terra prometida (13.1–21.45)",
+            "titulo": "IV. ALOCANDO A TERRA PROMETIDA (13.1-21.45)",
             "itens": [
-              "A. Ordem de alocar a terra (13.1–7)",
-              "B. Leste do Jordão: a terra dada a Rúben, Gade e à meia tribo de Manassés (13.8–33)",
+              "A. Ordem de alocar a terra (13.1-7)",
+              "B. Leste do Jordão: a terra dada a Rúben, a Gade e à meia tribo de Manassés (13.8-33)",
               {
-                "texto": "C. Oeste do Jordão (14.1–19.51)",
+                "texto": "C. Oeste do Jordão (14.1-19.51)",
                 "itens": [
-                  "1. Introdução (14.1–5)",
-                  "2. Calebe: exemplo de fiel obediência (14.6–15)",
+                  "1. Introdução (14.1-5)",
+                  "2. Calebe: exemplo de fiel obediência (14.6-15)",
                   "3. Judá (cap. 15)",
-                  "4. Efraim e Manassés (16.1–17.18)",
-                  "5. As outras tribos e Josué (18.1–19.51)"
+                  "4. Efraim e Manassés (16.1-17.18)",
+                  "5. As outras tribos e Josué (18.1-19.51)"
                 ]
               },
-              "D. Justiça na Terra Prometida: cidades de refúgio (20.1–9)",
+              "D. Justiça na Terra Prometida: cidades de refúgio (20.1-9)",
               {
-                "texto": "E. Cidades para os levitas (21.1–42)",
+                "texto": "E. Cidades para os levitas (21.1-42)",
                 "itens": [
-                  "1. O pedido dos levitas (21.1–3)",
-                  "2. A alocação das cidades (21.4–8)",
-                  "3. Listas das cidades (21.9–40)",
-                  "4. Total das cidades para os levitas (21.41–42)"
+                  "1. O pedido dos levitas (21.1-3)",
+                  "2. A alocação das cidades (21.4-8)",
+                  {
+                    "texto": "3. Listas das cidades (21.9-40)",
+                    "itens": [
+                      "a. Cidades para os coatitas (21.9-26)",
+                      "b. Cidades para os gersonitas (21.27-33)",
+                      "c. Cidades para os meraritas (21.34-40)"
+                    ]
+                  },
+                  "4. Total das cidades para os levitas (21.41, 42)"
                 ]
               },
-              "F. Sumário conclusivo (21.43–45)"
+              "F. Sumário conclusivo (21.43-45)"
             ]
           },
           {
-            "titulo": "V. Epílogo: as bases da vida de Israel (22.1–24.33)",
+            "titulo": "V. EPÍLOGO: (22.1-24.33)",
             "itens": [
               "A. Unidade de Israel: suas bases e sua vulnerabilidade (cap. 22)",
               "B. As demandas da fidelidade de Deus (cap. 23)",
-              "C. Decisão: a escolha de Israel em Siquém (24.1–28)",
-              "D. O fim de uma era: as mortes de Josué e Eleazar (24.29–33)"
+              "C. Decisão: a escolha de Israel em Siquém (24.1-28)",
+              "D. O fim de uma era: as mortes de Josué e Eleazar (24.29-33)"
             ]
           }
         ]
@@ -194,8 +167,8 @@
   "referencias_inline": true,
   "politica_traducao": "independente",
   "fonte": {
-    "arquivo": "06_Josué.pdf",
-    "paginas": "Páginas impressas 308–312",
-    "criterio": "Conteúdo revisado a partir das páginas de introdução e do esboço da fonte fornecida, com correção de OCR, hifenização, pontuação e referências. A estrutura do esboço foi conferida contra a página de esboço da fonte e adaptada ao mesmo formato estrutural de Gênesis."
+    "arquivo": "06_Josué_2.pdf",
+    "paginas": "Páginas impressas 308 a 312",
+    "criterio": "Conteúdo extraído integralmente do arquivo PDF de Josué, preservando rigorosamente o texto exato de todas as seções e a estrutura do esboço."
   }
 }
