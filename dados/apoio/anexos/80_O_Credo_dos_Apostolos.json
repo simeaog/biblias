@@ -1,0 +1,68 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "anexo_80",
+  "numero": 80,
+  "titulo": "O Credo dos Apóstolos",
+  "autor": "Desconhecido (Tradição Histórica)",
+  "arquivo": "80_O Credo dos Apóstolos.pdf",
+  "material": {
+    "titulo": "O Credo Apostólico",
+    "introducao": "O Credo Apostólico é uma das confissões de fé mais antigas e fundamentais da cristandade, resumindo as doutrinas centrais acerca da Trindade, da obra redentora de Cristo, da Igreja e da vida eterna.",
+    "secoes": [
+      {
+        "id": "primeiro_artigo_deus_pai",
+        "titulo": "Primeiro Artigo: Deus Pai, Criador",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "Creio em Deus Pai, Todo-Poderoso,\nCriador do céu e da terra;"
+      },
+      {
+        "id": "segundo_artigo_jesus_cristo",
+        "titulo": "Segundo Artigo: Jesus Cristo, nosso Salvador",
+        "tipo": "texto",
+        "ordem": 2,
+        "conteudo": "E em Jesus Cristo, seu único Filho, nosso Senhor,\nQue foi concebido pelo poder do Espírito Santo,\nNasceu da virgem Maria;\nPadeceu sob Pôncio Pilatos,\nFoi crucificado, morto e sepultado;\nDesceu à mansão dos mortos;\nRessuscitou ao terceiro dia;\nSubiu aos céus;\nEstá sentado à direita de Deus Pai Todo-Poderoso;\nDe onde há de vir a julgar os vivos e os mortos."
+      },
+      {
+        "id": "terceiro_artigo_espirito_santo_e_igreja",
+        "titulo": "Terceiro Artigo: O Espírito Santo, a Igreja e a Vida Eterna",
+        "tipo": "texto",
+        "ordem": 3,
+        "conteudo": "Creio no Espírito Santo;\nNa santa igreja católica [cite: 1]; na comunhão dos santos;\nNa remissão dos pecados;\nNa ressurreição da carne;\nNa vida eterna. Amém.\n\n1 O termo \"católica\" refere-se à igreja universal."
+      },
+      {
+        "id": "esboco_do_conteudo",
+        "titulo": "Esboço do Anexo",
+        "tipo": "auto",
+        "ordem": 4,
+        "conteudo": [
+          {
+            "titulo": "I. O Primeiro Artigo: Deus Pai",
+            "itens": [
+              "A. A confissão em Deus Pai Todo-Poderoso",
+              "B. A criação do céu e da terra"
+            ]
+          },
+          {
+            "titulo": "II. O Segundo Artigo: Jesus Cristo",
+            "itens": [
+              "A. A filiação divina e senhorio de Jesus Cristo",
+              "B. A encarnação (Concepção pelo Espírito Santo e nascimento da virgem Maria)",
+              "C. A paixão, crucificação, morte, sepultamento e descensão à mansão dos mortos",
+              "D. A exaltação (Ressurreição ao terceiro dia, ascensão e assentamento à direita do Pai)",
+              "E. O retorno futuro para julgar os vivos e os mortos"
+            ]
+          },
+          {
+            "titulo": "III. O Terceiro Artigo: O Espírito Santo e a Igreja",
+            "itens": [
+              "A. A fé no Espírito Santo",
+              "B. A santa igreja católica (universal) e a comunhão dos santos",
+              "C. A remissão dos pecados, a ressurreição da carne e a vida eterna (Amém)"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

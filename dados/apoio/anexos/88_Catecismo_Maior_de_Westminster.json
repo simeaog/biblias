@@ -1,0 +1,1046 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "catecismo_maior_westminster",
+  "numero": 88,
+  "titulo": "O Catecismo Maior de Westminster",
+  "autor": "Assembleia de Westminster",
+  "arquivo": "88_Catecismo Maior de Westminster.pdf",
+  "material": {
+    "titulo": "O Catecismo Maior de Westminster",
+    "introducao": "O Catecismo Maior de Westminster (1647) é um dos padrões confessionais reformados mais abrangentes e detalhados já produzidos, estruturado em 196 perguntas e respostas que abordam profundamente a doutrina cristã, a fé, a teologia bíblica e os deveres práticos exigidos por Deus.",
+    "secoes": [
+      {
+        "id": "parte_1_introducao_geral",
+        "titulo": "Introdução: O Fim Supremo do Homem e a Regra de Fé (Questões 1-5)",
+        "tipo": "texto",
+        "ordem": 1,
+        "perguntas": [
+          {
+            "numero": 1,
+            "pergunta": "Qual é o fim supremo e principal do homem?",
+            "resposta": "O fim supremo e principal do homem é glorificar a Deus e gozá-lo para sempre."
+          },
+          {
+            "numero": 2,
+            "pergunta": "De onde se infere que há um Deus?",
+            "resposta": "A própria luz da natureza no espírito do homem e as obras de Deus claramente manifestam que existe um Deus; porém, só a sua Palavra e o seu Espírito o revelam de modo suficiente e eficaz aos homens para a sua salvação."
+          },
+          {
+            "numero": 3,
+            "pergunta": "O que é a Palavra de Deus?",
+            "resposta": "As Escrituras Sagradas, o Antigo e o Novo Testamento, são a Palavra de Deus, a única regra de fé e prática."
+          },
+          {
+            "numero": 4,
+            "pergunta": "Como se demonstra que as Escrituras são a Palavra de Deus?",
+            "resposta": "Demonstra-se que as Escrituras são a Palavra de Deus pela majestade e a pureza do seu conteúdo, pela harmonia de todas as suas partes e pelo propósito do seu conjunto, que é dar toda a glória a Deus; pela sua luz e pelo poder que possuem para convencer e converter os pecadores e para edificar e confortar os crentes para a salvação. O Espírito de Deus, porém, dando testemunho, pelas Escrituras e juntamente com elas no coração do homem, é o único capaz de persuadi-lo completamente de que elas são realmente a Palavra de Deus."
+          },
+          {
+            "numero": 5,
+            "pergunta": "O que as Escrituras ensinam principalmente?",
+            "resposta": "As Escrituras ensinam principalmente aquilo em que o homem deve crer acerca de Deus e o dever que Deus requer do homem."
+          }
+        ]
+      },
+      {
+        "id": "parte_2_aquilo_em_que_o_homem_deve_crer_sobre_deus",
+        "titulo": "Aquilo em que o Homem deve Crer sobre Deus (Questões 6-196)",
+        "tipo": "texto",
+        "ordem": 2,
+        "subsecoes": [
+          {
+            "id": "secao_a_deus_e_seus_decretos",
+            "titulo": "Deus, seus Atributos, a Trindade e seus Decretos (Questões 6-19)",
+            "perguntas": [
+              {
+                "numero": 6,
+                "pergunta": "O que revelam as Escrituras acerca de Deus?",
+                "resposta": "As Escrituras revelam o que Deus é, quantas pessoas há na Divindade, seus decretos e como ele os executa."
+              },
+              {
+                "numero": 7,
+                "pergunta": "Quem é Deus?",
+                "resposta": "Deus é espírito, em si e por si, infinito em seu ser, glória, bem-aventurança e perfeição; todo-suficiente, eterno, imutável, insondável, onipresente, infinito em poder, sabedoria, santidade, justiça, misericórdia e clemência, longânimo e cheio de bondade e verdade."
+              },
+              {
+                "numero": 8,
+                "pergunta": "Há mais de um Deus?",
+                "resposta": "Há um só Deus, o Deus vivo e verdadeiro."
+              },
+              {
+                "numero": 9,
+                "pergunta": "Quantas pessoas há na Divindade?",
+                "resposta": "Há três pessoas na Divindade: o Pai, o Filho e o Espírito Santo; essas três pessoas são um só Deus verdadeiro e eterno, da mesma substância, iguais em poder e glória, embora distintas por suas propriedades pessoais."
+              },
+              {
+                "numero": 10,
+                "pergunta": "Quais são as propriedades pessoais das três pessoas da Divindade?",
+                "resposta": "O Pai gerou o Filho, o Filho foi gerado pelo Pai, e o Espírito Santo procede do Pai e do Filho, desde toda a eternidade."
+              },
+              {
+                "numero": 11,
+                "pergunta": "De onde se infere que o Filho e o Espírito Santo são Deus, iguais ao Pai?",
+                "resposta": "As Escrituras revelam que o Filho e o Espírito Santo são Deus igualmente com o Pai, atribuindo-lhes os mesmos nomes, atributos, obras e culto que só a Deus pertencem."
+              },
+              {
+                "numero": 12,
+                "pergunta": "O que são os decretos de Deus?",
+                "resposta": "Os decretos de Deus são os atos sábios, livres e santos do conselho da sua vontade, pelos quais, desde toda a eternidade, ele, para a sua própria glória, imutavelmente predestinou tudo o que acontece, especialmente com referência aos anjos e aos homens."
+              },
+              {
+                "numero": 13,
+                "pergunta": "O que decretou Deus especialmente com referência aos anjos e aos homens?",
+                "resposta": "Deus, por um decreto eterno e imutável, unicamente do seu amor e para patentear a sua gloriosa graça, que tinha de ser manifestada em seu tempo devido, elegeu alguns anjos para a glória, e, em Cristo, escolheu alguns homens para a vida eterna e os meios para consegui-la; e também, segundo o seu soberano poder e o conselho inescrutável da sua própria vontade (pela qual ele concede, ou não, os seus favores conforme lhe apraz), deixou e predestinou os demais à desonra e à ira, que lhes serão infligidas por causa dos seus pecados, para patentear a glória da sua justiça."
+              },
+              {
+                "numero": 14,
+                "pergunta": "Como Deus executa seus decretos?",
+                "resposta": "Deus executa seus decretos nas obras da criação e da providência, segundo a sua presciência infalível e o livre e imutável conselho da sua vontade."
+              },
+              {
+                "numero": 15,
+                "pergunta": "O que é a obra da criação?",
+                "resposta": "A obra da criação é aquela pela qual Deus, pela palavra do seu poder, fez do nada o mundo, e tudo quanto nele há, para si no espaço de seis dias, e tudo foi muito bom."
+              },
+              {
+                "numero": 16,
+                "pergunta": "Como Deus criou os anjos?",
+                "resposta": "Deus criou todos os anjos como espíritos imortais, santos, poderosos e excelentes em conhecimento, para executarem os seus mandamentos e louvarem o seu nome, embora sujeitos à mudança."
+              },
+              {
+                "numero": 17,
+                "pergunta": "Como Deus criou o homem?",
+                "resposta": "Depois de ter feito todas as demais criaturas, Deus criou o homem, macho e fêmea; formou-o do pó, e a mulher, da costela do homem; dotou-os de almas viventes, racionais e imortais; fê-los conforme à sua própria imagem, em conhecimento, retidão e santidade, tendo a lei de Deus escrita em seus corações e poder para a cumprir, com domínio sobre as criaturas, embora sujeitos a cair."
+              },
+              {
+                "numero": 18,
+                "pergunta": "Quais são as obras da providência de Deus?",
+                "resposta": "As obras da providência de Deus são a sua mui santa, sábia e poderosa maneira de preservar e governar todas as suas criaturas e todas as suas ações, para a sua própria glória."
+              },
+              {
+                "numero": 19,
+                "pergunta": "Qual é a providência de Deus para com os anjos?",
+                "resposta": "Deus, pela sua providência, permitiu que alguns dos anjos, voluntária e irremediavelmente, caíssem em pecado e perdição, limitando e ordenando isso, como todos os pecados deles, para sua própria glória; e estabeleceu os demais em santidade e felicidade, empregando-os todos, conforme lhe apraz, na administração de seu poder, misericórdia e justiça."
+              }
+            ]
+          },
+          {
+            "id": "secao_b_queda_pecado_miseria",
+            "titulo": "A Queda do Homem, o Pecado e a Miséria Humana (Questões 20-29)",
+            "perguntas": [
+              {
+                "numero": 20,
+                "pergunta": "Qual foi a providência de Deus em relação ao homem no estado em que ele foi criado?",
+                "resposta": "A providência de Deus para com o homem no estado em que ele foi criado consistiu em colocá-lo no Paraíso, designando-o para o cultivar, dando-lhe liberdade para comer do fruto da terra; pondo as criaturas sob o seu domínio; e ordenando o matrimônio para o seu auxílio; em conceder-lhe comunhão com Deus, instituindo o dia de descanso, entrando em um pacto de vida com ele, sob a condição de obediência pessoal, perfeita e perpétua, da qual a árvore da vida era um penhor, e proibindo-lhe de comer da árvore da ciência do bem e do mal, sob pena de morte."
+              },
+              {
+                "numero": 21,
+                "pergunta": "Continuou o homem no estado em que Deus o criou no princípio?",
+                "resposta": "Nossos primeiros pais, sendo deixados à liberdade da sua própria vontade, pela tentação de Satanás transgrediram o mandamento de Deus, comendo do fruto proibido, e por isso caíram do estado de inocência em que foram criados."
+              },
+              {
+                "numero": 22,
+                "pergunta": "Caiu todo o gênero humano na primeira transgressão?",
+                "resposta": "O pacto sendo feito com Adão, como representante, não para si somente, mas para toda a sua posteridade, todo o gênero humano, descendendo dele por geração ordinária, pecou nele e caiu com ele na primeira transgressão."
+              },
+              {
+                "numero": 23,
+                "pergunta": "A que estado ficou reduzido o gênero humano por essa queda?",
+                "resposta": "Essa queda reduziu o gênero humano a um estado de pecado e miséria."
+              },
+              {
+                "numero": 24,
+                "pergunta": "O que é pecado?",
+                "resposta": "Pecado é qualquer falta de conformidade com a lei de Deus, ou a transgressão de qualquer lei por ele dada como regra, à criatura racional."
+              },
+              {
+                "numero": 25,
+                "pergunta": "Em que consiste o pecado desse estado em que o homem caiu?",
+                "resposta": "O pecado desse estado em que o homem caiu consiste na culpa do primeiro pecado de Adão, na falta de retidão na qual este foi criado e na corrupção da sua natureza pela qual se tornou inteiramente indisposto, incapaz e oposto a todo o bem espiritual e inclinado a todo o mal, e isso continuamente: o que geralmente se chama pecado original, do qual precedem todas as transgressões atuais."
+              },
+              {
+                "numero": 26,
+                "pergunta": "Como é o pecado original transmitido de nossos primeiros pais à sua posteridade?",
+                "resposta": "O pecado original é transmitido de nossos primeiros pais à sua posteridade por geração natural, de maneira que todos os que assim procedem deles são concebidos e nascidos em pecado."
+              },
+              {
+                "numero": 27,
+                "pergunta": "Qual foi a miséria que a queda trouxe sobre o gênero humano?",
+                "resposta": "A queda trouxe sobre o gênero humano a perda da comunhão com Deus, seu desagrado e maldição; de modo que somos por natureza filhos da ira, escravos de Satanás e justamente expostos a todas as punições, neste mundo e no vindouro."
+              },
+              {
+                "numero": 28,
+                "pergunta": "Quais são as punições do pecado neste mundo?",
+                "resposta": "As punições do pecado neste mundo são: ou interiores, como cegueira do entendimento, sentimentos depravados, fortes ilusões, dureza de coração, remorso na consciência e afetos baixos; ou exteriores, como a maldição de Deus sobre as criaturas por nossa causa e todos os outros males que caem sobre nós em nossos corpos, nossos bens, relações e empregos — juntamente com a morte."
+              },
+              {
+                "numero": 29,
+                "pergunta": "Quais são as punições do pecado no mundo vindouro?",
+                "resposta": "As punições do pecado no mundo vindouro são a separação eterna da presença consoladora de Deus e os tormentos mais penosos na alma e no corpo, sem intermissão, no fogo do inferno, para sempre."
+              }
+            ]
+          },
+          {
+            "id": "secao_c_pacto_graca_mediador",
+            "titulo": "O Pacto da Graça e a Pessoa do Mediador Cristo (Questões 30-56)",
+            "perguntas": [
+              {
+                "numero": 30,
+                "pergunta": "Deus deixa todo o gênero humano perecer no estado de pecado e miséria?",
+                "resposta": "Deus não deixa todos os homens perecerem no estado de pecado e miséria, em que caíram pela violação do primeiro pacto, comumente chamado o pacto das obras; mas, por puro amor e misericórdia, livra os escolhidos desse estado e os introduz num estado de salvação pelo segundo pacto, comumente chamado o pacto da graça."
+              },
+              {
+                "numero": 31,
+                "pergunta": "Com quem foi feito o pacto da graça?",
+                "resposta": "O pacto da graça foi feito com Cristo, como o segundo Adão, e nele, com todos os eleitos, como sua semente."
+              },
+              {
+                "numero": 32,
+                "pergunta": "Como a graça de Deus se manifesta no segundo pacto?",
+                "resposta": "A graça de Deus se manifesta no segundo pacto no ato de ele, livremente, prover e oferecer aos pecadores um Mediador e a vida e a salvação por ele; exigindo a fé como condição de seu interesse nele, promete e dá o Espírito Santo a todos os seus eleitos, para neles operar essa fé, com todas as mais graças salvadoras, e para os habilitar a praticar toda a santa obediência, como evidência da sinceridade da sua fé e gratidão para com Deus e como o caminho que Deus lhes designou para a salvação."
+              },
+              {
+                "numero": 33,
+                "pergunta": "O pacto da graça sempre foi administrado de uma só maneira?",
+                "resposta": "O pacto da graça não foi administrado da mesma maneira; mas as suas administrações no Antigo Testamento eram diferentes daquelas debaixo do Novo."
+              },
+              {
+                "numero": 34,
+                "pergunta": "Como foi administrado o pacto da graça no Antigo Testamento?",
+                "resposta": "O pacto da graça foi administrado no Antigo Testamento por promessas, profecias, sacrifícios, pela circuncisão, pela Páscoa e por outros símbolos e ordenanças: tudo isso tipificou o Cristo, que haveria de vir, e era, naquele tempo, suficiente para edificar os eleitos na fé do Messias prometido, por quem tiveram, ainda nesse tempo, a plena remissão do pecado e a salvação eterna."
+              },
+              {
+                "numero": 35,
+                "pergunta": "Como é o pacto da graça administrado no Novo Testamento?",
+                "resposta": "No Novo Testamento, quando Cristo, a substância, foi manifestado, o mesmo pacto da graça foi e continua a ser administrado na pregação da palavra, na celebração dos sacramentos do Batismo e da Ceia do Senhor; e assim a graça e a salvação são manifestadas em maior plenitude, evidência e eficácia a todas as nações."
+              },
+              {
+                "numero": 36,
+                "pergunta": "Quem é o Mediador do pacto da graça?",
+                "resposta": "O único Mediador do pacto da graça é o Senhor Jesus Cristo, que, sendo o eterno Filho de Deus, da mesma substância e igual ao Pai, no cumprimento do tempo fez-se homem, e assim foi e continua a ser Deus e homem em duas naturezas perfeitas e distintas e uma só pessoa para sempre."
+              },
+              {
+                "numero": 37,
+                "pergunta": "Sendo Cristo o Filho de Deus, como se fez homem?",
+                "resposta": "Cristo, o Filho de Deus, fez-se homem tomando para si um verdadeiro corpo e uma alma racional, sendo concebido pelo poder do Espírito Santo no ventre da Virgem Maria, da sua substância e nascido dela, mas sem pecado."
+              },
+              {
+                "numero": 38,
+                "pergunta": "Qual é a necessidade de o Mediador ser Deus?",
+                "resposta": "Era necessário que o Mediador fosse Deus para poder sustentar a natureza humana e guardá-la de cair debaixo da ira infinita de Deus e do poder da morte; para dar valor e eficácia aos seus sofrimentos, obediência e intercessão; e para satisfazer a justiça de Deus, conseguir o seu favor, adquirir um povo peculiar, dar a este povo o seu Espírito, vencer todos os seus inimigos e conduzi-lo à salvação eterna."
+              },
+              {
+                "numero": 39,
+                "pergunta": "Qual é a necessidade de o Mediador ser homem?",
+                "resposta": "Era necessário que o Mediador fosse homem para poder levantar nossa natureza e obedecer à lei, sofrer e interceder por nós em nossa natureza, e simpatizar com nossas enfermidades; para que recebêssemos a adoção de filhos e tivéssemos conforto e acesso com confiança ao trono da graça."
+              },
+              {
+                "numero": 40,
+                "pergunta": "Qual é a necessidade de o Mediador ser Deus e homem em uma só pessoa?",
+                "resposta": "Era necessário que o Mediador, que havia de reconciliar o homem com Deus, fosse Deus e homem, e isso em uma só pessoa, para que as obras próprias de cada natureza fossem aceitas por Deus a nosso favor e que nós confiássemos nelas como as obras da pessoa inteira."
+              },
+              {
+                "numero": 41,
+                "pergunta": "Por que nosso Mediador foi chamado Jesus?",
+                "resposta": "Nosso Mediador foi chamado Jesus porque salva seu povo dos pecados."
+              },
+              {
+                "numero": 42,
+                "pergunta": "Por que nosso Mediador foi chamado Cristo?",
+                "resposta": "Nosso Mediador foi chamado Cristo porque foi acima de toda a medida ungido com o Espírito Santo; e assim separado e plenamente revestido com toda a autoridade e poder para exercer as funções de profeta, sacerdote e rei da sua igreja, tanto no estado da sua humilhação como no da sua exaltação."
+              },
+              {
+                "numero": 43,
+                "pergunta": "Como exerce Cristo as funções de profeta?",
+                "resposta": "Cristo exerce as funções de profeta revelando a igreja em todos os tempos, por seu Espírito e Palavra, por diversos modos de administração, toda a vontade de Deus em todas as coisas concernentes à sua edificação e à sua salvação."
+              },
+              {
+                "numero": 44,
+                "pergunta": "Como Cristo exerce as funções de sacerdote?",
+                "resposta": "Cristo exerce as funções de sacerdote oferecendo-se a si mesmo, uma vez em sacrifício sem mácula, a Deus, para ser a reconciliação pelos pecados de seu povo e fazendo contínua intercessão por ele."
+              },
+              {
+                "numero": 45,
+                "pergunta": "Como exerce Cristo as funções de rei?",
+                "resposta": "Cristo exerce as funções de rei chamando do mundo um povo para si, dando-lhe oficiais, leis e disciplinas para visivelmente governá-lo; dando a graça salvadora aos seus eleitos; recompensando sua obediência e corrigindo-os por causa de seus pecados; preservando-os e sustentando-os em todas as tentações e sofrimentos; restringindo e vencendo todos os seus inimigos e, poderosamente, dirigindo todas as coisas para sua própria glória e para o bem de seu povo; e também castigando os que não conhecem a Deus nem obedecem ao evangelho."
+              },
+              {
+                "numero": 46,
+                "pergunta": "Qual foi o estado da humilhação de Cristo?",
+                "resposta": "O estado da humilhação de Cristo foi aquela baixa condição, na qual, por amor de nós, despindo-se de sua glória, ele assumiu a forma de servo em sua concepção e nascimento, em sua vida, em sua morte e depois até à sua ressurreição."
+              },
+              {
+                "numero": 47,
+                "pergunta": "Como Cristo se humilhou em sua concepção e em seu nascimento?",
+                "resposta": "Cristo humilhou-se em sua concepção e nascimento, em ser, desde toda a eternidade, o Filho de Deus no seio do Pai, a quem aprouve, no cumprimento do tempo, tornar-se Filho do homem, nascendo de uma mulher de humilde posição, com diversas circunstâncias de humilhação fora do comum."
+              },
+              {
+                "numero": 48,
+                "pergunta": "Como Cristo se humilhou em sua vida?",
+                "resposta": "Cristo humilhou-se em sua vida ao se sujeitar à lei, a qual perfeitamente cumpriu, e lutar com as indignidades do mundo, as tentações de Satanás e as enfermidades da carne, quer comuns à natureza do homem, quer as procedentes dessa baixa condição."
+              },
+              {
+                "numero": 49,
+                "pergunta": "Como Cristo se humilhou em sua morte?",
+                "resposta": "Cristo humilhou-se em sua morte porque, tendo sido traído por Judas, abandonado por seus discípulos, escarnecido e rejeitado pelo mundo, condenado por Pilatos e atormentado por seus perseguidores, tendo também lutado contra os terrores da morte e os poderes das trevas, tendo sentido e suportado o peso da ira de Deus, ele deu sua vida como oferta pelo pecado, sofrendo a penosa, vergonhosa e maldita morte de cruz."
+              },
+              {
+                "numero": 50,
+                "pergunta": "Em que consistiu a humilhação de Cristo depois da sua morte?",
+                "resposta": "A humilhação de Cristo depois da sua morte consistiu em ser ele sepultado, em continuar no estado dos mortos e sob o poder da morte até ao terceiro dia; o que, aliás, tem sido exprimido nestas palavras: ele desceu ao inferno (Hades)."
+              },
+              {
+                "numero": 51,
+                "pergunta": "Qual é o estado de exaltação de Cristo?",
+                "resposta": "O estado de exaltação de Cristo compreende sua ressurreição, ascensão, o estar sentado à destra do Pai e sua segunda vinda para julgar o mundo."
+              },
+              {
+                "numero": 52,
+                "pergunta": "Como Cristo foi exaltado em sua ressurreição?",
+                "resposta": "Cristo foi exaltado em sua ressurreição por não ter visto a corrupção na morte (pela qual não era possível que ele fosse retido), e o mesmo corpo em que sofrera, com suas propriedades essenciais (sem a mortalidade e outras enfermidades comuns a esta vida), tendo realmente unido à sua alma, ressurgiu dentre os mortos ao terceiro dia, por seu próprio poder, e por essa ressurreição declarou-se Filho de Deus, declarou haver satisfeito a justiça divina, ter vencido a morte e aquele que tinha o poder sobre ela, e ser o Senhor dos vivos e dos mortos. Tudo isso ele fez em sua capacidade representativa, como Cabeça da sua Igreja, para a justificação e a vivificação dela na graça, apoio contra os inimigos e para lhe assegurar sua ressurreição dos mortos no último dia."
+              },
+              {
+                "numero": 53,
+                "pergunta": "Como Cristo foi exaltado em sua ascensão?",
+                "resposta": "Cristo foi exaltado em sua ascensão ao ter, depois de sua ressurreição, aparecido muitas vezes aos seus apóstolos e conversado com eles, falando-lhes das coisas pertencentes ao seu reino, impondo-lhes o dever de pregar o evangelho a todos os povos, e ao subir aos mais altos céus, no fim de quarenta dias, levando nossa natureza e, como nosso Cabeça triunfante sobre os inimigos, para ali, à destra de Deus, receber dons para os homens, elevar nossos afetos e aparelhar-nos um lugar no qual ele está e estará até à sua segunda vinda, no fim do mundo."
+              },
+              {
+                "numero": 54,
+                "pergunta": "Como Cristo é exaltado ao se sentar à destra de Deus?",
+                "resposta": "Cristo é exaltado ao se sentar à destra de Deus, ao ser ele, como Deus-homem, elevado ao mais alto favor de Deus o Pai, tendo toda a plenitude de gozo, glória e poder sobre todas as coisas no céu e na terra; ao reunir e defender sua Igreja e subjugar seus inimigos; ao fornecer aos seus ministros e ao seu povo dons e graças e ao fazer intercessão por eles."
+              },
+              {
+                "numero": 55,
+                "pergunta": "Como Cristo faz sua intercessão?",
+                "resposta": "Cristo faz sua intercessão apresentando-se em nossa natureza continuamente perante o Pai no céu, pelo mérito de sua obediência e de seu sacrifício cumpridos na terra, declarando ser a sua vontade que isso se aplique a todos os crentes, respondendo a todas acusações contra eles; adquirindo-lhes paz de consciência, não obstante as faltas diárias, dando-lhes acesso com confiança ao trono da graça e aceitação de suas pessoas e serviços."
+              },
+              {
+                "numero": 56,
+                "pergunta": "Como Cristo há de ser exaltado ao vir uma segunda vez para julgar o mundo?",
+                "resposta": "Cristo há de ser exaltado em sua vinda para julgar o mundo, no qual, tendo sido injustamente julgado e condenado pelos homens maus, virá uma segunda vez no último dia, com grande poder e na plena manifestação de sua glória e da de seu Pai, com todos os seus santos e anjos, com brado, com voz de arcanjo e com a trombeta de Deus, para julgar o mundo em retidão."
+              }
+            ]
+          },
+          {
+            "id": "secao_d_aplicacao_redencao_igreja",
+            "titulo": "A Aplicação da Redenção, a Igreja, a Vocação e a Comunicação da Graça (Questões 57-90)",
+            "perguntas": [
+              {
+                "numero": 57,
+                "pergunta": "Quais são os benefícios que Cristo adquiriu por sua mediação?",
+                "resposta": "Cristo, por sua mediação, adquiriu a redenção, juntamente com todos os demais benefícios do pacto da graça."
+              },
+              {
+                "numero": 58,
+                "pergunta": "Como nos tornamos participantes dos benefícios que Cristo adquiriu?",
+                "resposta": "Tornamo-nos participantes dos benefícios que Cristo adquiriu pela aplicação deles a nós, o que é especialmente a obra do Espírito Santo."
+              },
+              {
+                "numero": 59,
+                "pergunta": "Quem é feito participante da redenção mediante Cristo?",
+                "resposta": "A redenção é aplicada e eficazmente comunicada a todos aqueles para quem Cristo a adquiriu, os quais são, nesta vida, habilitados pelo Espírito Santo a crer em Cristo conforme o evangelho."
+              },
+              {
+                "numero": 60,
+                "pergunta": "Poderão ser salvos por viver segundo a luz da natureza aqueles que nunca ouviram o evangelho e, por conseguinte, não conhecem a Jesus Cristo, nem creem nele?",
+                "resposta": "Aqueles que nunca ouviram o evangelho e não conhecem Jesus Cristo, nem creem nele, não poderão salvar-se, por mais diligentes que sejam em conformar suas vidas à luz da natureza, ou às leis da religião que professam; nem há salvação em nenhum outro senão em Cristo, que é o único Salvador de seu corpo, a Igreja."
+              },
+              {
+                "numero": 61,
+                "pergunta": "Serão salvos todos os que ouvem o evangelho e pertencem à Igreja?",
+                "resposta": "Nem todos os que ouvem o evangelho e pertencem à Igreja visível serão salvos, mas unicamente aqueles que são membros verdadeiros da Igreja invisível."
+              },
+              {
+                "numero": 62,
+                "pergunta": "O que é a Igreja visível?",
+                "resposta": "A Igreja visível é uma sociedade composta de todos que, em todos os tempos e lugares do mundo, professam a verdadeira religião, juntamente com seus filhos."
+              },
+              {
+                "numero": 63,
+                "pergunta": "Quais são os privilégios da Igreja visível?",
+                "resposta": "A Igreja visível tem o privilégio de estar sob o cuidado e o governo especial de Deus; de ser protegida e preservada em todos os tempos, não obstante a oposição de todos os inimigos; e de gozar da comunhão dos santos, dos meios ordinários de salvação e das ofertas da graça por Cristo a todos os membros dela, no ministério do evangelho, testificando que todo o que crer nele será salvo, não excluindo a ninguém que queira vir a ele."
+              },
+              {
+                "numero": 64,
+                "pergunta": "O que é a Igreja invisível?",
+                "resposta": "A Igreja invisível é o número completo dos eleitos, que têm sido e que hão de ser reunidos em um corpo sob Cristo, a cabeça."
+              },
+              {
+                "numero": 65,
+                "pergunta": "Quais são os benefícios especiais de que gozam por Cristo os membros da Igreja invisível?",
+                "resposta": "Os membros da igreja invisível gozam por Cristo a união e a comunhão com ele em graça e glória."
+              },
+              {
+                "numero": 66,
+                "pergunta": "Qual é a união que os eleitos têm com Cristo?",
+                "resposta": "A união que os eleitos têm com Cristo é a obra da graça de Deus, pela qual são eles, espiritual e misticamente, ainda que real e inseparavelmente, unidos a Cristo, seu Cabeça e esposo, o que se efetua em sua vocação eficaz."
+              },
+              {
+                "numero": 67,
+                "pergunta": "O que é vocação eficaz?",
+                "resposta": "Vocação eficaz é a obra do poder e da graça onipotente de Deus, pela qual (de seu livre e especial amor para com os eleitos e sem que nada neles o leve a isso), ele, no tempo aceitável, os convida e atrai a Jesus Cristo por sua palavra e por seu Espírito, iluminando seus entendimentos de maneira salvadora, renovando e poderosamente determinando suas vontades, de modo que eles, embora, em si, estejam mortos no pecado, tornam-se por isso prontos e capazes de livremente responder à sua chamada e de aceitar e abraçar a graça nela oferecida e comunicada."
+              },
+              {
+                "numero": 68,
+                "pergunta": "Os eleitos são os únicos eficazmente chamados?",
+                "resposta": "Todos os eleitos e somente eles são eficazmente chamados; ainda que outros possam sê-lo, e muitas vezes são exteriormente chamados pelo ministério da palavra e tenham algumas operações comuns do Espírito, por sua negligência e por seu desprezo voluntário da graça que é oferecida, são justamente deixados em sua incredulidade e nunca vêm sinceramente a Jesus Cristo."
+              },
+              {
+                "numero": 69,
+                "pergunta": "O que é a comunhão em graça que os membros da Igreja invisível têm com Cristo?",
+                "resposta": "A comunhão em graça que os membros da Igreja invisível têm com Cristo é a participação da virtude de sua mediação na justificação, na adoção, na santificação e em tudo o que nesta vida manifesta a união com ele."
+              },
+              {
+                "numero": 70,
+                "pergunta": "O que é justificação?",
+                "resposta": "Justificação é um ato da livre graça de Deus para com os pecadores, pelo qual ele os perdoa, aceita e considera justas suas pessoas diante dele, não por qualquer coisa neles operada, nem por eles feita, mas unicamente pela perfeita obediência e plena satisfação de Cristo, a eles imputadas por Deus e recebidas somente pela fé."
+              },
+              {
+                "numero": 71,
+                "pergunta": "Como a justificação é um ato da livre graça de Deus?",
+                "resposta": "Ainda que Cristo, por sua obediência e morte, prestasse uma verdadeira satisfação real e plena à justiça de Deus em favor dos que são justificados, mas sua justificação é de livre graça para eles, pois Deus aceita a satisfação de um fiador, a qual podia ter exigido deles; e ofereceu esse fiador, seu único Filho, imputando-lhes a justiça deste e não exigindo deles nada para sua justificação senão a fé, a qual também é dom de Deus."
+              },
+              {
+                "numero": 72,
+                "pergunta": "O que é a fé justificadora?",
+                "resposta": "A fé justificadora é aquela que salva. É operada pelo Espírito e pela Palavra de Deus no coração do pecador, que, sendo por eles convencido de seu pecado, de sua miséria e de sua incapacidade, e das demais criaturas, para restaurá-lo desse estado, não somente aceita a verdade da promessa do evangelho, como também recebe e confia em Cristo e em sua justiça, que lhe são oferecidos no evangelho, para o perdão de pecados e para que sua pessoa seja aceita e reputada justa diante de Deus para a salvação."
+              },
+              {
+                "numero": 73,
+                "pergunta": "Como a fé justifica o pecador diante de Deus?",
+                "resposta": "A fé justifica o pecador diante de Deus não por causa das outras graces que sempre a acompanham, nem por causa das boas obras que são os frutos dela, tampouco como se fosse a graça da fé ou qualquer ato dela que lhe é imputado para a justificação; mas unicamente porque a fé é o instrumento por meio do qual o pecador recebe e aplica a si Cristo e sua justiça."
+              },
+              {
+                "numero": 74,
+                "pergunta": "O que é adoção?",
+                "resposta": "Adoção é um ato da livre graça de Deus, em seu único Filho Jesus Cristo e por amor dele, pelo qual todos os que são justificados são recebidos no número dos filhos de Deus, trazem o seu nome, recebem o Espírito do Filho, estão sob seu cuidado e dispensações paternais, são admitidos a todas as liberdades e privilégios dos filhos de Deus, feitos herdeiros de todas as promessas e coerdeiros com Cristo na glória."
+              },
+              {
+                "numero": 75,
+                "pergunta": "O que é santificação?",
+                "resposta": "Santificação é a obra da graça de Deus por meio da qual os que Deus escolheu, antes da fundação do mundo, para que sejam santos são, nesta vida, pela poderosa operação de seu Espírito, aplicando a morte e a ressurreição de Cristo, renovados no homem interior, segundo a imagem de Deus, tendo os germes do arrependimento que conduz à vida e de todas as outras graces salvadoras implantadas em seus corações, e tendo essas graces de tal forma excitadas, aumentadas e fortalecidas que eles morrem cada vez mais para o pecado e ressuscitam para a novidade de vida."
+              },
+              {
+                "numero": 76,
+                "pergunta": "O que é o arrependimento que conduz à vida?",
+                "resposta": "O arrependimento que conduz à vida é uma graça salvadora, operada no coração do pecador pelo Espírito e pela Palavra de Deus, pela qual, reconhecendo e sentindo não somente o perigo, mas também a torpeza e a odiosidade de seus pecados, e apreendendo a misericórdia de Deus em Cristo para com os arrependidos, o pecador tanto se entristece por seus pecados e os aborrece que se volta de todos eles para Deus, tencionando e esforçando-se para andar constantemente com Deus em todos os caminhos da nova obediência."
+              },
+              {
+                "numero": 77,
+                "pergunta": "Em que difere a justificação da santificação?",
+                "resposta": "Ainda que a santificação seja inseparavelmente unida com a justificação, elas diferem nisto: na justificação, Deus imputa a justiça de Cristo e, na santificação, seu Espírito infunde a graça e dá forças para exercê-la. Na justificação, o pecado é perdoado; na santificação, ele é subjugado; aquela liberta a todos os crentes igualmente da ira vingadora de Deus, e isso perfeitamente nesta vida, de modo que eles nunca mais caem na condenação; esta não é igual em todos os crentes e, nesta vida, não é perfeita em crente algum, mas vai crescendo para a perfeição."
+              },
+              {
+                "numero": 78,
+                "pergunta": "Como a santificação dos crentes é imperfeita?",
+                "resposta": "A santificação dos crentes é imperfeita por causa dos restos do pecado que permanecem neles e das perpétuas concupiscências da carne contra o espírito; por isso são eles, muitas vezes, arrastados pelas tentações e caem em muitos pecados, são impedidos em todos os seus serviços espirituais, e suas melhores obras são imperfeitas e manchadas diante de Deus."
+              },
+              {
+                "numero": 79,
+                "pergunta": "Não poderão os crentes verdadeiros cair do estado de graça, em razão de suas imperfeições e das muitas tentações e dos pecados que os surpreendem?",
+                "resposta": "Os crentes verdadeiros, em razão do amor imutável de Deus e de seu decreto e pacto de lhes dar a perseverança, da união inseparável entre eles e Cristo, da contínua intercessão de Cristo por eles e do Espírito e da semente de Deus permanecendo neles, nunca poderão total e finalmente cair do estado de graça, mas são conservados pelo poder de Deus, mediante a fé, para a salvação."
+              },
+              {
+                "numero": 80,
+                "pergunta": "Os crentes verdadeiros poderão ter certeza infalível de que estão no estado da graça e de que, nesse estado, perseverarão até a salvação?",
+                "resposta": "Aqueles que verdadeiramente creem em Cristo, e se esforçam por andar perante ele com toda a boa consciência, podem, sem uma revelação extraordinária, ter a certeza infalível de que estão no estado de graça, e de que nesse estado perseverarão até a salvação, pela fé baseada na verdade das promessas de Deus e pelo Espírito que os habilita a discernir em si aquelas graces às quais são feitas as promessas da vida, testificando aos seus espíritos que eles são filhos de Deus."
+              },
+              {
+                "numero": 81,
+                "pergunta": "Todos os crentes têm sempre a certeza de que estão no estado da graça e de que serão salvos?",
+                "resposta": "A certeza da graça e da salvação, não sendo da essência da fé, os crentes verdadeiros podem esperar muito tempo antes de consegui-la; e depois de gozar dela podem sentir enfraquecida e interrompida essa certeza por muitas perturbações, pecados, tentações e deserções; contudo, nunca são deixados sem uma tal presença e apoio do Espírito de Deus, que os guarda de cair em desespero absoluto."
+              },
+              {
+                "numero": 82,
+                "pergunta": "Em que tempo se realiza a comunhão em glória que os membros da Igreja invisível têm com Cristo?",
+                "resposta": "A comunhão em glória que os membros da Igreja Invisível têm com Cristo realiza-se nesta vida e imediatamente depois da morte, e é finalmente aperfeiçoada na ressurreição e no dia do juízo."
+              },
+              {
+                "numero": 83,
+                "pergunta": "Qual é a comunhão em glória com Cristo de que os membros da Igreja invisível gozam nesta vida?",
+                "resposta": "Aos membros da Igreja invisível, são comunicadas, nesta vida, as primícias da glória com Cristo, visto serem membros dele, a Cabeça, e, estando nele, têm parte naquela glória, que, em sua plenitude, lhe pertence; e, como penhor dela, sentem o amor de Deus, a paz de consciência, o gozo do Espírito Santo e a esperança da glória. Do mesmo modo, o sentimento da ira vingadora de Deus, o terror da consciência e uma terrível expectação do juízo são para os ímpios o princípio dos tormentos, que eles hão de sofrer depois da morte."
+              },
+              {
+                "numero": 84,
+                "pergunta": "Morrerão todos os homens?",
+                "resposta": "A morte, sendo imposta como o estipêndio do pecado, está decretada a todos que uma vez morram, pois todos são pecadores."
+              },
+              {
+                "numero": 85,
+                "pergunta": "A morte, sendo o estipêndio do pecado, por que não são os justos livrados dela, visto que todos os seus pecados são perdoados em Cristo?",
+                "resposta": "Os justos no último dia serão libertados da própria morte e, no ato de morrer, estarão isentos do aguilhão e da maldição dela, de modo que, embora morram, contudo, vem isto do amor de Deus para livrá-los perfeitamente do pecado e da miséria, tornando-os capazes de maior comunhão com Cristo na glória, na qual eles imediatamente entram."
+              },
+              {
+                "numero": 86,
+                "pergunta": "O que é a comunhão em glória com Cristo de que os membros da Igreja invisível gozam imediatamente depois da morte?",
+                "resposta": "A comunhão em glória com Cristo de que os membros da Igreja invisível gozam imediatamente depois da morte consiste em serem aperfeiçoadas em santidade suas almas e recebidas nos mais altos céus, onde veem a face de Deus em luz e glória, esperando a plena redenção de seus corpos, os quais até na morte continuam unidos a Cristo, e descansam em suas sepulturas, como em seus leitos, até que, no último dia, sejam unidos novamente às suas almas. Quanto às almas dos ímpios, imediatamente depois de sua morte são lançadas no inferno, onde permanecem em tormentos e trevas exteriores; e seus corpos ficam guardados em suas sepulturas, como em cárceres, até a ressurreição e o juízo do grande dia."
+              },
+              {
+                "numero": 87,
+                "pergunta": "Em que devemos crer acerca da ressurreição?",
+                "resposta": "Devemos crer que, no último dia, haverá uma ressurreição geral dos mortos, dos justos e dos injustos; então, os que se acharem vivos serão mudados em um momento, e os mesmos corpos dos mortos, que têm jazido na sepultura, estando, então, novamente unidos às suas almas para sempre, serão ressuscitados pelo poder de Cristo. Os corpos dos justos, pelo Espírito e em virtude da ressurreição de Cristo, como cabeça deles, serão ressuscitados em poder, espirituais e incorruptíveis, e feitos semelhantes ao corpo glorioso dele; e os corpos dos ímpios serão por ele ressuscitados para vergonha, como por um juiz ofendido."
+              },
+              {
+                "numero": 88,
+                "pergunta": "O que se seguirá imediatamente depois da ressurreição?",
+                "resposta": "Imediatamente depois da ressurreição se seguirá o juízo geral e final dos anjos e dos homens, o dia e a hora de que homem nenhum sabe, para que todos vigiem, orem e estejam sempre prontos para a vinda do Senhor."
+              },
+              {
+                "numero": 89,
+                "pergunta": "O que sucederá aos ímpios no dia do juízo?",
+                "resposta": "No dia do juízo, os ímpios serão postos à mão esquerda de Cristo e, sob clara evidência e plena convicção de suas próprias consciências, terão pronunciada contra si a terrível, porém justa, sentença de condenação; então, serão excluídos da presença favorável de Deus e da gloriosa comunhão com Cristo, com e seus santos, e com todos os santos anjos e lançados no inferno, para serem punidos com tormentos indizíveis, do corpo e da alma, com o diabo e seus anjos para sempre."
+              },
+              {
+                "numero": 90,
+                "pergunta": "O que sucederá aos justos no dia do juízo?",
+                "resposta": "No dia do juízo, os justos, sendo arrebatados para encontrar Cristo nas nuvens, serão postos à sua destra e ali, abertamente, reconhecidos e justificados, se unirão com ele para julgar os réprobos, anjos e homens; e serão recebidos no céu, onde serão plenamente e para sempre libertados de todo o pecado e de toda a miséria, cheios de gozos inefáveis, feitos perfeitamente santos e felizes, no corpo e na alma, na companhia de inumeráveis santos e anjos, mas especialmente na imediata visão e fruição de Deus, o Pai, de nosso Senhor Jesus Cristo e do Espírito Santo, por toda a eternidade. É essa a perfeita e plena comunhão de que os membros da Igreja invisível gozarão com Cristo em glória, na ressurreição e no dia do juízo."
+              }
+            ]
+          },
+          {
+            "id": "secao_e_dever_do_homem_lei_moral",
+            "titulo": "O Dever que Deus Requer do Homem e a Lei Moral (Questões 91-153)",
+            "perguntas": [
+              {
+                "numero": 91,
+                "pergunta": "Qual dever Deus requer do homem?",
+                "resposta": "O dever que Deus requer do homem é obediência à sua vontade revelada."
+              },
+              {
+                "numero": 92,
+                "pergunta": "O que Deus revelou primeiramente ao homem como regra de sua obediência?",
+                "resposta": "A regra de obediência revelada a Adão no estado de inocência, e a todo o gênero humano nele, além do mandamento especial de não comer do fruto da árvore da ciência do bem e do mal, foi a lei moral."
+              },
+              {
+                "numero": 93,
+                "pergunta": "O que é a lei moral?",
+                "resposta": "A lei moral é a declaração da vontade de Deus, feita ao gênero humano, dirigindo e obrigando todas as pessoas à conformidade e à obediência perfeita e perpétua a ela nos apetites e disposições do homem inteiro, alma e corpo, e no cumprimento de todos aqueles deveres de santidade e retidão que se devem a Deus e ao homem, prometendo vida pela obediência e ameaçando com a morte a violação dela."
+              },
+              {
+                "numero": 94,
+                "pergunta": "É a lei moral de alguma utilidade ao homem depois da queda?",
+                "resposta": "Embora nenhum homem, depois da queda, possa alcançar a retidão e a vida pela lei moral, ela é de grande utilidade a todos os homens, tendo utilidade especial aos não regenerados e outra aos regenerados."
+              },
+              {
+                "numero": 95,
+                "pergunta": "Qual é a utilidade da lei moral a todos os homens?",
+                "resposta": "A lei moral é útil a todos os homens para instruí-los sobre a natureza e a vontade de Deus e sobre seus deveres para com ele, obrigando-os a andar conforme essa vontade; para convencê-los de que são incapazes de guardá-la e do estado poluto e pecaminoso de sua natureza, corações e vidas; para os humilhar, fazendo-os sentir seu pecado e sua miséria, ajudando-os, assim, a ver melhor como precisam de Cristo e da perfeição de sua obediência."
+              },
+              {
+                "numero": 96,
+                "pergunta": "De que utilidade especial é a lei moral aos homens não regenerados?",
+                "resposta": "A lei moral é de utilidade aos homens não regenerados para despertar suas consciências, a fim de fugir da ira vindoura e forçá-los a recorrer a Cristo; ou para deixá-los inescusáveis e sob a maldição do pecado, se continuarem nesse estado e caminho."
+              },
+              {
+                "numero": 97,
+                "pergunta": "De que utilidade especial é a lei moral aos regenerados?",
+                "resposta": "Embora os que são regenerados e crentes em Cristo sejam libertados da lei moral, como pacto de obras, de modo que nem são justificados nem são condenados por ela; contudo, além da utilidade geral dessa lei comum a eles e a todos os homens, é ela de utilidade especial para lhes mostrar quanto devem a Cristo, por cumpri-la e sofrer a maldição dela, em lugar e para o bem deles, de modo a provocá-los a uma gratidão maior e a manifestar essa gratidão por maior cuidado de sua parte em se conformar a essa lei, como regra de sua obediência."
+              },
+              {
+                "numero": 98,
+                "pergunta": "Onde se acha a lei moral resumidamente compreendida?",
+                "resposta": "A lei moral acha-se resumidamente compreendida nos dez mandamentos, que foram dados pela voz de Deus no monte Sinai e por ele escritos em duas tábuas de pedra, e estão registrados no capítulo vigésimo do Êxodo. Os quatro primeiros mandamentos contêm nossos deveres para com Deus, e os outros seis, nossos deveres para com o homem."
+              },
+              {
+                "numero": 99,
+                "pergunta": "Quais regras devem ser observadas para a boa compreensão dos dez mandamentos?",
+                "resposta": "Para a boa compreensão dos dez mandamentos, as seguintes regras devem ser observadas:\n1. Que a lei é perfeita e obriga todos à plena conformidade do homem inteiro à retidão dela e à inteira obediência para sempre; de modo que requer sua perfeição em todos os deveres e proíbe o mínimo grau de todo o pecado.\n2. Que a lei é espiritual e, assim, se estende tanto ao entendimento, à vontade, aos afetos e a todas as outras potências da alma como às palavras, às obras e ao procedimento.\n3. Que uma e a mesma coisa, em respeitos diversos, é exigida ou proibida em diversos mandamentos.\n4. Que, onde um dever é prescrito, o pecado contrário é proibido; e, onde um pecado é proibido, o dever contrário é prescrito; assim como, onde uma promessa está anexa, a ameaça contrária está inclusa; e, onde uma ameaça está anexa, a promessa contrária está inclusa.\n5. Que o que Deus proíbe não se há de fazer em tempo algum, e o que ele manda é sempre um dever; mas nem todo o dever especial é para se cumprir em todos os tempos.\n6. Que, sob um pecado ou um dever, todos os da mesma classe são proibidos ou mandados, juntamente com todas as coisas, meios, ocasiões e aparências deles e provocações a eles.\n7. Que aquilo que nos é proibido ou mandado, nós temos a obrigação, segundo o lugar que ocupamos, de procurar que seja evitado ou cumprido por outros segundo o dever de suas posições.\n8. Que, quanto ao que é mandado a outros, somos obrigados, segundo nossa posição e nossa vocação, a ajudá-los, e a cuidar de não participar com outros do que lhe é proibido."
+              },
+              {
+                "numero": 100,
+                "pergunta": "Quais pontos devemos considerar nos dez mandamentos?",
+                "resposta": "Devemos considerar nos dez mandamentos o prefácio, o conteúdo dos mesmos mandamentos e as divinas razões anexas a alguns deles para lhes dar maior força."
+              },
+              {
+                "numero": 101,
+                "pergunta": "Qual é o prefácio dos dez mandamentos?",
+                "resposta": "O prefácio dos dez mandamentos é: \"Eu sou o SENHOR, teu Deus, que te tirei da terra do Egito, da casa da servidão\". Com essas palavras, Deus manifesta sua soberania como Jeová, o eterno, imutável e todo-poderoso Deus, existindo em si e por si, cumprindo todas as suas palavras e obras, manifestando que é um Deus em pacto, com todo o seu povo e com o Israel antigo; que, assim como tirou a estes da servidão do Egito, também nos libertou do cativeiro espiritual, e, portanto, é nosso dever aceitar a ele só por nosso Deus e guardar todos os seus mandamentos."
+              },
+              {
+                "numero": 102,
+                "pergunta": "Qual é o resumo dos quatro mandamentos que contêm nosso dever para com Deus?",
+                "resposta": "O resumo dos quatro mandamentos que contêm nosso dever para com Deus é amar ao Senhor nosso Deus de todo o nosso coração, de toda a nossa alma, de todas as nossas forças e de todo o nosso entendimento."
+              },
+              {
+                "numero": 103,
+                "pergunta": "Qual é o primeiro mandamento?",
+                "resposta": "O primeiro mandamento é: \"Não terás outros deuses diante de mim\"."
+              },
+              {
+                "numero": 104,
+                "pergunta": "Quais são os deveres exigidos no primeiro mandamento?",
+                "resposta": "Os deveres exigidos no primeiro mandamento são: o conhecer e o reconhecer Deus como único verdadeiro Deus e nosso Deus, e adorá-lo e glorificá-lo como tal; pensar e meditar nele, lembrar-nos dele, altamente apreciá-lo, honrá-lo, adorá-lo, escolhê-lo, amá-lo, desejá-lo e temê-lo; crer nele, confiando, esperando, deleitando-nos e regozijando-nos nele; ter zelo por ele; invocá-lo, dando-lhe todo louvor e agradecimentos, prestando-lhe toda a obediência e submissão do homem todo; ter cuidado de o agradar em tudo, e sentir tristeza quando ele é ofendido em qualquer coisa; e andar humildemente com ele."
+              },
+              {
+                "numero": 105,
+                "pergunta": "Quais são os pecados proibidos no primeiro mandamento?",
+                "resposta": "Os pecados proibidos no primeiro mandamento são: o ateísmo, negar ou não ter um Deus; a idolatria, ter ou adorar mais do que um Deus, ou qualquer outro juntamente com o verdadeiro Deus ou em lugar dele; o não tê-lo e não confessá-lo como Deus, e nosso Deus; a omissão ou a negligência de qualquer coisa devida a ele, exigida nesse mandamento; a ignorância, o esquecimento, as más concepções, as falsas opiniões, os pensamentos indignos e ímpios quanto a ele; o pesquisar audaz e curioso de seus segredos; toda a impiedade, todo o ódio de Deus, egoísmo, espírito interesseiro e toda a aplicação desordenada e imoderada do nosso entendimento, vontade ou afetos e outras coisas e o desvio destes de Deus, em tudo ou em parte; a và credulidade, a incredulidade, a heresia, as crenças errôneas, a desconfiança, o desespero; a resistência obstinada e a insensibilidade sob os juízos de Deus; a dureza de coração; a soberba; a presunção; a segurança carnal; o tentar a Deus; o uso de meios ilícitos, a confiança nos lícitos; os deleites e gozos carnais; um zelo corrupto, cego e indiscreto; a tibieza e o amortecimento nas coisas de Deus; o alienar-nos e apostatar-nos de Deus; o orar ou prestar qualquer culto religioso a santos, anjos ou qualquer outra criatura; todos os pactos com o diabo; a consulta a ele e dar ouvidos às suas sugestões; o fazer dos homens senhores de nossa fé e consciência; o fazer pouco-caso e desprezar a Deus e aos mandamentos; o resistir e o entristecer o seu Espírito; o descontentamento e a impaciência com as suas dispensações; acusá-lo estultamente dos males com que ele nos aflige, e o ato de atribuir o louvor de qualquer bem que somos, temos ou podemos fazer à fortuna, aos ídolos, a nós mesmos, ou a qualquer outra criatura."
+              },
+              {
+                "numero": 106,
+                "pergunta": "O que nos ensina especialmente pelas palavras \"diante de mim\" no primeiro mandamento?",
+                "resposta": "As palavras \"diante de mim\" no primeiro mandamento ensinam-nos que Deus, que tudo vê, nota especialmente e se ofende muito, com o pecado de se ter qualquer outro Deus, de maneira que elas sirvam de argumento para nos dissuadir desse pecado e de agravá-lo com uma provocação mui ousada; assim como para nos persuadir a fazer diante dos olhos de Deus tudo o que fizemos no seu serviço."
+              },
+              {
+                "numero": 107,
+                "pergunta": "Qual é o segundo mandamento?",
+                "resposta": "O segundo mandamento é: \"Não farás para ti imagem de escultura, nem semelhança alguma do que há em cima nos céus, nem embaixo na terra, nem nas águas debaixo da terra. Não as adorarás, nem lhes darás culto; porque eu sou O SENHOR, teu Deus, Deus zeloso, que visito a iniquidade dos pais nos filhos até à terceira e quarta geração daqueles que me aborrecem e faço misericórdia até mil gerações daqueles que me amam e guardam os meus mandamentos\"."
+              },
+              {
+                "numero": 108,
+                "pergunta": "Quais são os deveres exigidos no segundo mandamento?",
+                "resposta": "Os deveres exigidos no segundo mandamento são: receber, observar e guardar, puros e inalterados, todo o culto e todas as ordenanças religiosas que Deus instituiu na sua Palavra, especialmente a oração e ações de graças em nome de Cristo; a leitura, a prédica e o ouvir da Palavra; a administração e a recepção dos sacramentos; o governo e a disciplina da igreja; o ministério e a sua manutenção; o jejum religioso, o jurar em nome de Deus e o fazer os votos a ele; bem como o desaprovar, o detestar e o opor-nos a todo o culto falso, e, segundo a posição e vocação de um, o remover tal culto e todos os símbolos de idolatria."
+              },
+              {
+                "numero": 109,
+                "pergunta": "Quais são os pecados proibidos no segundo mandamento?",
+                "resposta": "Os pecados proibidos no segundo mandamento são: estabelecer, aconselhar, mandar, usar e aprovar de qualquer maneira qualquer culto religioso não instituído por Deus; fazer qualquer imagem de Deus, de todas e quaisquer das três pessoas, quer interiormente no espírito, quer exteriormente, em qualquer forma de imagem ou semelhança de criatura alguma; toda a adoração dela, ou de Deus nela ou por meio dela; fazer qualquer imagem de deuses imaginários e todo o culto ou serviço a eles pertencentes; todas as invenções supersticiosas, corrompendo o culto de Deus, acrescentando ou tirando dele, quer sejam inventadas e adotadas por nós, quer sejam recebidas por tradição de outros, embora sob o título de antiguidade, de costume, de devoção, de boa intenção, ou por qualquer outro pretexto; a simonia, o sacrilégio; toda a negligência, desprezo, impedimento e oposição ao culto e às ordenanças que Deus instituiu."
+              },
+              {
+                "numero": 110,
+                "pergunta": "Quais são as razões anexas ao segundo mandamento para lhe dar maior força?",
+                "resposta": "As razões anexas para o segundo mandamento, para lhe dar maior força, contidas nestas palavras, \"porque eu sou O SENHOR, teu Deus, Deus zeloso, que visito a iniquidade dos pais nos filhos até à terceira e à quarta geração daqueles que me aborrecem e faço misericórdia até mil gerações daqueles que me amam e guardam os meus mandamentos\", são, além da soberania de Deus sobre nós e o seu direito de propriedade em nós, o seu zelo fervoroso pelo seu culto e indignação vingadora contra todo o culto falso, considerando-o apostasia religiosa, tendo por inimigos os violadores desse mandamento e ameaçando puni-los até diversas gerações e tendo por amigos os que guardam seus mandamentos, prometendo-lhes a misericórdia até muitas gerações."
+              },
+              {
+                "numero": 111,
+                "pergunta": "Qual é o terceiro mandamento?",
+                "resposta": "O terceiro mandamento é: \"Não tomarás o nome do SENHOR, teu Deus, em vão, porque o SENHOR não terá por inocente o que tomar o seu nome em vão\"."
+              },
+              {
+                "numero": 112,
+                "pergunta": "O que se exige no terceiro mandamento?",
+                "resposta": "No terceiro mandamento, exige-se que o Nome de Deus, seus títulos, atributos, ordenanças, a Palavra, os sacramentos, a oração, os juramentos, os votos, as sortes, suas obras e tudo quanto por meio do qual Deus se faz conhecido sejam santa e reverentemente usados em nossos pensamentos, meditações, palavras e escritos, por uma afirmação santa de fé e um comportamento conveniente, para a glória de Deus e para o nosso próprio bem e o de nosso próximo."
+              },
+              {
+                "numero": 113,
+                "pergunta": "Quais são os pecados proibidos no terceiro mandamento?",
+                "resposta": "Os pecados proibidos no terceiro mandamento são: não usar o nome de Deus como nos é requerido e o abuso no uso dele por uma menção ignorante, vã, irreverente, profana, supersticiosa ou ímpia, ou outro modo de usar os títulos, atributos, ordenanças, ou obras de Deus; a blasfêmia, o perjúrio, toda abominação, juramentos, votos e sortes ímpios; a violação de nossos juramentos e votos quando lícitos, e o cumprimento deles, se por coisas ilícitas; a murmuração e as rixas, as consultas curiosas e a má aplicação dos decretos e da providência de Deus; a má interpretação, a má aplicação ou qualquer perversão da Palavra, ou de qualquer parte dela; as zombarias profanas, questões curiosas e sem proveito, vãs contendas ou a defesa de doutrinas falsas; o abuso das criaturas ou de qualquer coisa compreendida sob o nome de Deus, para encantamentos ou concupiscências e práticas pecaminosas; a difamação, o escárnio, a vituperação ou qualquer oposição à verdade, à graça e aos caminhos de Deus; a defesa da religião por hipocrisia ou para fins sinistros, o ato de envergonhar-se da religião ou de ser uma vergonha para ela, por meio de uma conduta inconveniente, imprudente, infrutífera e ofensiva, ou por apostasia."
+              },
+              {
+                "numero": 114,
+                "pergunta": "Quais são as razões anexas ao terceiro mandamento?",
+                "resposta": "As razões anexas ao terceiro mandamento, contidas nestas palavras, \"O SENHOR teu Deus\" e \"porque O SENHOR não terá por inocente aquele que tomar em vão o seu nome\", são as seguintes: porque ele é o Senhor e nosso Deus, seu Nome não deve ser profanado nem por forma alguma abusado por nós; especialmente porque ele estará tão longe de absolver e poupar os transgressores desse mandamento, não os deixará escapar de seu justo juízo, embora muitos escapem das censuras e punições dos homens."
+              },
+              {
+                "numero": 115,
+                "pergunta": "Qual é o quarto mandamento?",
+                "resposta": "O quarto mandamento é: \"Lembra-te do dia de sábado, para o santificar. Seis dias trabalharás e farás toda a tua obra. Mas o sétimo dia é o sábado do SENHOR, teu Deus; não farás nenhum trabalho, nem tu, nem o teu filho, nem a tua filha, nem o teu servo, nem a tua serva, nem o teu animal, nem o forasteiro das tuas portas para dentro; porque, em seis dias, fez o Senhor os céus e a terra, o mar e tudo o que neles há e, ao sétimo dia, descansou; por isso, O SENHOR abençoou o dia de sábado e o santificou\"."
+              },
+              {
+                "numero": 116,
+                "pergunta": "O que se exige no quarto mandamento?",
+                "resposta": "No quarto mandamento, exige-se que todos os homens santifiquem ou guardem santos para Deus todos os tempos estabelecidos, que Deus designou em sua Palavra, expressamente um dia inteiro em cada sete; que era o sétimo desde o princípio do mundo até à ressurreição de Cristo, e o primeiro dia da semana desde então, e há de assim continuar até ao fim do mundo; o qual é o sábado cristão, e que no Novo Testamento se chama Dia do Senhor."
+              },
+              {
+                "numero": 117,
+                "pergunta": "Como deve ser santificado o sábado ou Dia do Senhor?",
+                "resposta": "O sábado, ou Dia do Senhor, deve ser santificado por meio de um santo descanso por todo aquele dia, não somente de tudo quanto é sempre pecaminoso, mas até mesmo de todas as ocupações e recreios seculares que são lícitos em outros dias; e em fazê-lo o nosso deleite, passando todo o tempo (exceto aquela parte que se deve empregar em obras de necessidade e misericórdia) nos exercícios públicos e particulares do culto de Deus. Para este fim, havemos de preparar os nossos corações, e, com toda previsão, diligência e moderação, dispor e convenientemente arranjar os nossos negócios seculares, para que estejamos mais livres e mais prontos para os deveres desse dia."
+              },
+              {
+                "numero": 118,
+                "pergunta": "Por que é o mandamento de guardar o sábado mais especialmente dirigido aos chefes de família e a outros superiores?",
+                "resposta": "O mandamento de guardar o sábado é o mais especialmente dirigido aos chefes de família e a outros superiores, pois estão obrigados não somente a guardá-lo por si mesmos, mas também a fazer com que seja ele observado por todos os que estão sob o seu cuidado; e porque são, às vezes, propensos a embaraçá-los por meio de seus próprios trabalhos."
+              },
+              {
+                "numero": 119,
+                "pergunta": "Quais são os pecados proibidos no quarto mandamento?",
+                "resposta": "Os pecados proibidos no quarto mandamento são: toda omissão dos deveres exigidos, toda realização descuidosa, negligente e sem proveito, e o ficar cansado deles, toda profanação desse dia por ociosidade e por fazer aquilo que é em si pecaminoso, e por todas as obras, palavras e pensamentos desnecessários acerca de nossas ocupações e distrações seculares."
+              },
+              {
+                "numero": 120,
+                "pergunta": "Quais são as razões anexas ao quarto mandamento, para lhe dar maior força?",
+                "resposta": "As razões anexas ao quarto mandamento, para lhe dar maior força, são tiradas da equidade dele, concedendo-nos Deus seis dias de cada sete para nossos afazeres, e reservando apenas um para si, nestas palavras: \"Seis dias trabalharás e farás toda a tua obra\", de Deus exigir uma propriedade especial nesse dia: \"o sétimo dia é o sábado do SENHOR, teu Deus\", do exemplo de Deus, que \"em seis dias, fez o SENHOR os céus e a terra, o mar e tudo o que neles há e, ao sétimo dia, descansou\" e da bênção que Deus conferiu a esse dia, não somente santificando-o para ser um dia santo ao seu serviço, como também determinando-o para ser um meio de bênção para nós em santificá-lo: \"por isso, o SENHOR abençoou o dia de sábado e o santificou\"."
+              },
+              {
+                "numero": 121,
+                "pergunta": "Por que a expressão \"lembra-te\" se encontra colocada no princípio do quarto mandamento?",
+                "resposta": "A expressão \"lembra-te\" se acha colocada no princípio do quarto mandamento devido, em parte, ao grande benefício que há em nos lembrarmos dele, sendo nós, assim, ajudados em nossa preparação para guardá-lo; e porque, ao guardá-lo, somos ajudados a guardar melhor todos os demais mandamentos, e a manter uma grata recordação dos dois grandes benefícios da criação e da redenção, que contêm em si a breve súmula da religião; e, em parte, porque somos propensos a nos esquecer desse mandamento, visto haver menos luz da natureza para ele, e restringir nossa liberdade natural quanto a coisas permitidas em outros dias; porque esse aparece somente uma vez em cada sete, e muitos negócios seculares intervêm e muitas vezes nos impedem de pensar nele, seja para nos prepararmos para ele, seja para o santificarmos; e porque Satanás, com seus instrumentos, se esforça para apagar a glória e até mesmo a memória desse dia, para introduzir a irreligião e a impiedade."
+              },
+              {
+                "numero": 122,
+                "pergunta": "Qual é o resumo dos seis mandamentos que encerram nosso dever para com o homem?",
+                "resposta": "O resumo dos seis mandamentos que encerram nosso dever para com o homem é amar nosso próximo como a nós mesmos, e a fazer aos outros aquilo que desejamos que eles nos façam."
+              },
+              {
+                "numero": 123,
+                "pergunta": "Qual é o quinto mandamento?",
+                "resposta": "O quinto mandamento é: \"Honra teu pai e tua mãe, para que se prolonguem os teus dias na terra que o SENHOR, teu Deus, te dá\"."
+              },
+              {
+                "numero": 124,
+                "pergunta": "O que significam as palavras \"pai\" e \"mãe\" no quinto mandamento?",
+                "resposta": "As palavras \"pai\" e \"mãe\", no quinto mandamento, abrangem não somente os próprios pais, mas também todos os superiores em idade e dons, especialmente todos aqueles que, por sua ordenação de Deus, estão colocados sobre nós em autoridade, quer na família, quer na Igreja, quer ainda no Estado."
+              },
+              {
+                "numero": 125,
+                "pergunta": "Por que os superiores são chamados \"pai\" e \"mãe\"?",
+                "resposta": "Os superiores são chamados \"pai\" e \"mãe\" para lhes ensinar que, em todos os deveres para com seus inferiores, devem eles, como verdadeiros pais, mostrar amor e ternura para com aqueles, conforme suas diversas relações, bem como para levar os inferiores a cumprir seus deveres para com seus superiores, pronta e alegremente, como se estes fossem seus pais."
+              },
+              {
+                "numero": 126,
+                "pergunta": "Qual é o alcance geral do quinto mandamento?",
+                "resposta": "O alcance geral do quinto mandamento é o cumprimento dos deveres que, mutuamente, temos uns para com os outros em nossas diversas relações como inferiores, superiores ou iguais."
+              },
+              {
+                "numero": 127,
+                "pergunta": "Qual é a honra que os inferiores devem aos superiores?",
+                "resposta": "A honra que os inferiores devem aos superiores é toda a devida reverência sincera, em palavras e em procedimento, a oração e ações de graças por eles; a imitação de suas virtudes e graças; a pronta obediência aos seus mandamentos e conselhos legítimos; a devida submissão às suas correções; a fidelidade, a defesa, a manutenção de suas pessoas e autoridade, conforme seus diversos graus e a natureza de suas posições; suportando suas fraquezas e encobrindo-as com amor, para que sejam uma honra para eles e para seu governo."
+              },
+              {
+                "numero": 128,
+                "pergunta": "Quais são os pecados inferiores contra seus superiores?",
+                "resposta": "Os pecados dos inferiores contra seus superiores são: toda negligência dos deveres exigidos para com eles; a inveja, o desprezo e a rebelião contra suas pessoas e posições, em seus conselhos, mandamentos e correções legítimos; a maldição, a zombaria e todo comportamento rebelde e escandaloso, o que vem a ser uma vergonha e uma desonra para eles e para o seu governo."
+              },
+              {
+                "numero": 129,
+                "pergunta": "O que se exige dos superiores para com seus inferiores?",
+                "resposta": "Exige-se dos superiores, conforme o poder que recebem de Deus e a relação em que se acham colocados, que amem seus inferiores, que orem por eles e os abençoem; que os instruam, aconselhem e admoestem, aprovando, animando e recompensando os que fazem o bem, e reprovando, repreendendo e castigando os que fazem o mal; protegendo-os e provendo-lhes tudo o que é necessário para a alma e o corpo; e que, por um procedimento sério, prudente, santo e exemplar, glorifiquem a Deus, honrem a si mesmos, de modo a preservar a autoridade com que Deus os revestiu."
+              },
+              {
+                "numero": 130,
+                "pergunta": "Quais são os pecados dos superiores?",
+                "resposta": "Os pecados dos superiores, além da negligência dos deveres que lhes são exigidos, são a ambição incontrolável, a busca desordenada da própria glória, repouso, proveito ou prazer; a exigência de coisas ilícitas ou fora do alcance de os inferiores poderem realizar; aconselhando, encorajando ou favorecendo-os naquilo que é mau; dissuadindo, desanimando ou reprovando-os naquilo que é bom; corrigindo-os indevidamente; expondo-os descuidadosamente ao dano, à tentação e ao perigo; provocando-os à ira, ou de alguma forma desonrando a si mesmos, ou diminuindo a sua autoridade por um comportamento injusto, indiscreto, rigoroso ou negligente."
+              },
+              {
+                "numero": 131,
+                "pergunta": "Quais são os deveres dos iguais?",
+                "resposta": "Os deveres dos iguais são considerar a dignidade e o merecimento uns dos outros, tendo cada um aos outros por superiores; e alegrar-se com os dons e a promoção uns dos outros, como se fossem de si mesmos."
+              },
+              {
+                "numero": 132,
+                "pergunta": "Quais são os pecados dos iguais?",
+                "resposta": "Os pecados dos iguais, além da negligência dos deveres exigidos, são a depreciação do merecimento, a inveja dos dons, a tristeza causada pela promoção ou prosperidade dos outros e a usurpação da preeminência que uns têm sobre outros."
+              },
+              {
+                "numero": 133,
+                "pergunta": "Qual é a razão anexa ao quinto mandamento para lhe dar maior força?",
+                "resposta": "A razão anexa ao quinto mandamento, para lhe dar maior força, contida nestas palavras, \"para que se prolonguem os teus dias na terra que o Senhor teu Deus te dá\", é uma promessa de vida longa e prosperidade, tanto quanto sirva para a glória de Deus e para o bem de todos que guardem este mandamento."
+              },
+              {
+                "numero": 134,
+                "pergunta": "Qual é o sexto mandamento?",
+                "resposta": "O sexto mandamento é: \"Não matarás\"."
+              },
+              {
+                "numero": 135,
+                "pergunta": "Quais são os deveres exigidos no sexto mandamento?",
+                "resposta": "Os deveres exigidos no sexto mandamento são todo empenho cuidadoso e todos os esforços legítimos para a preservação de nossa vida e a de outros, resistindo a todos os pensamentos e propósitos, subjugando todas as paixões e evitando todas as ocasiões, tentações e práticas que tendem a tirar injustamente a vida de alguém por meio de justa defesa dela contra a violência; por paciência em suportar a mão de Deus; sossego mental, alegria de espírito e uso sóbrio de comida, bebida, remédios, sono, trabalho e recreação; por pensamentos caridosos, amor, compaixão, mansidão, benignidade, bondade, comportamento e palavras pacíficos, brandos e corteses, a longanimidade e a prontidão para se reconciliar, suportando pacientemente e perdoando as injúrias, dando bem por mal, confortando e socorrendo os aflitos, bem como protegendo e defendendo o inocente."
+              },
+              {
+                "numero": 136,
+                "pergunta": "Quais são os pecados proibidos no sexto mandamento?",
+                "resposta": "Os pecados proibidos no sexto mandamento são: tirar nossa vida ou a de outrem, exceto no caso de justiça pública, guerra legítima ou defesa necessária; a negligência ou retirada dos meios lícitos ou necessários para a preservação da vida; a ira pecaminosa, o ódio, a inveja, o desejo de vingança; todas as paixões excessivas e cuidados demasiados; o uso imoderado de comida, bebida, trabalho e recreação; as palavras provocadoras, a opressão, a contenda, os espancamentos, os ferimentos e tudo o que tende à destruição da vida de alguém."
+              },
+              {
+                "numero": 137,
+                "pergunta": "Qual é o sétimo mandamento?",
+                "resposta": "O sétimo mandamento é: \"Não adulterarás\"."
+              },
+              {
+                "numero": 138,
+                "pergunta": "Quais são os deveres exigidos no sétimo mandamento?",
+                "resposta": "Os deveres exigidos no sétimo mandamento são: castidade no corpo, mente, afeições, palavras e comportamento; e a preservação dela em nós mesmos e nos outros; a vigilância sobre os olhos e todos os sentidos, a temperança, a conservação da sociedade de pessoas castas, a modéstia no vestuário, o casamento daqueles que não têm o dom da continência, o amor conjugal e a coabitação, o trabalho diligente em nossas vocações, evitar todas as ocasiões de impurezas e resistir às suas tentações."
+              },
+              {
+                "numero": 139,
+                "pergunta": "Quais são os pecados proibidos no sétimo mandamento?",
+                "resposta": "Os pecados proibidos no sétimo mandamento, além da negligência dos deveres exigidos, são: adultério, fornicação, rapto, incesto, sodomia e todas as concupiscências desnaturais, todas as imaginações, pensamentos, propósitos e afetos impuros; todas as comunicações corruptas ou torpes, ou o ato de ouvi-las; os olhares lascivos, o comportamento imprudente ou leviano; o vestuário imoderado, a proibição de casamentos lícitos e a permissão de casamentos ilícitos; permitir, tolerar ou ter bordéis e a frequentação deles, os votos embaraçadores de celibato; a demora indevida de casamento; ter mais de uma mulher ou mais de um marido ao mesmo tempo; o divórcio ou o abandono injusto; a ociosidade, a glutonaria, a bebedice, a sociedade impura; cânticos, livros, gravuras, danças, espetáculos lascivos e todas as demais provocações à impureza, ou atos de impureza, quer em nós mesmos, quer nos outros."
+              },
+              {
+                "numero": 140,
+                "pergunta": "Qual é o oitavo mandamento?",
+                "resposta": "O oitavo mandamento é: \"Não furtarás\"."
+              },
+              {
+                "numero": 141,
+                "pergunta": "Quais são os deveres exigidos no oitavo mandamento?",
+                "resposta": "Os deveres exigidos no oitavo mandamento são: a verdade, a fidelidade e a justiça nos contratos e no comércio entre os homens, dando a cada um o que lhe é devido; a restituição de bens ilicitamente tirados de seus legítimos donos; a doação e a concessão de empréstimos, livremente, conforme nossas forças e as necessidades de outrem; a moderação de nossos juízos, vontades e afetos, em relação às riquezas deste mundo; o cuidado e o empenho providentes em adquirir, guardar, usar e distribuir aquelas coisas que são necessárias e convenientes para o sustento de nossa natureza, e que condizem com nossa condição; o meio lícito de vida e a respectiva diligência; a frugalidade; o impedimento de demandas forenses desnecessárias e fianças, ou outros compromissos semelhantes; e o esforço por todos os modos justos e lícitos para adquirir, preservar e adiantar a riqueza e o estado exterior, tanto de outros como o nosso próprio."
+              },
+              {
+                "numero": 142,
+                "pergunta": "Quais são os pecados proibidos no oitavo mandamento?",
+                "resposta": "Os pecados proibidos no oitavo mandamento, além da negligência dos deveres exigidos, são: furto, roubo, tráfico de seres humanos e recepção de qualquer coisa furtada; as transações fraudulentas e os pesos e medidas falsos; a remoção de marcos de propriedade, a injustiça e a infidelidade em contratos entre os homens ou em questões de confiabilidade; a opressão, a extorsão, a usura, o suborno, as vexatórias demandas forenses, o cerco injusto de propriedades e a desapropriação, a acumulação de gêneros para encarecer o preço; os meios ilícitos de vida e todos os outros modos injustos e pecaminosos de tirar ou de reter de nosso próximo aquilo que lhe pertence, ou de nos enriquecer a nós mesmos; a cobiça, a estima e o amor desordenado aos bens mundanos, a desconfiança, a preocupação excessiva e o empenho em obtê-los, guardá-los e usar deles; a inveja diante da prosperidade de outrem; assim como a ociosidade, a prodigalidade, o jogo dissipador e todos os outros modos pelos quais indevidamente prejudicamos o nosso próprio estado exterior, bem como o ato de defraudar a nós mesmos dos devidos uso e conforto da posição em que Deus nos colocou."
+              },
+              {
+                "numero": 143,
+                "pergunta": "Qual é o nono mandamento?",
+                "resposta": "O nono mandamento é: \"Não dirás falso testemunho contra o teu próximo\"."
+              },
+              {
+                "numero": 144,
+                "pergunta": "Quais são os deveres exigidos no nono mandamento?",
+                "resposta": "Os deveres exigidos no nono mandamento são: conservar e promover a verdade entre os homens e a boa reputação de nosso próximo, assim como a nossa; evidenciar e manter a verdade, e de coração, sincera, livre, clara e plenamente falar a verdade, somente a verdade, em questões de julgamento e justiça, e em todas as mais coisas, quaisquer que sejam; considerar caridosamente os nossos semelhantes; amar, desejar e ter regozijo pela sua boa reputação; entristecer-nos pelas suas fraquezas e encobri-las, e mostrar franco reconhecimento dos seus dons e graças; defender sua inocência; receber prontamente boas informações a seu respeito e rejeitar as que são maldizentes, lisonjeadoras e caluniadoras; prezar e cuidar de nossa boa reputação e defendê-la quando for necessário; cumprir as promessas lícitas; empenhar e praticar tudo o que é verdadeiro, honesto, amável e de boa fama."
+              },
+              {
+                "numero": 145,
+                "pergunta": "Quais são os pecados proibidos no nono mandamento?",
+                "resposta": "Os pecados proibidos no nono mandamento são: tudo que prejudica a verdade e a boa reputação de nosso próximo, bem assim a nossa, especialmente em julgamento público, o testemunho falso, subornar testemunhas falsas; aparecer e pleitear cientemente a favor de uma causa má; resistir e calcar à força a verdade, dar sentença injusta, chamar o mau, bom, e o bom, mau; recompensar os maus segundo a obra dos justos, e os justos, segundo a obra dos maus; cometer falsificação, suprir a verdade e silenciar indevidamente em uma causa justa; manter-nos tranquilos quando a iniquidade reclama a repreensão de nossa parte, ou denunciar outrem, falar a verdade inoportunamente, ou com malícia, para um fim errôneo; pervertê-la em sentido falso, ou proferi-la duvidosa e equivocadamente, em prejuízo da verdade ou da justiça; falar inverdades; mentir, caluniar, maldizer, depreciar, tagarelar, cochichar, escarnecer, vilipendiar, censurar temerária e asperamente ou com parcialidade, interpretar de maneira má as intenções, as palavras e os atos de outrem, adular e vangloriar, elogiar ou depreciar demasiadamente a nós mesmos ou a outros, em pensamentos ou palavras; negar os dons e as graças de Deus; agravar as faltas menores; encobrir, desculpar e atenuar os pecados quando chamados a uma confissão franca; descobrir desnecessariamente as fraquezas de outrem e levantar boatos falsos; receber e acreditar em rumores maus e tapar os ouvidos a uma defesa justa; suspeitar indevidamente; invejar ou sentir tristeza pelo crédito merecido de alguém; esforçar-se ou desejar o prejuízo de alguém; regozijar-se na desgraça ou na infâmia de alguém; a inveja ou a tristeza pelo crédito merecido de outros; prejudicar; o desprezo escarnecedor; a admiração excessiva de outrem; a quebra de promessas legítimas; a negligência daquelas coisas que são de boa fama; praticar ou não evitar aquelas coisas que trazem má fama, ou não impedir, em outras pessoas, tais coisas, até onde pudermos."
+              },
+              {
+                "numero": 146,
+                "pergunta": "Qual é o décimo mandamento?",
+                "resposta": "O décimo mandamento é: \"Não cobiçarás a casa do teu próximo. Não cobiçarás a mulher do teu próximo, nem o seu servo, nem a sua serva, nem o seu boi, nem o seu jumento, nem coisa alguma que pertença ao teu próximo\"."
+              },
+              {
+                "numero": 147,
+                "pergunta": "Quais são os deveres exigidos no décimo mandamento?",
+                "resposta": "Os deveres exigidos no décimo mandamento são: um pleno contentamento com nossa condição e uma disposição caridosa da alma para com nosso próximo, de modo que todos os nossos desejos e afetos relativos a ele se inclinem para todo o seu bem e o promovam."
+              },
+              {
+                "numero": 148,
+                "pergunta": "Quais são os pecados proibidos no décimo mandamento?",
+                "resposta": "Os pecados proibidos no décimo mandamento são: o descontentamento com nosso estado; a inveja e a tristeza pelo bem de nosso próximo, juntamente com todos os desejos e afetos desordenados para com qualquer coisa que lhe pertença."
+              },
+              {
+                "numero": 149,
+                "pergunta": "Será alguém capaz de guardar perfeitamente os mandamentos de Deus?",
+                "resposta": "Nenhum homem, por si mesmo, ou por qualquer graça que receba nesta vida, é capaz de guardar perfeitamente os mandamentos de Deus; mas diariamente os viola por pensamentos, palavras e obras."
+              },
+              {
+                "numero": 150,
+                "pergunta": "São todas as transgressões da lei de Deus igualmente odiosas em si mesmas à vista de Deus?",
+                "resposta": "Nem todas as transgressões da lei de Deus são igualmente odiosas; mas alguns pecados em si mesmos, e em razão de diversas circunstâncias agravantes, são mais odiosos à vista de Deus do que outros."
+              },
+              {
+                "numero": 151,
+                "pergunta": "Quais são as circunstâncias agravantes que tornam alguns pecados mais odiosos do que outros?",
+                "resposta": "Alguns pecados se tornam mais agravantes:\n1. Em razão dos ofensores, se forem pessoas de idade mais madura, de maior experiência ou graça; se forem eminentes pela vida cristã, dons, posição, ofícios, se forem guias para outras pessoas cujo exemplo será, provavelmente, seguido por outras.\n2. Em razão das pessoas ofendidas, se as ofensas forem diretamente contra Deus, seus atributos e culto, contra Cristo e sua graça; contra o Espírito Santo, seu testemunho e operações; contra superiores, pessoas eminentes e aqueles a quem estamos especialmente relacionados e a quem devemos favores; contra os santos, especialmente contra os irmãos fracos; contra suas almas ou as de quaisquer outros, e contra o bem geral de todos ou de muitos.\n3. Pela sua natureza e qualidade de ofensa, se for contra a letra expressa da lei, se violar muitos mandamentos, se contiver em si muitos pecados; se for concebida não só no coração, mas também manifestar-se em palavras e ações, escandalizar a outrem e não admitir reparo algum; se for contra os meios, misericórdias, juízos, luz da natureza, convicção da consciência, admoestação pública ou particular, censuras da igreja, punições civis; se for contra as nossas orações, propósitos, promessas, votos, pactos, obrigações a Deus ou aos homens; se for feita deliberada, voluntária, presunçosa, imprudente, jactanciosa, maliciosa, frequente e obstinadamente, com displicência, persistência, reincidência, depois do arrependimento.\n4. Pelas circunstâncias de tempo e de lugar, se for no dia do Senhor ou em outros tempos de culto divino, imediatamente antes, depois destes ou de outros auxílios para prevenção ou remédio contra tais quedas; se ocorrer em público ou na presença de outros que são capazes de ser provocados ou contaminados por essas transgressões."
+              },
+              {
+                "numero": 152,
+                "pergunta": "O que cada pecado merece da parte de Deus?",
+                "resposta": "Todo pecado, até o menor, sendo contra a soberania, bondade, santidade de Deus, e contra a sua justa lei, merece a sua ira e maldição, nesta vida e na vindoura, e não pode ser expiado senão pelo sangue de Cristo."
+              },
+              {
+                "numero": 153,
+                "pergunta": "O que Deus exige de nós para que possamos escapar à sua ira e à sua maldição, em que incorremos pela transgressão da lei?",
+                "resposta": "Para escaparmos à ira e à maldição de Deus, em que incorremos pela transgressão da lei, ele exige de nós o arrependimento para com Deus, a fé em nosso Senhor Jesus Cristo e o uso diligente de todos os meios exteriores pelos quais Cristo nos comunica os benefícios de sua mediação."
+              }
+            ]
+          },
+          {
+            "id": "secao_f_meios_graca_palavra_sacramentos_oracao",
+            "titulo": "Os Meios Exteriores da Graça: A Palavra, os Sacramentos e a Oração (Questões 154-196)",
+            "perguntas": [
+              {
+                "numero": 154,
+                "pergunta": "Quais são os meios exteriores pelos quais Cristo nos comunica os benefícios de sua mediação?",
+                "resposta": "Os meios exteriores e ordinários, pelos quais Cristo comunica à sua Igreja os benefícios de sua mediação, são todas as suas ordenanças, especialmente a Palavra, os Sacramentos e a Oração; todas essas ordenanças se tornam eficazes aos eleitos em sua salvação."
+              },
+              {
+                "numero": 155,
+                "pergunta": "Como a palavra se torna eficaz para a salvação?",
+                "resposta": "O Espírito de Deus torna a leitura, especialmente a pregação da palavra, um meio eficaz para iluminar, convencer e humilhar os pecadores; para lhes tirar toda confiança em si mesmos e os atrair a Cristo, para os conformar à sua imagem e os sujeitar à sua vontade; para os fortalecer contra as tentações e corrupções; para os edificar na graça e estabelecer os seus corações em santidade e conforto, mediante a fé para a salvação."
+              },
+              {
+                "numero": 156,
+                "pergunta": "A palavra de Deus deve ser lida por todos?",
+                "resposta": "Embora não seja permitido a todos lerem a Palavra publicamente à congregação, os homens de todas as condições têm obrigação de lê-la in particular para si mesmos e com suas famílias, e para este fim as Santas Escrituras devem ser traduzidas das línguas originais para as línguas vulgares."
+              },
+              {
+                "numero": 157,
+                "pergunta": "Como a Palavra de Deus deve ser lida?",
+                "resposta": "As Santas Escrituras devem ser lidas com um alto e reverente respeito; com firme persuasão de serem elas a própria Palavra de Deus e de que somente ele pode habilitar-nos a entendê-las; com desejo de conhecer, crer e obedecer à vontade de Deus nelas revelada; com diligência e atenção ao seu conteúdo e propósito; com meditação, aplicação, abnegação e oração."
+              },
+              {
+                "numero": 158,
+                "pergunta": "Por quem a Palavra de Deus deve ser pregada?",
+                "resposta": "A Palavra de Deus deve ser pregada somente por aqueles que têm dons suficientes, e são devidamente aprovados e chamados para o ministério."
+              },
+              {
+                "numero": 159,
+                "pergunta": "Como a Palavra de Deus deve ser pregada por aqueles que para isso são chamados?",
+                "resposta": "Aqueles que são chamados a trabalhar no ministério da palavra devem pregar a sã doutrina diligentemente, em tempo e fora de tempo, claramente, não em palavras persuasivas de humana sabedoria, mas em demonstração do Espírito de Deus; sabiamente, adaptando-se às necessidades e à capacidade dos ouvintes; zelosamente, com amor fervoroso para com Deus e para com as almas de seu povo; sinceramente, tendo por alvo a glória de Deus e procurando converter, edificar e salvar as almas."
+              },
+              {
+                "numero": 160,
+                "pergunta": "O que se exige dos que ouvem a Palavra pregada?",
+                "resposta": "Exige-se dos que ouvem a Palavra pregada que atendam a ela com diligência, preparação e oração; que comparem com as Escrituras aquilo que ouvem; que recebam a verdade com fé, amor, mansidão e prontidão de espírito, com a palavra de Deus; que meditem nela e conversem a seu respeito uns com os outros; que a escondam em seus corações e produzam os devidos frutos em suas vidas."
+              },
+              {
+                "numero": 161,
+                "pergunta": "Como os sacramentos se tornam meios eficazes da salvação?",
+                "resposta": "Os sacramentos tornam-se meios eficazes da salvação não porque tenham qualquer poder em si, nem qualquer virtude derivada da piedade ou da intenção de quem os administra, mas unicamente pela operação do Espírito Santo e pela bênção de Cristo, que os instituiu."
+              },
+              {
+                "numero": 162,
+                "pergunta": "O que é um sacramento?",
+                "resposta": "Um sacramento é uma santa ordenança instituída por Cristo em sua Igreja, para significar, selar e conferir àqueles que estão em pacto da graça os benefícios da mediação de Cristo, para os fortalecer e lhes aumentar a fé em todas as demais graças, e os obrigar à obediência, a fim de testemunhar e nutrir o seu amor e comunhão uns para com os outros, e para distingui-los dos que estão fora."
+              },
+              {
+                "numero": 163,
+                "pergunta": "Quais são as partes de um sacramento?",
+                "resposta": "As partes de um sacramento são duas: uma, um sinal exterior e sensível usado segundo a própria instituição de Cristo; a outra, uma graça interior e espiritual significada pelo sinal."
+              },
+              {
+                "numero": 164,
+                "pergunta": "Quantos sacramentos Cristo instituiu sob o Novo Testamento?",
+                "resposta": "Sob o Novo Testamento, Cristo instituiu em sua Igreja somente dois sacramentos: o Batismo e a Ceia do Senhor."
+              },
+              {
+                "numero": 165,
+                "pergunta": "O que é o Batismo?",
+                "resposta": "Batismo é um sacramento do Novo Testamento segundo o qual Cristo ordenou a lavagem com água em nome do Pai, do Filho e do Espírito Santo, para ser um sinal e um selo para nos unir a si mesmo, da remissão de pecados pelo seu sangue e da regeneração pelo seu Espírito; da adoção e da ressurreição para a vida eterna; e por ele os batizandos são solenemente admitidos na Igreja visível e entram em um comprometimento público, professando pertencer, inteira e unicamente, ao Senhor."
+              },
+              {
+                "numero": 166,
+                "pergunta": "A quem deve ser ministrado o Batismo?",
+                "resposta": "O Batismo não deve ser ministrado aos que estão fora da Igreja visível, pessoas, portanto, estranhas aos pactos da promessa, enquanto não professarem sua fé em Cristo e obediência a ele; porém, as crianças, cujos pais, ou um só deles, professarem fé em Cristo e obediência a ele, estão, quanto a isso, dentro do pacto e devem ser batizadas."
+              },
+              {
+                "numero": 167,
+                "pergunta": "Como devemos tirar proveito de nosso batismo?",
+                "resposta": "O dever necessário, mas muito negligenciado, de tirar proveito de nosso batismo deve ser cumprido por nós durante toda a nossa vida, especialmente no tempo de tentação, quando assistimos à administração desse sacramento a outros, por meio de séria e grata consideração da sua natureza e dos fins para os quais Cristo o instituiu, dos privilégios e benefícios conferidos e selados por ele e do voto solene que nele fizemos por meio de humilhação que se deve à nossa corrupção pecaminosa, às nossas falhas e ao andarmos contrários à graça do batismo e aos nossos votos; por crescermos até à certeza do perdão de pecados e de todas as demais bênçãos a nós seladas por esse sacramento; por fortalecer-nos pela morte e a ressurreição de Cristo, em cujo nome fomos batizados para a mortificação do pecado e a vivificação da graça e por esforçar-nos a viver pela fé, a ter nossa conversação em santidade e retidão, como convém àqueles que deram os seus nomes a Cristo, e a andar em amor fraternal, como batizados pelo mesmo Espírito em um só corpo."
+              },
+              {
+                "numero": 168,
+                "pergunta": "O que é a Ceia do Senhor?",
+                "resposta": "A Ceia do Senhor é um sacramento do Novo Testamento segundo o qual, dando-se e recebendo-se pão e vinho, conforme a instituição de Jesus Cristo, é anunciada sua morte; e os que dignamente participam dele alimentam-se do corpo e do sangue de Cristo para sua nutrição espiritual e crescimento na graça; têm sua união e comunhão com ele confirmadas; testemunham e renovam sua gratidão e consagração a Deus e seu mútuo amor uns para com os outros, como membros do mesmo corpo místico."
+              },
+              {
+                "numero": 169,
+                "pergunta": "Como Cristo ordenou que o pão e o vinho fossem dados e recebidos no sacramento da Ceia do Senhor?",
+                "resposta": "Cristo ordenou que os ministros da Palavra, na administração desse sacramento da Ceia do Senhor, separassem o pão e o vinho do uso comum pela palavra da instituição, ações de graça e oração; que tomassem e partissem o pão e dessem, tanto este como o vinho, aos comungantes, os quais, pela mesma instituição, devem tomar e comer o pão e beber o vinho, em grata recordação de que o corpo de Cristo foi partido e dado, e o seu sangue derramado em favor deles."
+              },
+              {
+                "numero": 170,
+                "pergunta": "Como se alimentam do corpo e do sangue de Cristo os que dignamente participam da Ceia do Senhor?",
+                "resposta": "Desde que o corpo e o sangue de Cristo não estão nem corporal, nem carnalmente, presentes no, com ou sob o pão e o vinho na Ceia do Senhor, mas, sim, espiritualmente à fé do comungante, não menos verdadeira e realmente do que estão os mesmos elementos aos seus sentidos exteriores, assim os que dignamente participam do sacramento da Ceia do Senhor se alimentam do corpo e do sangue de Cristo, não de uma maneira corporal e carnal, mas espiritual, embora verdadeira e realmente, visto que pela fé recebem e aplicam a si mesmos o Cristo crucificado e todos os benefícios de sua morte."
+              },
+              {
+                "numero": 171,
+                "pergunta": "Os que recebem o sacramento da Ceia do Senhor, como devem preparar-se para o receber?",
+                "resposta": "Os que recebem o sacramento da Ceia do Senhor devem preparar-se para o receber examinando-se a si mesmos, se estão em Cristo, a respeito de seus pecados e necessidades, da verdade e da medida de seu conhecimento, fé, arrependimento e amor para com Deus e para com os irmãos; da caridade para com todos os homens, perdoando aqueles que lhes têm feito mal; de seus desejos de ter Cristo e de sua nova obediência, renovando o exercício dessas graças pela meditação séria e pela oração fervorosa."
+              },
+              {
+                "numero": 172,
+                "pergunta": "Uma pessoa que duvida estar em Cristo, ou encontrar-se convenientemente preparada, pode chegar-se à Ceia do Senhor?",
+                "resposta": "Uma pessoa que duvida estar em Cristo ou encontrar-se convenientemente preparada para participar do sacramento da Ceia do Senhor pode ter um verdadeiro interesse em Cristo, embora não tenha ainda a certeza disso; mas, aos olhos de Deus, o tem, se está devidamente tocada pelo receio da falta desse interesse, e sem fingimento deseja ser achada em Cristo e apartar-se da iniquidade. Nesse caso, desde que as promessas são feitas, e esse sacramento é ordenado para o alívio dos cristãos fracos e que estão em dúvida, deve lamentar sua incredulidade e esforçar-se para ter suas dúvidas dissipadas, e, assim fazendo, pode e deve chegar-se à Ceia do Senhor para ficar mais fortalecida."
+              },
+              {
+                "numero": 173,
+                "pergunta": "Alguém que professa a fé, e deseja participar da Ceia do Senhor, pode ser excluído dela?",
+                "resposta": "Os que forem achados ignorantes ou escandalosos, não obstante sua profissão de fé e o desejo de participar da Ceia do Senhor, podem e devem ser excluídos desse sacramento, pelo poder que Cristo legou à sua Igreja, até que recebam instrução e manifestem mudança."
+              },
+              {
+                "numero": 174,
+                "pergunta": "O que se exige dos que recebem o sacramento da Ceia do Senhor, por ocasião de sua celebração?",
+                "resposta": "Exige-se dos que recebem o sacramento da Ceia do Senhor que, durante a sua celebração, esperem em Deus, nessa ordenança, com toda a santa reverência e atenção; que, diligentemente, observem os elementos e os atos sacramentais; que, atentamente, discriminem o corpo do Senhor, e, cheios de amor, meditem em sua morte e sofrimentos, e assim se despertem para um vigoroso exercício de suas graças, julgando-se a si mesmos e entristecendo-se pelo pecado, tendo fome e sede ardentes de Cristo, alimentando-se nele pela fé, recebendo da sua plenitude, confiando nos seus méritos, regozijando-se no seu amor, sendo gratos pela sua graça e renovando o pacto que fizeram com Deus e o amor a todos os santos."
+              },
+              {
+                "numero": 175,
+                "pergunta": "Qual é o dever dos crentes depois de receberem o sacramento da Ceia do Senhor?",
+                "resposta": "O dever dos crentes, depois de receberem o sacramento da Ceia do Senhor, é o de seriamente considerar como se portaram nele, e com que proveito; se foram vivificados e confortados; devem bendizer a Deus por isso, pedir sua continuação, vigiar contra a reincidência, cumprir seus votos e animar-se a atender sempre a essa ordenança; se não acharem, porém, benefício algum, deverão refletir novamente, e com mais cuidado, na sua preparação para este sacramento e no comportamento que tiverem na ocasião, podendo, em uma e outra coisa, aprovar-se diante de Deus e de suas próprias consciências, esperando com o tempo, o fruto de sua participação; se perceberem, porém, que nessas coisas foram remissos, deverão humilhar-se, e no futuro participar desta ordenança com mais cuidado e diligência."
+              },
+              {
+                "numero": 176,
+                "pergunta": "Em que concordam os sacramentos do Batismo e da Ceia do Senhor?",
+                "resposta": "Os sacramentos do Batismo e da Ceia do Senhor concordam em ser Deus o autor de ambos; em ser Cristo e os seus benefícios a parte espiritual de ambos; em ambos serem selos do mesmo pacto, em não deverem ser administrados senão pelos ministros do Evangelho, e em deverem ser continuados na igreja de Cristo até a sua segunda vinda."
+              },
+              {
+                "numero": 177,
+                "pergunta": "Em que diferem os sacramentos do Batismo e da Ceia do Senhor?",
+                "resposta": "Os sacramentos do Batismo e da Ceia do Senhor diferem em dever o Batismo ser administrado uma vez só, com água, para ser sinal e selo da nossa união com Cristo, e administrado também às crianças; enquanto que a Ceia do Senhor deve ser celebrada frequentemente, com os elementos de pão e vinho, para representar e mostrar Cristo como o alimento espiritual para a alma, e para confirmar a nossa permanência e crescimento nele, e isso apenas para aqueles que têm idade e condições de se examinarem a si mesmos."
+              },
+              {
+                "numero": 178,
+                "pergunta": "O que é oração?",
+                "resposta": "Oração é um oferecimento de nossos desejos a Deus, em nome de Cristo e com o auxílio de seu Espírito, e com a confissão de nossos pecados e um grato reconhecimento de suas misericórdias."
+              },
+              {
+                "numero": 179,
+                "pergunta": "Devemos orar somente a Deus?",
+                "resposta": "Sendo Deus o único que pode esquadrinhar o coração, ouvir os pedidos, perdoar os pecados e cumprir os desejos de todos, o único em quem se deve crer e a quem se deve prestar culto religioso, a oração, que é uma parte especial do culto, deve ser oferecida por todos a ele só, e a nenhum outro."
+              },
+              {
+                "numero": 180,
+                "pergunta": "O que é orar em nome de Cristo?",
+                "resposta": "Orar em nome de Cristo é, em obediência ao seu mandamento e em confiança em suas promessas, pedir a misericórdia por amor deles, não por mera menção de seu nome; porém, derivando o nosso ânimo para orar, a nossa coragem, força e esperança de sermos aceitos em oração, de Cristo e sua mediação."
+              },
+              {
+                "numero": 181,
+                "pergunta": "Por que devemos orar em nome de Cristo?",
+                "resposta": "O homem, em razão de seu pecado, ficou tão afastado de Deus que a ele não se pode chegar sem ter um mediador; e, não havendo ninguém, no céu ou na terra, constituído e preparado para essa gloriosa obra, senão Cristo unicamente, o nome dele é o único por meio do qual devemos orar."
+              },
+              {
+                "numero": 182,
+                "pergunta": "Como o Espírito nos ajuda a orar?",
+                "resposta": "Não sabendo nós o que havemos de pedir, como convém, o Espírito nos assiste em nossa fraqueza, habilitando-nos a saber por quem, pelo que, e como devemos orar; operando e despertando em nossos corações (embora não em todas as pessoas, nem em todos os tempos, na mesma medida) aquelas apreensões, afetos e graces que são necessários ao bom cumprimento desse dever."
+              },
+              {
+                "numero": 183,
+                "pergunta": "Por quem devemos orar?",
+                "resposta": "Devemos orar por toda a Igreja de Cristo na terra, pelos magistrados e por outras autoridades, por nós mesmos, pelos nossos irmãos e até mesmo pelos nossos inimigos, bem como pelos homens de todas as classes, pelos vivos e pelos que ainda hão de nascer; porém, não devemos orar pelos mortos, nem por aqueles que se sabe terem cometido o pecado para a morte."
+              },
+              {
+                "numero": 184,
+                "pergunta": "Pelo que devemos orar?",
+                "resposta": "Devemos orar por tudo que realça a glória de Deus e o bem-estar da Igreja, nosso próprio bem ou o de outrem, nada, porém, que seja ilícito."
+              },
+              {
+                "numero": 185,
+                "pergunta": "Como devemos orar?",
+                "resposta": "Devemos orar com solene apreensão da majestade de Deus e profunda convicção de nossa própria indignidade, necessidades e pecados; com corações penitentes, gratos e francos; com entendimento, fé, sinceridade, fervor, amor e perseverança, esperando nele, com humilde submissão à sua vontade."
+              },
+              {
+                "numero": 186,
+                "pergunta": "Qual regra Deus nos deu para nos conduzir na prática da oração?",
+                "resposta": "Toda a Palavra de Deus é útil para nos conduzir na prática da oração; mas a regra especial é aquela forma de oração que nosso Salvador Jesus Cristo ensinou aos seus discípulos, geralmente chamada \"Oração do Senhor\"."
+              },
+              {
+                "numero": 187,
+                "pergunta": "Como a Oração do Senhor deve ser usada?",
+                "resposta": "A oração do Senhor não é somente para direcionamento, como modelo segundo o qual devemos orar; mas também pode ser usada como uma oração, contanto que seja feita com entendimento, fé, reverência e outras graces necessárias ao correto cumprimento do dever da oração."
+              },
+              {
+                "numero": 188,
+                "pergunta": "De quantas partes consiste a Oração do Senhor?",
+                "resposta": "A oração do Senhor consiste de três partes: prefácio, petições e conclusão."
+              },
+              {
+                "numero": 189,
+                "pergunta": "O que nos ensina o prefácio da Oração do Senhor?",
+                "resposta": "O prefácio da Oração do Senhor (que é: \"Pai nosso, que estás nos céus\") nos ensina, quando orarmos, a nos aproximarmos de Deus com confiança em sua bondade paternal e em nosso interesse nele; com reverência e todas as outras disposições de filhos, afetos celestes e a devida apreensão do seu soberano poder, majestade e graciosa condescendência; bem assim o orar com outros e por eles."
+              },
+              {
+                "numero": 190,
+                "pergunta": "O que pedimos na primeira petição?",
+                "resposta": "Na primeira petição (que é: \"Santificado seja o teu nome\"), reconhecendo as inteiras incapacidade e indisposição que há em nós e em todos os homens, de honrar a Deus, como é devido, pedimos que ele, pela sua graça, nos habilite e nos incline, a nós e aos demais, a conhecê-lo, confessá-lo e altamente estimar, a ele e a seus títulos, atributos, ordenanças, palavras, obras e tudo aquilo por meio do qual ele se dá a conhecer; a glorificá-lo em pensamentos, palavras e obras, que ele impeça e remova o ateísmo, a ignorância, a idolatria, a profanação e tudo quanto o desonre; que, pela sua soberana providência, dirija e disponha tudo para a sua própria glória."
+              },
+              {
+                "numero": 191,
+                "pergunta": "O que pedimos na segunda petição?",
+                "resposta": "Na segunda petição (que é: \"Venha o teu reino\"), reconhecendo que nós e todos os homens estamos, por natureza, sob o domínio do pecado e de Satanás, pedimos que o domínio do mal seja destruído, o evangelho seja propagado por todo o mundo, os judeus sejam chamados, e a plenitude dos gentios seja consumada; que a igreja seja provida de todos os oficiais e ordenanças do evangelho, purificada da corrupção, aprovada e mantida pelo magistrado civil; que as ordenanças de Cristo sejam administradas com pureza, tornadas eficazes para a conservação daqueles que estão ainda nos seus pecados, e para a confirmação, o conforto e edificação dos que estão já convertidos; que Cristo reine nos nossos corações, aqui, e apresse o tempo da sua segunda vinda e de reinarmos nós com ele para sempre; que lhe apraza exercer o reino de seu poder em todo o mundo, do modo que melhor contribua para estes fins."
+              },
+              {
+                "numero": 192,
+                "pergunta": "O que pedimos na terceira petição?",
+                "resposta": "Na terceira petição (que é: \"Faça-se a tua vontade, assim na terra como no céu\"), reconhecendo que, por natureza, nós e todos os homens somos, não só inteiramente incapazes e indispostos a conhecer e fazer a vontade de Deus, mas também propensos a rebelar-nos contra sua palavra, a desanimar-nos e a murmurar contra sua providência, e inteiramente inclinados a fazer a vontade da carne e do diabo, pedimos que Deus, pelo seu Espírito, tire de nós e dos demais toda cegueira, fraqueza, indisposição e perversidade do coração, e pela sua graça nos faça capazes e prontos para conhecer, fazer e submeter-nos à sua vontade em tudo, com humildade, alegria, fidelidade, diligência, zelo, sinceridade e constância, como os anjos fazem no céu."
+              },
+              {
+                "numero": 193,
+                "pergunta": "O que pedimos na quarta petição?",
+                "resposta": "Na quarta petição (que é \"o pão nosso de cada dia dá-nos hoje\"), reconhecendo que, em Adão e pelo nosso próprio pecado, perdemos nosso direito a todas as bênçãos exteriores desta vida, e que merecemos ser, por Deus, totalmente privados delas, tendo elas se transformado em maldição para nós, no seu uso; que nem elas podem de si mesmas nos sustentar, nem nós podemos merecê-las nem pela nossa diligência consegui-las, mas que somos propensos a desejar, obter e usar delas ilicitamente, pedimos, por nós mesmos e por outros que tanto eles como nós, dependendo da providência de Deus, de dia em dia, no uso de meios lícitos, possamos, conforme parecer bem à sua sabedoria paternal, gozar de sua porção suficiente desses favores e de tê-los continuados e abençoados para nós em nosso santo e confortável uso e contentamento; e que sejamos guardados de tudo que é contrário ao nosso sustento e conforto temporais."
+              },
+              {
+                "numero": 194,
+                "pergunta": "O que pedimos na quinta petição?",
+                "resposta": "Na quinta petição (que é: \"Perdoa-nos as nossas dívidas, assim como nós temos perdoado aos nossos devedores\"), reconhecendo que nós e todos os demais somos culpados do pecado original e do atual, e por isso nos tornamos devedores à justiça de Deus; que nem nós nem outra criatura qualquer podem fazer a mínima satisfação por essa dívida, pedimos, por nós mesmos e por outros, que Deus por sua livre graça e pela obediência e satisfação de Cristo adquiridas e aplicadas pela fé, nos absolva da culpa e da punição do pecado, que nos aceite no seu Amado, continuem o seu favor e graça em nós, perdoe as nossas faltas diárias e nos encha de paz e gozo, dando-nos diariamente mais e mais certeza de perdão; que tenhamos mais coragem de pedir e sejamos mais animados a esperar, uma vez que já temos esse testemunho em nós, que de coração já perdoamos aos outros suas ofensas."
+              },
+              {
+                "numero": 195,
+                "pergunta": "O que pedimos na sexta petição?",
+                "resposta": "Na sexta petição (que é: “não nos deixes cair em ten-tação; mas livra-nos do mal\"), reconhecendo que o mui sábio, justo e gracioso Deus, por diversos fins, santos e justos, pode dispor as coisas de maneira que sejamos assaltados, frustrados e feitos por algum tempo cativos pelas tentações; que Satanás, o mundo e a carne estão prontos e são poderosos para nos desviar e enlaçar; que nós, depois do perdão de nossos pecados, devido à nossa corrupção, fraqueza e falta de vigilância, estamos não somente sujeitos a ser tentados e dispostos a nos expor às tentações, mas também, por nós mesmos, incapazes e indispostos para lhes resistir, sair ou tirar proveito delas; e que somos dignos de ser deixados sob o seu poder, pedimos que Deus de tal forma reja o mundo e tudo o que nele há, subjugue a carne, restrinja a Satanás, disponha tudo, conceda e abençoe todos os meios de graça e nos desperte à vigilância no seu uso que nós e todo o seu povo sejamos guardados, pela sua providência, de sermos tentados ao perdão, ou que, quando tentados, sejamos poderosamente sustentados pelo Espírito e habilitados a ficar firmes na hora da tentação, ou, quando fracassados, sejamos levantados novamente, recuperados da queda, e que façamos dela uso e proveito santos; que a nossa santificação e nossa salvação sejam aperfeiçoadas do pecado, da tentação e de todo o mal, para sempre."
+              },
+              {
+                "numero": 196,
+                "pergunta": "O que nos ensina a conclusão da Oração do Senhor?",
+                "resposta": "A conclusão da Oração do Senhor (que é: \"pois teu é o reino, o poder e a glória para sempre. Amém!\") nos ensina a reforçar as nossas petições com argumentos que devem ser derivados, não de qualquer mérito que haja em nós ou em qualquer outra criatura, mas de Deus; e ajuntar louvores às nossas oraçōes, atribuindo a Deus, unicamente, a soberania eterna, onipotência e gloriosa excelência; em virtude do que, como ele pode e quer socorrer-nos, assim nós, pela fé, estamos animados a instar com ele a que atenda aos nossos pedidos, e a confiar tranquilamente que assim o fará. E para testemunhar os nossos desejos e certeza de sermos ouvidos, dizemos: Amém."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "schema": "apoio-livro-v1",
+  "id": "breve_catecismo_westminster",
+  "numero": 89,
+  "titulo": "O Breve Catecismo de Westminster",
+  "autor": "Assembleia de Westminster",
+  "arquivo": "89_Catecismo Menor de Westminster.pdf",
+  "material": {
+    "titulo": "O Breve Catecismo de Westminster",
+    "introducao": "O Breve Catecismo de Westminster (1647) é um dos resumos doutrinários reformados mais conhecidos do mundo, estruturado em 107 perguntas e respostas que abordam a fé, a teologia, a moral cristã e os meios de graça.",
+    "secoes": [
+      {
+        "id": "parte_1_revelacao_deus_decretos",
+        "titulo": "Deus, Seus Atributos, a Trindade e Seus Decretos (Questões 1-12)",
+        "ordem": 1,
+        "perguntas": [
+          {
+            "numero": 1,
+            "pergunta": "Qual é o fim principal do homem?",
+            "resposta": "O fim principal do homem é glorificar a Deus, e gozá-lo para sempre."
+          },
+          {
+            "numero": 2,
+            "pergunta": "Qual regra Deus deu para nos dirigir na maneira de glorificá-lo e gozá-lo?",
+            "resposta": "A Palavra de Deus, que se acha nas Escrituras do Velho e do Novo Testamentos, é a única regra para nos dirigir na maneira de o glorificar e gozar."
+          },
+          {
+            "numero": 3,
+            "pergunta": "Qual é a coisa principal que as Escrituras nos ensinam?",
+            "resposta": "A coisa principal que as Escrituras nos ensinam é o que o homem deve crer em Deus, o dever que Deus requer do homem."
+          },
+          {
+            "numero": 4,
+            "pergunta": "Quem é Deus?",
+            "resposta": "Deus é espírito, infinito, eterno e imutável em seu ser, sabedoria, poder, santidade, justiça, bondade e verdade."
+          },
+          {
+            "numero": 5,
+            "pergunta": "Há mais de um Deus?",
+            "resposta": "Há só um Deus, o Deus vivo e verdadeiro."
+          },
+          {
+            "numero": 6,
+            "pergunta": "Quantas pessoas há na Divindade?",
+            "resposta": "Há três pessoas na Divindade: o Pai, o Filho e o Espírito Santo, e essas três são um só Deus, da mesma substância, iguais em poder e glória."
+          },
+          {
+            "numero": 7,
+            "pergunta": "Que são os decretos de Deus?",
+            "resposta": "Os decretos de Deus são o seu eterno propósito, segundo o conselho da sua vontade, pelo qual, para sua própria glória, ele predestinou tudo o que acontece."
+          },
+          {
+            "numero": 8,
+            "pergunta": "Como executa Deus os seus decretos?",
+            "resposta": "Deus executa os seus decretos nas obras da criação e da providência."
+          },
+          {
+            "numero": 9,
+            "pergunta": "Qual é a obra da criação?",
+            "resposta": "A obra da criação é aquela pela qual Deus fez todas as coisas do nada, no espaço de seis dias, e tudo muito bem."
+          },
+          {
+            "numero": 10,
+            "pergunta": "Como Deus criou o homem?",
+            "resposta": "Deus criou o homem macho e fêmea, conforme a sua própria imagem, em conhecimento, retidão e santidade, com domínio sobre as criaturas."
+          },
+          {
+            "numero": 11,
+            "pergunta": "Quais são as obras da providência de Deus?",
+            "resposta": "As obras da providência de Deus são a sua maneira muito santa, sabia e poderosa de preservar e governar todas as suas criaturas, e todas as suas ações."
+          },
+          {
+            "numero": 12,
+            "pergunta": "Que ato especial de providência exerceu Deus para com o homem no estado em que ele foi criado?",
+            "resposta": "Quando Deus criou o homem, fez com ele um pacto de vida, com a condição de perfeita obediência: proibindo-lhe comer da árvore da ciência do bem e do mal, sob pena de morte."
+          }
+        ]
+      },
+      {
+        "id": "parte_2_queda_pecado_miseria",
+        "titulo": "A Queda do Homem, o Pecado e a Miséria Humana (Questões 13-20)",
+        "ordem": 2,
+        "perguntas": [
+          {
+            "numero": 13,
+            "pergunta": "Conservaram-se nossos primeiros pais no estado em que foram criados?",
+            "resposta": "Nossos primeiros pais, sendo deixados à liberdade da sua própria vontade, caíram do estado em que foram criados, pecando contra Deus."
+          },
+          {
+            "numero": 14,
+            "pergunta": "O que é pecado?",
+            "resposta": "Pecado é qualquer falta de conformidade com a lei de Deus, ou qualquer transgressão dessa lei."
+          },
+          {
+            "numero": 15,
+            "pergunta": "Qual foi o pecado pelo qual nossos primeiros pais caíram do estado em que foram criados?",
+            "resposta": "O pecado pelo qual nossos primeiros pais caíram do estado em que foram criados foi o ato de comerem do fruto proibido."
+          },
+          {
+            "numero": 16,
+            "pergunta": "Caiu todo o gênero humano pela primeira transgressão de Adão?",
+            "resposta": "Visto que o pacto foi feito com Adão não só para ele, mas também para sua posteridade, todo gênero humano que dele procede por geração ordinária pecou nele e caiu com ele em sua primeira transgressão."
+          },
+          {
+            "numero": 17,
+            "pergunta": "Qual foi o estado a que a queda reduziu o gênero humano?",
+            "resposta": "A queda reduziu o gênero humano a um estado de pecado e miséria."
+          },
+          {
+            "numero": 18,
+            "pergunta": "Em que consiste o estado de pecado em que o homem caiu?",
+            "resposta": "O estado de pecado em que o homem caiu consiste na culpa do primeiro pecado de Adão, na falta de retidão original e na corrupção de toda a sua natureza, o que ordinariamente se chama Pecado Original, juntamente com todas as transgressões atuais que procedem dele."
+          },
+          {
+            "numero": 19,
+            "pergunta": "Qual é a miséria do estado em que o homem caiu?",
+            "resposta": "Todo o gênero humano pela sua queda perdeu comunhão com Deus, está debaixo da sua ira e maldição, e assim sujeito a todas as misérias nesta vida, à morte e às penas do inferno para sempre."
+          },
+          {
+            "numero": 20,
+            "pergunta": "Deus deixou todo o gênero humano perecer no estado de pecado e miséria?",
+            "resposta": "Tendo Deus, unicamente por sua boa vontade desde toda a eternidade, escolhido alguns para a vida eterna, entrou com eles em um pacto de graça, para livrá-los do estado de pecado e miséria, e trazer a um estado de salvação por meio de um Redentor."
+          }
+        ]
+      },
+      {
+        "id": "parte_3_redencao_mediador_cristo",
+        "titulo": "O Redentor: A Pessoa e a Obra de Cristo (Questões 21-28)",
+        "ordem": 3,
+        "perguntas": [
+          {
+            "numero": 21,
+            "pergunta": "Quem é o Redentor dos escolhidos de Deus?",
+            "resposta": "O único redentor dos escolhidos de Deus é o Senhor Jesus Cristo, que, sendo o eterno Filho de Deus, se fez homem, e assim foi e continua a ser Deus e homem em duas naturezas distintas, e uma só pessoa, para sempre."
+          },
+          {
+            "numero": 22,
+            "pergunta": "Como Cristo, sendo o Filho de Deus, se fez homem?",
+            "resposta": "Cristo, o Filho de Deus, fez-se homem tomando um verdadeiro corpo, e uma alma racional, sendo concebido pelo poder do Espírito Santo no ventre da virgem Maria, e nascido dela, mas sem pecado."
+          },
+          {
+            "numero": 23,
+            "pergunta": "Quais funções Cristo exerce como nosso Redentor?",
+            "resposta": "Cristo, como nosso Redentor, exerce as funções de profeta, sacerdote e rei, tanto em seu estado de humilhação como no de exaltação."
+          },
+          {
+            "numero": 24,
+            "pergunta": "Como Cristo exerce as funções de profeta?",
+            "resposta": "Cristo exerce as funções de profeta, revelando-nos, pela sua Palavra e pelo seu Espírito, a vontade de Deus para a nossa salvação."
+          },
+          {
+            "numero": 25,
+            "pergunta": "Como Cristo exerce as funções de sacerdote?",
+            "resposta": "Cristo exerce as funções de sacerdote oferecendo-se a si mesmo uma vez em sacrifício, para satisfazer a justiça divina, reconciliar-nos com Deus e fazer contínua intercessão por nós."
+          },
+          {
+            "numero": 26,
+            "pergunta": "Como Cristo exerce as funções de rei?",
+            "resposta": "Cristo exerce as funções de rei sujeitando-nos a si mesmo, governando-nos e protegendo-nos, contendo e subjugando todos os seus e os nossos inimigos."
+          },
+          {
+            "numero": 27,
+            "pergunta": "Em que consistiu a humilhação de Cristo?",
+            "resposta": "A humilhação de Cristo consistiu em seu nascimento, e isso em condição baixa, feito sujeito à lei; em sofrer as misérias desta vida, a ira de Deus e a amaldiçoada morte na cruz; em ser sepultado, e permanecer debaixo do poder da morte durante certo tempo."
+          },
+          {
+            "numero": 28,
+            "pergunta": "Em que consiste a exaltação de Cristo?",
+            "resposta": "A exaltação de Cristo consiste no fato de ele ressurgir dos mortos no terceiro dia; em subir ao Céu e estar sentado à mão direita de Deus Pai, e em vir para julgar o mundo no último dia."
+          }
+        ]
+      },
+      {
+        "id": "parte_4_aplicacao_redencao_graca",
+        "titulo": "A Aplicação da Redenção e os Benefícios da Graça (Questões 29-38)",
+        "ordem": 4,
+        "perguntas": [
+          {
+            "numero": 29,
+            "pergunta": "Como nos tornamos participantes da redenção adquirida por Cristo?",
+            "resposta": "Tornamo-nos participantes da redenção adquirida por Cristo por meio de sua eficaz aplicação a nós pelo seu Santo Espírito."
+          },
+          {
+            "numero": 30,
+            "pergunta": "Como nos aplica o Espírito a redenção adquirida por Cristo?",
+            "resposta": "O Espírito aplica-nos a redenção adquirida por Cristo operando em nós a fé, e unindo-nos a Cristo por meio dela em nossa vocação eficaz."
+          },
+          {
+            "numero": 31,
+            "pergunta": "O que é vocação eficaz?",
+            "resposta": "Vocação eficaz é a obra do Espírito Santo, pela qual, convencendo-nos do nosso pecado, e da nossa miséria, iluminando nossos entendimentos pelo conhecimento de Cristo, e renovando a nossa vontade, nos persuade e habilita a abraçar Jesus Cristo, que nos é oferecido de graça no evangelho."
+          },
+          {
+            "numero": 32,
+            "pergunta": "Quais bênçãos gozam nesta vida aqueles que são eficazmente chamados?",
+            "resposta": "Aqueles que são eficazmente chamados gozam, nesta vida, de justificação, adoção e santificação, e das diversas bênçãos que acompanham estas graças ou delas procedem."
+          },
+          {
+            "numero": 33,
+            "pergunta": "O que é justificação?",
+            "resposta": "Justificação é um ato da livre graça de Deus, no qual ele perdoa todos os nossos pecados, e nos aceita como justos diante de si, somente por causa da justiça de Cristo a nós imputada, e recebida somente pela fé."
+          },
+          {
+            "numero": 34,
+            "pergunta": "O que é adoção?",
+            "resposta": "Adoção é um ato de livre graça de Deus, pelo qual somos recebidos no número dos filhos de Deus, e temos direito a todos os seus privilégios."
+          },
+          {
+            "numero": 35,
+            "pergunta": "O que é santificação?",
+            "resposta": "É a obra da livre graça de Deus, pela qual somos renovados em todo o nosso ser, segundo a imagem de Deus, e habilitados a morrer cada vez mais para o pecado e a viver para a retidão."
+          },
+          {
+            "numero": 36,
+            "pergunta": "Quais são as bênçãos que nesta vida acompanham a justificação, a adoção e a santificação ou delas procedem?",
+            "resposta": "As bênçãos que nesta vida acompanham a justificação, a adoção e a santificação, ou delas procedem, são: certeza do amor de Deus, paz de consciência, gozo no Espírito Santo, aumento de graça, e perseverança nela até ao fim."
+          },
+          {
+            "numero": 37,
+            "pergunta": "Quais são as bênçãos que os fiéis recebem de Cristo na hora da morte?",
+            "resposta": "As almas dos fiéis na hora da morte são aperfeiçoadas em santidade, e imediatamente entram na glória; e os corpos que continuam unidos a Cristo descansam na sepultura até a ressurreição."
+          },
+          {
+            "numero": 38,
+            "pergunta": "Quais são as bênçãos que os fiéis recebem de Cristo na ressurreição?",
+            "resposta": "Na ressurreição, os fiéis, sendo ressuscitados em glória, serão publicamente reconhecidos e absolvidos no dia de juízo, e tornados perfeitamente felizes no pleno gozo de Deus por toda a eternidade."
+          }
+        ]
+      },
+      {
+        "id": "parte_5_lei_moral_dez_mandamentos",
+        "titulo": "O Dever do Homem e a Lei Moral: Os Dez Mandamentos (Questões 39-81)",
+        "ordem": 5,
+        "perguntas": [
+          {
+            "numero": 39,
+            "pergunta": "Qual é o dever que Deus exige do homem?",
+            "resposta": "O dever que Deus exige do homem é obediência à sua vontade revelada."
+          },
+          {
+            "numero": 40,
+            "pergunta": "O que Deus revelou primeiramente ao homem como regra de sua obediência?",
+            "resposta": "A regra que Deus revelou primeiramente ao homem para sua obediência foi a lei moral."
+          },
+          {
+            "numero": 41,
+            "pergunta": "Onde está a lei moral resumidamente compreendida?",
+            "resposta": "A lei moral está resumidamente compreendida nos dez mandamentos."
+          },
+          {
+            "numero": 42,
+            "pergunta": "Em que se resumem os dez mandamentos?",
+            "resposta": "Os dez mandamentos se resumem em amar ao Senhor, nosso Deus, de todo o nosso coração, de toda a nossa alma, de todas as nossas forças e de todo o nosso entendimento; e ao nosso próximo como a nós mesmos."
+          },
+          {
+            "numero": 43,
+            "pergunta": "Qual é o prefácio dos dez mandamentos?",
+            "resposta": "O prefácio dos dez mandamentos é: \"Eu sou o SENHOR, teu Deus, que te tirei da terra do Egito, da casa da servidão\"."
+          },
+          {
+            "numero": 44,
+            "pergunta": "O que nos ensina o prefácio dos dez mandamentos?",
+            "resposta": "O prefácio dos dez mandamentos ensina-nos que temos a obrigação de guardar todos os mandamentos de Deus, por ser ele o Senhor nosso Deus e Redentor."
+          },
+          {
+            "numero": 45,
+            "pergunta": "Qual é o primeiro mandamento?",
+            "resposta": "O primeiro mandamento é: \"Não terás outros deuses diante de mim\"."
+          },
+          {
+            "numero": 46,
+            "pergunta": "O que exige o primeiro mandamento?",
+            "resposta": "O primeiro mandamento exige de nós conhecer e reconhecer a Deus como o único Deus verdadeiro, e nosso Deus; e, como tal, adorá-lo."
+          },
+          {
+            "numero": 47,
+            "pergunta": "O que proíbe o primeiro mandamento?",
+            "resposta": "O primeiro mandamento proíbe negar, ou deixar de adorar ou glorificar ao verdadeiro Deus, como Deus, e nosso Deus; e dar a qualquer outro a adoração e a glória que só a ele são devidas."
+          },
+          {
+            "numero": 48,
+            "pergunta": "O que se nos ensina especialmente pelas palavras \"diante de mim\", no primeiro mandamento?",
+            "resposta": "As palavras \"diante de mim\", no primeiro mandamento, ensinam-nos que Deus, que vê todas as coisas, toma conhecimento e muito se ofende do pecado de se ter em seu lugar outro deus."
+          },
+          {
+            "numero": 49,
+            "pergunta": "Qual é o segundo mandamento?",
+            "resposta": "O segundo mandamento é: \"Não farás para ti imagem de escultura, nem semelhança alguma do que há em cima nos céus, nem embaixo na terra, nem nas águas debaixo da terra. Não as adorarás, nem lhes darás culto; porque eu sou o SENHOR, teu Deus, Deus zeloso, que visito a iniquidade dos pais nos filhos até à terceira e quarta geração daqueles que me aborrecem e faço misericórdia até mil gerações daqueles que me amam e guardam os meus mandamentos\"."
+          },
+          {
+            "numero": 50,
+            "pergunta": "O que o segundo mandamento exige?",
+            "resposta": "O segundo mandamento exige que recebamos, observemos e guardemos puros e inteiros todo o culto e as ordenanças religiosas que Deus instituiu em sua Palavra."
+          },
+          {
+            "numero": 51,
+            "pergunta": "O que o segundo mandamento proíbe?",
+            "resposta": "O segundo mandamento proíbe o adorar a Deus por meio de imagens, ou de qualquer outra maneira não prescrita em sua Palavra."
+          },
+          {
+            "numero": 52,
+            "pergunta": "Quais são as razões anexas ao segundo mandamento?",
+            "resposta": "As razões anexas ao segundo mandamento são a soberania de Deus sobre nós, sua propriedade em nós e o zelo que ele tem por seu culto."
+          },
+          {
+            "numero": 53,
+            "pergunta": "Qual é o terceiro mandamento?",
+            "resposta": "O terceiro mandamento é: \"Não tomarás o nome do SENHOR, teu Deus, em vão, porque o SENHOR não terá por inocente o que tomar o seu nome em vão”."
+          },
+          {
+            "numero": 54,
+            "pergunta": "O que o terceiro mandamento exige?",
+            "resposta": "O terceiro mandamento exige o santo e reverente uso dos nomes, títulos, atributos, ordenanças, palavras e obras de Deus."
+          },
+          {
+            "numero": 55,
+            "pergunta": "O que proíbe o terceiro mandamento?",
+            "resposta": "O terceiro mandamento proíbe toda a profanação ou abuso das coisas por meio das quais Deus se faz conhecer."
+          },
+          {
+            "numero": 56,
+            "pergunta": "Qual é a razão anexa ao terceiro mandamento?",
+            "resposta": "A razão anexa ao terceiro mandamento é que, embora os transgressores deste mandamento escapem do castigo dos homens, o Senhor nosso Deus não os deixará escapar do seu justo juízo."
+          },
+          {
+            "numero": 57,
+            "pergunta": "Qual é o quarto mandamento?",
+            "resposta": "O quarto mandamento é: \"Lembra-te do dia de sábado, para o santificar. Seis dias trabalharás e farás toda a tua obra. Mas o sétimo dia é o sábado do SENHOR, teu Deus; não farás nenhum trabalho, nem tu, nem o teu filho, nem a tua filha, nem o teu servo, nem a tua serva, nem o teu animal, nem o forasteiro das tuas portas para dentro; porque, em seis dias, fez o Senhor os céus e a terra, o mar e tudo o que neles há e, ao sétimo dia, descansou; por isso, O SENHOR abençoou o dia de sábado e o santificou\"."
+          },
+          {
+            "numero": 58,
+            "pergunta": "O que o quarto mandamento exige?",
+            "resposta": "O quarto mandamento exige que consagremos a Deus os tempos determinados em sua Palavra, particularmente um dia inteiro em cada sete, para ser um dia de santo descanso a ele dedicado."
+          },
+          {
+            "numero": 59,
+            "pergunta": "Qual dos sete dias designou Deus para esse descanso semanal?",
+            "resposta": "Desde o princípio do mundo até à ressurreição de Cristo, Deus designou o sétimo dia da semana para o descanso semanal; e, desde então, o primeiro dia da semana, para continuar sempre até ao fim do mundo, que é o sábado cristão, ou domingo."
+          },
+          {
+            "numero": 60,
+            "pergunta": "De que modo deve santificar-se o domingo?",
+            "resposta": "O domingo deve ser santificado com um santo repouso por todo aquele dia, inclusive das ocupações e recreações temporais que são permitidas nos outros dias; empregando todo o tempo em exercícios públicos e particulares de adoração a Deus, exceto o tempo para as obras de pura necessidade e misericórdia."
+          },
+          {
+            "numero": 61,
+            "pergunta": "O que o quarto mandamento proíbe?",
+            "resposta": "O quarto mandamento proíbe a omissão ou a negligência no cumprimento dos deveres exigidos, e a profanação deste dia por meio de ociosidade ou por fazer aquilo que é em si mesmo pecaminoso, ou por desnecessários pensamentos, palavras, ou obras acerca de nossos negócios e recreações temporais."
+          },
+          {
+            "numero": 62,
+            "pergunta": "Quais são as razões anexas ao quarto mandamento?",
+            "resposta": "As razões anexas ao quarto mandamento são: a permissão que Deus nos concede de fazermos uso dos seis dias da semana para os nossos interesses temporais; o reclamar ele para si a propriedade especial do dia sétimo, o seu próprio exemplo, e a bênção que ele conferiu ao dia do descanso."
+          },
+          {
+            "numero": 63,
+            "pergunta": "Qual é o quinto mandamento?",
+            "resposta": "O quinto mandamento é: \"Honra teu pai e tua mãe, para que se prolonguem os teus dias na terra que O SENHOR, teu Deus, te dá\"."
+          },
+          {
+            "numero": 64,
+            "pergunta": "O que o quinto mandamento exige?",
+            "resposta": "O quinto mandamento exige a conservação da honra e o desempenho dos deveres pertencentes a cada um em suas diferentes condições e relações, como superiores, inferiores ou iguais."
+          },
+          {
+            "numero": 65,
+            "pergunta": "O que o quinto mandamento proíbe?",
+            "resposta": "O quinto mandamento proíbe negligenciarmos ou fazermos alguma coisa contra a honra e o dever que pertencem a cada um em suas diferentes condições e relações."
+          },
+          {
+            "numero": 66,
+            "pergunta": "Qual é a razão anexa ao quinto mandamento?",
+            "resposta": "A razão anexa ao quinto mandamento é uma promessa de longa vida e prosperidade (quanto sirva para glória de Deus e bem do homem) a todos aqueles que guardam este mandamento."
+          },
+          {
+            "numero": 67,
+            "pergunta": "Qual é o sexto mandamento?",
+            "resposta": "O sexto mandamento é: \"Não matarás\"."
+          },
+          {
+            "numero": 68,
+            "pergunta": "O que o sexto mandamento exige?",
+            "resposta": "O sexto mandamento exige todos os esforços lícitos para conservar a nossa vida e a dos nossos semelhantes."
+          },
+          {
+            "numero": 69,
+            "pergunta": "O que o sexto mandamento proíbe?",
+            "resposta": "O sexto mandamento proíbe o tirar nossa própria vida, ou a do nosso próximo injustamente, e tudo aquilo que para isso concorre."
+          },
+          {
+            "numero": 70,
+            "pergunta": "Qual é o sétimo mandamento?",
+            "resposta": "O sétimo mandamento é: \"Não adulterarás\"."
+          },
+          {
+            "numero": 71,
+            "pergunta": "O que o sétimo mandamento exige?",
+            "resposta": "O sétimo mandamento exige a conservação da nossa própria castidade, e da do nosso próximo, no coração, nas palavras e nos costumes."
+          },
+          {
+            "numero": 72,
+            "pergunta": "O que o sétimo mandamento proíbe?",
+            "resposta": "O sétimo mandamento proíbe todos os pensamentos, palavras e ações impuras."
+          },
+          {
+            "numero": 73,
+            "pergunta": "Qual é o oitavo mandamento?",
+            "resposta": "O oitavo mandamento é: \"Não furtarás\"."
+          },
+          {
+            "numero": 74,
+            "pergunta": "O que o oitavo mandamento exige?",
+            "resposta": "O oitavo mandamento exige que procuremos o lícito adiantamento das riquezas e do estado exterior, tanto nosso como do nosso próximo."
+          },
+          {
+            "numero": 75,
+            "pergunta": "O que o oitavo mandamento proíbe?",
+            "resposta": "O oitavo mandamento proíbe tudo o que impede ou pode impedir injustamente o adiantamento da riqueza ou do bem-estar, tanto nosso como do nosso próximo."
+          },
+          {
+            "numero": 76,
+            "pergunta": "Qual é o nono mandamento?",
+            "resposta": "O nono mandamento é: \"Não dirás falso testemunho contra o teu próximo\"."
+          },
+          {
+            "numero": 77,
+            "pergunta": "O que o nono mandamento exige?",
+            "resposta": "O nono mandamento exige a conservação e a promoção da verdade entre os homens, e a manutenção da nossa boa reputação, e a do nosso próximo, especialmente quando somos chamados a dar testemunho."
+          },
+          {
+            "numero": 78,
+            "pergunta": "O que o nono mandamento proíbe?",
+            "resposta": "O nono mandamento proíbe tudo o que é prejudicial à verdade, ou injurioso, tanto à nossa reputação como à do nosso próximo."
+          },
+          {
+            "numero": 79,
+            "pergunta": "Qual é o décimo mandamento?",
+            "resposta": "O décimo mandamento é: \"Não cobiçarás a casa do teu próximo. Não cobiçarás a mulher do teu próximo, nem o seu servo, nem a sua serva, nem o seu boi, nem o seu jumento, nem coisa alguma que pertença ao teu próximo\"."
+          },
+          {
+            "numero": 80,
+            "pergunta": "O que o décimo mandamento exige?",
+            "resposta": "O décimo mandamento exige o pleno contentamento com nossa condição, bem como a disposição caridosa para com nosso próximo e tudo o que lhe pertence."
+          },
+          {
+            "numero": 81,
+            "pergunta": "O que o décimo mandamento proíbe?",
+            "resposta": "O décimo mandamento proíbe todo o descontentamento com a nossa condição, todo o movimento de inveja ou pesar à vista da prosperidade do nosso próximo e todas as tendências ou afeições desordenadas a alguma coisa que lhe pertence."
+          }
+        ]
+      },
+      {
+        "id": "parte_6_capacidade_pecado_meios_graca",
+        "titulo": "A Incapacidade Humana, o Pecado e os Meios Exteriores de Graça (Questões 82-107)",
+        "ordem": 6,
+        "perguntas": [
+          {
+            "numero": 82,
+            "pergunta": "Será alguém capaz de guardar perfeitamente os mandamentos de Deus?",
+            "resposta": "Nenhum mero homem, desde a queda de Adão, é capaz, nesta vida, de guardar perfeitamente os mandamentos de Deus, mas diariamente os quebranta por pensamentos, palavras e obras."
+          },
+          {
+            "numero": 83,
+            "pergunta": "São igualmente odiosas todas as transgressões da lei?",
+            "resposta": "Alguns pecados em si mesmos, e em razão de circunstâncias agravantes, são mais odiosos à vista de Deus do que outros."
+          },
+          {
+            "numero": 84,
+            "pergunta": "O que merece cada pecado?",
+            "resposta": "Cada pecado merece a ira e a maldição de Deus, tanto nesta vida como na vindoura."
+          },
+          {
+            "numero": 85,
+            "pergunta": "O que Deus exige de nós para que possamos escapar à sua ira e à maldição em que temos incorrido pelo pecado?",
+            "resposta": "Para escaparmos à ira e à maldição de Deus, em que temos incorrido pelo pecado, Deus exige de nós fé em Jesus Cristo e arrependimento para a vida, com o uso diligente de todos os meios exteriores pelos quais Cristo nos comunica as bênçãos da redenção."
+          },
+          {
+            "numero": 86,
+            "pergunta": "O que é fé em Jesus Cristo?",
+            "resposta": "Fé em Jesus Cristo é uma graça salvadora, pela qual o recebemos e confiamos só nele para a salvação, como ele nos é oferecido."
+          },
+          {
+            "numero": 87,
+            "pergunta": "O que é arrependimento para a vida?",
+            "resposta": "Arrependimento para a vida é uma graça salvadora pela qual o pecador, tendo um verdadeiro sentimento do seu pecado e percepção da misericórdia de Deus em Cristo, se enche de tristeza e de horror pelos seus pecados, abandona-os e volta para Deus, inteiramente resolvido a lhe prestar nova obediência."
+          },
+          {
+            "numero": 88,
+            "pergunta": "Quais são os meios exteriores e ordinários pelos quais Cristo nos comunica as bênçãos da redenção?",
+            "resposta": "Os meios exteriores e ordinários pelos quais Cristo nos comunica as bênçãos da redenção, são as suas ordenanças, especialmente a Palavra os sacramentos e a oração, as quais todas se tornam eficazes aos eleitos para a salvação."
+          },
+          {
+            "numero": 89,
+            "pergunta": "Como se torna a Palavra eficaz para a salvação?",
+            "resposta": "O Espírito de Deus torna a leitura e especialmente a pregação da Palavra meios eficazes para convencer e converter os pecadores, para os edificar em santidade e conforto, por meio de uma fé para a salvação."
+          },
+          {
+            "numero": 90,
+            "pergunta": "Como se deve ler e ouvir a Palavra a fim de que ela se torne eficaz para a salvação?",
+            "resposta": "Para que a Palavra se torne eficaz para a salvação, devemos ouvi-la com diligência, preparação e oração; recebê-la com fé e amor, guardá-la em nossos corações e praticá-la em nossas vidas."
+          },
+          {
+            "numero": 91,
+            "pergunta": "Como se tornam os sacramentos meios eficazes para a salvação?",
+            "resposta": "Os sacramentos tornam-se meios eficazes para a salvação não por alguma virtude que eles ou aqueles que os ministram tenham, mas somente pela bênção de Cristo e pela obra do seu Espírito neles que pela fé os recebem."
+          },
+          {
+            "numero": 92,
+            "pergunta": "Que é um sacramento?",
+            "resposta": "Um sacramento é uma santa ordenança instituída por Cristo, na qual, por sinais sensíveis, Cristo e as bênçãos do novo pacto são representadas, seladas e aplicadas aos crentes."
+          },
+          {
+            "numero": 93,
+            "pergunta": "Quais são os sacramentos do Novo Testamento?",
+            "resposta": "Os sacramentos do Novo Testamento são o Batismo e a Ceia do Senhor."
+          },
+          {
+            "numero": 94,
+            "pergunta": "O que é o Batismo?",
+            "resposta": "Batismo é o sacramento no qual o lavar com água em nome do Pai, do Filho e do Espírito Santo significa e sela a nossa união com Cristo, a participação das bênçãos do pacto da graça e a promessa de pertencermos ao Senhor."
+          },
+          {
+            "numero": 95,
+            "pergunta": "A quem deve ser ministrado o Batismo?",
+            "resposta": "O Batismo não deve ser ministrado àqueles que estão fora da igreja visível, enquanto não professarem sua fé em Cristo e obediência a ele; mas os filhos daqueles que são membros da igreja visível devem ser batizados."
+          },
+          {
+            "numero": 96,
+            "pergunta": "O que é a Ceia do Senhor?",
+            "resposta": "A Ceia do Senhor é o sacramento no qual, dando-se e recebendo-se pão e vinho, conforme a instituição de Cristo, se anuncia sua morte, e aqueles que participam dignamente tornam-se, não de uma maneira corporal e carnal, mas pela fé, participantes do seu corpo e do seu sangue, com todas as suas bênçãos para o seu alimento espiritual e crescimento em graça."
+          },
+          {
+            "numero": 97,
+            "pergunta": "O que se exige para participar dignamente da Ceia do Senhor?",
+            "resposta": "Exige-se daqueles que desejam participar dignamente da Ceia do Senhor que se examine sobre seu conhecimento em discernir o corpo do Senhor, sobre sua fé para se alimentar dele, sobre seu arrependimento, amor e nova obediência; para não suceder que, vindo indignamente, comam e bebam para si a condenação."
+          },
+          {
+            "numero": 98,
+            "pergunta": "O que é Oração?",
+            "resposta": "A Oração é um santo oferecimento dos nossos desejos a Deus, por coisas condizentes com a sua vontade, em nome de Cristo, com a confissão dos nossos pecados e um agradecido reconhecimento das suas misericórdias."
+          },
+          {
+            "numero": 99,
+            "pergunta": "Qual regra Deus nos deu para nos dirigir em oração?",
+            "resposta": "Toda palavra de Deus é útil para nos dirigir em oração, mas a regra especial de direção é aquela forma de oração que Cristo ensinou aos seus discípulos, e que geralmente se chama a Oração do Senhor."
+          },
+          {
+            "numero": 100,
+            "pergunta": "O que nos ensina o prefácio da Oração do Senhor?",
+            "resposta": "O prefácio da Oração do Senhor, que é: \"Pai nosso, que estás no Céu\", ensina-nos que nos devemos aproximar de Deus com toda a santa reverência e confiança, como filhos de um pai poderoso e pronto para nos ajudar, e também nos ensina a orar com os outros e por eles."
+          },
+          {
+            "numero": 101,
+            "pergunta": "Pelo que oramos na primeira petição?",
+            "resposta": "Na primeira petição, que é: \"Santificado seja o teu nome\", pedimos que Deus habilite a nós e aos outros a glorificá-lo em tudo aquilo em que se dá a conhecer; e que disponha tudo para sua glória."
+          },
+          {
+            "numero": 102,
+            "pergunta": "Pelo que oramos na segunda petição?",
+            "resposta": "Na segunda petição, que é: \"Venha o teu reino\", pedimos que o reino de Satanás seja destruído e que o reino da graça seja adiantado; que nós e os outros a ele sejamos guiados e nele guardados, e que cedo venha o reino da glória."
+          },
+          {
+            "numero": 103,
+            "pergunta": "Pelo que oramos na terceira petição?",
+            "resposta": "Na terceira petição, que é: \"Faça-se a tua vontade, assim na terra como no céu\", pedimos que Deus, pela sua graça, nos torne capazes e desejosos de conhecer a sua vontade, de obedecer e submeter-nos a ela em tudo, como fazem os anjos no Céu."
+          },
+          {
+            "numero": 104,
+            "pergunta": "Pelo que oramos na quarta petição?",
+            "resposta": "Na quarta petição, que é: \"O pão nosso de cada dia dá-nos hoje\", pedimos que, da livre dádiva de Deus, recebamos uma porção suficiente das coisas boas desta vida, e gozemos com elas de suas bênçãos."
+          },
+          {
+            "numero": 105,
+            "pergunta": "Pelo que oramos na quinta petição?",
+            "resposta": "Na quinta petição, que é: \"E perdoa-nos as nossas dívidas, assim como nós temos perdoado aos nossos devedores\", pedimos que Deus, por amor de Cristo, nos perdoe gratuitamente os nossos pecados, o que somos animados a pedir, porque, pela sua graça, somos habilitados a perdoar de coração ao nosso próximo."
+          },
+          {
+            "numero": 106,
+            "pergunta": "Pelo que oramos na sexta petição?",
+            "resposta": "Na sexta petição, que é: “E não nos deixes cair em tentação; mas livra-nos do mal\", pedimos que Deus nos guarde de sermos tentados a pecar, ou nos preserve e livre quando formos tentados."
+          },
+          {
+            "numero": 107,
+            "pergunta": "O que nos ensina a conclusão da Oração do Senhor?",
+            "resposta": "A conclusão da Oração do Senhor, que é: \"pois teu é o reino, o poder e a glória para sempre. Amém\", ensina-nos que na Oração devemos confiar somente em Deus, e louvá-lo em nossas orações, atribuindo-lhe reino, poder e glória. E, em testemunho do nosso desejo e certeza de sermos ouvidos, dizemos: Amém."
+          }
+        ]
+      }
+    ]
+  }
+}
