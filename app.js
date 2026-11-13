@@ -3272,6 +3272,9 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
             restoreTabScroll(tabId);
         }
 
+        if (tabId === 'library') {
+            renderLibraryList();
+        }
     }
 
     function openSearchResult(bIdx, cIdx, vIdx) {
@@ -6197,6 +6200,11 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
                 if (!pwaReloading) return;
 
                 pwaReloading = false;
+
+                pwaUpdateAvailable = false;
+
+                atualizarInterfacePWA();
+
                 window.location.reload();
             },
             { once: true }
@@ -6580,4 +6588,174 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         }, 1500);
     });
 
-    configurarInstalacaoPWA();
+// ==========================================================
+    // ABA BIBLIOTECA (Estilo Kindle / Leitor de Anexos Dinâmico)
+    // ==========================================================
+    
+    const libraryDocsRegistry = [
+        // Mapas Históricos (Imagens)
+        { id: '01_amigracaodeabraao', title: 'A Migração de Abraão', file: 'dados/apoio/anexos/01_amigracaodeabraao.png', type: 'image', icon: '🗺️' },
+        { id: '02_abraaoemcanaa', title: 'Abraão em Canaã', file: 'dados/apoio/anexos/02_abraaoemcanaa.png', type: 'image', icon: '🗺️' },
+        { id: '03_arotadoexodo', title: 'A Rota do Êxodo', file: 'dados/apoio/anexos/03_arotadoexodo.png', type: 'image', icon: '🗺️' },
+
+        // Documentos e Estudos (JSONs)
+        { id: '67_Apologetica', title: 'Apologética', file: 'dados/apoio/anexos/67_Apologetica.json', type: 'json', icon: '🛡️' },
+        { id: '68_A_Biblia_na_Historia_da_Igreja', title: 'A Bíblia na História da Igreja', file: 'dados/apoio/anexos/68_A_Biblia_na_Historia_da_Igreja.json', type: 'json', icon: '📖' },
+        { id: '69_Canonicidade', title: 'Canonicidade', file: 'dados/apoio/anexos/69_Canonicidade.json', type: 'json', icon: '📜' },
+        { id: '70_Teologia_dos_Pactos', title: 'Teologia dos Pactos', file: 'dados/apoio/anexos/70_Teologia_dos_Pactos.json', type: 'json', icon: '🤝' },
+        { id: '71_Credos_e_Confissoes', title: 'Credos e Confissões', file: 'dados/apoio/anexos/71_Credos_e_Confissoes.json', type: 'json', icon: '⚖️' },
+        { id: '72_Hermeneutica', title: 'Hermenêutica', file: 'dados/apoio/anexos/72_Hermeneutica.json', type: 'json', icon: '🔍' },
+        { id: '73_A_Inerrancia_da_Escritura_Sagrada', title: 'A Inerrância da Escritura Sagrada', file: 'dados/apoio/anexos/73_A_Inerrancia_da_Escritura_Sagrada.json', type: 'json', icon: '💎' },
+        { id: '74_Interpretando_a_Escritura_pela_Escritura', title: 'Interpretando a Escritura pela Escritura', file: 'dados/apoio/anexos/74_Interpretando_a_Escritura_pela_Escritura.json', type: 'json', icon: '🗝️' },
+        { id: '75_Critica_Textual_do_Novo_Testamento', title: 'Crítica Textual do Novo Testamento', file: 'dados/apoio/anexos/75_Critica_Textual_do_Novo_Testamento.json', type: 'json', icon: '📝' },
+        { id: '76_Critica_Textual_do_Antigo_Testamento', title: 'Crítica Textual do Antigo Testamento', file: 'dados/apoio/anexos/76_Critica_Textual_do_Antigo_Testamento.json', type: 'json', icon: '📜' },
+        { id: '77_A_Pregacao_da_Reforma', title: 'A Pregação da Reforma', file: 'dados/apoio/anexos/77_A_Pregacao_da_Reforma.json', type: 'json', icon: '🗣️' },
+        { id: '78_A_Reforma', title: 'A Reforma', file: 'dados/apoio/anexos/78_A_Reforma.json', type: 'json', icon: '🏛️' },
+        { id: '79_Adoracao', title: 'Adoração', file: 'dados/apoio/anexos/79_Adoracao.json', type: 'json', icon: '🙌' },
+        { id: '80_O_Credo_dos_Apostolos', title: 'O Credo dos Apóstolos', file: 'dados/apoio/anexos/80_O_Credo_dos_Apostolos.json', type: 'json', icon: '✝️' },
+        { id: '81_O_Credo_Niceno_Constantinopolitano', title: 'O Credo Niceno-Constantinopolitano', file: 'dados/apoio/anexos/81_O_Credo_Niceno_Constantinopolitano.json', type: 'json', icon: '🕊️' },
+        { id: '82_Declaracao_de_Fe_de_Calcedonia', title: 'Declaração de Fé de Calcedônia', file: 'dados/apoio/anexos/82_Declaracao_de_Fe_de_Calcedonia.json', type: 'json', icon: '🛡️' },
+        { id: '83_Os_Trinta_e_Nove_Artigos_da_Religiao', title: 'Os 39 Artigos da Religião', file: 'dados/apoio/anexos/83_Os_Trinta_e_Nove_Artigos_da_Religiao.json', type: 'json', icon: '📋' },
+        { id: '84_O_Catecismo_de_Heidelberg', title: 'O Catecismo de Heidelberg', file: 'dados/apoio/anexos/84_O_Catecismo_de_Heidelberg.json', type: 'json', icon: '💚' },
+        { id: '85_A_Confissao_Belga', title: 'A Confissão Belga', file: 'dados/apoio/anexos/85_A_Confissao_Belga.json', type: 'json', icon: '📘' },
+        { id: '86_Os_Canones_de_Dort', title: 'Os Cânones de Dort', file: 'dados/apoio/anexos/86_Os_Canones_de_Dort.json', type: 'json', icon: '⚖️' },
+        { id: '87_Confissao_de_Fe_de_Westminster', title: 'Confissão de Fé de Westminster', file: 'dados/apoio/anexos/87_Confissao_de_Fe_de_Westminster.json', type: 'json', icon: '✨' },
+        { id: '88_Catecismo_Maior_de_Westminster', title: 'Catecismo Maior de Westminster', file: 'dados/apoio/anexos/88_Catecismo_Maior_de_Westminster.json', type: 'json', icon: '📚' },
+        { id: '89_Breve_Catecismo_de_Westminster', title: 'O Breve Catecismo de Westminster', file: 'dados/apoio/anexos/89_Breve_Catecismo_de_Westminster.json', type: 'json', icon: '🔖' },
+        { id: '90_Confissao_de_Fe_Batista_de_1689', title: 'Confissão de Fé Batista de 1689', file: 'dados/apoio/anexos/90_Confissao_de_Fe_Batista_de_1689.json', type: 'json', icon: '🌿' }
+    ];
+
+async function renderLibraryList() {
+        const grid = document.getElementById('library-grid');
+        const reader = document.getElementById('library-reader-view');
+        if (!grid) return;
+
+        grid.classList.remove('hidden');
+        if (reader) reader.classList.add('hidden');
+
+        const anexos = [...libraryDocsRegistry].sort((a, b) => a.title.localeCompare(b.title));
+
+        let html = '<div class="library-cards-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap:16px;">';
+        
+        anexos.forEach(item => {
+            // Extrai as iniciais do título para criar um monograma acadêmico (ex: "Confissão de Fé" -> "CF")
+            const words = item.title.replace(/^(O|A|Os|As|De|Do|Da)\s+/i, '').split(' ');
+            const initials = words.length > 1 ? (words[0][0] + words[1][0]).toUpperCase() : words[0].substring(0, 2).toUpperCase();
+
+            html += `
+                <div class="card library-card" onclick="openLibraryDoc('${item.file}', '${escapeJS(item.title)}', '${item.type || 'json'}')" style="cursor:pointer; text-align:center; padding:18px 12px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; min-height:140px; margin:0; background: var(--bg-card, #fff); border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; transition: transform 0.15s ease, box-shadow 0.15s ease;">
+                    
+                    <!-- Selo / Monograma Acadêmico Minimalista -->
+                    <div style="width:42px; height:42px; border-radius:6px; background: rgba(var(--primary-rgb, 41, 128, 185), 0.08); color: var(--primary); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:15px; letter-spacing:1px; border: 1px solid rgba(var(--primary-rgb, 41, 128, 185), 0.2); margin-bottom:10px;">
+                        ${initials}
+                    </div>
+
+                    <!-- Título do Documento -->
+                    <div style="font-weight:600; font-size:12px; line-height:1.35; color:var(--text-main); display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;">
+                        ${escapeHTML(item.title)}
+                    </div>
+                </div>
+            `;
+        });
+        html += '</div>';
+        grid.innerHTML = html;
+    }
+
+    async function openLibraryDoc(filepath, title, type) {
+        const grid = document.getElementById('library-grid');
+        const reader = document.getElementById('library-reader-view');
+        const contentBox = document.getElementById('library-reader-content');
+        if (!grid || !reader || !contentBox) return;
+
+        grid.classList.add('hidden');
+        reader.classList.remove('hidden');
+        contentBox.innerHTML = `<h3 style="color:var(--primary);">${escapeHTML(title)}</h3><p style="color:#777; margin-top:10px;">Carregando...</p>`;
+
+        try {
+            // Se for imagem (mapa)
+            if (type === 'image') {
+                contentBox.innerHTML = `
+                    <div style="border-bottom: 2px solid var(--primary); padding-bottom: 12px; margin-bottom: 20px;">
+                        <h2 style="color:var(--primary); font-size:22px; margin-bottom:4px;">${escapeHTML(title)}</h2>
+                    </div>
+                    <div style="text-align:center; background:rgba(0,0,0,0.02); padding:10px; border-radius:8px;">
+                        <img src="${filepath}" alt="${escapeHTML(title)}" style="max-width:100%; height:auto; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+                    </div>
+                `;
+                return;
+            }
+
+            // Se for JSON de documento/estudo
+            const res = await fetch(filepath, { cache: 'no-cache' });
+            if (!res.ok) throw new Error('Arquivo não encontrado');
+            const data = await res.json();
+
+            let rendered = `
+                <div style="border-bottom: 2px solid var(--primary); padding-bottom: 12px; margin-bottom: 20px;">
+                    <h2 style="color:var(--primary); font-size:22px; margin-bottom:4px;">${escapeHTML(data.titulo || title)}</h2>
+                    ${data.autor ? `<p style="color:var(--text-muted); font-size:14px; font-style:italic;">Autor / Fonte: ${escapeHTML(data.autor)}</p>` : ''}
+                </div>
+            `;
+
+            if (data.material) {
+                if (data.material.introducao) {
+                    rendered += `
+                        <div style="background: rgba(0,0,0,0.03); padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid var(--primary);">
+                            <p style="margin:0; line-height:1.6; font-size:15px;">${escapeHTML(data.material.introducao)}</p>
+                        </div>
+                    `;
+                }
+
+                if (data.material.secoes && Array.isArray(data.material.secoes)) {
+                    data.material.secoes.forEach(sec => {
+                        if (sec.tipo === 'auto' || sec.id === 'esboco_do_conteudo') return;
+
+                        if (sec.titulo) {
+                            rendered += `<h3 style="margin-top:25px; margin-bottom:10px; color:var(--secondary); font-size:18px; border-bottom: 1px solid #eee; padding-bottom: 4px;">${escapeHTML(sec.titulo)}</h3>`;
+                        }
+
+                        if (sec.conteudo && typeof sec.conteudo === 'string') {
+                            const paragrafos = sec.conteudo.split('\n\n');
+                            paragrafos.forEach(p => {
+                                if (p.trim()) {
+                                    if (p.startsWith('### ')) {
+                                        rendered += `<h4 style="margin-top:15px; color:var(--primary); font-size:16px;">${escapeHTML(p.replace('### ', ''))}</h4>`;
+                                    } else {
+                                        rendered += `<p style="margin-bottom:12px; line-height:1.7; text-align:justify;">${escapeHTML(p)}</p>`;
+                                    }
+                                }
+                            });
+                        }
+
+                        if (sec.perguntas && Array.isArray(sec.perguntas)) {
+                            sec.perguntas.forEach(q => {
+                                rendered += `
+                                    <div style="margin: 15px 0; padding: 12px; background: var(--bg-card, #fff); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                                        <p style="margin: 0 0 6px 0; font-weight:600; color:var(--text-main);">Q. ${q.numero} - ${escapeHTML(q.pergunta)}</p>
+                                        <p style="margin: 0; color:var(--text-muted); line-height:1.6;"><strong>R.</strong> ${escapeHTML(q.resposta)}</p>
+                                    </div>
+                                `;
+                            });
+                        }
+                    });
+                }
+            } else {
+                rendered += `<pre style="white-space:pre-wrap; font-family:inherit;">${escapeHTML(JSON.stringify(data, null, 2))}</pre>`;
+            }
+
+            contentBox.innerHTML = rendered;
+            const main = document.getElementById('main-scroll');
+            if (main) main.scrollTo(0, 0);
+        } catch (e) {
+            console.error(e);
+            contentBox.innerHTML = `<h3 style="color:var(--primary);">${escapeHTML(title)}</h3><p style="color:#e74c3c; margin-top:10px;">Não foi possível carregar o conteúdo deste arquivo. Verifique se o caminho <code>${filepath}</code> está correto no seu projeto.</p>`;
+        }
+    }
+
+    function closeLibraryReader() {
+        const grid = document.getElementById('library-grid');
+        const reader = document.getElementById('library-reader-view');
+        if (!grid || !reader) return;
+        reader.classList.add('hidden');
+        grid.classList.remove('hidden');
+    }
