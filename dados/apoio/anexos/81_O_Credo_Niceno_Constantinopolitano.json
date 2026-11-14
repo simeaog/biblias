@@ -1,68 +1,21 @@
 {
-  "schema": "apoio-livro-v1",
-  "id": "anexo_81",
-  "numero": 81,
-  "titulo": "O Credo Niceno-Constantinopolitano",
-  "autor": "Tradição Histórica Ecumênica (Concílios de Niceia e Constantinopla)",
-  "arquivo": "81_O Credo Niceno-Constantinopolitano.pdf",
-  "material": {
+    "schema": "apoio-livro-v1",
+    "id": "anexo_81",
+    "numero": 81,
     "titulo": "O Credo Niceno-Constantinopolitano",
-    "introducao": "O Credo Niceno-Constantinopolitano é a declaração de fé cristã ecumênica fundamental que articula a ortodoxia trinitária, professando a divindade coeterna de Cristo com o Pai, a encarnação e a divindade do Espírito Santo.",
-    "secoes": [
-      {
-        "id": "primeiro_artigo_deus_pai",
-        "titulo": "Primeiro Artigo: Deus Pai, Criador",
-        "tipo": "texto",
-        "ordem": 1,
-        "conteudo": "Cremos em um Deus, Pai Todo-Poderoso, Criador do céu e da terra, e de todas as coisas visíveis e invisíveis."
-      },
-      {
-        "id": "segundo_artigo_jesus_cristo",
-        "titulo": "Segundo Artigo: Jesus Cristo, o Filho Unigênito",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "E em um Senhor Jesus Cristo, o unigênito Filho de Deus, gerado pelo Pai antes de todos os séculos; Deus de Deus, Luz da Luz, verdadeiro Deus de verdadeiro Deus; gerado, não feito, de uma só substância com o Pai, pelo qual todas as coisas foram feitas; aquele que, por nós, homens, e por nossa salvação, desceu dos céus, foi feito carne pelo Espírito Santo da virgem Maria e foi feito homem; e foi crucificado por nós sob o poder de Pôncio Pilatos; ele padeceu e foi sepultado; e no terceiro dia ressuscitou, conforme as Escrituras; e subiu ao céu e assentou-se à direita do Pai; e de novo há de vir com glória para julgar os vivos e os mortos, e seu reino não terá fim."
-      },
-      {
-        "id": "terceiro_artigo_espirito_santo_igreja_e_escatologia",
-        "titulo": "Terceiro Artigo: O Espírito Santo, a Igreja, os Sacramentos e a Vida Vindoura",
-        "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "E no Espírito Santo, Senhor e Vivificador, que procede do Pai e do Filho; que, com o Pai e o Filho, conjuntamente, é adorado e glorificado; que falou por meio dos profetas. Cremos na igreja una, santa, católica e apostólica. Reconhecemos um só batismo para remissão dos pecados; e aguardamos a ressurreição dos mortos e a vida no mundo vindouro. Amém.\n\n1 O termo \"católica refere-se a igreja universal"
-      },
-      {
-        "id": "esboco_do_conteudo",
-        "titulo": "Esboço do Anexo",
-        "tipo": "auto",
-        "ordem": 4,
-        "conteudo": [
-          {
-            "titulo": "I. O Primeiro Artigo: A Fé em Deus Pai",
-            "itens": [
-              "A. A unicidade de Deus e a onipotência do Pai",
-              "B. A criação de todas as coisas visíveis e invisíveis (céu e terra)"
-            ]
-          },
-          {
-            "titulo": "II. O Segundo Artigo: A Fé em Jesus Cristo",
-            "itens": [
-              "A. A filiação divina eterna, divindade consubstancial e a obra criadora do Filho",
-              "B. A encarnação (concepção pelo Espírito Santo da virgem Maria e humanização)",
-              "C. A paixão, crucificação sob Pôncio Pilatos, morte e sepultamento",
-              "D. A exaltação (ressurreição ao terceiro dia conforme as Escrituras, ascensão e sessão à direita do Pai)",
-              "E. A parusia (retorno glorioso para julgar os vivos e os mortos e estabelecimento de um reino eterno)"
-            ]
-          },
-          {
-            "titulo": "III. O Terceiro Artigo: A Fé no Espírito Santo e na Igreja",
-            "itens": [
-              "A. A divindade, procissão e adoração conjunta do Espírito Santo como Senhor e Vivificador",
-              "B. A confissão da Igreja una, santa, católica e apostólica",
-              "C. Os sacramentos (um só batismo para a remissão dos pecados) e a escatologia (ressurreição dos mortos e vida no mundo vindouro)"
-            ]
-          }
+    "autor": "Tradição Histórica",
+    "arquivo": "81_O Credo Niceno-Constantinopolitano.pdf",
+    "material": {
+        "titulo": "O Credo Niceno-Constantinopolitano",
+        "introducao": "Cremos em um Deus, Pai Todo-Poderoso, Criador do céu e da terra, e de todas as coisas visíveis e invisíveis.\nE em um Senhor Jesus Cristo, o unigênito Filho de Deus, gerado pelo Pai antes de todos os séculos; Deus de Deus, Luz da Luz, verdadeiro Deus de verdadeiro Deus; gerado, não feito, de uma só substância com o Pai, pelo qual todas as coisas foram feitas; aquele que, por nós, homens, e por nossa salvação, desceu dos céus, foi feito carne pelo Espírito Santo da virgem Maria e foi feito homem; e foi crucificado por nós sob o poder de Pôncio Pilatos; ele padeceu e foi sepultado; e no terceiro dia ressuscitou, conforme as Escrituras; e subiu ao céu e assentou-se à direita do Pai; e de novo há de vir com glória para julgar os vivos e os mortos, e seu reino não terá fim.\nE no Espírito Santo, Senhor e Vivificador, que procede do Pai e do Filho; que, com o Pai e o Filho, conjuntamente, é adorado e glorificado; que falou por meio dos profetas. Cremos na igreja una, santa, católica¹ e apostólica. Reconhecemos um só batismo para remissão dos pecados; e aguardamos a ressurreição dos mortos e a vida no mundo vindouro. Amém.\n\n",
+        "secoes": [
+            {
+                "id": "nota_de_rodape",
+                "titulo": "Nota",
+                "tipo": "texto",
+                "ordem": 1,
+                "conteudo": "1 O termo \"católica\" refere-se à igreja universal."
+            }
         ]
-      }
-    ]
-  }
+    }
 }

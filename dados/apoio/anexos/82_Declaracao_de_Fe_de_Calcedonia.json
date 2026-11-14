@@ -1,102 +1,49 @@
 {
-  "schema": "apoio-livro-v1",
-  "id": "anexo_82",
-  "numero": 82,
-  "titulo": "Declaração de Fé de Calcedônia",
-  "autor": "Concílio Ecumênico de Calcedônia (451 d.C.)",
-  "arquivo": "82_Declaração de Fé de Calcedônia.pdf",
-  "material": {
-    "titulo": "A Definição de Calcedônia",
-    "introducao": "A Declaração de Fé de Calcedônia é o documento cristológico fundamental do Concílio de Calcedônia (451 d.C.), que reafirma os credos anteriores (Niceia e Constantinopla) e define formalmente que Cristo subsiste em duas naturezas — divina e humana —, inconfundíveis, imutáveis, indivisas e inseparáveis, unidas em uma só Pessoa.",
-    "secoes": [
-      {
-        "id": "preambulo_e_contexto_historico",
-        "titulo": "Preâmbulo e contexto histórico do sínodo",
-        "tipo": "texto",
-        "ordem": 1,
-        "conteudo": "O sagrado e magno sínodo ecumênico, reunido, pela graça de Deus e pela vontade dos piíssimos e cristianíssimos imperadores, os augustos Valenciano e Marciano, na Metrópole da Calcedônia, na província da Bitínia, no aniversário do martírio da santa e vitoriosa mártir Eufêmia, define o que segue [cite: 150].\n\nNosso Senhor e Salvador Jesus Cristo, confirmando o conhecimento da fé aos seus discípulos, disse: \"Deixo-vos a paz, a minha paz vos dou\", para que nenhum dissentisse de seu próximo nas doutrinas da ortodoxia, e se demonstrasse verdadeiro o anúncio da verdade [cite: 150].\n\nE por quanto o maligno não cessa de obstaculizar, com seu joio, semeia-a da piedade e de procurar sempre algo novo contra a verdade, Deus, como sempre, provê ao gênero humano e inspirou um grande zelo a esse nosso piedoso e fidelíssimo imperador, e chamou a si, de todas as partes, os chefes do sacerdócio, para que, com a graça do senhor de todos nós, Cristo, afastássemos toda peste de engano das ovelhas de Cristo, restaurando-as com o alimento da verdade [cite: 150].\n\nO que fizemos, proscrevendo com voto comum as falsas doutrinas, e renovando nossa adesão à fé ortodoxa dos padres, pregando a todos o símbolo dos 318, e reconhecendo como nossos próprios padres aqueles que acolheram essa síntese da piedade, e aquela dos 150 que se reuniram na grande Constantinopla e também confirmaram a mesma fé [cite: 150].\n\nConfirmando também nós as decisões e as fórmulas de fé do concílio reunido outrora em Éfeso, presidido por Celestino de Roma e Cirilo de Alexandria, de santíssima memória, definimos que tem de resplandecer a exposição da reta e descontaminada fé, feita pelos 318 santos e bem-aventurados padres reunidos em Niceia, sob o Imperador Constantino, de feliz memória, e que deve ser mantido em vigor o que foi decretado pelos 150 santos padres de Constantinopla para extirpar as heresias que então germinavam, reafirmando, assim, nossa mesma fé católica e apostólica [cite: 150]."
-      },
-      {
-        "id": "o_simbolo_dos_318_niceia",
-        "titulo": "O Símbolo dos 318 (Niceia)",
-        "tipo": "texto",
-        "ordem": 2,
-        "conteudo": "\"Cremos em um Deus, Pai Todo-Poderoso, Criador do céu e da terra, e de todas as coisas visíveis e invisíveis:\nE em um Senhor Jesus Cristo, o unigênito Filho de Deus, gerado pelo Pai antes de todos os séculos; Deus de Deus, Luz da Luz, verdadeiro Deus de verdadeiro Deus; gerado, não feito, de uma só substância com o Pai, pelo qual todas as coisas foram feitas [tanto no céu como na terra]; o qual, por nós, homens, e por nossa salvação, desceu dos céus, foi feito carne do Espírito Santo e da Virgem Maria e foi feito homem; foi crucificado por nós sob o poder de Pôncio Pilatos, e padeceu e foi sepultado; e no terceiro dia ressuscitou, conforme as Escrituras, e subiu ao céu; e assentou-se à direita do Pai; e de novo há de vir com glória para julgar os vivos e os mortos, e seu reino não terá fim:\nE no Espírito Santo, Senhor e Vivificador,\nE a todos que dizem: 'houve tempo em que não era' e 'antes de ser gerado, ele não era', ou que 'foi feito do que não existe', bem como a todos que dizem que 'o Filho de Deus é de substância ou essência diferente', ou 'feito', ou 'mutável', ou 'alternável', a todos esses a igreja católica e apostólica anatematiza.\""
-      },
-      {
-        "id": "o_simbolo_dos_150_constantinopla",
-        "titulo": "O Símbolo dos 150 (Constantinopla)",
-        "tipo": "texto",
-        "ordem": 3,
-        "conteudo": "\"Cremos em um Deus, Pai Todo-Poderoso, Criador do céu e da terra, e de todas as coisas visíveis e invisíveis:\nE em um Senhor Jesus Cristo, o unigênito Filho de Deus, gerado pelo Pai antes de todos os séculos; Deus de Deus, Luz da Luz, verdadeiro Deus de verdadeiro Deus; gerado, não feito, de uma só substância com o Pai; pelo qual todas as coisas foram feitas; o qual, por nós, homens, e por nossa salvação, desceu dos céus, foi feito carne pelo Espírito Santo da Virgem Maria e foi feito homem; e foi crucificado por nós sob o poder de Pôncio Pilatos; ele padeceu e foi sepultado; e no terceiro dia ressuscitou, conforme as Escrituras; e subiu ao céu e assentou-se à direita do Pai; e de novo há de vir com glória para julgar os vivos e os mortos, e seu reino não terá fim:\nE no Espírito Santo, Senhor e Vivificador, que procede do Pai e do Filho; que, com o Pai e o Filho, conjuntamente, é adorado e glorificado; que falou por meio dos profetas:\nNa igreja una, santa, católica e apostólica:\nReconhecemos um só batismo para remissão dos pecados:\nAguardamos a ressurreição dos mortos e a vida no mundo vindouro. Amém.\""
-      },
-      {
-        "id": "refutacao_das_heresias_e_fundamentacao_patristica",
-        "titulo": "Refutação das heresias e fundamentação patrística",
-        "tipo": "texto",
-        "ordem": 4,
-        "conteudo": "Teria sido, então, suficiente para o pleno conhecimento e a confirmação da piedade esse sábio e saudável símbolo da divina graça [cite: 151]. Em verdade, ensina o que melhor se pode pensar com relação ao Pai, ao Filho e ao Espírito Santo, e apresenta, a quem o acolhe com fé, a encarnação do Senhor [cite: 151]. Mas, como aqueles que tratam de frear o anúncio da verdade cunharam, com heresias, novas expressões: alguns tratam de alterar o mistério da economia da encarnação do Senhor para nós, rechaçando a expressão *Teotokos* para a Virgem; outros introduzem confusão, misturam e imaginam sem pudor que formam uma única natureza aquela da carne e aquela outra da divindade; e sustentam absurdamente que a natureza divina do unigênito pela confusão possa sofrer; por tudo isso, o atual, santo, magno e universal sínodo, querendo impedir toda reação contra a verdade, ensina que o conteúdo dessa predicação sempre foi idêntico, e estabelece, antes de tudo, que a fé dos 318 santos padres deve ser intangível; confirma a doutrina em torno da natureza do Espírito, transmitida em tempos posteriores pelos padres reunidos na cidade real, contra aqueles que combateram o Espírito Santo, doutrina que eles declararam a todos, não certamente para adicionar algo ao que antes se sustentava, a não ser para demonstrar com o testemunho da Escritura seu pensamento sobre o Espírito Santo, contra aqueles que tratavam de negar o senhorio [cite: 151].\n\nContra aqueles, em seguida, que tratam de alterar o mistério da economia, e alegam que seja só homem aquele que nasceu da Santa Virgem Maria, (este concílio) faz suas as cartas sinodais do bem-aventurado Cirilo, que foi pastor da Igreja de Alexandria, a Nestório e aos orientais, como adequadas tanto para contradizer a loucura nestoriana como para dar uma clara explicação àqueles que desejassem conhecer com piedoso zelo o verdadeiro sentido do símbolo de salvação [cite: 151]. A isso apontou, e com justiça, contra as falsas concepções e para a confirmação da verdadeira doutrina a carta do Pontífice Leão, muito santo arcebispo da enorme e antiquíssima cidade de Roma, escrita ao arcebispo Flaviano, de santa memória, para refutar a malvada concepção de Eutiques; ela, de fato, está em harmonia com a confissão do grande Pedro; e é para nós uma coluna comum [cite: 151].\n\n(Este concílio), de fato, opõe-se àqueles que tratam de separar em dois fios o mistério da divina economia; separam-se do sagrado consenso aqueles que se atrevem a declarar passível a divindade do Unigênito; resiste àqueles que pensam em uma mistura ou confusão das duas naturezas de Cristo, e expulsa aqueles que afirmam, insanamente, que tenha sido celestial, ou de qualquer outra substância a forma humana de servo que ele assumiu de nós, e excomunga, enfim, aqueles que fabulam de duas naturezas do senhor antes da união e uma só depois dessa união [cite: 151]."
-      },
-      {
-        "id": "a_definicao_cristologica_de_calcedonia",
-        "titulo": "A Definição Cristológica de Calcedônia",
-        "tipo": "texto",
-        "ordem": 5,
-        "conteudo": "Seguindo, então, os Santos Padres, unanimemente ensinamos a confessar um só e mesmo Filho: nosso senhor Jesus Cristo, perfeito em sua divindade e perfeito em sua humanidade, verdadeiro Deus e verdadeiro homem, (composto) de alma racional e de corpo, consubstancial ao Pai pela divindade, e consubstancial a nós pela humanidade, similar em tudo a nós, exceto no pecado, gerado pelo Pai antes dos séculos segundo a divindade, e, nestes últimos tempos, por nós e por nossa salvação, engendrado na Virgem Maria, mãe de Deus, segundo a humanidade: um e o mesmo Cristo senhor unigênito; no que é preciso reconhecer duas naturezas, **sem confusão, imutáveis, indivisas, inseparáveis**, não tendo diminuído a diferença das naturezas por causa da união, mas, sim, tendo sido assegurada a propriedade de cada uma das naturezas, que concorrem a formar uma só pessoa [cite: 151, 152]. Ele não está dividido ou separado em duas pessoas; é um único e mesmo Filho Unigênito, Deus, Verbo, e Senhor Jesus Cristo como primeiro dos profetas e mais tarde o mesmo Jesus Cristo que ensinou de si e como nos transmitiu isso o símbolo dos padres [cite: 152]."
-      },
-      {
-        "id": "conclusao_e_cânones_finais",
-        "titulo": "Conclusão e cânones normativos finais",
-        "tipo": "texto",
-        "ordem": 6,
-        "conteudo": "Estabelecido isso por nós com toda a diligência possível, define o santo e universal sínodo que não é lícito a ninguém apresentar ou mesmo escrever ou compor uma fórmula de fé diversa, tampouco acreditar ou ensinar de um modo distinto [cite: 152]. Aqueles que ousarem ou compor uma fórmula diversa de fé ou apresentá-la, ou ensiná-la, ou transmitir um símbolo diverso daqueles que tratam de converter-se do helenismo ao conhecimento da verdade, ou do judaísmo, ou de qualquer heresia, todos eles, se forem clérigos ou bispos, devem ser suspensos — o bispo, de sua sede, o clérigo do ministério —, ou se forem laicos ou monges, deverão ser excomungados [cite: 152]."
-      },
-      {
-        "id": "esboco_do_conteudo",
-        "titulo": "Esboço do Anexo",
-        "tipo": "auto",
-        "ordem": 7,
-        "conteudo": [
-          {
-            "titulo": "I. Preâmbulo e Autoridade do Sínodo de Calcedônia",
-            "itens": [
-              "A. A convocação imperial (Valenciano e Marciano) em Calcedônia",
-              "B. A fidelidade aos Símbolos de Niceia (318 padres) e Constantinopla (150 padres)",
-              "C. A ratificação das decisões de Éfeso contra o erro"
-            ]
-          },
-          {
-            "titulo": "II. Os Símbolos Históricos Incorporados",
-            "itens": [
-              "A. O Símbolo de Niceia (318 padres) com seus anátemas originais",
-              "B. O Símbolo de Constantinopla (150 padres) detalhando a fé trinitária e eclesiológica"
-            ]
-          },
-          {
-            "titulo": "III. Combate às Heresias e Fundamentação Patrística",
-            "itens": [
-              "A. Rejeição do nestorianismo e adoção das cartas de Cirilo a Nestório",
-              "B. Rejeição do eutiquianismo e adoção da carta do Papa Leão a Flaviano",
-              "C. Condenação da confusão, mistura, divisão ou separação das naturezas de Cristo"
-            ]
-          },
-          {
-            "titulo": "IV. A Definição Cristológica Dogmática",
-            "itens": [
-              "A. A confissão de um só e mesmo Filho, perfeito em divindade e humanidade",
-              "B. Os quatro limites cristológicos: duas naturezas sem confusão, imutáveis, indivisas e inseparáveis",
-              "C. A união hipostática em uma só Pessoa"
-            ]
-          },
-          {
-            "titulo": "V. Disposições Normativas Finais",
-            "itens": [
-              "A. A proibição de formular, escrever ou ensinar outra regra de fé",
-              "B. Sanções disciplinares (suspensão para clérigos/bispos e excomunhão para leigos/monges)"
-            ]
-          }
+    "schema": "apoio-livro-v1",
+    "id": "anexo_82",
+    "numero": 82,
+    "titulo": "Declaração de Fé de Calcedônia",
+    "autor": "Concílio de Calcedônia (451 d.C.)",
+    "arquivo": "82_Declaração de Fé de Calcedônia.pdf",
+    "material": {
+        "titulo": "Declaração de Fé de Calcedônia",
+        "introducao": "O sagrado e magno sínodo ecumênico, reunido, pela graça de Deus e pela vontade dos piíssimos e cristianíssimos imperadores, os augustos Valenciano e Marciano, na Metrópole da Calcedônia, na província da Bitínia, no aniversário do martírio da santa e vitoriosa mártir Eufêmia, define o que segue:\n\nNosso Senhor e Salvador Jesus Cristo, confirmando o conhecimento da fé aos seus discípulos, disse: \"Deixo-vos a paz, a minha paz vos dou\", para que nenhum dissentisse de seu próximo nas doutrinas da ortodoxia, e se demonstrasse verdadeiro o anúncio da verdade.\n\nE por quanto o maligno não cessa de obstaculizar, com seu joio, a semente da piedade e de procurar sempre algo novo contra a verdade, Deus, como sempre, provê ao gênero humano e inspirou um grande zelo a esse nosso piedoso e fidelíssimo imperador, e chamou a si, de todas as partes, os chefes do sacerdócio, para que, com a graça do senhor de todos nós, Cristo, afastássemos toda peste de engano das ovelhas de Cristo, restaurando-as com o alimento da verdade.\n\nO que fizemos, proscrevendo com voto comum as falsas doutrinas, e renovando nossa adesão à fé ortodoxa dos padres, pregando a todos o símbolo dos 318, e reconhecendo como nossos próprios padres aqueles que acolheram essa síntese da piedade, e aquela dos 150 que se reuniram na grande Constantinopla e também confirmaram a mesma fé.\n\nConfirmando também nós as decisões e as fórmulas de fé do concílio reunido outrora em Éfeso, presidido por Celestino de Roma e Cirilo de Alexandria, de santíssima memória, definimos que tem de resplandecer a exposição da reta e descontaminada fé, feita pelos 318 santos e bem-aventurados padres reunidos em Niceia, sob o Imperador Constantino, de feliz memória, e que deve ser mantido em vigor o que foi decretado pelos 150 santos padres de Constantinopla para extirpar as heresias que então germinavam, reafirmando, assim, nossa mesma fé católica e apostólica.",
+        "secoes": [
+            {
+                "id": "o_simbolo_dos_318_niceia",
+                "titulo": "1. O símbolo dos 318 (Niceia)",
+                "tipo": "texto",
+                "ordem": 1,
+                "conteudo": "\"Cremos em um Deus, Pai Todo-Poderoso, Criador do céu e da terra, e de todas as coisas visíveis e invisíveis:\n\nE em um Senhor Jesus Cristo, o unigênito Filho de Deus, gerado pelo Pai antes de todos os séculos; Deus de Deus, Luz da Luz, verdadeiro Deus de verdadeiro Deus; gerado, não feito, de uma só substância com o Pai, pelo qual todas as coisas foram feitas [tanto no céu como na terra]; o qual, por nós, homens, e por nossa salvação, desceu dos céus, foi feito carne do Espírito Santo e da Virgem Maria e foi feito homem; foi crucificado por nós sob o poder de Pôncio Pilatos, e padeceu e foi sepultado; e no terceiro dia ressuscitou, conforme as Escrituras, e subiu ao céu; e assentou-se à direita do Pai; e de novo há de vir com glória para julgar os vivos e os mortos, e seu reino não terá fim:\n\nE no Espírito Santo, Senhor e Vivificador,\n\nE a todos que dizem: 'houve tempo em que não era' e 'antes de ser gerado, ele não era', ou que 'foi feito do que não existe', bem como a todos que dizem que 'o Filho de Deus é de substância ou essência diferente', ou 'feito', ou 'mutável', ou 'alternável', a todos esses a igreja católica e apostólica anatematiza.\""
+            },
+            {
+                "id": "o_simbolo_dos_150_constantinopla",
+                "titulo": "2. O símbolo dos 150 (Constantinopla)",
+                "tipo": "texto",
+                "ordem": 2,
+                "conteudo": "\"Cremos em um Deus, Pai Todo-Poderoso, Criador do céu e da terra, e de todas as coisas visíveis e invisíveis:\n\nE em um Senhor Jesus Cristo, o unigênito Filho de Deus, gerado pelo Pai antes de todos os séculos; Deus de Deus, Luz da Luz, verdadeiro Deus de verdadeiro Deus; gerado, não feito, de uma só substância com o Pai; pelo qual todas as coisas foram feitas; o qual, por nós, homens, e por nossa salvação, desceu dos céus, foi feito carne pelo Espírito Santo da Virgem Maria e foi feito homem; e foi crucificado por nós sob o poder de Pôncio Pilatos; ele padeceu e foi sepultado; e no terceiro dia ressuscitou, conforme as Escrituras; e subiu ao céu e assentou-se à direita do Pai; e de novo há de vir com glória para julgar os vivos e os mortos, e seu reino não terá fim:\n\nE no Espírito Santo, Senhor e Vivificador, que procede do Pai e do Filho; que, com o Pai e o Filho, conjuntamente, é adorado e glorificado; que falou por meio dos profetas:\n\nNa igreja una, santa, católica e apostólica:\n\nReconhecemos um só batismo para remissão dos pecados:\n\nAguardamos a ressurreição dos mortos e a vida no mundo vindouro. Amém.\""
+            },
+            {
+                "id": "refutacao_das_heresias_e_patristica",
+                "titulo": "3. Refutação das heresias e confirmação das cartas de Cirilo e Leão",
+                "tipo": "texto",
+                "ordem": 3,
+                "conteudo": "Teria sido, então, suficiente para o pleno conhecimento e a confirmação da piedade esse sábio e saudável símbolo da divina graça. Em verdade, ensina o que melhor se pode pensar com relação ao Pai, ao Filho e ao Espírito Santo, e apresenta, a quem o acolhe com fé, a encarnação do Senhor. Mas, como aqueles que tratam de frear o anúncio da verdade cunharam, com heresias, novas expressões: alguns tratam de alterar o mistério da economia da encarnação do Senhor para nós, rechaçando a expressão Teotokos para a Virgem; outros introduzem confusão, misturam e imaginam sem pudor que formam uma única natureza aquela da carne e aquela outra da divindade; e sustentam absurdamente que a natureza divina do unigênito pela confusão possa sofrer; por tudo isso, o atual, santo, magno e universal sínodo, querendo impedir toda reação contra a verdade, ensina que o conteúdo dessa predicação sempre foi idêntico, e estabelece, antes de tudo, que a fé dos 318 santos padres deve ser intangível; confirma a doutrina em torno da natureza do Espírito, transmitida em tempos posteriores pelos padres reunidos na cidade real, contra aqueles que combateram o Espírito Santo, doutrina que eles declararam a todos, não certamente para adicionar algo ao que antes se sustentava, a não ser para demonstrar com o testemunho da Escritura seu pensamento sobre o Espírito Santo, contra aqueles que tratavam de negar o senhorio contra aqueles, em seguida, que tratam de alterar o mistério da economia, e alegam que seja só homem aquele que nasceu da Santa Virgem Maria, (este concílio) faz suas as cartas sinodais do bem-aventurado Cirilo, que foi pastor da Igreja de Alexandria, a Nestório e aos orientais, como adequadas tanto para contradizer a loucura nestoriana como para dar uma clara explicação àqueles que desejassem conhecer com piedoso zelo o verdadeiro sentido do símbolo de salvação. A isso apontou, e com justiça, contra as falsas concepções e para a confirmação da verdadeira doutrina a carta do Pontífice Leão, muito santo arcebispo da enorme e antiquíssima cidade de Roma, escrita ao arcebispo Flaviano, de santa memória, para refutar a malvada concepção de Eutiques; ela, de fato, está em harmonia com a confissão do grande Pedro; e é para nós uma coluna comum.\n\n(Este concílio), de fato, opõe-se àqueles que tratam de separar em dois fios o mistério da divina economia; separam-se do sagrado consenso aqueles que se atrevem a declarar passível a divindade do Unigênito; resiste àqueles que pensam em uma mistura ou confusão das duas naturezas de Cristo, e expulsa aqueles que afirmam, insanamente, que tenha sido celestial, ou de qualquer outra substância a forma humana de servo que ele assumiu de nós, e excomunga, enfim, aqueles que fabulam de duas naturezas do senhor antes da união e uma só depois dessa união."
+            },
+            {
+                "id": "a_definicao_cristologica_de_calcedonia",
+                "titulo": "4. A definição cristológica de Calcedônia",
+                "tipo": "texto",
+                "ordem": 4,
+                "conteudo": "Seguindo, então, os Santos Padres, unanimemente ensinamos a confessar um solo e mesmo Filho: nosso senhor Jesus Cristo, perfeito em sua divindade e perfeito em sua humanidade, verdadeiro Deus e verdadeiro homem, (composto) de alma racional e de corpo, consubstancial ao Pai pela divindade, e consubstancial a nós pela humanidade, similar em tudo a nós, exceto no pecado, gerado pelo Pai antes dos séculos segundo a divindade, e, nestes últimos tempos, por nós e por nossa salvação, engendrado na Maria virgem e mãe de Deus, segundo a humanidade: um e o mesmo Cristo senhor unigênito; no que é preciso reconhecer duas naturezas, sem confusão, imutáveis, indivisas, inseparáveis, não tendo diminuído a diferença das naturezas por causa da união, mas, sim, tendo sido assegurada a propriedade de cada uma das naturezas, que concorrem a formar uma só pessoa. Ele não está dividido ou separado em duas pessoas; é um único e mesmo Filho Unigênito, Deus, Verbo, e Senhor Jesus Cristo como primeiro dos profetas e mais tarde o mesmo Jesus Cristo que ensinou de si e como nos transmitiu isso o símbolo dos padres."
+            },
+            {
+                "id": "proibicao_de_formulas_diversas_e_sancoes",
+                "titulo": "5. Proibição de fórmulas diversas e sanções canônicas",
+                "tipo": "texto",
+                "ordem": 5,
+                "conteudo": "Estabelecido isso por nós com toda a diligência possível, define o santo e universal sínodo que não é lícito a ninguém apresentar ou mesmo escrever ou compor uma fórmula de fé diversa, tampouco acreditar ou ensinar de um modo distinto. Aqueles que ousarem ou compor uma fórmula diversa de fé ou apresentá-la, ou ensiná-la, ou transmitir um símbolo diverso daqueles que tratam de converter-se do helenismo ao conhecimento da verdade, ou do judaísmo, ou de qualquer heresia, todos eles, se forem clérigos ou bispos, devem ser suspensos, o bispo, de sua sede, o clérigo do ministério, ou se forem laicos ou monges, deverão ser excomungados."
+            }
         ]
-      }
-    ]
-  }
+    }
 }
