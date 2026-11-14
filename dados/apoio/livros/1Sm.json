@@ -8,6 +8,13 @@
     "introducao": "O Primeiro Livro de Samuel narra o período de transição crucial de Israel, saindo de uma confederação tribal liderada por juízes para uma monarquia unida, focalizando a liderança do profeta Samuel, a ascensão e trágica rejeição do primeiro rei, Saul, e a unção e ascensão de Davi.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "O Primeiro Livro de Samuel registra a passagem do período dos juízes para o período dos reis. Essa mudança na vida nacional de Israel gira principalmente em torno de três nomes: Samuel, Saul e Davi. Samuel foi o último dos juízes. Saul foi o primeiro rei de Israel, e Davi, o segundo.\n\nDa leitura deste livro, bem como da dos outros livros históricos do Antigo Testamento, aprendemos que a fé em Deus traz bênçãos, enquanto a desobediência leva à desgraça. Essa verdade foi dita pelo próprio Deus ao sacerdote Eli: “aos que me honram, honrarei, porém os que me desprezam serão desmerecidos” (2.30).\n\nNo princípio, o povo de Israel não entendeu bem o que significava ter um rei. Deus era considerado o verdadeiro rei de Israel, mas, em resposta ao pedido do povo, ele escolheu um rei para eles. Tanto o rei como o povo viviam debaixo da autoridade e do julgamento de Deus (2.7-10). Os direitos de todo o povo, ricos e pobres, eram garantidos pelas leis de Deus."
+      },
+      {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",

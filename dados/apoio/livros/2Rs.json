@@ -8,6 +8,13 @@
     "introducao": "O Segundo Livro de Reis continua a história da monarquia dividida de Israel e Judá, detalhando o ministério dos profetas Elias e Eliseu, a queda e o exílio do reino do norte (Israel) pelos assírios, as reformas religiosas e o subsequente declínio de Judá até a conquista babilônica e a destruição de Jerusalém, encerrando com uma nota de esperança na libertação do rei Joaquim.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "O Segundo Livro dos Reis é a continuação da história dos dois reinos israelitas. Este livro começa onde a história parou em 1Reis. O Livro de 2Reis pode ser dividido em duas partes: 1) A história dos dois reinos, desde o ano 850 a.C. até a queda de Samaria e o fim do Reino do Norte (Israel), em 721 a.C. 2) A história do Reino do Sul (Judá), desde a queda do Reino de Israel até a conquista e destruição de Jerusalém pelo rei Nabucodonosor, da Babilônia, em 586 a.C. O livro termina com a história de Gedalias como governador de Judá e conta como o rei Joaquim foi libertado da prisão na Babilônia.\n\nA queda dos reinos de Israel e de Judá acontece porque os reis e o povo foram infiéis ao Senhor. A destruição de Jerusalém e a ida de grande parte do povo de Judá para o cativeiro marcam um momento decisivo na história israelita."
+      },
+      {
         "id": "titulo_e_autor",
         "titulo": "Título e autor",
         "tipo": "texto",
@@ -19,7 +26,7 @@
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "2 Reis começa com os reinados de Acazias em Israel (853-852 a.C.) e de Josafá em Judá (870-848 a.C.). O livro traça a história do reino do norte até sua destruição pelas mãos dos assírios, em 722 a.C. (2Rs 17.6) [cite: 88]. Após essa conquista, Ezequias de Judá (751-686 a.C.) estabelece uma grande reforma religiosa no reino do sul (18.1-4) [cite: 88]. Sua reforma é um ponto alto no livro; contudo, não tem sequência após a sua morte [cite: 88]. Uma das eras finais de esperança para Judá foi o reinado de Josias (640-609 a.C.) [cite: 88]. Ele tentou livrar Judá do controle assírio para efetuar uma reforma religiosa em Judá e integrar o território do primeiro reino do norte à sua própria terra [cite: 88]. Após a morte de Josias em Megido, em 609 a.C., Judá foi, por todas as tentativas e propósitos, encerrada como nação [cite: 88]. Em 586 a.C., o exército da Babilônia desferiu o golpe final quando capturou Judá e Jerusalém, destruiu muitas cidades de Judá e, então, enviou muitos judeus para o exílio [cite: 88]. No entanto, o último evento registrado nesse livro é a libertação de Joaquim da prisão [cite: 88]. Sua exaltação acima de todos os demais reis exilados na Babilônia oferece um vislumbre de esperança de que Deus não abandonou seu compromisso de estabelecer a dinastia davídica para sempre [cite: 88]. E, por fim, isso se cumpre por intermédio de Jesus Cristo (Mt 1.1) [cite: 88]."
+        "conteudo": "2 Reis começa com os reinados de Acazias em Israel (853-852 a.C.) e de Josafá em Judá (870-848 a.C.). O livro traça a história do reino do norte até sua destruição pelas mãos dos assírios, em 722 a.C. (2Rs 17.6). Após essa conquista, Ezequias de Judá (751-686 a.C.) estabelece uma grande reforma religiosa no reino do sul (18.1-4). Sua reforma é um ponto alto no livro; contudo, não tem sequência após a sua morte. Uma das eras finais de esperança para Judá foi o reinado de Josias (640-609 a.C.). Ele tentou livrar Judá do controle assírio para efetuar uma reforma religiosa em Judá e integrar o território do primeiro reino do norte à sua própria terra. Após a morte de Josias em Megido, em 609 a.C., Judá foi, por todas as tentativas e propósitos, encerrada como nação. Em 586 a.C., o exército da Babilônia desferiu o golpe final quando capturou Judá e Jerusalém, destruiu muitas cidades de Judá e, então, enviou muitos judeus para o exílio. No entanto, o último evento registrado nesse livro é a libertação de Joaquim da prisão. Sua exaltação acima de todos os demais reis exilados na Babilônia oferece um vislumbre de esperança de que Deus não abandonou seu compromisso de estabelecer a dinastia davídica para sempre. E, por fim, isso se cumpre por intermédio de Jesus Cristo (Mt 1.1)."
       },
       {
         "id": "esboco_de_2_reis",

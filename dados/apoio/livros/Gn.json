@@ -8,81 +8,88 @@
     "introducao": "O livro de Gênesis estabelece o cenário para toda a Escritura, narrando a boa criação de Deus, a queda da humanidade pelo pecado, e o plano redentor soberano que se desdobra através da escolha dos patriarcas e da promessa de um descendente vitorioso.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 0,
+        "conteudo": "A palavra Gênesis quer dizer “começo”. Este livro conta como tudo o que existe começou e como surgiram os seres humanos, o pecado e o sofrimento. E conta como Deus, no começo, apareceu às pessoas e mostrou como deveriam viver em justiça diante dele.\n\nO Livro de Gênesis se divide em duas partes. A primeira, do capítulo 1 ao 11, conta como Deus criou tudo o que existe, incluindo a raça humana. Encontram-se aqui as histórias de Adão e Eva, Caim e Abel, Noé e o dilúvio e a torre de Babel.\n\nA segunda parte, do capítulo 12 ao 50, conta a história dos patriarcas hebreus: Abraão, Isaque, Jacó e os seus doze filhos, que foram o começo das doze tribos de Israel. E o livro termina com a história de José, um dos filhos de Jacó, que fez com que os seus irmãos e o seu pai fossem morar no Egito.\n\nNo Livro de Gênesis Deus age. Ele cria o mundo, cuida das pessoas e mostra interesse pelo seu povo. Deus julga e castiga os ímpios e abençoa os justos."
+      },
+      {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O título hebraico, seguindo o antigo costume de nomear os livros por sua(s) primeira(s) palavra(s), é bereshit, \"no princípio\" [cite: 149]. O título grego, baseado no conteúdo do livro, é genesis, \"origem\" [cite: 149]. Ambos os títulos são apropriados, visto que o livro é sobre a origem de nosso mundo como a boa criação de Deus, manchada pela pecaminosidade humana [cite: 149]."
+        "conteudo": "O título hebraico, seguindo o antigo costume de nomear os livros por sua(s) primeira(s) palavra(s), é bereshit, \"no princípio\". O título grego, baseado no conteúdo do livro, é genesis, \"origem\". Ambos os títulos são apropriados, visto que o livro é sobre a origem de nosso mundo como a boa criação de Deus, manchada pela pecaminosidade humana."
       },
       {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "Em razão de esse livro anônimo fazer parte do Pentateuco unificado, estabelecer sua autoria e data não pode separar-se da composição do Pentateuco como um todo [cite: 149]. Não obstante, a evidência relativa ao próprio livro de Gênesis sugere que, como o restante do Pentateuco, Moisés deu ao livro sua substância essencial, e editores posteriores a suplementaram, todos eles por inspiração do Espírito Santo [cite: 149]. O Novo Testamento dá testemunho específico de que Moisés é o autor do Pentateuco, e, nele, de Gênesis (cf. Jo 7.22; At 15.1) [cite: 149]. De grande importância, a narrativa histórica de Gênesis fornece a explanação teológica para a atividade de Deus no mundo [cite: 149]."
+        "conteudo": "Em razão de esse livro anônimo fazer parte do Pentateuco unificado, estabelecer sua autoria e data não pode separar-se da composição do Pentateuco como um todo. Não obstante, a evidência relativa ao próprio livro de Gênesis sugere que, como o restante do Pentateuco, Moisés deu ao livro sua substância essencial, e editores posteriores a suplementaram, todos eles por inspiração do Espírito Santo. O Novo Testamento dá testemunho específico de que Moisés é o autor do Pentateuco, e, nele, de Gênesis (cf. Jo 7.22; At 15.1). De grande importância, a narrativa histórica de Gênesis fornece a explanação teológica para a atividade de Deus no mundo."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "É bem provável que Moisés tenha recorrido a fontes já existentes, orais e escritas, quando escreveu o livro de Gênesis [cite: 149]. A data da composição de Gênesis, juntamente com o restante do Pentateuco, insiste na data em que Moisés era ativo, provavelmente em torno do décimo quinto século a.C., estando atrelada à datação do Êxodo [cite: 150]. Como parte inicial da grande narrativa veterotestamentária, Gênesis estabelece o cenário, começando com a criação do mundo [cite: 150]."
+        "conteudo": "É bem provável que Moisés tenha recorrido a fontes já existentes, orais e escritas, quando escreveu o livro de Gênesis. A data da composição de Gênesis, juntamente com o restante do Pentateuco, insiste na data em que Moisés era ativo, provavelmente em torno do décimo quinto século a.C., estando atrelada à datação do Êxodo. Como parte inicial da grande narrativa veterotestamentária, Gênesis estabelece o cenário, começando com a criação do mundo."
       },
       {
         "id": "genero",
         "titulo": "Gênesis",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Gênesis é parte de uma narrativa contínua (Gênesis-Reis) que relata, seletivamente, os eventos da criação do mundo à queda da cidade de Jerusalém, em 587/86 a.C [cite: 150]. Não obstante, não se trata de uma história ordinária, porque inclui em seu escopo as ações de Deus [cite: 150]. Embora o livro de Gênesis seja singular, apresenta pontos de similaridade e dessemelhanças com mitos do antigo Oriente Próximo (relatos mesopotâmicos da Criação e do Dilúvio) [cite: 150]. Nomes e costumes nas narrativas sobre os patriarcas (caps. 12-50) refletem acuradamente aquela era, sugerindo um autor mais antigo com acesso a documentos confiáveis [cite: 150]. Boa parte de Gênesis lança foco sobre as experiências de uma família seminômade que viveu por volta de 2000 a.C., e o leitor é convidado a aceitar as reivindicações de Gênesis e avaliá-las à luz do restante da Escritura [cite: 150, 151]."
+        "conteudo": "Gênesis é parte de uma narrativa contínua (Gênesis-Reis) que relata, seletivamente, os eventos da criação do mundo à queda da cidade de Jerusalém, em 587/86 a.C. Não obstante, não se trata de uma história ordinária, porque inclui em seu escopo as ações de Deus. Embora o livro de Gênesis seja singular, apresenta pontos de similaridade e dessemelhanças com mitos do antigo Oriente Próximo (relatos mesopotâmicos da Criação e do Dilúvio). Nomes e costumes nas narrativas sobre os patriarcas (caps. 12-50) refletem acuradamente aquela era, sugerindo um autor mais antigo com acesso a documentos confiáveis. Boa parte de Gênesis lança foco sobre as experiências de uma família seminômade que viveu por volta de 2000 a.C., e o leitor é convidado a aceitar as reivindicações de Gênesis e avaliá-las à luz do restante da Escritura."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "A estrutura literária de Gênesis é marcada por uma série de tópicos que formam o relato global [cite: 151]. Depois do prólogo (1.1-2.3), Gênesis é dividido em dez partes que se caracterizam pela fórmula \"Estas são as gerações de...\" [cite: 151]. Cada tópico é seguido por uma genealogia ou pelas histórias que envolvem seus descendentes notáveis [cite: 151]. Gênesis revela o plano de Deus tanto para derrotar Satanás, por intermédio de um futuro membro da linhagem que descendeu de Eva (3.15), como para abençoar todas as nações da terra (12.3; 22.18) [cite: 151, 152]. No final de Gênesis, duas linhagens régias em potencial são focalizadas: a de José/Efraim e a de Judá (com Perez), antecipando que a linhagem de Judá prevalecerá no tempo de Davi [cite: 152]."
+        "conteudo": "A estrutura literária de Gênesis é marcada por uma série de tópicos que formam o relato global. Depois do prólogo (1.1-2.3), Gênesis é dividido em dez partes que se caracterizam pela fórmula \"Estas são as gerações de...\". Cada tópico é seguido por uma genealogia ou pelas histórias que envolvem seus descendentes notáveis. Gênesis revela o plano de Deus tanto para derrotar Satanás, por intermédio de um futuro membro da linhagem que descendeu de Eva (3.15), como para abençoar todas as nações da terra (12.3; 22.18). No final de Gênesis, duas linhagens régias em potencial são focalizadas: a de José/Efraim e a de Judá (com Perez), antecipando que a linhagem de Judá prevalecerá no tempo de Davi."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "Os capítulos iniciais de Gênesis explicam como o relacionamento entre Deus e a humanidade é interrompido pela queda de Adão e Eva, e como Deus estabelece planos para a redenção do mundo [cite: 152]. Contra a escalada do pecado na humanidade (com Caim, a violência antes do Dilúvio e a torre de Babel), Deus age soberanamente escolhendo os patriarcas Abraão, Isaque e Jacó para mediar suas bênçãos às nações [cite: 152]. O Rei celestial exibe seu governo ao preservar as matriarcas, abrir ventres estéreis, escolher reiteradamente o mais jovem e inclinar o coração de seus eleitos para confiar em suas promessas [cite: 152]."
+        "conteudo": "Os capítulos iniciais de Gênesis explicam como o relacionamento entre Deus e a humanidade é interrompido pela queda de Adão e Eva, e como Deus estabelece planos para a redenção do mundo. Contra a escalada do pecado na humanidade (com Caim, a violência antes do Dilúvio e a torre de Babel), Deus age soberanamente escolhendo os patriarcas Abraão, Isaque e Jacó para mediar suas bênçãos às nações. O Rei celestial exibe seu governo ao preservar as matriarcas, abrir ventres estéreis, escolher reiteradamente o mais jovem e inclinar o coração de seus eleitos para confiar em suas promessas."
       },
       {
         "id": "teologia_de_genesis",
         "titulo": "Teologia de Gênesis",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "Os capítulos iniciais de Gênesis retratam Deus de duas maneiras complementares: como transcendente (Criador soberano que ordena o mundo pela palavra) e como imanente (que modela o homem do solo, caminha pelo jardim e se comunica face a face) [cite: 152]. Por meio das alianças com Noé e Abraão, Deus revela sua fidelidade, soberania e benevolência, operando pacientemente em face da rebelião humana para estabelecer os meios de salvação [cite: 152]."
+        "conteudo": "Os capítulos iniciais de Gênesis retratam Deus de duas maneiras complementares: como transcendente (Criador soberano que ordena o mundo pela palavra) e como imanente (que modela o homem do solo, caminha pelo jardim e se comunica face a face). Por meio das alianças com Noé e Abraão, Deus revela sua fidelidade, soberania e benevolência, operando pacientemente em face da rebelião humana para estabelecer os meios de salvação."
       },
       {
         "id": "genesis_na_historia_mais_ampla_da_biblia",
         "titulo": "Gênesis na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "O livro de Gênesis prové o fundamento sobre o qual toda a Escritura repousa, armando o cenário e reportando-se a eventos decisivos como a alienação da humanidade sob a maldição e o processo divino de vitória sobre a serpente/Satanás por meio do descendente da mulher, o novo Adão, Jesus Cristo [cite: 152]."
+        "conteudo": "O livro de Gênesis prové o fundamento sobre o qual toda a Escritura repousa, armando o cenário e reportando-se a eventos decisivos como a alienação da humanidade sob a maldição e o processo divino de vitória sobre a serpente/Satanás por meio do descendente da mulher, o novo Adão, Jesus Cristo."
       },
       {
         "id": "cristo_em_genesis",
         "titulo": "Cristo em Gênesis",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "O que começa em Gênesis se cumpre em Cristo [cite: 152]. O paraíso perdido pelo primeiro Adão é restaurado eternamente pelo último Adão [cite: 152]. Cristo é o descendente prometido da mulher (3.15), completando a genealogia dos capítulos 5 a 11 e sendo o descendente de Abraão por excelência (22.18; Gl 3.16), em quem os eleitos são abençoados [cite: 152]. Tipos e profecias (como Noé, a dádiva da esposa de Adão espelhando a Igreja, e o sacerdócio de Melquisedeque) certificam que o foco de Gênesis é Cristo [cite: 152]."
+        "conteudo": "O que começa em Gênesis se cumpre em Cristo. O paraíso perdido pelo primeiro Adão é restaurado eternamente pelo último Adão. Cristo é o descendente prometido da mulher (3.15), completando a genealogia dos capítulos 5 a 11 e sendo o descendente de Abraão por excelência (22.18; Gl 3.16), em quem os eleitos são abençoados. Tipos e profecias (como Noé, a dádiva da esposa de Adão espelhando a Igreja, e o sacerdócio de Melquisedeque) certificam que o foco de Gênesis é Cristo."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 10,
-        "conteudo": "A interpretação de Gênesis foi profundamente distorcida nos últimos dois séculos por metodologias que descartam sua unidade literária em favor de fontes hipotéticas e composições orais [cite: 152, 153]. Contudo, estudos recentes da narrativa hebraica têm ajudado os estudiosos a melhor apreciar a forma e a mensagem unificada de Gênesis em sua forma recebida [cite: 153]."
+        "conteudo": "A interpretação de Gênesis foi profundamente distorcida nos últimos dois séculos por metodologias que descartam sua unidade literária em favor de fontes hipotéticas e composições orais. Contudo, estudos recentes da narrativa hebraica têm ajudado os estudiosos a melhor apreciar a forma e a mensagem unificada de Gênesis em sua forma recebida."
       },
       {
         "id": "assuntos_especiais",
         "titulo": "Assuntos especiais",
         "tipo": "texto",
         "ordem": 11,
-        "conteudo": "A tensão entre Gênesis e a ciência moderna sobre as origens é grandemente resolvida quando se reconhece que abordam perspectivas diferentes: a ciência busca o \"como\" e o \"quando\", enquanto Gênesis foca primariamente o \"quem\" e o \"porquê\" [cite: 153]. Além disso, embora a \"hipótese documentária\" (fontes J, E, D, P) tenha dominado parte do século XX, muitos estudiosos atuais questionam esses critérios e reconhecem a notável unidade do texto, como na narrativa do Dilúvio (6.9-9.29) [cite: 153]."
+        "conteudo": "A tensão entre Gênesis e a ciência moderna sobre as origens é grandemente resolvida quando se reconhece que abordam perspectivas diferentes: a ciência busca o \"como\" e o \"quando\", enquanto Gênesis foca primariamente o \"quem\" e o \"porquê\". Além disso, embora a \"hipótese documentária\" (fontes J, E, D, P) tenha dominado parte do século XX, muitos estudiosos atuais questionam esses critérios e reconhecem a notável unidade do texto, como na narrativa do Dilúvio (6.9-9.29)."
       },
       {
         "id": "esboco_de_genesis",
@@ -91,80 +98,80 @@
         "ordem": 12,
         "conteudo": [
           {
-            "titulo": "I. PRÓLOGO: CRIAÇÃO DE CÉU E TERRA (1.1-2.3) [cite: 154]",
+            "titulo": "I. PRÓLOGO: CRIAÇÃO DE CÉU E TERRA (1.1-2.3)",
             "itens": []
           },
           {
-            "titulo": "II. RELATO DE CÉUS E TERRA (2.4-4.26) [cite: 154]",
+            "titulo": "II. RELATO DE CÉUS E TERRA (2.4-4.26)",
             "itens": [
-              "A. Adão e Eva à prova no paraíso (2.4-25) [cite: 154]",
-              "B. A queda e suas consequências (cap. 3) [cite: 154]",
-              "C. Escalada do pecado na linhagem de Caim (4.1-24) [cite: 154]",
-              "D. Alternativa na linhagem justa (4.25, 26) [cite: 154]"
+              "A. Adão e Eva à prova no paraíso (2.4-25)",
+              "B. A queda e suas consequências (cap. 3)",
+              "C. Escalada do pecado na linhagem de Caim (4.1-24)",
+              "D. Alternativa na linhagem justa (4.25, 26)"
             ]
           },
           {
-            "titulo": "III. RELATO DE ADÃO (5.1-6.8) [cite: 154]",
+            "titulo": "III. RELATO DE ADÃO (5.1-6.8)",
             "itens": [
-              "A. Linhagem piedosa de Sete (cap. 5) [cite: 154]",
-              "B. Escalada do pecado antes do Dilúvio (6.1-8) [cite: 154]"
+              "A. Linhagem piedosa de Sete (cap. 5)",
+              "B. Escalada do pecado antes do Dilúvio (6.1-8)"
             ]
           },
           {
-            "titulo": "IV. RELATO DE NOÉ (6.9-9.29) [cite: 154]",
+            "titulo": "IV. RELATO DE NOÉ (6.9-9.29)",
             "itens": [
-              "A. Preparação para o Dilúvio (6.9-7.10) [cite: 154]",
-              "B. Dilúvio e salvação (7.11-8.19) [cite: 154]",
-              "C. Aliança de Deus para não destruir a terra (8.20-9.17) [cite: 154]",
-              "D. Profecias sobre os filhos de Noé (9.18-29) [cite: 154]"
+              "A. Preparação para o Dilúvio (6.9-7.10)",
+              "B. Dilúvio e salvação (7.11-8.19)",
+              "C. Aliança de Deus para não destruir a terra (8.20-9.17)",
+              "D. Profecias sobre os filhos de Noé (9.18-29)"
             ]
           },
           {
-            "titulo": "V. RELATO DE SEM, CAM E JAFÉ (10.1-11.9) [cite: 154]",
+            "titulo": "V. RELATO DE SEM, CAM E JAFÉ (10.1-11.9)",
             "itens": [
-              "A. Tábua das Nações (cap. 10) [cite: 154]",
-              "B. Escalada do mal em Babilônia (11.1-9) [cite: 154]"
+              "A. Tábua das Nações (cap. 10)",
+              "B. Escalada do mal em Babilônia (11.1-9)"
             ]
           },
           {
-            "titulo": "VI. RELATO DE SEM (11.10-26) [cite: 154]",
+            "titulo": "VI. RELATO DE SEM (11.10-26)",
             "itens": []
           },
           {
-            "titulo": "VII. RELATO DE TERÁ (11.27-25.11) [cite: 154]",
+            "titulo": "VII. RELATO DE TERÁ (11.27-25.11)",
             "itens": [
-              "A. Informação introdutória (11.27-32) [cite: 154]",
-              "B. Alianças abraâmicas: nacionalidade e bênção internacional (12.1-22.19) [cite: 154]",
-              "C. Transição para Isaque (22.20-25.11) [cite: 154]"
+              "A. Informação introdutória (11.27-32)",
+              "B. Alianças abraâmicas: nacionalidade e bênção internacional (12.1-22.19)",
+              "C. Transição para Isaque (22.20-25.11)"
             ]
           },
           {
-            "titulo": "VIII. RELATO DE ISMAEL (25.12-18) [cite: 154]",
+            "titulo": "VIII. RELATO DE ISMAEL (25.12-18)",
             "itens": []
           },
           {
-            "titulo": "IX. RELATO DE ISAQUE (25.19-35.29) [cite: 154]",
+            "titulo": "IX. RELATO DE ISAQUE (25.19-35.29)",
             "itens": [
-              "A. Tensão na família (25.19-34) [cite: 154]",
-              "B. Bênçãos pactuais sobre Isaque (cap. 26) [cite: 154]",
-              "C. Apropriação equivocada da bênção de Esaú (27.1-40) [cite: 154]",
-              "D. Bênçãos pactuais sobre Jacó e seu exílio (27.41-32.32) [cite: 154]",
-              "E. Reconciliação de Jacó com Esaú (33.1-17) [cite: 154]",
-              "F. Itinerário e mortes desde Siquém até Manre (33.18-35.29) [cite: 154]"
+              "A. Tensão na família (25.19-34)",
+              "B. Bênçãos pactuais sobre Isaque (cap. 26)",
+              "C. Apropriação equivocada da bênção de Esaú (27.1-40)",
+              "D. Bênçãos pactuais sobre Jacó e seu exílio (27.41-32.32)",
+              "E. Reconciliação de Jacó com Esaú (33.1-17)",
+              "F. Itinerário e mortes desde Siquém até Manre (33.18-35.29)"
             ]
           },
           {
-            "titulo": "X. RELATO DE ESAÚ (36.1-37.1) [cite: 154]",
+            "titulo": "X. RELATO DE ESAÚ (36.1-37.1)",
             "itens": []
           },
           {
-            "titulo": "XI. RELATO DE JACÓ (37.2-50.26) [cite: 154]",
+            "titulo": "XI. RELATO DE JACÓ (37.2-50.26)",
             "itens": [
-              "A. Sonhos de José de realeza e subsequente escravidão (37.2-36) [cite: 154]",
-              "B. Transformação de Judá e nascimento de Perez (38.1-30) [cite: 154]",
-              "C. Ascensão de José à liderança do Egito (caps. 39-41) [cite: 154]",
-              "D. O estratagema de José e a reconciliação da família de Jacó (caps. 42-45) [cite: 154]",
-              "E. Transição para o Êxodo (caps. 46-50) [cite: 154]"
+              "A. Sonhos de José de realeza e subsequente escravidão (37.2-36)",
+              "B. Transformação de Judá e nascimento de Perez (38.1-30)",
+              "C. Ascensão de José à liderança do Egito (caps. 39-41)",
+              "D. O estratagema de José e a reconciliação da família de Jacó (caps. 42-45)",
+              "E. Transição para o Êxodo (caps. 46-50)"
             ]
           }
         ]

@@ -8,74 +8,81 @@
     "introducao": "O Apocalipse de João é uma grandiosa profecia apocalíptica repleta de simbolismos que revela a soberania de Deus e de Cristo sobre a história, consolando a Igreja em meio às tribulações e assegurando a vitória final de Cristo e a criação dos novos céus e da nova terra.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "Apocalipse quer dizer “revelação”, e por isso este livro também é chamado de “Revelação” de Deus a João (1.1). Foi escrito durante um tempo em que as autoridades romanas estavam perseguindo os cristãos porque eles não prestavam culto ao Imperador romano, que chamava a si mesmo de “senhor” e “deus”. O livro foi escrito por João, que estava preso na ilha de Patmos por ter anunciado o evangelho (1.9). Ele escreve o seu livro para as sete igrejas da província romana da Ásia (1.4,11), que ficava numa região que hoje faz parte da Turquia. Ele anima os seus leitores a continuarem fiéis a Jesus Cristo em tempos de perseguições e sofrimentos.\n\nDepois das cartas às sete igrejas (caps. 2—3), João descreve uma série de visões que teve. Elas mostram que as forças do mal não vencerão, que a vitória pertence a Deus e a Jesus Cristo e que aqueles que continuarem fiéis na sua fé receberão o prêmio da vida eterna no novo céu que Deus vai preparar. João usa figuras estranhas, símbolos e números que os seus leitores entendiam, mas que não seriam entendidos pelas autoridades romanas. Os leitores de hoje têm dificuldade de compreender completamente as visões de João, mas a lição principal do livro é simples e clara: “O reino do mundo se tornou de nosso Senhor e do seu Cristo, e ele reinará pelos séculos dos séculos” (11.15)."
+      },
+      {
         "id": "titulo_e_autor",
         "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "Com base em Apocalipse 1.1, esse livro é uma \"revelação\" (no singular, a \"revelação\" de Jesus Cristo, e não \"revelações\") [cite: 148]. O escritor se identifica como João (1.1, 4, 9; 22.8) [cite: 148]. Ele era bem conhecido nas igrejas da Ásia Menor (1.9) [cite: 148]. Já no século II d.C., Justino Mártir, Irineu e outros identificaram o autor como o apóstolo João [cite: 148]. No século III, porém, Dionísio, bispo de Alexandria, comparou o estilo e os temas de Apocalipse ao evangelho de João e concluiu que ambos deviam ter autores diferentes [cite: 148]. Embora seja difícil ter certeza, confirmação externa e evidências de caráter judaico em Apocalipse, como, por exemplo, a familiaridade com os profetas mostrada no livro, continuam a apoiar o ponto de vista tradicional de que o apóstolo João foi o escritor do livro de Apocalipse [cite: 148]."
+        "conteudo": "Com base em Apocalipse 1.1, esse livro é uma \"revelação\" (no singular, a \"revelação\" de Jesus Cristo, e não \"revelações\"). O escritor se identifica como João (1.1, 4, 9; 22.8). Ele era bem conhecido nas igrejas da Ásia Menor (1.9). Já no século II d.C., Justino Mártir, Irineu e outros identificaram o autor como o apóstolo João. No século III, porém, Dionísio, bispo de Alexandria, comparou o estilo e os temas de Apocalipse ao evangelho de João e concluiu que ambos deviam ter autores diferentes. Embora seja difícil ter certeza, confirmação externa e evidências de caráter judaico em Apocalipse, como, por exemplo, a familiaridade com os profetas mostrada no livro, continuam a apoiar o ponto de vista tradicional de que o apóstolo João foi o escritor do livro de Apocalipse."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "Apocalipse foi escrito em um período de perseguição, talvez perto do final do reinado do imperador romano Nero (54-68 d.C.) ou durante o reinado de Domiciano (81-96 d.C.) [cite: 148]. A maioria dos eruditos apoia uma data por volta de 95 d.C [cite: 148]. A evidência mais consistente para uma data posterior se encontra na afirmação de Irineu, no sentido de que a visão de João foi recebida perto do final do reinado de Domiciano (Contra as heresias, 2.22.5) [cite: 148]. Aqueles que apoiam a data posterior também argumentam que o contexto histórico admitido pelo autor do livro de Apocalipse não existia até a parte final do século I [cite: 148]. Aqueles que apoiam uma data anterior argumentam que a evidência externa baseada em Irineu e nas condições enfrentadas pelas sete igrejas não é tão consistente quanto frequentemente é reconhecida [cite: 148]. Os proponentes de uma data anterior argumentam que o livro em si mesmo aponta para um tempo de composição antes de 70 d.C. João, por exemplo, indica várias vezes que a profecia se cumpriria logo (1.1, 3, 19; 2.16; 3.10, 11; 22.6, 7, 10, 12, 20) [cite: 148]. Não podemos comentar o livro de Apocalipse sem tomarmos uma posição, e as notas de estudo que se seguem admitem uma data posterior [cite: 148].\n\nApocalipse se dirige às sete igrejas da Ásia Menor (1.4, 11), na província romana da Ásia (hoje, parte da Turquia Ocidental) [cite: 148, 149]. Cada igreja recebe censuras e encorajamento, de acordo com sua condição (2.1-3.22) [cite: 148]. A perseguição havia chegado para alguns cristãos (1.9; 2.9, 13), e mais estava por vir (2.10; 13.7-10) [cite: 149]. Ensino herético e fervor declinante tentavam os cristãos a se comprometer com a sociedade pagã (2.2, 4, 14, 15, 20-24; 3.1, 2, 15, 17) [cite: 149]. João escreveu Apocalipse para assegurar essas igrejas de que Cristo conhecia a condição delas e as chamava a permanecer firmes contra toda tentação [cite: 149]. Sua vitória fora garantida pelo sangue de Cristo (Ap 5.9, 10; 12.11) [cite: 149]. Cristo viria em breve para derrotar Satanás e todos os seus agentes (19.11-20.10), e o povo de Cristo desfrutaria paz eterna na presença dele (7.15-17; 21.3, 4) [cite: 149]. Essas lições, porém, não foram escritas apenas para a Igreja do século I; aplicam-se também a cada geração de crentes até que Jesus retorne [cite: 149]."
+        "conteudo": "Apocalipse foi escrito em um período de perseguição, talvez perto do final do reinado do imperador romano Nero (54-68 d.C.) ou durante o reinado de Domiciano (81-96 d.C.). A maioria dos eruditos apoia uma data por volta de 95 d.C. A evidência mais consistente para uma data posterior se encontra na afirmação de Irineu, no sentido de que a visão de João foi recebida perto do final do reinado de Domiciano (Contra as heresias, 2.22.5). Aqueles que apoiam a data posterior também argumentam que o contexto histórico admitido pelo autor do livro de Apocalipse não existia até a parte final do século I. Aqueles que apoiam uma data anterior argumentam que a evidência externa baseada em Irineu e nas condições enfrentadas pelas sete igrejas não é tão consistente quanto frequentemente é reconhecida. Os proponentes de uma data anterior argumentam que o livro em si mesmo aponta para um tempo de composição antes de 70 d.C. João, por exemplo, indica várias vezes que a profecia se cumpriria logo (1.1, 3, 19; 2.16; 3.10, 11; 22.6, 7, 10, 12, 20). Não podemos comentar o livro de Apocalipse sem tomarmos uma posição, e as notas de estudo que se seguem admitem uma data posterior.\n\nApocalipse se dirige às sete igrejas da Ásia Menor (1.4, 11), na província romana da Ásia (hoje, parte da Turquia Ocidental). Cada igreja recebe censuras e encorajamento, de acordo com sua condição (2.1-3.22). A perseguição havia chegado para alguns cristãos (1.9; 2.9, 13), e mais estava por vir (2.10; 13.7-10). Ensino herético e fervor declinante tentavam os cristãos a se comprometer com a sociedade pagã (2.2, 4, 14, 15, 20-24; 3.1, 2, 15, 17). João escreveu Apocalipse para assegurar essas igrejas de que Cristo conhecia a condição delas e as chamava a permanecer firmes contra toda tentação. Sua vitória fora garantida pelo sangue de Cristo (Ap 5.9, 10; 12.11). Cristo viria em breve para derrotar Satanás e todos os seus agentes (19.11-20.10), e o povo de Cristo desfrutaria paz eterna na presença dele (7.15-17; 21.3, 4). Essas lições, porém, não foram escritas apenas para a Igreja do século I; aplicam-se também a cada geração de crentes até que Jesus retorne."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "O livro de Apocalipse compartilha muitas das características da literatura apocalíptica do Antigo Testamento, sendo intitulado \"Apocalipse de João\" (apokalypsis Ioannou) [cite: 149]. No entanto, João identifica especificamente o livro como uma \"profecia\", várias vezes (1.3; 19.10; 22.7, 10, 18, 19) [cite: 149]. Além disso, o livro contém uma saudação (1.4) e uma conclusão (22.21) epistolar padrão [cite: 149]. Todas essas características devem ser levadas em consideração quando discutimos o gênero do livro [cite: 149]. Identificá-lo como uma profecia apocalíptica nos ajuda a determinar se o livro tencionava ser entendido simbólica ou literalmente [cite: 149]. Visto que a profecia apocalíptica do Antigo Testamento é caracterizada pelo uso de uma linguagem altamente figurada e simbólica, a identificação de Apocalipse como uma profecia apocalíptica indica que esse livro também se caracteriza pelo uso de linguagem simbólica [cite: 149].\n\nAs palavras iniciais do livro também apoiam a ideia de que Apocalipse deve ser entendido como um livro acentuadamente simbólico [cite: 149]. Em 1.1, João usa a palavra grega semainō para indicar o modo da revelação de Deus para ele [cite: 149]. O substantivo cognato desse verbo, \"sinal\" (sēmeion), identifica símbolos visíveis em Apocalipse 12.1, 3; 15.1 e os milagres enganadores realizados pelo falso profeta (13.13, 14; 16.14; 19.20) [cite: 149]. E, ainda mais relevante, o fato de Apocalipse 1.1 ser uma alusão a Daniel 2.28, 29, 45 confirma que a palavra significa \"simbolizar\" na obra de João [cite: 149].\n\nProvavelmente, João tinha em mente o contexto maior de Daniel 2 [cite: 150]. Na Septuaginta, a palavra semainō é usada para descrever a visão simbólica experimentada pelo rei Nabucodonosor [cite: 150]. A interpretação do sonho mostra que este não deve ser entendido literalmente em termos de uma estátua e de suas várias partes, mas que os metais simbolizam quatro reinos mundiais, e a pedra representa o reino de Deus [cite: 150]. Em Apocalipse 1.1, João usa deliberadamente a linguagem de Daniel 2.45 para indicar que aquilo que Deus lhe mostrara era igualmente quase tudo simbólico [cite: 150]. A maioria das coisas que serão mostradas não deve ser entendida literalmente (leões, cordeiros, bestas, mulheres etc.), mas cada uma delas se refere simbolicamente a outra realidade ou conjunto de realidades [cite: 150]. Sob essa ótica, a afirmação da abordagem popular \"interprete literalmente, a menos que seja forçado a interpretar simbolicamente\" deveria ser invertida para: \"Interprete simbolicamente, a menos que seja forçado a interpretar literalmente\" [cite: 150].\n\nVisto que Apocalipse está cheio de simbolismo, por que Deus usou esse meio? A resposta é que o uso de simbolismo por João é muito semelhante ao uso de parábolas por Jesus, servindo para atrair a atenção dos verdadeiros crentes espiritualmente despertos, enquanto deixam endurecidos os incrédulos [cite: 150, 151]. A admoestação repetida sete vezes às igrejas — \"quem tem ouvidos, ouça\" (2.7, 11, 17, 29; 3.6, 13, 22) — baseia-se em Isaías 6.9, 10 e Mateus 13.9-16 [cite: 151]. Em resumo, a mensagem de Apocalipse não diz respeito meramente à revelação de eventos futuros, mas usa eventos presentes, entendidos de maneira simbólica, para comunicar advertência e encorajamento a que os crentes perseverem [cite: 151]."
+        "conteudo": "O livro de Apocalipse compartilha muitas das características da literatura apocalíptica do Antigo Testamento, sendo intitulado \"Apocalipse de João\" (apokalypsis Ioannou). No entanto, João identifica especificamente o livro como uma \"profecia\", várias vezes (1.3; 19.10; 22.7, 10, 18, 19). Além disso, o livro contém uma saudação (1.4) e uma conclusão (22.21) epistolar padrão. Todas essas características devem ser levadas em consideração quando discutimos o gênero do livro. Identificá-lo como uma profecia apocalíptica nos ajuda a determinar se o livro tencionava ser entendido simbólica ou literalmente. Visto que a profecia apocalíptica do Antigo Testamento é caracterizada pelo uso de uma linguagem altamente figurada e simbólica, a identificação de Apocalipse como uma profecia apocalíptica indica que esse livro também se caracteriza pelo uso de linguagem simbólica.\n\nAs palavras iniciais do livro também apoiam a ideia de que Apocalipse deve ser entendido como um livro acentuadamente simbólico. Em 1.1, João usa a palavra grega semainō para indicar o modo da revelação de Deus para ele. O substantivo cognato desse verbo, \"sinal\" (sēmeion), identifica símbolos visíveis em Apocalipse 12.1, 3; 15.1 e os milagres enganadores realizados pelo falso profeta (13.13, 14; 16.14; 19.20). E, ainda mais relevante, o fato de Apocalipse 1.1 ser uma alusão a Daniel 2.28, 29, 45 confirma que a palavra significa \"simbolizar\" na obra de João.\n\nProvavelmente, João tinha em mente o contexto maior de Daniel 2. Na Septuaginta, a palavra semainō é usada para descrever a visão simbólica experimentada pelo rei Nabucodonosor. A interpretação do sonho mostra que este não deve ser entendido literalmente em termos de uma estátua e de suas várias partes, mas que os metais simbolizam quatro reinos mundiais, e a pedra representa o reino de Deus. Em Apocalipse 1.1, João usa deliberadamente a linguagem de Daniel 2.45 para indicar que aquilo que Deus lhe mostrara era igualmente quase tudo simbólico. A maioria das coisas que serão mostradas não deve ser entendida literalmente (leões, cordeiros, bestas, mulheres etc.), mas cada uma delas se refere simbolicamente a outra realidade ou conjunto de realidades. Sob essa ótica, a afirmação da abordagem popular \"interprete literalmente, a menos que seja forçado a interpretar simbolicamente\" deveria ser invertida para: \"Interprete simbolicamente, a menos que seja forçado a interpretar literalmente\".\n\nVisto que Apocalipse está cheio de simbolismo, por que Deus usou esse meio? A resposta é que o uso de simbolismo por João é muito semelhante ao uso de parábolas por Jesus, servindo para atrair a atenção dos verdadeiros crentes espiritualmente despertos, enquanto deixam endurecidos os incrédulos. A admoestação repetida sete vezes às igrejas — \"quem tem ouvidos, ouça\" (2.7, 11, 17, 29; 3.6, 13, 22) — baseia-se em Isaías 6.9, 10 e Mateus 13.9-16. Em resumo, a mensagem de Apocalipse não diz respeito meramente à revelação de eventos futuros, mas usa eventos presentes, entendidos de maneira simbólica, para comunicar advertência e encorajamento a que os crentes perseverem."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Como no Antigo Testamento, a profecia de Apocalipse envolve exortações para o presente e predição de eventos futuros [cite: 151]. O prólogo (1.1-3) explica seu propósito básico, e os capítulos 1.4-22.21 formam uma carta com saudação, corpo e despedida [cite: 151]. A porção principal do livro (4.1-22.5) consiste de sete ciclos de julgamentos (4.1-8.1; 8.2-11.19; 12.1-14.20; 15.1-16.21; 17.1-19.10; 19.11-21; 20.1-15), que são essencialmente correspondentes em tempo e conteúdo, complementando-se e contemplando o mesmo evento de ângulos diferentes [cite: 151]. A oitava e última porção apresenta a visão suprema da Nova Jerusalém (21.1-22.5) [cite: 151]. Vários personagens simbólicos são introduzidos e seus destinos revelados em ordem inversa, formando uma estrutura paralela conhecida como quiasmo [cite: 151]."
+        "conteudo": "Como no Antigo Testamento, a profecia de Apocalipse envolve exortações para o presente e predição de eventos futuros. O prólogo (1.1-3) explica seu propósito básico, e os capítulos 1.4-22.21 formam uma carta com saudação, corpo e despedida. A porção principal do livro (4.1-22.5) consiste de sete ciclos de julgamentos (4.1-8.1; 8.2-11.19; 12.1-14.20; 15.1-16.21; 17.1-19.10; 19.11-21; 20.1-15), que são essencialmente correspondentes em tempo e conteúdo, complementando-se e contemplando o mesmo evento de ângulos diferentes. A oitava e última porção apresenta a visão suprema da Nova Jerusalém (21.1-22.5). Vários personagens simbólicos são introduzidos e seus destinos revelados em ordem inversa, formando uma estrutura paralela conhecida como quiasmo."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "O livro de Apocalipse incorpora vários temas importantes:\n1. **O Deus soberano.** Deus governa a história e a conduzirá ao clímax triunfal em Cristo [cite: 152]. A palavra \"trono\" aparece 17 vezes em Apocalipse 4 e 5, ressaltando a soberania divina [cite: 152]. As provações servem para refinar o povo de Deus [cite: 152].\n2. **Cristo, o Rei.** Apresentado inicialmente como majestoso Rei e Juiz (1.12-20) e como o Cordeiro vitorioso, enfrentando as forças de Satanás, o dragão, a besta e o falso profeta [cite: 152].\n3. **O \"já e ainda não\" dos últimos dias.** O que o Antigo Testamento predizia para o tempo do fim já começou a se cumprir na primeira vinda de Cristo e será consumado em sua vinda final [cite: 152, 153].\n4. **A disposição de sofrer por Cristo é o caminho para a vitória final.** O sofrimento presente dos cristãos sela sua vitória sobre as trevas, à semelhança da cruz de Cristo [cite: 153].\n5. **A nova Criação como cumprimento da profecia bíblica.** Culmina na nova aliança, no novo templo, no novo Israel e na nova Jerusalém (21.1-22.5) [cite: 153].\n6. **A natureza imitadora das forças satânicas.** Satanás tenta imitar a Deus Pai, a besta imita a Cristo (com sete correspondências marcantes), e o falso profeta imita a obra do Espírito Santo, formando um trio ímpio que se opõe a Deus [cite: 153, 154]. Babilônia, a meretriz, surge como imitação da noiva de Cristo [cite: 154].\n7. **Outras características.** O uso repetido do número sete significa completude [cite: 154]."
+        "conteudo": "O livro de Apocalipse incorpora vários temas importantes:\n1. **O Deus soberano.** Deus governa a história e a conduzirá ao clímax triunfal em Cristo. A palavra \"trono\" aparece 17 vezes em Apocalipse 4 e 5, ressaltando a soberania divina. As provações servem para refinar o povo de Deus.\n2. **Cristo, o Rei.** Apresentado inicialmente como majestoso Rei e Juiz (1.12-20) e como o Cordeiro vitorioso, enfrentando as forças de Satanás, o dragão, a besta e o falso profeta.\n3. **O \"já e ainda não\" dos últimos dias.** O que o Antigo Testamento predizia para o tempo do fim já começou a se cumprir na primeira vinda de Cristo e será consumado em sua vinda final.\n4. **A disposição de sofrer por Cristo é o caminho para a vitória final.** O sofrimento presente dos cristãos sela sua vitória sobre as trevas, à semelhança da cruz de Cristo.\n5. **A nova Criação como cumprimento da profecia bíblica.** Culmina na nova aliança, no novo templo, no novo Israel e na nova Jerusalém (21.1-22.5).\n6. **A natureza imitadora das forças satânicas.** Satanás tenta imitar a Deus Pai, a besta imita a Cristo (com sete correspondências marcantes), e o falso profeta imita a obra do Espírito Santo, formando um trio ímpio que se opõe a Deus. Babilônia, a meretriz, surge como imitação da noiva de Cristo.\n7. **Outras características.** O uso repetido do número sete significa completude."
       },
       {
         "id": "teologia_de_apocalipse",
         "titulo": "Teologia de Apocalipse",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "Teologicamente, Apocalipse termina onde Gênesis começa: do Deus Criador dos céus e da terra ao Criador dos novos céus e da nova terra [cite: 154]. O livro descreve Deus em termos explicitamente trinitários (1.4-5) [cite: 154]. A divindade de Cristo é fortemente enfatizada quando Jesus aplica a si mesmo títulos divinos como \"o primeiro e o último\" e o \"Alfa e o Ômega\" (1.17; 22.13), equiparando-se a Deus [cite: 154]. A escatologia pessoal e cósmica aborda o destino eterno dos justos (na Nova Jerusalém, sem morte, choro ou dor) e dos ímpios (lançados no lago de fogo) [cite: 154, 155]."
+        "conteudo": "Teologicamente, Apocalipse termina onde Gênesis começa: do Deus Criador dos céus e da terra ao Criador dos novos céus e da nova terra. O livro descreve Deus em termos explicitamente trinitários (1.4-5). A divindade de Cristo é fortemente enfatizada quando Jesus aplica a si mesmo títulos divinos como \"o primeiro e o último\" e o \"Alfa e o Ômega\" (1.17; 22.13), equiparando-se a Deus. A escatologia pessoal e cósmica aborda o destino eterno dos justos (na Nova Jerusalém, sem morte, choro ou dor) e dos ímpios (lançados no lago de fogo)."
       },
       {
         "id": "apocalipse_na_historia_mais_ampla_da_biblia",
         "titulo": "Apocalipse na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "Apocalipse possui mais alusões ao Antigo Testamento do que todos os outros livros do Novo Testamento juntos [cite: 155]. Utiliza padrões de Daniel, Ezequiel, do Êxodo e de profecias sobre a Babilônia e o templo, universalizando-os para abranger a Igreja — o verdadeiro Israel composto por crentes de todas as nações [cite: 155, 156]. A chave mais importante para entender o Apocalipse é compreender o Antigo Testamento [cite: 156]."
+        "conteudo": "Apocalipse possui mais alusões ao Antigo Testamento do que todos os outros livros do Novo Testamento juntos. Utiliza padrões de Daniel, Ezequiel, do Êxodo e de profecias sobre a Babilônia e o templo, universalizando-os para abranger a Igreja — o verdadeiro Israel composto por crentes de todas as nações. A chave mais importante para entender o Apocalipse é compreender o Antigo Testamento."
       },
       {
         "id": "cristo_em_apocalipse",
         "titulo": "Cristo em Apocalipse",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "Cristo é a figura central revelada nas visões de Apocalipse: o \"semelhante a filho de homem\" vestido de glória (1.13), o Leão da tribo de Judá e o Cordeiro que foi morto (5.5, 6, 9), o Descendente da mulher (12.1-5) e o Verbo de Deus que lidera os exércitos celestiais (19.11-15) [cite: 156]."
+        "conteudo": "Cristo é a figura central revelada nas visões de Apocalipse: o \"semelhante a filho de homem\" vestido de glória (1.13), o Leão da tribo de Judá e o Cordeiro que foi morto (5.5, 6, 9), o Descendente da mulher (12.1-5) e o Verbo de Deus que lidera os exércitos celestiais (19.11-15)."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "Existem quatro abordagens básicas para interpretar a relação das visões de Apocalipse com a história:\n1. **Preterismo:** o cumprimento ocorreu no passado (queda de Jerusalém ou do Império Romano) [cite: 156, 157].\n2. **Futurismo:** os capítulos 6 a 18 referem-se a uma crise final logo antes da segunda vinda [cite: 157].\n3. **Historicismo:** oferece um esboço cronológico da história da Igreja desde o século I até a segunda vinda [cite: 157].\n4. **Idealismo:** as visões representam princípios espirituais e constantes da guerra entre o reino de Deus e as trevas ao longo da era da Igreja [cite: 157]. Uma combinação dessas abordagens oferece a perspectiva mais equilibrada, pois os princípios tiveram relevância no século I, aplicam-se ao longo da história e encontram expressão culminante na crise final [cite: 157]."
+        "conteudo": "Existem quatro abordagens básicas para interpretar a relação das visões de Apocalipse com a história:\n1. **Preterismo:** o cumprimento ocorreu no passado (queda de Jerusalém ou do Império Romano).\n2. **Futurismo:** os capítulos 6 a 18 referem-se a uma crise final logo antes da segunda vinda.\n3. **Historicismo:** oferece um esboço cronológico da história da Igreja desde o século I até a segunda vinda.\n4. **Idealismo:** as visões representam princípios espirituais e constantes da guerra entre o reino de Deus e as trevas ao longo da era da Igreja. Uma combinação dessas abordagens oferece a perspectiva mais equilibrada, pois os princípios tiveram relevância no século I, aplicam-se ao longo da história e encontram expressão culminante na crise final."
       },
       {
         "id": "assuntos_especiais",
         "titulo": "Assuntos especiais",
         "tipo": "texto",
         "ordem": 10,
-        "conteudo": "A questão do milênio (os mil anos de Apocalipse 20.1-10) divide-se em três principais posições:\n1. **Pré-milenismo:** os mil anos seguem a segunda vinda de Cristo, inaugurando um período de paz (inclui variantes como o dispensacionalismo com o arrebatamento pré-tribulação) [cite: 157].\n2. **Amilenismo:** o milênio simboliza o reino presente de Cristo e dos santos no céu durante a era da Igreja, com Satanás atualmente amarrado pela obra de Cristo [cite: 157].\n3. **Pós-milenismo:** a Igreja experimentará grande expansão e influência cristã na terra antes da segunda vinda de Cristo [cite: 158]. O ponto principal e incontestável de todas as posições é que Satanás será finalmente vencido e Deus cuidará de seus santos [cite: 158]."
+        "conteudo": "A questão do milênio (os mil anos de Apocalipse 20.1-10) divide-se em três principais posições:\n1. **Pré-milenismo:** os mil anos seguem a segunda vinda de Cristo, inaugurando um período de paz (inclui variantes como o dispensacionalismo com o arrebatamento pré-tribulação).\n2. **Amilenismo:** o milênio simboliza o reino presente de Cristo e dos santos no céu durante a era da Igreja, com Satanás atualmente amarrado pela obra de Cristo.\n3. **Pós-milenismo:** a Igreja experimentará grande expansão e influência cristã na terra antes da segunda vinda de Cristo. O ponto principal e incontestável de todas as posições é que Satanás será finalmente vencido e Deus cuidará de seus santos."
       },
       {
         "id": "esboco_de_apocalipse",
@@ -84,62 +91,62 @@
         "ordem": 11,
         "conteudo": [
           {
-            "titulo": "I. INTRODUÇÃO (CAP. 1) [cite: 158]",
+            "titulo": "I. INTRODUÇÃO (CAP. 1)",
             "itens": [
-              "A. Prólogo (1.1-3) [cite: 158]",
-              "B. Saudação e louvor (1.4-8) [cite: 158]",
-              "C. Visão de Cristo, o Juiz (1.9-20) [cite: 158]"
+              "A. Prólogo (1.1-3)",
+              "B. Saudação e louvor (1.4-8)",
+              "C. Visão de Cristo, o Juiz (1.9-20)"
             ]
           },
           {
-            "titulo": "II. EXORTAÇÕES ÀS SETE IGREJAS (CAPS. 2; 3) [cite: 158]",
+            "titulo": "II. EXORTAÇÕES ÀS SETE IGREJAS (CAPS. 2; 3)",
             "itens": [
-              "A. Éfeso (2.1-7) [cite: 158]",
-              "B. Esmirna (2.8-11) [cite: 158]",
-              "C. Pérgamo (2.12-17) [cite: 158]",
-              "D. Tiatira (2.18-29) [cite: 158]",
-              "E. Sardes (3.1-6) [cite: 158]",
-              "F. Filadélfia (3.7-13) [cite: 158]",
-              "G. Laodiceia (3.14-22) [cite: 158]"
+              "A. Éfeso (2.1-7)",
+              "B. Esmirna (2.8-11)",
+              "C. Pérgamo (2.12-17)",
+              "D. Tiatira (2.18-29)",
+              "E. Sardes (3.1-6)",
+              "F. Filadélfia (3.7-13)",
+              "G. Laodiceia (3.14-22)"
             ]
           },
           {
-            "titulo": "III. VISÕES CELESTIAIS (4.1-22.5) [cite: 158]",
+            "titulo": "III. VISÕES CELESTIAIS (4.1-22.5)",
             "itens": [
-              "A. Ciclo um: o rolo e seus sete selos (4.1-8.1) [cite: 158]",
-              "1. Deus, o Rei, e Cristo, aquele que é digno (caps. 4; 5) [cite: 158]",
-              "2. Abrindo os seis selos (cap. 6) [cite: 158]",
-              "3. Cuidado em favor dos santos (cap. 7) [cite: 158]",
-              "4. Abrindo o sétimo selo (8.1) [cite: 158]",
-              "B. Ciclo dois: sete anjos com sete trombetas (8.2-11.19) [cite: 158]",
-              "1. Sete anjos diante de Deus (8.2-6) [cite: 158]",
-              "2. Seis anjos tocam suas trombetas (8.7-9.21) [cite: 158]",
-              "3. Cuidado por João e pelas duas testemunhas (10.1-11.14) [cite: 158]",
-              "4. O sétimo anjo toca a sua trombeta (11.15-19) [cite: 158]",
-              "C. Ciclo três: sete histórias simbólicas (caps. 12-14) [cite: 158]",
-              "1. Principais personagens: o povo de Deus versus Satanás (12.1-6) [cite: 158]",
-              "2. Seis histórias simbólicas reveladas (12.7-14.11) [cite: 158]",
-              "a. História do dragão (12.7-12) [cite: 158]",
-              "b. História da mulher (12.13-17) [cite: 158]",
-              "c. História da besta procedente do mar (13.1-10) [cite: 158]",
-              "d. História da besta procedente da terra: o falso profeta (13.11-18) [cite: 158]",
-              "e. Os 144 mil (14.1-5) [cite: 158]",
-              "f. Três mensageiros angelicais (14.6-11) [cite: 158]",
-              "3. Cuidado em favor dos santos (14.12, 13) [cite: 158]",
-              "4. A sétima história simbólica (Um semelhante ao Filho do Homem) revelada (14.14-20) [cite: 158]",
-              "D. Ciclo quatro: sete taças da ira de Deus procedentes do templo (caps. 15; 16) [cite: 158]",
-              "E. Ciclo cinco: julgamento de Babilônia e vindicação da Igreja (17.1-19.10) [cite: 158]",
-              "F. Ciclo seis: a batalha final (19.11-21) [cite: 158]",
-              "G. Ciclo sete: o reino dos santos e o último julgamento (20.1-21.8) [cite: 158]",
-              "H. A nova Jerusalém (21.9-22.5) [cite: 158]"
+              "A. Ciclo um: o rolo e seus sete selos (4.1-8.1)",
+              "1. Deus, o Rei, e Cristo, aquele que é digno (caps. 4; 5)",
+              "2. Abrindo os seis selos (cap. 6)",
+              "3. Cuidado em favor dos santos (cap. 7)",
+              "4. Abrindo o sétimo selo (8.1)",
+              "B. Ciclo dois: sete anjos com sete trombetas (8.2-11.19)",
+              "1. Sete anjos diante de Deus (8.2-6)",
+              "2. Seis anjos tocam suas trombetas (8.7-9.21)",
+              "3. Cuidado por João e pelas duas testemunhas (10.1-11.14)",
+              "4. O sétimo anjo toca a sua trombeta (11.15-19)",
+              "C. Ciclo três: sete histórias simbólicas (caps. 12-14)",
+              "1. Principais personagens: o povo de Deus versus Satanás (12.1-6)",
+              "2. Seis histórias simbólicas reveladas (12.7-14.11)",
+              "a. História do dragão (12.7-12)",
+              "b. História da mulher (12.13-17)",
+              "c. História da besta procedente do mar (13.1-10)",
+              "d. História da besta procedente da terra: o falso profeta (13.11-18)",
+              "e. Os 144 mil (14.1-5)",
+              "f. Três mensageiros angelicais (14.6-11)",
+              "3. Cuidado em favor dos santos (14.12, 13)",
+              "4. A sétima história simbólica (Um semelhante ao Filho do Homem) revelada (14.14-20)",
+              "D. Ciclo quatro: sete taças da ira de Deus procedentes do templo (caps. 15; 16)",
+              "E. Ciclo cinco: julgamento de Babilônia e vindicação da Igreja (17.1-19.10)",
+              "F. Ciclo seis: a batalha final (19.11-21)",
+              "G. Ciclo sete: o reino dos santos e o último julgamento (20.1-21.8)",
+              "H. A nova Jerusalém (21.9-22.5)"
             ]
           },
           {
-            "titulo": "IV. EXORTAÇÕES FINAIS (22.6-20) [cite: 158]",
+            "titulo": "IV. EXORTAÇÕES FINAIS (22.6-20)",
             "itens": []
           },
           {
-            "titulo": "V. BÊNÇÃO CONCLUSIVA (22.21) [cite: 158]",
+            "titulo": "V. BÊNÇÃO CONCLUSIVA (22.21)",
             "itens": []
           }
         ]

@@ -8,6 +8,13 @@
     "introducao": "O livro de Josué narra a vitoriosa entrada e conquista da Terra Prometida sob a liderança do sucessor de Moisés, testemunhando a fidelidade de Deus em cumprir Suas promessas feitas aos patriarcas e enfatizando a importância da fé e da obediência para tomar e manter a posse da terra.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "No Livro de Josué, conta-se a história de como os israelitas conquistaram a terra de Canaã e passaram a morar nela. A conquista de Canaã foi comandada por Josué, que ficou no lugar de Moisés como guia do povo de Deus."
+      },
+      {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",

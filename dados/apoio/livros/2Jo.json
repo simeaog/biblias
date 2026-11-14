@@ -8,60 +8,67 @@
     "introducao": "A Segunda Epístola de João é uma carta pastoral breve escrita pelo apóstolo para alertar contra os falsos mestres que negam a encarnação, exortando a comunidade cristã a caminhar na verdade, praticar o amor mútuo e exercer discernimento na hospitalidade.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "Esta pequena epístola foi escrita por um “presbítero”, isto é, um dirigente de uma igreja. A epístola é dirigida aos membros de outra igreja, os quais o autor conhece bem. Ele pede aos leitores que amem uns aos outros e que tomem cuidado com certas doutrinas falsas que estão sendo espalhadas pelo mundo."
+      },
+      {
         "id": "titulo_e_autor",
         "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O estilo, a fraseologia e o conteúdo de João caracterizam-na como escrita pelo mesmo autor de 1 João e do Evangelho de João [cite: 321]. Tradicionalmente, esse autor tem sido identificado como o apóstolo João, o filho de Zebedeu; e nenhuma atribuição mais plausível tem sido proposta [cite: 321]."
+        "conteudo": "O estilo, a fraseologia e o conteúdo de João caracterizam-na como escrita pelo mesmo autor de 1 João e do Evangelho de João. Tradicionalmente, esse autor tem sido identificado como o apóstolo João, o filho de Zebedeu; e nenhuma atribuição mais plausível tem sido proposta."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "A Segunda Epístola de João foi escrita para advertir contra a mesma linha de falsa doutrina à qual 1 João se opõe, ou seja, o docetismo [cite: 321]. Deve ter sido escrita quase no mesmo período, nas duas últimas décadas do século I, talvez na parte final dos anos 90 d.C [cite: 321]. Embora repita ideias de 1 João, não pressupõe o conhecimento de 1 João por parte do leitor [cite: 321]. Provê critério teológico para estender hospitalidade e apoio implícito a mestres itinerantes (vv. 9, 11) [cite: 321]. A Terceira Epístola de João também aborda a promoção da hospitalidade a mestres ortodoxos (3Jo 5, 10) [cite: 321].\n\nÉ provável que 2 João tenha sido escrita depois de 1 João [cite: 321]. Mas a identificação da audiência de 2 João (v. 1) é mais específica, e os leitores originais desta epístola podiam estar ou não familiarizados com 1 João [cite: 321]. Portanto, a ordem de composição das epístolas não afeta nossa interpretação [cite: 321]."
+        "conteudo": "A Segunda Epístola de João foi escrita para advertir contra a mesma linha de falsa doutrina à qual 1 João se opõe, ou seja, o docetismo. Deve ter sido escrita quase no mesmo período, nas duas últimas décadas do século I, talvez na parte final dos anos 90 d.C. Embora repita ideias de 1 João, não pressupõe o conhecimento de 1 João por parte do leitor. Provê critério teológico para estender hospitalidade e apoio implícito a mestres itinerantes (vv. 9, 11). A Terceira Epístola de João também aborda a promoção da hospitalidade a mestres ortodoxos (3Jo 5, 10).\n\nÉ provável que 2 João tenha sido escrita depois de 1 João. Mas a identificação da audiência de 2 João (v. 1) é mais específica, e os leitores originais desta epístola podiam estar ou não familiarizados com 1 João. Portanto, a ordem de composição das epístolas não afeta nossa interpretação."
       },
       {
         "id": "genero_e_caracteristicas_literarias",
         "titulo": "Gênero e características literárias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "A Segunda Epístola de João é uma carta e segue, em geral, as convenções epistolares típicas do século I [cite: 321]. Contém uma abertura (vv. 1-3), um corpo (vv. 4-11) e uma conclusão padrão (vv. 12, 13) [cite: 321]. É também uma epístola muito breve, ao contrário da maior parte das epístolas de Paulo, porém muito semelhante às cartas mais breves escritas no mundo greco-romano [cite: 321]."
+        "conteudo": "A Segunda Epístola de João é uma carta e segue, em geral, as convenções epistolares típicas do século I. Contém uma abertura (vv. 1-3), um corpo (vv. 4-11) e uma conclusão padrão (vv. 12, 13). É também uma epístola muito breve, ao contrário da maior parte das epístolas de Paulo, porém muito semelhante às cartas mais breves escritas no mundo greco-romano."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Algunos eruditos entendem que a Segunda Epístola de João foi escrita para uma mulher cristã e sua família ou sua família natural ou a comunhão de crentes a ela associados [cite: 321, 322]. É possível que a \"senhora eleita\" seja a igreja para a qual João estava escrevendo, e \"seus filhos\", os membros da igreja [cite: 322]. À semelhança das primeiras cartas de Paulo, esta é uma carta de encorajamento e advertência escrita para uma comunidade específica pela qual o autor tem responsabilidade pastoral [cite: 322]. Como em 1 João, na carta há foco na falsa doutrina daqueles que têm o espírito do anticristo e de seus seguidores que enganam [cite: 322]."
+        "conteudo": "Algunos eruditos entendem que a Segunda Epístola de João foi escrita para uma mulher cristã e sua família ou sua família natural ou a comunhão de crentes a ela associados. É possível que a \"senhora eleita\" seja a igreja para a qual João estava escrevendo, e \"seus filhos\", os membros da igreja. À semelhança das primeiras cartas de Paulo, esta é uma carta de encorajamento e advertência escrita para uma comunidade específica pela qual o autor tem responsabilidade pastoral. Como em 1 João, na carta há foco na falsa doutrina daqueles que têm o espírito do anticristo e de seus seguidores que enganam."
       },
       {
         "id": "teologia_de_2_joao",
         "titulo": "Teologia de 2 João",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "A verdade é indispensável para \"o presbítero\" que escreveu 2 João [cite: 322]. Ele ama os destinatários da carta \"na verdade\", como o fazem \"todos os que conhecem a verdade\" (v. 1) [cite: 322]. Essa verdade \"permanece em nós e conosco estará para sempre\" (v. 2) [cite: 322]. Tal linguagem pode sugerir que, como \"vida eterna\" funciona como um nome para designar Cristo em 1 João 1.2, também aqui \"verdade\" designa o Filho de Deus, que se descreveu como \"a verdade\" em João 14.6 e prometeu permanecer em e estar com aqueles que o seguem (Jo 15.5; 14.8) [cite: 322]. Ou a referência pode ser ao Espírito da verdade, que, conforme Jesus prometeu, estará em e com os crentes \"para sempre\" (Jo 14.16, 17) [cite: 322]. Por mais pessoal que \"a verdade\" seja, apresenta um conteúdo doutrinário específico [cite: 322]. Andar \"na verdade\" é confessar que Jesus Cristo veio em carne (v. 7) e significa permanecer na \"doutrina de Cristo\", que garante a comunhão com o Pai (v. 9) [cite: 322].\n\nAndar \"na verdade\" é, também, andar de acordo com os \"mandamentos de Cristo\", pelo que os cristãos obedecem ao preeminente mandamento de Deus: \"que nos amemos uns aos outros\" (vv. 5, 6) [cite: 322]. O mandamento de amar não é novo; ele nos foi dado \"desde o princípio\" (1Jo 2.7-11, nota) [cite: 322]. Visto que o amor é definido como andar de acordo com os mandamentos do Pai (v. 6), tem mais a ver com ações concretas e compassivas do que com meros sentimentos afetuosos (1Jo 3.16-19) [cite: 322].\n\nEmbora nesta carta João não discuta o tema da eleição soberana de Deus, ele afirma isso ao se reportar a seus leitores como eleitos e ao transmitir saudações da \"tua irmã eleita\" (vv. 1, 12) [cite: 322]. O evangelho de João afirma que o Pai dá pessoas ao Filho como ovelhas pelas quais ele entregou sua vida (Jo 10.15, 29; 17.6) e que Jesus fez a escolha de seus discípulos (Jo 15.16, 19) [cite: 322]."
+        "conteudo": "A verdade é indispensável para \"o presbítero\" que escreveu 2 João. Ele ama os destinatários da carta \"na verdade\", como o fazem \"todos os que conhecem a verdade\" (v. 1). Essa verdade \"permanece em nós e conosco estará para sempre\" (v. 2). Tal linguagem pode sugerir que, como \"vida eterna\" funciona como um nome para designar Cristo em 1 João 1.2, também aqui \"verdade\" designa o Filho de Deus, que se descreveu como \"a verdade\" em João 14.6 e prometeu permanecer em e estar com aqueles que o seguem (Jo 15.5; 14.8). Ou a referência pode ser ao Espírito da verdade, que, conforme Jesus prometeu, estará em e com os crentes \"para sempre\" (Jo 14.16, 17). Por mais pessoal que \"a verdade\" seja, apresenta um conteúdo doutrinário específico. Andar \"na verdade\" é confessar que Jesus Cristo veio em carne (v. 7) e significa permanecer na \"doutrina de Cristo\", que garante a comunhão com o Pai (v. 9).\n\nAndar \"na verdade\" é, também, andar de acordo com os \"mandamentos de Cristo\", pelo que os cristãos obedecem ao preeminente mandamento de Deus: \"que nos amemos uns aos outros\" (vv. 5, 6). O mandamento de amar não é novo; ele nos foi dado \"desde o princípio\" (1Jo 2.7-11, nota). Visto que o amor é definido como andar de acordo com os mandamentos do Pai (v. 6), tem mais a ver com ações concretas e compassivas do que com meros sentimentos afetuosos (1Jo 3.16-19).\n\nEmbora nesta carta João não discuta o tema da eleição soberana de Deus, ele afirma isso ao se reportar a seus leitores como eleitos e ao transmitir saudações da \"tua irmã eleita\" (vv. 1, 12). O evangelho de João afirma que o Pai dá pessoas ao Filho como ovelhas pelas quais ele entregou sua vida (Jo 10.15, 29; 17.6) e que Jesus fez a escolha de seus discípulos (Jo 15.16, 19)."
       },
       {
         "id": "2_joao_na_historia_mais_ampla_da_biblia",
         "titulo": "2 João na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "A confissão de que Jesus é o Cristo vindo na carne (v. 7), aquele que distingue os crentes que andam na verdade e os muitos enganadores em circulação, afirma a encarnação do \"Filho do Pai\" (v. 3) como o fundamento indispensável da verdade revelada e, implicitamente, do plano redentor de Deus para a história [cite: 322]. Diferentemente de 1 João (1.7; 2.2; 3.16; 4.10), esta breve epístola não desenvolve o propósito expiatório para o qual o Filho assumiu a natureza humana; mas a confissão de que Cristo veio \"em carne\" subentende o propósito pelo qual ele abraçou a fraqueza da humanidade [cite: 322]."
+        "conteudo": "A confissão de que Jesus é o Cristo vindo na carne (v. 7), aquele que distingue os crentes que andam na verdade e os muitos enganadores em circulação, afirma a encarnação do \"Filho do Pai\" (v. 3) como o fundamento indispensável da verdade revelada e, implicitamente, do plano redentor de Deus para a história. Diferentemente de 1 João (1.7; 2.2; 3.16; 4.10), esta breve epístola não desenvolve o propósito expiatório para o qual o Filho assumiu a natureza humana; mas a confissão de que Cristo veio \"em carne\" subentende o propósito pelo qual ele abraçou a fraqueza da humanidade."
       },
       {
         "id": "cristo_em_2_joao",
         "titulo": "Cristo em 2 João",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "A Segunda Epístola de João afirma tanto a deidade de Cristo como sua verdadeira humanidade [cite: 322]. \"Jesus Cristo, o Filho do Pai\" é unido a Deus, o Pai, como as pessoas divinas que conferem as bênçãos (graça, misericórdia e paz) pronunciadas na abertura da carta (v. 3) [cite: 322]. A autoridade singular de Cristo para revelar a Deus, o Pai, está implícita na afirmação de que aqueles que abandonam \"a doutrina de Cristo\" não têm nenhum acesso a Deus [cite: 322, 323]. Entretanto, permanecer nessa doutrina traz comunhão salvadora tanto com o Pai como com o Filho (v. 9) [cite: 323]. Permanecer nessa doutrina envolve afirmar a realidade da encarnação e da humanidade do Filho: todo aquele que não confessa que Jesus é o Cristo que veio em carne, esse é um enganador e um anticristo (v. 7) [cite: 323]."
+        "conteudo": "A Segunda Epístola de João afirma tanto a deidade de Cristo como sua verdadeira humanidade. \"Jesus Cristo, o Filho do Pai\" é unido a Deus, o Pai, como as pessoas divinas que conferem as bênçãos (graça, misericórdia e paz) pronunciadas na abertura da carta (v. 3). A autoridade singular de Cristo para revelar a Deus, o Pai, está implícita na afirmação de que aqueles que abandonam \"a doutrina de Cristo\" não têm nenhum acesso a Deus. Entretanto, permanecer nessa doutrina traz comunhão salvadora tanto com o Pai como com o Filho (v. 9). Permanecer nessa doutrina envolve afirmar a realidade da encarnação e da humanidade do Filho: todo aquele que não confessa que Jesus é o Cristo que veio em carne, esse é um enganador e um anticristo (v. 7)."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "Devido à sua curta extensão, 2 João não teve, na história da Igreja, a mesma influência que muitos outros livros do Novo Testamento tiveram [cite: 323]. No entanto, seu testemunho quanto à centralidade da encarnação tem lembrado geração após geração de cristãos que a cristologia ortodoxa é indispensável ao relacionamento salvador com Jesus Cristo [cite: 323]."
+        "conteudo": "Devido à sua curta extensão, 2 João não teve, na história da Igreja, a mesma influência que muitos outros livros do Novo Testamento tiveram. No entanto, seu testemunho quanto à centralidade da encarnação tem lembrado geração após geração de cristãos que a cristologia ortodoxa é indispensável ao relacionamento salvador com Jesus Cristo."
       },
       {
         "id": "esboco_de_2_joao",
@@ -70,18 +77,18 @@
         "ordem": 9,
         "conteudo": [
           {
-            "titulo": "I. INTRODUÇÃO E SAUDAÇÃO (VV. 1-3) [cite: 323]",
+            "titulo": "I. INTRODUÇÃO E SAUDAÇÃO (VV. 1-3)",
             "itens": []
           },
           {
-            "titulo": "II. CORPO DA CARTA (VV. 4-11) [cite: 323]",
+            "titulo": "II. CORPO DA CARTA (VV. 4-11)",
             "itens": [
-              "A. Amor e obediência (vv. 4-6) [cite: 323]",
-              "B. O perigo da falsa doutrina e a resposta aos falsos mestres (vv. 7-11) [cite: 323]"
+              "A. Amor e obediência (vv. 4-6)",
+              "B. O perigo da falsa doutrina e a resposta aos falsos mestres (vv. 7-11)"
             ]
           },
           {
-            "titulo": "III. CONCLUSÃO E DESPEDIDA (VV. 12-13) [cite: 323]",
+            "titulo": "III. CONCLUSÃO E DESPEDIDA (VV. 12-13)",
             "itens": []
           }
         ]

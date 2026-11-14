@@ -8,6 +8,13 @@
     "introducao": "O livro de Rute é uma narrativa histórica em forma de conto breve que se desenrola no período dos juízes. A história relata a jornada de Noemi, Rute e Boaz, destacando temas como a providência divina, a lealdade, a redenção e a inclusão de gentios no povo de Deus, culminando na linhagem que conduz ao Rei Davi e, em última instância, a Jesus Cristo.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "A história de Rute passa-se no tempo em que o povo de Israel era governado por juízes. Rute, uma jovem do país de Moabe, casa com um israelita. Este morre, e então Rute se apega à sua sogra, demonstrando profunda devoção ao Deus de Israel. Noemi e Rute vão morar em Belém e, depois de algum tempo, Rute casa de novo, agora com um parente do seu primeiro marido. E foi por causa desse segundo casamento que Rute veio a ser bisavó de Davi, o maior rei de Israel.\n\nAs histórias dos juízes mostram as desgraças que vieram quando o povo de Deus se afastou dele. Este livro conta as bênçãos que recebe uma estrangeira quando se volta para o Deus de Israel e assim passa a fazer parte do seu povo."
+      },
+      {
         "id": "titulo_autor",
         "titulo": "Título e autor",
         "tipo": "texto",

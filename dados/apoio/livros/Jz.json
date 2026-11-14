@@ -8,6 +8,13 @@
     "introducao": "O livro de Juízes narra o período turbulento da história de Israel entre a morte de Josué e o surgimento de Samuel, caracterizado por uma espiral descendente de apostasia religiosa, opressão estrangeira e anarquia moral devido à ausência de um governo central, pontuado pela infinita misericórdia de Deus em levantar juízes libertadores.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "O Livro de Juízes conta a história de Israel desde a conquista da terra de Canaã até o começo da monarquia. Nesse tempo surgiram os “juízes”, que eram principalmente chefes militares, mas também resolviam as questões legais do povo.\n\nEste livro ensina que o povo de Israel só continuaria a existir se fosse fiel a Deus, enquanto a infidelidade sempre levaria à desgraça. Porém há mais do que isso. Mesmo quando a nação era infiel e a desgraça vinha, Deus estava sempre pronto a salvar o seu povo quando eles se arrependiam e voltavam para ele."
+      },
+      {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",

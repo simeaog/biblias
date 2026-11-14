@@ -8,67 +8,74 @@
     "introducao": "O Livro de Miqueias registra a mensagem do profeta de Moresete-Gate contra a corrupção social, a opressão dos pobres e a falsidade dos líderes de Judá e Israel, anunciando o severo julgamento divino, mas proclamando com esperança a vinda do Messias de Belém e o perdão inesgotável de Deus.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "Miqueias, um dos grandes profetas do oitavo século antes de Cristo, viveu no tempo de Isaías. Natural de uma pequena cidade de Judá, o Reino do Sul, ele viu que Judá corria o perigo de sofrer o mesmo castigo que Israel, o Reino do Norte, havia sofrido. Miqueias fala contra os pecados do povo de Judá e de Israel. Mas ele também anuncia a bondade de Deus: o Deus que castiga o seu povo é o Deus que perdoa.\n\nAlguns textos notáveis deste livro são: o domínio universal da paz (4.1-4), o futuro rei que ia nascer em Belém e que traria paz ao povo de Deus (5.2-4) e a definição clara e resumida daquilo que Deus exige do seu povo: “Ele te declarou, ó homem, o que é bom e que é o que o Senhor pede de ti: que pratiques a justiça, e ames a misericórdia, e andes humildemente com o teu Deus” (6.8)."
+      },
+      {
         "id": "titulo_e_autor",
         "titulo": "Título e autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "À semelhança do que ocorre com os outros livros proféticos, essa profecia recebe o nome de seu autor, Miqueias [cite: 121]. Ele se identifica pelo nome de sua cidade natal, Moresete-Gate (1.1, 14), o que significa que era um estranho para Jerusalém [cite: 121]. Profetizando no mesmo tempo de Isaías, ele ajudou a moldar o caráter e as políticas de Judá, o reino do Sul [cite: 121]. Não há registro do chamado de Miqueias, mas não pode haver dúvida quanto à sua pregação inspirada contra a injustiça (3.8), que foi um dos meios pelos quais Deus levou Ezequias ao arrependimento e, assim, salvou Jerusalém (Jr 26.17-19) [cite: 121]."
+        "conteudo": "À semelhança do que ocorre com os outros livros proféticos, essa profecia recebe o nome de seu autor, Miqueias. Ele se identifica pelo nome de sua cidade natal, Moresete-Gate (1.1, 14), o que significa que era um estranho para Jerusalém. Profetizando no mesmo tempo de Isaías, ele ajudou a moldar o caráter e as políticas de Judá, o reino do Sul. Não há registro do chamado de Miqueias, mas não pode haver dúvida quanto à sua pregação inspirada contra a injustiça (3.8), que foi um dos meios pelos quais Deus levou Ezequias ao arrependimento e, assim, salvou Jerusalém (Jr 26.17-19)."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "O ministério de Miqueias estendeu-se por mais de vinte anos, durante os reinados de Jotão (750-735 a.C.), Acaz (735-715 a.C.) e Ezequias (715-686 a.C.), um tempo de expansão e domínio assírio no antigo Oriente Próximo [cite: 121]. Israel, o reino do Norte, foi invadido gradualmente pelos assírios, e Samaria, a capital, caiu finalmente em 722 a.C. para o rei assírio Salmaneser V (727-722 a.C.) [cite: 121]. Acaz, de Judá, aliou-se à Assíria e modelou o culto em Jerusalém de acordo com as práticas assírias (2Rs 16.7-18) [cite: 121]. Ezequias, filho de Acaz, revoltou-se posteriormente, e boa parte do território de Judá foi conquistada pelo rei assírio Senaqueribe, ainda que a própria Jerusalém tenha sido miraculosamente poupada (2Rs 18.17-19.37) [cite: 121].\n\nEmbora Miqueias tenha predito a destruição vindoura de Samaria e de Israel, o reino do Norte (1.6, 7), seu ministério se focou principalmente em Judá, o reino do Sul [cite: 121]. Nessa época, desenvolveu-se um contraste deplorável entre os extremamente ricos e os pobres oprimidos, devido à exploração da classe média de Israel (2.8, 9) por proprietários de terras gananciosos (2.1-5) [cite: 121]. Os opressores eram apoiados pelos corruptos líderes religiosos e políticos de Israel (cap. 3) [cite: 121]. Por causa dessa liderança egocêntrica, toda a nação se tornou moralmente corrupta e madura para julgamento (6.9-16; 7.1-7) [cite: 121]. Em consequência, Deus levantou os assírios como sua vara furiosa contra seu povo pecaminoso (Is 10.5-11) [cite: 121]. Como Miqueias predisse (1.2-7), Samaria caiu para os invasores assírios [cite: 121, 122]. Subseqüentemente, Judá caiu por força de julgamento divino, quando Senaqueribe marchou pela Sefelá (colinas ocidentais de Judá) até às portas de Jerusalém, conforme Miqueias também profetizara (1.8-16) [cite: 122]."
+        "conteudo": "O ministério de Miqueias estendeu-se por mais de vinte anos, durante os reinados de Jotão (750-735 a.C.), Acaz (735-715 a.C.) e Ezequias (715-686 a.C.), um tempo de expansão e domínio assírio no antigo Oriente Próximo. Israel, o reino do Norte, foi invadido gradualmente pelos assírios, e Samaria, a capital, caiu finalmente em 722 a.C. para o rei assírio Salmaneser V (727-722 a.C.). Acaz, de Judá, aliou-se à Assíria e modelou o culto em Jerusalém de acordo com as práticas assírias (2Rs 16.7-18). Ezequias, filho de Acaz, revoltou-se posteriormente, e boa parte do território de Judá foi conquistada pelo rei assírio Senaqueribe, ainda que a própria Jerusalém tenha sido miraculosamente poupada (2Rs 18.17-19.37).\n\nEmbora Miqueias tenha predito a destruição vindoura de Samaria e de Israel, o reino do Norte (1.6, 7), seu ministério se focou principalmente em Judá, o reino do Sul. Nessa época, desenvolveu-se um contraste deplorável entre os extremamente ricos e os pobres oprimidos, devido à exploração da classe média de Israel (2.8, 9) por proprietários de terras gananciosos (2.1-5). Os opressores eram apoiados pelos corruptos líderes religiosos e políticos de Israel (cap. 3). Por causa dessa liderança egocêntrica, toda a nação se tornou moralmente corrupta e madura para julgamento (6.9-16; 7.1-7). Em consequência, Deus levantou os assírios como sua vara furiosa contra seu povo pecaminoso (Is 10.5-11). Como Miqueias predisse (1.2-7), Samaria caiu para os invasores assírios. Subseqüentemente, Judá caiu por força de julgamento divino, quando Senaqueribe marchou pela Sefelá (colinas ocidentais de Judá) até às portas de Jerusalém, conforme Miqueias também profetizara (1.8-16)."
       },
       {
         "id": "genero",
         "titulo": "Gênero",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "Miqueias reuniu vários oráculos revelados durante seu extenso ministério, incorporando-os numa estrutura geral cuidadosamente elaborada [cite: 122]. A maior parte de seu material está em forma poética, o que transmitiu dignidade e memorabilidade ao que ele disse [cite: 122]. Miqueias faz uso extensivo de várias formas de literatura, como lamentação (1.8-16; 7.1-7), discurso argumentativo (2.6-11; 3.5-8), litígio pactual (6.1-8), oração (7.14-17) e hinos de louvor (7.18-20) [cite: 122]. Entretanto, sua apresentação é dominada por contundentes discursos de julgamento (2.1-5; 3.1-4, 9-12), os quais visam abalar sua audiência, com o propósito de levá-la ao reconhecimento de seu pecado e ao arrependimento [cite: 122]. Há também oráculos de salvação que contemplam a vinda do Messias e a vitória sobre o mal que ele realizará (2.12, 13; 4.1-5, 6-8; 5.2-6, 7-9, 10-15) [cite: 122]."
+        "conteudo": "Miqueias reuniu vários oráculos revelados durante seu extenso ministério, incorporando-os numa estrutura geral cuidadosamente elaborada. A maior parte de seu material está em forma poética, o que transmitiu dignidade e memorabilidade ao que ele disse. Miqueias faz uso extensivo de várias formas de literatura, como lamentação (1.8-16; 7.1-7), discurso argumentativo (2.6-11; 3.5-8), litígio pactual (6.1-8), oração (7.14-17) e hinos de louvor (7.18-20). Entretanto, sua apresentação é dominada por contundentes discursos de julgamento (2.1-5; 3.1-4, 9-12), os quais visam abalar sua audiência, com o propósito de levá-la ao reconhecimento de seu pecado e ao arrependimento. Há também oráculos de salvação que contemplam a vinda do Messias e a vitória sobre o mal que ele realizará (2.12, 13; 4.1-5, 6-8; 5.2-6, 7-9, 10-15)."
       },
       {
         "id": "caracteristicas_literarias",
         "titulo": "Características literárias",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Miqueias organiza suas 19 profecias em três ciclos (ver, em seguida, o Esboço); cada uma delas começa com profecias de condenação e julgamento iminente e termina com uma profecia ou profecias de salvação [cite: 122]. Cada ciclo também começa com a mesma palavra hebraica traduzida como \"ouvi\" (1.2; 3.1; 6.1) [cite: 122]. O ciclo do meio contém três profecias de julgamento (cap. 3) e sete de salvação (caps. 4, 5) [cite: 122].\n\nMiqueias usa muitas figuras de linguagem (p. ex., 1.4, 5, 7; 3.2, 3; 4.3, 4, 12, 13) [cite: 122]. Também emprega trocadilhos para predizer julgamento (ver notas, especialmente em 1.10-15) e produz vivacidade e imediatismo ao citar seus sujeitos, como, por exemplo, os falsos profetas tentando silenciá-lo (2.6, 7) e os gentios convertidos subindo a Jerusalém para adorar (4.2) [cite: 122]."
+        "conteudo": "Miqueias organiza suas 19 profecias em três ciclos (ver, em seguida, o Esboço); cada uma delas começa com profecias de condenação e julgamento iminente e termina com uma profecia ou profecias de salvação. Cada ciclo também começa com a mesma palavra hebraica traduzida como \"ouvi\" (1.2; 3.1; 6.1). O ciclo do meio contém três profecias de julgamento (cap. 3) e sete de salvação (caps. 4, 5).\n\nMiqueias usa muitas figuras de linguagem (p. ex., 1.4, 5, 7; 3.2, 3; 4.3, 4, 12, 13). Também emprega trocadilhos para predizer julgamento (ver notas, especialmente em 1.10-15) e produz vivacidade e imediatismo ao citar seus sujeitos, como, por exemplo, os falsos profetas tentando silenciá-lo (2.6, 7) e os gentios convertidos subindo a Jerusalém para adorar (4.2)."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "Miqueias é principalmente um livro que proclama julgamento e restauração para o povo de Deus [cite: 122]. O profeta declara que o Deus justo e santo não suportará mais a maldade persistente de seu povo (1.3) [cite: 122]. Muitos dos pecados da comunidade da aliança são mencionados, de idolatria e feitiçaria (5.12-14) a engano e negócios fraudulentos (6.10, 11) [cite: 122, 123]. Mas Miqueias proclamou uma acusação especial contra aqueles que oprimiam os pobres, por se apropriarem de terras que Deus destinara como herança para todo o seu povo (2.1-5; Nm 27.1-11, nota) [cite: 123]. Os líderes de Judá, tanto políticos como espirituais, também são condenados por sua opressão do povo e seu menosprezo da justiça e da verdade (cap. 3) [cite: 123].\n\nFundamentais à proclamação de Miqueias sobre julgamento e restauração, são os termos do relacionamento pactual entre Deus e seu povo [cite: 123]. Enquanto Deus cumpria fielmente suas responsabilidades pactuais (6.1-5), o povo se deleitava em desobediência [cite: 123]. O povo presumia, equivocadamente, que as observâncias rituais exteriores podiam substituir a fidelidade de coração (6.7, 8); agora, as maldições da aliança deveriam ser aplicadas (6.13-16) [cite: 123].\n\nApesar de seu tom predominante de punição iminente, Miqueias olhou para além do julgamento, vendo restauração e bênção futura [cite: 123]. Isso também estava incluído no relacionamento pactual de Deus com seu povo (Gn 17.2, nota) [cite: 123]. Fiel às suas promessas pactuais feitas aos patriarcas (7.20), o Senhor preservaria um remanescente de seu povo (2.12; 4.7; 5.3, 7, 8; 7.18) e levantaria um governante de Belém, em Judá — o próprio Messias (5.1-5) [cite: 123]. As profecias de salvação anunciadas por Miqueias lembravam à sua audiência original que sua restauração dependeria do perdão misericordioso e da iniciativa soberana do Senhor, e não de obras das mãos deles (7.18, 19) [cite: 123]."
+        "conteudo": "Miqueias é principalmente um livro que proclama julgamento e restauração para o povo de Deus. O profeta declara que o Deus justo e santo não suportará mais a maldade persistente de seu povo (1.3). Muitos dos pecados da comunidade da aliança são mencionados, de idolatria e feitiçaria (5.12-14) a engano e negócios fraudulentos (6.10, 11). Mas Miqueias proclamou uma acusação especial contra aqueles que oprimiam os pobres, por se apropriarem de terras que Deus destinara como herança para todo o seu povo (2.1-5; Nm 27.1-11, nota). Os líderes de Judá, tanto políticos como espirituais, também são condenados por sua opressão do povo e seu menosprezo da justiça e da verdade (cap. 3).\n\nFundamentais à proclamação de Miqueias sobre julgamento e restauração, são os termos do relacionamento pactual entre Deus e seu povo. Enquanto Deus cumpria fielmente suas responsabilidades pactuais (6.1-5), o povo se deleitava em desobediência. O povo presumia, equivocadamente, que as observâncias rituais exteriores podiam substituir a fidelidade de coração (6.7, 8); agora, as maldições da aliança deveriam ser aplicadas (6.13-16).\n\nApesar de seu tom predominante de punição iminente, Miqueias olhou para além do julgamento, vendo restauração e bênção futura. Isso também estava incluído no relacionamento pactual de Deus com seu povo (Gn 17.2, nota). Fiel às suas promessas pactuais feitas aos patriarcas (7.20), o Senhor preservaria um remanescente de seu povo (2.12; 4.7; 5.3, 7, 8; 7.18) e levantaria um governante de Belém, em Judá — o próprio Messias (5.1-5). As profecias de salvação anunciadas por Miqueias lembravam à sua audiência original que sua restauração dependeria do perdão misericordioso e da iniciativa soberana do Senhor, e não de obras das mãos deles (7.18, 19)."
       },
       {
         "id": "teologia_de_miqueias",
         "titulo": "Teologia de Miqueias",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "Miqueias enfatiza a inevitabilidade da reação divina contra o pecado, especialmente a transgressão do povo pactual de Deus [cite: 123]. Isso é contrabalançado por uma percepção clara do inviolável compromisso do Senhor com sua aliança [cite: 123]. Ele usaria tanto os assírios como os babilônios como instrumentos de punição do povo, mas preservaria um remanescente em meio à calamidade iminente, por meio de quem o Senhor cumpriria seus propósitos divinos [cite: 123]. Miqueias usa a linguagem tradicional concernente a um pastor para descrever o relacionamento do Senhor com seu povo (2.13; 4.6-8; 5.4; 7.14) [cite: 123]. Também enfatiza que a intervenção passada de Deus para livrar seu povo (6.4, 5; 7.14, 15) estabelece um padrão que se repetirá no futuro (7.19, 20) [cite: 123]."
+        "conteudo": "Miqueias enfatiza a inevitabilidade da reação divina contra o pecado, especialmente a transgressão do povo pactual de Deus. Isso é contrabalançado por uma percepção clara do inviolável compromisso do Senhor com sua aliança. Ele usaria tanto os assírios como os babilônios como instrumentos de punição do povo, mas preservaria um remanescente em meio à calamidade iminente, por meio de quem o Senhor cumpriria seus propósitos divinos. Miqueias usa a linguagem tradicional concernente a um pastor para descrever o relacionamento do Senhor com seu povo (2.13; 4.6-8; 5.4; 7.14). Também enfatiza que a intervenção passada de Deus para livrar seu povo (6.4, 5; 7.14, 15) estabelece um padrão que se repetirá no futuro (7.19, 20)."
       },
       {
         "id": "miqueias_na_historia_mais_ampla_da_biblia",
         "titulo": "Miqueias na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "A semelhança significativa entre Miqueias 4.1-3 e Isaías 2.2-4 levanta a questão da relação entre esses dois profetas [cite: 123]. Se um profeta usou a revelação original dada ao outro, foi provavelmente Isaías quem incorporou o material de Miqueias [cite: 123]. No entanto, como os ministérios deles coincidiram, é possível que Deus tenha dado a mesma mensagem a ambos os profetas, pois a mensagem era muito importante para as circunstâncias de sua época [cite: 123, 124]. Outra conexão do Antigo Testamento se encontra em Jeremias 26.18, que registra o episódio em que Miqueias 3.12 é citado, mais de um século depois de haver sido revelado pela primeira vez, ajudando a salvar a vida de Jeremias [cite: 124].\n\nNo Novo Testamento, Miqueias 5.2 é citado pelos principais sacerdotes e escribas para responder a Herodes sobre sua indagação quanto ao lugar de nascimento do Messias (Mt 2.6; ver também Jo 7.42) [cite: 124]. Em Mateus 10.35-36, Jesus aplica a descrição de desintegração social encontrada em Miqueias 7.6 às circunstâncias que prevalecerão como resultado de seu aparecimento na terra [cite: 124]."
+        "conteudo": "A semelhança significativa entre Miqueias 4.1-3 e Isaías 2.2-4 levanta a questão da relação entre esses dois profetas. Se um profeta usou a revelação original dada ao outro, foi provavelmente Isaías quem incorporou o material de Miqueias. No entanto, como os ministérios deles coincidiram, é possível que Deus tenha dado a mesma mensagem a ambos os profetas, pois a mensagem era muito importante para as circunstâncias de sua época. Outra conexão do Antigo Testamento se encontra em Jeremias 26.18, que registra o episódio em que Miqueias 3.12 é citado, mais de um século depois de haver sido revelado pela primeira vez, ajudando a salvar a vida de Jeremias.\n\nNo Novo Testamento, Miqueias 5.2 é citado pelos principais sacerdotes e escribas para responder a Herodes sobre sua indagação quanto ao lugar de nascimento do Messias (Mt 2.6; ver também Jo 7.42). Em Mateus 10.35-36, Jesus aplica a descrição de desintegração social encontrada em Miqueias 7.6 às circunstâncias que prevalecerão como resultado de seu aparecimento na terra."
       },
       {
         "id": "cristo_em_miqueias",
         "titulo": "Cristo em Miqueias",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "Embora o livro de Miqueias seja mais conhecido por sua predição de Belém como o lugar de nascimento do Messias (5.2), também traz informação significativa a respeito de sua origem e missão [cite: 124]. Seu nascimento em Belém indica que ele terá um começo de vida obscuro (Is 53.2), identificando-o como um descendente real da linhagem de Davi [cite: 124]. Ao contrário de outros reis da linhagem davídica, esse rei agirá de acordo com tudo que Deus estipula e, por isso, cumprirá totalmente o propósito divino [cite: 124]. E ele será capaz de realizar isso porque cumprirá sua missão \"na força do SENHOR\" (5.4) [cite: 124]. Como governante \"em Israel\" (5.2), ou seja, sobre o povo da aliança, sua vinda será a base para a volta deles (5.3); além disso, esse rei proverá paz completa para seu povo (5.5) [cite: 124]. Miqueias também revela uma origem sobrenatural e misteriosa para o Messias, porque ele é \"desde os tempos antigos, desde os dias da eternidade\" (5.2) [cite: 124]."
+        "conteudo": "Embora o livro de Miqueias seja mais conhecido por sua predição de Belém como o lugar de nascimento do Messias (5.2), também traz informação significativa a respeito de sua origem e missão. Seu nascimento em Belém indica que ele terá um começo de vida obscuro (Is 53.2), identificando-o como um descendente real da linhagem de Davi. Ao contrário de outros reis da linhagem davídica, esse rei agirá de acordo com tudo que Deus estipula e, por isso, cumprirá totalmente o propósito divino. E ele será capaz de realizar isso porque cumprirá sua missão \"na força do SENHOR\" (5.4). Como governante \"em Israel\" (5.2), ou seja, sobre o povo da aliança, sua vinda será a base para a volta deles (5.3); além disso, esse rei proverá paz completa para seu povo (5.5). Miqueias também revela uma origem sobrenatural e misteriosa para o Messias, porque ele é \"desde os tempos antigos, desde os dias da eternidade\" (5.2)."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "Além do interesse despertado por sua predição sobre o lugar de nascimento do Messias, a profecia de Miqueias foi, por muitos séculos, eclipsada pela profecia de Isaías, seu contemporâneo [cite: 124]. E os comentários sobre Miqueias eram combinados em considerações gerais sobre os Profetas Menores [cite: 124]. No entanto, em meados do século XIX, Miqueias não foi poupado das análises profundamente céticas da erudição crítica [cite: 124]. Essa erudição identificou 21 oráculos distintos no livro, aos quais foram atribuídas origens diversas: alguns são tão antigos quanto Davi; outros, tão recentes quanto o século I a.C. [cite: 124] Segundo esse esquema, somente os capítulos 1-3 (à exceção de 2.12, 13) foram atribuídos ao profeta bíblico [cite: 124]. A erudição crítica mais recente continua vendo o livro como o produto final de um extenso processo de edição e acréscimo, embora haja aceitação geral do fato de que o material original de Miqueias está contido no livro, verificando-se grande interesse na unidade do livro como um todo [cite: 124]. Na verdade, os eruditos mais conservadores têm ressaltado que a unidade da obra demonstra que o livro é do próprio Miqueias e que boa parte do ceticismo referente à autoria do livro se norteia por suposições infundadas a respeito da impossibilidade de profecia sobrenatural, e não pela evidência real [cite: 124]. Em resumo, há boa razão para crermos que o livro procede da pena de Miqueias [cite: 124]."
+        "conteudo": "Além do interesse despertado por sua predição sobre o lugar de nascimento do Messias, a profecia de Miqueias foi, por muitos séculos, eclipsada pela profecia de Isaías, seu contemporâneo. E os comentários sobre Miqueias eram combinados em considerações gerais sobre os Profetas Menores. No entanto, em meados do século XIX, Miqueias não foi poupado das análises profundamente céticas da erudição crítica. Essa erudição identificou 21 oráculos distintos no livro, aos quais foram atribuídas origens diversas: alguns são tão antigos quanto Davi; outros, tão recentes quanto o século I a.C. Segundo esse esquema, somente os capítulos 1-3 (à exceção de 2.12, 13) foram atribuídos ao profeta bíblico. A erudição crítica mais recente continua vendo o livro como o produto final de um extenso processo de edição e acréscimo, embora haja aceitação geral do fato de que o material original de Miqueias está contido no livro, verificando-se grande interesse na unidade do livro como um todo. Na verdade, os eruditos mais conservadores têm ressaltado que a unidade da obra demonstra que o livro é do próprio Miqueias e que boa parte do ceticismo referente à autoria do livro se norteia por suposições infundadas a respeito da impossibilidade de profecia sobrenatural, e não pela evidência real. Em resumo, há boa razão para crermos que o livro procede da pena de Miqueias."
       },
       {
         "id": "esboco_de_miqueias",
@@ -77,40 +84,40 @@
         "ordem": 10,
         "conteudo": [
           {
-            "titulo": "I. INTRODUÇÃO (1.1) [cite: 125]",
+            "titulo": "I. INTRODUÇÃO (1.1)",
             "itens": []
           },
           {
-            "titulo": "II. PRIMEIRO CICLO: JULGAMENTO E LIVRAMENTO (1.2-2.13) [cite: 125]",
+            "titulo": "II. PRIMEIRO CICLO: JULGAMENTO E LIVRAMENTO (1.2-2.13)",
             "itens": [
-              "A. Julgamento sobre Samaria (1.2-7) [cite: 125]",
-              "B. Julgamento sobre Judá (1.8-16) [cite: 125]",
-              "C. Sentença de proprietários de terras gananciosos (2.1-5) [cite: 125]",
-              "D. Julgamento contra os falsos profetas (2.6-11) [cite: 125]",
-              "E. Um remanescente restaurado (2.12, 13) [cite: 125]"
+              "A. Julgamento sobre Samaria (1.2-7)",
+              "B. Julgamento sobre Judá (1.8-16)",
+              "C. Sentença de proprietários de terras gananciosos (2.1-5)",
+              "D. Julgamento contra os falsos profetas (2.6-11)",
+              "E. Um remanescente restaurado (2.12, 13)"
             ]
           },
           {
-            "titulo": "III. SEGUNDO CICLO: DEGRADAÇÃO E EXALTAÇÃO (CAPS. 3-5) [cite: 125]",
+            "titulo": "III. SEGUNDO CICLO: DEGRADAÇÃO E EXALTAÇÃO (CAPS. 3-5)",
             "itens": [
-              "A. Governantes perversos condenados (3.1-4) [cite: 125]",
-              "B. Falsos profetas denunciados (3.5-8) [cite: 125]",
-              "C. Sião será nivelada (3.9-12) [cite: 125]",
-              "D. Sião será restaurada e exaltada (4.1-8) [cite: 125]",
-              "E. Da aflição presente à salvação futura (4.9-13) [cite: 125]",
-              "F. O governante messiânico (5.1-6) [cite: 125]",
-              "G. O remanescente de Jacó entre os gentios (5.7-9) [cite: 125]",
-              "H. O Senhor julga seu povo e as nações (5.10-15) [cite: 125]"
+              "A. Governantes perversos condenados (3.1-4)",
+              "B. Falsos profetas denunciados (3.5-8)",
+              "C. Sião será nivelada (3.9-12)",
+              "D. Sião será restaurada e exaltada (4.1-8)",
+              "E. Da aflição presente à salvação futura (4.9-13)",
+              "F. O governante messiânico (5.1-6)",
+              "G. O remanescente de Jacó entre os gentios (5.7-9)",
+              "H. O Senhor julga seu povo e as nações (5.10-15)"
             ]
           },
           {
-            "titulo": "IV. TERCEIRO CICLO: ESPERANÇA NAS TREVAS (CAPS. 6, 7) [cite: 125]",
+            "titulo": "IV. TERCEIRO CICLO: ESPERANÇA NAS TREVAS (CAPS. 6, 7)",
             "itens": [
               "A. O livro de Miqueias e a esperança final...",
-              "B. A alegação do Senhor (6.1-8) [cite: 125]",
-              "C. Maldições pactuais cumpridas (6.9-16) [cite: 125]",
-              "D. Lamento por uma nação ímpia e corrupta (7.1-7) [cite: 125]",
-              "E. Hino de vitória (7.8-20) [cite: 125]"
+              "B. A alegação do Senhor (6.1-8)",
+              "C. Maldições pactuais cumpridas (6.9-16)",
+              "D. Lamento por uma nação ímpia e corrupta (7.1-7)",
+              "E. Hino de vitória (7.8-20)"
             ]
           }
         ]

@@ -8,6 +8,13 @@
     "introducao": "Levítico é o terceiro livro de Moisés e funciona como um manual de culto para os sacrifícios, ofertas, leis de purificação e pureza, orientando a nação de Israel a manter-se santa diante da habitação de Deus em seu meio.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "No Livro de Levítico estão as leis e os mandamentos que Deus mandou Moisés dar ao povo de Israel, especialmente as leis a respeito das reuniões de adoração, dos sacrifícios que o povo devia oferecer a Deus e dos deveres dos sacerdotes. Todos os que serviam no templo eram da tribo de Levi, tanto os sacerdotes como os seus ajudantes, os levitas.\n\nA lição principal do livro é que o Deus do povo de Israel é santo. Portanto, esse povo que ele escolheu também devia ser santo e completamente fiel a Deus.\n\nNeste livro encontra-se o mandamento que Jesus chamou de o segundo mais importante de todos: “amarás o teu próximo como a ti mesmo” (19.18)."
+      },
+      {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",

@@ -8,67 +8,74 @@
     "introducao": "A Epístola de Judas é um vigoroso apelo à defesa da fé cristã e um severo alerta contra os falsos mestres que pervertem a graça de Deus, lembrando a certeza do julgamento divino e exortando os crentes à perseverança e à misericórdia.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "A Epístola de Judas foi escrita a fim de prevenir os cristãos em geral contra os falsos mestres que estavam espalhando ideias erradas nas igrejas. Esta epístola, que é parecida com a Segunda Epístola de Pedro, procura animar os leitores batalhar “diligentemente, pela fé que uma vez por todas foi entregue aos santos” (v. 3). O autor recomenda que os leitores continuem firmes e não se deixem levar por esses enganadores, os quais receberão o castigo que merecem."
+      },
+      {
         "id": "autor",
         "titulo": "Autor",
         "tipo": "texto",
         "ordem": 1,
-        "conteudo": "O autor desta epístola se identifica como \"Judas, servo de Jesus Cristo e irmão de Tiago\" (v. 1) [cite: 141]. O nome Judá (no grego, Iudas, em português, Judas) era comum entre os judeus do século I; e pelo menos oito indivíduos diferentes com esse nome são mencionados no Novo Testamento, incluindo dois dos discípulos de Jesus (Lc 6.16) [cite: 141]. Por isso, o autor não pode ser identificado com base apenas no nome [cite: 141].\n\nA melhor indicação quanto à identidade do autor é a descrição \"irmão de Tiago\" (v. 1) [cite: 141]. O único Tiago muito bem conhecido na Igreja primitiva que foi referido dessa maneira simples é Tiago, o proeminente líder da Igreja (At 12.17; 15.13), autor da epístola que leva seu nome e meio-irmão de Jesus (Mt 13.55; Mc 6.3; Gl 1.19) [cite: 141]. Se essa identificação de Tiago está correta, o autor da presente epístola é Judas, o meio-irmão de Jesus (Mt 13.55; Mc 6.3), que, com seus outros irmãos, só creu em Jesus depois da ressurreição (Mc 3.21, 31; Jo 7.5; At 1.14) [cite: 141]. Judas pode ter sido uma das pessoas a quem Paulo se referiu ao fazer menção ao ministério itinerante dos irmãos do Senhor e às suas esposas (1Co 9.5) [cite: 141]. Se Judas era, de fato, irmão de Jesus, é provável que sua humildade o tenha motivado a não dizer isso de modo claro a seus leitores (observe o mesmo cuidado em Tg 1.1) [cite: 141]."
+        "conteudo": "O autor desta epístola se identifica como \"Judas, servo de Jesus Cristo e irmão de Tiago\" (v. 1). O nome Judá (no grego, Iudas, em português, Judas) era comum entre os judeus do século I; e pelo menos oito indivíduos diferentes com esse nome são mencionados no Novo Testamento, incluindo dois dos discípulos de Jesus (Lc 6.16). Por isso, o autor não pode ser identificado com base apenas no nome.\n\nA melhor indicação quanto à identidade do autor é a descrição \"irmão de Tiago\" (v. 1). O único Tiago muito bem conhecido na Igreja primitiva que foi referido dessa maneira simples é Tiago, o proeminente líder da Igreja (At 12.17; 15.13), autor da epístola que leva seu nome e meio-irmão de Jesus (Mt 13.55; Mc 6.3; Gl 1.19). Se essa identificação de Tiago está correta, o autor da presente epístola é Judas, o meio-irmão de Jesus (Mt 13.55; Mc 6.3), que, com seus outros irmãos, só creu em Jesus depois da ressurreição (Mc 3.21, 31; Jo 7.5; At 1.14). Judas pode ter sido uma das pessoas a quem Paulo se referiu ao fazer menção ao ministério itinerante dos irmãos do Senhor e às suas esposas (1Co 9.5). Se Judas era, de fato, irmão de Jesus, é provável que sua humildade o tenha motivado a não dizer isso de modo claro a seus leitores (observe o mesmo cuidado em Tg 1.1)."
       },
       {
         "id": "data_e_circunstancias",
         "titulo": "Data e circunstâncias",
         "tipo": "texto",
         "ordem": 2,
-        "conteudo": "Praticamente a única evidência quanto à data de Judas é o que se pode inferir sobre o tempo de vida de seu autor e a heresia que ele combate [cite: 141, 142]. Se Judas era mais novo que Jesus e Tiago, como a sua posição na lista de irmãos (Mt 13.55; Mc 6.3) sugere, pode ter sobrevivido até o último quarto do século I [cite: 141, 142]. Se admitirmos que Pedro escreveu 2 Pedro e, como a maioria dos eruditos, que 2 Pedro usou Judas, então a Epístola de Judas pode ter sido escrita antes de 65-67 d.C., a data provável de 2 Pedro [cite: 142]. Talvez a Epístola de Judas tenha sido escrita em meados dos anos 50 [cite: 142].\n\nAlguns argumentam a favor de uma data no século II, com base no fato de que Judas está combatendo o gnosticismo [cite: 142]. Embora os ensinamentos aos quais Judas se opõe possam ter sido precursores do gnosticismo, não podem ser identificados com as heresias gnósticas plenamente desenvolvidas do século II [cite: 142]."
+        "conteudo": "Praticamente a única evidência quanto à data de Judas é o que se pode inferir sobre o tempo de vida de seu autor e a heresia que ele combate. Se Judas era mais novo que Jesus e Tiago, como a sua posição na lista de irmãos (Mt 13.55; Mc 6.3) sugere, pode ter sobrevivido até o último quarto do século I. Se admitirmos que Pedro escreveu 2 Pedro e, como a maioria dos eruditos, que 2 Pedro usou Judas, então a Epístola de Judas pode ter sido escrita antes de 65-67 d.C., a data provável de 2 Pedro. Talvez a Epístola de Judas tenha sido escrita em meados dos anos 50.\n\nAlguns argumentam a favor de uma data no século II, com base no fato de que Judas está combatendo o gnosticismo. Embora os ensinamentos aos quais Judas se opõe possam ter sido precursores do gnosticismo, não podem ser identificados com as heresias gnósticas plenamente desenvolvidas do século II."
       },
       {
         "id": "genero_e_caracteristicas_literarias",
         "titulo": "Gênero e características literárias",
         "tipo": "texto",
         "ordem": 3,
-        "conteudo": "O livro de Judas é uma carta e segue, em geral, as convenções epistolares típicas do século I [cite: 142]. Contém uma abertura (vv. 1, 2), um corpo (vv. 3-23) e uma conclusão padrão (vv. 24-25) [cite: 142]. Essa carta reflete o contexto do cristianismo judaico do século I, como deveríamos esperar de um autor judeu-cristão como Judas [cite: 142]. Evidência do contexto do autor inclui suas muitas alusões ao Antigo Testamento, sua familiaridade com a tradição apócrifa judaica e seus fortes interesses éticos [cite: 142]."
+        "conteudo": "O livro de Judas é uma carta e segue, em geral, as convenções epistolares típicas do século I. Contém uma abertura (vv. 1, 2), um corpo (vv. 3-23) e uma conclusão padrão (vv. 24-25). Essa carta reflete o contexto do cristianismo judaico do século I, como deveríamos esperar de um autor judeu-cristão como Judas. Evidência do contexto do autor inclui suas muitas alusões ao Antigo Testamento, sua familiaridade com a tradição apócrifa judaica e seus fortes interesses éticos."
       },
       {
         "id": "caracteristicas_e_temas_principais",
         "titulo": "Características e temas principais",
         "tipo": "texto",
         "ordem": 4,
-        "conteudo": "Judas confronta uma ameaça semelhante à combatida em 2 Pedro: falsos mestres que estavam usando a liberdade cristã e a graça de Deus como licença para a imoralidade (v. 4; cf. 2Pe 2.1-3) [cite: 142]. A maior parte da epístola (vv. 4-19) é dedicada a uma denúncia severa dos falsos mestres, a fim de incutir nos leitores a seriedade da ameaça [cite: 142]. Mas a estratégia de Judas é mais do que mera oposição negativa [cite: 142]. Ele insta seus leitores a crescerem em seu conhecimento da verdade cristã (v. 20), darem um testemunho firme da verdade (v. 3) e procurarem resgatar aqueles cuja fé se mostrava vacilante (vv. 22, 23) [cite: 142]."
+        "conteudo": "Judas confronta uma ameaça semelhante à combatida em 2 Pedro: falsos mestres que estavam usando a liberdade cristã e a graça de Deus como licença para a imoralidade (v. 4; cf. 2Pe 2.1-3). A maior parte da epístola (vv. 4-19) é dedicada a uma denúncia severa dos falsos mestres, a fim de incutir nos leitores a seriedade da ameaça. Mas a estratégia de Judas é mais do que mera oposição negativa. Ele insta seus leitores a crescerem em seu conhecimento da verdade cristã (v. 20), darem um testemunho firme da verdade (v. 3) e procurarem resgatar aqueles cuja fé se mostrava vacilante (vv. 22, 23)."
       },
       {
         "id": "teologia_de_judas",
         "titulo": "Teologia de Judas",
         "tipo": "texto",
         "ordem": 5,
-        "conteudo": "À semelhança de 2 Pedro, Judas contém a ideia de um tempo de tribulação no qual haverá falsa doutrina (cf. Dn 8.17-26; 11.30-45) [cite: 142]. Os versículos 17 e 18 introduzem e citam uma profecia de Cristo e dos apóstolos: \"No último tempo, haverá escarnecedores, andando segundo as suas ímpias paixões\" [cite: 142]. Grande parte da carta é dedicada a descrever essa falsa doutrina e aqueles que a propagam (vv. 4-18) [cite: 142]. O \"último tempo\" mencionado no v. 18 já havia começado no meio deles [cite: 142]. Judas encoraja a Igreja com seu lembrete de que os falsos mestres impenitentes de sua época sofreriam um julgamento terrível no fim da era da Igreja (vv. 14, 15) [cite: 142]."
+        "conteudo": "À semelhança de 2 Pedro, Judas contém a ideia de um tempo de tribulação no qual haverá falsa doutrina (cf. Dn 8.17-26; 11.30-45). Os versículos 17 e 18 introduzem e citam uma profecia de Cristo e dos apóstolos: \"No último tempo, haverá escarnecedores, andando segundo as suas ímpias paixões\". Grande parte da carta é dedicada a descrever essa falsa doutrina e aqueles que a propagam (vv. 4-18). O \"último tempo\" mencionado no v. 18 já havia começado no meio deles. Judas encoraja a Igreja com seu lembrete de que os falsos mestres impenitentes de sua época sofreriam um julgamento terrível no fim da era da Igreja (vv. 14, 15)."
       },
       {
         "id": "judas_na_historia_mais_ampla_da_biblia",
         "titulo": "Judas na história mais ampla da Bíblia",
         "tipo": "texto",
         "ordem": 6,
-        "conteudo": "Judas lembra, tal como Pedro, os julgamentos passados de Deus para advertir seus leitores do julgamento maior que virá sobre os falsos mestres e outras pessoas ímpias [cite: 142, 143]. Judas lembra a seus leitores o julgamento de incrédulos no Êxodo (v. 5) e o julgamento de anjos (v. 6) [cite: 142, 143]. Aponta para o julgamento de Sodoma e Gomorra como um exemplo de como Deus punirá com fogo eterno (v. 7) [cite: 143]. Ele compara os falsos mestres àqueles que pereceram na revolta de Corá (v. 11) [cite: 143]. Em resumo, Judas aplica o princípio de 1 Coríntios 10.11 para mostrar como os julgamentos do Antigo Testamento aconteceram \"como exemplos\", para nossa instrução [cite: 143]. Como ainda há um julgamento final futuro, os crentes devem perseverar (vv. 20-23), sabendo que Jesus Cristo é capaz de guardá-los dos tropeços e apresentá-los imaculados diante de Deus (vv. 24, 25) [cite: 143]."
+        "conteudo": "Judas lembra, tal como Pedro, os julgamentos passados de Deus para advertir seus leitores do julgamento maior que virá sobre os falsos mestres e outras pessoas ímpias. Judas lembra a seus leitores o julgamento de incrédulos no Êxodo (v. 5) e o julgamento de anjos (v. 6). Aponta para o julgamento de Sodoma e Gomorra como um exemplo de como Deus punirá com fogo eterno (v. 7). Ele compara os falsos mestres àqueles que pereceram na revolta de Corá (v. 11). Em resumo, Judas aplica o princípio de 1 Coríntios 10.11 para mostrar como os julgamentos do Antigo Testamento aconteceram \"como exemplos\", para nossa instrução. Como ainda há um julgamento final futuro, os crentes devem perseverar (vv. 20-23), sabendo que Jesus Cristo é capaz de guardá-los dos tropeços e apresentá-los imaculados diante de Deus (vv. 24, 25)."
       },
       {
         "id": "cristo_em_judas",
         "titulo": "Cristo em Judas",
         "tipo": "texto",
         "ordem": 7,
-        "conteudo": "Embora sua epístola esteja entre os livros mais curtos do Novo Testamento, Judas contribui muito para nosso entendimento acerca da pessoa e da obra de Cristo [cite: 143]. Em relação à pessoa do Salvador, nosso texto bíblico afirma que \"o Senhor\" libertou Israel do Egito e, depois, destruiu o Israel incrédu-lo no deserto [cite: 143]. Nesse caso, Judas está identificando Jesus como Jeová, aquele que é descrito no Antigo Testamento como o libertador de Israel e o juiz [cite: 143]. Essa descrição é uma forte afirmação da deidade de Cristo e uma prova de que essa crença tem origem nos mais antigos cristãos [cite: 143]. Outras indicações da crença de Judas na deidade de Cristo incluem chamá-lo de \"Soberano e Senhor\" (v. 4) [cite: 143]. A epístola acaba em uma nota cristológica: \"Ao único Deus, nosso Salvador, mediante Jesus Cristo, Senhor nosso, glória, majestade, império e soberania, antes de todas as eras, e agora, e por todos os séculos. Amém!\" [cite: 143]\n\nJudas também nos dá discernimento quanto à obra de Cristo, especificamente sua obra em nos preservar na fé [cite: 143]. Cristo é \"poderoso para vos guardar de tropeços e para vos apresentar com exultação, imaculados diante da sua glória\" (v. 24) [cite: 143]."
+        "conteudo": "Embora sua epístola esteja entre os livros mais curtos do Novo Testamento, Judas contribui muito para nosso entendimento acerca da pessoa e da obra de Cristo. Em relação à pessoa do Salvador, nosso texto bíblico afirma que \"o Senhor\" libertou Israel do Egito e, depois, destruiu o Israel incrédu-lo no deserto. Nesse caso, Judas está identificando Jesus como Jeová, aquele que é descrito no Antigo Testamento como o libertador de Israel e o juiz. Essa descrição é uma forte afirmação da deidade de Cristo e uma prova de que essa crença tem origem nos mais antigos cristãos. Outras indicações da crença de Judas na deidade de Cristo incluem chamá-lo de \"Soberano e Senhor\" (v. 4). A epístola acaba em uma nota cristológica: \"Ao único Deus, nosso Salvador, mediante Jesus Cristo, Senhor nosso, glória, majestade, império e soberania, antes de todas as eras, e agora, e por todos os séculos. Amém!\"\n\nJudas também nos dá discernimento quanto à obra de Cristo, especificamente sua obra em nos preservar na fé. Cristo é \"poderoso para vos guardar de tropeços e para vos apresentar com exultação, imaculados diante da sua glória\" (v. 24)."
       },
       {
         "id": "historia_de_interpretacao",
         "titulo": "História de interpretação",
         "tipo": "texto",
         "ordem": 8,
-        "conteudo": "Apesar de sua brevidade, a epístola foi usada amplamente na Igreja primitiva, por causa de sua ortodoxia e valor evidente [cite: 143]. Dúvidas quanto ao seu status canônico surgiram amplamente por causa de seu uso de literatura apócrifa (vv. 9, 14, 15) [cite: 143]. No entanto, foi aceita como autêntica por Clemente de Alexandria, Tertuliano, Orígenes e Atanásio [cite: 143]."
+        "conteudo": "Apesar de sua brevidade, a epístola foi usada amplamente na Igreja primitiva, por causa de sua ortodoxia e valor evidente. Dúvidas quanto ao seu status canônico surgiram amplamente por causa de seu uso de literatura apócrifa (vv. 9, 14, 15). No entanto, foi aceita como autêntica por Clemente de Alexandria, Tertuliano, Orígenes e Atanásio."
       },
       {
         "id": "assuntos_especiais",
         "titulo": "Assuntos especiais",
         "tipo": "texto",
         "ordem": 9,
-        "conteudo": "Os assuntos especiais de Judas incluem:\n1. **A relação de Judas com 2 Pedro.** Como Judas e 2 Pedro têm vários conceitos em comum e parecem combater a mesma heresia, há um forte debate sobre a direção de dependência entre as duas epístolas [cite: 143].\n2. **O uso de materiais apócrifos e não bíblicos por Judas.** O uso de referências à Ascensão de Moisés (v. 9) e a 1 Enoque (vv. 14, 15) foi o principal obstáculo à aceitação da epístola no cânon [cite: 143, 144]. No entanto, sob a inspiração do Espírito Santo, Judas foi capaz de distinguir o que era verdadeiro nessas fontes tradicionais e usá-las apropriadamente em sua advertência [cite: 144]."
+        "conteudo": "Os assuntos especiais de Judas incluem:\n1. **A relação de Judas com 2 Pedro.** Como Judas e 2 Pedro têm vários conceitos em comum e parecem combater a mesma heresia, há um forte debate sobre a direção de dependência entre as duas epístolas.\n2. **O uso de materiais apócrifos e não bíblicos por Judas.** O uso de referências à Ascensão de Moisés (v. 9) e a 1 Enoque (vv. 14, 15) foi o principal obstáculo à aceitação da epístola no cânon. No entanto, sob a inspiração do Espírito Santo, Judas foi capaz de distinguir o que era verdadeiro nessas fontes tradicionais e usá-las apropriadamente em sua advertência."
       },
       {
         "id": "esboco_de_judas",
@@ -77,26 +84,26 @@
         "ordem": 10,
         "conteudo": [
           {
-            "titulo": "I. SAUDAÇÃO DE ABERTURA DA EPÍSTOLA (VV. 1-2) [cite: 144]",
+            "titulo": "I. SAUDAÇÃO DE ABERTURA DA EPÍSTOLA (VV. 1-2)",
             "itens": []
           },
           {
-            "titulo": "II. CORPO DA EPÍSTOLA (VV. 3-23) [cite: 144]",
+            "titulo": "II. CORPO DA EPÍSTOLA (VV. 3-23)",
             "itens": [
-              "A. Propósito da carta (vv. 3, 4) [cite: 144]",
-              "B. Denúncia dos falsos mestres e exortação à audiência cristã (vv. 5-19) [cite: 144]",
-              "1. Três exemplos do Antigo Testamento acerca do juízo de Deus sobre os ímpios (vv. 5-7) [cite: 144]",
-              "2. A arrogância dos falsos mestres (vv. 8-10) [cite: 144]",
-              "3. Três exemplos do Antigo Testamento de pessoas que levaram outras ao pecado (v. 11) [cite: 144]",
-              "4. Depravação e perigo dos falsos mestres (vv. 12, 13) [cite: 144]",
-              "5. A profecia de Enoque sobre o juízo (vv. 14, 15) [cite: 144]",
-              "6. Palavras arrogantes dos falsos mestres (v. 16) [cite: 144]",
-              "7. Profecias apostólicas sobre os escarnecedores (vv. 17-19) [cite: 144]",
-              "C. Exortações positivas (vv. 20-23) [cite: 144]"
+              "A. Propósito da carta (vv. 3, 4)",
+              "B. Denúncia dos falsos mestres e exortação à audiência cristã (vv. 5-19)",
+              "1. Três exemplos do Antigo Testamento acerca do juízo de Deus sobre os ímpios (vv. 5-7)",
+              "2. A arrogância dos falsos mestres (vv. 8-10)",
+              "3. Três exemplos do Antigo Testamento de pessoas que levaram outras ao pecado (v. 11)",
+              "4. Depravação e perigo dos falsos mestres (vv. 12, 13)",
+              "5. A profecia de Enoque sobre o juízo (vv. 14, 15)",
+              "6. Palavras arrogantes dos falsos mestres (v. 16)",
+              "7. Profecias apostólicas sobre os escarnecedores (vv. 17-19)",
+              "C. Exortações positivas (vv. 20-23)"
             ]
           },
           {
-            "titulo": "III. DOXOLOGIA CONCLUSIVA (VV. 24, 25) [cite: 144]",
+            "titulo": "III. DOXOLOGIA CONCLUSIVA (VV. 24, 25)",
             "itens": []
           }
         ]

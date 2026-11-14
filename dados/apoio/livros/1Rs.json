@@ -8,6 +8,13 @@
     "introducao": "O Primeiro Livro de Reis registra a história de Israel desde a transição do reinado de Davi para Salomão, o apogeu da monarquia unida com a construção do templo, a dolorosa divisão do reino entre o norte (Israel) e o sul (Judá), e a intensa confrontação entre os reis e os profetas de Deus, destacando Elias.",
     "secoes": [
       {
+        "id": "introducao",
+        "titulo": "Introdução",
+        "tipo": "texto",
+        "ordem": 1,
+        "conteudo": "A história dos reis israelitas começa nos Livros de Samuel e continua no Primeiro Livro dos Reis. Este livro pode ser dividido em três partes: 1) O começo do reinado de Salomão em Israel e em Judá e a morte do seu pai, Davi. 2) O reinado e as realizações de Salomão, especialmente a construção do templo em Jerusalém. 3) A divisão da nação em dois reinos, o do Norte e o do Sul, e a história dos reis que os governaram até a metade do século nono antes de Cristo.\n\nNos dois Livros dos Reis, cada rei é julgado de acordo com a sua fidelidade a Deus: o progresso da nação depende da fidelidade do seu rei, ao passo que a idolatria e a desobediência levam à desgraça. Os reis do Reino do Norte falharam todos nessa prova, enquanto que em Judá alguns reis falharam, e outros não.\n\nNo Primeiro Livro dos Reis aparecem os profetas de Deus, homens corajosos que falavam em nome dele e que diziam ao povo que não adorasse ídolos nem desobedecesse a Deus. Especialmente notáveis são Elias e a história da sua discussão com os profetas de Baal (cap. 18)."
+      },
+      {
         "id": "titulo",
         "titulo": "Título",
         "tipo": "texto",
