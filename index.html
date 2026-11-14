@@ -9,6 +9,7 @@
     <title>Bíblia & Planos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="apoio-referencias.css">
+    <link rel="stylesheet" href="biblioteca-renderizacao.css">
 </head>
 <body>
 
@@ -318,6 +319,216 @@
 
                 </div>
             </div>
+        </section>
+
+        <section class="config-section" id="backup-section">
+
+            <h3>Backup e Restauração</h3>
+
+            <div class="config-card">
+
+                <div class="backup-description">
+
+                    <strong>Proteja seus estudos bíblicos</strong>
+
+                    <p>
+                        Escolha quais informações deseja salvar
+                        em um arquivo que poderá ser transferido
+                        para outro dispositivo.
+                    </p>
+
+                </div>
+
+
+                <div class="config-divider"></div>
+
+
+                <!-- CATEGORIAS DO BACKUP -->
+
+                <div class="backup-category-list">
+
+                    <label class="backup-category">
+
+                        <input
+                            type="checkbox"
+                            id="backup-plans"
+                            value="planos"
+                        >
+
+                        <span class="backup-category-info">
+
+                            <strong>Planos de leitura</strong>
+
+                            <small>
+                                Planos, cronogramas e dias concluídos.
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="backup-category">
+
+                        <input
+                            type="checkbox"
+                            id="backup-verses"
+                            value="versiculos"
+                        >
+
+                        <span class="backup-category-info">
+
+                            <strong>Versículos salvos</strong>
+
+                            <small>
+                                Favoritos e trechos bíblicos armazenados.
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="backup-category">
+
+                        <input
+                            type="checkbox"
+                            id="backup-notes"
+                            value="anotacoes"
+                        >
+
+                        <span class="backup-category-info">
+
+                            <strong>Anotações pessoais</strong>
+
+                            <small>
+                                Notas, textos e temas registrados.
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="backup-category">
+
+                        <input
+                            type="checkbox"
+                            id="backup-reading"
+                            value="leitura"
+                        >
+
+                        <span class="backup-category-info">
+
+                            <strong>Posição de leitura</strong>
+
+                            <small>
+                                Último livro, capítulo e tradução selecionada.
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="backup-category">
+
+                        <input
+                            type="checkbox"
+                            id="backup-settings"
+                            value="preferencias"
+                        >
+
+                        <span class="backup-category-info">
+
+                            <strong>Preferências do aplicativo</strong>
+
+                            <small>
+                                Tema, tamanho de fonte, espaçamento e idiomas.
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="backup-category">
+
+                        <input
+                            type="checkbox"
+                            id="backup-library"
+                            value="biblioteca"
+                        >
+
+                        <span class="backup-category-info">
+
+                            <strong>Progresso da Biblioteca Teológica</strong>
+
+                            <small>
+                                Porcentagem e posição de leitura dos documentos.
+                            </small>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="config-divider"></div>
+
+
+                <!-- EXPORTAÇÃO -->
+
+                <button
+                    type="button"
+                    class="config-action-button backup-export-button"
+                    onclick="window.exportarBackupSelecionado()"
+                >
+
+                    <span>↓</span>
+                    Gerar backup selecionado
+
+                </button>
+
+
+                <div class="config-divider"></div>
+
+
+                <!-- RESTAURAÇÃO -->
+
+                <div class="backup-restore-area">
+
+                    <strong>Restaurar um backup existente</strong>
+
+                    <p>
+                        Selecione um arquivo de backup criado
+                        anteriormente por este aplicativo.
+                    </p>
+
+                    <input
+                        type="file"
+                        id="backup-file-input"
+                        accept=".json,application/json"
+                        class="hidden"
+                        onchange="window.importarBackupSelecionado(this)"
+                    >
+
+                    <button
+                        type="button"
+                        class="config-action-button"
+                        onclick="document.getElementById('backup-file-input').click()"
+                    >
+
+                        <span>↑</span>
+                        Selecionar arquivo de backup
+
+                    </button>
+
+                </div>
+
+            </div>
+
         </section>
 
         <section class="config-section">

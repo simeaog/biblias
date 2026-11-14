@@ -2998,6 +2998,780 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         );
     }
 
+
+    // ==========================================================
+    // BACKUP E RESTAURAÇÃO SELETIVA DOS DADOS PESSOAIS
+    // ==========================================================
+
+    const APP_BACKUP_SCHEMA = 'biblia-app-backup';
+
+    const APP_BACKUP_VERSION = 1;
+
+
+    // Lê um valor do localStorage com segurança.
+    function lerValorBackup(chave, valorPadrao) {
+
+        const raw = localStorage.getItem(chave);
+
+        if (raw === null) {
+            return valorPadrao;
+        }
+
+        try {
+
+            return JSON.parse(raw);
+
+        } catch (error) {
+
+            return raw;
+        }
+    }
+
+
+    // Verifica se um valor é um objeto JSON válido.
+    function backupEhObjeto(valor) {
+
+        return (
+            valor !== null &&
+            typeof valor === 'object' &&
+            !Array.isArray(valor)
+        );
+    }
+
+
+    // ==========================================================
+    // 1. EXPORTAR SOMENTE AS CATEGORIAS SELECIONADAS
+    // ==========================================================
+
+    window.exportarBackupSelecionado = function() {
+
+        try {
+
+            // Verifica quais opções foram marcadas.
+            const selecao = {
+
+                planos:
+                    document.getElementById('backup-plans').checked,
+
+                versiculos:
+                    document.getElementById('backup-verses').checked,
+
+                anotacoes:
+                    document.getElementById('backup-notes').checked,
+
+                leitura:
+                    document.getElementById('backup-reading').checked,
+
+                preferencias:
+                    document.getElementById('backup-settings').checked,
+
+                biblioteca:
+                    document.getElementById('backup-library').checked
+
+            };
+
+
+            // Verifica se pelo menos uma opção foi selecionada.
+            if (!Object.values(selecao).some(Boolean)) {
+
+                alert(
+                    'Selecione pelo menos uma categoria para gerar o backup.'
+                );
+
+                return;
+            }
+
+
+            // Estrutura que receberá somente os dados selecionados.
+            const dados = {};
+
+
+            // --------------------------------------------------
+            // PLANOS DE LEITURA
+            // --------------------------------------------------
+
+            if (selecao.planos) {
+
+                const planos = lerValorBackup(
+                    'bible_plans',
+                    []
+                );
+
+                if (!Array.isArray(planos)) {
+                    throw new Error('Os planos de leitura possuem formato inválido.');
+                }
+
+                dados.planos = planos;
+            }
+
+
+            // --------------------------------------------------
+            // VERSÍCULOS SALVOS
+            // --------------------------------------------------
+
+            if (selecao.versiculos) {
+
+                const versiculos = lerValorBackup(
+                    'bible_saved_verses',
+                    []
+                );
+
+                if (!Array.isArray(versiculos)) {
+                    throw new Error('Os versículos salvos possuem formato inválido.');
+                }
+
+                dados.versiculosSalvos = versiculos;
+            }
+
+
+            // --------------------------------------------------
+            // ANOTAÇÕES PESSOAIS
+            // --------------------------------------------------
+
+            if (selecao.anotacoes) {
+
+                const anotacoes = lerValorBackup(
+                    'bible_notes',
+                    []
+                );
+
+                if (!Array.isArray(anotacoes)) {
+                    throw new Error('As anotações possuem formato inválido.');
+                }
+
+                dados.anotacoes = anotacoes;
+            }
+
+
+            // --------------------------------------------------
+            // POSIÇÃO DE LEITURA
+            // --------------------------------------------------
+
+            if (selecao.leitura) {
+
+                dados.leituraAtual = {
+
+                    ultimaLeitura: lerValorBackup(
+                        'bible_last_read',
+                        { bookIdx: 0, chapIdx: 0 }
+                    ),
+
+                    versaoBiblica:
+                        localStorage.getItem('bible_current_version') ||
+                        'ara.json'
+
+                };
+            }
+
+
+            // --------------------------------------------------
+            // PREFERÊNCIAS DO APLICATIVO
+            // --------------------------------------------------
+
+            if (selecao.preferencias) {
+
+                dados.preferencias = {
+
+                    configuracoes: lerValorBackup(
+                        'bible_app_settings',
+                        {
+                            fontScale: 1,
+                            lineHeight: 'normal',
+                            theme: 'default'
+                        }
+                    ),
+
+                    idiomas: lerValorBackup(
+                        'bible_lang_state',
+                        {
+                            orig: false,
+                            pt: true,
+                            en: false
+                        }
+                    )
+
+                };
+            }
+
+
+            // --------------------------------------------------
+            // PROGRESSO DA BIBLIOTECA TEOLÓGICA
+            // --------------------------------------------------
+
+            if (selecao.biblioteca) {
+
+                dados.progressoBiblioteca = lerValorBackup(
+                    'bible_library_reading_progress_v1',
+                    {}
+                );
+
+                if (!backupEhObjeto(dados.progressoBiblioteca)) {
+
+                    throw new Error(
+                        'O progresso da Biblioteca possui formato inválido.'
+                    );
+                }
+            }
+
+
+            // --------------------------------------------------
+            // MONTAR ARQUIVO FINAL
+            // --------------------------------------------------
+
+            const backup = {
+
+                schema: APP_BACKUP_SCHEMA,
+
+                version: APP_BACKUP_VERSION,
+
+                createdAt: new Date().toISOString(),
+
+                aplicativo: 'Biblioteca Bíblica',
+
+                dados: dados
+
+            };
+
+
+            // Gerar arquivo JSON.
+            const json = JSON.stringify(
+                backup,
+                null,
+                2
+            );
+
+            const blob = new Blob(
+                [json],
+                { type: 'application/json;charset=utf-8' }
+            );
+
+            const url = URL.createObjectURL(blob);
+
+
+            // Nome do arquivo.
+            const dataAtual = new Date()
+                .toISOString()
+                .slice(0, 10);
+
+            const nomeArquivo =
+                `biblia-backup-${dataAtual}.json`;
+
+
+            // Efetuar download.
+            const link = document.createElement('a');
+
+            link.href = url;
+            link.download = nomeArquivo;
+
+            document.body.appendChild(link);
+
+            link.click();
+
+            link.remove();
+
+            setTimeout(() => {
+                URL.revokeObjectURL(url);
+            }, 1500);
+
+
+            if (typeof showToast === 'function') {
+
+                showToast(
+                    'Backup criado com sucesso!'
+                );
+
+            } else {
+
+                alert(
+                    'Backup criado com sucesso!\n\n' +
+                    'Arquivo: ' + nomeArquivo
+                );
+            }
+
+            console.info(
+                '[BACKUP] Categorias exportadas:',
+                Object.keys(dados)
+            );
+
+
+        } catch (error) {
+
+            console.error('[BACKUP] Erro na exportação:', error);
+
+            alert(
+                'Não foi possível gerar o backup.\n\n' +
+                error.message
+            );
+        }
+
+    };
+
+
+    // ==========================================================
+    // 2. RESTAURAR UM ARQUIVO DE BACKUP
+    // ==========================================================
+
+    window.importarBackupSelecionado = async function(input) {
+
+        const arquivo = input?.files?.[0];
+
+        if (!arquivo) return;
+
+        try {
+
+            // Evita importar arquivos excessivamente grandes.
+            if (arquivo.size > 30 * 1024 * 1024) {
+
+                throw new Error(
+                    'O arquivo ultrapassa o limite de 30 MB.'
+                );
+            }
+
+
+            // Ler o arquivo JSON.
+            const texto = await arquivo.text();
+
+            let backup;
+
+            try {
+
+                backup = JSON.parse(texto);
+
+            } catch (error) {
+
+                throw new Error(
+                    'O arquivo selecionado não contém um JSON válido.'
+                );
+            }
+
+
+            // --------------------------------------------------
+            // VALIDAR IDENTIFICAÇÃO DO BACKUP
+            // --------------------------------------------------
+
+            if (
+                backup.schema !== APP_BACKUP_SCHEMA ||
+                backup.version !== APP_BACKUP_VERSION
+            ) {
+
+                throw new Error(
+                    'Este arquivo não é um backup compatível com o aplicativo.'
+                );
+            }
+
+
+            if (!backupEhObjeto(backup.dados)) {
+
+                throw new Error(
+                    'A estrutura dos dados do backup é inválida.'
+                );
+            }
+
+
+            const dados = backup.dados;
+
+            const restaurar = [];
+
+
+            // --------------------------------------------------
+            // VALIDAR PLANOS
+            // --------------------------------------------------
+
+            if (Object.prototype.hasOwnProperty.call(dados, 'planos')) {
+
+                if (!Array.isArray(dados.planos)) {
+
+                    throw new Error('A categoria de planos está inválida.');
+                }
+
+                restaurar.push({
+
+                    chave: 'bible_plans',
+
+                    valor: JSON.stringify(dados.planos),
+
+                    nome: 'Planos de leitura'
+
+                });
+            }
+
+
+            // --------------------------------------------------
+            // VALIDAR VERSÍCULOS SALVOS
+            // --------------------------------------------------
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    dados,
+                    'versiculosSalvos'
+                )
+            ) {
+
+                if (!Array.isArray(dados.versiculosSalvos)) {
+
+                    throw new Error('A categoria de versículos está inválida.');
+                }
+
+                restaurar.push({
+
+                    chave: 'bible_saved_verses',
+
+                    valor: JSON.stringify(dados.versiculosSalvos),
+
+                    nome: 'Versículos salvos'
+
+                });
+            }
+
+
+            // --------------------------------------------------
+            // VALIDAR ANOTAÇÕES
+            // --------------------------------------------------
+
+            if (Object.prototype.hasOwnProperty.call(dados, 'anotacoes')) {
+
+                if (!Array.isArray(dados.anotacoes)) {
+
+                    throw new Error('A categoria de anotações está inválida.');
+                }
+
+                restaurar.push({
+
+                    chave: 'bible_notes',
+
+                    valor: JSON.stringify(dados.anotacoes),
+
+                    nome: 'Anotações pessoais'
+
+                });
+            }
+
+
+            // --------------------------------------------------
+            // VALIDAR POSIÇÃO DE LEITURA
+            // --------------------------------------------------
+
+            if (Object.prototype.hasOwnProperty.call(dados, 'leituraAtual')) {
+
+                const leitura = dados.leituraAtual;
+
+                if (
+                    !backupEhObjeto(leitura) ||
+                    !backupEhObjeto(leitura.ultimaLeitura)
+                ) {
+
+                    throw new Error(
+                        'A posição de leitura está inválida.'
+                    );
+                }
+
+                const ultima = leitura.ultimaLeitura;
+
+                if (
+                    !Number.isInteger(Number(ultima.bookIdx)) ||
+                    !Number.isInteger(Number(ultima.chapIdx)) ||
+                    Number(ultima.bookIdx) < 0 ||
+                    Number(ultima.chapIdx) < 0
+                ) {
+
+                    throw new Error(
+                        'O livro ou capítulo salvo possui valor inválido.'
+                    );
+                }
+
+                if (
+                    typeof leitura.versaoBiblica !== 'string' ||
+                    !/^[a-zA-Z0-9_-]+\.json$/.test(leitura.versaoBiblica)
+                ) {
+
+                    throw new Error(
+                        'A versão bíblica selecionada está inválida.'
+                    );
+                }
+
+                restaurar.push({
+
+                    chave: 'bible_last_read',
+
+                    valor: JSON.stringify({
+
+                        bookIdx: Number(ultima.bookIdx),
+
+                        chapIdx: Number(ultima.chapIdx)
+
+                    }),
+
+                    nome: 'Última posição de leitura'
+
+                });
+
+                restaurar.push({
+
+                    chave: 'bible_current_version',
+
+                    valor: leitura.versaoBiblica,
+
+                    nome: 'Tradução bíblica'
+
+                });
+            }
+
+
+            // --------------------------------------------------
+            // VALIDAR PREFERÊNCIAS
+            // --------------------------------------------------
+
+            if (Object.prototype.hasOwnProperty.call(dados, 'preferencias')) {
+
+                const preferencias = dados.preferencias;
+
+                if (
+                    !backupEhObjeto(preferencias) ||
+                    !backupEhObjeto(preferencias.configuracoes) ||
+                    !backupEhObjeto(preferencias.idiomas)
+                ) {
+
+                    throw new Error(
+                        'As preferências do aplicativo estão inválidas.'
+                    );
+                }
+
+                const settings = preferencias.configuracoes;
+
+                const idiomas = preferencias.idiomas;
+
+                if (
+                    !['default', 'blue', 'pink'].includes(settings.theme) ||
+                    !['compact', 'normal', 'comfortable'].includes(settings.lineHeight) ||
+                    !Number.isFinite(Number(settings.fontScale)) ||
+                    Number(settings.fontScale) < 0.85 ||
+                    Number(settings.fontScale) > 1.30
+                ) {
+
+                    throw new Error(
+                        'As configurações de aparência possuem valores inválidos.'
+                    );
+                }
+
+                if (
+                    typeof idiomas.orig !== 'boolean' ||
+                    typeof idiomas.pt !== 'boolean' ||
+                    typeof idiomas.en !== 'boolean'
+                ) {
+
+                    throw new Error(
+                        'As preferências de idiomas são inválidas.'
+                    );
+                }
+
+                if (!idiomas.orig && !idiomas.pt && !idiomas.en) {
+
+                    throw new Error(
+                        'O backup precisa manter pelo menos um idioma ativo.'
+                    );
+                }
+
+                restaurar.push({
+
+                    chave: 'bible_app_settings',
+
+                    valor: JSON.stringify({
+
+                        fontScale: Number(settings.fontScale),
+
+                        lineHeight: settings.lineHeight,
+
+                        theme: settings.theme
+
+                    }),
+
+                    nome: 'Preferências de aparência'
+
+                });
+
+                restaurar.push({
+
+                    chave: 'bible_lang_state',
+
+                    valor: JSON.stringify(idiomas),
+
+                    nome: 'Idiomas selecionados'
+
+                });
+            }
+
+
+            // --------------------------------------------------
+            // VALIDAR PROGRESSO DA BIBLIOTECA
+            // --------------------------------------------------
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    dados,
+                    'progressoBiblioteca'
+                )
+            ) {
+
+                if (!backupEhObjeto(dados.progressoBiblioteca)) {
+
+                    throw new Error(
+                        'O progresso da Biblioteca está inválido.'
+                    );
+                }
+
+                restaurar.push({
+
+                    chave: 'bible_library_reading_progress_v1',
+
+                    valor: JSON.stringify(dados.progressoBiblioteca),
+
+                    nome: 'Progresso da Biblioteca Teológica'
+
+                });
+            }
+
+
+            // --------------------------------------------------
+            // VERIFICAR SE EXISTEM DADOS PARA RESTAURAR
+            // --------------------------------------------------
+
+            if (!restaurar.length) {
+
+                throw new Error(
+                    'O arquivo não contém categorias de dados reconhecidas.'
+                );
+            }
+
+
+            // --------------------------------------------------
+            // CONFIRMAÇÃO DO USUÁRIO
+            // --------------------------------------------------
+
+            const listaCategorias = restaurar
+                .map(item => '• ' + item.nome)
+                .join('\n');
+
+            const mensagem =
+
+                'O backup contém as seguintes categorias:\n\n' +
+
+                listaCategorias +
+
+                '\n\nSomente essas categorias serão substituídas.\n\n' +
+
+                'Todos os outros dados atualmente existentes serão preservados.\n\n' +
+
+                'Deseja continuar com a restauração?';
+
+
+            if (!confirm(mensagem)) {
+
+                return;
+            }
+
+
+            // --------------------------------------------------
+            // SALVAR ESTADO ANTERIOR PARA EVITAR PERDA PARCIAL
+            // --------------------------------------------------
+
+            const estadoAnterior = restaurar.map(item => ({
+
+                chave: item.chave,
+
+                valor: localStorage.getItem(item.chave)
+
+            }));
+
+
+            try {
+
+                // Substitui somente as categorias presentes no backup.
+                restaurar.forEach(item => {
+
+                    localStorage.setItem(
+                        item.chave,
+                        item.valor
+                    );
+
+                });
+
+            } catch (error) {
+
+                // Se ocorrer erro de armazenamento,
+                // tenta retornar ao estado anterior.
+
+                estadoAnterior.forEach(item => {
+
+                    try {
+
+                        if (item.valor === null) {
+
+                            localStorage.removeItem(item.chave);
+
+                        } else {
+
+                            localStorage.setItem(
+                                item.chave,
+                                item.valor
+                            );
+                        }
+
+                    } catch (rollbackError) {
+
+                        console.error(
+                            'Erro ao recuperar armazenamento anterior:',
+                            rollbackError
+                        );
+                    }
+                });
+
+                throw new Error(
+                    'Não foi possível gravar todos os dados. ' +
+                    'O aplicativo tentou recuperar os valores anteriores.'
+                );
+            }
+
+
+            // --------------------------------------------------
+            // CONCLUÍDO
+            // --------------------------------------------------
+
+            console.info(
+                '[BACKUP] Categorias restauradas:',
+                restaurar.map(item => item.chave)
+            );
+
+            alert(
+                'Backup restaurado com sucesso!\n\n' +
+
+                'O aplicativo será atualizado para carregar os dados recuperados.'
+            );
+
+            // Recarrega todas as variáveis de estado
+            // a partir do localStorage atualizado.
+
+            window.location.reload();
+
+
+        } catch (error) {
+
+            console.error('[BACKUP] Erro na restauração:', error);
+
+            alert(
+                'Não foi possível restaurar o backup.\n\n' +
+                error.message
+            );
+
+        } finally {
+
+            // Permite selecionar novamente o mesmo arquivo.
+            if (input) {
+                input.value = '';
+            }
+        }
+
+    };
+
     function saveCurrentTabScroll() {
         const main = document.getElementById('main-scroll');
         if (!main || !currentTabId) return;
@@ -6593,10 +7367,6 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     // ==========================================================
     
     const libraryDocsRegistry = [
-        // Mapas Históricos (Imagens)
-        { id: '01_amigracaodeabraao', title: 'A Migração de Abraão', file: 'dados/apoio/anexos/01_amigracaodeabraao.png', type: 'image', icon: '🗺️' },
-        { id: '02_abraaoemcanaa', title: 'Abraão em Canaã', file: 'dados/apoio/anexos/02_abraaoemcanaa.png', type: 'image', icon: '🗺️' },
-        { id: '03_arotadoexodo', title: 'A Rota do Êxodo', file: 'dados/apoio/anexos/03_arotadoexodo.png', type: 'image', icon: '🗺️' },
 
         // Documentos e Estudos (JSONs)
         { id: '67_Apologetica', title: 'Apologética', file: 'dados/apoio/anexos/67_Apologetica.json', type: 'json', icon: '🛡️' },
@@ -6625,6 +7395,867 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         { id: '90_Confissao_de_Fe_Batista_de_1689', title: 'Confissão de Fé Batista de 1689', file: 'dados/apoio/anexos/90_Confissao_de_Fe_Batista_de_1689.json', type: 'json', icon: '🌿' }
     ];
 
+
+// ==========================================================
+// MOTOR DE RENDERIZAÇÃO DA BIBLIOTECA TEOLÓGICA
+// Markdown simples, tabelas e esboços.
+// ==========================================================
+
+// 1. NEGRITO E ITÁLICO
+function renderLibraryInlineMarkdown(value) {
+    return escapeHTML(String(value ?? ''))
+        .replace(/\\([*_])/g, '$1')
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g, '$1<em>$2</em>');
+}
+
+
+// 2. MARKDOWN COMPLETO SIMPLES
+function renderLibraryMarkdown(value) {
+
+    const text = String(value ?? '').replace(/\r\n?/g, '\n');
+
+    if (!text.trim()) return '';
+
+    const lines = text.split('\n');
+
+    let html = '';
+    let paragraph = [];
+    let listItems = [];
+    let listType = null;
+
+    function closeParagraph() {
+
+        if (!paragraph.length) return;
+
+        html += `<p>${paragraph
+            .map(renderLibraryInlineMarkdown)
+            .join('<br>')}</p>`;
+
+        paragraph = [];
+    }
+
+    function closeList() {
+
+        if (!listItems.length || !listType) return;
+
+        html += `<${listType}>`;
+
+        listItems.forEach(item => {
+            html += `<li>${renderLibraryInlineMarkdown(item)}</li>`;
+        });
+
+        html += `</${listType}>`;
+
+        listItems = [];
+        listType = null;
+    }
+
+    for (const rawLine of lines) {
+
+        const line = rawLine.trim();
+
+        // Linha vazia: encerra o parágrafo ou lista.
+        if (!line) {
+            closeParagraph();
+            closeList();
+            continue;
+        }
+
+        // Linha divisória.
+        if (/^(?:-{3,}|\*{3,}|_{3,})$/.test(line)) {
+
+            closeParagraph();
+            closeList();
+
+            html += '<hr class="library-horizontal-rule">';
+
+            continue;
+        }
+
+        // Títulos Markdown: #, ##, ### e ####.
+        const heading = line.match(/^(#{1,4})\s+(.+)$/);
+
+        if (heading) {
+
+            closeParagraph();
+            closeList();
+
+            const level = heading[1].length + 2;
+
+            html += `<h${level}>${renderLibraryInlineMarkdown(heading[2])}</h${level}>`;
+
+            continue;
+        }
+
+        // Lista numerada.
+        const ordered = line.match(/^\d+[.)]\s+(.+)$/);
+
+        // Lista com marcadores.
+        const unordered = line.match(/^[-*+]\s+(.+)$/);
+
+        if (ordered || unordered) {
+
+            closeParagraph();
+
+            const nextType = ordered ? 'ol' : 'ul';
+
+            if (listType && listType !== nextType) {
+                closeList();
+            }
+
+            listType = nextType;
+
+            listItems.push((ordered || unordered)[1]);
+
+            continue;
+        }
+
+        closeList();
+
+        paragraph.push(line);
+    }
+
+    closeParagraph();
+    closeList();
+
+    return `<div class="library-markdown">${html}</div>`;
+}
+
+
+// 3. RECONHECER TABELAS ANTIGAS ESCRITAS COMO TEXTO
+function parseLibraryTextTable(value) {
+
+    const source = String(value ?? '').trim();
+
+    const blocks = source
+        .split(/\n\s*(?:-{3,}|\*{3,}|_{3,})\s*\n/g)
+        .map(item => item.trim())
+        .filter(Boolean);
+
+    if (blocks.length < 2) return null;
+
+    const records = blocks.map(block => {
+
+        const fields = [];
+
+        const lines = block
+            .split('\n')
+            .map(line => line.trim())
+            .filter(Boolean);
+
+        for (const line of lines) {
+
+            const match = line.match(/^\*\*(.+?):\*\*\s*(.*)$/);
+
+            if (!match) return null;
+
+            fields.push({
+                label: match[1].trim(),
+                value: match[2].trim()
+            });
+        }
+
+        return fields.length ? fields : null;
+    });
+
+    if (records.some(record => !record)) return null;
+
+    const columns = records[0].map(field => field.label);
+
+    if (columns.length < 2) return null;
+
+    const normalized = columns.map(label => label.toLowerCase());
+
+    const valid = records.every(record =>
+        record.length === columns.length &&
+        record.every((field, index) =>
+            field.label.toLowerCase() === normalized[index]
+        )
+    );
+
+    if (!valid) return null;
+
+    return {
+        colunas: columns,
+        linhas: records.map(record =>
+            record.map(field => field.value)
+        )
+    };
+}
+
+
+// 4. NORMALIZAR COLUNAS DA TABELA
+function getLibraryTableColumn(column, index) {
+
+    if (column && typeof column === 'object' && !Array.isArray(column)) {
+
+        const label =
+            column.titulo ??
+            column.nome ??
+            column.label ??
+            column.campo ??
+            column.key ??
+            `Coluna ${index + 1}`;
+
+        const key =
+            column.chave ??
+            column.key ??
+            column.campo ??
+            column.id ??
+            column.nome ??
+            column.titulo ??
+            column.label ??
+            index;
+
+        return {
+            label: String(label),
+            key: String(key)
+        };
+    }
+
+    return {
+        label: String(column ?? `Coluna ${index + 1}`),
+        key: String(column ?? index)
+    };
+}
+
+
+// 5. OBTER CÉLULA DA TABELA
+function getLibraryTableCell(row, column, index) {
+
+    if (Array.isArray(row)) {
+        return row[index] ?? '';
+    }
+
+    if (row && typeof row === 'object') {
+
+        const candidates = [
+            column.key,
+            column.label,
+            String(index)
+        ];
+
+        for (const key of candidates) {
+
+            if (Object.prototype.hasOwnProperty.call(row, key)) {
+                return row[key];
+            }
+        }
+
+        return Object.values(row)[index] ?? '';
+    }
+
+    return index === 0 ? row : '';
+}
+
+
+// 6. RENDERIZAR CÉLULA COM SEGURANÇA
+function renderLibraryTableCell(value) {
+
+    let text;
+
+    if (value === null || value === undefined) {
+        text = '';
+    } else if (Array.isArray(value)) {
+        text = value.join(', ');
+    } else if (typeof value === 'object') {
+        text = JSON.stringify(value);
+    } else {
+        text = String(value);
+    }
+
+    return renderLibraryInlineMarkdown(text).replace(/\n/g, '<br>');
+}
+
+
+// 7. GERAR TABELA HTML REAL
+function renderLibraryTable(content) {
+
+    if (!content || typeof content !== 'object' || Array.isArray(content)) {
+
+        return '<p class="library-render-warning">Conteúdo da tabela inválido. Verifique as propriedades colunas e linhas.</p>';
+    }
+
+    const rows = Array.isArray(content.linhas)
+        ? content.linhas
+        : [];
+
+    let rawColumns = Array.isArray(content.colunas)
+        ? content.colunas
+        : [];
+
+    // Tenta descobrir as colunas pela primeira linha,
+    // caso o JSON não tenha informado colunas.
+    if (!rawColumns.length && rows.length) {
+
+        if (Array.isArray(rows[0])) {
+            rawColumns = rows[0].map((_, i) => `Coluna ${i + 1}`);
+        } else if (rows[0] && typeof rows[0] === 'object') {
+            rawColumns = Object.keys(rows[0]);
+        }
+    }
+
+    if (!rawColumns.length) {
+
+        return '<p class="library-render-warning">Tabela sem colunas.</p>';
+    }
+
+    const columns = rawColumns.map(getLibraryTableColumn);
+
+    let html = `
+        <div class="library-table-wrap">
+            <table class="library-data-table">
+                <thead>
+                    <tr>
+    `;
+
+    columns.forEach(column => {
+
+        html += `<th scope="col">${renderLibraryInlineMarkdown(column.label)}</th>`;
+
+    });
+
+    html += `
+                    </tr>
+                </thead>
+                <tbody>
+    `;
+
+    if (!rows.length) {
+
+        html += `
+            <tr>
+                <td colspan="${columns.length}">
+                    Nenhum registro disponível.
+                </td>
+            </tr>
+        `;
+
+    } else {
+
+        rows.forEach(row => {
+
+            html += '<tr>';
+
+            columns.forEach((column, index) => {
+
+                const value = getLibraryTableCell(row, column, index);
+
+                html += `<td>${renderLibraryTableCell(value)}</td>`;
+
+            });
+
+            html += '</tr>';
+
+        });
+
+    }
+
+    html += `
+                </tbody>
+            </table>
+        </div>
+    `;
+
+    return html;
+}
+
+
+// 8. RENDERIZAR ESBOÇOS
+function renderLibraryOutline(content) {
+
+    if (!Array.isArray(content)) {
+
+        return typeof content === 'string'
+            ? renderLibraryMarkdown(content)
+            : '';
+    }
+
+    let html = '<div class="library-outline">';
+
+    content.forEach(item => {
+
+        if (!item || typeof item !== 'object') {
+            html += `<p>${renderLibraryInlineMarkdown(item)}</p>`;
+            return;
+        }
+
+        const title = item.titulo ?? item.nome ?? '';
+
+        html += '<div class="library-outline-entry">';
+
+        if (title) {
+            html += `<h4>${renderLibraryInlineMarkdown(title)}</h4>`;
+        }
+
+        const items = Array.isArray(item.itens)
+            ? item.itens
+            : [];
+
+        if (items.length) {
+
+            html += '<ul>';
+
+            items.forEach(subitem => {
+
+                const text = typeof subitem === 'object'
+                    ? (subitem.titulo ?? subitem.texto ?? '')
+                    : subitem;
+
+                html += `<li>${renderLibraryInlineMarkdown(text)}</li>`;
+
+            });
+
+            html += '</ul>';
+        }
+
+        html += '</div>';
+
+    });
+
+    html += '</div>';
+
+    return html;
+}
+
+
+// ==========================================================
+// FIM DO MOTOR DE RENDERIZAÇÃO
+// ==========================================================
+
+
+// ==========================================================
+// CONTROLE DE LEITURA E PROGRESSO DA BIBLIOTECA
+// ==========================================================
+
+const LIBRARY_PROGRESS_STORAGE_KEY = 'bible_library_reading_progress_v1';
+
+let libraryActiveDocumentKey = null;
+let libraryCurrentPageIndex = 0;
+let libraryCurrentPageCount = 1;
+
+let libraryScrollSnapTimer = null;
+let libraryReaderResizeHandler = null;
+let libraryReaderKeyHandler = null;
+
+
+// Lê todos os progressos armazenados.
+function getLibraryProgressMap() {
+
+    try {
+
+        const data = JSON.parse(
+            localStorage.getItem(LIBRARY_PROGRESS_STORAGE_KEY) || '{}'
+        );
+
+        return data && typeof data === 'object' && !Array.isArray(data)
+            ? data
+            : {};
+
+    } catch (error) {
+
+        console.warn('Erro ao ler o progresso da Biblioteca:', error);
+
+        return {};
+    }
+}
+
+
+// Obtém a porcentagem de um documento.
+function getLibraryProgressPercent(documentKey) {
+
+    const map = getLibraryProgressMap();
+    const record = map[documentKey];
+
+    if (!record) return 0;
+
+    return Math.max(
+        0,
+        Math.min(100, Number(record.percent) || 0)
+    );
+}
+
+
+// Calcula o tamanho e a quantidade de páginas.
+function getLibraryPaginationMetrics(flow) {
+
+    const style = getComputedStyle(flow);
+
+    const columnWidth =
+        parseFloat(style.columnWidth) ||
+        (flow.clientWidth - 96);
+
+    const columnGap =
+        parseFloat(style.columnGap) || 28;
+
+    const pageStep = columnWidth + columnGap;
+
+    const overflow = Math.max(
+        0,
+        flow.scrollWidth - flow.clientWidth
+    );
+
+    const totalPages = Math.max(
+        1,
+        Math.round(overflow / pageStep) + 1
+    );
+
+    return {
+        columnWidth,
+        columnGap,
+        pageStep,
+        totalPages
+    };
+}
+
+
+// Salva o progresso atual no armazenamento local.
+function saveLibraryReadingProgress() {
+
+    if (!libraryActiveDocumentKey) return;
+
+    const total = Math.max(1, libraryCurrentPageCount);
+
+    const page = Math.max(
+        0,
+        Math.min(total - 1, libraryCurrentPageIndex)
+    );
+
+    const percent = Math.round(
+        ((page + 1) / total) * 100
+    );
+
+    const map = getLibraryProgressMap();
+
+    map[libraryActiveDocumentKey] = {
+        pageIndex: page,
+        totalPages: total,
+        percent: percent,
+        updatedAt: new Date().toISOString()
+    };
+
+    try {
+
+        localStorage.setItem(
+            LIBRARY_PROGRESS_STORAGE_KEY,
+            JSON.stringify(map)
+        );
+
+    } catch (error) {
+
+        console.warn(
+            'Não foi possível salvar o progresso da leitura.',
+            error
+        );
+    }
+}
+
+
+// Atualiza a barra e o indicador da página.
+function updateLibraryReaderStatus() {
+
+    const total = Math.max(1, libraryCurrentPageCount);
+
+    const page = Math.max(
+        0,
+        Math.min(total - 1, libraryCurrentPageIndex)
+    );
+
+    const percent = Math.round(
+        ((page + 1) / total) * 100
+    );
+
+    const fill = document.getElementById(
+        'library-reader-progress-fill'
+    );
+
+    const label = document.getElementById(
+        'library-reader-progress-label'
+    );
+
+    const counter = document.getElementById(
+        'library-reader-page-counter'
+    );
+
+    if (fill) {
+        fill.style.width = `${percent}%`;
+    }
+
+    if (label) {
+        label.textContent = `${percent}% lido`;
+    }
+
+    if (counter) {
+        counter.textContent =
+            `Página ${page + 1} de ${total}`;
+    }
+}
+
+
+// Navega diretamente para uma página.
+function libraryGoToPage(pageIndex, smooth = true) {
+
+    const flow = document.getElementById(
+        'library-reader-content'
+    );
+
+    if (!flow) return;
+
+    const metrics = getLibraryPaginationMetrics(flow);
+
+    const target = Math.max(
+        0,
+        Math.min(
+            metrics.totalPages - 1,
+            Number(pageIndex) || 0
+        )
+    );
+
+    libraryCurrentPageIndex = target;
+    libraryCurrentPageCount = metrics.totalPages;
+
+    flow.scrollTo({
+        left: target * metrics.pageStep,
+        behavior: smooth ? 'smooth' : 'auto'
+    });
+
+    updateLibraryReaderStatus();
+
+    saveLibraryReadingProgress();
+}
+
+
+// Avança ou recua uma página.
+function libraryChangePage(direction) {
+
+    libraryGoToPage(
+        libraryCurrentPageIndex + Number(direction),
+        true
+    );
+}
+
+
+// Inicializa a paginação e recupera a última posição.
+function initializeLibraryPagination() {
+
+    const flow = document.getElementById(
+        'library-reader-content'
+    );
+
+    if (!flow) return;
+
+    if (libraryScrollSnapTimer) {
+        clearTimeout(libraryScrollSnapTimer);
+    }
+
+    const progressMap = getLibraryProgressMap();
+
+    const savedProgress =
+        progressMap[libraryActiveDocumentKey] || null;
+
+    requestAnimationFrame(() => {
+
+        // Ajusta a largura de cada página ao tamanho da tela.
+        const initialStyle = getComputedStyle(flow);
+
+        const horizontalPadding =
+            parseFloat(initialStyle.paddingLeft) +
+            parseFloat(initialStyle.paddingRight);
+
+        const pageWidth = Math.max(
+            220,
+            flow.clientWidth - horizontalPadding
+        );
+
+        flow.style.columnWidth = `${pageWidth}px`;
+
+        // Força o navegador a recalcular as colunas.
+        void flow.offsetHeight;
+
+        const metrics = getLibraryPaginationMetrics(flow);
+
+        // Recupera a porcentagem anterior.
+        const savedPercent = savedProgress
+            ? Math.max(
+                0,
+                Math.min(100, Number(savedProgress.percent) || 0)
+            )
+            : 0;
+
+        const samePagination = savedProgress &&
+            Number(savedProgress.totalPages) === metrics.totalPages;
+
+        const restoredPage = savedProgress
+            ? (
+                samePagination
+                    ? Number(savedProgress.pageIndex) || 0
+                    : Math.round(
+                        (savedPercent / 100) *
+                        (metrics.totalPages - 1)
+                    )
+            )
+            : 0;
+
+        // Retorna para a última página lida.
+        libraryGoToPage(restoredPage, false);
+
+
+        // ==================================================
+        // DETECTAR DESLIZAMENTO HORIZONTAL
+        // ==================================================
+
+        flow.addEventListener('scroll', () => {
+
+            const currentMetrics =
+                getLibraryPaginationMetrics(flow);
+
+            const currentPage = Math.max(
+                0,
+                Math.min(
+                    currentMetrics.totalPages - 1,
+                    Math.round(
+                        flow.scrollLeft / currentMetrics.pageStep
+                    )
+                )
+            );
+
+            if (
+                currentPage !== libraryCurrentPageIndex ||
+                currentMetrics.totalPages !== libraryCurrentPageCount
+            ) {
+
+                libraryCurrentPageIndex = currentPage;
+                libraryCurrentPageCount = currentMetrics.totalPages;
+
+                updateLibraryReaderStatus();
+
+                saveLibraryReadingProgress();
+            }
+
+            // Encaixa o conteúdo na página mais próxima
+            // quando o movimento horizontal termina.
+
+            clearTimeout(libraryScrollSnapTimer);
+
+            libraryScrollSnapTimer = setTimeout(() => {
+
+                const finalMetrics =
+                    getLibraryPaginationMetrics(flow);
+
+                const finalPage = Math.max(
+                    0,
+                    Math.min(
+                        finalMetrics.totalPages - 1,
+                        Math.round(
+                            flow.scrollLeft / finalMetrics.pageStep
+                        )
+                    )
+                );
+
+                libraryGoToPage(finalPage, false);
+
+            }, 160);
+
+        }, { passive: true });
+
+
+        // ==================================================
+        // RECALCULAR AS PÁGINAS AO REDIMENSIONAR A TELA
+        // ==================================================
+
+        if (libraryReaderResizeHandler) {
+
+            window.removeEventListener(
+                'resize',
+                libraryReaderResizeHandler
+            );
+        }
+
+        libraryReaderResizeHandler = () => {
+
+            const oldRatio =
+                libraryCurrentPageCount > 1
+                    ? libraryCurrentPageIndex /
+                      (libraryCurrentPageCount - 1)
+                    : 0;
+
+            requestAnimationFrame(() => {
+
+                const style = getComputedStyle(flow);
+
+                const padding =
+                    parseFloat(style.paddingLeft) +
+                    parseFloat(style.paddingRight);
+
+                flow.style.columnWidth =
+                    `${Math.max(220, flow.clientWidth - padding)}px`;
+
+                void flow.offsetHeight;
+
+                const newMetrics =
+                    getLibraryPaginationMetrics(flow);
+
+                const newPage = Math.round(
+                    oldRatio * (newMetrics.totalPages - 1)
+                );
+
+                libraryGoToPage(newPage, false);
+            });
+        };
+
+        window.addEventListener(
+            'resize',
+            libraryReaderResizeHandler
+        );
+
+
+        // ==================================================
+        // TECLADO: SETAS E ESC
+        // ==================================================
+
+        if (libraryReaderKeyHandler) {
+
+            document.removeEventListener(
+                'keydown',
+                libraryReaderKeyHandler
+            );
+        }
+
+        libraryReaderKeyHandler = event => {
+
+            if (
+                !document.body.classList.contains('library-reader-open')
+            ) {
+                return;
+            }
+
+            if (event.key === 'ArrowRight') {
+
+                event.preventDefault();
+                libraryChangePage(1);
+
+            } else if (event.key === 'ArrowLeft') {
+
+                event.preventDefault();
+                libraryChangePage(-1);
+
+            } else if (event.key === 'Escape') {
+
+                event.preventDefault();
+                closeLibraryReader();
+            }
+        };
+
+        document.addEventListener(
+            'keydown',
+            libraryReaderKeyHandler
+        );
+
+    });
+}
+
+
 async function renderLibraryList() {
         const grid = document.getElementById('library-grid');
         const reader = document.getElementById('library-reader-view');
@@ -6633,129 +8264,743 @@ async function renderLibraryList() {
         grid.classList.remove('hidden');
         if (reader) reader.classList.add('hidden');
 
-        const anexos = [...libraryDocsRegistry].sort((a, b) => a.title.localeCompare(b.title));
+        // Ordena os documentos pelo número inicial do nome do arquivo.
+        const anexos = [...libraryDocsRegistry].sort((a, b) => {
+
+            function extrairNumero(item) {
+
+                const filename = String(item.file || '').split('/').pop();
+
+                const match =
+                    filename.match(/^(\d+)/) ||
+                    String(item.id || '').match(/^(\d+)/);
+
+                return match
+                    ? Number(match[1])
+                    : Number.MAX_SAFE_INTEGER;
+            }
+
+            return extrairNumero(a) - extrairNumero(b);
+
+        });
 
         let html = '<div class="library-cards-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap:16px;">';
         
+
         anexos.forEach(item => {
-            // Extrai as iniciais do título para criar um monograma acadêmico (ex: "Confissão de Fé" -> "CF")
-            const words = item.title.replace(/^(O|A|Os|As|De|Do|Da)\s+/i, '').split(' ');
-            const initials = words.length > 1 ? (words[0][0] + words[1][0]).toUpperCase() : words[0].substring(0, 2).toUpperCase();
+
+            const words = String(item.title || '')
+                .replace(/^(O|A|Os|As|De|Do|Da)\s+/i, '')
+                .trim()
+                .split(/\s+/)
+                .filter(Boolean);
+
+            const initials = words.length > 1
+                ? (words[0][0] + words[1][0]).toUpperCase()
+                : (words[0] || 'BT').substring(0, 2).toUpperCase();
+
+            // Identificador exclusivo do documento.
+            const documentKey = String(item.id || item.file);
+
+            // Recupera o progresso armazenado.
+            const percent = getLibraryProgressPercent(documentKey);
+
+            // Permite utilizar capas já cadastradas no registro.
+            const rawCover =
+                item.capa ||
+                item.cover ||
+                item.thumbnail ||
+                item.image ||
+                '';
+
+            const cover = typeof rawCover === 'string'
+                ? rawCover
+                : (
+                    rawCover.src ||
+                    rawCover.arquivo ||
+                    ''
+                );
+
+            const coverHTML = cover
+                ? `
+                    <div class="library-card-cover">
+                        <img
+                            src="${escapeHTML(cover)}"
+                            alt="${escapeHTML(item.title)}"
+                            loading="lazy"
+                        >
+                    </div>
+                `
+                : `
+                    <div class="library-card-cover">
+                        <div class="library-card-monogram">
+                            ${escapeHTML(item.icon || initials)}
+                        </div>
+                    </div>
+                `;
+
+            // Documentos de imagem não precisam de progresso de leitura.
+            const progressHTML = item.type === 'image'
+                ? ''
+                : `
+                    <div class="library-card-progress">
+
+                        <div class="library-card-progress-label">
+
+                            <span>Progresso da leitura</span>
+
+                            <strong>${percent}%</strong>
+
+                        </div>
+
+                        <div class="library-card-progress-track">
+
+                            <div
+                                class="library-card-progress-fill"
+                                style="width:${percent}%"
+                            ></div>
+
+                        </div>
+
+                        <small>
+                            ${percent === 100 ? 'Leitura concluída' : 'Lido'}
+                        </small>
+
+                    </div>
+                `;
 
             html += `
-                <div class="card library-card" onclick="openLibraryDoc('${item.file}', '${escapeJS(item.title)}', '${item.type || 'json'}')" style="cursor:pointer; text-align:center; padding:18px 12px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; min-height:140px; margin:0; background: var(--bg-card, #fff); border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; transition: transform 0.15s ease, box-shadow 0.15s ease;">
-                    
-                    <!-- Selo / Monograma Acadêmico Minimalista -->
-                    <div style="width:42px; height:42px; border-radius:6px; background: rgba(var(--primary-rgb, 41, 128, 185), 0.08); color: var(--primary); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:15px; letter-spacing:1px; border: 1px solid rgba(var(--primary-rgb, 41, 128, 185), 0.2); margin-bottom:10px;">
-                        ${initials}
+                <div
+                    class="card library-card"
+                    onclick="openLibraryDoc(
+                        '${escapeJS(item.file)}',
+                        '${escapeJS(item.title)}',
+                        '${escapeJS(item.type || 'json')}',
+                        '${escapeJS(documentKey)}'
+                    )"
+                    style="
+                        cursor:pointer;
+                        text-align:center;
+                        padding:14px 12px;
+                        display:flex;
+                        flex-direction:column;
+                        align-items:center;
+                        justify-content:space-between;
+                        min-height:175px;
+                        margin:0;
+                        background:var(--bg-card, #fff);
+                        border:1px solid var(--border-color, #e2e8f0);
+                        border-radius:8px;
+                    "
+                >
+
+                    ${coverHTML}
+
+                    <div class="library-card-title">
+
+                        ${escapeHTML(item.title)}
+
                     </div>
 
-                    <!-- Título do Documento -->
-                    <div style="font-weight:600; font-size:12px; line-height:1.35; color:var(--text-main); display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;">
-                        ${escapeHTML(item.title)}
-                    </div>
+                    ${progressHTML}
+
                 </div>
             `;
+
         });
+
         html += '</div>';
         grid.innerHTML = html;
     }
 
-    async function openLibraryDoc(filepath, title, type) {
+    // ==========================================================
+    // LEITOR PAGINADO DA BIBLIOTECA TEOLÓGICA
+    // ==========================================================
+
+    async function openLibraryDoc(filepath, title, type, docId) {
+
         const grid = document.getElementById('library-grid');
         const reader = document.getElementById('library-reader-view');
-        const contentBox = document.getElementById('library-reader-content');
-        if (!grid || !reader || !contentBox) return;
+
+        if (!grid || !reader) return;
+
+        // Identificador persistente do documento.
+        libraryActiveDocumentKey = String(docId || filepath);
+
+        libraryCurrentPageIndex = 0;
+        libraryCurrentPageCount = 1;
+
+        if (libraryScrollSnapTimer) {
+            clearTimeout(libraryScrollSnapTimer);
+        }
 
         grid.classList.add('hidden');
+
         reader.classList.remove('hidden');
-        contentBox.innerHTML = `<h3 style="color:var(--primary);">${escapeHTML(title)}</h3><p style="color:#777; margin-top:10px;">Carregando...</p>`;
+        reader.classList.add('library-reader-fullscreen');
+
+        reader.setAttribute('aria-hidden', 'false');
+
+        document.body.classList.add('library-reader-open');
+
+
+        // ======================================================
+        // 1. ESTRUTURA DO LEITOR EM TELA CHEIA
+        // ======================================================
+
+        reader.innerHTML = `
+
+
+            <div class="library-reader-toolbar">
+
+                <div class="library-reader-heading">
+
+                    <strong id="library-reader-title">
+                        ${escapeHTML(title)}
+                    </strong>
+
+                    <small id="library-reader-subtitle">
+                        Leitura paginada
+                    </small>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="library-reader-close"
+                    class="library-reader-close"
+                    aria-label="Fechar leitura"
+                    title="Fechar leitura"
+                    onclick="window.closeLibraryReader(); return false;"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+
+            <div class="library-reader-stage">
+
+                <div
+                    id="library-reader-content"
+                    class="library-reader-page-flow"
+                    role="region"
+                    aria-label="Páginas do documento"
+                    tabindex="0"
+                ></div>
+
+
+                <button
+                    type="button"
+                    class="library-page-edge library-page-prev"
+                    onclick="libraryChangePage(-1)"
+                    aria-label="Página anterior"
+                >
+                    ‹
+                </button>
+
+
+                <button
+                    type="button"
+                    class="library-page-edge library-page-next"
+                    onclick="libraryChangePage(1)"
+                    aria-label="Próxima página"
+                >
+                    ›
+                </button>
+
+            </div>
+
+
+            <div class="library-reader-footer">
+
+                <div class="library-reader-progress-track">
+
+                    <div
+                        id="library-reader-progress-fill"
+                        class="library-reader-progress-fill"
+                        style="width:0%"
+                    ></div>
+
+                </div>
+
+
+                <div class="library-reader-footer-info">
+
+                    <span
+                        id="library-reader-progress-label"
+                        aria-live="polite"
+                    >
+                        0% lido
+                    </span>
+
+
+                    <span
+                        id="library-reader-page-counter"
+                        aria-live="polite"
+                    >
+                        Página 1 de 1
+                    </span>
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        const contentBox = document.getElementById(
+            'library-reader-content'
+        );
+
 
         try {
-            // Se for imagem (mapa)
+
+            // ==================================================
+            // 2. DOCUMENTOS DE IMAGEM
+            // ==================================================
+
             if (type === 'image') {
+
                 contentBox.innerHTML = `
-                    <div style="border-bottom: 2px solid var(--primary); padding-bottom: 12px; margin-bottom: 20px;">
-                        <h2 style="color:var(--primary); font-size:22px; margin-bottom:4px;">${escapeHTML(title)}</h2>
+
+                    <div class="library-image-page">
+
+                        <img
+                            src="${escapeHTML(filepath)}"
+                            alt="${escapeHTML(title)}"
+                        >
+
                     </div>
-                    <div style="text-align:center; background:rgba(0,0,0,0.02); padding:10px; border-radius:8px;">
-                        <img src="${filepath}" alt="${escapeHTML(title)}" style="max-width:100%; height:auto; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
-                    </div>
+
                 `;
+
+                initializeLibraryPagination();
+
                 return;
             }
 
-            // Se for JSON de documento/estudo
-            const res = await fetch(filepath, { cache: 'no-cache' });
-            if (!res.ok) throw new Error('Arquivo não encontrado');
+
+            // ==================================================
+            // 3. CARREGAR DOCUMENTO JSON
+            // ==================================================
+
+            const res = await fetch(filepath, {
+                cache: 'no-cache'
+            });
+
+            if (!res.ok) {
+                throw new Error('Arquivo não encontrado.');
+            }
+
             const data = await res.json();
 
+
+            // Atualiza o título e o autor na barra superior.
+
+            const titleElement = document.getElementById(
+                'library-reader-title'
+            );
+
+            const subtitleElement = document.getElementById(
+                'library-reader-subtitle'
+            );
+
+            if (titleElement) {
+
+                titleElement.textContent =
+                    data.titulo || title;
+            }
+
+            if (subtitleElement) {
+
+                subtitleElement.textContent =
+                    data.autor || 'Biblioteca Teológica';
+            }
+
+
+            // ==================================================
+            // 4. CABEÇALHO DO CONTEÚDO
+            // ==================================================
+
             let rendered = `
-                <div style="border-bottom: 2px solid var(--primary); padding-bottom: 12px; margin-bottom: 20px;">
-                    <h2 style="color:var(--primary); font-size:22px; margin-bottom:4px;">${escapeHTML(data.titulo || title)}</h2>
-                    ${data.autor ? `<p style="color:var(--text-muted); font-size:14px; font-style:italic;">Autor / Fonte: ${escapeHTML(data.autor)}</p>` : ''}
+
+                <div class="library-document-header">
+
+                    <h2>
+
+                        ${escapeHTML(data.titulo || title)}
+
+                    </h2>
+
+                    ${
+                        data.autor
+                        ? `<p>Autor / Fonte: ${escapeHTML(data.autor)}</p>`
+                        : ''
+                    }
+
                 </div>
+
             `;
 
+
+            // ==================================================
+            // 5. INTRODUÇÃO E SEÇÕES
+            // ==================================================
+
             if (data.material) {
-                if (data.material.introducao) {
+
+                const material = data.material;
+
+
+                // INTRODUÇÃO
+
+                if (material.introducao) {
+
                     rendered += `
-                        <div style="background: rgba(0,0,0,0.03); padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid var(--primary);">
-                            <p style="margin:0; line-height:1.6; font-size:15px;">${escapeHTML(data.material.introducao)}</p>
+
+                        <div class="library-intro">
+
+                            ${renderLibraryMarkdown(
+                                material.introducao
+                            )}
+
                         </div>
+
                     `;
                 }
 
-                if (data.material.secoes && Array.isArray(data.material.secoes)) {
-                    data.material.secoes.forEach(sec => {
-                        if (sec.tipo === 'auto' || sec.id === 'esboco_do_conteudo') return;
+
+                // SEÇÕES DO DOCUMENTO
+
+                if (Array.isArray(material.secoes)) {
+
+                    material.secoes.forEach(sec => {
+
+                        if (!sec || typeof sec !== 'object') return;
+
+                        const sectionType = String(
+                            sec.tipo || 'texto'
+                        ).toLowerCase();
+
+
+                        // TÍTULO DA SEÇÃO
 
                         if (sec.titulo) {
-                            rendered += `<h3 style="margin-top:25px; margin-bottom:10px; color:var(--secondary); font-size:18px; border-bottom: 1px solid #eee; padding-bottom: 4px;">${escapeHTML(sec.titulo)}</h3>`;
+
+                            rendered += `
+
+                                <h3 class="library-section-title">
+
+                                    ${escapeHTML(sec.titulo)}
+
+                                </h3>
+
+                            `;
                         }
 
-                        if (sec.conteudo && typeof sec.conteudo === 'string') {
-                            const paragrafos = sec.conteudo.split('\n\n');
-                            paragrafos.forEach(p => {
-                                if (p.trim()) {
-                                    if (p.startsWith('### ')) {
-                                        rendered += `<h4 style="margin-top:15px; color:var(--primary); font-size:16px;">${escapeHTML(p.replace('### ', ''))}</h4>`;
-                                    } else {
-                                        rendered += `<p style="margin-bottom:12px; line-height:1.7; text-align:justify;">${escapeHTML(p)}</p>`;
-                                    }
-                                }
-                            });
+
+                        // ESBOÇOS
+
+                        if (
+                            sectionType === 'auto' ||
+                            sec.id === 'esboco_do_conteudo'
+                        ) {
+
+                            rendered += renderLibraryOutline(
+                                sec.conteudo
+                            );
+
+                            return;
                         }
 
-                        if (sec.perguntas && Array.isArray(sec.perguntas)) {
+
+                        // TABELAS ESTRUTURADAS
+
+                        if (
+                            sectionType === 'tabela' ||
+                            sectionType === 'table'
+                        ) {
+
+                            rendered += renderLibraryTable(
+                                sec.conteudo
+                            );
+
+                        }
+
+
+                        // TEXTOS E TABELAS ANTIGAS EM TEXTO
+
+                        else if (typeof sec.conteudo === 'string') {
+
+                            const isTableTitle = /^tabela\b/i.test(
+                                String(sec.titulo || '').trim()
+                            );
+
+                            const inferredTable = isTableTitle
+                                ? parseLibraryTextTable(sec.conteudo)
+                                : null;
+
+
+                            if (inferredTable) {
+
+                                rendered += renderLibraryTable(
+                                    inferredTable
+                                );
+
+                            } else {
+
+                                rendered += renderLibraryMarkdown(
+                                    sec.conteudo
+                                );
+
+                            }
+
+                        }
+
+
+                        // OUTROS CONTEÚDOS
+
+                        else if (sec.conteudo !== undefined) {
+
+                            rendered += `
+
+                                <pre class="library-json-fallback">
+
+                                    ${escapeHTML(
+                                        JSON.stringify(
+                                            sec.conteudo,
+                                            null,
+                                            2
+                                        )
+                                    )}
+
+                                </pre>
+
+                            `;
+                        }
+
+
+                        // PERGUNTAS E RESPOSTAS
+
+                        if (Array.isArray(sec.perguntas)) {
+
                             sec.perguntas.forEach(q => {
+
                                 rendered += `
-                                    <div style="margin: 15px 0; padding: 12px; background: var(--bg-card, #fff); border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-                                        <p style="margin: 0 0 6px 0; font-weight:600; color:var(--text-main);">Q. ${q.numero} - ${escapeHTML(q.pergunta)}</p>
-                                        <p style="margin: 0; color:var(--text-muted); line-height:1.6;"><strong>R.</strong> ${escapeHTML(q.resposta)}</p>
+
+                                    <div class="library-question">
+
+                                        <p class="library-question-title">
+
+                                            Q. ${escapeHTML(q.numero ?? '')} -
+                                            ${renderLibraryInlineMarkdown(q.pergunta ?? '')}
+
+                                        </p>
+
+                                        <p class="library-question-answer">
+
+                                            <strong>R.</strong>
+
+                                            ${renderLibraryInlineMarkdown(q.resposta ?? '')}
+
+                                        </p>
+
                                     </div>
+
                                 `;
+
                             });
                         }
+
                     });
                 }
+
             } else {
-                rendered += `<pre style="white-space:pre-wrap; font-family:inherit;">${escapeHTML(JSON.stringify(data, null, 2))}</pre>`;
+
+                rendered += `
+
+                    <pre class="library-json-fallback">
+
+                        ${escapeHTML(
+                            JSON.stringify(data, null, 2)
+                        )}
+
+                    </pre>
+
+                `;
             }
 
+
+            // ==================================================
+            // 6. EXIBIR O CONTEÚDO
+            // ==================================================
+
             contentBox.innerHTML = rendered;
-            const main = document.getElementById('main-scroll');
-            if (main) main.scrollTo(0, 0);
-        } catch (e) {
-            console.error(e);
-            contentBox.innerHTML = `<h3 style="color:var(--primary);">${escapeHTML(title)}</h3><p style="color:#e74c3c; margin-top:10px;">Não foi possível carregar o conteúdo deste arquivo. Verifique se o caminho <code>${filepath}</code> está correto no seu projeto.</p>`;
+
+
+            // ==================================================
+            // 7. PAGINAR E RESTAURAR A POSIÇÃO
+            // ==================================================
+
+            initializeLibraryPagination();
+
+        } catch (error) {
+
+            console.error(
+                'Erro ao abrir documento da Biblioteca:',
+                error
+            );
+
+            contentBox.innerHTML = `
+
+                <div class="library-render-warning">
+
+                    Não foi possível carregar este documento.
+
+                    <br><br>
+
+                    Verifique o caminho:
+
+                    <strong>${escapeHTML(filepath)}</strong>
+
+                    <br><br>
+
+                    ${escapeHTML(error.message)}
+
+                </div>
+
+            `;
+
+            initializeLibraryPagination();
         }
     }
 
-    function closeLibraryReader() {
-        const grid = document.getElementById('library-grid');
-        const reader = document.getElementById('library-reader-view');
-        if (!grid || !reader) return;
+
+    // ==========================================================
+    // FECHAR O LEITOR E RETORNAR À BIBLIOTECA
+    // ==========================================================
+
+
+
+window.closeLibraryReader = function() {
+
+    console.log('[BIBLIOTECA] Fechando leitor...');
+
+    // 1. SALVAR O PROGRESSO
+    try {
+
+        if (typeof saveLibraryReadingProgress === 'function') {
+            saveLibraryReadingProgress();
+        }
+
+    } catch (error) {
+
+        console.warn('Erro ao salvar progresso:', error);
+
+    }
+
+
+    // 2. CANCELAR TEMPORIZADOR
+    if (
+        typeof libraryScrollSnapTimer !== 'undefined' &&
+        libraryScrollSnapTimer
+    ) {
+
+        clearTimeout(libraryScrollSnapTimer);
+
+        libraryScrollSnapTimer = null;
+    }
+
+
+    // 3. REMOVER EVENTOS TEMPORÁRIOS
+    if (
+        typeof libraryReaderResizeHandler !== 'undefined' &&
+        libraryReaderResizeHandler
+    ) {
+
+        window.removeEventListener(
+            'resize',
+            libraryReaderResizeHandler
+        );
+
+        libraryReaderResizeHandler = null;
+    }
+
+
+    if (
+        typeof libraryReaderKeyHandler !== 'undefined' &&
+        libraryReaderKeyHandler
+    ) {
+
+        document.removeEventListener(
+            'keydown',
+            libraryReaderKeyHandler
+        );
+
+        libraryReaderKeyHandler = null;
+    }
+
+
+    // 4. SAIR DO MODO TELA CHEIA
+    document.body.classList.remove('library-reader-open');
+
+
+    // 5. LOCALIZAR OS ELEMENTOS
+    const reader = document.getElementById(
+        'library-reader-view'
+    );
+
+    const grid = document.getElementById(
+        'library-grid'
+    );
+
+
+    // 6. ESCONDER O LEITOR
+    if (reader) {
+
+        reader.classList.remove(
+            'library-reader-fullscreen'
+        );
+
         reader.classList.add('hidden');
+
+        reader.setAttribute(
+            'aria-hidden',
+            'true'
+        );
+
+        reader.innerHTML = '';
+    }
+
+
+    // 7. MOSTRAR A BIBLIOTECA
+    if (grid) {
+
         grid.classList.remove('hidden');
     }
+
+
+    // 8. LIMPAR ESTADO DA LEITURA
+    libraryActiveDocumentKey = null;
+
+    libraryCurrentPageIndex = 0;
+
+    libraryCurrentPageCount = 1;
+
+
+    // 9. ATUALIZAR OS CARTÕES
+    if (typeof renderLibraryList === 'function') {
+
+        renderLibraryList();
+    }
+
+
+    console.log('[BIBLIOTECA] Retorno à biblioteca concluído.');
+
+};
+
+
+// Disponibiliza a função globalmente também.
+window.closeLibraryReader = closeLibraryReader;

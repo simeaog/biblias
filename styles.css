@@ -3547,3 +3547,1142 @@ input[type="checkbox"] {
 :root[data-theme="pink-light"] .jump-highlight {
     animation-name: verseJumpHighlightPink !important;
 }
+
+
+/* ======================================================
+   BIBLIOTECA TEOLÓGICA
+   ESTILOS DE TEXTOS, TABELAS E ESBOÇOS
+====================================================== */
+
+#library-reader-content {
+    overflow-wrap: anywhere;
+}
+
+/* INTRODUÇÃO */
+
+#library-reader-content .library-intro {
+    margin-bottom: 22px;
+    padding: 15px;
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    background: rgba(127, 127, 127, 0.06);
+}
+
+/* TEXTOS MARKDOWN */
+
+.library-markdown {
+    color: var(--text-main);
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.library-markdown p {
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
+.library-markdown strong {
+    font-weight: 700;
+}
+
+.library-markdown em {
+    font-style: italic;
+}
+
+.library-markdown h3,
+.library-markdown h4,
+.library-markdown h5,
+.library-markdown h6 {
+    color: var(--primary);
+    margin: 18px 0 10px;
+}
+
+.library-markdown ul,
+.library-markdown ol {
+    padding-left: 26px;
+    margin: 10px 0 18px;
+}
+
+.library-markdown li {
+    margin-bottom: 6px;
+}
+
+/* LINHAS DIVISÓRIAS */
+
+.library-horizontal-rule {
+    border: 0;
+    border-top: 1px solid var(--border-color, #ddd);
+    margin: 22px 0;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+
+.library-section-title {
+    margin: 26px 0 12px;
+    padding-bottom: 7px;
+    color: var(--secondary);
+    border-bottom: 1px solid var(--border-color, #ddd);
+    font-size: 18px;
+}
+
+/* ======================================================
+   TABELAS
+====================================================== */
+
+.library-table-wrap {
+    width: 100%;
+    max-width: 100%;
+    margin: 18px 0 25px;
+    overflow-x: auto;
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 9px;
+    background: var(--bg-card, #fff);
+    -webkit-overflow-scrolling: touch;
+}
+
+.library-data-table {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+.library-data-table th {
+    padding: 13px;
+    text-align: left;
+    font-weight: 700;
+    background: rgba(41, 128, 185, 0.12);
+    border-bottom: 2px solid var(--primary);
+}
+
+.library-data-table td {
+    padding: 12px 13px;
+    border-bottom: 1px solid var(--border-color, #ddd);
+    vertical-align: top;
+}
+
+.library-data-table tbody tr:nth-child(even) {
+    background: rgba(127, 127, 127, 0.045);
+}
+
+.library-data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ======================================================
+   ESBOÇOS
+====================================================== */
+
+.library-outline {
+    margin: 12px 0 25px;
+}
+
+.library-outline-entry {
+    margin-bottom: 20px;
+}
+
+.library-outline-entry h4 {
+    color: var(--primary);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.library-outline ul {
+    padding-left: 25px;
+    line-height: 1.7;
+}
+
+.library-outline li {
+    margin-bottom: 6px;
+}
+
+/* PERGUNTAS E RESPOSTAS */
+
+.library-question {
+    margin: 15px 0;
+    padding: 13px;
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 8px;
+    background: var(--bg-card, #fff);
+}
+
+.library-question-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.library-question-answer {
+    line-height: 1.6;
+}
+
+/* AVISOS E FALLBACK */
+
+.library-render-warning {
+    padding: 12px;
+    margin: 12px 0;
+    border-left: 3px solid #d69e2e;
+    background: rgba(214, 158, 46, 0.08);
+}
+
+.library-json-fallback {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    padding: 12px;
+    background: rgba(127, 127, 127, 0.08);
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .library-markdown {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .library-data-table {
+        font-size: 13px;
+        min-width: 500px;
+    }
+
+    .library-data-table th,
+    .library-data-table td {
+        padding: 10px;
+    }
+}
+
+
+/* ==========================================================
+   BIBLIOTECA TEOLÓGICA - CARTÕES COM PROGRESSO
+========================================================== */
+
+.library-card {
+    min-height: 175px !important;
+    gap: 8px;
+}
+
+.library-card-cover {
+    width: 100%;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.library-card-cover img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.library-card-monogram {
+    width: 54px;
+    height: 54px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(41, 128, 185, 0.10);
+    border: 1px solid rgba(41, 128, 185, 0.20);
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.library-card-title {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-main);
+    text-align: center;
+}
+
+.library-card-progress {
+    width: 100%;
+    margin-top: 7px;
+    text-align: left;
+}
+
+.library-card-progress-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 5px;
+}
+
+.library-card-progress-label strong {
+    color: var(--primary);
+    font-size: 12px;
+}
+
+.library-card-progress-track {
+    width: 100%;
+    height: 5px;
+    background: var(--border-color, #ddd);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.library-card-progress-fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 10px;
+    transition: width .3s ease;
+}
+
+.library-card-progress small {
+    display: block;
+    margin-top: 4px;
+    font-size: 10px;
+    color: var(--text-muted);
+}
+
+
+/* ==========================================================
+   LEITOR KIN​​DLE - TELA INTEIRA
+========================================================== */
+
+body.library-reader-open {
+    overflow: hidden !important;
+}
+
+#library-reader-view.library-reader-fullscreen {
+    position: fixed !important;
+
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    z-index: 99999 !important;
+
+    display: flex !important;
+    flex-direction: column;
+
+    overflow: hidden !important;
+
+    background: var(--bg-main, #ffffff);
+
+    color: var(--text-main);
+    box-sizing: border-box;
+
+    border-radius: 0 !important;
+}
+
+
+/* ==========================================================
+   BARRA SUPERIOR
+========================================================== */
+
+.library-reader-toolbar {
+    height: 64px;
+    min-height: 64px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 18px;
+
+    background: var(--bg-card, #ffffff);
+
+    border-bottom: 1px solid var(--border-color, #ddd);
+
+    box-sizing: border-box;
+
+    z-index: 5;
+
+    padding-top: env(safe-area-inset-top, 0px);
+}
+
+.library-reader-back,
+.library-reader-close {
+    border: none;
+    background: transparent;
+    color: var(--text-main);
+
+    cursor: pointer;
+
+    min-width: 42px;
+    min-height: 42px;
+
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.library-reader-back {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
+}
+
+.library-reader-close {
+    margin-left: auto;
+    font-size: 20px;
+}
+
+.library-reader-back:hover,
+.library-reader-close:hover {
+    background: rgba(127, 127, 127, 0.10);
+}
+
+.library-reader-heading {
+    flex: 1;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.library-reader-heading strong {
+    font-size: 14px;
+    font-weight: 700;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.library-reader-heading small {
+    font-size: 11px;
+    color: var(--text-muted);
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* ==========================================================
+   ÁREA DAS PÁGINAS
+========================================================== */
+
+.library-reader-stage {
+    flex: 1;
+    min-height: 0;
+
+    width: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.library-reader-page-flow {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    padding: 24px 52px;
+
+    column-width: calc(100vw - 104px);
+    column-gap: 28px;
+    column-fill: auto;
+
+    column-rule: 1px solid rgba(127, 127, 127, 0.12);
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    color: var(--text-main);
+
+    line-height: 1.8;
+    font-size: 15px;
+
+    text-align: justify;
+
+    scrollbar-width: none;
+
+    -webkit-overflow-scrolling: touch;
+
+    overscroll-behavior-x: contain;
+
+    touch-action: pan-x;
+}
+
+.library-reader-page-flow::-webkit-scrollbar {
+    display: none;
+}
+
+.library-reader-page-flow .library-document-header {
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+
+    border-bottom: 2px solid var(--primary);
+
+    break-inside: avoid-column;
+}
+
+.library-reader-page-flow .library-document-header h2 {
+    margin: 0 0 7px;
+
+    color: var(--primary);
+
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+.library-reader-page-flow .library-document-header p {
+    margin: 0;
+
+    font-size: 13px;
+    color: var(--text-muted);
+
+    font-style: italic;
+}
+
+.library-reader-page-flow .library-section-title {
+    break-after: avoid-column;
+}
+
+.library-reader-page-flow .library-intro,
+.library-reader-page-flow .library-question,
+.library-reader-page-flow .library-outline-entry {
+    break-inside: avoid-column;
+}
+
+.library-reader-page-flow img {
+    max-width: 100%;
+}
+
+
+/* ==========================================================
+   MAPAS E IMAGENS
+========================================================== */
+
+.library-image-page {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    break-inside: avoid;
+}
+
+.library-image-page img {
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================================
+   SETAS LATERAIS DE NAVEGAÇÃO
+========================================================== */
+
+.library-page-edge {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 42px;
+    height: 72px;
+
+    z-index: 4;
+
+    border: none;
+    border-radius: 9px;
+
+    background: rgba(127, 127, 127, 0.12);
+
+    color: var(--text-main);
+
+    font-size: 36px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background .2s ease;
+}
+
+.library-page-edge:hover {
+    background: rgba(127, 127, 127, 0.25);
+}
+
+.library-page-prev {
+    left: 4px;
+}
+
+.library-page-next {
+    right: 4px;
+}
+
+
+/* ==========================================================
+   RODAPÉ E PROGRESSO DA LEITURA
+========================================================== */
+
+.library-reader-footer {
+    height: 66px;
+    min-height: 66px;
+
+    box-sizing: border-box;
+
+    padding: 10px 22px;
+
+    background: var(--bg-card, #ffffff);
+
+    border-top: 1px solid var(--border-color, #ddd);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9px;
+
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+}
+
+.library-reader-progress-track {
+    width: 100%;
+    height: 4px;
+
+    background: var(--border-color, #ddd);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.library-reader-progress-fill {
+    height: 100%;
+
+    width: 0%;
+
+    background: var(--primary);
+
+    border-radius: 10px;
+
+    transition: width .2s ease;
+}
+
+.library-reader-footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 11px;
+
+    color: var(--text-muted);
+}
+
+
+/* ==========================================================
+   RESPONSIVIDADE
+========================================================== */
+
+@media (max-width: 600px) {
+
+    .library-reader-toolbar {
+        height: 58px;
+        min-height: 58px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .library-reader-back {
+        font-size: 13px;
+        gap: 3px;
+    }
+
+    .library-reader-heading strong {
+        font-size: 12px;
+    }
+
+    .library-reader-page-flow {
+        padding: 18px 44px;
+
+        font-size: 14px;
+        line-height: 1.75;
+
+        column-gap: 22px;
+    }
+
+    .library-page-edge {
+        width: 32px;
+        height: 58px;
+        font-size: 29px;
+    }
+
+    .library-page-prev {
+        left: 2px;
+    }
+
+    .library-page-next {
+        right: 2px;
+    }
+
+    .library-reader-footer {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+}
+
+
+/* ==================================================
+   LEITOR BIBLIOTECA - SETAS SOMENTE NO COMPUTADOR
+================================================== */
+
+@media (max-width: 767px) {
+
+    #library-reader-view.library-reader-fullscreen
+    .library-page-edge {
+
+        display: none !important;
+
+    }
+
+}
+
+/* BOTÃO FECHAR DO LEITOR */
+#library-reader-close {
+    position: relative !important;
+    z-index: 100001 !important;
+
+    display: flex !important;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 44px;
+    min-height: 44px;
+
+    margin-left: auto;
+
+    cursor: pointer;
+
+    pointer-events: auto !important;
+
+    flex-shrink: 0;
+}
+
+
+/* ==========================================================
+   CORREÇÃO DOS TEMAS NA BIBLIOTECA TEOLÓGICA
+   Azul e Rosa
+========================================================== */
+
+
+/* ==========================================================
+   TEMA AZUL
+========================================================== */
+
+html[data-theme="blue"] #tab-library {
+
+    --bg-main: #101e32;
+    --bg-card: #192b43;
+
+    --text-main: #edf4ff;
+    --text-muted: #b4c5db;
+
+    --border-color: #344b68;
+
+    color: var(--text-main);
+
+    background-color: var(--bg-main);
+}
+
+
+/* ==========================================================
+   TEMA ROSA
+========================================================== */
+
+html[data-theme="pink"] #tab-library {
+
+    --bg-main: #291a25;
+    --bg-card: #3b2735;
+
+    --text-main: #fff0f6;
+    --text-muted: #d9b9ca;
+
+    --border-color: #594052;
+
+    color: var(--text-main);
+
+    background-color: var(--bg-main);
+}
+
+
+/* ==========================================================
+   CARTÕES DOS LIVROS
+========================================================== */
+
+html[data-theme="blue"] #tab-library .library-card,
+html[data-theme="pink"] #tab-library .library-card {
+
+    background: var(--bg-card) !important;
+
+    color: var(--text-main) !important;
+
+    border-color: var(--border-color) !important;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+}
+
+
+/* Títulos dos documentos */
+
+html[data-theme="blue"] #tab-library .library-card-title,
+html[data-theme="pink"] #tab-library .library-card-title {
+
+    color: var(--text-main) !important;
+}
+
+
+/* Área das capas */
+
+html[data-theme="blue"] #tab-library .library-card-cover,
+html[data-theme="pink"] #tab-library .library-card-cover {
+
+    background-color: rgba(255, 255, 255, 0.06);
+
+    border-radius: 8px;
+}
+
+
+/* Monogramas */
+
+html[data-theme="blue"] #tab-library .library-card-monogram,
+html[data-theme="pink"] #tab-library .library-card-monogram {
+
+    color: var(--primary);
+
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+/* Progresso */
+
+html[data-theme="blue"] #tab-library .library-card-progress-label,
+html[data-theme="blue"] #tab-library .library-card-progress small,
+html[data-theme="pink"] #tab-library .library-card-progress-label,
+html[data-theme="pink"] #tab-library .library-card-progress small {
+
+    color: var(--text-muted);
+}
+
+
+/* ==========================================================
+   LEITOR EM TELA CHEIA
+========================================================== */
+
+html[data-theme="blue"] #tab-library .library-reader-fullscreen,
+html[data-theme="pink"] #tab-library .library-reader-fullscreen {
+
+    background: var(--bg-main) !important;
+
+    color: var(--text-main) !important;
+}
+
+
+/* Barra superior e inferior */
+
+html[data-theme="blue"] #tab-library .library-reader-toolbar,
+html[data-theme="blue"] #tab-library .library-reader-footer,
+html[data-theme="pink"] #tab-library .library-reader-toolbar,
+html[data-theme="pink"] #tab-library .library-reader-footer {
+
+    background: var(--bg-card) !important;
+
+    color: var(--text-main);
+
+    border-color: var(--border-color);
+}
+
+
+/* Título do leitor */
+
+html[data-theme="blue"] #tab-library .library-reader-heading strong,
+html[data-theme="pink"] #tab-library .library-reader-heading strong {
+
+    color: var(--text-main);
+}
+
+
+/* Texto do documento */
+
+html[data-theme="blue"] #tab-library .library-reader-page-flow,
+html[data-theme="pink"] #tab-library .library-reader-page-flow {
+
+    background: var(--bg-main);
+
+    color: var(--text-main);
+}
+
+
+/* Botões de navegação */
+
+html[data-theme="blue"] #tab-library .library-page-edge,
+html[data-theme="blue"] #tab-library .library-reader-close,
+html[data-theme="pink"] #tab-library .library-page-edge,
+html[data-theme="pink"] #tab-library .library-reader-close {
+
+    color: var(--text-main);
+}
+
+
+/* Tabelas */
+
+html[data-theme="blue"] #tab-library .library-data-table,
+html[data-theme="pink"] #tab-library .library-data-table {
+
+    color: var(--text-main);
+}
+
+html[data-theme="blue"] #tab-library .library-data-table th,
+html[data-theme="pink"] #tab-library .library-data-table th {
+
+    background: rgba(255, 255, 255, 0.09);
+
+    color: var(--text-main);
+
+    border-color: var(--border-color);
+}
+
+html[data-theme="blue"] #tab-library .library-data-table td,
+html[data-theme="pink"] #tab-library .library-data-table td {
+
+    color: var(--text-main);
+
+    border-color: var(--border-color);
+}
+
+html[data-theme="blue"] #tab-library .library-table-wrap,
+html[data-theme="pink"] #tab-library .library-table-wrap {
+
+    background: var(--bg-card);
+
+    border-color: var(--border-color);
+}
+
+
+/* Introduções e perguntas */
+
+html[data-theme="blue"] #tab-library .library-intro,
+html[data-theme="blue"] #tab-library .library-question,
+html[data-theme="pink"] #tab-library .library-intro,
+html[data-theme="pink"] #tab-library .library-question {
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: var(--text-main);
+
+    border-color: var(--border-color);
+}
+
+
+/* Títulos das seções */
+
+html[data-theme="blue"] #tab-library .library-section-title,
+html[data-theme="pink"] #tab-library .library-section-title {
+
+    border-color: var(--border-color);
+}
+
+
+
+/* ==========================================================
+   BACKUP E RESTAURAÇÃO
+========================================================== */
+
+.backup-description {
+    margin-bottom: 12px;
+}
+
+.backup-description strong,
+.backup-restore-area > strong {
+    color: var(--text-main);
+    font-size: 14px;
+}
+
+.backup-description p,
+.backup-restore-area p {
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 6px 0 12px;
+}
+
+
+/* LISTA DE CATEGORIAS */
+
+.backup-category-list {
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.backup-category {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.backup-category:hover {
+    background: rgba(127, 127, 127, 0.07);
+}
+
+.backup-category input {
+    width: 19px;
+    height: 19px;
+    min-width: 19px;
+    margin: 0;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.backup-category-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.backup-category-info strong {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.backup-category-info small {
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 0.8;
+}
+
+
+/* BOTÃO DE EXPORTAÇÃO */
+
+.backup-export-button {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.backup-restore-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.backup-restore-area .config-action-button {
+    width: 100%;
+    justify-content: center;
+}
+
+
+/* TEXTO EXPLICATIVO */
+
+.backup-help-text {
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--text-muted);
+    margin: 10px 0;
+}
+
+
+/* REALCE DAS CATEGORIAS SELECIONADAS */
+
+.backup-category:has(input:checked) {
+    background: rgba(127, 127, 127, 0.06);
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .backup-category {
+        padding: 13px 5px;
+    }
+
+    .backup-category-info strong {
+        font-size: 12px;
+    }
+
+    .backup-category-info small {
+        font-size: 10px;
+    }
+
+}
+
+/* =========================================
+   AJUSTES VISUAIS — BACKUP E RESTAURAÇÃO
+   ========================================= */
+
+/* Textos e espaçamento interno */
+.backup-description,
+.backup-help-text,
+.backup-restore-area {
+    box-sizing: border-box;
+    padding-top: 4px;
+    padding-left: 16px;
+    padding-right: 8px;
+    line-height: 1.6;
+}
+
+/* Botão de gerar backup e botão de selecionar arquivo */
+.backup-export-button,
+.backup-restore-area button,
+.backup-restore-area .config-action-button,
+.backup-restore-area label[for="backup-file-input"] {
+    display: flex;
+    width: fit-content;
+    max-width: calc(80% - 18px);
+    min-height: 38px;
+    box-sizing: border-box;
+
+    margin: 8px auto;
+    padding: 11px 20px;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    white-space: normal;
+    line-height: 1.35;
+}
