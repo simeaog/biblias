@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'biblia-app-v14-atualizacoes';
+const CACHE_NAME = 'biblia-app-v15-atualizacoes';
 
 const APP_SHELL = [
     './',
