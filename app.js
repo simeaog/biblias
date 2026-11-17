@@ -7082,6 +7082,8 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         );
 
         atualizarInterfacePWA();
+
+        configurarInstalacaoPWA();
     }
 
     // =========================================================
