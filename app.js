@@ -6807,6 +6807,31 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     let pwaReloading = false;
     let pwaCheckingUpdate = false;
 
+    let pwaHadController =
+        !!navigator.serviceWorker?.controller;
+    
+    let pwaControllerChanged = false;
+    
+    if ('serviceWorker' in navigator) {
+    
+        navigator.serviceWorker.addEventListener(
+            'controllerchange',
+            () => {
+    
+                if (pwaHadController) {
+    
+                    pwaControllerChanged = true;
+                    pwaUpdateAvailable = true;
+    
+                    atualizarInterfacePWA();
+                }
+    
+                pwaHadController = true;
+            }
+        );
+    
+    }
+
     async function registrarServiceWorkerPWA() {
         if (!('serviceWorker' in navigator)) return null;
 
@@ -6947,47 +6972,67 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
         }
     }
 
+
     async function atualizarAplicativoPWA() {
+    
         if (!pwaRegistration) return;
-
-        if (!pwaRegistration.waiting) {
-            const encontrou =
-                await verificarAtualizacaoPWA(false);
-
-            if (!encontrou) return;
-        }
-
-        const novoWorker = pwaRegistration.waiting;
-
-        if (!novoWorker) {
-            showToast(
-                'A nova versão ainda está sendo preparada. Tente novamente em alguns segundos.'
+    
+        // Caso exista uma atualização aguardando ativação.
+        if (pwaRegistration.waiting) {
+    
+            const novoWorker = pwaRegistration.waiting;
+    
+            pwaReloading = true;
+    
+            navigator.serviceWorker.addEventListener(
+                'controllerchange',
+                () => {
+    
+                    if (!pwaReloading) return;
+    
+                    pwaReloading = false;
+                    pwaUpdateAvailable = false;
+    
+                    window.location.reload();
+    
+                },
+                { once: true }
             );
+    
+            novoWorker.postMessage({
+                type: 'SKIP_WAITING'
+            });
+    
             return;
         }
-
-        pwaReloading = true;
-
-        navigator.serviceWorker.addEventListener(
-            'controllerchange',
-            () => {
-                if (!pwaReloading) return;
-
-                pwaReloading = false;
-
-                pwaUpdateAvailable = false;
-
-                atualizarInterfacePWA();
-
-                window.location.reload();
-            },
-            { once: true }
-        );
-
-        novoWorker.postMessage({
-            type: 'SKIP_WAITING'
-        });
+    
+        // Caso a nova versão já esteja ativa, basta recarregar.
+        if (pwaUpdateAvailable) {
+    
+            if (!pwaControllerChanged) {
+    
+                await new Promise(resolve => {
+    
+                    navigator.serviceWorker.addEventListener(
+                        'controllerchange',
+                        resolve,
+                        { once: true }
+                    );
+    
+                });
+    
+            }
+    
+            window.location.reload();
+    
+            return;
+        }
+    
+        // Não foi encontrada uma atualização pronta.
+        await verificarAtualizacaoPWA(false);
+    
     }
+
 
     function configurarInstalacaoPWA() {
         const btnInstall =
