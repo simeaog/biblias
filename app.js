@@ -7415,11 +7415,14 @@ let currentVersionId = localStorage.getItem('bible_current_version') || 'ara.jso
     
     const libraryDocsRegistry = [
         // Documentos e Estudos (JSONs)
-        { id: '62_Introducao_ao_Pentateuco', title: 'Introdução ao Pentateuco', file: 'dados/apoio/anexos/62_Introducao_ao_Pentateuco.json', type: 'json', icon: '📜' },
-        { id: '63_Introducao_aos_Livros_Historicos', title: 'Introdução aos Livros Históricos', file: 'dados/apoio/anexos/63_Introducao_aos_Livros_Historicos.json', type: 'json', icon: '🏰' },
-        { id: '64_Introducao_a_Poesia_Hebraica', title: 'Introdução à Poesia Hebraica', file: 'dados/apoio/anexos/64_Introducao_a_Poesia_Hebraica.json', type: 'json', icon: '🎶' },
-        { id: '65_Introducao_a_Literatura_de_Sabedoria', title: 'Introdução à Literatura de Sabedoria', file: 'dados/apoio/anexos/65_Introducao_a_Literatura_de_Sabedoria.json', type: 'json', icon: '🦉' },
-        { id: '66_Introducao_aos_Profetas', title: 'Introdução aos Profetas', file: 'dados/apoio/anexos/66_Introducao_aos_Profetas.json', type: 'json', icon: '🔥' },
+        { id: '59_Introducao_ao_Pentateuco', title: 'Introdução ao Pentateuco', file: 'dados/apoio/anexos/59_Introducao_ao_Pentateuco.json', type: 'json', icon: '📜' },
+        { id: '60_Introducao_aos_Livros_Historicos', title: 'Introdução aos Livros Históricos', file: 'dados/apoio/anexos/60_Introducao_aos_Livros_Historicos.json', type: 'json', icon: '🏰' },
+        { id: '61_Introducao_a_Poesia_Hebraica', title: 'Introdução à Poesia Hebraica', file: 'dados/apoio/anexos/61_Introducao_a_Poesia_Hebraica.json', type: 'json', icon: '🎶' },
+        { id: '62_Introducao_a_Literatura_de_Sabedoria', title: 'Introdução à Literatura de Sabedoria', file: 'dados/apoio/anexos/62_Introducao_a_Literatura_de_Sabedoria.json', type: 'json', icon: '🦉' },
+        { id: '63_Introducao_aos_Profetas', title: 'Introdução aos Profetas', file: 'dados/apoio/anexos/63_Introducao_aos_Profetas.json', type: 'json', icon: '🔥' },
+        { id: '64_Introducao_ao_Periodo_Intertestamentario', title: 'Introdução ao Período Intertestamentário', file: 'dados/apoio/anexos/64_Introducao_ao_Periodo_Intertestamentario.json', type: 'json', icon: '⏳' },
+        { id: '65_Introducao_aos_Evangelhos_e_Atos', title: 'Introdução aos Evangelhos e Atos', file: 'dados/apoio/anexos/65_Introducao_aos_Evangelhos_e_Atos.json', type: 'json', icon: '✝️' },
+        { id: '66_Introducao_as_Epistolas', title: 'Introdução às Epístolas', file: 'dados/apoio/anexos/66_Introducao_as_Epistolas.json', type: 'json', icon: '✉️' },
         { id: '67_Apologetica', title: 'Apologética', file: 'dados/apoio/anexos/67_Apologetica.json', type: 'json', icon: '🛡️' },
         { id: '68_A_Biblia_na_Historia_da_Igreja', title: 'A Bíblia na História da Igreja', file: 'dados/apoio/anexos/68_A_Biblia_na_Historia_da_Igreja.json', type: 'json', icon: '📖' },
         { id: '69_Canonicidade', title: 'Canonicidade', file: 'dados/apoio/anexos/69_Canonicidade.json', type: 'json', icon: '📜' },
